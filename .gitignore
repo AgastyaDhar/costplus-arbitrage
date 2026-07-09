@@ -3,4 +3,5 @@ __pycache__/
 costplus_suite/cache/
 costplus_suite/output/
 data/costplus.csv
+data/costplus.SCRAPED.csv
 .idea/

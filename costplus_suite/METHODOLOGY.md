@@ -119,13 +119,11 @@ over) each one.
   NDC-keyed, so it doesn't need Part D's brand/generic name heuristic -- it
   inherits the generic/brand status of the underlying Cost Plus catalog row).
 
-### Cost Plus Drugs price list (`shared/costplus.py`)
+### Cost Plus Drugs price list (`shared/costplus.py`, refreshed by `shared/costplus_scraper.py`)
 - **Source**: a user-supplied CSV at `data/costplus.csv`
   (`drug, strength, form, package_quantity, acquisition_cost, markup,
-  pharmacy_fee, shipping_fee`). **Not scraped in this phase** -- Cost Plus's
-  own pricing pages are the only public source of this data, and scraping
-  them was deliberately deferred (see "Deferred: Cost Plus / TrumpRx
-  scraping" below) rather than silently built into the pipeline.
+  pharmacy_fee, shipping_fee`). This is still the primary, required path --
+  `run.py`'s default `--source csv` loads it exactly as before.
 - **Formula**: `costplus_per_unit = (acquisition_cost * markup + pharmacy_fee)
   / package_quantity`. `shipping_fee` is never part of this formula -- it
   stays a separate column through the entire pipeline (HARD CONSTRAINT).
@@ -135,6 +133,35 @@ over) each one.
   stamps `is_sample=True` on the returned frame's `.attrs`, and every
   printed/written output derived from it is prefixed with a
   `SAMPLE DATA -- NOT REAL` banner or a `SAMPLE_` output filename prefix.
+- **`--source scrape` (refresh path)**: `shared/costplus_scraper.py` pulls
+  live data from costplusdrugs.com product pages for every drug already in
+  the CSV -- real-time `robots.txt` check (`urllib.robotparser`; the site's
+  own robots.txt explicitly `Allow: /medications/*`), 2-3s spacing between
+  requests, every response cached to disk. It writes `data/costplus.SCRAPED.csv`
+  and prints a crosswalk-to-NADAC coverage report, then the run continues
+  against the original CSV.
+  **Structural limitation, confirmed by live inspection**: a product page
+  publishes the drug's name/strength/brand, its flat shipping fee, and the
+  final all-in price a customer pays (via a `Product`/`Offer`
+  `application/ld+json` block plus an undocumented React-serialized
+  `productDetails` object) -- but never the acquisition cost Cost Plus pays
+  its supplier, nor the markup/pharmacy-fee breakdown behind that final
+  price. This isn't a gap to fill in later; it's the same category of limit
+  as net-of-rebate prices never being public (see governing principle #1) --
+  the formula's *inputs* are Cost Plus's own trade secret, only the *output*
+  is public. Accordingly the scraper leaves `acquisition_cost`, `markup`,
+  `pharmacy_fee`, and `package_quantity` blank rather than back-solving them
+  from the published 15%/$5 policy figures, which would silently assume that
+  policy applies uniformly per SKU (unverifiable -- some products are flagged
+  `specialtyMedication` on the site, suggesting it sometimes doesn't). The
+  `package_size` metafield some variants expose was observed identical across
+  four different strengths of the same drug during reconnaissance --
+  inconsistent with a literal per-fill tablet count -- so it is surfaced
+  verbatim as `package_size_raw` for a human to interpret, never renamed to
+  `package_quantity`. What the scraper *does* add that's new and real:
+  `observed_costplus_price` and `shipping_fee`, plus, when the input row
+  already has hand-entered formula inputs, an `implied_costplus_per_unit` /
+  `price_check_note` sanity check against that real observed price.
 
 ### FDA Drug Shortages (`fetch/shortages.py`)
 - **Source**: openFDA's public `drug/shortages.json` endpoint (no

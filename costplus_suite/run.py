@@ -28,6 +28,15 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--claims", type=Path, default=None, help="Path to a claims CSV, enables Module D")
     p.add_argument("--force-refresh", action="store_true", help="Bypass disk caches and re-fetch everything")
     p.add_argument(
+        "--source", choices=["csv", "scrape"], default="csv",
+        help="csv (default): load data/costplus.csv as-is. scrape: before running, refresh "
+             "data/costplus.SCRAPED.csv from live costplusdrugs.com data (real prices/shipping "
+             "fee/brand name; acquisition_cost/markup/pharmacy_fee/package_quantity are left as "
+             "whatever the input CSV already had -- see shared/costplus_scraper.py) and print a "
+             "crosswalk-to-NADAC coverage report, then continue the run against the original CSV.",
+    )
+    p.add_argument("--scrape-limit", type=int, default=None, help="With --source scrape, only refresh the first N catalog rows")
+    p.add_argument(
         "--generics-only", dest="generics_only", action="store_true", default=None,
         help=f"Restrict headline numbers to generics (default: {config.GENERICS_ONLY})",
     )
@@ -64,6 +73,13 @@ def main() -> None:
 
     print(f"[run] Cost Plus source: {costplus_path}")
     print(f"[run] Enabled Phase 2 modules: {sorted(enabled) or '(none)'}")
+
+    if args.source == "scrape":
+        from shared import costplus_scraper
+        costplus_scraper.run(costplus_path=costplus_path, limit=args.scrape_limit, force_refresh=args.force_refresh)
+        print("[run] --source scrape: refreshed data/costplus.SCRAPED.csv and printed coverage above; "
+              "continuing this run against the original CSV (Module A's schema requires acquisition_cost/"
+              "package_quantity, which costplusdrugs.com does not publish -- see shared/costplus_scraper.py).")
 
     # --- Module A: always runs, it's the core deliverable ---
     result = a_arbitrage.run(costplus_path=costplus_path, force_refresh=args.force_refresh, generics_only=args.generics_only)
