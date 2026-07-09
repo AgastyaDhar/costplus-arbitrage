@@ -66,6 +66,47 @@ def build_drug_level_table(cp_df: pd.DataFrame, nadac_df: pd.DataFrame) -> pd.Da
     return df
 
 
+BRAND_TTYS = {"SBD", "BPCK"}  # RxNorm term types for branded dispensable drugs
+
+
+def _exclude_brand_rows(drug_level: pd.DataFrame, generics_only: bool) -> pd.DataFrame:
+    """HARD CONSTRAINT enforcement point: when generics_only, no brand drug's
+    NDCs may reach EITHER the Part D or the Medicaid gap computation.
+
+    fetch.partd.is_generic_row() only filters Part D's own spend table by its
+    Brnd_Name==Gnrc_Name convention -- it says nothing about which CostPlus
+    catalog rows get compared in the first place, and attach_sdud has no
+    brand/generic awareness of its own at all (SDUD is NDC-keyed with no
+    brand flag). A brand product sitting in the Cost Plus catalog (e.g.
+    Eliquis, RxNorm TTY=SBD) would otherwise sail straight through the
+    Medicaid side and land in a "generics only" leaderboard uncontested --
+    caught during real-catalog testing, where it contributed a $480M+ single
+    -drug figure to a nominally generics-only total.
+
+    Reuses the crosswalk's own RxNorm TTY (already resolved for every row,
+    not a separate signal to trust) -- SBD/BPCK are branded dispensable
+    drugs. Rows with a confirmed brand TTY are marked unmatched (empty
+    matched_ndcs, crosswalk_matched=False) so they fall out of every
+    downstream computation via the same path an ordinary crosswalk miss
+    already does, rather than needing a second filter applied consistently
+    everywhere.
+    """
+    if not generics_only:
+        return drug_level
+    out = drug_level.copy()
+    is_brand = out["tty"].isin(BRAND_TTYS)
+    n_excluded = int(is_brand.sum())
+    if n_excluded:
+        print(f"[module_a] generics_only=True: excluding {n_excluded} confirmed-brand drug(s) "
+              f"(RxNorm TTY in {BRAND_TTYS}) from Part D and Medicaid gap computation:")
+        for _, row in out[is_brand].iterrows():
+            print(f"    - {row['drug_term']} (tty={row['tty']})")
+    out.loc[is_brand, "matched_ndcs"] = out.loc[is_brand, "matched_ndcs"].apply(lambda _: [])
+    out.loc[is_brand, "crosswalk_matched"] = False
+    out.loc[is_brand, "crosswalk_note"] = "excluded: confirmed brand drug (generics_only=True)"
+    return out
+
+
 def _check_unit_consistency(drug_level: pd.DataFrame) -> None:
     """HARD CONSTRAINT check: costplus_per_unit and nadac_per_unit must be on
     the same footing (both per NADAC Pricing Unit) before any subtraction.
@@ -190,6 +231,7 @@ def run(costplus_path: Path | None = None, force_refresh: bool = False, generics
 
     drug_level = build_drug_level_table(cp_df, nadac_df)
     _check_unit_consistency(drug_level)
+    drug_level = _exclude_brand_rows(drug_level, generics_only)
 
     all_matched_ndcs = sorted({ndc for ndcs in drug_level["matched_ndcs"] for ndc in ndcs})
 

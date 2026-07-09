@@ -91,6 +91,71 @@ def _sdud_fixture() -> pd.DataFrame:
     )
 
 
+def _drug_level_with_brand_fixture() -> pd.DataFrame:
+    """Same as _drug_level_fixture's matched generic row, plus a confirmed-
+    brand row (RxNorm TTY=SBD) that DOES crosswalk successfully -- the exact
+    shape that let Eliquis (apixaban, TTY=SBD) leak $480M+ into a nominally
+    generics-only Medicaid total during real-catalog testing, because
+    attach_sdud has no brand/generic awareness of its own."""
+    generic_row = _drug_level_fixture().iloc[[0]].copy()  # the matched "testdrug" row
+    brand_row = generic_row.copy()
+    brand_row["drug_term"] = "brandname 10 mg tablet"
+    brand_row["drug"] = "brandname"
+    brand_row["tty"] = "SBD"
+    brand_row["matched_ndcs"] = [["22222222222"]]
+    brand_row["costplus_per_unit"] = 5.75
+    return pd.concat([generic_row, brand_row], ignore_index=True)
+
+
+class TestExcludeBrandRows(unittest.TestCase):
+    def test_generics_only_true_strips_brand_ndcs_and_flags_unmatched(self):
+        out = a_arbitrage._exclude_brand_rows(_drug_level_with_brand_fixture(), generics_only=True)
+        brand_row = out[out["tty"] == "SBD"].iloc[0]
+        self.assertEqual(brand_row["matched_ndcs"], [])
+        self.assertFalse(brand_row["crosswalk_matched"])
+        generic_row = out[out["tty"] == "SCD"].iloc[0]
+        self.assertTrue(generic_row["crosswalk_matched"])
+        self.assertEqual(generic_row["matched_ndcs"], ["11111111111"])
+
+    def test_generics_only_false_leaves_brand_rows_untouched(self):
+        fixture = _drug_level_with_brand_fixture()
+        out = a_arbitrage._exclude_brand_rows(fixture, generics_only=False)
+        pd.testing.assert_frame_equal(out, fixture)
+
+    def test_brand_drug_excluded_from_medicaid_total_end_to_end(self):
+        """Regression test for the real bug: a brand drug's Medicaid gap must
+        contribute $0 to a generics_only leaderboard, not its real (often
+        huge) gap. Runs the same attach_sdud + build_leaderboard pipeline
+        modules.a_arbitrage.run() uses, just without the network calls."""
+        drug_level = _exclude_and_price(_drug_level_with_brand_fixture(), generics_only=True)
+        leaderboard = a_arbitrage.build_leaderboard(drug_level)
+        self.assertNotIn("brandname 10 mg tablet", leaderboard["drug_term"].values)
+        self.assertIn("testdrug 10 mg tablet", leaderboard["drug_term"].values)
+
+    def test_brand_drug_included_when_generics_only_false(self):
+        drug_level = _exclude_and_price(_drug_level_with_brand_fixture(), generics_only=False)
+        leaderboard = a_arbitrage.build_leaderboard(drug_level)
+        self.assertIn("brandname 10 mg tablet", leaderboard["drug_term"].values)
+
+
+def _exclude_and_price(drug_level: pd.DataFrame, generics_only: bool) -> pd.DataFrame:
+    filtered = a_arbitrage._exclude_brand_rows(drug_level, generics_only)
+    sdud = pd.concat(
+        [
+            _sdud_fixture(),
+            pd.DataFrame(
+                [{"ndc": "22222222222", "state": "XX", "product_name": "BRANDNAME",
+                  "units_reimbursed": 100.0, "medicaid_amount_reimbursed": 1000.0}]
+            ),
+        ],
+        ignore_index=True,
+    )
+    priced = a_arbitrage.attach_partd(filtered, _partd_fixture(), generics_only=generics_only)
+    priced = a_arbitrage.attach_sdud(priced, sdud)
+    priced = a_arbitrage.attach_nadac_gap(priced)
+    return priced
+
+
 class TestAttachPartd(unittest.TestCase):
     def test_gap_and_overpayment(self):
         drug_level = _drug_level_fixture()
