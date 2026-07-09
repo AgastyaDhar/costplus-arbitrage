@@ -163,6 +163,60 @@ over) each one.
   already has hand-entered formula inputs, an `implied_costplus_per_unit` /
   `price_check_note` sanity check against that real observed price.
 
+### Cost Plus Drugs GraphQL catalog (`fetch/costplus_graphql.py`)
+- **What it is**: costplusdrugs.com's public Saleor storefront GraphQL API
+  (`POST /graphql/`), the same API the site's own frontend calls. Contract
+  read (not copied) from github.com/DavidOsherdiagnostica/cost-plus-drugs,
+  then independently re-verified live before writing a line of this client
+  -- that repo has no `AGENTS.md` (checked via the GitHub API tree listing),
+  despite that being assumed. Cursor-paginated (Relay-style `first`/`after`),
+  disk-cached per page, resumable across interrupted runs. `robots.txt`
+  (`Allow: /`, no `Disallow` on `/graphql/`) permits it, and unlike the HTML
+  product pages, this endpoint answered an honest, self-identifying,
+  non-browser User-Agent with HTTP 200 immediately -- no CDN block, no
+  browser impersonation needed here.
+- **Solves the package_quantity gap**: 2,386/2,386 (100%) rows returned a
+  confirmed `package_size` metafield, vs 729/2,341 (31.1%) from the old
+  HTML/regex recovery. `package_size` itself is not perfectly reliable even
+  via this API -- reproduced live the exact case that broke the old
+  recovery (Ipratropium Bromide's "Box of 30 vials" variant still reports
+  `package_size == "1"`) -- but it is now structured data covering the whole
+  catalog rather than something recovered from free-text form fields for
+  under a third of it.
+- **A near-miss worth keeping visible**: an earlier version of this client
+  used the `retailPricePerUnit` metafield as `costplus_per_unit` directly,
+  since it looks exactly like Cost Plus's own stated per-unit price. It
+  isn't. Checked against ground truth already sitting in
+  `data/costplus.SCRAPED.csv` (real prices from live HTML product pages):
+  for Ibuprofen 100mg/5mL Bottle of Suspension, `retailPricePerUnit` implied
+  a $1,320 bottle; the real price is $7.89 -- 167x off. Reproduced on
+  Dimethyl Fumarate, Nitrofurantoin, and others, and it briefly produced a
+  leaderboard full of implausible multi-thousand-dollar gaps before this was
+  caught. The field that matches ground truth exactly (verified on every
+  overlapping SKU against the old scrape, 2,341/2,341 exact matches) is
+  variant-level `priceCalculation`, queried per-variant rather than the
+  ambiguous product-level field the reference repo's own query uses (which
+  only reflects the first-listed variant on a multi-variant product). This
+  client uses `priceCalculation` as `final_price` and the ordinary
+  `final_price / package_quantity` formula from here on -- no per-unit
+  shortcut.
+- **Second bug this coverage jump exposed, in Module A, not this fetcher**:
+  running Module A against the full 100%-covered catalog for the first time
+  surfaced that `attach_sdud` had no brand/generic awareness of its own
+  (SDUD is NDC-keyed, no brand flag) -- a brand drug in the Cost Plus catalog
+  (Eliquis, RxNorm TTY=SBD) sailed straight into a nominally generics-only
+  Medicaid total, contributing $480M+ uncontested, because only the Part D
+  join filtered by brand/generic status. Fixed in `modules/a_arbitrage.py`
+  (`_exclude_brand_rows`) by reusing the crosswalk's own RxNorm TTY to strip
+  brand NDCs from both Part D and Medicaid computation, not just one of them.
+  Regression-tested in `tests/test_module_a_math.py`.
+- **No fee breakdown here either**: acquisition_cost/markup/pharmacy_fee are
+  not present on any product or variant field this API exposes (checked the
+  full node shape) -- the same structural conclusion `costplus_scraper.py`
+  reached independently via the HTML path. `shipping_fee` is a JSON-LD
+  `Offer` field on the HTML page, not a GraphQL field in this schema, so it
+  is left blank on the GraphQL path (the HTML scraper still captures it).
+
 ### FDA Drug Shortages (`fetch/shortages.py`)
 - **Source**: openFDA's public `drug/shortages.json` endpoint (no
   authentication required). `status == "Current"` is treated as an active
