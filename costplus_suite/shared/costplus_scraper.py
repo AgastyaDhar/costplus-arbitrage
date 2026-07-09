@@ -60,25 +60,21 @@ from __future__ import annotations
 
 import argparse
 import json
-import random
 import re
 import sys
-import time
-import urllib.robotparser
 from pathlib import Path
 from typing import Optional
 
 import pandas as pd
-import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import config  # noqa: E402
 from shared import costplus as costplus_mod  # noqa: E402
 from shared import crosswalk  # noqa: E402
+from shared import scrape_utils  # noqa: E402
 
 BASE_URL = "https://www.costplusdrugs.com"
 SITEMAP_URL = f"{BASE_URL}/sitemap.xml"
-ROBOTS_URL = f"{BASE_URL}/robots.txt"
 
 # A generic non-browser UA (matching shared/http_cache.py's suite-wide identity)
 # is blocked at the CDN edge before robots.txt is ever consulted, regardless of
@@ -90,162 +86,20 @@ ROBOTS_URL = f"{BASE_URL}/robots.txt"
 # mitigation, not this site's stated policy, which this module respects by
 # self-throttling below regardless of what it could get away with.
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-MIN_DELAY_SECONDS = 2.0
-MAX_DELAY_SECONDS = 3.0
-
 CACHE_SUBDIR = config.CACHE_DIR / "costplus_scrape"
 
 REQUIRED_COLUMNS = costplus_mod.REQUIRED_COLUMNS  # keep in lockstep with the schema shared/costplus.py validates
 
-_session: Optional[requests.Session] = None
-_robots: Optional[urllib.robotparser.RobotFileParser] = None
-_last_request_ts: float = 0.0
+_fetcher = scrape_utils.PoliteFetcher(base_url=BASE_URL, user_agent=USER_AGENT, cache_dir=CACHE_SUBDIR)
+_polite_get = _fetcher.get  # module-level name so tests can monkeypatch `costplus_scraper._polite_get`
+_cache_path = _fetcher.cache_path
 
-
-def _get_session() -> requests.Session:
-    global _session
-    if _session is None:
-        _session = requests.Session()
-        _session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"})
-    return _session
-
-
-def _get_robots() -> urllib.robotparser.RobotFileParser:
-    global _robots
-    if _robots is None:
-        rp = urllib.robotparser.RobotFileParser()
-        rp.set_url(ROBOTS_URL)
-        try:
-            rp.read()
-        except Exception as exc:  # pragma: no cover - network failure path
-            print(f"[costplus_scraper] WARNING: could not read {ROBOTS_URL} ({exc}); refusing to scrape")
-            rp.disallow_all = True
-        _robots = rp
-    return _robots
-
-
-def _cache_path(url: str) -> Path:
-    import hashlib
-
-    CACHE_SUBDIR.mkdir(parents=True, exist_ok=True)
-    digest = hashlib.sha256(url.encode("utf-8")).hexdigest()[:24]
-    return CACHE_SUBDIR / f"{digest}.html"
-
-
-def _polite_get(url: str, force_refresh: bool = False) -> Optional[str]:
-    """Disk-cached, robots.txt-gated, rate-limited GET. Returns None (never
-    raises) on disallow/404/network failure so a caller can skip and keep a
-    coverage tally honest rather than aborting a whole run."""
-    cache_path = _cache_path(url)
-    if cache_path.exists() and not force_refresh:
-        return cache_path.read_text(encoding="utf-8")
-
-    robots = _get_robots()
-    if not robots.can_fetch(USER_AGENT, url):
-        print(f"[costplus_scraper] robots.txt disallows {url}, skipping")
-        return None
-
-    global _last_request_ts
-    elapsed = time.monotonic() - _last_request_ts
-    delay = random.uniform(MIN_DELAY_SECONDS, MAX_DELAY_SECONDS)
-    if elapsed < delay:
-        time.sleep(delay - elapsed)
-
-    try:
-        resp = _get_session().get(url, timeout=30)
-        _last_request_ts = time.monotonic()
-        if resp.status_code != 200:
-            print(f"[costplus_scraper] {url} -> HTTP {resp.status_code}, skipping")
-            return None
-        cache_path.write_text(resp.text, encoding="utf-8")
-        return resp.text
-    except requests.RequestException as exc:  # pragma: no cover - network failure path
-        _last_request_ts = time.monotonic()
-        print(f"[costplus_scraper] {url} -> request failed ({exc}), skipping")
-        return None
-
-
-# ---------------------------------------------------------------------------
-# Parsing: Next.js App Router streams page data as `self.__next_f.push([1,
-# "<escaped JSON string>"])` calls rather than the classic `__NEXT_DATA__`
-# blob. Each pushed string is itself a JSON string literal (one level of
-# backslash-escaping); the JSON-LD block and the `productDetails` object are
-# both found *inside* that decoded text, still one level escaped beyond that
-# (they were JSON.stringify'd again before being embedded). The helpers below
-# do this generically via character-level scanning rather than regex, so they
-# don't break on brackets/quotes that happen to appear in surrounding content.
-# ---------------------------------------------------------------------------
-def _scan_quoted_string(text: str, start: int) -> tuple[str, int]:
-    """text[start] must be an opening `"`. Returns (decoded value, index just
-    past the matching unescaped closing quote), using json.loads to unescape."""
-    if text[start] != '"':
-        raise ValueError(f"expected '\"' at index {start}")
-    i = start + 1
-    escaped = False
-    while i < len(text):
-        c = text[i]
-        if escaped:
-            escaped = False
-        elif c == "\\":
-            escaped = True
-        elif c == '"':
-            return json.loads(text[start : i + 1]), i + 1
-        i += 1
-    raise ValueError("unterminated quoted string")
-
-
-def _scan_balanced(text: str, start: int) -> tuple[str, int]:
-    """text[start] must be `{` or `[`. Returns (raw substring, index just past
-    the matching close bracket), respecting string literals so brackets
-    inside quoted text don't confuse the depth count."""
-    open_ch = text[start]
-    close_ch = {"{": "}", "[": "]"}[open_ch]
-    depth = 0
-    i = start
-    in_string = False
-    escaped = False
-    while i < len(text):
-        c = text[i]
-        if in_string:
-            if escaped:
-                escaped = False
-            elif c == "\\":
-                escaped = True
-            elif c == '"':
-                in_string = False
-        else:
-            if c == '"':
-                in_string = True
-            elif c == open_ch:
-                depth += 1
-            elif c == close_ch:
-                depth -= 1
-                if depth == 0:
-                    return text[start : i + 1], i + 1
-        i += 1
-    raise ValueError(f"unbalanced '{open_ch}...{close_ch}'")
-
-
-def _find_next_f_payloads(html: str) -> list[str]:
-    """Every `self.__next_f.push([1, "..."])` call's decoded (one level
-    unescaped) string argument, in document order."""
-    marker = "self.__next_f.push([1,"
-    payloads = []
-    idx = 0
-    while True:
-        idx = html.find(marker, idx)
-        if idx == -1:
-            break
-        qstart = html.find('"', idx + len(marker))
-        if qstart == -1:
-            break
-        try:
-            decoded, end = _scan_quoted_string(html, qstart)
-        except ValueError:
-            break
-        payloads.append(decoded)
-        idx = end
-    return payloads
+# Shared Next.js payload-scanning helpers (see shared/scrape_utils.py) -- bound
+# here under their original names so existing tests referencing
+# `costplus_scraper._scan_quoted_string` / `._scan_balanced` keep working.
+_scan_quoted_string = scrape_utils.scan_quoted_string
+_scan_balanced = scrape_utils.scan_balanced
+_find_next_f_payloads = scrape_utils.find_next_f_payloads
 
 
 def extract_jsonld(html: str) -> Optional[dict]:
