@@ -12,11 +12,15 @@ Two independent pieces (see METHODOLOGY.md for the full writeup of each):
      computation itself is a pure function (_compute_brand_leaderboard) over
      an in-memory DataFrame so it's unit-testable without a network call.
   2. TrumpRx-listed-price vs Cost Plus generic price comparison -- joins each
-     data/trumprx.csv brand row to its Cost Plus generic equivalent via the
-     Phase 0 crosswalk (shared.crosswalk), and outputs the headline
-     brand_name/trumprx_price/costplus_generic_price/gap/gap_pct exhibit,
-     sorted by gap descending. Skips cleanly (returns None) if
-     data/trumprx.csv hasn't been populated yet.
+     TrumpRx brand row (data/trumprx.csv, or data/trumprx.SCRAPED.csv via
+     fetch.trumprx's live scraper) to its Cost Plus generic equivalent via
+     the Phase 0 crosswalk (shared.crosswalk), and outputs the headline
+     brand_name/dosage/trumprx_price/costplus_generic_price/gap/gap_pct
+     exhibit, sorted by gap descending. Skips cleanly (returns None) if
+     no TrumpRx price list has been populated yet. Prints an explicit
+     brand-level coverage report (matched count and the unmatched brand
+     list) so the crosswalk's real hit rate is visible, not just the rows
+     that happened to match.
 """
 from __future__ import annotations
 
@@ -81,7 +85,7 @@ def _ingredient_norm_for_term(term: str) -> str | None:
 def _join_trumprx_to_costplus(trumprx_with_ingredient: pd.DataFrame, costplus_with_ingredient: pd.DataFrame) -> pd.DataFrame:
     """Pure join/math over two already-ingredient-normalized DataFrames --
     directly unit-testable without any crosswalk/network calls.
-      trumprx_with_ingredient: brand_name, trumprx_price, ingredient_norm
+      trumprx_with_ingredient: brand_name, dosage, trumprx_price, ingredient_norm
       costplus_with_ingredient: costplus_per_unit, package_quantity, ingredient_norm
     costplus_generic_price is a PACKAGE-level price (costplus_per_unit *
     package_quantity, both already-validated existing fields -- not a new
@@ -100,7 +104,7 @@ def _join_trumprx_to_costplus(trumprx_with_ingredient: pd.DataFrame, costplus_wi
     merged["gap"] = merged["trumprx_price"] - merged["costplus_generic_price"]
     merged["gap_pct"] = (merged["gap"] / merged["trumprx_price"]) * 100
     merged = merged.sort_values("gap", ascending=False).reset_index(drop=True)
-    return merged[["brand_name", "trumprx_price", "costplus_generic_price", "gap", "gap_pct"]]
+    return merged[["brand_name", "dosage", "trumprx_price", "costplus_generic_price", "gap", "gap_pct"]]
 
 
 def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) -> pd.DataFrame | None:
@@ -111,12 +115,13 @@ def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) ->
         return None
 
     trumprx_df = trumprx_df.copy()
+    all_brands = sorted(trumprx_df["brand_name"].dropna().unique())
+
     trumprx_df["ingredient_norm"] = [
         _ingredient_norm_for_term(f"{g} {d}")
         for g, d in zip(trumprx_df["generic_name"], trumprx_df["dosage"])
     ]
-    n_unmatched = trumprx_df["ingredient_norm"].isna().sum()
-    trumprx_df = trumprx_df.dropna(subset=["ingredient_norm"])
+    usable = trumprx_df.dropna(subset=["ingredient_norm"])
 
     cp = cp_df.copy()
     cp["ingredient_norm"] = [
@@ -124,11 +129,17 @@ def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) ->
         for term, drug in zip(cp["drug_term"], cp["drug"])
     ]
 
-    comparison = _join_trumprx_to_costplus(trumprx_df, cp)
+    comparison = _join_trumprx_to_costplus(usable, cp)
+
+    matched_brands = set(comparison["brand_name"])
+    unmatched_brands = [b for b in all_brands if b not in matched_brands]
     print(
-        f"[module_e] TrumpRx comparison: {len(comparison)} brand(s) matched to a Cost Plus generic "
-        f"({n_unmatched} TrumpRx row(s) could not be resolved to an ingredient via the crosswalk)"
+        f"[module_e] TrumpRx-to-Cost-Plus-generic coverage: {len(matched_brands)}/{len(all_brands)} "
+        "brand(s) matched a Cost Plus generic via the Phase 0 crosswalk"
     )
+    if unmatched_brands:
+        print(f"[module_e] Unmatched ({len(unmatched_brands)}): {', '.join(unmatched_brands)}")
+
     return comparison
 
 
