@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+costplus_suite/cache/
+costplus_suite/output/
+data/costplus.csv
+.idea/
