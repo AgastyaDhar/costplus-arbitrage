@@ -277,26 +277,53 @@ gap_nadac = costplus_per_unit - nadac_per_unit   (Cost Plus's margin over true a
   so a human can confirm `package_quantity` for that row counts the right
   thing before trusting its `costplus_per_unit`.
 
-## Deferred: Cost Plus / TrumpRx scraping
+## Module E: brand price-movement proxy (`modules/e_brand_trumprx.py`)
 
-Per the build spec, Cost Plus prices are supplied as a CSV, not scraped, in
-this phase -- Cost Plus's benchmark price is the yardstick the entire
-analysis measures against, so an unattended, unreviewed HTML scraper feeding
-it directly was deliberately avoided (fragile to markup changes, no versioned
-distribution ID to cite as a source, unlike every CMS/FDA dataset this suite
-uses). The same reasoning was applied to `fetch/trumprx.py`: trumprx.gov is a
-client-rendered app with no static pricing data and no discovered public API;
-that module is an explicit `NotImplementedError` stub rather than a
-best-effort scraper, and Module E runs its brand price-increase leaderboard
-without the TrumpRx comparison until this is deliberately wired up.
+Two independent pieces:
 
-## Unresolved: `fetch/brooklyn.py`
+1. **Brand price-increase leaderboard.** The spec's ask -- "list-price
+   movement" for brand drugs -- runs into the same wall as Modules B/C:
+   manufacturer WAC/list price is proprietary (First Databank/Medi-Span) and
+   out of scope ("no proprietary or paid data"). This piece instead uses
+   Medicare Part D Spending by Drug's own year-over-year change in gross
+   average spend per dosage unit
+   (`Chg_Avg_Spnd_Per_Dsg_Unt_<y-1>_<y>`), restricted to brand rows
+   (`Brnd_Name != Gnrc_Name` via `fetch.partd.is_generic_row()`) and to
+   `Mftr_Name == "Overall"` rows (the same defensive filter as Module A's
+   `attach_partd` -- per-manufacturer breakdown rows must never be summed on
+   top of "Overall," or spend is double-counted).
+   **This is a utilization-blended proxy, not pure WAC.** Gross spend per
+   dosage unit moves for two reasons that this number cannot separate: (a)
+   the manufacturer actually raising its list/net price, and (b) the mix of
+   *who* is filling the drug shifting year to year (different payer/rebate
+   mix, different patient volume at different price points). A true WAC
+   series would isolate (a) alone; this proxy bakes in (b) as well, which can
+   push the reported change in either direction relative to a real price
+   increase. It is exactly the same caveat already stated for Modules B/C's
+   use of this column, and the output column is named
+   `gross_spend_per_unit_yoy_chg_pct` (never "list price" or "WAC") for the
+   same reason.
+2. **TrumpRx-vs-Cost-Plus-generic comparison** -- see the TrumpRx section
+   below.
 
-The original project layout names a `fetch/brooklyn.py` alongside the other
-fetch modules, but no dataset called "Brooklyn" is described anywhere else in
-the build spec, and nothing by that name surfaced as a recognizable public
-CMS/FDA/HHS drug-pricing dataset during Phase 1/2 research. Left as an
-explicit stub rather than guessed at.
+## TrumpRx comparison (`fetch/trumprx.py`, `data/trumprx.csv`)
+
+trumprx.gov is a client-rendered app with no discovered public bulk-data feed
+or API, so its prices are supplied as a hand-populated CSV
+(`brand_name, generic_name, dosage, trumprx_price, list_price`) rather than
+scraped -- the same reasoning Cost Plus scraping had to work around in
+`shared/costplus_scraper.py`, except TrumpRx exposes nothing at all
+server-rendered to even attempt it against.
+`modules.e_brand_trumprx.trumprx_comparison()` resolves each TrumpRx row's
+`generic_name`/`dosage` and each Cost Plus catalog row's `drug_term` to an
+ingredient via the same Phase 0 crosswalk (`shared.crosswalk`) used
+throughout the suite, joins on that ingredient, and compares `trumprx_price`
+to Cost Plus's own package-level price (`costplus_per_unit * package_quantity`
+-- both already-validated fields from the existing schema, not a new
+estimate). **Limitation**: `data/trumprx.csv` carries no quantity/days-supply
+column, so this assumes TrumpRx and Cost Plus dispense the same quantity for
+a given drug/strength; this cannot be verified from the CSV as specified and
+is stated here rather than silently assumed away.
 
 ## Testing (`tests/`)
 
