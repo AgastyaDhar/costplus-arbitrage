@@ -1,28 +1,59 @@
 """
-TrumpRx listed-price comparison -- NOT IMPLEMENTED.
+TrumpRx listed-price loader.
 
-trumprx.gov is a client-rendered Next.js app (confirmed by inspection: the
-static HTML ships no pricing data, only JS bundles). No public bulk-data feed
-or documented API was found on the site. Getting prices out of it would mean
-either (a) reverse-engineering an undocumented internal API, which can change
-without notice and isn't something to bake into an unattended pipeline without
-review, or (b) headless-browser scraping, which the build spec explicitly
-deferred for Cost Plus's own site for the same reason ("Do not scrape yet") --
-the same caution applies here, doubly so since this benchmark would sit next
-to the Cost Plus numbers in the same leaderboard.
-
-This module is left as a stub on purpose rather than silently faked. To wire
-it up for real: either get an official data source/API from TrumpRx, or
-explicitly ask for a one-off reviewed scraper (mirroring the fetch/costplus_
-scrape.py pattern already flagged as optional for Cost Plus).
+trumprx.gov is a client-rendered app with no discovered public bulk-data feed
+or API (confirmed by inspection: the static HTML ships no pricing data, only
+JS bundles) -- unlike costplusdrugs.com, whose product pages DO expose real
+prices in a parseable Product/Offer block (see shared/costplus_scraper.py),
+trumprx.gov exposes nothing server-rendered to even attempt that against.
+Its prices are therefore supplied as a hand-populated CSV at
+data/trumprx.csv (columns: brand_name, generic_name, dosage, trumprx_price,
+list_price), mirroring how shared/costplus.py treats data/costplus.csv.
 """
 from __future__ import annotations
 
+import sys
+from pathlib import Path
 
-def load_trumprx_prices():
-    raise NotImplementedError(
-        "TrumpRx has no discovered public API or bulk data feed. See module "
-        "docstring. Module E (modules/e_brand_trumprx.py) runs its brand "
-        "list-price leaderboard without a TrumpRx comparison until this is "
-        "wired up deliberately."
-    )
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import config  # noqa: E402
+
+REQUIRED_COLUMNS = ["brand_name", "generic_name", "dosage", "trumprx_price", "list_price"]
+
+
+def load_trumprx_prices(path: Path | None = None) -> pd.DataFrame:
+    """Load and validate the TrumpRx price list.
+
+    Raises FileNotFoundError if data/trumprx.csv hasn't been populated yet --
+    modules.e_brand_trumprx.trumprx_comparison() catches this and skips the
+    comparison cleanly rather than fabricating one.
+    """
+    path = path or (config.DATA_DIR / "trumprx.csv")
+    if not path.exists():
+        raise FileNotFoundError(
+            f"TrumpRx price list not found at {path}. trumprx.gov has no public API or bulk "
+            "data feed (see module docstring) -- supply this CSV by hand (columns: brand_name, "
+            "generic_name, dosage, trumprx_price, list_price)."
+        )
+
+    df = pd.read_csv(path)
+    missing = [c for c in REQUIRED_COLUMNS if c not in df.columns]
+    if missing:
+        raise ValueError(f"{path} is missing required columns: {missing}")
+
+    for col in ("trumprx_price", "list_price"):
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    if "SAMPLE" in path.name.upper():
+        print(
+            "[fetch.trumprx] *** WARNING: loading data/trumprx.SAMPLE.csv -- fabricated placeholder "
+            "prices, NOT real TrumpRx data. Every downstream number is for pipeline testing only. ***"
+        )
+        df.attrs["is_sample"] = True
+    else:
+        df.attrs["is_sample"] = False
+
+    print(f"[fetch.trumprx] Loaded {len(df):,} TrumpRx price rows from {path}")
+    return df

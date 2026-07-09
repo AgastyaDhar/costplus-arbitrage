@@ -28,6 +28,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import config  # noqa: E402
+from shared import crosswalk  # noqa: E402
 from fetch import partd as fetch_partd, trumprx as fetch_trumprx  # noqa: E402
 
 YOY_CHG_COL_RE = re.compile(r"^Chg_Avg_Spnd_Per_Dsg_Unt_\d{2}_\d{2}$")
@@ -62,18 +63,79 @@ def brand_price_increase_leaderboard(top_n: int = 25) -> pd.DataFrame:
     return leaderboard
 
 
-def trumprx_comparison(cp_df: pd.DataFrame) -> pd.DataFrame | None:
+# ---------------------------------------------------------------------------
+# TrumpRx vs Cost Plus generic comparison -- the headline exhibit.
+# ---------------------------------------------------------------------------
+def _ingredient_norm_for_term(term: str) -> str | None:
+    """Resolve a free-text drug term to the same normalized-ingredient join
+    key used throughout the suite (shared.crosswalk.normalize_drug_name),
+    via the untouched Phase 0 RxNav resolution. Returns None if RxNav has no
+    dispensable match for the term -- never a guessed ingredient."""
+    resolved = crosswalk.resolve_dispensable_rxcui(term)
+    if resolved is None:
+        return None
+    ingredient = crosswalk.get_ingredient_name(resolved["rxcui"])
+    return crosswalk.normalize_drug_name(ingredient or term)
+
+
+def _join_trumprx_to_costplus(trumprx_with_ingredient: pd.DataFrame, costplus_with_ingredient: pd.DataFrame) -> pd.DataFrame:
+    """Pure join/math over two already-ingredient-normalized DataFrames --
+    directly unit-testable without any crosswalk/network calls.
+      trumprx_with_ingredient: brand_name, trumprx_price, ingredient_norm
+      costplus_with_ingredient: costplus_per_unit, package_quantity, ingredient_norm
+    costplus_generic_price is a PACKAGE-level price (costplus_per_unit *
+    package_quantity, both already-validated existing fields -- not a new
+    estimate) so it's on the same "price per fill" basis trumprx_price is
+    presumably on. See METHODOLOGY.md for the quantity-matching caveat this
+    implies (trumprx.csv carries no quantity column of its own).
+    """
+    cp = costplus_with_ingredient.copy()
+    cp["costplus_generic_price"] = cp["costplus_per_unit"] * cp["package_quantity"]
+    # A drug can have several Cost Plus strengths under one ingredient (the
+    # same granularity mismatch documented for Part D in METHODOLOGY.md); take
+    # the median package price across them as the representative generic price.
+    cp_by_ingredient = cp.groupby("ingredient_norm", as_index=False)["costplus_generic_price"].median()
+
+    merged = trumprx_with_ingredient.merge(cp_by_ingredient, on="ingredient_norm", how="inner")
+    merged["gap"] = merged["trumprx_price"] - merged["costplus_generic_price"]
+    merged["gap_pct"] = (merged["gap"] / merged["trumprx_price"]) * 100
+    merged = merged.sort_values("gap", ascending=False).reset_index(drop=True)
+    return merged[["brand_name", "trumprx_price", "costplus_generic_price", "gap", "gap_pct"]]
+
+
+def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) -> pd.DataFrame | None:
     try:
-        fetch_trumprx.load_trumprx_prices()
-    except NotImplementedError as e:
+        trumprx_df = fetch_trumprx.load_trumprx_prices(trumprx_path)
+    except FileNotFoundError as e:
         print(f"[module_e] Skipping TrumpRx comparison: {e}")
         return None
 
+    trumprx_df = trumprx_df.copy()
+    trumprx_df["ingredient_norm"] = [
+        _ingredient_norm_for_term(f"{g} {d}")
+        for g, d in zip(trumprx_df["generic_name"], trumprx_df["dosage"])
+    ]
+    n_unmatched = trumprx_df["ingredient_norm"].isna().sum()
+    trumprx_df = trumprx_df.dropna(subset=["ingredient_norm"])
 
-def run(costplus_path: Path | None = None) -> dict:
+    cp = cp_df.copy()
+    cp["ingredient_norm"] = [
+        _ingredient_norm_for_term(term) or crosswalk.normalize_drug_name(drug)
+        for term, drug in zip(cp["drug_term"], cp["drug"])
+    ]
+
+    comparison = _join_trumprx_to_costplus(trumprx_df, cp)
+    print(
+        f"[module_e] TrumpRx comparison: {len(comparison)} brand(s) matched to a Cost Plus generic "
+        f"({n_unmatched} TrumpRx row(s) could not be resolved to an ingredient via the crosswalk)"
+    )
+    return comparison
+
+
+def run(costplus_path: Path | None = None, trumprx_path: Path | None = None) -> dict:
     from shared import costplus as costplus_mod  # local import, avoids Module A's crosswalk cost when unused
 
     cp_df = costplus_mod.load_costplus(costplus_path)
     leaderboard = brand_price_increase_leaderboard()
-    trumprx = trumprx_comparison(cp_df)
+    trumprx = trumprx_comparison(cp_df, trumprx_path)
     return {"brand_leaderboard": leaderboard, "trumprx_comparison": trumprx}

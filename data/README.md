@@ -13,3 +13,22 @@
   `[SAMPLE DATA -- NOT REAL COST PLUS PRICES]` by the code that reads it.
   Never treat numbers derived from this file as real, and never rename it to
   `costplus.csv`.
+
+- `costplus.SCRAPED.csv` -- **generated, not committed.** Written by
+  `shared/costplus_scraper.py` (`run.py --source scrape`) refreshing whatever
+  is currently in `costplus.csv`/`costplus.SAMPLE.csv` against live
+  costplusdrugs.com data. `acquisition_cost`/`markup`/`pharmacy_fee`/
+  `package_quantity` are carried over from the input file unchanged (the site
+  doesn't expose them -- see METHODOLOGY.md); review before promoting any of
+  it into `costplus.csv` by hand.
+
+- `trumprx.csv` -- **not included in this repo.** Supply your own TrumpRx
+  price list here to enable the TrumpRx-vs-Cost-Plus-generic comparison in
+  Module E. Schema: `brand_name, generic_name, dosage, trumprx_price,
+  list_price`. trumprx.gov has no public API or bulk-data feed, so this is
+  populated by hand from the site, same as `costplus.csv` originally was.
+
+- `trumprx.SAMPLE.csv` -- **fabricated placeholder data**, six brand/generic
+  pairs with round, made-up prices, used only to exercise Module E's TrumpRx
+  comparison end-to-end. Loaded via `run.py --sample`; labeled
+  `SAMPLE DATA -- NOT REAL` by the code that reads it.

@@ -25,6 +25,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Cost Plus arbitrage suite")
     p.add_argument("--costplus", type=Path, default=None, help="Path to Cost Plus CSV (default: data/costplus.csv)")
     p.add_argument("--sample", action="store_true", help="Use data/costplus.SAMPLE.csv instead of real data")
+    p.add_argument("--trumprx", type=Path, default=None, help="Path to TrumpRx CSV for Module E (default: data/trumprx.csv, or data/trumprx.SAMPLE.csv with --sample)")
     p.add_argument("--claims", type=Path, default=None, help="Path to a claims CSV, enables Module D")
     p.add_argument("--force-refresh", action="store_true", help="Bypass disk caches and re-fetch everything")
     p.add_argument(
@@ -54,6 +55,14 @@ def resolve_costplus_path(args: argparse.Namespace) -> Path:
     if args.sample:
         return config.DATA_DIR / "costplus.SAMPLE.csv"
     return config.DATA_DIR / "costplus.csv"
+
+
+def resolve_trumprx_path(args: argparse.Namespace) -> Path:
+    if args.trumprx:
+        return args.trumprx
+    if args.sample:
+        return config.DATA_DIR / "trumprx.SAMPLE.csv"
+    return config.DATA_DIR / "trumprx.csv"
 
 
 def resolve_enabled_modules(args: argparse.Namespace) -> set[str]:
@@ -110,8 +119,10 @@ def main() -> None:
 
     if "e" in enabled:
         from modules import e_brand_trumprx
-        e_result = e_brand_trumprx.run(costplus_path)
+        e_result = e_brand_trumprx.run(costplus_path, resolve_trumprx_path(args))
         report.write_csv(e_result["brand_leaderboard"], "brand_price_increase_leaderboard.csv", is_sample)
+        if e_result["trumprx_comparison"] is not None:
+            report.write_csv(e_result["trumprx_comparison"], "trumprx_vs_costplus_generic.csv", is_sample)
 
     if "f" in enabled:
         print("[run] Module F requires an explicit oncology NDC list -- run modules.f_oncology.run(ndcs) directly "
