@@ -1,0 +1,11 @@
+drug,strength,form,package_quantity,acquisition_cost,markup,pharmacy_fee,shipping_fee
+atorvastatin,20 mg,tablet,90,3.00,1.15,5.00,5.00
+metformin,500 mg,tablet,90,2.00,1.15,5.00,5.00
+lisinopril,10 mg,tablet,90,2.50,1.15,5.00,5.00
+amlodipine,5 mg,tablet,90,2.00,1.15,5.00,5.00
+levothyroxine,50 mcg,tablet,90,4.00,1.15,5.00,5.00
+omeprazole,20 mg,capsule,90,3.50,1.15,5.00,5.00
+simvastatin,20 mg,tablet,90,3.00,1.15,5.00,5.00
+losartan potassium,50 mg,tablet,90,3.00,1.15,5.00,5.00
+metoprolol tartrate,50 mg,tablet,90,2.50,1.15,5.00,5.00
+gabapentin,300 mg,capsule,90,4.00,1.15,5.00,5.00
