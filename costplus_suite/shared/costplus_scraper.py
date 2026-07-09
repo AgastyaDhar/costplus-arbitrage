@@ -284,7 +284,8 @@ def _rows_from_product_page(html: str) -> list[dict]:
             "drug": None, "strength": None, "form": None, "package_quantity": None,
             "acquisition_cost": None, "markup": None, "pharmacy_fee": None,
             "shipping_fee": shipping_fee, "final_price": None, "brand_name": brand_name,
-            "sku": None, "package_size_raw": None, "scrape_matched_slug": None, "scrape_status": "ok",
+            "sku": None, "package_size_raw": None, "volume_raw": None,
+            "scrape_matched_slug": None, "scrape_status": "ok",
         }
         row.update(overrides)
         return row
@@ -303,6 +304,7 @@ def _rows_from_product_page(html: str) -> list[dict]:
                     final_price=price,
                     sku=variant.get("sku"),
                     package_size_raw=mf.get("package_size"),
+                    volume_raw=mf.get("volume") or None,
                     scrape_matched_slug=mf.get("slug"),
                     scrape_status="ok" if price is not None else "matched_no_price",
                 )
@@ -346,7 +348,8 @@ def scrape_full_catalog(limit: int | None = None, force_refresh: bool = False) -
                     "drug": None, "strength": None, "form": None, "package_quantity": None,
                     "acquisition_cost": None, "markup": None, "pharmacy_fee": None,
                     "shipping_fee": None, "final_price": None, "brand_name": None, "sku": None,
-                    "package_size_raw": None, "scrape_matched_slug": slug, "scrape_status": "fetch_failed",
+                    "package_size_raw": None, "volume_raw": None,
+                    "scrape_matched_slug": slug, "scrape_status": "fetch_failed",
                 }
             )
             continue
@@ -358,7 +361,8 @@ def scrape_full_catalog(limit: int | None = None, force_refresh: bool = False) -
                     "drug": None, "strength": None, "form": None, "package_quantity": None,
                     "acquisition_cost": None, "markup": None, "pharmacy_fee": None,
                     "shipping_fee": None, "final_price": None, "brand_name": None, "sku": None,
-                    "package_size_raw": None, "scrape_matched_slug": slug, "scrape_status": "unparseable_page",
+                    "package_size_raw": None, "volume_raw": None,
+                    "scrape_matched_slug": slug, "scrape_status": "unparseable_page",
                 }
             )
             continue
@@ -516,6 +520,103 @@ def run(costplus_path: Path | None = None, limit: int | None = None, force_refre
     cp_df = costplus_mod.load_costplus(costplus_path)
     coverage = print_crosswalk_coverage(cp_df, force_refresh=force_refresh)
     return {"scraped": scraped_df, "output_path": out_path, "coverage": coverage}
+
+
+# ---------------------------------------------------------------------------
+# Package-quantity recovery.
+#
+# The `package_size` metafield (captured as `package_size_raw`) was the first
+# candidate investigated and REJECTED: it was identical ("1000") across four
+# different atorvastatin strengths, and more damningly, it directly
+# contradicts the site's own VISIBLE text in cases like Ipratropium Bromide
+# (form field literally says "Box of 30 vials"; package_size_raw was "1").
+# It is not used here at all.
+#
+# The real signal lives in a *different*, previously-uninspected field on the
+# same Next.js payload: each variant's `metafields.volume` (e.g. "30 Tablets",
+# "240mL", "45gm", "4 Patches") -- a clean, human-readable package description,
+# populated for 772/2,341 real scraped rows. `parse_package_quantity_from_volume`
+# accepts ONLY the subset that parses as an unambiguous single "<number>
+# <unit>" (728 of those 772); compound/multi-part descriptions (e.g. "60mL
+# (30 x 2mL)", where it's unclear whether the NADAC-comparable quantity is 60
+# or 30) are deliberately left unresolved rather than guessed.
+#
+# An earlier version of this function ALSO required final_price/package_size
+# to be >= the drug's real nadac_per_unit (reasoning: Cost Plus can't sell
+# below acquisition cost). That check is INTENTIONALLY NOT applied as a
+# pass/fail gate: it rejected several drugs (e.g. Prasugrel HCl, explicitly
+# labeled "Bottle of 30 Tablets") that were only ~3% below NADAC's national
+# median -- entirely explained by Cost Plus's own negotiated cost being
+# slightly better than the survey average, not a wrong count. nadac_per_unit
+# is still attached to every row for transparency/context, just not used to
+# override what the page's own visible text says.
+# ---------------------------------------------------------------------------
+_VOLUME_PREFIX_RE = re.compile(r"^(box of|pack of|carton of)\s+", re.IGNORECASE)
+_VOLUME_QTY_RE = re.compile(
+    r"^(\d+(?:\.\d+)?)\s*"
+    r"(mL|ml|g|gm|grams?|liters?|ea|tablets?|capsules?|patches?|doses?|unit doses?|packets?|pack|"
+    r"blisters?|rings?|suppositories?|lozenges?|test strips?|kits?|pens?|syringes?|lancets?|swabs?|pads?|cans?|vials?)$",
+    re.IGNORECASE,
+)
+
+
+def parse_package_quantity_from_volume(volume_raw) -> Optional[float]:
+    """Parse a `metafields.volume` string (e.g. "30 Tablets", "240mL") into a
+    bare numeric quantity. Returns None for blank, compound (e.g. "60mL (30 x
+    2mL)"), or otherwise-unrecognized text -- never guesses which number in a
+    compound description is the intended quantity."""
+    if not isinstance(volume_raw, str) or not volume_raw.strip():
+        return None
+    stripped = _VOLUME_PREFIX_RE.sub("", volume_raw.strip())
+    m = _VOLUME_QTY_RE.match(stripped)
+    return float(m.group(1)) if m else None
+
+
+def recover_package_quantity(scraped_df: pd.DataFrame, force_refresh: bool = False) -> pd.DataFrame:
+    from fetch import nadac as fetch_nadac
+
+    nadac_df = fetch_nadac.load_nadac(force_refresh=force_refresh)
+
+    out = scraped_df.copy()
+    out["package_quantity"] = pd.NA  # always start blank; only ever filled in by the "confirmed" branch below
+    out["nadac_per_unit"] = pd.NA
+    out["package_quantity_status"] = "no_drug_strength_form"
+
+    usable_mask = out["drug"].notna() & out["strength"].notna() & out["form"].notna()
+    for idx in out[usable_mask].index:
+        row = out.loc[idx]
+
+        qty = parse_package_quantity_from_volume(row.get("volume_raw"))
+        if qty is None:
+            out.at[idx, "package_quantity_status"] = (
+                "ambiguous_volume_text" if pd.notna(row.get("volume_raw")) else "no_volume_text_captured"
+            )
+        else:
+            out.at[idx, "package_quantity"] = qty
+            out.at[idx, "package_quantity_status"] = "confirmed"
+
+        # nadac_per_unit is attached for every resolvable row regardless of the
+        # above, purely as transparency context -- never used to override a
+        # confirmed, directly-stated quantity (see docstring above).
+        term = f"{row['drug']} {row['strength']} {row['form']}"
+        result = crosswalk.crosswalk_drug(term, nadac_df)
+        if result.matched and result.nadac_per_unit is not None:
+            out.at[idx, "nadac_per_unit"] = result.nadac_per_unit
+
+    counts = out["package_quantity_status"].value_counts()
+    print("\n[costplus_scraper] === PACKAGE QUANTITY RECOVERY ===")
+    for status, n in counts.items():
+        print(f"[costplus_scraper]   {status}: {n:,}")
+    return out
+
+
+def build_runnable_catalog(recovered_df: pd.DataFrame) -> pd.DataFrame:
+    """Filter to rows Module A can actually price: a confirmed package_quantity
+    (see recover_package_quantity) is required, since shared/costplus.py's
+    loader rejects any row missing it. acquisition_cost/markup/pharmacy_fee
+    stay blank -- costplus_per_unit falls back to final_price/package_quantity
+    for these, per the source-aware fix already in shared/costplus.py."""
+    return recovered_df[recovered_df["package_quantity_status"] == "confirmed"].copy()
 
 
 def _parse_args() -> argparse.Namespace:

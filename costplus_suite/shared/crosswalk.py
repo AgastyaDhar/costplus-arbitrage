@@ -138,6 +138,47 @@ def normalize_drug_name(name: str) -> str:
     return re.sub(r"\s+", " ", letters_only).strip()
 
 
+# A scraped Cost Plus catalog term is built by naive concatenation of the
+# site's own drug/strength/form fields (see shared/costplus.py), and those
+# two fields are sometimes independently verbose about release timing --
+# e.g. drug="Lithium Carbonate Extended Release (ER)", form="Extended
+# Release Tablet" -- producing a query with "Extended Release" (or its
+# "(ER)" abbreviation) repeated. Confirmed directly against RxNav during
+# development: the redundant, over-long query can surface only a dose-form-
+# level concept (TTY SCDF/SCDFP) instead of the actual dispensable (SCD)
+# one; removing ONE of the duplicate occurrences is enough to fix it. This
+# never changes which ingredient/strength/release-type is being asked about,
+# only removes literal word-for-word repetition -- pure formatting.
+_RELEASE_PHRASES = [
+    "extended release", "extended-release", "delayed release", "delayed-release",
+    "sustained release", "controlled release", "immediate release",
+]
+_RELEASE_ABBREV_RE = re.compile(r"\s*\((er|xr|dr|sr|cr|ir)\)", re.IGNORECASE)
+_RELEASE_ABBREV_EXPANSIONS = {
+    "er": "extended release", "xr": "extended release", "dr": "delayed release",
+    "sr": "sustained release", "cr": "controlled release", "ir": "immediate release",
+}
+
+
+def _dedupe_redundant_release_wording(term: str) -> str:
+    """Collapse a release-timing phrase (or its parenthetical abbreviation)
+    that appears more than once in `term` down to a single occurrence."""
+    t = term
+    m = _RELEASE_ABBREV_RE.search(t)
+    if m and _RELEASE_ABBREV_EXPANSIONS.get(m.group(1).lower(), "\0") in t.lower():
+        t = _RELEASE_ABBREV_RE.sub("", t)
+    lowered = t.lower()
+    for phrase in _RELEASE_PHRASES:
+        first = lowered.find(phrase)
+        if first == -1:
+            continue
+        second = lowered.find(phrase, first + len(phrase))
+        if second != -1:
+            t = t[:second] + t[second + len(phrase):]
+            lowered = t.lower()
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def get_ingredient_name(rxcui: str) -> Optional[str]:
     """Resolve a dispensable drug's RxCUI down to its bare ingredient name
     (RxNorm TTY=IN), e.g. 617310 'atorvastatin 20 MG Oral Tablet' -> 'atorvastatin'.
@@ -187,10 +228,20 @@ def crosswalk_drug(term: str, nadac_df: pd.DataFrame) -> CrosswalkResult:
     result = CrosswalkResult(drug_term=term)
 
     resolved = resolve_dispensable_rxcui(term)
+    fallback_used = False
+    if resolved is None:
+        # Only ever tried after the raw term has already failed -- never
+        # overrides an existing successful resolution, so this can't change
+        # any drug that already matches, only rescue a subset of failures.
+        cleaned = _dedupe_redundant_release_wording(term)
+        if cleaned != term:
+            resolved = resolve_dispensable_rxcui(cleaned)
+            fallback_used = resolved is not None
     if resolved is None:
         result.note = "no dispensable (SCD/SBD) RxCUI found in top candidates"
         return result
 
+    fallback_tag = "[via name-normalization fallback] " if fallback_used else ""
     result.rxcui = resolved["rxcui"]
     result.resolved_name = resolved["resolved_name"]
     result.tty = resolved["tty"]
@@ -199,15 +250,17 @@ def crosswalk_drug(term: str, nadac_df: pd.DataFrame) -> CrosswalkResult:
     ndcs = get_ndcs_for_rxcui(result.rxcui)
     result.ndc_count = len(ndcs)
     if not ndcs:
-        result.note = "RxCUI resolved but RxNav returned zero NDCs"
+        result.note = fallback_tag + "RxCUI resolved but RxNav returned zero NDCs"
         return result
 
     hits = nadac_df.loc[nadac_df.index.intersection(ndcs)]
     result.matched_ndc_count = len(hits)
     if hits.empty:
-        result.note = "resolved NDCs, but none priced in the current NADAC file"
+        result.note = fallback_tag + "resolved NDCs, but none priced in the current NADAC file"
         return result
 
+    if fallback_used:
+        result.note = fallback_tag.strip()
     units = hits["pricing_unit"].unique().tolist()
     result.pricing_unit_consistent = len(units) == 1
     result.pricing_unit = hits["pricing_unit"].mode().iloc[0]

@@ -4,5 +4,6 @@ costplus_suite/cache/
 costplus_suite/output/
 data/costplus.csv
 data/costplus.SCRAPED.csv
+data/costplus.RUNNABLE.csv
 data/trumprx.csv
 .idea/
