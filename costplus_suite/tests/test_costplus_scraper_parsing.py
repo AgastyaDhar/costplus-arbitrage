@@ -154,7 +154,7 @@ class TestScrapeDrugParsing(unittest.TestCase):
 
         self.assertEqual(row["scrape_status"], "ok")
         self.assertEqual(row["brand_name"], "Lipitor")
-        self.assertEqual(row["observed_costplus_price"], 5.46)
+        self.assertEqual(row["final_price"], 5.46)
         self.assertEqual(row["shipping_fee"], 5)
         # never exposed by the site -- must stay blank, never back-solved
         self.assertIsNone(row["acquisition_cost"])
