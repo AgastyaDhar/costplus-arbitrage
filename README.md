@@ -21,7 +21,8 @@ python run.py
 - A total dollar figure: estimated annual overpayment across all matched
   generics
 - A comparison of brand-name drugs on TrumpRx vs their generic equivalent
-  at Cost Plus
+  at Cost Plus (e.g. Azulfidine EN-tabs on TrumpRx: $130.80 vs. its
+  generic, sulfasalazine, at Cost Plus: $12.42 -- a $118.38 gap)
 
 ## Methodology
 

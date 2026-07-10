@@ -28,6 +28,16 @@ import config  # noqa: E402
 import report  # noqa: E402
 from modules import a_arbitrage  # noqa: E402
 
+# Windows Python defaults sys.stdout to the system's ANSI codepage (often
+# cp1252) regardless of the console's own codepage -- brand names containing
+# non-ASCII characters (e.g. "Mounjaro(R)") print as mojibake even though the
+# underlying string and every written CSV are correctly UTF-8. Force UTF-8 on
+# stdout so what's printed matches what's written to disk.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Cost Plus arbitrage suite")
