@@ -47,7 +47,7 @@ MODULES_ENABLED = {
     "b_intelligence": False,
     "c_list_vs_net": False,
     "d_employer_calculator": False,
-    "e_brand_trumprx": False,
+    "e_brand_trumprx": True,
     "f_oncology": False,
 }
 

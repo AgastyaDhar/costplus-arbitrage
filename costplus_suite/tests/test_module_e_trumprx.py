@@ -3,8 +3,6 @@ Unit tests for modules.e_brand_trumprx's TrumpRx-to-Cost-Plus-generic join
 (the headline exhibit). Pure function over small synthetic, already-
 ingredient-normalized DataFrames -- no crosswalk/network calls.
 """
-import contextlib
-import io
 import sys
 import tempfile
 import unittest
@@ -32,11 +30,14 @@ def _costplus_fixture() -> pd.DataFrame:
     return pd.DataFrame(
         [
             # acquisition_cost*markup + pharmacy_fee = 3*1.15+5 = 8.45 package price
-            {"costplus_per_unit": 8.45 / 90, "package_quantity": 90, "ingredient_norm": "ATORVASTATIN"},
+            {"costplus_per_unit": 8.45 / 90, "package_quantity": 90, "ingredient_norm": "ATORVASTATIN",
+             "costplus_generic": "atorvastatin", "canonical_unit": "EA"},
             # 2*1.15+5 = 7.30 package price
-            {"costplus_per_unit": 7.30 / 90, "package_quantity": 90, "ingredient_norm": "METFORMIN"},
+            {"costplus_per_unit": 7.30 / 90, "package_quantity": 90, "ingredient_norm": "METFORMIN",
+             "costplus_generic": "metformin", "canonical_unit": "EA"},
             # a second atorvastatin strength -- median of [8.45, 9.60] = 9.025
-            {"costplus_per_unit": 9.60 / 90, "package_quantity": 90, "ingredient_norm": "ATORVASTATIN"},
+            {"costplus_per_unit": 9.60 / 90, "package_quantity": 90, "ingredient_norm": "ATORVASTATIN",
+             "costplus_generic": "atorvastatin", "canonical_unit": "EA"},
         ]
     )
 
@@ -68,12 +69,21 @@ class TestJoinTrumprxToCostplus(unittest.TestCase):
 
     def test_output_columns_match_headline_exhibit_spec(self):
         out = e_brand_trumprx._join_trumprx_to_costplus(_trumprx_fixture(), _costplus_fixture())
-        self.assertEqual(list(out.columns), ["brand_name", "dosage", "trumprx_price", "costplus_generic_price", "gap", "gap_pct"])
+        self.assertEqual(
+            list(out.columns),
+            ["brand_name", "dosage", "trumprx_price", "costplus_generic", "costplus_generic_price", "gap", "gap_pct", "canonical_unit"],
+        )
 
     def test_dosage_passes_through_unchanged(self):
         out = e_brand_trumprx._join_trumprx_to_costplus(_trumprx_fixture(), _costplus_fixture())
         row = out[out["brand_name"] == "Glucophage"].iloc[0]
         self.assertEqual(row["dosage"], "500mg")
+
+    def test_costplus_generic_name_and_canonical_unit_present(self):
+        out = e_brand_trumprx._join_trumprx_to_costplus(_trumprx_fixture(), _costplus_fixture())
+        row = out[out["brand_name"] == "Glucophage"].iloc[0]
+        self.assertEqual(row["costplus_generic"], "metformin")
+        self.assertEqual(row["canonical_unit"], "EA")
 
 
 class TestTrumprxComparisonCoverageReport(unittest.TestCase):
@@ -90,12 +100,14 @@ class TestTrumprxComparisonCoverageReport(unittest.TestCase):
         )
         return path
 
-    def _costplus_df(self) -> pd.DataFrame:
+    def _drug_level_df(self) -> pd.DataFrame:
         return pd.DataFrame(
             [
                 {
                     "drug_term": "atorvastatin 20 mg tablet", "drug": "atorvastatin",
+                    "ingredient_name": "atorvastatin", "ingredient_norm": "ATORVASTATIN",
                     "costplus_per_unit": 8.45 / 90, "package_quantity": 90,
+                    "nadac_pricing_unit": "EA", "crosswalk_matched": True,
                 }
             ]
         )
@@ -108,15 +120,13 @@ class TestTrumprxComparisonCoverageReport(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             trumprx_path = self._write_trumprx_csv(d)
             with patch.object(e_brand_trumprx, "_ingredient_norm_for_term", side_effect=fake_ingredient):
-                buf = io.StringIO()
-                with contextlib.redirect_stdout(buf):
-                    comparison = e_brand_trumprx.trumprx_comparison(self._costplus_df(), trumprx_path)
+                result = e_brand_trumprx.trumprx_comparison(self._drug_level_df(), trumprx_path)
 
-        output = buf.getvalue()
-        self.assertEqual(len(comparison), 1)
-        self.assertEqual(comparison.iloc[0]["brand_name"], "Lipitor")
-        self.assertIn("1/2", output)  # 1 of 2 brands matched
-        self.assertIn("Novolog", output)  # the unmatched brand is listed, not hidden
+        self.assertEqual(len(result["comparison"]), 1)
+        self.assertEqual(result["comparison"].iloc[0]["brand_name"], "Lipitor")
+        self.assertEqual(result["matched_brands"], 1)
+        self.assertEqual(result["total_brands"], 2)
+        self.assertIn("Novolog", result["unmatched_brands"])
 
 
 if __name__ == "__main__":

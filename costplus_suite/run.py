@@ -156,10 +156,10 @@ def main() -> None:
 
     if "e" in enabled:
         from modules import e_brand_trumprx
-        e_result = e_brand_trumprx.run(costplus_path, resolve_trumprx_path(args))
+        e_result = e_brand_trumprx.run(result["drug_level"], resolve_trumprx_path(args))
         report.write_csv(e_result["brand_leaderboard"], "brand_price_increase_leaderboard.csv", is_sample)
         if e_result["trumprx_comparison"] is not None:
-            report.write_csv(e_result["trumprx_comparison"], "trumprx_vs_costplus_generic.csv", is_sample)
+            report.write_trumprx_comparison(e_result["trumprx_comparison"], is_sample)
 
     if "f" in enabled:
         print("[run] Module F requires an explicit oncology NDC list -- run modules.f_oncology.run(ndcs) directly "

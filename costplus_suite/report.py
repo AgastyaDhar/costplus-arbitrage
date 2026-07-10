@@ -83,6 +83,32 @@ def print_aggregate_summary(result: dict) -> None:
         print(f"\n{SAMPLE_BANNER}")
 
 
+def print_trumprx_comparison(trumprx_result: dict, is_sample: bool, top_n: int = 5) -> None:
+    if is_sample:
+        print(f"\n{SAMPLE_BANNER}")
+    print(f"\n=== TOP {top_n} -- TrumpRx brand vs Cost Plus generic equivalent ===")
+    print("(brand cash price vs. generic cash price for the SAME MOLECULE, not the same drug -- see METHODOLOGY.md)")
+    cols = [
+        "brand_name", "dosage", "trumprx_price", "costplus_generic",
+        "costplus_generic_price", "gap", "gap_pct", "canonical_unit",
+    ]
+    with pd.option_context("display.width", 200, "display.max_columns", 20, "display.float_format", "{:.2f}".format):
+        print(trumprx_result["comparison"][cols].head(top_n).to_string(index=False))
+
+    matched, total = trumprx_result["matched_brands"], trumprx_result["total_brands"]
+    print(f"\n[report] {matched} of {total} TrumpRx brands matched to a Cost Plus generic")
+    unmatched = trumprx_result["unmatched_brands"]
+    if unmatched:
+        print(f"[report] Unmatched ({len(unmatched)}): {', '.join(unmatched)}")
+    if is_sample:
+        print(f"\n{SAMPLE_BANNER}")
+
+
+def write_trumprx_comparison(trumprx_result: dict, is_sample: bool) -> Path:
+    print_trumprx_comparison(trumprx_result, is_sample)
+    return write_csv(trumprx_result["comparison"], "trumprx_comparison.csv", is_sample)
+
+
 def write_digest(text: str, filename: str, is_sample: bool = False) -> Path:
     path = config.OUTPUT_DIR / f"{_sample_prefix(is_sample)}{filename}"
     path.write_text(text, encoding="utf-8")

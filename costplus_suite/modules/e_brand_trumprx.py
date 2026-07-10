@@ -13,14 +13,20 @@ Two independent pieces (see METHODOLOGY.md for the full writeup of each):
      an in-memory DataFrame so it's unit-testable without a network call.
   2. TrumpRx-listed-price vs Cost Plus generic price comparison -- joins each
      TrumpRx brand row (data/trumprx.csv, or data/trumprx.SCRAPED.csv via
-     fetch.trumprx's live scraper) to its Cost Plus generic equivalent via
-     the Phase 0 crosswalk (shared.crosswalk), and outputs the headline
-     brand_name/dosage/trumprx_price/costplus_generic_price/gap/gap_pct
-     exhibit, sorted by gap descending. Skips cleanly (returns None) if
-     no TrumpRx price list has been populated yet. Prints an explicit
-     brand-level coverage report (matched count and the unmatched brand
-     list) so the crosswalk's real hit rate is visible, not just the rows
-     that happened to match.
+     fetch.trumprx's live scraper) to its Cost Plus generic equivalent by
+     ingredient_norm against modules.a_arbitrage's already-crosswalked
+     drug_level table (reused, not re-resolved -- Module A always runs
+     first and has already paid the RxNav/NADAC cost of resolving every
+     Cost Plus row's ingredient and NADAC pricing unit; a second
+     independent crosswalk here would just duplicate that work and could
+     drift from Module A's own generics_only filtering). Outputs the
+     headline brand_name/dosage/trumprx_price/costplus_generic/
+     costplus_generic_price/gap/gap_pct/canonical_unit exhibit, sorted by
+     gap descending. Skips cleanly (returns None) if no TrumpRx price list
+     has been populated yet. Returns brand-level coverage info (matched
+     count, total count, unmatched brand list) so the caller (report.py)
+     can print it -- the crosswalk's real hit rate should be visible, not
+     just the rows that happened to match.
 """
 from __future__ import annotations
 
@@ -82,11 +88,20 @@ def _ingredient_norm_for_term(term: str) -> str | None:
     return crosswalk.normalize_drug_name(ingredient or term)
 
 
+def _mode_or_first(s: pd.Series):
+    """Most common value in a group, falling back to the first when every
+    value is unique (mode() can return an empty Series in that case)."""
+    m = s.mode()
+    return m.iat[0] if not m.empty else s.iloc[0]
+
+
 def _join_trumprx_to_costplus(trumprx_with_ingredient: pd.DataFrame, costplus_with_ingredient: pd.DataFrame) -> pd.DataFrame:
     """Pure join/math over two already-ingredient-normalized DataFrames --
     directly unit-testable without any crosswalk/network calls.
       trumprx_with_ingredient: brand_name, dosage, trumprx_price, ingredient_norm
-      costplus_with_ingredient: costplus_per_unit, package_quantity, ingredient_norm
+      costplus_with_ingredient: costplus_per_unit, package_quantity,
+        ingredient_norm, costplus_generic (display name of the generic),
+        canonical_unit (NADAC pricing unit, already resolved by Module A)
     costplus_generic_price is a PACKAGE-level price (costplus_per_unit *
     package_quantity, both already-validated existing fields -- not a new
     estimate) so it's on the same "price per fill" basis trumprx_price is
@@ -97,17 +112,32 @@ def _join_trumprx_to_costplus(trumprx_with_ingredient: pd.DataFrame, costplus_wi
     cp["costplus_generic_price"] = cp["costplus_per_unit"] * cp["package_quantity"]
     # A drug can have several Cost Plus strengths under one ingredient (the
     # same granularity mismatch documented for Part D in METHODOLOGY.md); take
-    # the median package price across them as the representative generic price.
-    cp_by_ingredient = cp.groupby("ingredient_norm", as_index=False)["costplus_generic_price"].median()
+    # the median package price across them as the representative generic
+    # price, and the most common name/unit as the representative label.
+    cp_by_ingredient = cp.groupby("ingredient_norm", as_index=False).agg(
+        costplus_generic_price=("costplus_generic_price", "median"),
+        costplus_generic=("costplus_generic", _mode_or_first),
+        canonical_unit=("canonical_unit", _mode_or_first),
+    )
 
     merged = trumprx_with_ingredient.merge(cp_by_ingredient, on="ingredient_norm", how="inner")
     merged["gap"] = merged["trumprx_price"] - merged["costplus_generic_price"]
     merged["gap_pct"] = (merged["gap"] / merged["trumprx_price"]) * 100
     merged = merged.sort_values("gap", ascending=False).reset_index(drop=True)
-    return merged[["brand_name", "dosage", "trumprx_price", "costplus_generic_price", "gap", "gap_pct"]]
+    return merged[[
+        "brand_name", "dosage", "trumprx_price", "costplus_generic",
+        "costplus_generic_price", "gap", "gap_pct", "canonical_unit",
+    ]]
 
 
-def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) -> pd.DataFrame | None:
+def trumprx_comparison(drug_level: pd.DataFrame, trumprx_path: Path | None = None) -> dict | None:
+    """drug_level: modules.a_arbitrage's own crosswalked table (result["drug_level"]
+    from a_arbitrage.run()) -- reused rather than re-crosswalked, see module
+    docstring. Only its crosswalk_matched rows are eligible Cost Plus generics.
+
+    Returns None if no TrumpRx price list has been populated yet, else a dict:
+    {"comparison": DataFrame, "matched_brands": int, "total_brands": int,
+     "unmatched_brands": list[str]}."""
     try:
         trumprx_df = fetch_trumprx.load_trumprx_prices(trumprx_path)
     except FileNotFoundError as e:
@@ -123,30 +153,29 @@ def trumprx_comparison(cp_df: pd.DataFrame, trumprx_path: Path | None = None) ->
     ]
     usable = trumprx_df.dropna(subset=["ingredient_norm"])
 
-    cp = cp_df.copy()
-    cp["ingredient_norm"] = [
-        _ingredient_norm_for_term(term) or crosswalk.normalize_drug_name(drug)
-        for term, drug in zip(cp["drug_term"], cp["drug"])
-    ]
+    matched = drug_level[drug_level["crosswalk_matched"]]
+    cp = pd.DataFrame({
+        "ingredient_norm": matched["ingredient_norm"],
+        "costplus_per_unit": matched["costplus_per_unit"],
+        "package_quantity": matched["package_quantity"],
+        "costplus_generic": matched["ingredient_name"].fillna(matched["drug"]),
+        "canonical_unit": matched["nadac_pricing_unit"],
+    })
 
     comparison = _join_trumprx_to_costplus(usable, cp)
 
     matched_brands = set(comparison["brand_name"])
     unmatched_brands = [b for b in all_brands if b not in matched_brands]
-    print(
-        f"[module_e] TrumpRx-to-Cost-Plus-generic coverage: {len(matched_brands)}/{len(all_brands)} "
-        "brand(s) matched a Cost Plus generic via the Phase 0 crosswalk"
-    )
-    if unmatched_brands:
-        print(f"[module_e] Unmatched ({len(unmatched_brands)}): {', '.join(unmatched_brands)}")
 
-    return comparison
+    return {
+        "comparison": comparison,
+        "matched_brands": len(matched_brands),
+        "total_brands": len(all_brands),
+        "unmatched_brands": unmatched_brands,
+    }
 
 
-def run(costplus_path: Path | None = None, trumprx_path: Path | None = None) -> dict:
-    from shared import costplus as costplus_mod  # local import, avoids Module A's crosswalk cost when unused
-
-    cp_df = costplus_mod.load_costplus(costplus_path)
+def run(drug_level: pd.DataFrame, trumprx_path: Path | None = None) -> dict:
     leaderboard = brand_price_increase_leaderboard()
-    trumprx = trumprx_comparison(cp_df, trumprx_path)
+    trumprx = trumprx_comparison(drug_level, trumprx_path)
     return {"brand_leaderboard": leaderboard, "trumprx_comparison": trumprx}

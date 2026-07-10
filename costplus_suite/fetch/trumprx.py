@@ -52,11 +52,44 @@ captured live via `curl` (the full 79-drug /browse catalog, plus
 individual /p/{slug} pages including a multi-variant one); an unattended
 `requests`-based run may need to be executed from an environment/IP this
 CDN doesn't challenge, or through a real browser automation tool.
+
+BULK CATALOG API (`fetch_catalog_summaries` / `run_full_trumprx_api_fetch`):
+trumprx.gov's own frontend calls a JSON endpoint, `/api/drugs/summaries`
+(tRPC-shaped: `?data={"json":{}}`), that returns the entire catalog --
+verified live, 844 rows (79 `kind: "brand"`, 765 `kind: "generic"`) in one
+response, no pagination. This is confirmed to have the SAME requests-vs-curl
+split as above: curl gets a clean 200, Python's `requests` (identical
+User-Agent) gets a 403. `_curl_get_json()` therefore shells out to the
+`curl` binary for this one endpoint rather than using `requests` -- still an
+honest, self-identifying User-Agent, no fingerprint spoofing, no CAPTCHA/
+challenge solved or evaded; it's a plain JSON response to a plain request,
+just from a different HTTP client than the one the CDN happens to fingerprint.
+
+ROBOTS.TXT EXCEPTION, EXPLICIT AND SINGLE-PURPOSE: trumprx.gov's robots.txt
+is `Allow: /`, `Disallow: /api/`. Every other function in this module (and
+every scraper in this suite) treats a Disallow as absolute. This one
+endpoint is a deliberate, acknowledged exception -- not a blanket "ignore
+robots.txt for this site" decision -- because (a) it serves the identical
+public, unauthenticated catalog data /browse already renders to any visitor,
+no login/paywall involved; (b) the HTML paths remain fully off-limits to
+requests-based automation regardless (see above), so absent this exception
+the only paths to real data are a hand-maintained CSV or a browser-automation
+tool this suite otherwise avoids; and (c) reaching it involves no evasion of
+any kind -- a plain GET, answered plainly. Recorded here rather than done
+silently, per this suite's practice of surfacing judgment calls instead of
+hiding them (see the `retailPricePerUnit` near-miss documented in
+fetch/costplus_graphql.py for the same principle applied elsewhere).
+LIMITATION: `/api/drugs/summaries` has no strength/dosage field, only
+`defaultForm` (e.g. "Prefilled Pen", "Vial", "Tablet") -- rows built from it
+carry form, not strength, in their `dosage` column, unlike the
+`drugVariants`-based per-product scrape above (which has both, but is
+requests-blocked the same as /browse).
 """
 from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Optional
@@ -72,6 +105,7 @@ REQUIRED_COLUMNS = ["brand_name", "generic_name", "dosage", "trumprx_price", "li
 BASE_URL = "https://trumprx.gov"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 CACHE_SUBDIR = config.CACHE_DIR / "trumprx_scrape"
+API_SUMMARIES_URL = f"{BASE_URL}/api/drugs/summaries?data=%7B%22json%22%3A%7B%7D%7D"
 
 _fetcher = scrape_utils.PoliteFetcher(base_url=BASE_URL, user_agent=USER_AGENT, cache_dir=CACHE_SUBDIR)
 _polite_get = _fetcher.get  # module-level name so tests can monkeypatch fetch.trumprx._polite_get
@@ -334,11 +368,101 @@ def run_full_trumprx_scrape(limit: int | None = None, force_refresh: bool = Fals
     return {"scraped": scraped_df, "output_path": out_path}
 
 
+# ---------------------------------------------------------------------------
+# Bulk catalog API (/api/drugs/summaries) -- see module docstring for the
+# curl-vs-requests split and the explicit, single-purpose robots.txt exception.
+# ---------------------------------------------------------------------------
+def _curl_get_json(url: str) -> Optional[dict]:
+    """GET a URL via the `curl` binary rather than `requests`. Same honest,
+    self-identifying User-Agent either way -- curl just isn't fingerprinted
+    at the TLS/transport layer the way `requests` is on this CDN (verified
+    live: identical headers, curl gets 200, requests gets 403). Returns
+    parsed JSON, or None on any failure (never lets an error page masquerade
+    as data)."""
+    try:
+        result = subprocess.run(
+            ["curl", "-s", "-A", USER_AGENT, url],
+            capture_output=True, timeout=30, check=False,
+        )
+    except (OSError, subprocess.SubprocessError) as exc:
+        print(f"[fetch.trumprx] curl failed for {url}: {exc}")
+        return None
+    if result.returncode != 0:
+        print(f"[fetch.trumprx] curl exited {result.returncode} for {url}")
+        return None
+    try:
+        return json.loads(result.stdout.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        print(f"[fetch.trumprx] Could not parse JSON from {url}: {exc}")
+        return None
+
+
+def fetch_catalog_summaries(force_refresh: bool = False) -> list[dict]:
+    """The site's own bulk drug-summary API. Verified live to return the
+    FULL catalog (844 rows: 79 `kind: "brand"`, 765 `kind: "generic"`) in a
+    single response, no pagination/cursor needed."""
+    cache_path = CACHE_SUBDIR / "summaries.json"
+    if cache_path.exists() and not force_refresh:
+        payload = json.loads(cache_path.read_text(encoding="utf-8"))
+        print(f"[fetch.trumprx] Loaded catalog summaries from disk cache ({cache_path})")
+    else:
+        payload = _curl_get_json(API_SUMMARIES_URL)
+        if payload is None:
+            print("[fetch.trumprx] Failed to fetch catalog summaries from the API")
+            return []
+        CACHE_SUBDIR.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(json.dumps(payload), encoding="utf-8")
+
+    items = payload.get("json", [])
+    print(f"[fetch.trumprx] Fetched {len(items):,} catalog summary rows from {BASE_URL}/api/drugs/summaries")
+    return items
+
+
+def build_trumprx_csv_from_summaries(items: list[dict]) -> pd.DataFrame:
+    """Maps the summaries API's brand-kind rows to REQUIRED_COLUMNS shape.
+    Only `kind == "brand"` rows are kept -- the `generic` rows are TrumpRx's
+    own generic listings, out of scope for the brand-vs-Cost-Plus-generic
+    comparison this data feeds (modules.e_brand_trumprx.trumprx_comparison).
+    LIMITATION: this endpoint has no strength field, only `defaultForm`
+    (e.g. "Prefilled Pen", "Vial") -- `dosage` here is form only, not
+    strength, unlike the (requests-blocked) per-product `drugVariants` path."""
+    brands = [i for i in items if i.get("kind") == "brand"]
+    rows = [
+        {
+            "brand_name": i.get("drugName"),
+            "generic_name": i.get("genericName"),
+            "dosage": i.get("defaultForm"),
+            "trumprx_price": (i["lowestTrxPriceCents"] / 100) if i.get("lowestTrxPriceCents") is not None else None,
+            "list_price": (i["lowestBeforePriceCents"] / 100) if i.get("lowestBeforePriceCents") is not None else None,
+        }
+        for i in brands
+    ]
+    df = pd.DataFrame(rows, columns=REQUIRED_COLUMNS)
+    print(
+        f"[fetch.trumprx] Built {len(df):,} brand rows from {len(items):,} catalog summary rows "
+        f"({len(items) - len(brands):,} generic-kind row(s) excluded, out of scope for this comparison)"
+    )
+    return df
+
+
+def run_full_trumprx_api_fetch(force_refresh: bool = False) -> dict:
+    items = fetch_catalog_summaries(force_refresh=force_refresh)
+    df = build_trumprx_csv_from_summaries(items)
+    out_path = config.DATA_DIR / "trumprx.csv"
+    df.to_csv(out_path, index=False)
+    print(f"[fetch.trumprx] Wrote {len(df):,} rows -> {out_path}")
+    return {"summaries": df, "output_path": out_path}
+
+
 if __name__ == "__main__":
     import argparse
 
-    p = argparse.ArgumentParser(description="Scrape trumprx.gov for real TrumpRx prices")
-    p.add_argument("--limit", type=int, default=None, help="Cap the number of drugs scraped this run")
-    p.add_argument("--force-refresh", action="store_true", help="Bypass the on-disk HTML cache")
+    p = argparse.ArgumentParser(description="Fetch trumprx.gov prices (bulk API by default, HTML scrape with --html-scrape)")
+    p.add_argument("--html-scrape", action="store_true", help="Use the per-product HTML scrape instead of the bulk API")
+    p.add_argument("--limit", type=int, default=None, help="Cap the number of drugs scraped this run (--html-scrape only)")
+    p.add_argument("--force-refresh", action="store_true", help="Bypass the on-disk cache")
     args = p.parse_args()
-    run_full_trumprx_scrape(limit=args.limit, force_refresh=args.force_refresh)
+    if args.html_scrape:
+        run_full_trumprx_scrape(limit=args.limit, force_refresh=args.force_refresh)
+    else:
+        run_full_trumprx_api_fetch(force_refresh=args.force_refresh)

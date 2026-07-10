@@ -362,22 +362,65 @@ Two independent pieces:
 
 ## TrumpRx comparison (`fetch/trumprx.py`, `data/trumprx.csv`)
 
-trumprx.gov is a client-rendered app with no discovered public bulk-data feed
-or API, so its prices are supplied as a hand-populated CSV
-(`brand_name, generic_name, dosage, trumprx_price, list_price`) rather than
-scraped -- the same reasoning Cost Plus scraping had to work around in
-`fetch/costplus_html_scraper.py`, except TrumpRx exposes nothing at all
-server-rendered to even attempt it against.
-`modules.e_brand_trumprx.trumprx_comparison()` resolves each TrumpRx row's
-`generic_name`/`dosage` and each Cost Plus catalog row's `drug_term` to an
-ingredient via the same Phase 0 crosswalk (`shared.crosswalk`) used
-throughout the suite, joins on that ingredient, and compares `trumprx_price`
-to Cost Plus's own package-level price (`costplus_per_unit * package_quantity`
--- both already-validated fields from the existing schema, not a new
-estimate). **Limitation**: `data/trumprx.csv` carries no quantity/days-supply
+**What the comparison shows**: for each brand-name drug listed on TrumpRx, the
+price TrumpRx lists for that brand versus the price of the **generic
+equivalent of the same molecule** at Cost Plus (e.g. TrumpRx's Lipitor price
+vs. Cost Plus's atorvastatin price) -- not the same drug, and not a same-brand
+comparison. `modules.e_brand_trumprx.trumprx_comparison()` resolves each
+TrumpRx row's `generic_name`/`dosage` to an ingredient via the same Phase 0
+crosswalk (`shared.crosswalk`) used throughout the suite, then joins that
+ingredient against `modules.a_arbitrage`'s already-crosswalked Cost Plus table
+(`drug_level`, reused rather than re-resolved -- Module A always runs first
+and has already paid the RxNav/NADAC cost of resolving every Cost Plus row's
+ingredient, generic-only status, and NADAC pricing unit). `trumprx_price` is
+compared to Cost Plus's own package-level price
+(`costplus_per_unit * package_quantity` -- both already-validated fields from
+the existing schema, not a new estimate); when an ingredient matches more than
+one Cost Plus strength, the median package price and the most common
+generic-name/pricing-unit label represent that ingredient.
+
+**Data source, and why it's hand-entered**: `data/trumprx.csv`
+(`brand_name, generic_name, dosage, trumprx_price, list_price`) is
+hand-populated from trumprx.gov. `fetch/trumprx.py` has a real scraper for
+this site -- it isn't a client-rendered dead end; `/browse` and `/p/{slug}`
+embed the full catalog and per-product variant data as Next.js
+`self.__next_f.push(...)` payloads, the same technique
+`fetch/costplus_html_scraper.py` uses, and the scraper honors trumprx.gov's
+own `robots.txt` (`Allow: /`, `Disallow: /api/` -- the scraper never touches
+`/api/`). Confirmed live as of this build, though: `/browse` currently serves
+an interactive Cloudflare Turnstile challenge page, caught explicitly by
+`shared.scrape_utils.ChallengeDetectedError` (`PoliteFetcher` recognizes the
+challenge and raises rather than silently returning challenge HTML as if it
+were data). The scraper stops there rather than attempting to solve or evade
+Turnstile -- doing so would cross from "identify honestly" into active
+evasion, which this suite's scrapers deliberately never do (see
+`fetch/costplus_html_scraper.py`'s own robots.txt/User-Agent discipline for
+the same principle applied elsewhere). Until that challenge is absent for a
+given run (a different environment/IP, or Cloudflare's own challenge
+frequency), `data/trumprx.csv` stays the hand-maintained path; if
+`fetch.trumprx.run_full_trumprx_scrape()` ever completes cleanly, its output
+(`data/trumprx.SCRAPED.csv`) loads through the exact same
+`load_trumprx_prices()` the hand-entered CSV does, no separate code path
+needed.
+
+**Known limitation, coverage**: not every TrumpRx brand has a Cost Plus
+generic equivalent -- either the molecule isn't in the Cost Plus catalog, or
+the crosswalk can't resolve it. `output/trumprx_comparison.csv` only contains
+matched rows; the unmatched brand names are never silently dropped -- they're
+printed explicitly (`report.print_trumprx_comparison`'s coverage line, "N of
+M TrumpRx brands matched to a Cost Plus generic") so the real hit rate is
+visible.
+
+**Limitation, quantity**: `data/trumprx.csv` carries no quantity/days-supply
 column, so this assumes TrumpRx and Cost Plus dispense the same quantity for
 a given drug/strength; this cannot be verified from the CSV as specified and
 is stated here rather than silently assumed away.
+
+**Honesty rail**: this is a brand cash price vs. a generic cash price, for
+the same molecule, clearly labeled as such in every column name
+(`costplus_generic`, not `costplus_brand`) and in the printed exhibit header
+("TrumpRx brand vs Cost Plus generic equivalent"). It is never presented as
+an apples-to-apples comparison of the same drug.
 
 ## Testing (`tests/`)
 
