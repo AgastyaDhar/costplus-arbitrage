@@ -14,21 +14,38 @@ All datasets are discovered at runtime (no hardcoded resource IDs, since NADAC/P
 
 ## Running it
 
+Real Cost Plus prices come from the site's own GraphQL storefront API (see
+`costplus_suite/fetch/costplus_graphql.py`), not a hand-supplied CSV.
+
 ```
 pip install -r requirements.txt      # pandas + stdlib; see costplus_suite for imports
 cd costplus_suite
-python run.py --sample               # fabricated placeholder data, exercises the full pipeline
+python run.py --source graphql       # runs the full pipeline against the committed real catalog
 ```
 
-To run against real data, drop your own Cost Plus price list at `data/costplus.csv`
-(schema documented in `data/README.md`) and run:
+`data/costplus.GRAPHQL.csv` is committed as a point-in-time catalog fetch.
+`--source graphql` filters it to rows with a confirmed `package_quantity`,
+writes the result to `data/costplus.GRAPHQL.RUNNABLE.csv`, and runs Module A
+(plus any enabled Phase 2 modules) against that.
+
+To refresh the catalog with a current snapshot before running (e.g. prices
+have moved since the committed one):
 
 ```
-python run.py
+python -m fetch.costplus_graphql     # re-fetches -> data/costplus.GRAPHQL.csv
+python run.py --source graphql
 ```
 
-`run.py` refuses to run against real data unless `data/costplus.csv` is present --
-it will never silently fall back to the sample file.
+There's also `--source scrape`, which drives Module A off an HTML page-scrape
+(`data/costplus.SCRAPED.csv`) instead of the GraphQL API -- see
+`fetch/costplus_html_scraper.py` and its module docstring for why the GraphQL
+path is preferred (it confirms `package_quantity` for the whole catalog
+rather than recovering it from free-text page fields).
+
+Plain `python run.py` (no `--source`) instead loads `data/costplus.csv` as-is
+and refuses to run unless that file is present. This is for supplying your
+own price list (schema documented in `data/README.md`) rather than using this
+repo's own scraped/GraphQL data.
 
 ## Headline finding
 
