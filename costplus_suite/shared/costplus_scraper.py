@@ -385,6 +385,85 @@ def scrape_full_catalog(limit: int | None = None, force_refresh: bool = False) -
     return out, total_catalog_size
 
 
+def fetch_missing_variants(target_slugs: list[str], min_delay_seconds: float = 3.0, max_delay_seconds: float = 3.5) -> pd.DataFrame:
+    """Directly fetch a specific, targeted list of slugs -- e.g. Task 1's (a)
+    bucket: rows whose own product page was never a direct fetch target
+    during the earlier full-catalog run (their data came entirely from being
+    listed as a sibling on some other page). Unlike scrape_full_catalog, this
+    does NOT skip a slug just because a sibling already "covered" it -- the
+    whole point is to check whether that variant's OWN page reveals data
+    (specifically `metafields.volume`) the sibling-embedded copy didn't have.
+
+    Uses a dedicated, stricter-than-default PoliteFetcher (3-3.5s between
+    requests, same cache dir so it resumes cleanly across interrupted runs)
+    and stops immediately -- raising, not swallowing -- if a real
+    anti-automation challenge appears (see shared.scrape_utils.
+    ChallengeDetectedError); costplusdrugs.com is known to throttle but not
+    to present one, so this would be a real, reportable surprise.
+    """
+    fetcher = scrape_utils.PoliteFetcher(
+        base_url=BASE_URL, user_agent=USER_AGENT, cache_dir=CACHE_SUBDIR,
+        min_delay_seconds=min_delay_seconds, max_delay_seconds=max_delay_seconds,
+    )
+
+    rows: list[dict] = []
+    for i, slug in enumerate(target_slugs, 1):
+        try:
+            html = fetcher.get(f"{BASE_URL}/medications/{slug}/")
+        except scrape_utils.ChallengeDetectedError as exc:
+            print(f"[costplus_scraper] STOPPING: {exc}")
+            print(f"[costplus_scraper] Completed {i - 1}/{len(target_slugs)} target slugs before the challenge appeared.")
+            break
+
+        if html is None:
+            rows.append(
+                {
+                    "drug": None, "strength": None, "form": None, "package_quantity": None,
+                    "acquisition_cost": None, "markup": None, "pharmacy_fee": None,
+                    "shipping_fee": None, "final_price": None, "brand_name": None, "sku": None,
+                    "package_size_raw": None, "volume_raw": None,
+                    "scrape_matched_slug": slug, "scrape_status": "fetch_failed",
+                }
+            )
+            continue
+
+        page_rows = _rows_from_product_page(html)
+        if not page_rows:
+            rows.append(
+                {
+                    "drug": None, "strength": None, "form": None, "package_quantity": None,
+                    "acquisition_cost": None, "markup": None, "pharmacy_fee": None,
+                    "shipping_fee": None, "final_price": None, "brand_name": None, "sku": None,
+                    "package_size_raw": None, "volume_raw": None,
+                    "scrape_matched_slug": slug, "scrape_status": "unparseable_page",
+                }
+            )
+            continue
+
+        rows.extend(page_rows)
+        if i % 25 == 0 or i == len(target_slugs):
+            print(f"[costplus_scraper] fetched {i}/{len(target_slugs)} missing variant pages ({len(rows)} rows so far)")
+
+    out = pd.DataFrame(rows)
+    n_with_volume = out["volume_raw"].notna().sum() if not out.empty and "volume_raw" in out.columns else 0
+    print(
+        f"[costplus_scraper] Missing-variant fetch: {len(out)}/{len(target_slugs)} target slugs processed, "
+        f"{n_with_volume} now have volume_raw"
+    )
+    return out
+
+
+def merge_scraped_rows(base_df: pd.DataFrame, updated_rows: pd.DataFrame) -> pd.DataFrame:
+    """Replace rows in base_df with fresher data from updated_rows, matched on
+    scrape_matched_slug -- used to fold fetch_missing_variants' results back
+    into the full catalog DataFrame without re-fetching anything already there."""
+    if updated_rows.empty:
+        return base_df.copy()
+    updated_slugs = set(updated_rows["scrape_matched_slug"].dropna())
+    kept = base_df[~base_df["scrape_matched_slug"].isin(updated_slugs)]
+    return pd.concat([kept, updated_rows], ignore_index=True)
+
+
 def crosswalk_coverage_for_scraped(scraped_df: pd.DataFrame, force_refresh: bool = False) -> dict:
     """Run every successfully-scraped row (drug/strength/form all present)
     through the untouched Phase 0 crosswalk against NADAC and report the
@@ -550,26 +629,96 @@ def run(costplus_path: Path | None = None, limit: int | None = None, force_refre
 # slightly better than the survey average, not a wrong count. nadac_per_unit
 # is still attached to every row for transparency/context, just not used to
 # override what the page's own visible text says.
+#
+# Some `volume` strings are COMPOUND (e.g. "60mL (30 x 2mL)", "56 Ampules
+# (224mL)"): they state two true numbers -- a total liquid volume and a
+# discrete count of vials/pens/syringes/ampules -- and simple regex can't
+# tell which one is "the" package_quantity on its own. It doesn't need to
+# guess: NADAC's own Pricing Unit for that exact drug (EA vs ML, from the
+# untouched Phase 0 crosswalk) says which basis Module A will actually
+# divide by, so the OTHER number is simply irrelevant to this drug's
+# per-unit price. A compound value is accepted only when the pricing unit
+# picks out exactly one of the two numbers; if the crosswalk doesn't
+# resolve (no pricing unit to check against), it's left blank.
 # ---------------------------------------------------------------------------
 _VOLUME_PREFIX_RE = re.compile(r"^(box of|pack of|carton of)\s+", re.IGNORECASE)
 _VOLUME_QTY_RE = re.compile(
     r"^(\d+(?:\.\d+)?)\s*"
-    r"(mL|ml|g|gm|grams?|liters?|ea|tablets?|capsules?|patches?|doses?|unit doses?|packets?|pack|"
-    r"blisters?|rings?|suppositories?|lozenges?|test strips?|kits?|pens?|syringes?|lancets?|swabs?|pads?|cans?|vials?)$",
+    r"(mL|ml|milliliters?|g|gm|grams?|oz|liters?|ea|tablets?|capsules?|patches?|doses?|unit doses?|packets?|pack|"
+    r"blisters?|rings?|suppositories?|lozenges?|test strips?|kits?|pens?|syringes?|lancets?|swabs?|pads?|cans?|vials?|"
+    r"pieces?|nasal sprays?|odt tablets?|chewable tablets?)"
+    r"(?:\s+[a-zA-Z]+)?$",  # tolerate ONE trailing descriptor word (e.g. "140gm Tube") -- NOT a trailing
+    # parenthetical: "60mL (30 x 2mL)" states a genuinely different competing quantity (30, for an
+    # EA-priced drug) in there, which must go through parse_compound_package_quantity, never be
+    # silently discarded as "just extra detail" the way a real descriptor word would be.
     re.IGNORECASE,
 )
+
+# "60mL (30 x 2mL)" / "90mL (30 x 3mL Vials)" -> (total=60/90, count=30)
+_COMPOUND_TOTAL_THEN_COUNT_RE = re.compile(
+    r"^(\d+(?:\.\d+)?)\s*(?:mL|ml)\s*\(\s*(\d+(?:\.\d+)?)\s*x\s*[\d.]+\s*(?:mL|ml)?\s*[a-zA-Z]*\s*\)$",
+    re.IGNORECASE,
+)
+# "1.6mL (2 Pens)" / "0.8mL (2 Auto-injectors)" / "1mL (2 Syringes)" -> (total=1.6, count=2)
+_COMPOUND_TOTAL_THEN_ITEM_RE = re.compile(
+    r"^(\d+(?:\.\d+)?)\s*(?:mL|ml)\s*\(\s*(\d+(?:\.\d+)?)\s*(?:pens?|syringes?|prefilled syringes?|auto-?injectors?)\s*\)$",
+    re.IGNORECASE,
+)
+# "56 Ampules (224mL)" -> (count=56, total=224)
+_COMPOUND_COUNT_THEN_TOTAL_RE = re.compile(
+    r"^(\d+(?:\.\d+)?)\s*ampules?\s*\(\s*(\d+(?:\.\d+)?)\s*(?:mL|ml)\s*\)$",
+    re.IGNORECASE,
+)
+# "60 x 3mL" / "30 x 2.5mL" (no parens, no leading total) -> count=60, total=60*3
+_COMPOUND_X_RE = re.compile(r"^(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*(?:mL|ml)$", re.IGNORECASE)
 
 
 def parse_package_quantity_from_volume(volume_raw) -> Optional[float]:
     """Parse a `metafields.volume` string (e.g. "30 Tablets", "240mL") into a
-    bare numeric quantity. Returns None for blank, compound (e.g. "60mL (30 x
-    2mL)"), or otherwise-unrecognized text -- never guesses which number in a
-    compound description is the intended quantity."""
+    bare numeric quantity. Returns None for blank or otherwise-unrecognized
+    text -- never guesses. Compound descriptions are handled separately by
+    parse_compound_package_quantity, which needs the drug's NADAC pricing
+    unit to disambiguate."""
     if not isinstance(volume_raw, str) or not volume_raw.strip():
         return None
     stripped = _VOLUME_PREFIX_RE.sub("", volume_raw.strip())
     m = _VOLUME_QTY_RE.match(stripped)
     return float(m.group(1)) if m else None
+
+
+def parse_compound_package_quantity(volume_raw, pricing_unit: Optional[str]) -> Optional[float]:
+    """Parse a compound `volume` string (states both a total liquid volume AND
+    a discrete item count) by picking whichever number matches the drug's real
+    NADAC Pricing Unit (EA -> the count, ML -> the total volume). Returns None
+    if no compound pattern matches, or if pricing_unit doesn't resolve to
+    exactly one of the two numbers -- never guesses between them."""
+    if not isinstance(volume_raw, str) or not volume_raw.strip():
+        return None
+    v = volume_raw.strip()
+
+    for pattern, order in (
+        (_COMPOUND_TOTAL_THEN_COUNT_RE, "total_count"),
+        (_COMPOUND_TOTAL_THEN_ITEM_RE, "total_count"),
+        (_COMPOUND_COUNT_THEN_TOTAL_RE, "count_total"),
+    ):
+        m = pattern.match(v)
+        if m:
+            a, b = float(m.group(1)), float(m.group(2))
+            total, count = (a, b) if order == "total_count" else (b, a)
+            break
+    else:
+        m = _COMPOUND_X_RE.match(v)
+        if m:
+            count, per_unit = float(m.group(1)), float(m.group(2))
+            total = count * per_unit
+        else:
+            return None
+
+    if pricing_unit == "ML":
+        return total
+    if pricing_unit == "EA":
+        return count
+    return None
 
 
 def recover_package_quantity(scraped_df: pd.DataFrame, force_refresh: bool = False) -> pd.DataFrame:
@@ -586,22 +735,27 @@ def recover_package_quantity(scraped_df: pd.DataFrame, force_refresh: bool = Fal
     for idx in out[usable_mask].index:
         row = out.loc[idx]
 
-        qty = parse_package_quantity_from_volume(row.get("volume_raw"))
-        if qty is None:
-            out.at[idx, "package_quantity_status"] = (
-                "ambiguous_volume_text" if pd.notna(row.get("volume_raw")) else "no_volume_text_captured"
-            )
-        else:
-            out.at[idx, "package_quantity"] = qty
-            out.at[idx, "package_quantity_status"] = "confirmed"
-
-        # nadac_per_unit is attached for every resolvable row regardless of the
-        # above, purely as transparency context -- never used to override a
-        # confirmed, directly-stated quantity (see docstring above).
+        # nadac_per_unit/pricing_unit are resolved first (not just as context
+        # this time): a compound volume string needs the pricing unit to
+        # disambiguate which number it states is the real quantity.
         term = f"{row['drug']} {row['strength']} {row['form']}"
         result = crosswalk.crosswalk_drug(term, nadac_df)
         if result.matched and result.nadac_per_unit is not None:
             out.at[idx, "nadac_per_unit"] = result.nadac_per_unit
+
+        qty = parse_package_quantity_from_volume(row.get("volume_raw"))
+        if qty is not None:
+            out.at[idx, "package_quantity"] = qty
+            out.at[idx, "package_quantity_status"] = "confirmed"
+        elif pd.notna(row.get("volume_raw")):
+            compound_qty = parse_compound_package_quantity(row.get("volume_raw"), result.pricing_unit if result.matched else None)
+            if compound_qty is not None:
+                out.at[idx, "package_quantity"] = compound_qty
+                out.at[idx, "package_quantity_status"] = "confirmed"
+            else:
+                out.at[idx, "package_quantity_status"] = "ambiguous_volume_text"
+        else:
+            out.at[idx, "package_quantity_status"] = "no_volume_text_captured"
 
     counts = out["package_quantity_status"].value_counts()
     print("\n[costplus_scraper] === PACKAGE QUANTITY RECOVERY ===")

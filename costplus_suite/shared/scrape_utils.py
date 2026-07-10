@@ -164,10 +164,25 @@ class RobotsRules:
         return best_allow
 
 
+class ChallengeDetectedError(Exception):
+    """Raised when a response looks like an explicit anti-automation
+    challenge (e.g. Cloudflare's interactive "Just a moment..." Turnstile
+    page), never on a plain HTTP error or rate-limit response. Callers should
+    stop the run and report this rather than retry or work around it."""
+
+
+def _looks_like_challenge_page(status_code: int, text: str) -> bool:
+    if status_code != 403:
+        return False
+    return "Just a moment" in text and "challenges.cloudflare.com" in text
+
+
 class PoliteFetcher:
     """Disk-cached, robots.txt-gated, rate-limited GET for one site. Never
     raises on disallow/404/network failure -- returns None so a caller can
-    skip and keep a coverage tally honest rather than aborting a whole run."""
+    skip and keep a coverage tally honest rather than aborting a whole run.
+    The one exception is ChallengeDetectedError (see above): that's a signal
+    to stop, not a fetch failure to shrug off."""
 
     def __init__(
         self,
@@ -176,12 +191,14 @@ class PoliteFetcher:
         cache_dir: Path,
         min_delay_seconds: float = 2.0,
         max_delay_seconds: float = 3.0,
+        max_429_retries: int = 5,
     ):
         self.base_url = base_url.rstrip("/")
         self.user_agent = user_agent
         self.cache_dir = cache_dir
         self.min_delay = min_delay_seconds
         self.max_delay = max_delay_seconds
+        self.max_429_retries = max_429_retries
         self._session: Optional[requests.Session] = None
         self._robots: Optional[RobotsRules] = None
         self._last_request_ts = 0.0
@@ -221,6 +238,11 @@ class PoliteFetcher:
         return self.cache_dir / f"{digest}.html"
 
     def get(self, path_or_url: str, force_refresh: bool = False) -> Optional[str]:
+        """Returns page text, or None on a skippable failure (robots
+        disallow, 404, network error, or 429s exhausted). Raises
+        ChallengeDetectedError if a response looks like an explicit
+        anti-automation challenge -- that's a stop-and-report signal, not
+        something to skip past."""
         url = path_or_url if path_or_url.startswith("http") else f"{self.base_url}{path_or_url}"
         cache_path = self.cache_path(url)
         if cache_path.exists() and not force_refresh:
@@ -231,20 +253,41 @@ class PoliteFetcher:
             print(f"[scrape_utils] robots.txt disallows {url}, skipping")
             return None
 
-        elapsed = time.monotonic() - self._last_request_ts
-        delay = random.uniform(self.min_delay, self.max_delay)
-        if elapsed < delay:
-            time.sleep(delay - elapsed)
+        attempt = 0
+        while True:
+            elapsed = time.monotonic() - self._last_request_ts
+            delay = random.uniform(self.min_delay, self.max_delay)
+            if elapsed < delay:
+                time.sleep(delay - elapsed)
 
-        try:
-            resp = self._get_session().get(url, timeout=30)
-            self._last_request_ts = time.monotonic()
+            try:
+                resp = self._get_session().get(url, timeout=30)
+                self._last_request_ts = time.monotonic()
+            except requests.RequestException as exc:  # pragma: no cover - network failure path
+                self._last_request_ts = time.monotonic()
+                print(f"[scrape_utils] {url} -> request failed ({exc}), skipping")
+                return None
+
+            if _looks_like_challenge_page(resp.status_code, resp.text):
+                raise ChallengeDetectedError(
+                    f"{url} -> explicit anti-automation challenge detected (Cloudflare Turnstile); stopping."
+                )
+
+            if resp.status_code == 429 and attempt < self.max_429_retries:
+                attempt += 1
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    backoff = float(retry_after) if retry_after else 0.0
+                except ValueError:
+                    backoff = 0.0
+                backoff = max(backoff, min(60.0, 2.0 ** attempt))  # exponential, capped at 60s, floor'd by Retry-After
+                print(f"[scrape_utils] {url} -> HTTP 429, backing off {backoff:.0f}s (attempt {attempt}/{self.max_429_retries})")
+                time.sleep(backoff)
+                continue
+
             if resp.status_code != 200:
                 print(f"[scrape_utils] {url} -> HTTP {resp.status_code}, skipping")
                 return None
+
             cache_path.write_text(resp.text, encoding="utf-8")
             return resp.text
-        except requests.RequestException as exc:  # pragma: no cover - network failure path
-            self._last_request_ts = time.monotonic()
-            print(f"[scrape_utils] {url} -> request failed ({exc}), skipping")
-            return None

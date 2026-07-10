@@ -5,5 +5,18 @@ costplus_suite/output/
 data/costplus.csv
 data/costplus.SCRAPED.csv
 data/costplus.RUNNABLE.csv
+data/costplus.GRAPHQL.csv
 data/trumprx.csv
+data/_target_slugs.txt
 .idea/
+
+# secrets / env
+.env
+.env.*
+*.pem
+*.key
+
+# scratch / handoff artifacts
+handoff_prompt.md
+scratchpad/
+costplus_suite/tests/trumprx_drugs.csv

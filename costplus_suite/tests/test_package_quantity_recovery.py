@@ -51,9 +51,56 @@ class TestParsePackageQuantityFromVolume(unittest.TestCase):
         self.assertIsNone(scraper.parse_package_quantity_from_volume(""))
         self.assertIsNone(scraper.parse_package_quantity_from_volume(float("nan")))
 
-    def test_rejects_unrecognized_unit(self):
-        self.assertIsNone(scraper.parse_package_quantity_from_volume("2 Nasal Sprays"))
-        self.assertIsNone(scraper.parse_package_quantity_from_volume("100 Pieces"))
+    def test_recognizes_units_added_during_task2_recovery(self):
+        # These were "unrecognized" before the Task 2 (c)-recovery pass broadened
+        # the unit list; now genuinely unambiguous, so they should parse cleanly.
+        self.assertEqual(scraper.parse_package_quantity_from_volume("2 Nasal Sprays"), 2.0)
+        self.assertEqual(scraper.parse_package_quantity_from_volume("100 Pieces"), 100.0)
+        self.assertEqual(scraper.parse_package_quantity_from_volume("1oz"), 1.0)
+        self.assertEqual(scraper.parse_package_quantity_from_volume("5 Milliliters"), 5.0)
+
+    def test_tolerates_one_trailing_descriptor_word_but_not_a_parenthetical(self):
+        # "140gm Tube" / "10.2g Inhaler": a single trailing descriptor word is fine,
+        # the leading "<number> <unit>" is still unambiguous.
+        self.assertEqual(scraper.parse_package_quantity_from_volume("140gm Tube"), 140.0)
+        self.assertEqual(scraper.parse_package_quantity_from_volume("10.2g Inhaler"), 10.2)
+        # But a trailing parenthetical must NOT be silently discarded -- it can state
+        # a genuinely different, competing quantity (see test_rejects_compound_descriptions).
+        self.assertIsNone(scraper.parse_package_quantity_from_volume("60 Capsules (14 Caps 120mg & 46 Caps 240mg)"))
+
+
+class TestParseCompoundPackageQuantity(unittest.TestCase):
+    """Task 2 (this session): recovering the (c) 'parser rejected' bucket.
+    Real examples from the 2,341-row catalog -- each states two true numbers
+    (a total liquid volume and a discrete item count), disambiguated by the
+    drug's real NADAC Pricing Unit rather than guessed."""
+
+    def test_total_then_count_pattern_picks_count_for_ea(self):
+        self.assertEqual(scraper.parse_compound_package_quantity("60mL (30 x 2mL)", "EA"), 30.0)
+
+    def test_total_then_count_pattern_picks_total_for_ml(self):
+        self.assertEqual(scraper.parse_compound_package_quantity("60mL (30 x 2mL)", "ML"), 60.0)
+
+    def test_total_then_item_pattern(self):
+        self.assertEqual(scraper.parse_compound_package_quantity("1.6mL (2 Pens)", "EA"), 2.0)
+        self.assertEqual(scraper.parse_compound_package_quantity("1.6mL (2 Pens)", "ML"), 1.6)
+
+    def test_count_then_total_pattern_ampules(self):
+        self.assertEqual(scraper.parse_compound_package_quantity("56 Ampules (224mL)", "EA"), 56.0)
+        self.assertEqual(scraper.parse_compound_package_quantity("56 Ampules (224mL)", "ML"), 224.0)
+
+    def test_bare_x_pattern_computes_total(self):
+        self.assertEqual(scraper.parse_compound_package_quantity("30 x 3mL", "EA"), 30.0)
+        self.assertEqual(scraper.parse_compound_package_quantity("30 x 3mL", "ML"), 90.0)
+
+    def test_unknown_pricing_unit_stays_ambiguous(self):
+        # No crosswalk match / unresolved pricing unit -- must not guess between the two numbers.
+        self.assertIsNone(scraper.parse_compound_package_quantity("60mL (30 x 2mL)", None))
+        self.assertIsNone(scraper.parse_compound_package_quantity("60mL (30 x 2mL)", "GM"))
+
+    def test_non_compound_text_returns_none(self):
+        self.assertIsNone(scraper.parse_compound_package_quantity("30 Tablets", "EA"))
+        self.assertIsNone(scraper.parse_compound_package_quantity(None, "EA"))
 
 
 class TestRecoverPackageQuantity(unittest.TestCase):
@@ -67,10 +114,11 @@ class TestRecoverPackageQuantity(unittest.TestCase):
             ]
         )
 
-    def _fake_result(self, nadac_per_unit):
+    def _fake_result(self, nadac_per_unit, pricing_unit=None):
         r = crosswalk.CrosswalkResult(drug_term="x")
         r.matched = True
         r.nadac_per_unit = nadac_per_unit
+        r.pricing_unit = pricing_unit
         return r
 
     def test_confirms_unambiguous_volume_text_regardless_of_nadac_comparison(self):
@@ -87,14 +135,25 @@ class TestRecoverPackageQuantity(unittest.TestCase):
         self.assertEqual(row["package_quantity_status"], "confirmed")
         self.assertAlmostEqual(row["nadac_per_unit"], 0.50)  # still attached, as context
 
-    def test_compound_volume_text_left_ambiguous(self):
-        with patch.object(scraper.crosswalk, "crosswalk_drug", return_value=self._fake_result(0.01)), \
+    def test_compound_volume_text_left_ambiguous_when_pricing_unit_unresolved(self):
+        with patch.object(scraper.crosswalk, "crosswalk_drug", return_value=self._fake_result(0.01, pricing_unit=None)), \
              patch("fetch.nadac.load_nadac", return_value=pd.DataFrame()):
             out = scraper.recover_package_quantity(self._scraped_df())
 
         row = out[out["drug"] == "DrugB"].iloc[0]
         self.assertTrue(pd.isna(row["package_quantity"]))
         self.assertEqual(row["package_quantity_status"], "ambiguous_volume_text")
+
+    def test_compound_volume_text_confirmed_when_pricing_unit_resolves_it(self):
+        # Task 2 recovery: DrugB's "60mL (30 x 2mL)" is only ambiguous without a
+        # pricing unit -- an EA-priced drug unambiguously means 30 (vials/tablets/etc).
+        with patch.object(scraper.crosswalk, "crosswalk_drug", return_value=self._fake_result(0.01, pricing_unit="EA")), \
+             patch("fetch.nadac.load_nadac", return_value=pd.DataFrame()):
+            out = scraper.recover_package_quantity(self._scraped_df())
+
+        row = out[out["drug"] == "DrugB"].iloc[0]
+        self.assertEqual(row["package_quantity"], 30.0)
+        self.assertEqual(row["package_quantity_status"], "confirmed")
 
     def test_missing_volume_text_flagged(self):
         with patch.object(scraper.crosswalk, "crosswalk_drug", return_value=self._fake_result(0.01)), \

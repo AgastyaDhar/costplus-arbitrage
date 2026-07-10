@@ -1,0 +1,223 @@
+<title>Cost Plus War Room</title>
+<style>
+  :root{
+    --bg-void:#0a0e1a;
+    --bg-panel:#0d1424;
+    --bg-row-hover:#111a2c;
+    --border:#1b2436;
+    --border-dim:#151b2a;
+    --text-primary:#e8ebf2;
+    --text-secondary:#5f6b85;
+    --accent:#00ff88;
+    --alert:#ff6b4a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg-void);
+    color:var(--text-primary);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-variant-numeric:tabular-nums;}
+  .wrap{padding:16px;display:grid;grid-template-columns:1fr;gap:16px;}
+  @media (min-width:1024px){
+    .wrap{grid-template-columns:3fr 2fr;}
+    .headline{grid-column:1 / -1;}
+  }
+  section{border:1px solid var(--border);background:var(--bg-panel);padding:16px;}
+  .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-secondary);}
+  .headline-figure{font-size:64px;line-height:1;color:var(--accent);margin-top:8px;}
+  @media (min-width:768px){.headline-figure{font-size:88px;}}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px;}
+  .chip{border:1px solid var(--border);padding:8px 14px;}
+  .chip .v{font-size:18px;margin-top:2px;}
+  .foot{font-size:12px;color:var(--text-secondary);margin-top:12px;}
+  .foot + .foot{margin-top:4px;}
+  .panel-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+  h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-secondary);margin:0;font-weight:400;}
+  button, input{font:inherit;color:inherit;background:transparent;}
+  button{border:1px solid var(--border);padding:6px 12px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;}
+  button:hover{border-color:var(--accent);}
+  input[type=text]{border:1px solid var(--border);padding:8px 12px;width:100%;font-size:14px;margin-bottom:12px;}
+  input::placeholder{color:var(--text-secondary);}
+  button:focus-visible, input:focus-visible, th:focus-visible{outline:1px solid var(--accent);outline-offset:1px;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  thead th{text-align:left;padding:8px 12px 8px 0;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-secondary);border-bottom:1px solid var(--border);cursor:pointer;white-space:nowrap;font-weight:400;}
+  tbody td{padding:8px 12px 8px 0;border-bottom:1px solid var(--border-dim);white-space:nowrap;}
+  tbody tr.data-row{cursor:pointer;}
+  tbody tr.data-row:hover{background:var(--bg-row-hover);}
+  .rank{color:var(--text-secondary);}
+  .drug-name{font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;}
+  .detail-row td{background:var(--bg-void);padding:12px;font-size:12px;}
+  .detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  @media (min-width:640px){.detail-grid{grid-template-columns:repeat(4,1fr);}}
+  .detail-grid .lbl{color:var(--text-secondary);font-family:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin-right:4px;}
+  .table-scroll{overflow-x:auto;}
+  .pending, .missing{font-size:13px;color:var(--text-secondary);}
+  .arrow-up{color:var(--alert);}
+  .arrow-down{color:var(--text-secondary);}
+  .right-col{display:grid;grid-template-columns:1fr;gap:16px;}
+</style>
+
+<div class="wrap">
+  <section class="headline">
+    <div class="eyebrow">Estimated Medicare + Medicaid overpayment vs Cost Plus prices (generics only)</div>
+    <div id="headline-figure" class="headline-figure mono">$0.0B</div>
+    <div class="chips">
+      <div class="chip"><div class="eyebrow">Drugs analyzed</div><div class="v mono">2,024</div></div>
+      <div class="chip"><div class="eyebrow">Catalog coverage</div><div class="v mono">84.8%</div></div>
+      <div class="chip"><div class="eyebrow">Data refreshed</div><div class="v mono">2026-07-08</div></div>
+    </div>
+    <div class="foot">Built on NADAC, Medicare Part D, and Medicaid SDUD. Net prices never estimated.</div>
+    <div class="foot">Generics only &mdash; rebates on brands excluded.</div>
+  </section>
+
+  <section id="leaderboard-panel">
+    <div class="panel-title">
+      <h2>Overpayment Leaderboard &mdash; Top 25</h2>
+      <button id="export-btn">Export</button>
+    </div>
+    <input type="text" id="search" placeholder="Filter by drug name...">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr id="thead-row"></tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="right-col">
+    <section>
+      <div class="panel-title"><h2>Spread Alert &mdash; widening vs NADAC</h2></div>
+      <div class="pending">Spread tracker activates after second weekly NADAC pull.</div>
+    </section>
+    <section>
+      <div class="panel-title"><h2>Brand on TrumpRx vs generic at Cost Plus</h2></div>
+      <div class="missing">data/trumprx.csv not available yet &mdash; brand-vs-generic exhibit pending a completed Module E run.</div>
+    </section>
+  </div>
+</div>
+
+<script>
+// Real top-25 rows, extracted from output/leaderboard.csv (2,024-row real pipeline output).
+const ROWS = [{"rank":"1","drug_term":"Atorvastatin 40mg Tablet","costplus_per_unit":"0.005719999999999999","partd_per_unit":"0.14228607764859483","gap_partd":"0.13656607764859482","overpayment_partd":"726076248.2131801","nadac_per_unit":"0.03787","medicaid_per_unit":"0.2133982132685637","gap_medicaid":"0.2076782132685637","overpayment_medicaid":"43897940.794","total_overpayment":"769974189.0071801","canonical_unit":"EA"},{"rank":"2","drug_term":"Atorvastatin 20mg Tablet","costplus_per_unit":"0.00545","partd_per_unit":"0.14228607764859483","gap_partd":"0.13683607764859482","overpayment_partd":"727511748.085425","nadac_per_unit":"0.02851","medicaid_per_unit":"0.19684883002842976","gap_medicaid":"0.19139883002842975","overpayment_medicaid":"38252887.4844218","total_overpayment":"765764635.5698469","canonical_unit":"EA"},{"rank":"3","drug_term":"Atorvastatin 10mg Tablet","costplus_per_unit":"0.00524","partd_per_unit":"0.14228607764859483","gap_partd":"0.13704607764859483","overpayment_partd":"728628247.9860601","nadac_per_unit":"0.02452","medicaid_per_unit":"0.18895398460243798","gap_medicaid":"0.18371398460243799","overpayment_medicaid":"21412642.510678202","total_overpayment":"750040890.4967383","canonical_unit":"EA"},{"rank":"4","drug_term":"Atorvastatin 80mg Tablet","costplus_per_unit":"0.0059299999999999995","partd_per_unit":"0.14228607764859483","gap_partd":"0.13635607764859484","overpayment_partd":"724959748.3125452","nadac_per_unit":"0.07002","medicaid_per_unit":"0.24917068955510077","gap_medicaid":"0.24324068955510078","overpayment_medicaid":"21523107.182730943","total_overpayment":"746482855.4952761","canonical_unit":"EA"},{"rank":"5","drug_term":"Abiraterone Acetate 250mg Tablet","costplus_per_unit":"0.16041666666666668","partd_per_unit":"17.335030191233745","gap_partd":"17.17461352456708","overpayment_partd":"686484313.1891665","nadac_per_unit":"0.83053","medicaid_per_unit":"4.495342421939192","gap_medicaid":"4.3349257552725255","overpayment_medicaid":"6193837.287500001","total_overpayment":"692678150.4766666","canonical_unit":"EA"},{"rank":"6","drug_term":"Abiraterone Acetate 500mg Tablet","costplus_per_unit":"0.8019999999999999","partd_per_unit":"17.335030191233745","gap_partd":"16.533030191233745","overpayment_partd":"660839666.612","nadac_per_unit":"3.0208","medicaid_per_unit":"19.234485662688755","gap_medicaid":"18.432485662688755","overpayment_medicaid":"6460936.442","total_overpayment":"667300603.054","canonical_unit":"EA"},{"rank":"7","drug_term":"Metoprolol Tartrate 25mg Tablet","costplus_per_unit":"0.00528","partd_per_unit":"0.17893676699771555","gap_partd":"0.17365676699771554","overpayment_partd":"442516456.73407996","nadac_per_unit":"0.01704","medicaid_per_unit":"0.1123010964187646","gap_medicaid":"0.10702109641876459","overpayment_medicaid":"8668970.53739568","total_overpayment":"451185427.2714756","canonical_unit":"EA"},{"rank":"8","drug_term":"Metoprolol Tartrate 50mg Tablet","costplus_per_unit":"0.00545","partd_per_unit":"0.17893676699771555","gap_partd":"0.17348676699771554","overpayment_partd":"442083258.5412","nadac_per_unit":"0.01891","medicaid_per_unit":"0.10352535048446071","gap_medicaid":"0.09807535048446071","overpayment_medicaid":"5152932.48321","total_overpayment":"447236191.02441","canonical_unit":"EA"},{"rank":"9","drug_term":"Metoprolol Extended Release (ER) 25mg Extended Release Tablet","costplus_per_unit":"0.01124","partd_per_unit":"0.17893676699771555","gap_partd":"0.16769676699771555","overpayment_partd":"427329037.73664","nadac_per_unit":"0.05549","medicaid_per_unit":"0.20293910430623258","gap_medicaid":"0.19169910430623258","overpayment_medicaid":"19294183.05427068","total_overpayment":"446623220.79091066","canonical_unit":"EA"},{"rank":"10","drug_term":"Metoprolol Tartrate 100mg Tablet","costplus_per_unit":"0.00552","partd_per_unit":"0.17893676699771555","gap_partd":"0.17341676699771555","overpayment_partd":"441904882.81472","nadac_per_unit":"0.02819","medicaid_per_unit":"0.10626444669554246","gap_medicaid":"0.10074444669554246","overpayment_medicaid":"1878651.2112000003","total_overpayment":"443783534.02592","canonical_unit":"EA"},{"rank":"11","drug_term":"Metoprolol Extended Release (ER) 50mg Extended Release Tablet","costplus_per_unit":"0.01166","partd_per_unit":"0.17893676699771555","gap_partd":"0.16727676699771554","overpayment_partd":"426258783.37776","nadac_per_unit":"0.05788","medicaid_per_unit":"0.19364191287530308","gap_medicaid":"0.18198191287530308","overpayment_medicaid":"14009970.46738344","total_overpayment":"440268753.84514344","canonical_unit":"EA"},{"rank":"12","drug_term":"Rosuvastatin 10mg Tablet","costplus_per_unit":"0.00566","partd_per_unit":"0.18607534849737603","gap_partd":"0.18041534849737603","overpayment_partd":"423319486.15140206","nadac_per_unit":"0.03834","medicaid_per_unit":"0.211151243402601","gap_medicaid":"0.205491243402601","overpayment_medicaid":"13101630.04155","total_overpayment":"436421116.19295204","canonical_unit":"EA"},{"rank":"13","drug_term":"Rosuvastatin 20mg Tablet","costplus_per_unit":"0.00597","partd_per_unit":"0.18607534849737603","gap_partd":"0.18010534849737603","overpayment_partd":"422592114.32965904","nadac_per_unit":"0.04702","medicaid_per_unit":"0.2264526039116921","gap_medicaid":"0.2204826039116921","overpayment_medicaid":"13808901.073245201","total_overpayment":"436401015.4029043","canonical_unit":"EA"},{"rank":"14","drug_term":"Metoprolol Extended Release (ER) 100mg Extended Release Tablet","costplus_per_unit":"0.01256","partd_per_unit":"0.17893676699771555","gap_partd":"0.16637676699771556","overpayment_partd":"423965381.18016005","nadac_per_unit":"0.09059","medicaid_per_unit":"0.24311026717507475","gap_medicaid":"0.23055026717507476","overpayment_medicaid":"8659194.3119856","total_overpayment":"432624575.49214566","canonical_unit":"EA"},{"rank":"15","drug_term":"Rosuvastatin 5mg Tablet","costplus_per_unit":"0.00545","partd_per_unit":"0.18607534849737603","gap_partd":"0.18062534849737602","overpayment_partd":"423812221.901615","nadac_per_unit":"0.03479","medicaid_per_unit":"0.20294848484239356","gap_medicaid":"0.19749848484239355","overpayment_medicaid":"6926727.788675","total_overpayment":"430738949.69029003","canonical_unit":"EA"},{"rank":"16","drug_term":"Rosuvastatin 40mg Tablet","costplus_per_unit":"0.00683","partd_per_unit":"0.18607534849737603","gap_partd":"0.17924534849737603","overpayment_partd":"420574244.11450106","nadac_per_unit":"0.06504","medicaid_per_unit":"0.2624858246789505","gap_medicaid":"0.2556558246789505","overpayment_medicaid":"9919875.115845002","total_overpayment":"430494119.2303461","canonical_unit":"EA"},{"rank":"17","drug_term":"Omeprazole Delayed Release (DR) 20mg Delayed Release Capsule","costplus_per_unit":"0.011859999999999999","partd_per_unit":"0.1695075440459978","gap_partd":"0.1576475440459978","overpayment_partd":"341078620.41874605","nadac_per_unit":"0.02799","medicaid_per_unit":"0.21422506703969235","gap_medicaid":"0.20236506703969234","overpayment_medicaid":"39529515.86621033","total_overpayment":"380608136.2849564","canonical_unit":"EA"},{"rank":"18","drug_term":"Omeprazole Delayed Release (DR) 40mg Delayed Release Capsule","costplus_per_unit":"0.0127","partd_per_unit":"0.1695075440459978","gap_partd":"0.1568075440459978","overpayment_partd":"339261236.9454701","nadac_per_unit":"0.05046","medicaid_per_unit":"0.2296059113884982","gap_medicaid":"0.2169059113884982","overpayment_medicaid":"40009351.38850061","total_overpayment":"379270588.3339707","canonical_unit":"EA"},{"rank":"19","drug_term":"Losartan 50mg Tablet","costplus_per_unit":"0.00552","partd_per_unit":"0.12373036397397807","gap_partd":"0.11821036397397808","overpayment_partd":"339323972.856688","nadac_per_unit":"0.03367","medicaid_per_unit":"0.17651535429277446","gap_medicaid":"0.17099535429277446","overpayment_medicaid":"21145428.78491896","total_overpayment":"360469401.641607","canonical_unit":"EA"},{"rank":"20","drug_term":"Losartan 100mg Tablet","costplus_per_unit":"0.00579","partd_per_unit":"0.12373036397397807","gap_partd":"0.11794036397397807","overpayment_partd":"338548935.291526","nadac_per_unit":"0.04353","medicaid_per_unit":"0.20697836600789232","gap_medicaid":"0.20118836600789233","overpayment_medicaid":"20982934.273027692","total_overpayment":"359531869.56455374","canonical_unit":"EA"},{"rank":"21","drug_term":"Losartan 25mg Tablet","costplus_per_unit":"0.00541","partd_per_unit":"0.12373036397397807","gap_partd":"0.11832036397397808","overpayment_partd":"339639728.901754","nadac_per_unit":"0.02154","medicaid_per_unit":"0.1764646582130051","gap_medicaid":"0.1710546582130051","overpayment_medicaid":"15742765.66075318","total_overpayment":"355382494.5625072","canonical_unit":"EA"},{"rank":"22","drug_term":"Losartan / HCTZ 100mg-25mg Tablet","costplus_per_unit":"0.00604","partd_per_unit":"0.12373036397397807","gap_partd":"0.11769036397397807","overpayment_partd":"337831307.916376","nadac_per_unit":"0.07979","medicaid_per_unit":"0.24558030434582967","gap_medicaid":"0.23954030434582968","overpayment_medicaid":"5936588.205840001","total_overpayment":"343767896.122216","canonical_unit":"EA"},{"rank":"23","drug_term":"Losartan / HCTZ 50mg-12.5mg Tablet","costplus_per_unit":"0.00614","partd_per_unit":"0.12373036397397807","gap_partd":"0.11759036397397807","overpayment_partd":"337544256.966316","nadac_per_unit":"0.06214","medicaid_per_unit":"0.2032722936704392","gap_medicaid":"0.1971322936704392","overpayment_medicaid":"4470050.3651258005","total_overpayment":"342014307.33144176","canonical_unit":"EA"},{"rank":"24","drug_term":"Losartan / HCTZ 100mg-12.5mg Tablet","costplus_per_unit":"0.00597","partd_per_unit":"0.12373036397397807","gap_partd":"0.11776036397397807","overpayment_partd":"338032243.58141804","nadac_per_unit":"0.07551","medicaid_per_unit":"0.2526169347585258","gap_medicaid":"0.2466469347585258","overpayment_medicaid":"3483361.2389350003","total_overpayment":"341515604.82035303","canonical_unit":"EA"},{"rank":"25","drug_term":"Duloxetine Delayed Release (DR) 60mg Delayed Release Capsule","costplus_per_unit":"0.0064800000000000005","partd_per_unit":"0.3375621148332808","gap_partd":"0.3310821148332808","overpayment_partd":"302900195.759572","nadac_per_unit":"0.12954","medicaid_per_unit":"0.28640285730685455","gap_medicaid":"0.27992285730685457","overpayment_medicaid":"28721242.263922077","total_overpayment":"331621438.0234941","canonical_unit":"EA"}];
+
+const TOTAL_OVERPAYMENT = 51018662038.96; // sum(overpayment_partd>0) + sum(overpayment_medicaid>0), all 2,024 rows
+
+const COLUMNS = [
+  {key:"rank", label:"Rank"},
+  {key:"drug_term", label:"Drug"},
+  {key:"costplus_per_unit", label:"Cost Plus/unit"},
+  {key:"partd_per_unit", label:"System/unit", tooltip:"Gross Medicare Part D spend per dosage unit. Does not reflect net-of-rebate prices."},
+  {key:"gap_partd", label:"Gap"},
+  {key:"total_overpayment", label:"Total Overpayment"},
+];
+
+let sortKey = "total_overpayment", sortDir = "desc", query = "", expandedRank = null;
+
+function fmtUnit(n){ return n==null || isNaN(n) ? "--" : "$" + Number(n).toFixed(4); }
+function fmtUSD(n){ return "$" + Math.round(n).toLocaleString("en-US"); }
+function fmtB(n){ return "$" + (n/1e9).toFixed(1) + "B"; }
+
+function view(){
+  const q = query.trim().toLowerCase();
+  let rows = ROWS.map(r => ({...r,
+    rank:+r.rank, costplus_per_unit:+r.costplus_per_unit, partd_per_unit:+r.partd_per_unit,
+    gap_partd:+r.gap_partd, overpayment_partd:+r.overpayment_partd, nadac_per_unit:+r.nadac_per_unit,
+    gap_medicaid:+r.gap_medicaid, overpayment_medicaid:+r.overpayment_medicaid, total_overpayment:+r.total_overpayment,
+  }));
+  if (q) rows = rows.filter(r => r.drug_term.toLowerCase().includes(q));
+  const dir = sortDir === "asc" ? 1 : -1;
+  rows.sort((a,b) => {
+    const av = a[sortKey], bv = b[sortKey];
+    if (typeof av === "string") return av.localeCompare(bv) * dir;
+    return ((av ?? 0) - (bv ?? 0)) * dir;
+  });
+  return rows;
+}
+
+const maxOverpayment = Math.max(...ROWS.map(r => +r.total_overpayment));
+
+function renderHead(){
+  const thead = document.getElementById("thead-row");
+  thead.innerHTML = "";
+  COLUMNS.forEach(c => {
+    const th = document.createElement("th");
+    th.textContent = c.label + (sortKey === c.key ? (sortDir === "asc" ? " ↑" : " ↓") : "");
+    if (c.tooltip) th.title = c.tooltip;
+    th.tabIndex = 0;
+    th.onclick = () => { if (sortKey === c.key) sortDir = sortDir === "asc" ? "desc" : "asc"; else { sortKey = c.key; sortDir = "desc"; } render(); };
+    thead.appendChild(th);
+  });
+}
+
+function renderBody(){
+  const tbody = document.getElementById("tbody");
+  tbody.innerHTML = "";
+  view().forEach(r => {
+    const opacity = 0.08 + 0.55 * (Math.max(r.total_overpayment,0) / maxOverpayment);
+    const tr = document.createElement("tr");
+    tr.className = "data-row mono";
+    tr.innerHTML = `
+      <td class="rank">${r.rank}</td>
+      <td class="drug-name">${r.drug_term}</td>
+      <td>${fmtUnit(r.costplus_per_unit)}</td>
+      <td>${fmtUnit(r.partd_per_unit)}</td>
+      <td>${fmtUnit(r.gap_partd)}</td>
+      <td style="background-color:rgba(0,255,136,${opacity})">${fmtUSD(r.total_overpayment)}</td>
+    `;
+    tr.onclick = () => { expandedRank = expandedRank === r.rank ? null : r.rank; render(); };
+    tbody.appendChild(tr);
+    if (expandedRank === r.rank){
+      const dtr = document.createElement("tr");
+      dtr.className = "detail-row";
+      dtr.innerHTML = `<td colspan="6"><div class="detail-grid mono">
+        <div><span class="lbl">NADAC acquisition cost</span>${fmtUnit(r.nadac_per_unit)}</div>
+        <div><span class="lbl">Part D gap</span>${fmtUnit(r.gap_partd)} (${fmtUSD(r.overpayment_partd)})</div>
+        <div><span class="lbl">Medicaid gap</span>${fmtUnit(r.gap_medicaid)} (${fmtUSD(r.overpayment_medicaid)})</div>
+        <div><span class="lbl">Canonical unit</span>${r.canonical_unit}</div>
+      </div></td>`;
+      tbody.appendChild(dtr);
+    }
+  });
+}
+
+function render(){ renderHead(); renderBody(); }
+
+document.getElementById("search").addEventListener("input", (e) => { query = e.target.value; render(); });
+
+document.getElementById("export-btn").addEventListener("click", () => {
+  const rows = view();
+  const header = "rank,drug,costplus_per_unit,system_per_unit,gap,total_overpayment";
+  const lines = rows.map(r => [r.rank, `"${r.drug_term}"`, r.costplus_per_unit, r.partd_per_unit, r.gap_partd, r.total_overpayment].join(","));
+  const csv = [header, ...lines].join("\n");
+  const blob = new Blob([csv], {type:"text/csv"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "costplus_leaderboard_top25.csv";
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+// Headline count-up: rAF, 1.5s, ease-out cubic. Respects prefers-reduced-motion.
+(function countUp(){
+  const el = document.getElementById("headline-figure");
+  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced){ el.textContent = fmtB(TOTAL_OVERPAYMENT); return; }
+  const duration = 1500;
+  let start = null;
+  const ease = t => 1 - Math.pow(1-t, 3);
+  function step(ts){
+    if (start === null) start = ts;
+    const t = Math.min((ts-start)/duration, 1);
+    el.textContent = fmtB(TOTAL_OVERPAYMENT * ease(t));
+    if (t < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+
+render();
+</script>
