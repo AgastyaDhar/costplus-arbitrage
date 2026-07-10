@@ -17,7 +17,7 @@ python run.py
 
 ## What you get
 
-- A ranked list of the 25 drugs with the biggest overpayment gap
+- A complete ranked list of all 2,024 drugs by overpayment gap
 - A total dollar figure: estimated annual overpayment across all matched
   generics
 - A comparison of brand-name drugs on TrumpRx vs their generic equivalent
