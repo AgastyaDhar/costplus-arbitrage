@@ -15,7 +15,7 @@
   `costplus.csv`.
 
 - `costplus.SCRAPED.csv` -- **generated, not committed.** Written by
-  `shared/costplus_scraper.py` (`run.py --source scrape`) refreshing whatever
+  `fetch/costplus_html_scraper.py` (`run.py --source scrape`) refreshing whatever
   is currently in `costplus.csv`/`costplus.SAMPLE.csv` against live
   costplusdrugs.com data. `acquisition_cost`/`markup`/`pharmacy_fee`/
   `package_quantity` are carried over from the input file unchanged (the site

@@ -2,7 +2,7 @@
 Phase 0 gate: prove the drug-name -> RxCUI -> NDC -> NADAC crosswalk works
 before any other module gets built.
 
-Run: python spike.py
+Run: python scripts/spike.py (from repo root)
 """
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "costplus_suite"))
 from shared import crosswalk  # noqa: E402
 
 # 20 common generic drugs: name, strength, form. Deliberately plain oral
@@ -80,7 +80,7 @@ def main() -> None:
         for _, row in failed.iterrows():
             print(f"  - {row['drug']}: {row['note']}")
 
-    out_path = Path(__file__).resolve().parent / "cache" / "spike_results.csv"
+    out_path = Path(__file__).resolve().parent.parent / "costplus_suite" / "cache" / "spike_results.csv"
     out.to_csv(out_path, index=False)
     print(f"\nWrote {out_path}")
 

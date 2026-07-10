@@ -157,7 +157,7 @@ def discover_catalog_slugs(force_refresh: bool = False) -> list[str]:
         m = re.match(r"^https?://(?:www\.)?costplusdrugs\.com/medications/([a-z0-9][a-z0-9_-]*)/?$", loc)
         if m and m.group(1) != "categories":
             slugs.append(m.group(1))
-    print(f"[costplus_scraper] Discovered {len(slugs):,} product slugs from {SITEMAP_URL}")
+    print(f"[costplus_html_scraper] Discovered {len(slugs):,} product slugs from {SITEMAP_URL}")
     return slugs
 
 
@@ -372,14 +372,14 @@ def scrape_full_catalog(limit: int | None = None, force_refresh: bool = False) -
             if r.get("scrape_matched_slug"):
                 covered.add(r["scrape_matched_slug"])
         print(
-            f"[costplus_scraper] fetch {fetch_count} ({len(covered)} slug(s) covered, {len(rows)} row(s) so far): "
+            f"[costplus_html_scraper] fetch {fetch_count} ({len(covered)} slug(s) covered, {len(rows)} row(s) so far): "
             f"{slug} -> {len(page_rows)} variant(s)"
         )
 
     out = pd.DataFrame(rows)
     n_ok = (out["scrape_status"] == "ok").sum() if not out.empty else 0
     print(
-        f"[costplus_scraper] Full catalog scrape: {fetch_count} page fetch(es) covering {len(covered)} slug(s), "
+        f"[costplus_html_scraper] Full catalog scrape: {fetch_count} page fetch(es) covering {len(covered)} slug(s), "
         f"{len(out)} row(s), {n_ok} with a real final_price (catalog has {total_catalog_size:,} total product slugs)"
     )
     return out, total_catalog_size
@@ -411,8 +411,8 @@ def fetch_missing_variants(target_slugs: list[str], min_delay_seconds: float = 3
         try:
             html = fetcher.get(f"{BASE_URL}/medications/{slug}/")
         except scrape_utils.ChallengeDetectedError as exc:
-            print(f"[costplus_scraper] STOPPING: {exc}")
-            print(f"[costplus_scraper] Completed {i - 1}/{len(target_slugs)} target slugs before the challenge appeared.")
+            print(f"[costplus_html_scraper] STOPPING: {exc}")
+            print(f"[costplus_html_scraper] Completed {i - 1}/{len(target_slugs)} target slugs before the challenge appeared.")
             break
 
         if html is None:
@@ -442,12 +442,12 @@ def fetch_missing_variants(target_slugs: list[str], min_delay_seconds: float = 3
 
         rows.extend(page_rows)
         if i % 25 == 0 or i == len(target_slugs):
-            print(f"[costplus_scraper] fetched {i}/{len(target_slugs)} missing variant pages ({len(rows)} rows so far)")
+            print(f"[costplus_html_scraper] fetched {i}/{len(target_slugs)} missing variant pages ({len(rows)} rows so far)")
 
     out = pd.DataFrame(rows)
     n_with_volume = out["volume_raw"].notna().sum() if not out.empty and "volume_raw" in out.columns else 0
     print(
-        f"[costplus_scraper] Missing-variant fetch: {len(out)}/{len(target_slugs)} target slugs processed, "
+        f"[costplus_html_scraper] Missing-variant fetch: {len(out)}/{len(target_slugs)} target slugs processed, "
         f"{n_with_volume} now have volume_raw"
     )
     return out
@@ -494,13 +494,13 @@ def crosswalk_coverage_for_scraped(scraped_df: pd.DataFrame, force_refresh: bool
 
     total = len(usable)
     pct = (matched / total * 100) if total else 0.0
-    print("\n[costplus_scraper] === FULL-CATALOG CROSSWALK COVERAGE REPORT ===")
-    print(f"[costplus_scraper] {len(scraped_df):,} row(s) scraped this run ({total:,} with usable drug/strength/form)")
-    print(f"[costplus_scraper] {matched}/{total} ({pct:.1f}%) resolved through the Phase 0 crosswalk to a NADAC match")
+    print("\n[costplus_html_scraper] === FULL-CATALOG CROSSWALK COVERAGE REPORT ===")
+    print(f"[costplus_html_scraper] {len(scraped_df):,} row(s) scraped this run ({total:,} with usable drug/strength/form)")
+    print(f"[costplus_html_scraper] {matched}/{total} ({pct:.1f}%) resolved through the Phase 0 crosswalk to a NADAC match")
     if unmatched:
-        print(f"[costplus_scraper] unmatched ({len(unmatched)}):")
+        print(f"[costplus_html_scraper] unmatched ({len(unmatched)}):")
         for term, note in unmatched:
-            print(f"[costplus_scraper]   - {term} ({note})")
+            print(f"[costplus_html_scraper]   - {term} ({note})")
     return {"scraped_rows": len(scraped_df), "usable_rows": total, "matched": matched, "unmatched": unmatched, "pct": pct}
 
 
@@ -509,12 +509,12 @@ def run_full_catalog(limit: int | None = None, force_refresh: bool = False) -> d
     out_path = config.DATA_DIR / "costplus.SCRAPED.csv"
     scraped_df.to_csv(out_path, index=False)
     print(
-        f"[costplus_scraper] Wrote {len(scraped_df):,} rows -> {out_path} "
+        f"[costplus_html_scraper] Wrote {len(scraped_df):,} rows -> {out_path} "
         "(acquisition_cost/markup/pharmacy_fee/package_quantity are blank for every row -- not exposed by the site)"
     )
     coverage = crosswalk_coverage_for_scraped(scraped_df, force_refresh=force_refresh)
     coverage["catalog_size"] = total_catalog_size
-    print(f"[costplus_scraper] Cost Plus catalog size (total product slugs discovered from the sitemap): {total_catalog_size:,}")
+    print(f"[costplus_html_scraper] Cost Plus catalog size (total product slugs discovered from the sitemap): {total_catalog_size:,}")
     return {"scraped": scraped_df, "output_path": out_path, "coverage": coverage}
 
 
@@ -536,7 +536,7 @@ def refresh_catalog(costplus_path: Path | None = None, limit: int | None = None,
 
     scraped = []
     for i, row in enumerate(rows, 1):
-        print(f"[costplus_scraper] ({i}/{len(rows)}) scraping {row['drug']} {row['strength']} {row['form']}...")
+        print(f"[costplus_html_scraper] ({i}/{len(rows)}) scraping {row['drug']} {row['strength']} {row['form']}...")
         result = scrape_drug(row["drug"], row["strength"], row["form"], slugs, force_refresh=force_refresh)
         for col in ("package_quantity", "acquisition_cost", "markup", "pharmacy_fee"):
             if result[col] is None:
@@ -559,7 +559,7 @@ def refresh_catalog(costplus_path: Path | None = None, limit: int | None = None,
         )
 
     n_ok = (out["scrape_status"] == "ok").sum() if not out.empty else 0
-    print(f"[costplus_scraper] Scraped {n_ok}/{len(out)} rows with a real final_price")
+    print(f"[costplus_html_scraper] Scraped {n_ok}/{len(out)} rows with a real final_price")
     return out
 
 
@@ -581,11 +581,11 @@ def print_crosswalk_coverage(cp_df: pd.DataFrame, force_refresh: bool = False) -
             unmatched_terms.append((term, result.note))
 
     pct = (matched / total * 100) if total else 0.0
-    print(f"\n[costplus_scraper] === CROSSWALK COVERAGE REPORT ===")
-    print(f"[costplus_scraper] {matched}/{total} ({pct:.1f}%) catalog drugs resolved through the Phase 0 "
+    print(f"\n[costplus_html_scraper] === CROSSWALK COVERAGE REPORT ===")
+    print(f"[costplus_html_scraper] {matched}/{total} ({pct:.1f}%) catalog drugs resolved through the Phase 0 "
           f"crosswalk to a NADAC match")
     for term, note in unmatched_terms:
-        print(f"[costplus_scraper]   - unmatched: {term} ({note})")
+        print(f"[costplus_html_scraper]   - unmatched: {term} ({note})")
     return {"matched": matched, "total": total, "pct": pct, "unmatched": unmatched_terms}
 
 
@@ -593,7 +593,7 @@ def run(costplus_path: Path | None = None, limit: int | None = None, force_refre
     scraped_df = refresh_catalog(costplus_path, limit=limit, force_refresh=force_refresh)
     out_path = config.DATA_DIR / "costplus.SCRAPED.csv"
     scraped_df.to_csv(out_path, index=False)
-    print(f"[costplus_scraper] Wrote {len(scraped_df):,} rows -> {out_path} "
+    print(f"[costplus_html_scraper] Wrote {len(scraped_df):,} rows -> {out_path} "
           "(review acquisition_cost/markup/pharmacy_fee/package_quantity by hand before using it as data/costplus.csv)")
 
     cp_df = costplus_mod.load_costplus(costplus_path)
@@ -758,9 +758,9 @@ def recover_package_quantity(scraped_df: pd.DataFrame, force_refresh: bool = Fal
             out.at[idx, "package_quantity_status"] = "no_volume_text_captured"
 
     counts = out["package_quantity_status"].value_counts()
-    print("\n[costplus_scraper] === PACKAGE QUANTITY RECOVERY ===")
+    print("\n[costplus_html_scraper] === PACKAGE QUANTITY RECOVERY ===")
     for status, n in counts.items():
-        print(f"[costplus_scraper]   {status}: {n:,}")
+        print(f"[costplus_html_scraper]   {status}: {n:,}")
     return out
 
 

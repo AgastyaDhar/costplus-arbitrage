@@ -1,5 +1,5 @@
 """
-Unit tests for shared.costplus_scraper's HTML/JSON extraction and slug
+Unit tests for fetch.costplus_html_scraper's HTML/JSON extraction and slug
 matching. No network calls -- synthetic fixtures are built by re-deriving the
 exact same double-escaping a Next.js App Router page produces (verified
 against real costplusdrugs.com product pages during development), so these
@@ -12,7 +12,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from shared import costplus_scraper as scraper  # noqa: E402
+from fetch import costplus_html_scraper as scraper  # noqa: E402
 
 
 def _make_next_f_html(payload_source: str) -> str:

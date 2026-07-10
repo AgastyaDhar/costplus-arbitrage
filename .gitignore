@@ -6,6 +6,7 @@ data/costplus.csv
 data/costplus.SCRAPED.csv
 data/costplus.RUNNABLE.csv
 data/costplus.GRAPHQL.csv
+data/costplus.GRAPHQL.RUNNABLE.csv
 data/trumprx.csv
 data/_target_slugs.txt
 .idea/

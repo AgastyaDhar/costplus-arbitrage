@@ -1,5 +1,5 @@
 """
-Unit tests for shared.costplus_scraper.fetch_missing_variants (Task 3: fetch
+Unit tests for fetch.costplus_html_scraper.fetch_missing_variants (Task 3: fetch
 ONLY the specific slugs whose own page was never a direct fetch target) and
 merge_scraped_rows (folding those results back into the full catalog).
 """
@@ -11,7 +11,7 @@ from unittest.mock import patch
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from shared import costplus_scraper as scraper  # noqa: E402
+from fetch import costplus_html_scraper as scraper  # noqa: E402
 from shared import scrape_utils  # noqa: E402
 from tests.test_costplus_scraper_parsing import _make_next_f_html, _jsonld_payload, _product_details_payload  # noqa: E402
 

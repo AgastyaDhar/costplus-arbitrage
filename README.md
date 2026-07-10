@@ -10,7 +10,7 @@ Medicaid SDUD) and Cost Plus Drugs' transparent prices, using only public data.
 - **Medicaid State Drug Utilization Data (SDUD)** -- CMS's quarterly, NDC-level utilization and reimbursement
 - **Cost Plus Drugs GraphQL API** -- costplusdrugs.com's public storefront API (catalog, package sizes, prices)
 
-All datasets are discovered at runtime (no hardcoded resource IDs, since NADAC/Part D/SDUD identifiers rotate) -- see `costplus_suite/METHODOLOGY.md` for the full discovery/limitation writeup per source.
+All datasets are discovered at runtime (no hardcoded resource IDs, since NADAC/Part D/SDUD identifiers rotate) -- see `METHODOLOGY.md` for the full discovery/limitation writeup per source.
 
 ## Running it
 
@@ -45,5 +45,5 @@ manufacturer rebates, and generic rebates are small and mostly settled at the
 point of sale, so gross spend is a defensible proxy for generics but would
 materially overstate brand "overpayment." **Net-of-rebate prices are never
 estimated or guessed** -- every `net_per_unit` field in this suite's output is
-the literal string `"not public"`. See `costplus_suite/METHODOLOGY.md` for
+the literal string `"not public"`. See `METHODOLOGY.md` for
 the full set of governing principles and per-source limitations.

@@ -3,7 +3,7 @@ Cost Plus Drugs price list loader.
 
 Cost Plus's prices are supplied as a CSV at data/costplus.csv (columns: drug,
 strength, form, package_quantity, acquisition_cost, markup, pharmacy_fee,
-shipping_fee), refreshed by the live scraper in shared/costplus_scraper.py.
+shipping_fee), refreshed by the live scraper in fetch/costplus_html_scraper.py.
 
 Per-unit math is SOURCE-AWARE, per row (config.COSTPLUS_MARKUP defaults to
 Cost Plus's published 15%):
@@ -11,7 +11,7 @@ Cost Plus's published 15%):
         costplus_per_unit = (acquisition_cost * markup + pharmacy_fee) / package_quantity
   - either blank (scrape path -- costplusdrugs.com never publishes its own
     supplier cost/fee breakdown, only the final price; see
-    shared/costplus_scraper.py and METHODOLOGY.md):
+    fetch/costplus_html_scraper.py and METHODOLOGY.md):
         costplus_per_unit = final_price / package_quantity
   A row with neither the breakdown fields nor final_price gets a NaN
   costplus_per_unit and a printed warning, rather than a silently wrong number.
@@ -73,7 +73,7 @@ def load_costplus(path: Path | None = None) -> pd.DataFrame:
 
     for col in ("package_quantity", "acquisition_cost", "markup", "pharmacy_fee", "shipping_fee"):
         df[col] = pd.to_numeric(df[col], errors="coerce")
-    # final_price is optional (not in REQUIRED_COLUMNS): only shared/costplus_scraper.py's
+    # final_price is optional (not in REQUIRED_COLUMNS): only fetch/costplus_html_scraper.py's
     # output carries it, for rows where the site doesn't expose acquisition_cost/pharmacy_fee.
     df["final_price"] = pd.to_numeric(df["final_price"], errors="coerce") if "final_price" in df.columns else float("nan")
 
@@ -100,7 +100,7 @@ def load_costplus(path: Path | None = None) -> pd.DataFrame:
     # CSV path: acquisition_cost/pharmacy_fee both present -> the cost-plus formula.
     formula_per_unit = (df["acquisition_cost"] * df["markup"] + df["pharmacy_fee"]) / df["package_quantity"]
     # Scrape path: acquisition_cost/pharmacy_fee not exposed by costplusdrugs.com (see
-    # shared/costplus_scraper.py) -> fall back to the real observed final_price, which
+    # fetch/costplus_html_scraper.py) -> fall back to the real observed final_price, which
     # already has Cost Plus's own markup/fee baked in, divided by the same package_quantity.
     final_price_per_unit = df["final_price"] / df["package_quantity"]
     df["costplus_per_unit"] = formula_per_unit.where(has_breakdown, final_price_per_unit)

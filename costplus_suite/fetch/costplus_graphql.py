@@ -19,12 +19,12 @@ API the site's own frontend calls), with Relay-style cursor pagination
 surfaced in extensions.cost.requestedQueryCost / maximumAvailable.
 
 ROBOTS.TXT (fetched live via shared.scrape_utils.RobotsRules, the same
-longest-prefix-match logic shared/costplus_scraper.py uses): `Allow: /` with
+longest-prefix-match logic fetch/costplus_html_scraper.py uses): `Allow: /` with
 no Disallow rule covering /graphql/, so it's allowed.
 
 NO CDN BLOCK, UNLIKE THE HTML SCRAPE: confirmed live -- a plain, honestly
 self-identifying User-Agent (this module's own, no browser/tool
-impersonation) got HTTP 200 on the first request. shared/costplus_scraper.py
+impersonation) got HTTP 200 on the first request. fetch/costplus_html_scraper.py
 needed a browser UA to get past a CDN-level block on /medications/* pages;
 that block does not apply to /graphql/.
 
@@ -33,7 +33,7 @@ RIGHT BUT WASN'T: each variant carries a `package_size` metafield (a unit
 count) and a `retailPricePerUnit` metafield that LOOKS like Cost Plus's own
 per-unit price. It is not. Verified against ground truth (real prices
 already captured in data/costplus.SCRAPED.csv from live HTML product pages
-via shared/costplus_scraper.py): for Ibuprofen 100mg/5mL Bottle of
+via fetch/costplus_html_scraper.py): for Ibuprofen 100mg/5mL Bottle of
 Suspension (120mL), the real price is $7.89 total ($0.0658/mL); the
 `retailPricePerUnit` metafield for that exact SKU reports "11.00", which
 would compute to $1,320 for the bottle -- 167x too high. Same mismatch
@@ -68,12 +68,12 @@ absorbed into a clean-looking number.
 
 NO FEE BREAKDOWN: acquisition_cost / markup / pharmacy_fee are not present
 on any product or variant field this API exposes (checked the full node
-shape). Left blank, never guessed -- consistent with shared/costplus_scraper.py's
+shape). Left blank, never guessed -- consistent with fetch/costplus_html_scraper.py's
 independent finding on the HTML side that this breakdown is structurally
 private to Cost Plus, not merely absent from one access path.
 
 shipping_fee is also left blank here: it's a JSON-LD Offer field on the HTML
-product page (shared/costplus_scraper.py already captures it there), not a
+product page (fetch/costplus_html_scraper.py already captures it there), not a
 GraphQL product/variant field in this schema.
 """
 from __future__ import annotations
@@ -295,7 +295,7 @@ def _rows_from_payload(payload: dict) -> list[dict]:
                     "acquisition_cost": None,   # never exposed -- see module docstring
                     "markup": None,              # never exposed per-SKU
                     "pharmacy_fee": None,        # never exposed per-SKU
-                    "shipping_fee": None,        # not a GraphQL field; HTML JSON-LD has it (costplus_scraper.py)
+                    "shipping_fee": None,        # not a GraphQL field; HTML JSON-LD has it (costplus_html_scraper.py)
                     "final_price": final_price,
                     "brand_name": brand_name,
                     "sku": variant.get("sku"),

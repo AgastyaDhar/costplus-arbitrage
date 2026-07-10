@@ -1,5 +1,5 @@
 """
-Unit tests for shared.costplus_scraper's package_quantity recovery.
+Unit tests for fetch.costplus_html_scraper's package_quantity recovery.
 
 Two things under test:
   1. parse_package_quantity_from_volume: pure string parsing of the
@@ -24,7 +24,7 @@ from unittest.mock import patch
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from shared import costplus_scraper as scraper  # noqa: E402
+from fetch import costplus_html_scraper as scraper  # noqa: E402
 from shared import crosswalk  # noqa: E402
 
 

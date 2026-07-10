@@ -1,5 +1,5 @@
 """
-Unit tests for shared.costplus_scraper's full-catalog enumeration:
+Unit tests for fetch.costplus_html_scraper's full-catalog enumeration:
 _rows_from_product_page (variant extraction) and scrape_full_catalog's
 sibling-slug dedup/limit bookkeeping. No network -- _polite_get is
 monkey-patched with an in-memory fixture map.
@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from shared import costplus_scraper as scraper  # noqa: E402
+from fetch import costplus_html_scraper as scraper  # noqa: E402
 from tests.test_costplus_scraper_parsing import _make_next_f_html, _jsonld_payload, _product_details_payload  # noqa: E402
 
 

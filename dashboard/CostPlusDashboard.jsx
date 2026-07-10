@@ -1,12 +1,12 @@
 // Cost Plus Drugs -- internal war-room dashboard.
 //
-// PATH ASSUMPTION: this file is served from costplus_suite/dashboard/. It fetches
-//   ../output/leaderboard.csv        (costplus_suite/output/leaderboard.csv)
-//   ../output/spread_changes.csv     (costplus_suite/output/spread_changes.csv)
-//   ../../data/trumprx.csv           (data/trumprx.csv, repo root)
-// The original brief assumed a flat outputs/ dir; adjust the three paths below if
-// this file is relocated. data/trumprx.csv does not exist yet in this repo (Module E
-// has never been run against real data) -- Panel 4 renders its "missing" state until it does.
+// PATH ASSUMPTION: this file is served from dashboard/ at the repo root. It fetches
+//   ../costplus_suite/output/leaderboard.csv        (costplus_suite/output/leaderboard.csv)
+//   ../costplus_suite/output/spread_changes.csv     (costplus_suite/output/spread_changes.csv)
+//   ../data/trumprx.csv                             (data/trumprx.csv, repo root)
+// Adjust the three paths below if this file is relocated. data/trumprx.csv does not
+// exist yet in this repo (Module E has never been run against real data) -- Panel 4
+// renders its "missing" state until it does.
 //
 // NADAC_SNAPSHOT_DATE and CATALOG_COVERAGE_PCT below are build-time constants, not
 // derived from the three CSVs this dashboard fetches -- leaderboard.csv carries no
@@ -21,9 +21,9 @@ import Papa from "papaparse";
 
 const NADAC_SNAPSHOT_DATE = "2026-07-08";
 const CATALOG_COVERAGE_PCT = 84.8; // 2,024 / 2,386 scraped catalog rows
-const LEADERBOARD_URL = "../output/leaderboard.csv";
-const SPREAD_URL = "../output/spread_changes.csv";
-const TRUMPRX_URL = "../../data/trumprx.csv";
+const LEADERBOARD_URL = "../costplus_suite/output/leaderboard.csv";
+const SPREAD_URL = "../costplus_suite/output/spread_changes.csv";
+const TRUMPRX_URL = "../data/trumprx.csv";
 
 const fmtB = (n) => `$${(n / 1e9).toFixed(1)}B`;
 const fmtUSD = (n) => `$${Math.round(n).toLocaleString("en-US")}`;

@@ -119,7 +119,7 @@ over) each one.
   NDC-keyed, so it doesn't need Part D's brand/generic name heuristic -- it
   inherits the generic/brand status of the underlying Cost Plus catalog row).
 
-### Cost Plus Drugs price list (`shared/costplus.py`, refreshed by `shared/costplus_scraper.py`)
+### Cost Plus Drugs price list (`shared/costplus.py`, refreshed by `fetch/costplus_html_scraper.py`)
 - **Source**: a user-supplied CSV at `data/costplus.csv`
   (`drug, strength, form, package_quantity, acquisition_cost, markup,
   pharmacy_fee, shipping_fee`). This is still the primary, required path --
@@ -133,7 +133,7 @@ over) each one.
   stamps `is_sample=True` on the returned frame's `.attrs`, and every
   printed/written output derived from it is prefixed with a
   `SAMPLE DATA -- NOT REAL` banner or a `SAMPLE_` output filename prefix.
-- **`--source scrape` (refresh path)**: `shared/costplus_scraper.py` pulls
+- **`--source scrape` (refresh path)**: `fetch/costplus_html_scraper.py` pulls
   live data from costplusdrugs.com product pages for every drug already in
   the CSV -- real-time `robots.txt` check (`urllib.robotparser`; the site's
   own robots.txt explicitly `Allow: /medications/*`), 2-3s spacing between
@@ -366,7 +366,7 @@ trumprx.gov is a client-rendered app with no discovered public bulk-data feed
 or API, so its prices are supplied as a hand-populated CSV
 (`brand_name, generic_name, dosage, trumprx_price, list_price`) rather than
 scraped -- the same reasoning Cost Plus scraping had to work around in
-`shared/costplus_scraper.py`, except TrumpRx exposes nothing at all
+`fetch/costplus_html_scraper.py`, except TrumpRx exposes nothing at all
 server-rendered to even attempt it against.
 `modules.e_brand_trumprx.trumprx_comparison()` resolves each TrumpRx row's
 `generic_name`/`dosage` and each Cost Plus catalog row's `drug_term` to an

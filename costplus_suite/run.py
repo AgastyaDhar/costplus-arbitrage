@@ -29,13 +29,17 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--claims", type=Path, default=None, help="Path to a claims CSV, enables Module D")
     p.add_argument("--force-refresh", action="store_true", help="Bypass disk caches and re-fetch everything")
     p.add_argument(
-        "--source", choices=["csv", "scrape"], default="csv",
+        "--source", choices=["csv", "scrape", "graphql"], default="csv",
         help="csv (default): load data/costplus.csv as-is. scrape: run Module A against the "
-             "already-scraped data/costplus.SCRAPED.csv (see shared/costplus_scraper.py --full-catalog) "
+             "already-scraped data/costplus.SCRAPED.csv (see fetch/costplus_html_scraper.py --full-catalog) "
              "instead -- acquisition_cost/markup/pharmacy_fee are never published by the site, and "
-             "package_quantity is only trusted where shared.costplus_scraper.recover_package_quantity "
+             "package_quantity is only trusted where fetch.costplus_html_scraper.recover_package_quantity "
              "can confirm it against real NADAC data; unconfirmed rows are excluded and counted, "
-             "never guessed. Requires data/costplus.SCRAPED.csv to already exist (never scraped here).",
+             "never guessed. Requires data/costplus.SCRAPED.csv to already exist (never scraped here). "
+             "graphql: run Module A against the already-fetched data/costplus.GRAPHQL.csv (see "
+             "fetch/costplus_graphql.py) instead -- this is Cost Plus's own storefront API and, unlike "
+             "scrape, confirms package_quantity for the whole catalog rather than recovering it from "
+             "free-text page fields. Requires data/costplus.GRAPHQL.csv to already exist (never fetched here).",
     )
     p.add_argument(
         "--generics-only", dest="generics_only", action="store_true", default=None,
@@ -85,23 +89,42 @@ def main() -> None:
 
     if args.source == "scrape":
         import pandas as pd
-        from shared import costplus_scraper
+        from fetch import costplus_html_scraper
 
         scraped_path = config.DATA_DIR / "costplus.SCRAPED.csv"
         if not scraped_path.exists():
             raise FileNotFoundError(
                 f"{scraped_path} not found. --source scrape runs against an already-scraped catalog -- "
-                "generate one first with `python -m shared.costplus_scraper --full-catalog` "
+                "generate one first with `python -m costplus_suite.fetch.costplus_html_scraper --full-catalog` "
                 "(this command never scrapes automatically)."
             )
         scraped_df = pd.read_csv(scraped_path)
-        recovered = costplus_scraper.recover_package_quantity(scraped_df, force_refresh=args.force_refresh)
-        runnable = costplus_scraper.build_runnable_catalog(recovered)
+        recovered = costplus_html_scraper.recover_package_quantity(scraped_df, force_refresh=args.force_refresh)
+        runnable = costplus_html_scraper.build_runnable_catalog(recovered)
         runnable_path = config.DATA_DIR / "costplus.RUNNABLE.csv"
         runnable.to_csv(runnable_path, index=False)
         n_confirmed, n_total = len(runnable), len(scraped_df)
         print(f"[run] --source scrape: {n_confirmed:,}/{n_total:,} scraped rows have a confirmed "
               f"package_quantity (see breakdown above) -> {runnable_path}; running Module A against those only.")
+        costplus_path = runnable_path
+
+    if args.source == "graphql":
+        import pandas as pd
+
+        graphql_path = config.DATA_DIR / "costplus.GRAPHQL.csv"
+        if not graphql_path.exists():
+            raise FileNotFoundError(
+                f"{graphql_path} not found. --source graphql runs against an already-fetched catalog -- "
+                "generate one first with `python -m costplus_suite.fetch.costplus_graphql` "
+                "(this command never fetches automatically)."
+            )
+        graphql_df = pd.read_csv(graphql_path)
+        confirmed = graphql_df[graphql_df["package_quantity_status"] == "confirmed"].copy()
+        runnable_path = config.DATA_DIR / "costplus.GRAPHQL.RUNNABLE.csv"
+        confirmed.to_csv(runnable_path, index=False)
+        n_confirmed, n_total = len(confirmed), len(graphql_df)
+        print(f"[run] --source graphql: {n_confirmed:,}/{n_total:,} catalog rows have a confirmed "
+              f"package_quantity -> {runnable_path}; running Module A against those only.")
         costplus_path = runnable_path
 
     # --- Module A: always runs, it's the core deliverable ---

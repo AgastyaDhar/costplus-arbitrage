@@ -36,7 +36,7 @@ see shared/scrape_utils.py, shared by both scrapers), and:
 robots.txt: trumprx.gov's own robots.txt is `Allow: /`, `Disallow: /api/` --
 this module never touches /api/, only /browse and /p/*, and goes through
 shared.scrape_utils.PoliteFetcher for the same rate-limit/disk-cache
-behavior as shared/costplus_scraper.py.
+behavior as fetch/costplus_html_scraper.py.
 
 KNOWN ENVIRONMENT LIMITATION: trumprx.gov's CDN appears to fingerprint at
 the TLS/transport layer, not just headers -- `curl` with this exact User-

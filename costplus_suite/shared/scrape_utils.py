@@ -1,6 +1,6 @@
 """
 Shared infrastructure for this suite's polite live-site scrapers
-(shared/costplus_scraper.py, fetch/trumprx.py). Both target sites happen to
+(fetch/costplus_html_scraper.py, fetch/trumprx.py). Both target sites happen to
 be Next.js App Router apps that stream page data as `self.__next_f.push([1,
 "<escaped JSON string>"])` calls rather than the classic `__NEXT_DATA__`
 blob -- the JSON payloads of interest sit *inside* that decoded text, still
