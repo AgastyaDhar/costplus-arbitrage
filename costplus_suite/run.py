@@ -1,17 +1,25 @@
 """
 Main CLI entry point. Runs Module A (always) plus whichever Phase 2 modules
 are enabled in config.MODULES_ENABLED (or overridden with --modules), writes
-CSVs/digests to output/, and prints headline numbers to stdout.
+CSVs/digests to output/, and prints a clean summary to stdout (see README.md
+for the two-command quickstart this defaults to).
 
 Usage:
-    python run.py                                   # real data/costplus.csv
+    python run.py                                   # default: data/costplus.GRAPHQL.csv
+    python run.py --verbose                         # full pipeline diagnostics, not just the summary
     python run.py --sample                          # data/costplus.SAMPLE.csv, clearly labeled
+
+Advanced/internal (not part of the README quickstart):
+    python run.py --source csv                      # data/costplus.csv as-is
+    python run.py --source scrape                   # data/costplus.SCRAPED.csv (see fetch/costplus_html_scraper.py)
     python run.py --modules b,d --claims data/claims.SAMPLE.csv
     python run.py --force-refresh                   # bypass all disk caches
 """
 from __future__ import annotations
 
 import argparse
+import contextlib
+import io
 import sys
 from pathlib import Path
 
@@ -23,23 +31,18 @@ from modules import a_arbitrage  # noqa: E402
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Cost Plus arbitrage suite")
-    p.add_argument("--costplus", type=Path, default=None, help="Path to Cost Plus CSV (default: data/costplus.csv)")
+    p.add_argument("--costplus", type=Path, default=None, help="Path to Cost Plus CSV (default: data/costplus.GRAPHQL.csv)")
     p.add_argument("--sample", action="store_true", help="Use data/costplus.SAMPLE.csv instead of real data")
     p.add_argument("--trumprx", type=Path, default=None, help="Path to TrumpRx CSV for Module E (default: data/trumprx.csv, or data/trumprx.SAMPLE.csv with --sample)")
     p.add_argument("--claims", type=Path, default=None, help="Path to a claims CSV, enables Module D")
     p.add_argument("--force-refresh", action="store_true", help="Bypass disk caches and re-fetch everything")
+    p.add_argument("--verbose", action="store_true", help="Show full pipeline diagnostics instead of just the clean summary")
     p.add_argument(
-        "--source", choices=["csv", "scrape", "graphql"], default="csv",
-        help="csv (default): load data/costplus.csv as-is. scrape: run Module A against the "
-             "already-scraped data/costplus.SCRAPED.csv (see fetch/costplus_html_scraper.py --full-catalog) "
-             "instead -- acquisition_cost/markup/pharmacy_fee are never published by the site, and "
-             "package_quantity is only trusted where fetch.costplus_html_scraper.recover_package_quantity "
-             "can confirm it against real NADAC data; unconfirmed rows are excluded and counted, "
-             "never guessed. Requires data/costplus.SCRAPED.csv to already exist (never scraped here). "
-             "graphql: run Module A against the already-fetched data/costplus.GRAPHQL.csv (see "
-             "fetch/costplus_graphql.py) instead -- this is Cost Plus's own storefront API and, unlike "
-             "scrape, confirms package_quantity for the whole catalog rather than recovering it from "
-             "free-text page fields. Requires data/costplus.GRAPHQL.csv to already exist (never fetched here).",
+        "--source", choices=["csv", "scrape", "graphql"], default=None,
+        help="Advanced/internal. Default is 'graphql', unless --sample or --costplus is given (then 'csv'). "
+             "csv: load data/costplus.csv as-is. scrape: run against the already-scraped "
+             "data/costplus.SCRAPED.csv (see fetch/costplus_html_scraper.py). graphql: run against the "
+             "already-fetched data/costplus.GRAPHQL.csv (see fetch/costplus_graphql.py).",
     )
     p.add_argument(
         "--generics-only", dest="generics_only", action="store_true", default=None,
@@ -51,6 +54,18 @@ def parse_args() -> argparse.Namespace:
         help="Comma-separated Phase 2 modules to run (b,c,d,e,f). Default: config.MODULES_ENABLED",
     )
     return p.parse_args()
+
+
+def resolve_source(args: argparse.Namespace) -> str:
+    """Bare `python run.py` should just work against the committed real
+    catalog -- default to 'graphql'. An explicit --costplus or --sample
+    is a deliberate choice of a specific file, so that implies the plain
+    'csv' source instead, unless --source itself was also given explicitly."""
+    if args.source is not None:
+        return args.source
+    if args.sample or args.costplus:
+        return "csv"
+    return "graphql"
 
 
 def resolve_costplus_path(args: argparse.Namespace) -> Path:
@@ -79,15 +94,15 @@ def resolve_enabled_modules(args: argparse.Namespace) -> set[str]:
     return {short for short, full in key_map.items() if config.MODULES_ENABLED.get(full)}
 
 
-def main() -> None:
-    args = parse_args()
+def _run_pipeline(args: argparse.Namespace, source: str, enabled: set[str]) -> tuple[dict, dict | None, Path]:
+    """Resolves the Cost Plus source, runs Module A, writes every output CSV,
+    and (if enabled) runs Module E. Returns (module_a_result,
+    module_e_result_or_None, leaderboard_csv_path)."""
     costplus_path = resolve_costplus_path(args)
-    enabled = resolve_enabled_modules(args)
-
     print(f"[run] Cost Plus source: {costplus_path}")
     print(f"[run] Enabled Phase 2 modules: {sorted(enabled) or '(none)'}")
 
-    if args.source == "scrape":
+    if source == "scrape":
         import pandas as pd
         from fetch import costplus_html_scraper
 
@@ -108,16 +123,12 @@ def main() -> None:
               f"package_quantity (see breakdown above) -> {runnable_path}; running Module A against those only.")
         costplus_path = runnable_path
 
-    if args.source == "graphql":
+    if source == "graphql":
         import pandas as pd
 
         graphql_path = config.DATA_DIR / "costplus.GRAPHQL.csv"
         if not graphql_path.exists():
-            raise FileNotFoundError(
-                f"{graphql_path} not found. --source graphql runs against an already-fetched catalog -- "
-                "generate one first with `python -m costplus_suite.fetch.costplus_graphql` "
-                "(this command never fetches automatically)."
-            )
+            raise FileNotFoundError("Run python -m fetch.costplus_graphql first to fetch the catalog.")
         graphql_df = pd.read_csv(graphql_path)
         confirmed = graphql_df[graphql_df["package_quantity_status"] == "confirmed"].copy()
         runnable_path = config.DATA_DIR / "costplus.GRAPHQL.RUNNABLE.csv"
@@ -131,11 +142,13 @@ def main() -> None:
     result = a_arbitrage.run(costplus_path=costplus_path, force_refresh=args.force_refresh, generics_only=args.generics_only)
     is_sample = result["is_sample"]
 
-    report.write_leaderboard(result["leaderboard"], is_sample)
+    leaderboard_path = report.write_leaderboard(result["leaderboard"], is_sample)
     report.write_spread_changes(result["spread_changes"], is_sample)
     report.print_aggregate_summary(result)
 
     # --- Phase 2, toggle-gated ---
+    e_result = None
+
     if "b" in enabled:
         from modules import b_intelligence
         digest = b_intelligence.run(costplus_path)
@@ -167,6 +180,26 @@ def main() -> None:
               "carries physician-administered oncology drugs.")
 
     print("\n[run] Done.")
+    return result, e_result, leaderboard_path
+
+
+def main() -> None:
+    args = parse_args()
+    source = resolve_source(args)
+    enabled = resolve_enabled_modules(args)
+
+    try:
+        if args.verbose:
+            result, e_result, leaderboard_path = _run_pipeline(args, source, enabled)
+        else:
+            with contextlib.redirect_stdout(io.StringIO()):
+                result, e_result, leaderboard_path = _run_pipeline(args, source, enabled)
+    except FileNotFoundError as exc:
+        print(str(exc))
+        sys.exit(1)
+
+    print()
+    report.print_simple_summary(result, e_result, leaderboard_path)
 
 
 if __name__ == "__main__":

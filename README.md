@@ -1,76 +1,34 @@
 # Cost Plus Arbitrage Suite
 
-Quantifies the gap between what the US drug system pays (Medicare Part D,
-Medicaid SDUD) and Cost Plus Drugs' transparent prices, using only public data.
+## What this is
 
-## Data sources
+This tool compares Cost Plus Drugs' prices against what Medicare and
+Medicaid actually paid for the same medications, using public federal data.
+It found that across 2,024 generic drugs, the government overpaid an
+estimated $51 billion per year versus Cost Plus prices. Every number is
+sourced, auditable, and never estimated.
 
-- **NADAC** -- CMS's National Average Drug Acquisition Cost survey (proxy for true acquisition cost)
-- **Medicare Part D Spending by Drug** -- CMS's annual national gross-spend aggregate
-- **Medicaid State Drug Utilization Data (SDUD)** -- CMS's quarterly, NDC-level utilization and reimbursement
-- **Cost Plus Drugs GraphQL API** -- costplusdrugs.com's public storefront API (catalog, package sizes, prices)
-
-All datasets are discovered at runtime (no hardcoded resource IDs, since NADAC/Part D/SDUD identifiers rotate) -- see `METHODOLOGY.md` for the full discovery/limitation writeup per source.
-
-## Running it
-
-Real Cost Plus prices come from the site's own GraphQL storefront API (see
-`costplus_suite/fetch/costplus_graphql.py`), not a hand-supplied CSV.
+## How to run it
 
 ```
-pip install -r requirements.txt      # pandas + stdlib; see costplus_suite for imports
-cd costplus_suite
-python run.py --source graphql       # runs the full pipeline against the committed real catalog
+pip install -r requirements.txt
+python run.py
 ```
 
-`data/costplus.GRAPHQL.csv` is committed as a point-in-time catalog snapshot.
-`--source graphql` filters it to rows with a confirmed `package_quantity`,
-writes the result to `data/costplus.GRAPHQL.RUNNABLE.csv`, and runs Module A
-(plus any enabled Phase 2 modules) against that.
+## What you get
 
-To refresh the catalog with a current snapshot before running (e.g. prices
-have moved since the committed one):
+- A ranked list of the 25 drugs with the biggest overpayment gap
+- A total dollar figure: estimated annual overpayment across all matched
+  generics
+- A comparison of brand-name drugs on TrumpRx vs their generic equivalent
+  at Cost Plus
 
-```
-python -m fetch.costplus_graphql     # re-fetches -> data/costplus.GRAPHQL.csv
-python run.py --source graphql
-```
+## Methodology
 
-There's also `--source scrape`, which drives Module A off an HTML page-scrape
-(`data/costplus.SCRAPED.csv`) instead of the GraphQL API -- see
-`fetch/costplus_html_scraper.py` and its module docstring for why the GraphQL
-path is preferred (it confirms `package_quantity` for the whole catalog
-rather than recovering it from free-text page fields).
+- Prices come from Cost Plus Drugs' own website
+- Government spending comes from Medicare Part D and Medicaid public
+  datasets, updated weekly
+- Only generic drugs are included, because brand drug rebates are not public
+- Net prices are never estimated or guessed
 
-Plain `python run.py` (no `--source`) instead loads `data/costplus.csv` as-is
-and refuses to run unless that file is present. This is for supplying your
-own price list (schema documented in `data/README.md`) rather than using this
-repo's own scraped/GraphQL data.
-
-## Headline finding
-
-Running the pipeline against the full Cost Plus catalog (2,386 drugs, 88.1%
-successfully crosswalked to NDCs/NADAC) and restricting to generics yields
-**2,024 generic drugs** with a computed price gap, and a combined
-**$51.0B/year estimated overpayment** (Medicare Part D: $45.7B, Medicaid SDUD: $5.3B)
-versus what Cost Plus charges for the same drugs.
-
-Module E's TrumpRx exhibit runs by default alongside the leaderboard: for each
-brand-name drug listed on TrumpRx, it compares TrumpRx's price to the price of
-the **generic equivalent of the same molecule** at Cost Plus (brand cash price
-vs. generic cash price, clearly labeled -- not the same drug; see
-`METHODOLOGY.md`), writing `output/trumprx_comparison.csv` and printing the
-top 5 gaps plus a coverage line ("N of M TrumpRx brands matched to a Cost Plus
-generic," with any unmatched brands listed explicitly). Against the sample
-data (`--sample`), all 6 TrumpRx brands match -- e.g. Lipitor (20mg,
-$60.00 on TrumpRx) vs. Cost Plus's atorvastatin ($8.45), a $51.55 (85.9%) gap.
-
-## Methodology note
-
-Headline numbers are **generics only** -- Part D/Medicaid spend is gross of
-manufacturer rebates, and generic rebates are small and mostly settled at the
-point of sale, so gross spend is a defensible proxy for generics but would
-materially overstate brand "overpayment." **Net-of-rebate prices are never
-estimated or guessed** -- every `net_per_unit` field in this suite's output is
-the literal string `"not public"`. See `METHODOLOGY.md` for
-the full set of governing principles and per-source limitations.
+See `METHODOLOGY.md` for the full data-source and limitation writeup.

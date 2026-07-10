@@ -109,6 +109,56 @@ def write_trumprx_comparison(trumprx_result: dict, is_sample: bool) -> Path:
     return write_csv(trumprx_result["comparison"], "trumprx_comparison.csv", is_sample)
 
 
+def _fmt_billions(x: float) -> str:
+    return f"${x / 1e9:.1f}B"
+
+
+def print_simple_summary(result: dict, e_result: dict | None, leaderboard_path: Path, top_n: int = 10) -> None:
+    """The clean, non-technical-reader summary `run.py` prints by default
+    (see README.md). Everything else the pipeline prints (module toggles,
+    fetch/crosswalk diagnostics, the full 25-row leaderboard, coverage
+    reports) is real and still runs -- it's just not part of this block."""
+    is_sample = result["is_sample"]
+    print("--- Cost Plus Arbitrage Results ---")
+    if is_sample:
+        print(f"\n{SAMPLE_BANNER}")
+
+    print("\nEstimated annual overpayment (generics only)")
+    print(f"Medicare Part D:  {_fmt_billions(result['total_partd_savings'])}")
+    print(f"Medicaid:         {_fmt_billions(result['total_medicaid_savings'])}")
+    print(f"Total:            {_fmt_billions(result['total_savings'])}")
+
+    top = result["leaderboard"].head(top_n).copy()
+    total_units = top["Tot_Dsg_Unts"].fillna(0) + top["medicaid_units"].fillna(0)
+    top["gap_per_unit"] = (top["total_overpayment"] / total_units).where(total_units > 0)
+    table = pd.DataFrame({
+        "Drug": top["drug_term"],
+        "Gap per unit": top["gap_per_unit"].map(lambda v: f"${v:.4f}" if pd.notna(v) else "-"),
+        "Total overpayment": top["total_overpayment"].map(lambda v: f"${v:,.0f}"),
+    })
+    print(f"\nTop {top_n} drugs by overpayment:")
+    with pd.option_context("display.width", 200):
+        print(table.to_string(index=False))
+
+    if e_result is not None and e_result.get("trumprx_comparison") is not None:
+        tc = e_result["trumprx_comparison"]["comparison"].head(top_n)
+        tc_table = pd.DataFrame({
+            "Brand": tc["brand_name"],
+            "TrumpRx price": tc["trumprx_price"].map(lambda v: f"${v:,.2f}"),
+            "Cost Plus generic price": tc["costplus_generic_price"].map(lambda v: f"${v:,.2f}"),
+            "Gap": tc["gap"].map(lambda v: f"${v:,.2f}"),
+        })
+        print("\nTrumpRx brand vs Cost Plus generic:")
+        with pd.option_context("display.width", 200):
+            print(tc_table.to_string(index=False))
+
+    try:
+        display_path = leaderboard_path.relative_to(config.ROOT_DIR)
+    except ValueError:
+        display_path = leaderboard_path
+    print(f"\nFull results written to {display_path.as_posix()}")
+
+
 def write_digest(text: str, filename: str, is_sample: bool = False) -> Path:
     path = config.OUTPUT_DIR / f"{_sample_prefix(is_sample)}{filename}"
     path.write_text(text, encoding="utf-8")

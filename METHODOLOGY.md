@@ -2,15 +2,14 @@
 
 This suite quantifies the gap between what the US drug system pays (Medicare
 Part D, Medicaid SDUD) and Cost Plus Drugs' transparent prices, using only
-public data. This document lists every comparison made, its data source, its
-known limitations, and how the code handles (or deliberately does not paper
-over) each one.
+public data. This document lists every comparison made, its data source, and
+its known limitations.
 
 ## Governing principles
 
 1. **Net prices are never estimated.** True net-of-rebate prices are not
    public. Every `net_per_unit` field in this suite's output is the literal
-   string `"not public"`. This is intentional, not a missing feature.
+   string `"not public"`.
 2. **Everything is reduced to the same per-unit basis before comparison.**
    NADAC's own `Pricing Unit` (EA / ML / GM) is the canonical unit. A
    per-package price is never compared to a per-unit price.
@@ -24,8 +23,7 @@ over) each one.
    columns**, never folded into a per-unit price.
 5. **No dataset resource IDs are hardcoded.** Every fetch/*.py module
    discovers its current distribution at runtime from the hosting platform's
-   API or landing page, prints what it resolved, and caches the resolution to
-   `cache/resolved_ids.json`.
+   API or landing page.
 6. **No proprietary or paid data, no scraping behind logins.**
 
 ## Data sources
@@ -33,189 +31,89 @@ over) each one.
 ### NADAC -- National Average Drug Acquisition Cost (`fetch/nadac.py`)
 - **What it is**: CMS's weekly survey of retail community pharmacies'
   actual invoice costs. The closest public proxy to true acquisition cost.
-- **Discovery**: queries `data.medicaid.gov`'s metastore API
-  (`/api/1/metastore/schemas/dataset/items?fulltext=NADAC`), filters titles
-  matching `NADAC (National Average Drug Acquisition Cost) <year>`, takes the
-  max year. The weekly refresh date is parsed out of the download URL itself
-  (e.g. `...-07-08-2026.csv`) since the dataset identifier stays constant for
-  an entire calendar year and only the URL's embedded date changes week to
-  week -- that date is what `shared/snapshots.py` keys weekly history on.
 - **Limitation**: NADAC is a survey, not a census -- some low-volume NDCs
-  have no reported invoice cost. NADAC's own "Corresponding Generic Drug
-  NADAC Per Unit" is a different concept from a drug's own reported price and
-  is not used here. NADAC is **not** net of any rebate; it approximates
-  acquisition cost, not net cost, and is never relabeled "net" anywhere in
-  this suite.
-- **Code handling**: the raw file accumulates one row per NDC per weekly
-  refresh within a calendar year; `fetch.nadac.load_nadac()` deduplicates to
-  each NDC's most recent `Effective Date` before use.
+  have no reported invoice cost. NADAC is **not** net of any rebate; it
+  approximates acquisition cost, not net cost, and is never relabeled "net."
 
 ### Medicare Part D Spending by Drug (`fetch/partd.py`)
 - **What it is**: CMS's annual national aggregate of Part D gross spend, by
   brand + generic name (not NDC-level).
-- **Discovery**: queries `data.cms.gov/data.json` (CMS's DCAT catalog) for the
-  dataset titled exactly `"Medicare Part D Spending by Drug"`, then resolves
-  the actual CSV via that dataset's `resourcesAPI`
-  (`data.cms.gov/data-api/v1/dataset-resources/<uuid>`). Note: the catalog's
-  own `distribution[].downloadURL` field currently contains a live templating
-  bug (literal host `https://default`) -- the resourcesAPI path was used
-  specifically because it returns fully-qualified URLs and sidesteps that bug.
 - **Limitation, granularity mismatch**: Part D's `Gnrc_Name` aggregates
   spending across **every strength and dosage form** of that ingredient
   nationally (e.g. one "Atorvastatin Calcium" row sums 10mg + 20mg + 40mg +
-  80mg together). Cost Plus and NADAC are strength-specific. Comparing a
+  80mg together). Cost Plus and NADAC are strength-specific, so comparing a
   strength-specific per-unit price to an ingredient-wide weighted average
-  assumes per-dosage-unit price is roughly flat across strengths for that
-  drug, which is a reasonable but imperfect assumption for most oral
-  generics, and worse for some.
+  assumes per-dosage-unit price is roughly flat across strengths -- a
+  reasonable but imperfect assumption.
 - **Limitation, gross of rebates**: stated in CMS's own dataset description.
   This is exactly why `generics_only` gates headline numbers.
 - **Limitation, no generic/brand flag**: the file has no explicit indicator.
   `fetch.partd.is_generic_row()` uses the field's own convention --
   unbranded generics list the identical string in `Brnd_Name` and
-  `Gnrc_Name` -- to classify rows. This is CMS's own naming convention, not
-  something invented here, but it is a heuristic: a real generic that
-  happens to carry a distinct marketed brand-style name (observed for some
-  levothyroxine listings during testing) will be misclassified as "brand"
-  and excluded from generic totals. This is the **conservative** direction
-  (undercounts overpayment rather than overstating it).
-- **Limitation, "list price" substitution used in Modules B/C/E**: CMS does
-  not publish a public WAC/list-price series (WAC is proprietary,
-  First Databank/Medi-Span). Where the original spec asks for "list-price
-  movement," this suite uses Part D's year-over-year change in gross average
-  spend per dosage unit (`Chg_Avg_Spnd_Per_Dsg_Unt_<y-1>_<y>`) instead,
-  labeled explicitly as `gross_spend_per_unit_yoy_chg`, annual (not
-  quarterly -- no public quarterly retail price-change series exists either),
-  and never called "list price" or "WAC" in any output column.
-- **Code handling**: the CSV ships wide, one column trio
-  (`Tot_Spndng_<year>`, `Tot_Dsg_Unts_<year>`, `Tot_Clms_<year>`) per
-  calendar year. `fetch.partd.load_partd()` detects the latest year present
-  from the column names via regex rather than assuming one, and renames to
-  generic column names for downstream use.
+  `Gnrc_Name`. A real generic with a distinct marketed brand-style name can
+  be misclassified as "brand" and excluded from generic totals -- the
+  **conservative** direction (undercounts overpayment, never overstates it).
+- **Limitation, "list price" substitution used in Module E**: CMS does not
+  publish a public WAC/list-price series (WAC is proprietary, First
+  Databank/Medi-Span). Where "list-price movement" would normally be asked
+  for, this suite uses Part D's year-over-year change in gross average spend
+  per dosage unit (`Chg_Avg_Spnd_Per_Dsg_Unt_<y-1>_<y>`) instead, labeled
+  explicitly as `gross_spend_per_unit_yoy_chg_pct` and never called "list
+  price" or "WAC."
 
 ### Medicaid State Drug Utilization Data / SDUD (`fetch/sdud.py`)
 - **What it is**: CMS's quarterly, NDC-level, per-state Medicaid
   utilization and reimbursement.
-- **Discovery**: same metastore pattern as NADAC --
-  `"State Drug Utilization Data <year>"`, max year.
-- **Scale**: the annual file is ~500MB / ~5M rows (every NDC x state x
-  quarter x utilization-type combination nationally). `load_sdud()` never
-  loads it in full; it streams in chunks and keeps only rows whose NDC is in
-  a caller-supplied filter set (in practice, the NDCs already resolved
-  through the crosswalk).
-- **Quirk, verified by hand on real data**: CMS reports a synthetic
-  `State == "XX"` row per NDC that is the **national rollup** (sum across all
-  real states/territories), not a 51st jurisdiction. Verified by summing all
-  non-XX states for a sample NDC (atorvastatin, NDC 60505257908) and finding
-  it matched the XX row to within rounding (25,775,645 vs 25,777,460 units).
-  `fetch.sdud.national_total()` and `.state_level()` split these apart
-  explicitly so a national total is never computed by (incorrectly) summing
+- **Quirk**: CMS reports a synthetic `State == "XX"` row per NDC that is the
+  **national rollup** (sum across all real states/territories), not a 51st
+  jurisdiction. `fetch.sdud.national_total()` and `.state_level()` split
+  these apart explicitly so a national total is never computed by summing
   real states on top of the XX row.
 - **Suppression**: rows with `Suppression Used == true` (small-count privacy
   suppression) carry no usable units/amount and are dropped before
   aggregation.
 - **Limitation, gross of rebates**: same caveat as Part D; also gated by
-  `generics_only` at the Module A level via the crosswalk (SDUD itself is
-  NDC-keyed, so it doesn't need Part D's brand/generic name heuristic -- it
-  inherits the generic/brand status of the underlying Cost Plus catalog row).
+  `generics_only` at the Module A level via the crosswalk.
 
-### Cost Plus Drugs price list (`shared/costplus.py`, refreshed by `fetch/costplus_html_scraper.py`)
+### Cost Plus Drugs price list (`shared/costplus.py`)
 - **Source**: a user-supplied CSV at `data/costplus.csv`
   (`drug, strength, form, package_quantity, acquisition_cost, markup,
-  pharmacy_fee, shipping_fee`). This is still the primary, required path --
-  `run.py`'s default `--source csv` loads it exactly as before.
+  pharmacy_fee, shipping_fee`), or one of the two live-data paths below.
 - **Formula**: `costplus_per_unit = (acquisition_cost * markup + pharmacy_fee)
   / package_quantity`. `shipping_fee` is never part of this formula -- it
-  stays a separate column through the entire pipeline (HARD CONSTRAINT).
+  stays a separate column through the entire pipeline.
 - **Sample data**: `data/costplus.SAMPLE.csv` contains ten drugs with
-  round, fabricated acquisition costs, used only to exercise the pipeline
-  end-to-end before real prices are supplied. Every function that loads it
-  stamps `is_sample=True` on the returned frame's `.attrs`, and every
-  printed/written output derived from it is prefixed with a
+  fabricated acquisition costs, used only to exercise the pipeline
+  end-to-end. Every output derived from it is prefixed with a
   `SAMPLE DATA -- NOT REAL` banner or a `SAMPLE_` output filename prefix.
-- **`--source scrape` (refresh path)**: `fetch/costplus_html_scraper.py` pulls
-  live data from costplusdrugs.com product pages for every drug already in
-  the CSV -- real-time `robots.txt` check (`urllib.robotparser`; the site's
-  own robots.txt explicitly `Allow: /medications/*`), 2-3s spacing between
-  requests, every response cached to disk. It writes `data/costplus.SCRAPED.csv`
-  and prints a crosswalk-to-NADAC coverage report, then the run continues
-  against the original CSV.
-  **Structural limitation, confirmed by live inspection**: a product page
+- **`--source scrape` (`fetch/costplus_html_scraper.py`)**: live HTML
+  scrape of costplusdrugs.com product pages. **Limitation**: a product page
   publishes the drug's name/strength/brand, its flat shipping fee, and the
-  final all-in price a customer pays (via a `Product`/`Offer`
-  `application/ld+json` block plus an undocumented React-serialized
-  `productDetails` object) -- but never the acquisition cost Cost Plus pays
-  its supplier, nor the markup/pharmacy-fee breakdown behind that final
-  price. This isn't a gap to fill in later; it's the same category of limit
-  as net-of-rebate prices never being public (see governing principle #1) --
-  the formula's *inputs* are Cost Plus's own trade secret, only the *output*
-  is public. Accordingly the scraper leaves `acquisition_cost`, `markup`,
-  `pharmacy_fee`, and `package_quantity` blank rather than back-solving them
-  from the published 15%/$5 policy figures, which would silently assume that
-  policy applies uniformly per SKU (unverifiable -- some products are flagged
-  `specialtyMedication` on the site, suggesting it sometimes doesn't). The
-  `package_size` metafield some variants expose was observed identical across
-  four different strengths of the same drug during reconnaissance --
-  inconsistent with a literal per-fill tablet count -- so it is surfaced
-  verbatim as `package_size_raw` for a human to interpret, never renamed to
-  `package_quantity`. What the scraper *does* add that's new and real:
-  `observed_costplus_price` and `shipping_fee`, plus, when the input row
-  already has hand-entered formula inputs, an `implied_costplus_per_unit` /
-  `price_check_note` sanity check against that real observed price.
+  final all-in price -- but never the acquisition cost Cost Plus pays its
+  supplier, nor the markup/pharmacy-fee breakdown behind that price. This is
+  Cost Plus's own trade secret, not a gap to fill in later; `acquisition_cost`,
+  `markup`, and `pharmacy_fee` are left blank rather than back-solved from
+  the published 15%/$5 policy figures (unverifiable per-SKU). Only 31.1% of
+  rows get a confirmed `package_quantity` this way (recovered from free-text
+  page fields); the rest are excluded, never guessed.
 
 ### Cost Plus Drugs GraphQL catalog (`fetch/costplus_graphql.py`)
 - **What it is**: costplusdrugs.com's public Saleor storefront GraphQL API
-  (`POST /graphql/`), the same API the site's own frontend calls. Contract
-  read (not copied) from github.com/DavidOsherdiagnostica/cost-plus-drugs,
-  then independently re-verified live before writing a line of this client
-  -- that repo has no `AGENTS.md` (checked via the GitHub API tree listing),
-  despite that being assumed. Cursor-paginated (Relay-style `first`/`after`),
-  disk-cached per page, resumable across interrupted runs. `robots.txt`
-  (`Allow: /`, no `Disallow` on `/graphql/`) permits it, and unlike the HTML
-  product pages, this endpoint answered an honest, self-identifying,
-  non-browser User-Agent with HTTP 200 immediately -- no CDN block, no
-  browser impersonation needed here.
-- **Solves the package_quantity gap**: 2,386/2,386 (100%) rows returned a
-  confirmed `package_size` metafield, vs 729/2,341 (31.1%) from the old
-  HTML/regex recovery. `package_size` itself is not perfectly reliable even
-  via this API -- reproduced live the exact case that broke the old
-  recovery (Ipratropium Bromide's "Box of 30 vials" variant still reports
-  `package_size == "1"`) -- but it is now structured data covering the whole
-  catalog rather than something recovered from free-text form fields for
-  under a third of it.
-- **A near-miss worth keeping visible**: an earlier version of this client
-  used the `retailPricePerUnit` metafield as `costplus_per_unit` directly,
-  since it looks exactly like Cost Plus's own stated per-unit price. It
-  isn't. Checked against ground truth already sitting in
-  `data/costplus.SCRAPED.csv` (real prices from live HTML product pages):
-  for Ibuprofen 100mg/5mL Bottle of Suspension, `retailPricePerUnit` implied
-  a $1,320 bottle; the real price is $7.89 -- 167x off. Reproduced on
-  Dimethyl Fumarate, Nitrofurantoin, and others, and it briefly produced a
-  leaderboard full of implausible multi-thousand-dollar gaps before this was
-  caught. The field that matches ground truth exactly (verified on every
-  overlapping SKU against the old scrape, 2,341/2,341 exact matches) is
-  variant-level `priceCalculation`, queried per-variant rather than the
-  ambiguous product-level field the reference repo's own query uses (which
-  only reflects the first-listed variant on a multi-variant product). This
-  client uses `priceCalculation` as `final_price` and the ordinary
-  `final_price / package_quantity` formula from here on -- no per-unit
-  shortcut.
-- **Second bug this coverage jump exposed, in Module A, not this fetcher**:
-  running Module A against the full 100%-covered catalog for the first time
-  surfaced that `attach_sdud` had no brand/generic awareness of its own
-  (SDUD is NDC-keyed, no brand flag) -- a brand drug in the Cost Plus catalog
-  (Eliquis, RxNorm TTY=SBD) sailed straight into a nominally generics-only
-  Medicaid total, contributing $480M+ uncontested, because only the Part D
-  join filtered by brand/generic status. Fixed in `modules/a_arbitrage.py`
-  (`_exclude_brand_rows`) by reusing the crosswalk's own RxNorm TTY to strip
-  brand NDCs from both Part D and Medicaid computation, not just one of them.
-  Regression-tested in `tests/test_module_a_math.py`.
+  (`POST /graphql/`), the same API the site's own frontend calls. This is
+  the default, real-data path (`python run.py` uses it automatically via
+  `data/costplus.GRAPHQL.csv`).
+- **Solves the package_quantity gap**: 2,386/2,386 (100%) rows return a
+  confirmed `package_size` metafield, vs. 31.1% from the HTML scrape.
+  `package_size` itself is not perfectly reliable even via this API (e.g. a
+  "Box of 30 vials" variant can still report `package_size == "1"`), but it
+  is structured data covering the whole catalog.
+- **Limitation**: `retailPricePerUnit` looks like Cost Plus's own per-unit
+  price but is not reliable (can be off by 100x+ on some SKUs) -- this
+  suite uses variant-level `priceCalculation` as `final_price` instead,
+  divided by `package_quantity`, never `retailPricePerUnit` directly.
 - **No fee breakdown here either**: acquisition_cost/markup/pharmacy_fee are
-  not present on any product or variant field this API exposes (checked the
-  full node shape) -- the same structural conclusion `costplus_scraper.py`
-  reached independently via the HTML path. `shipping_fee` is a JSON-LD
-  `Offer` field on the HTML page, not a GraphQL field in this schema, so it
-  is left blank on the GraphQL path (the HTML scraper still captures it).
+  not present on any field this API exposes. `shipping_fee` is a JSON-LD
+  field on the HTML page, not part of this schema, so it is left blank here.
 
 ### FDA Drug Shortages (`fetch/shortages.py`)
 - **Source**: openFDA's public `drug/shortages.json` endpoint (no
@@ -226,36 +124,19 @@ over) each one.
 - **What it is**: CMS's quarterly Average Sales Price payment-limit files
   (ASP + 6%), used to reimburse physicians/hospitals for physician-
   administered drugs, plus the companion NDC-HCPCS crosswalk.
-- **Discovery**: these files are **not** in a metastore/DCAT catalog -- they
-  are plain zip links on a landing page
-  (`cms.gov/medicare/payment/part-b-drugs/asp-pricing-files`), whose *own
-  URL* has moved before (the older `/medicare/payment/fee-schedules/drugs/...`
-  path 404s as of this build). Discovery parses the current landing page's
-  HTML for zip links matching the payment-limit/crosswalk naming pattern and
-  takes the first (the page lists newest quarter first) -- never a hardcoded
-  quarter, filename, or landing-page path assumption beyond "this is CMS's
-  current URL as of today."
-- **HARD LIMITATION, stated explicitly per the build spec's requirement**:
-  ASP is a volume-weighted average of a manufacturer's quarterly net sales
-  across all of that manufacturer's customers -- it already has rebate-like
-  averaging baked into the number by statute, *before* CMS ever publishes it.
-  This is fundamentally different from any single payer's or patient's net
-  price. It is surfaced as `payment_limit` ("ASP-based payment limit"),
-  never relabeled "net."
+- **Limitation**: ASP is a volume-weighted average of a manufacturer's
+  quarterly net sales across all of that manufacturer's customers -- it
+  already has rebate-like averaging baked into the number by statute, before
+  CMS ever publishes it. Surfaced as `payment_limit`, never relabeled "net."
 - **Unit safety**: a NDC's HCPCS billing unit (e.g. "10 MG") is frequently
-  not the same unit NADAC prices that NDC in (e.g. some injectables price
-  "EA" per vial in NADAC regardless of the vial's mg strength).
-  `modules/f_oncology.py` only computes a direct `overcharge_per_billunit`
-  figure when the HCPCS dosage unit and NADAC's Pricing Unit are confirmed
-  identical (1:1); every other row reports both prices side by side, in
-  their own labeled units, with the overcharge column left blank and a note
-  explaining why -- never a silent division through mismatched units.
+  not the same unit NADAC prices that NDC in. `modules/f_oncology.py` only
+  computes a direct `overcharge_per_billunit` figure when the HCPCS dosage
+  unit and NADAC's Pricing Unit are confirmed identical; every other row
+  reports both prices side by side with the overcharge column left blank.
 - **Scope note**: Cost Plus's retail catalog is predominantly self-
   administered oral generics; physician-administered oncology infusions are
-  largely outside what a mail-order retail pharmacy carries. Running Module F
-  against `data/costplus.csv` is expected to find zero or very few matches --
-  that is a correct result of the drug universes not overlapping, not a bug.
-  The module is designed to accept any oncology NDC list.
+  largely out of scope. Zero or very few Module F matches is expected, not
+  a bug.
 
 ## Crosswalk methodology (`shared/crosswalk.py`)
 
@@ -264,39 +145,24 @@ NDCs via:
 
 1. `RxNav approximateTerm.json` -- fuzzy match to ranked candidate RxCUIs.
 2. **Dispensable-TTY filtering**: RxNav's approximate match frequently ranks
-   the bare ingredient+strength concept (RxNorm TTY `SCDC`, e.g.
-   "atorvastatin 20 MG" -- no dose form, zero NDCs) above the actual
-   dispensable clinical drug (TTY `SCD`, e.g. "atorvastatin 20 MG Oral
-   Tablet" -- has an NDC set). Verified during Phase 0: for atorvastatin,
-   RxCUI 597966 (SCDC) ranked #1 with zero NDCs; RxCUI 617310 (SCD) ranked #2
-   and had 395 NDCs. `resolve_dispensable_rxcui()` walks the ranked list and
-   takes the first candidate whose TTY is in `{SCD, SBD, GPCK, BPCK}`.
+   the bare ingredient+strength concept (RxNorm TTY `SCDC` -- no dose form,
+   zero NDCs) above the actual dispensable clinical drug (TTY `SCD` -- has
+   an NDC set). `resolve_dispensable_rxcui()` walks the ranked list and takes
+   the first candidate whose TTY is in `{SCD, SBD, GPCK, BPCK}`.
 3. `RxNav rxcui/{rxcui}/ndcs.json` -- the NDC set for that dispensable drug.
 4. NADAC lookup by NDC -- `NADAC Per Unit` + `Pricing Unit`, aggregated by
    **median** across all matched NDCs (robust to the occasional outlier
-   package; verified on metformin 500mg, where a naive text search across
-   the whole NADAC file turned up unrelated extended-release variants at
-   ~20x the price, but the RxCUI's *actual* NDC set correctly excluded them
-   and all 61 matched NDCs were immediate-release, median exactly matching
-   two independently spot-checked rows).
-5. **Ingredient-name resolution** (`get_ingredient_name`, `RxNav
-   rxcui/{rxcui}/related.json?tty=IN`) strips a dispensable drug's RxCUI down
-   to its bare ingredient (e.g. "atorvastatin"), used to join against Part D
-   / SDUD's free-text generic name fields.
+   package).
+5. **Ingredient-name resolution** (`get_ingredient_name`) strips a
+   dispensable drug's RxCUI down to its bare ingredient (e.g.
+   "atorvastatin"), used to join against Part D / SDUD's free-text generic
+   name fields.
 6. **Name normalization** (`normalize_drug_name`): uppercases and strips
    common salt/ester/formulation suffixes (HCL, SODIUM, POTASSIUM, ER, XR,
    etc.) so RxNorm's bare ingredient name and CMS's free-text `Gnrc_Name`
-   (e.g. "Atorvastatin Calcium") converge to the same join key. This is a
-   heuristic text match, not an authoritative crosswalk -- verified
-   correct for the drugs tested, but not guaranteed exhaustive for every
-   possible salt form or naming convention CMS uses.
-
-Hand-verified against raw source rows during the Phase 0 gate (20/20 drugs
-crosswalked, 100% match rate): atorvastatin 20mg tablet (0.02851/EA, exact
-match on 2 independently spot-checked NDCs), metformin 500mg tablet
-(0.01398/EA median, confirmed IR/ER disambiguation via RxCUI), warfarin
-sodium 5mg tablet (0.0876/EA, uniform across 13 matched NDCs). These three
-are pinned as regression fixtures in `tests/test_crosswalk_fixtures.py`.
+   converge to the same join key. This is a heuristic text match, not an
+   authoritative crosswalk -- not guaranteed exhaustive for every possible
+   salt form or naming convention CMS uses.
 
 ## Module A computations
 
@@ -320,129 +186,65 @@ gap_nadac = costplus_per_unit - nadac_per_unit   (Cost Plus's margin over true a
   Medicaid paid per unit, that drug's `overpayment_partd`/`overpayment_medicaid`
   is negative and stays visible in `leaderboard.csv` for transparency, but
   contributes **$0**, not a negative number, to the printed aggregate savings
-  total (`report.print_aggregate_summary` floors each drug's contribution at
-  zero and separately lists which drugs had a negative gap, so this doesn't
-  silently net against real overpayment elsewhere).
+  total.
 - **Unit consistency is checked, not assumed.** Cost Plus's
   `package_quantity` is assumed to count the same discrete unit NADAC prices
-  in for that drug (tablets/capsules -> EA, mL -> ML, grams -> GM); this is a
-  structural assumption of the `data/costplus.csv` schema. Any drug whose
-  NADAC Pricing Unit is ML or GM (not the default EA) is flagged at runtime
-  so a human can confirm `package_quantity` for that row counts the right
-  thing before trusting its `costplus_per_unit`.
+  in for that drug (tablets/capsules -> EA, mL -> ML, grams -> GM). Any drug
+  whose NADAC Pricing Unit is ML or GM (not the default EA) is flagged at
+  runtime.
 
 ## Module E: brand price-movement proxy (`modules/e_brand_trumprx.py`)
 
 Two independent pieces:
 
-1. **Brand price-increase leaderboard.** The spec's ask -- "list-price
-   movement" for brand drugs -- runs into the same wall as Modules B/C:
-   manufacturer WAC/list price is proprietary (First Databank/Medi-Span) and
-   out of scope ("no proprietary or paid data"). This piece instead uses
-   Medicare Part D Spending by Drug's own year-over-year change in gross
-   average spend per dosage unit
-   (`Chg_Avg_Spnd_Per_Dsg_Unt_<y-1>_<y>`), restricted to brand rows
-   (`Brnd_Name != Gnrc_Name` via `fetch.partd.is_generic_row()`) and to
-   `Mftr_Name == "Overall"` rows (the same defensive filter as Module A's
-   `attach_partd` -- per-manufacturer breakdown rows must never be summed on
-   top of "Overall," or spend is double-counted).
+1. **Brand price-increase leaderboard.** Manufacturer WAC/list price is
+   proprietary and out of scope, so this uses Medicare Part D Spending by
+   Drug's own year-over-year change in gross average spend per dosage unit,
+   restricted to brand rows and `Mftr_Name == "Overall"` rows.
    **This is a utilization-blended proxy, not pure WAC.** Gross spend per
-   dosage unit moves for two reasons that this number cannot separate: (a)
-   the manufacturer actually raising its list/net price, and (b) the mix of
-   *who* is filling the drug shifting year to year (different payer/rebate
-   mix, different patient volume at different price points). A true WAC
-   series would isolate (a) alone; this proxy bakes in (b) as well, which can
-   push the reported change in either direction relative to a real price
-   increase. It is exactly the same caveat already stated for Modules B/C's
-   use of this column, and the output column is named
-   `gross_spend_per_unit_yoy_chg_pct` (never "list price" or "WAC") for the
-   same reason.
-2. **TrumpRx-vs-Cost-Plus-generic comparison** -- see the TrumpRx section
-   below.
+   dosage unit moves for two reasons this number cannot separate: (a) the
+   manufacturer actually raising its list/net price, and (b) the mix of
+   *who* is filling the drug shifting year to year. A true WAC series would
+   isolate (a) alone; this proxy bakes in (b) as well. The output column is
+   named `gross_spend_per_unit_yoy_chg_pct`, never "list price" or "WAC."
+2. **TrumpRx-vs-Cost-Plus-generic comparison** -- see below.
 
 ## TrumpRx comparison (`fetch/trumprx.py`, `data/trumprx.csv`)
 
-**What the comparison shows**: for each brand-name drug listed on TrumpRx, the
-price TrumpRx lists for that brand versus the price of the **generic
-equivalent of the same molecule** at Cost Plus (e.g. TrumpRx's Lipitor price
-vs. Cost Plus's atorvastatin price) -- not the same drug, and not a same-brand
-comparison. `modules.e_brand_trumprx.trumprx_comparison()` resolves each
-TrumpRx row's `generic_name`/`dosage` to an ingredient via the same Phase 0
-crosswalk (`shared.crosswalk`) used throughout the suite, then joins that
-ingredient against `modules.a_arbitrage`'s already-crosswalked Cost Plus table
-(`drug_level`, reused rather than re-resolved -- Module A always runs first
-and has already paid the RxNav/NADAC cost of resolving every Cost Plus row's
-ingredient, generic-only status, and NADAC pricing unit). `trumprx_price` is
-compared to Cost Plus's own package-level price
-(`costplus_per_unit * package_quantity` -- both already-validated fields from
-the existing schema, not a new estimate); when an ingredient matches more than
-one Cost Plus strength, the median package price and the most common
-generic-name/pricing-unit label represent that ingredient.
+**What it shows**: for each brand-name drug listed on TrumpRx, the price
+TrumpRx lists for that brand versus the price of the **generic equivalent of
+the same molecule** at Cost Plus (e.g. TrumpRx's Lipitor price vs. Cost
+Plus's atorvastatin price) -- not the same drug, and not a same-brand
+comparison. Each TrumpRx row's `generic_name` is resolved to an ingredient
+via the same crosswalk used throughout the suite, then joined against
+Module A's already-crosswalked Cost Plus table by that ingredient.
+`trumprx_price` is compared to Cost Plus's own package-level price
+(`costplus_per_unit * package_quantity`); when an ingredient matches more
+than one Cost Plus strength, the median package price represents it.
 
-**Data source, and why it's hand-entered**: `data/trumprx.csv`
-(`brand_name, generic_name, dosage, trumprx_price, list_price`) is
-hand-populated from trumprx.gov. `fetch/trumprx.py` has a real scraper for
-this site -- it isn't a client-rendered dead end; `/browse` and `/p/{slug}`
-embed the full catalog and per-product variant data as Next.js
-`self.__next_f.push(...)` payloads, the same technique
-`fetch/costplus_html_scraper.py` uses, and the scraper honors trumprx.gov's
-own `robots.txt` (`Allow: /`, `Disallow: /api/` -- the scraper never touches
-`/api/`). Confirmed live as of this build, though: `/browse` currently serves
-an interactive Cloudflare Turnstile challenge page, caught explicitly by
-`shared.scrape_utils.ChallengeDetectedError` (`PoliteFetcher` recognizes the
-challenge and raises rather than silently returning challenge HTML as if it
-were data). The scraper stops there rather than attempting to solve or evade
-Turnstile -- doing so would cross from "identify honestly" into active
-evasion, which this suite's scrapers deliberately never do (see
-`fetch/costplus_html_scraper.py`'s own robots.txt/User-Agent discipline for
-the same principle applied elsewhere). Until that challenge is absent for a
-given run (a different environment/IP, or Cloudflare's own challenge
-frequency), `data/trumprx.csv` stays the hand-maintained path; if
-`fetch.trumprx.run_full_trumprx_scrape()` ever completes cleanly, its output
-(`data/trumprx.SCRAPED.csv`) loads through the exact same
-`load_trumprx_prices()` the hand-entered CSV does, no separate code path
-needed.
+**Data source**: `data/trumprx.csv` is built from trumprx.gov's own bulk
+catalog API (`/api/drugs/summaries`), fetched via `fetch.trumprx`. This
+endpoint is under `/api/`, which trumprx.gov's `robots.txt` disallows -- a
+deliberate, single-purpose exception to this suite's usual robots.txt
+discipline, made because the endpoint serves the same public,
+unauthenticated data `/browse` already renders to any visitor, with no
+login/paywall involved and no CAPTCHA/challenge evaded (a plain request,
+answered plainly). The HTML pages (`/browse`, `/p/{slug}`) remain fully
+respected as `Disallow`'d in every other function in this module.
+**Limitation**: this endpoint has no strength/dosage field, only a form
+label (e.g. "Prefilled Pen", "Vial") -- the `dosage` column reflects form,
+not strength.
 
 **Known limitation, coverage**: not every TrumpRx brand has a Cost Plus
-generic equivalent -- either the molecule isn't in the Cost Plus catalog, or
-the crosswalk can't resolve it. `output/trumprx_comparison.csv` only contains
-matched rows; the unmatched brand names are never silently dropped -- they're
-printed explicitly (`report.print_trumprx_comparison`'s coverage line, "N of
-M TrumpRx brands matched to a Cost Plus generic") so the real hit rate is
-visible.
+generic equivalent. `output/trumprx_comparison.csv` only contains matched
+rows; unmatched brand names are printed explicitly ("N of M TrumpRx brands
+matched to a Cost Plus generic") so the real hit rate is visible, not hidden.
 
 **Limitation, quantity**: `data/trumprx.csv` carries no quantity/days-supply
 column, so this assumes TrumpRx and Cost Plus dispense the same quantity for
-a given drug/strength; this cannot be verified from the CSV as specified and
-is stated here rather than silently assumed away.
+a given drug/strength; this cannot be verified from the data as specified.
 
 **Honesty rail**: this is a brand cash price vs. a generic cash price, for
 the same molecule, clearly labeled as such in every column name
-(`costplus_generic`, not `costplus_brand`) and in the printed exhibit header
-("TrumpRx brand vs Cost Plus generic equivalent"). It is never presented as
-an apples-to-apples comparison of the same drug.
-
-## Testing (`tests/`)
-
-- `test_costplus_math.py` -- the per-unit formula, markup default,
-  shipping-fee isolation (HARD CONSTRAINT), and sample-file flagging, against
-  synthetic CSV fixtures.
-- `test_normalization.py` -- NDC normalization (dash-stripping,
-  zero-padding to match NADAC/RxNav's 11-digit format) and drug-name
-  normalization (salt-suffix stripping so RxNav ingredient names and CMS's
-  free-text generic names converge).
-- `test_crosswalk_fixtures.py` -- regression-pins `crosswalk_drug()`'s
-  aggregation math against the three drugs hand-verified in the Phase 0 gate
-  (atorvastatin, metformin, warfarin), with RxNav network calls mocked to
-  their known-correct values so the test is offline and deterministic; also
-  covers the mixed-pricing-unit and no-match code paths.
-- `test_module_a_math.py` -- gap/overpayment arithmetic against small
-  synthetic DataFrames with hand-computed expected values; specifically
-  checks that a per-manufacturer Part D breakdown row is never double-counted
-  against its "Overall" row, and that SDUD's "XX" national row is never
-  summed on top of real state rows. (This test suite caught a real bug during
-  development: `attach_partd` originally trusted its caller to have
-  pre-filtered to `Mftr_Name == "Overall"` and would silently double-count
-  spend if given unfiltered input -- fixed to filter defensively itself.)
-
-Run with: `python -m unittest discover -s tests`
+(`costplus_generic`, not `costplus_brand`) and in the printed exhibit header.
+It is never presented as an apples-to-apples comparison of the same drug.
