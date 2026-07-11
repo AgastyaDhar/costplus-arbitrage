@@ -21,7 +21,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Papa from "papaparse";
 
 const NADAC_SNAPSHOT_DATE = "2026-07-08";
-const CATALOG_COVERAGE_PCT = 84.8; // 2,024 / 2,386 scraped catalog rows
+const CATALOG_COVERAGE_PCT = 84.3; // 2,012 / 2,386 scraped catalog rows
 const LEADERBOARD_URL = "../costplus_suite/output/leaderboard.csv";
 const SPREAD_URL = "../costplus_suite/output/spread_changes.csv";
 const TRUMPRX_URL = "../costplus_suite/output/trumprx_comparison.csv";
@@ -86,7 +86,7 @@ function Headline({ total, isLoading }) {
         {isLoading ? "$0.0B" : fmtB(animated)}
       </div>
       <div className="mt-3 flex flex-wrap gap-3">
-        <StatChip label="Drugs analyzed" value="2,024" />
+        <StatChip label="Drugs analyzed" value="2,012" />
         <StatChip label="Catalog coverage" value={fmtPct(CATALOG_COVERAGE_PCT)} />
         <StatChip label="Data refreshed" value={NADAC_SNAPSHOT_DATE} />
       </div>
@@ -294,7 +294,7 @@ export default function CostPlusDashboard() {
   const [status, setStatus] = useState({ leaderboard: "loading", spread: "loading", trumprx: "loading" });
 
   useEffect(() => {
-    // The headline aggregate is computed from ALL rows in leaderboard.csv (2,024+),
+    // The headline aggregate is computed from ALL rows in leaderboard.csv (2,012+),
     // matching modules/a_arbitrage.py's own formula: sum of positive-gap
     // overpayment_partd + sum of positive-gap overpayment_medicaid. The on-screen
     // table below only ever shows the top 25 -- the two must not share one array,
