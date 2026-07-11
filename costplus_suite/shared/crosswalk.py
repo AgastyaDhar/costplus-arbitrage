@@ -93,16 +93,73 @@ def get_rxcui_name(rxcui: str) -> Optional[str]:
     return (data.get("properties") or {}).get("name")
 
 
+# Dosage-form, route, and strength-unit words that carry no ingredient
+# identity of their own -- stripped from a query term before the token-
+# overlap relevance check in resolve_dispensable_rxcui() so a bare dose-form
+# match (e.g. "pen", "tablet") can never substitute for an actual ingredient
+# match.
+_DOSAGE_FORM_WORDS = {
+    "tablet", "tablets", "capsule", "capsules", "pen", "injector", "injection",
+    "vial", "syringe", "kit", "cream", "ointment", "patch", "patches",
+    "solution", "suspension", "powder", "single", "dose", "bottle", "of",
+    "film", "coated", "chewable", "disintegrating", "spray", "drops",
+    "gel", "lotion", "foam", "suppository", "inhaler", "elixir", "syrup",
+    "packet", "packets", "strip", "strips", "device", "prefilled", "cartridge",
+}
+_ROUTE_WORDS = {
+    "oral", "subcutaneous", "intravenous", "iv", "im", "intramuscular",
+    "topical", "ophthalmic", "otic", "nasal", "rectal", "vaginal",
+    "sublingual", "buccal", "transdermal", "inhalation",
+}
+_RELEASE_WORDS = {
+    "extended", "delayed", "immediate", "sustained", "controlled", "release",
+    "er", "xr", "dr", "sr", "cr", "ir",
+}
+_UNIT_WORDS = {
+    "mg", "mcg", "g", "ml", "iu", "units", "unit", "meq", "mmol", "mL",
+}
+_RELEVANCE_STOPWORDS = _DOSAGE_FORM_WORDS | _ROUTE_WORDS | _RELEASE_WORDS | _UNIT_WORDS
+
+
+def _extract_ingredient_tokens(term: str) -> list[str]:
+    """Pull the meaningful (ingredient-identifying) tokens out of a free-text
+    drug query: letters-only words, lowercased, with dosage-form/route/
+    release/strength-unit words and short tokens dropped."""
+    words = re.findall(r"[a-zA-Z]+", term.lower())
+    return [w for w in words if w not in _RELEVANCE_STOPWORDS and len(w) > 2]
+
+
+def _has_token_overlap(query_tokens: list[str], candidate_name: Optional[str]) -> bool:
+    """True if at least one meaningful query token appears in the resolved
+    RxNorm drug name (case-insensitive substring match)."""
+    if not query_tokens or not candidate_name:
+        return False
+    lowered = candidate_name.lower()
+    return any(tok in lowered for tok in query_tokens)
+
+
 def resolve_dispensable_rxcui(term: str, max_candidates_to_check: int = 15) -> Optional[dict]:
     """Walk approximateTerm candidates in rank order and return the first one
-    whose RxNorm term type is dispensable (SCD/SBD/GPCK/BPCK). Returns None
-    if no dispensable candidate is found among the top N.
+    whose RxNorm term type is dispensable (SCD/SBD/GPCK/BPCK) AND whose
+    resolved name shares at least one meaningful token with the query
+    (the token-overlap relevance check -- RxNav's fuzzy match can rank an
+    unrelated dispensable drug above rank 1 when the query is dominated by
+    generic dosage-form words like "single-dose pen"; without this check
+    that unrelated candidate gets accepted as if it were correct, e.g.
+    "tirzepatide Single-dose Pen" resolving to azithromycin). Returns None
+    if no candidate among the top N passes both checks.
     """
     candidates = approximate_term(term, max_entries=max_candidates_to_check)
+    query_tokens = _extract_ingredient_tokens(term)
     for c in candidates[:max_candidates_to_check]:
         tty = get_rxcui_tty(c["rxcui"])
-        if tty in DISPENSABLE_TTYS:
-            return {**c, "tty": tty, "resolved_name": get_rxcui_name(c["rxcui"])}
+        if tty not in DISPENSABLE_TTYS:
+            continue
+        resolved_name = get_rxcui_name(c["rxcui"])
+        if not _has_token_overlap(query_tokens, resolved_name):
+            continue
+        return {**c, "tty": tty, "resolved_name": resolved_name}
+    print(f"crosswalk: no confident match for {term}, excluded")
     return None
 
 

@@ -212,6 +212,12 @@ def build_leaderboard(priced: pd.DataFrame) -> pd.DataFrame:
     df.insert(0, "rank", df.index + 1)
     df["net_per_unit"] = "not public"  # HARD CONSTRAINT: never estimate net prices
     df["canonical_unit"] = df["nadac_pricing_unit"]
+    # Every row here is crosswalk_matched (filtered above), i.e. it passed
+    # resolve_dispensable_rxcui's token-overlap relevance check -- excluded
+    # (unmatched) drugs never reach the leaderboard at all, so this column
+    # lets a reviewer confirm that fact per row rather than trusting it
+    # blindly.
+    df["match_confidence"] = "token_overlap"
     return df
 
 

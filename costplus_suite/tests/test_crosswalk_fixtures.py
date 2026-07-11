@@ -131,6 +131,30 @@ class TestCrosswalkFixtures(unittest.TestCase):
         self.assertFalse(result.matched)
         self.assertIn("no dispensable", result.note)
 
+    def test_tirzepatide_and_dulaglutide_do_not_resolve_to_azithromycin(self):
+        # Regression test for a real false match: RxNav's approximateTerm
+        # ranks an unrelated dispensable drug (azithromycin, rxcui 861417)
+        # above any true tirzepatide/dulaglutide dispensable candidate for
+        # queries dominated by generic dosage-form words like "single-dose
+        # pen". Without the token-overlap relevance check in
+        # resolve_dispensable_rxcui(), the old first-dispensable-wins logic
+        # accepted that unrelated candidate, silently matching Mounjaro and
+        # Trulicity to an antibiotic.
+        azithromycin_candidate = {
+            "rxcui": "861417", "name": None, "rank": 4, "score": 750.0,
+        }
+        for term in ("tirzepatide Single-dose Pen", "dulaglutide Single-dose Pen"):
+            with patch.object(
+                crosswalk, "approximate_term", return_value=[azithromycin_candidate]
+            ), patch.object(
+                crosswalk, "get_rxcui_tty", return_value="SBD"
+            ), patch.object(
+                crosswalk, "get_rxcui_name",
+                return_value="azithromycin 1000 MG Powder for Oral Suspension [Zithromax]",
+            ):
+                resolved = crosswalk.resolve_dispensable_rxcui(term)
+            self.assertIsNone(resolved)
+
 
 if __name__ == "__main__":
     unittest.main()
