@@ -24,6 +24,17 @@ python run.py
   at Cost Plus (e.g. Azulfidine EN-tabs on TrumpRx: $130.80 vs. its
   generic, sulfasalazine, at Cost Plus: $12.42 -- a $118.38 gap)
 
+## Output files
+
+After running, results are written to the `costplus_suite/output/` folder:
+
+- `costplus_suite/output/leaderboard.csv` — all 2,012 generic drugs ranked
+  by total overpayment, with Cost Plus price, government price, gap per
+  unit, and total dollars
+- `costplus_suite/output/trumprx_comparison.csv` — brand-name drugs listed
+  on TrumpRx compared to their generic equivalent at Cost Plus, sorted by
+  gap
+
 ## Methodology
 
 - Prices come from Cost Plus Drugs' own website
