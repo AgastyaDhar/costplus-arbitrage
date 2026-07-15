@@ -153,6 +153,8 @@ def _run_pipeline(args: argparse.Namespace, source: str, enabled: set[str]) -> t
     is_sample = result["is_sample"]
 
     leaderboard_path = report.write_leaderboard(result["leaderboard"], is_sample)
+    report.write_leaderboard_by_state(result["state_breakdown"], is_sample)
+    report.write_state_summary(result["state_summary"], is_sample)
     report.write_spread_changes(result["spread_changes"], is_sample)
     report.print_aggregate_summary(result)
 

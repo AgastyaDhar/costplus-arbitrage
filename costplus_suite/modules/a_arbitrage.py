@@ -184,6 +184,83 @@ def attach_sdud(drug_level: pd.DataFrame, sdud_df: pd.DataFrame) -> pd.DataFrame
 
 
 # ---------------------------------------------------------------------------
+# Step 3b: Medicaid SDUD, per-state (same NDC matching as attach_sdud, but
+# kept split out by state via fetch_sdud.state_level() instead of collapsed
+# to the national "XX" rollup).
+# ---------------------------------------------------------------------------
+def build_state_breakdown(drug_level: pd.DataFrame, sdud_df: pd.DataFrame) -> pd.DataFrame:
+    """One row per (state, drug) with the same costplus_per_unit each drug
+    uses everywhere else in Module A, joined against that state's own SDUD
+    reimbursement for that drug's matched NDCs. States with zero reimbursed
+    units for a drug simply produce no row for that (state, drug) pair --
+    there is nothing to zero-fill against real utilization data."""
+    per_state = fetch_sdud.state_level(sdud_df).rename(
+        columns={"units_reimbursed": "medicaid_units", "medicaid_amount_reimbursed": "medicaid_amount"}
+    )
+
+    rows = []
+    for _, drug_row in drug_level.iterrows():
+        if not drug_row["crosswalk_matched"]:
+            continue
+        ndcs = drug_row["matched_ndcs"]
+        hits = per_state[per_state["ndc"].isin(ndcs)]
+        if hits.empty:
+            continue
+        by_state = hits.groupby("state", as_index=False).agg(
+            medicaid_units=("medicaid_units", "sum"),
+            medicaid_amount=("medicaid_amount", "sum"),
+        )
+        by_state = by_state[by_state["medicaid_units"] > 0]
+        for _, s in by_state.iterrows():
+            medicaid_per_unit = s["medicaid_amount"] / s["medicaid_units"]
+            gap = medicaid_per_unit - drug_row["costplus_per_unit"]
+            rows.append({
+                "state": s["state"],
+                "rxcui": drug_row["rxcui"],
+                "drug_name": drug_row["drug_term"],
+                "costplus_per_unit": drug_row["costplus_per_unit"],
+                "medicaid_per_unit": medicaid_per_unit,
+                "gap_medicaid": gap,
+                "units_reimbursed": s["medicaid_units"],
+                "overpayment_medicaid": gap * s["medicaid_units"],
+            })
+
+    out = pd.DataFrame(rows, columns=[
+        "state", "rxcui", "drug_name", "costplus_per_unit", "medicaid_per_unit",
+        "gap_medicaid", "units_reimbursed", "overpayment_medicaid",
+    ])
+    out = out.sort_values(["state", "overpayment_medicaid"], ascending=[True, False]).reset_index(drop=True)
+    print(f"[module_a] State breakdown: {len(out):,} (state, drug) rows across {out['state'].nunique()} states")
+    return out
+
+
+def build_state_summary(state_breakdown: pd.DataFrame) -> pd.DataFrame:
+    """One row per state. total_medicaid_overpayment sums only positive
+    overpayment_medicaid rows within that state, mirroring the same
+    positive-only convention print_aggregate_summary uses for the national
+    total_medicaid_savings figure (a negative gap means Cost Plus priced
+    above Medicaid for that drug, contributing $0, not a negative number)."""
+    rows = []
+    for state, grp in state_breakdown.groupby("state"):
+        positive = grp[grp["overpayment_medicaid"] > 0]
+        total = positive["overpayment_medicaid"].sum()
+        if positive.empty:
+            top_drug, top_drug_overpayment = None, 0.0
+        else:
+            top = positive.loc[positive["overpayment_medicaid"].idxmax()]
+            top_drug, top_drug_overpayment = top["drug_name"], top["overpayment_medicaid"]
+        rows.append({
+            "state": state,
+            "total_medicaid_overpayment": total,
+            "top_drug": top_drug,
+            "top_drug_overpayment": top_drug_overpayment,
+            "drugs_analyzed": grp["rxcui"].nunique(),
+        })
+    out = pd.DataFrame(rows).sort_values("total_medicaid_overpayment", ascending=False).reset_index(drop=True)
+    return out
+
+
+# ---------------------------------------------------------------------------
 # Step 4: NADAC gap (Cost Plus vs true acquisition cost -- not an overpayment number)
 # ---------------------------------------------------------------------------
 def attach_nadac_gap(drug_level: pd.DataFrame) -> pd.DataFrame:
@@ -250,6 +327,9 @@ def run(costplus_path: Path | None = None, force_refresh: bool = False, generics
 
     leaderboard = build_leaderboard(priced)
 
+    state_breakdown = build_state_breakdown(priced, sdud_df)
+    state_summary = build_state_summary(state_breakdown)
+
     spread_changes = snapshots.compute_spread_changes(priced[priced["crosswalk_matched"]], snapshot_date)
 
     total_partd_savings = leaderboard.loc[leaderboard["overpayment_partd"] > 0, "overpayment_partd"].sum()
@@ -262,6 +342,8 @@ def run(costplus_path: Path | None = None, force_refresh: bool = False, generics
         "snapshot_date": snapshot_date,
         "drug_level": priced,
         "leaderboard": leaderboard,
+        "state_breakdown": state_breakdown,
+        "state_summary": state_summary,
         "spread_changes": spread_changes,
         "total_partd_savings": total_partd_savings,
         "total_medicaid_savings": total_medicaid_savings,

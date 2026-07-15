@@ -48,6 +48,14 @@ def write_leaderboard(leaderboard: pd.DataFrame, is_sample: bool) -> Path:
     return write_csv(leaderboard, "leaderboard.csv", is_sample)
 
 
+def write_leaderboard_by_state(state_breakdown: pd.DataFrame, is_sample: bool) -> Path:
+    return write_csv(state_breakdown, "leaderboard_by_state.csv", is_sample)
+
+
+def write_state_summary(state_summary: pd.DataFrame, is_sample: bool) -> Path:
+    return write_csv(state_summary, "state_summary.csv", is_sample)
+
+
 def write_spread_changes(spread_changes: pd.DataFrame, is_sample: bool) -> Path:
     if spread_changes.empty:
         print("\n[report] spread_changes.csv: no prior snapshot to diff against yet -- writing an empty file "
@@ -127,6 +135,19 @@ def print_simple_summary(result: dict, e_result: dict | None, leaderboard_path: 
     print(f"Medicare Part D:  {_fmt_billions(result['total_partd_savings'])}")
     print(f"Medicaid:         {_fmt_billions(result['total_medicaid_savings'])}")
     print(f"Total:            {_fmt_billions(result['total_savings'])}")
+
+    state_summary = result.get("state_summary")
+    if state_summary is not None and not state_summary.empty:
+        top_states = state_summary.head(5).copy()
+        state_table = pd.DataFrame({
+            "State": top_states["state"],
+            "Total overpayment": top_states["total_medicaid_overpayment"].map(lambda v: f"${v:,.0f}"),
+            "Top drug": top_states["top_drug"],
+            "Top drug overpayment": top_states["top_drug_overpayment"].map(lambda v: f"${v:,.0f}"),
+        })
+        print("\nTop 5 states by Medicaid overpayment:")
+        with pd.option_context("display.width", 200):
+            print(state_table.to_string(index=False))
 
     top = result["leaderboard"].head(top_n).copy()
     total_units = top["Tot_Dsg_Unts"].fillna(0) + top["medicaid_units"].fillna(0)
