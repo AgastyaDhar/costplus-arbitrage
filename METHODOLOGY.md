@@ -45,6 +45,26 @@ its known limitations.
   strength-specific per-unit price to an ingredient-wide weighted average
   assumes per-dosage-unit price is roughly flat across strengths -- a
   reasonable but imperfect assumption.
+- **Dollarization is done once per molecule, not once per strength.**
+  `Tot_Dsg_Unts`/`Tot_Spndng` are a single national total per molecule (see
+  the granularity mismatch above), so multiplying that same national figure
+  by each strength's own gap and summing across every strength row of the
+  molecule would count the national total once per strength (a real bug:
+  Atorvastatin's 4 strengths each carried the full national unit count,
+  overcounting its overpayment ~4x; 269 molecules were affected, inflating
+  the Part D total from a corrected $13.1B to a reported $45.6B). Fixed in
+  `modules/a_arbitrage.attach_partd()` by choosing exactly one representative
+  row per molecule to carry the dollar figure: **the strength with the
+  highest `costplus_per_unit`** (minimizes the gap, so the molecule's
+  overpayment is a conservative floor, never inflated). No public data
+  gives a real strength-mix to weight by, so this is a deliberate,
+  documented choice, not an estimate of the true weighted average -- every
+  other strength row of that molecule contributes exactly $0 to
+  `overpayment_partd`, flagged via `is_partd_molecule_row` /
+  `partd_molecule_n_strengths` / `costplus_per_unit_partd_molecule` in
+  `drug_level`/`leaderboard.csv` for transparency. Per-strength `gap_partd`
+  (the per-unit price gap, never multiplied into a dollar figure) stays
+  correct and visible on every row regardless.
 - **Limitation, gross of rebates**: stated in CMS's own dataset description.
   This is exactly why `generics_only` gates headline numbers.
 - **Limitation, no generic/brand flag**: the file has no explicit indicator.
@@ -156,7 +176,11 @@ NDCs via:
 5. **Ingredient-name resolution** (`get_ingredient_name`) strips a
    dispensable drug's RxCUI down to its bare ingredient (e.g.
    "atorvastatin"), used to join against Part D / SDUD's free-text generic
-   name fields.
+   name fields. For a combination product, RxNav relates the RxCUI to
+   multiple IN (ingredient) concepts; every one is collected, deduped, and
+   joined (e.g. "amlodipine/atorvastatin"), not just the first, so a combo
+   forms its own molecule key and never collides with a single-ingredient
+   drug of the same first component.
 6. **Name normalization** (`normalize_drug_name`): uppercases and strips
    common salt/ester/formulation suffixes (HCL, SODIUM, POTASSIUM, ER, XR,
    etc.) so RxNorm's bare ingredient name and CMS's free-text `Gnrc_Name`
@@ -169,8 +193,18 @@ NDCs via:
 ```
 costplus_per_unit = (acquisition_cost * markup + pharmacy_fee) / package_quantity
 partd_per_unit    = Tot_Spndng / Tot_Dsg_Unts                 (Mftr_Name == "Overall" rows only)
-gap_partd         = partd_per_unit - costplus_per_unit
-overpayment_partd = gap_partd * Tot_Dsg_Unts
+gap_partd         = partd_per_unit - costplus_per_unit        (per-strength, informational; see below)
+
+# overpayment_partd is dollarized ONCE PER MOLECULE, not once per strength --
+# see "Dollarization is done once per molecule" above. costplus_per_unit_partd_molecule
+# is the highest costplus_per_unit among that molecule's strengths (conservative:
+# minimizes the gap). Every strength row of a molecule shares the same
+# partd_per_unit/Tot_Dsg_Unts/costplus_per_unit_partd_molecule, but only the ONE
+# row where costplus_per_unit == costplus_per_unit_partd_molecule
+# (is_partd_molecule_row == True) gets a nonzero overpayment_partd -- every
+# other strength row of that molecule is exactly 0.
+gap_partd_molecule = partd_per_unit - costplus_per_unit_partd_molecule
+overpayment_partd  = gap_partd_molecule * Tot_Dsg_Unts   (only on the is_partd_molecule_row == True row; 0 elsewhere)
 
 medicaid_per_unit    = medicaid_amount / medicaid_units        (SDUD "XX" national rollup only)
 gap_medicaid         = medicaid_per_unit - costplus_per_unit

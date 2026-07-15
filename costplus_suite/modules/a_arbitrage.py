@@ -148,12 +148,73 @@ def attach_partd(drug_level: pd.DataFrame, partd_df: pd.DataFrame, generics_only
     agg["partd_per_unit"] = agg["Tot_Spndng"] / agg["Tot_Dsg_Unts"]
 
     out = drug_level.merge(agg, on="ingredient_norm", how="left")
+    # Per-strength per-unit gap: THIS strength's Cost Plus price against
+    # Part D's national ingredient-wide average price. Legitimate at any
+    # granularity (see METHODOLOGY.md's granularity-mismatch note) --
+    # informational only, never itself multiplied into a dollar figure below.
     out["gap_partd"] = out["partd_per_unit"] - out["costplus_per_unit"]
-    out["overpayment_partd"] = out["gap_partd"] * out["Tot_Dsg_Unts"]
+
+    # --- Option A: dollarize Part D overpayment once per molecule --------
+    # Part D's Tot_Dsg_Unts/Tot_Spndng are already a molecule-wide (every
+    # strength combined) national total in the CMS source. The old code
+    # multiplied that single national figure by each strength's own gap and
+    # merged the result onto every strength row of the molecule -- summing
+    # overpayment_partd across the leaderboard then counted the same
+    # national unit total once per strength (e.g. a 4-strength molecule's
+    # overpayment counted 4x; see METHODOLOGY.md). Fixed by choosing exactly
+    # one representative row per molecule to carry the dollarized figure:
+    # the strength with the HIGHEST costplus_per_unit, which minimizes the
+    # gap and makes the molecule's overpayment a conservative floor, never
+    # an inflated ceiling (no public data exists to weight strengths by
+    # actual dispensing volume -- see METHODOLOGY.md). Every other strength
+    # row of that molecule contributes $0, so summing overpayment_partd
+    # across the leaderboard can no longer multiply-count a molecule.
+    matched = out[out["crosswalk_matched"]]
+    molecule_row_idx = (
+        matched.sort_values("costplus_per_unit", ascending=False)
+        .drop_duplicates(subset="ingredient_norm", keep="first")
+        .index
+    )
+    representative_price = matched.loc[molecule_row_idx].set_index("ingredient_norm")["costplus_per_unit"]
+    n_strengths = matched.groupby("ingredient_norm").size()
+
+    out["costplus_per_unit_partd_molecule"] = out["ingredient_norm"].map(representative_price)
+    out["partd_molecule_n_strengths"] = out["ingredient_norm"].map(n_strengths).fillna(0).astype(int)
+    out["is_partd_molecule_row"] = out.index.isin(molecule_row_idx)
+
+    gap_partd_molecule = out["partd_per_unit"] - out["costplus_per_unit_partd_molecule"]
+    out["overpayment_partd"] = 0.0
+    primary = out["is_partd_molecule_row"]
+    out.loc[primary, "overpayment_partd"] = gap_partd_molecule.loc[primary] * out.loc[primary, "Tot_Dsg_Unts"]
 
     n_matched = out["partd_per_unit"].notna().sum()
     print(f"[module_a] Part D: matched {n_matched}/{len(out)} drugs by normalized ingredient name")
+    n_dup_molecules = int((n_strengths > 1).sum())
+    if n_dup_molecules:
+        excess_rows = int((n_strengths[n_strengths > 1] - 1).sum())
+        print(f"[module_a] Part D: {n_dup_molecules} molecule(s) matched to >1 strength "
+              f"({excess_rows} extra strength rows) -- overpayment_partd dollarized once per molecule "
+              f"(highest-price strength), not once per strength")
     return out
+
+
+def build_partd_molecule_table(priced: pd.DataFrame) -> pd.DataFrame:
+    """One row per molecule's Part D overpayment. This is the correct thing
+    to read/sum for a per-molecule Part D figure -- every strength row of a
+    drug_level/leaderboard DataFrame carries the SAME molecule-wide
+    partd_per_unit/Tot_Dsg_Unts (see attach_partd), but only the row flagged
+    is_partd_molecule_row=True carries a nonzero overpayment_partd; every
+    other strength row of that molecule is $0 by construction, so this just
+    selects the one real row per molecule rather than re-deriving anything."""
+    rows = priced[priced["crosswalk_matched"] & priced["is_partd_molecule_row"]].copy()
+    rows["overpayment_partd_floored"] = rows["overpayment_partd"].clip(lower=0.0)
+    cols = [
+        "ingredient_norm", "drug_term", "partd_molecule_n_strengths",
+        "costplus_per_unit_partd_molecule", "partd_per_unit", "Tot_Dsg_Unts",
+        "gap_partd", "overpayment_partd", "overpayment_partd_floored",
+    ]
+    out = rows[cols].rename(columns={"drug_term": "representative_drug_term"})
+    return out.sort_values("overpayment_partd_floored", ascending=False).reset_index(drop=True)
 
 
 # ---------------------------------------------------------------------------
@@ -274,14 +335,26 @@ def attach_nadac_gap(drug_level: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 def build_leaderboard(priced: pd.DataFrame) -> pd.DataFrame:
     df = priced[priced["crosswalk_matched"]].copy()
-    df["overpayment_partd"] = df["overpayment_partd"].fillna(0.0)
-    df["overpayment_medicaid"] = df["overpayment_medicaid"].fillna(0.0)
+    # Floored at 0, not just NaN-filled: a negative value here means Cost Plus
+    # priced above what Part D/Medicaid paid (visible in the true, unfloored
+    # gap_partd/gap_medicaid columns), which is a real finding but not an
+    # "overpayment" -- same treatment print_aggregate_summary already gives
+    # negative-gap drugs when summing total_partd_savings/total_medicaid_savings
+    # ("contribute $0 to the totals above, not a negative number"). Without
+    # this, a single ingredient-level Part D/NDC granularity mismatch (e.g. a
+    # $57-patch blended against a $0.23 same-ingredient tablet in Part D's
+    # per-unit figure) can otherwise show as a multi-billion-dollar negative
+    # "overpayment" on an individual row.
+    df["overpayment_partd"] = df["overpayment_partd"].fillna(0.0).clip(lower=0.0)
+    df["overpayment_medicaid"] = df["overpayment_medicaid"].fillna(0.0).clip(lower=0.0)
     df["total_overpayment"] = df["overpayment_partd"] + df["overpayment_medicaid"]
 
     cols = [
         "drug_term", "rxcui", "nadac_pricing_unit",
         "nadac_per_unit", "costplus_per_unit", "gap_nadac",
-        "partd_per_unit", "Tot_Dsg_Unts", "gap_partd", "overpayment_partd",
+        "partd_per_unit", "Tot_Dsg_Unts", "gap_partd",
+        "partd_molecule_n_strengths", "costplus_per_unit_partd_molecule", "is_partd_molecule_row",
+        "overpayment_partd",
         "medicaid_per_unit", "medicaid_units", "gap_medicaid", "overpayment_medicaid",
         "total_overpayment", "pharmacy_fee", "shipping_fee",
     ]
@@ -326,6 +399,7 @@ def run(costplus_path: Path | None = None, force_refresh: bool = False, generics
     priced = attach_nadac_gap(priced)
 
     leaderboard = build_leaderboard(priced)
+    partd_by_molecule = build_partd_molecule_table(priced)
 
     state_breakdown = build_state_breakdown(priced, sdud_df)
     state_summary = build_state_summary(state_breakdown)
@@ -342,6 +416,7 @@ def run(costplus_path: Path | None = None, force_refresh: bool = False, generics
         "snapshot_date": snapshot_date,
         "drug_level": priced,
         "leaderboard": leaderboard,
+        "partd_by_molecule": partd_by_molecule,
         "state_breakdown": state_breakdown,
         "state_summary": state_summary,
         "spread_changes": spread_changes,

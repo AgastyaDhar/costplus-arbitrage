@@ -152,6 +152,12 @@ def _run_pipeline(args: argparse.Namespace, source: str, enabled: set[str]) -> t
     result = a_arbitrage.run(costplus_path=costplus_path, force_refresh=args.force_refresh, generics_only=args.generics_only)
     is_sample = result["is_sample"]
 
+    # --- Module G: public citation enrichment, always runs right after
+    # Module A -- attaches confirmed public markup % citations to the
+    # leaderboard by rxcui before anything is written to disk. ---
+    from modules import g_public_citations
+    result["leaderboard"] = g_public_citations.run(result["leaderboard"])
+
     leaderboard_path = report.write_leaderboard(result["leaderboard"], is_sample)
     report.write_leaderboard_by_state(result["state_breakdown"], is_sample)
     report.write_state_summary(result["state_summary"], is_sample)

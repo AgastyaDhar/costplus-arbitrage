@@ -131,6 +131,40 @@ class TestCrosswalkFixtures(unittest.TestCase):
         self.assertFalse(result.matched)
         self.assertIn("no dispensable", result.note)
 
+    def test_get_ingredient_name_combo_returns_all_components_not_just_first(self):
+        # Regression test for the real bug: RxNav relates a combo RxCUI to
+        # MULTIPLE IN concepts. The old code took props[0] only, so
+        # "Amlodipine Besylate-Atorvastatin Calcium" silently resolved to
+        # bare "amlodipine" and collided with plain amlodipine tablets under
+        # the same Part D molecule join key -- contributing 33 strength/combo
+        # rows to a single "Amlodipine" national figure.
+        related_json = {
+            "relatedGroup": {
+                "conceptGroup": [
+                    {
+                        "tty": "IN",
+                        "conceptProperties": [
+                            {"rxcui": "17767", "name": "atorvastatin"},
+                            {"rxcui": "17767", "name": "atorvastatin"},  # duplicate, must be deduped
+                            {"rxcui": "17767", "name": "amlodipine"},
+                        ],
+                    }
+                ]
+            }
+        }
+        with patch.object(crosswalk, "cached_get_json", return_value=related_json):
+            combo_name = crosswalk.get_ingredient_name("999999")
+        self.assertEqual(combo_name, "amlodipine/atorvastatin")
+
+    def test_amlodipine_atorvastatin_combo_does_not_collide_with_plain_amlodipine(self):
+        # The actual regression this fix is for: the combo's normalized
+        # molecule key must differ from plain amlodipine's, so Part D
+        # aggregation never merges the combo's utilization into the single-
+        # ingredient molecule's bucket.
+        combo_key = crosswalk.normalize_drug_name("amlodipine/atorvastatin")
+        plain_key = crosswalk.normalize_drug_name("amlodipine")
+        self.assertNotEqual(combo_key, plain_key)
+
     def test_tirzepatide_and_dulaglutide_do_not_resolve_to_azithromycin(self):
         # Regression test for a real false match: RxNav's approximateTerm
         # ranks an unrelated dispensable drug (azithromycin, rxcui 861417)

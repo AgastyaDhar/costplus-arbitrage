@@ -174,6 +174,79 @@ class TestAttachPartd(unittest.TestCase):
         self.assertTrue(pd.isna(row["partd_per_unit"]))
 
 
+def _multi_strength_drug_level_fixture() -> pd.DataFrame:
+    """Two strengths of the same molecule (shared ingredient_norm), the
+    real-world shape that caused the strength-duplication bug: Part D only
+    publishes one national Tot_Dsg_Unts per molecule, but both strengths
+    used to get the full national figure multiplied onto them independently."""
+    base = _drug_level_fixture().iloc[[0]].copy()  # the matched "testdrug" row, costplus_per_unit=0.10
+    cheaper = base.copy()
+    cheaper["drug_term"] = "testdrug 5 mg tablet"
+    cheaper["strength"] = "5 mg"
+    cheaper["matched_ndcs"] = [["22222222222"]]
+    cheaper["costplus_per_unit"] = 0.05
+    pricier = base.copy()
+    pricier["drug_term"] = "testdrug 20 mg tablet"
+    pricier["strength"] = "20 mg"
+    pricier["matched_ndcs"] = [["33333333333"]]
+    pricier["costplus_per_unit"] = 0.08  # the higher-priced strength -- must become the sole carrier
+    return pd.concat([cheaper, pricier], ignore_index=True)
+
+
+class TestAttachPartdMoleculeDedup(unittest.TestCase):
+    def test_only_highest_price_strength_carries_the_dollar_figure(self):
+        priced = a_arbitrage.attach_partd(_multi_strength_drug_level_fixture(), _partd_fixture(), generics_only=True)
+        cheaper_row = priced[priced["drug_term"] == "testdrug 5 mg tablet"].iloc[0]
+        pricier_row = priced[priced["drug_term"] == "testdrug 20 mg tablet"].iloc[0]
+
+        self.assertFalse(cheaper_row["is_partd_molecule_row"])
+        self.assertTrue(pricier_row["is_partd_molecule_row"])
+        self.assertEqual(cheaper_row["overpayment_partd"], 0.0)
+        # partd_per_unit = 0.20 (both rows share the same molecule-wide figure);
+        # representative price = max(0.05, 0.08) = 0.08 -- the conservative
+        # (highest-price, smallest-gap) strength, not the cheaper one.
+        self.assertAlmostEqual(pricier_row["costplus_per_unit_partd_molecule"], 0.08, places=6)
+        self.assertAlmostEqual(pricier_row["overpayment_partd"], (0.20 - 0.08) * 10000.0, places=4)
+        self.assertEqual(pricier_row["partd_molecule_n_strengths"], 2)
+        self.assertEqual(cheaper_row["partd_molecule_n_strengths"], 2)
+
+    def test_per_strength_gap_partd_stays_real_and_distinct(self):
+        # gap_partd (the per-unit, per-strength gap) must NOT be flattened to
+        # the molecule-wide value -- it's informational and legitimate at any
+        # granularity even though the dollar figure is molecule-level.
+        priced = a_arbitrage.attach_partd(_multi_strength_drug_level_fixture(), _partd_fixture(), generics_only=True)
+        cheaper_row = priced[priced["drug_term"] == "testdrug 5 mg tablet"].iloc[0]
+        pricier_row = priced[priced["drug_term"] == "testdrug 20 mg tablet"].iloc[0]
+        self.assertAlmostEqual(cheaper_row["gap_partd"], 0.20 - 0.05, places=6)
+        self.assertAlmostEqual(pricier_row["gap_partd"], 0.20 - 0.08, places=6)
+
+    def test_leaderboard_total_not_multiplied_by_strength_count(self):
+        # Regression test for the real bug: summing overpayment_partd across
+        # every strength row of a multi-strength molecule must equal the
+        # SINGLE molecule figure ((0.20-0.08)*10000 = 1200), not that figure
+        # doubled by naively multiplying the shared national Tot_Dsg_Unts by
+        # each strength's own gap and summing both rows (which would have
+        # given (0.20-0.05)*10000 + (0.20-0.08)*10000 = 1500 + 1200 = 2700).
+        priced = a_arbitrage.attach_partd(_multi_strength_drug_level_fixture(), _partd_fixture(), generics_only=True)
+        priced = a_arbitrage.attach_sdud(priced, pd.DataFrame(columns=["ndc", "state", "product_name", "units_reimbursed", "medicaid_amount_reimbursed"]))
+        priced = a_arbitrage.attach_nadac_gap(priced)
+        leaderboard = a_arbitrage.build_leaderboard(priced)
+
+        self.assertEqual(len(leaderboard), 2)  # both strengths still visible
+        self.assertAlmostEqual(leaderboard["overpayment_partd"].sum(), 1200.0, places=4)
+
+
+class TestBuildPartdMoleculeTable(unittest.TestCase):
+    def test_one_row_per_molecule_using_the_representative_strength(self):
+        priced = a_arbitrage.attach_partd(_multi_strength_drug_level_fixture(), _partd_fixture(), generics_only=True)
+        table = a_arbitrage.build_partd_molecule_table(priced)
+        self.assertEqual(len(table), 1)  # one molecule, not one row per strength
+        row = table.iloc[0]
+        self.assertEqual(row["representative_drug_term"], "testdrug 20 mg tablet")  # the $0.08 strength
+        self.assertAlmostEqual(row["overpayment_partd"], 1200.0, places=4)
+        self.assertEqual(row["partd_molecule_n_strengths"], 2)
+
+
 class TestAttachSdud(unittest.TestCase):
     def test_uses_national_xx_row_not_sum_of_states(self):
         drug_level = _drug_level_fixture()

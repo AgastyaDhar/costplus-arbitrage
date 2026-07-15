@@ -237,11 +237,22 @@ def _dedupe_redundant_release_wording(term: str) -> str:
 
 
 def get_ingredient_name(rxcui: str) -> Optional[str]:
-    """Resolve a dispensable drug's RxCUI down to its bare ingredient name
+    """Resolve a dispensable drug's RxCUI down to its ingredient name(s)
     (RxNorm TTY=IN), e.g. 617310 'atorvastatin 20 MG Oral Tablet' -> 'atorvastatin'.
     Used to join against Part D / SDUD, which are keyed by generic ingredient
     name text rather than NDC and aggregate across all strengths of that
     ingredient (see METHODOLOGY.md for the granularity mismatch this implies).
+
+    A combination product's RxCUI relates to MULTIPLE IN concepts (one per
+    active ingredient) -- RxNav's response lists all of them under the same
+    "IN" conceptGroup. Taking only the first (as this function used to)
+    silently drops every ingredient but one, so e.g. "Amlodipine Besylate-
+    Atorvastatin Calcium" resolved to bare "amlodipine" and collided with
+    plain amlodipine tablets under the same molecule join key downstream --
+    a real bug caught when 33 strength/combo rows all landed on one
+    "Amlodipine" Part D figure. Every IN name is now collected, deduped, and
+    joined (sorted for determinism) so a combo forms its own distinct key
+    that can never equal a single-ingredient drug's key.
     """
     url = f"{config.RXNAV_BASE}/rxcui/{rxcui}/related.json?tty=IN"
     data = cached_get_json(url, subdir="rxnav_related")
@@ -249,8 +260,9 @@ def get_ingredient_name(rxcui: str) -> Optional[str]:
     for g in groups:
         if g.get("tty") == "IN":
             props = g.get("conceptProperties") or []
-            if props:
-                return props[0]["name"]
+            names = sorted({p["name"] for p in props if p.get("name")}, key=str.casefold)
+            if names:
+                return "/".join(names)
     return None
 
 
