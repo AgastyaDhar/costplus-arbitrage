@@ -330,3 +330,52 @@ attach to regardless of how precisely the source specifies strength. Kept
 separate from `public_spreads_matched.csv` (which only ever holds rows tied
 to a real leaderboard RxCUI) so this gap stays visible rather than silently
 dropped.
+
+`ftc_markup_pct` adds a third, independent confirmation for 5 of these 8
+drugs (Glatiramer, Mycophenolic Acid, Octreotide, Ribavirin,
+Sofosbuvir/Velpatasvir): a federal industry study and plaintiff litigation
+-- sources with opposite selection biases (see the source-type caveat
+above) -- independently identify the same drugs as absent from the Cost
+Plus catalog. Neither source's selection bias explains a catalog gap; the
+agreement is a genuine, source-independent fact about what Cost Plus
+stocks, not an artifact of who happened to go looking.
+
+### FTC name-format crosswalk fix (`shared/crosswalk.py`)
+
+The FTC Second Interim Staff Report's 35 named specialty generics are
+written `"Generic (Brand) Form"` with no strength (e.g. `"Imatinib
+(Gleevec) Pill"`). Two independent problems kept every one of them out of
+`public_spreads_matched.csv` until this fix:
+
+1. **Brand-name pollution.** `resolve_dispensable_rxcui()` used to accept
+   the first RxNav candidate whose TTY was merely *a* dispensable type
+   (`SCD/SBD/GPCK/BPCK`), in rank order. A brand name in the query text
+   (`"Gleevec"`) reliably makes RxNav's fuzzy match rank the **branded**
+   concept (SBD) above the **generic** one (SCD) -- a real, validly-typed
+   RxCUI, just one the leaderboard (built entirely from Cost Plus's own
+   generic catalog) can never join to. Fixed two ways: `strip_brand_and_form()`
+   strips the parenthetical and a trailing low-signal dose-form word
+   (`"Pill"`/`"Oral"`/`"Tablet"`) as a fallback query when the raw term
+   doesn't resolve to a generic type, and `_TTY_PREFERENCE` makes
+   `resolve_dispensable_rxcui()` prefer SCD > GPCK > SBD > BPCK among
+   candidates that pass the token-overlap check, falling through to a
+   branded type only when no generic candidate exists anywhere in the
+   ranked results.
+2. **Search depth.** A real SCD can rank as low as position 21 for a
+   strength-less query (RxNav ranks strength-less concepts like `"imatinib
+   Pill"` (SCDG) above any specific-strength one when there's no strength
+   in the query to match against) -- `max_candidates_to_check` was raised
+   from 15 to 30 to reach it.
+
+**This does not fully solve ingredient-level resolution.** For some
+drugs (Imatinib, Everolimus, Efavirenz, and 25 others of the 35), RxNav's
+`approximateTerm` genuinely has no strength-specific generic candidate to
+offer for a bare ingredient name -- no amount of query-text massaging
+finds one, because the API needs a strength to produce one. Those cases
+fall back to the same disambiguation discipline as the litigation pass
+(sole leaderboard candidate for the ingredient / an explicit strength
+stated in the source / never guessed among multiple strengths) -- see
+`tests/test_crosswalk_ftc_name_format.py` and the FTC diagnosis for the
+full 35-drug breakdown. Of the 30 FTC drugs Cost Plus's catalog actually
+carries, 2 clear that bar (Dalfampridine, Teriparatide); the other 28 stay
+unmatched rather than assigned to an arbitrary strength.

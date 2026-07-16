@@ -138,19 +138,45 @@ def _has_token_overlap(query_tokens: list[str], candidate_name: Optional[str]) -
     return any(tok in lowered for tok in query_tokens)
 
 
-def resolve_dispensable_rxcui(term: str, max_candidates_to_check: int = 15) -> Optional[dict]:
-    """Walk approximateTerm candidates in rank order and return the first one
-    whose RxNorm term type is dispensable (SCD/SBD/GPCK/BPCK) AND whose
-    resolved name shares at least one meaningful token with the query
-    (the token-overlap relevance check -- RxNav's fuzzy match can rank an
-    unrelated dispensable drug above rank 1 when the query is dominated by
-    generic dosage-form words like "single-dose pen"; without this check
-    that unrelated candidate gets accepted as if it were correct, e.g.
-    "tirzepatide Single-dose Pen" resolving to azithromycin). Returns None
-    if no candidate among the top N passes both checks.
+# Preference order among the dispensable TTYs once a candidate has passed
+# the token-overlap relevance check: generic (SCD/GPCK) beats branded
+# (SBD/BPCK) every time. The leaderboard is built entirely from Cost Plus's
+# own generic catalog, so a branded RxCUI can never join to it even when
+# it's a real, correctly-resolved drug -- and RxNav's fuzzy match reliably
+# ranks a branded concept above the generic one whenever the query text
+# contains a brand name (e.g. FTC's "Generic (Brand) Form" convention) or
+# omits a strength (branded concepts often have a shorter/looser name that
+# scores higher against an under-specified query). Only fall through to a
+# branded type if no generic candidate appears anywhere in the ranked
+# results -- some drugs are genuinely marketed brand-only.
+_TTY_PREFERENCE = ["SCD", "GPCK", "SBD", "BPCK"]
+
+
+def resolve_dispensable_rxcui(term: str, max_candidates_to_check: int = 30) -> Optional[dict]:
+    """Walk approximateTerm candidates in rank order and return the
+    best-preferred one whose RxNorm term type is dispensable
+    (SCD/SBD/GPCK/BPCK, generic types preferred over branded -- see
+    _TTY_PREFERENCE above) AND whose resolved name shares at least one
+    meaningful token with the query (the token-overlap relevance check --
+    RxNav's fuzzy match can rank an unrelated dispensable drug above rank 1
+    when the query is dominated by generic dosage-form words like
+    "single-dose pen"; without this check that unrelated candidate gets
+    accepted as if it were correct, e.g. "tirzepatide Single-dose Pen"
+    resolving to azithromycin). Default depth raised from 15 to 30 during
+    the FTC name-format fix: a strength-less query (e.g. brand-stripped
+    "Dalfampridine") can genuinely rank its only real SCD candidate as far
+    down as rank 21 -- RxNav ranks strength-less SCDG/SCDF/IN concepts
+    above it when there's no strength in the query text to match against.
+    Scans stop early once an SCD passes (the best possible type -- nothing
+    can outrank it), otherwise every candidate in the top N is checked so a
+    later, more-generic type can
+    still beat an earlier, more-branded one. Returns None if no candidate
+    among the top N passes both checks.
     """
     candidates = approximate_term(term, max_entries=max_candidates_to_check)
     query_tokens = _extract_ingredient_tokens(term)
+    best = None
+    best_pref = None
     for c in candidates[:max_candidates_to_check]:
         tty = get_rxcui_tty(c["rxcui"])
         if tty not in DISPENSABLE_TTYS:
@@ -158,9 +184,51 @@ def resolve_dispensable_rxcui(term: str, max_candidates_to_check: int = 15) -> O
         resolved_name = get_rxcui_name(c["rxcui"])
         if not _has_token_overlap(query_tokens, resolved_name):
             continue
-        return {**c, "tty": tty, "resolved_name": resolved_name}
-    print(f"crosswalk: no confident match for {term}, excluded")
-    return None
+        pref = _TTY_PREFERENCE.index(tty) if tty in _TTY_PREFERENCE else len(_TTY_PREFERENCE)
+        if best is None or pref < best_pref:
+            best = {**c, "tty": tty, "resolved_name": resolved_name}
+            best_pref = pref
+            if best_pref == 0:  # SCD -- can't do better, stop scanning
+                break
+    if best is None:
+        print(f"crosswalk: no confident match for {term}, excluded")
+    return best
+
+
+# Words that carry no ingredient/strength signal of their own and, when they
+# are the *entire* remainder of a query after the ingredient name, only
+# dilute RxNav's fuzzy match rather than helping it. Deliberately a small,
+# explicit list (not the broader _DOSAGE_FORM_WORDS/_ROUTE_WORDS sets used
+# for the token-overlap relevance check above) -- this is query
+# construction, not relevance filtering, and stripping a real dose-form
+# signal like "Injectable" or "Oral Liquid" could hurt a query that
+# otherwise has nothing else to distinguish it.
+_LOW_SIGNAL_TRAILING_WORDS = {"pill", "oral", "tablet"}
+_PARENTHETICAL_RE = re.compile(r"\([^)]*\)")
+
+
+def strip_brand_and_form(name: str) -> str:
+    """Strip a parenthetical brand name and any trailing low-signal
+    dose-form word, e.g. "Imatinib (Gleevec) Pill" -> "Imatinib". Named
+    government/academic reports that study a drug at the ingredient level
+    (no single strength) commonly write "Generic (Brand) Form" -- a brand
+    name in the query text reliably makes RxNav's fuzzy match rank a
+    branded (SBD) concept above the generic (SCD) one the leaderboard
+    needs, even with _TTY_PREFERENCE in play, because the generic concept
+    may not appear in the top-N ranked candidates at all when a brand name
+    dominates the query. Pure function, never mutates the input -- a
+    caller that needs the original string for citation display simply
+    keeps its own reference to it; this only returns a cleaned-up query,
+    it never used to build any output alongside it (the caller is Task 1's
+    "separate field" for citation display).
+    """
+    stripped = _PARENTHETICAL_RE.sub(" ", name)
+    stripped = re.sub(r"\s+", " ", stripped).strip()
+    words = stripped.split(" ")
+    while words and words[-1].lower() in _LOW_SIGNAL_TRAILING_WORDS:
+        words.pop()
+    cleaned = " ".join(words).strip()
+    return cleaned or stripped
 
 
 def normalize_ndc(raw_ndc: str) -> str:
@@ -293,24 +361,51 @@ class CrosswalkResult:
     note: str = ""
 
 
+_GENERIC_TTYS = {"SCD", "GPCK"}
+
+
 def crosswalk_drug(term: str, nadac_df: pd.DataFrame) -> CrosswalkResult:
     result = CrosswalkResult(drug_term=term)
 
     resolved = resolve_dispensable_rxcui(term)
-    fallback_used = False
-    if resolved is None:
-        # Only ever tried after the raw term has already failed -- never
-        # overrides an existing successful resolution, so this can't change
-        # any drug that already matches, only rescue a subset of failures.
-        cleaned = _dedupe_redundant_release_wording(term)
-        if cleaned != term:
-            resolved = resolve_dispensable_rxcui(cleaned)
-            fallback_used = resolved is not None
+    fallback_used = None
+
+    def _try_variant(variant_term: str, tag: str) -> None:
+        """Try an alternate query text, keeping it only if it beats what
+        we already have by _TTY_PREFERENCE -- never overrides an existing
+        *generic* resolution, but a raw-term success that only found a
+        branded (SBD/BPCK) candidate is not final: a fallback variant that
+        finds a generic one instead must still win. `resolved`/
+        `fallback_used` are captured by reference via nonlocal."""
+        nonlocal resolved, fallback_used
+        if variant_term == term:
+            return
+        candidate = resolve_dispensable_rxcui(variant_term)
+        if candidate is None:
+            return
+        if resolved is None or _TTY_PREFERENCE.index(candidate["tty"]) < _TTY_PREFERENCE.index(resolved["tty"]):
+            resolved = candidate
+            fallback_used = tag
+
+    # Both fallbacks below are skipped entirely once `resolved` is already
+    # generic-tier (SCD/GPCK) -- nothing can improve on that, so a term
+    # that already resolves cleanly never triggers a single extra RxNav
+    # call. They keep firing, in order, as long as the current best is
+    # None or branded (SBD/BPCK): a raw-term "success" that only found a
+    # branded candidate is exactly the FTC "Generic (Brand) Form" failure
+    # mode (_TTY_PREFERENCE alone can't fix it when no generic candidate
+    # ranks in the raw query's top N at all -- the brand name has to come
+    # out of the query text first for a generic one to surface).
+    if resolved is None or resolved["tty"] not in _GENERIC_TTYS:
+        _try_variant(_dedupe_redundant_release_wording(term), "name-normalization")
+    if resolved is None or resolved["tty"] not in _GENERIC_TTYS:
+        _try_variant(strip_brand_and_form(term), "brand-strip")
+
     if resolved is None:
         result.note = "no dispensable (SCD/SBD) RxCUI found in top candidates"
         return result
 
-    fallback_tag = "[via name-normalization fallback] " if fallback_used else ""
+    fallback_tag = f"[via {fallback_used} fallback] " if fallback_used else ""
     result.rxcui = resolved["rxcui"]
     result.resolved_name = resolved["resolved_name"]
     result.tty = resolved["tty"]

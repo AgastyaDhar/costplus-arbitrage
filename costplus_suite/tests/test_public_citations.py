@@ -17,19 +17,19 @@ from modules import g_public_citations  # noqa: E402
 
 
 class TestLoadCitations(unittest.TestCase):
-    def test_51_distinct_rxcuis_55_leaderboard_rows_after_join(self):
-        # data/public_spreads_matched.csv has 51 distinct RxCUIs (34 from the
+    def test_52_distinct_rxcuis_56_leaderboard_rows_after_join(self):
+        # data/public_spreads_matched.csv has 52 distinct RxCUIs (34 from the
         # original public-report citations, +11 from the first litigation
-        # pass, +6 from the follow-up strength-disambiguation pass over the
-        # previously-unmatched litigation rows -- see the "litigation and
-        # 46brooklyn citation extraction" commits) -- one row per RxCUI here.
-        # A handful of those RxCUIs (Tadalafil 20mg/(PAH) 20mg, 4 Clobetasol
-        # Propionate 0.05% Ointment package variants) map to more than one
-        # leaderboard row each, which is why the join in
-        # TestRunAgainstRealLeaderboard below produces 55 populated rows
-        # from these 51 distinct citations.
+        # pass, +6 from the litigation strength-disambiguation pass, +1
+        # (Teriparatide) from the FTC name-format crosswalk fix -- see the
+        # "litigation and 46brooklyn citation extraction" commits and the
+        # FTC crosswalk fix commit) -- one row per RxCUI here. A handful of
+        # those RxCUIs (Tadalafil 20mg/(PAH) 20mg, 4 Clobetasol Propionate
+        # 0.05% Ointment package variants) map to more than one leaderboard
+        # row each, which is why the join in TestRunAgainstRealLeaderboard
+        # below produces 56 populated rows from these 52 distinct citations.
         citations = g_public_citations.load_citations()
-        self.assertEqual(len(citations), 51)
+        self.assertEqual(len(citations), 52)
         self.assertEqual(citations["rxcui"].duplicated().sum(), 0)
 
     def test_metoprolol_tartrate_25mg_matches_known_value(self):
@@ -55,8 +55,23 @@ class TestLoadCitations(unittest.TestCase):
         citations = g_public_citations.load_citations()
         self.assertEqual(
             set(citations["source_type"].unique()),
-            {"litigation", "state_disclosure", "peer_reviewed"},
+            {"litigation", "state_disclosure", "peer_reviewed", "federal_study"},
         )
+
+    def test_teriparatide_is_the_first_federal_study_citation(self):
+        # RxCUI 1435115 (Teriparatide 560 mcg/2.24ml pen-injector): the FTC
+        # name-format crosswalk fix's one genuinely new drug (sole
+        # leaderboard candidate for the ingredient -- Dalfampridine, the
+        # other FTC drug the fix rescued, was already matched via
+        # litigation, so it's an additional citation, not a new RxCUI).
+        # Confirms federal_study data is actually flowing through the
+        # pipeline after being stuck at 0 rows since the source-type
+        # column was introduced.
+        citations = g_public_citations.load_citations()
+        row = citations[citations["rxcui"] == 1435115]
+        self.assertEqual(len(row), 1)
+        self.assertEqual(row.iloc[0]["source_type"], "federal_study")
+        self.assertIn("FTC Second Interim Staff Report", row.iloc[0]["best_confirmed_source"])
 
     def test_abiraterone_all_confirmed_sources_shows_both_source_types(self):
         # RxCUI 1100075 (Abiraterone Acetate 250mg): best_confirmed_spread is
@@ -148,14 +163,15 @@ class TestRun(unittest.TestCase):
 class TestRunAgainstRealLeaderboard(unittest.TestCase):
     """The exact reproducibility check Task 2 asks for, as a standing test:
     joining the real, committed citations file against the real, committed
-    leaderboard.csv must produce exactly 55 populated markup rows (54 of
+    leaderboard.csv must produce exactly 56 populated markup rows (55 of
     which also get an estimated price -- the Clopidogrel spread_pct row
     gets a spread but no price, see above). Was 38/37 before the first
-    litigation and 46brooklyn citation extraction pass (-> 49/48), then
-    49/48 before the follow-up strength-disambiguation pass over the
-    previously-unmatched litigation rows added 6 more confirmed drugs."""
+    litigation and 46brooklyn citation extraction pass (-> 49/48), 49/48
+    before the litigation strength-disambiguation pass (-> 55/54), then
+    55/54 before the FTC name-format crosswalk fix added Teriparatide
+    (federal_study's first-ever confirmed row)."""
 
-    def test_exactly_55_populated_markup_rows(self):
+    def test_exactly_56_populated_markup_rows(self):
         leaderboard_path = config.OUTPUT_DIR / "leaderboard.csv"
         if not leaderboard_path.exists():
             self.skipTest("output/leaderboard.csv not present -- run the pipeline first")
@@ -167,8 +183,8 @@ class TestRunAgainstRealLeaderboard(unittest.TestCase):
             errors="ignore",
         )
         out = g_public_citations.run(leaderboard)
-        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 55)
-        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 54)
+        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 56)
+        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 55)
 
 
 if __name__ == "__main__":

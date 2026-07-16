@@ -69,6 +69,25 @@ class TestCrosswalkDrugDedupFallback(unittest.TestCase):
         self.assertEqual(result.rxcui, "197891")
         self.assertIn("name-normalization fallback", result.note)
 
+    def test_brand_strip_fallback_rescues_an_ftc_style_term(self):
+        term = "Imatinib (Gleevec) Pill"
+
+        def fake_resolve(t):
+            if t == term:
+                return None  # raw term with the brand name in it fails/resolves wrong, as observed live
+            if t == "Imatinib":  # release-dedup is a no-op here, so brand-strip sees the raw term
+                return {"rxcui": "403878", "resolved_name": "imatinib 100 MG Oral Tablet", "tty": "SCD"}
+            return None
+
+        with patch.object(crosswalk, "resolve_dispensable_rxcui", side_effect=fake_resolve), \
+             patch.object(crosswalk, "get_ndcs_for_rxcui", return_value=["11111111111"]), \
+             patch.object(crosswalk, "get_ingredient_name", return_value="imatinib"):
+            result = crosswalk.crosswalk_drug(term, self._nadac_df())
+
+        self.assertTrue(result.matched)
+        self.assertEqual(result.rxcui, "403878")
+        self.assertIn("brand-strip fallback", result.note)
+
     def test_fallback_never_invoked_when_raw_term_already_resolves(self):
         """The critical safety property: if the raw term already succeeds,
         the deduped variant must never even be tried, so an already-correct
@@ -89,9 +108,30 @@ class TestCrosswalkDrugDedupFallback(unittest.TestCase):
         self.assertEqual(result.rxcui, "ORIGINAL_RXCUI")
         self.assertNotIn("fallback", result.note)
 
-    def test_no_op_when_dedup_produces_no_change(self):
-        """A term with no redundant release wording must not trigger a
-        second RxNav call at all when the first one fails."""
+    def test_no_op_when_dedup_and_brand_strip_both_produce_no_change(self):
+        """A term with no redundant release wording, no parenthetical, and
+        no trailing low-signal dose-form word must not trigger any fallback
+        RxNav call at all when the first one fails -- "Capsule" is
+        deliberately not in _LOW_SIGNAL_TRAILING_WORDS, unlike "Tablet"."""
+        term = "Nonexistent Drug 5mg Capsule"
+        calls = []
+
+        def fake_resolve(t):
+            calls.append(t)
+            return None
+
+        with patch.object(crosswalk, "resolve_dispensable_rxcui", side_effect=fake_resolve):
+            result = crosswalk.crosswalk_drug(term, self._nadac_df())
+
+        self.assertEqual(calls, [term])  # no fallback attempt -- both no-op on this term
+        self.assertFalse(result.matched)
+
+    def test_brand_strip_fallback_tried_when_dedup_is_a_no_op(self):
+        """A term ending in a low-signal word ("Tablet") with no redundant
+        release wording must skip straight from the raw term to the
+        brand-strip fallback -- the release-dedup stage is a no-op here
+        (nothing to dedupe) but must not block the brand-strip stage from
+        still being tried."""
         term = "Nonexistent Drug 5mg Tablet"
         calls = []
 
@@ -102,7 +142,7 @@ class TestCrosswalkDrugDedupFallback(unittest.TestCase):
         with patch.object(crosswalk, "resolve_dispensable_rxcui", side_effect=fake_resolve):
             result = crosswalk.crosswalk_drug(term, self._nadac_df())
 
-        self.assertEqual(calls, [term])  # no second attempt -- dedup(term) == term
+        self.assertEqual(calls, [term, "Nonexistent Drug 5mg"])
         self.assertFalse(result.matched)
 
 
