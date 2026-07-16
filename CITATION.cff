@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "Cost Plus Arbitrage Dataset"
+authors:
+  - family-names: "Dhar"
+    given-names: "Agastya"
+version: "1.0.0"
+date-released: "2026-07-16"
+url: "https://github.com/AgastyaDhar/costplus-arbitrage"
+repository-code: "https://github.com/AgastyaDhar/costplus-arbitrage"
+license: "CC-BY-4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/legalcode"
+# Zenodo will mint a DOI on deposit. Once assigned, add it here as:
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXX"
+keywords:
+  - pharmacy benefit managers
+  - drug pricing
+  - Medicare Part D
+  - Medicaid
+  - spread pricing
+  - NADAC
+  - health policy
+abstract: >-
+  A cross-referenced dataset comparing Mark Cuban Cost Plus Drugs'
+  generic drug prices against what U.S. Medicare Part D and state
+  Medicaid programs paid for the same drugs, enriched with
+  independently-sourced, publicly-documented pharmacy benefit manager
+  (PBM) markup figures drawn from federal studies, a state-mandated
+  price-transparency report, a peer-reviewed academic study, and
+  federal court litigation exhibits. See dataset/README.md and
+  dataset/PROVENANCE.md for full documentation.

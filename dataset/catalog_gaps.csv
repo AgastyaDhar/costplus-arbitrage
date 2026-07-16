@@ -1,0 +1,8 @@
+drug_name,maine_mhdo_prescript_markup_pct,source,source_page,jj_markup_pct,wf_markup_pct,ftc_markup_pct
+Daptomycin 500 MG Solution Reconstituted (BE Pharmaceuticals),1111.32,"Maine MHDO Prescription Drug Pricing and Transparency Report (2022, covering CY2021)",24 (maine_mhdo_prescript),,,
+Enoxaparin Sodium,,"Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint (D.N.J. 1:24-cv-00671, filed Feb. 2024); Navarro v. Wells Fargo & Co., ERISA Class Action Complaint (D. Minn. 0:24-cv-03043, filed Jul. 2024)",44 (jj) / 55 (wf),36.37,54.52,
+Fondaparinux Sodium,,"Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint (D.N.J. 1:24-cv-00671, filed Feb. 2024); Navarro v. Wells Fargo & Co., ERISA Class Action Complaint (D. Minn. 0:24-cv-03043, filed Jul. 2024)",44 (jj) / 55 (wf),128.2,48.25,
+Octreotide Acetate,,"FTC Second Interim Staff Report (Jan 2025); Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint (D.N.J. 1:24-cv-00671, filed Feb. 2024); Navarro v. Wells Fargo & Co., ERISA Class Action Complaint (D. Minn. 0:24-cv-03043, filed Jul. 2024)",36 (ftc) / 44 (jj) / 55 (wf),29.14,14.98,56.0
+Pregabalin 75 MG Capsule (Camber Pharmaceuticals),1516.44,"Maine MHDO Prescription Drug Pricing and Transparency Report (2022, covering CY2021)",25 (maine_mhdo_prescript),,,
+Sofosbuvir/Velpatasvir,,"FTC Second Interim Staff Report (Jan 2025); Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint (D.N.J. 1:24-cv-00671, filed Feb. 2024)",36 (ftc) / 44 (jj),4.7,,5.0
+Vigabatrin 500 MG Packet (Cipla USA),1270.57,"Maine MHDO Prescription Drug Pricing and Transparency Report (2022, covering CY2021)",25 (maine_mhdo_prescript),,,

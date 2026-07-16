@@ -44,3 +44,15 @@ After running, results are written to the `costplus_suite/output/` folder:
 - Net prices are never estimated or guessed
 
 See `METHODOLOGY.md` for the full data-source and limitation writeup.
+
+## License
+
+- **Code** (everything under `costplus_suite/` except `costplus_suite/data/`,
+  plus this repo's tooling generally) is licensed under the **MIT License**
+  -- see `LICENSE`.
+- **Data** (the output CSVs in `costplus_suite/output/`, the extraction/
+  citation files in `costplus_suite/data/`, and the packaged deposit copy
+  in `dataset/`) is licensed under **CC BY 4.0** -- see `data/LICENSE`.
+  This does not relicense the underlying third-party sources (CMS, Cost
+  Plus Drugs, RxNorm, government reports, court filings); see
+  `dataset/PROVENANCE.md` for each source's own terms.
