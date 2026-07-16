@@ -17,16 +17,18 @@ from modules import g_public_citations  # noqa: E402
 
 
 class TestLoadCitations(unittest.TestCase):
-    def test_34_distinct_rxcuis_38_leaderboard_rows_after_join(self):
-        # data/public_spreads_matched.csv has 34 distinct RxCUIs -- one row
-        # per RxCUI here. Two of those RxCUIs (Tadalafil 20mg/(PAH) 20mg,
-        # and 4 Clobetasol Propionate 0.05% Ointment package variants) map
-        # to more than one leaderboard row each, which is why the join in
-        # TestRunAgainstRealLeaderboard below produces 38 populated rows
-        # from these 34 distinct citations -- the same count independently
-        # recovered by hand from the frozen xlsx before this module existed.
+    def test_45_distinct_rxcuis_49_leaderboard_rows_after_join(self):
+        # data/public_spreads_matched.csv has 45 distinct RxCUIs (34 from the
+        # original public-report citations, +11 new drugs added from the
+        # Lewandowski v. J&J / Navarro v. Wells Fargo ERISA litigation
+        # complaints -- see the "litigation and 46brooklyn citation
+        # extraction" commit) -- one row per RxCUI here. A handful of those
+        # RxCUIs (Tadalafil 20mg/(PAH) 20mg, 4 Clobetasol Propionate 0.05%
+        # Ointment package variants) map to more than one leaderboard row
+        # each, which is why the join in TestRunAgainstRealLeaderboard below
+        # produces 49 populated rows from these 45 distinct citations.
         citations = g_public_citations.load_citations()
-        self.assertEqual(len(citations), 34)
+        self.assertEqual(len(citations), 45)
         self.assertEqual(citations["rxcui"].duplicated().sum(), 0)
 
     def test_metoprolol_tartrate_25mg_matches_known_value(self):
@@ -39,12 +41,14 @@ class TestLoadCitations(unittest.TestCase):
 
     def test_highest_value_wins_when_rxcui_has_multiple_markup_rows(self):
         # RxCUI 1100075 (Abiraterone Acetate 250mg) has 4 markup_pct rows
-        # from different manufacturers (1727.73, 1558.05, 1321.51, 1018.72)
-        # -- the highest must be the one kept.
+        # from Maine MHDO manufacturer data (1727.73, 1558.05, 1321.51,
+        # 1018.72) plus two litigation-sourced rows added later (6391.86
+        # from Lewandowski v. J&J, 2171.74 from Navarro v. Wells Fargo) --
+        # the highest of all six must be the one kept.
         citations = g_public_citations.load_citations()
         row = citations[citations["rxcui"] == 1100075]
         self.assertEqual(len(row), 1)
-        self.assertAlmostEqual(row.iloc[0]["best_confirmed_spread"], 1727.73, places=2)
+        self.assertAlmostEqual(row.iloc[0]["best_confirmed_spread"], 6391.86, places=2)
 
     def test_non_markup_type_wins_on_value_but_gets_no_price_formula(self):
         # RxCUI 309362 (Clopidogrel bisulfate) has only spread_dollars (8.59)
@@ -120,11 +124,13 @@ class TestRun(unittest.TestCase):
 class TestRunAgainstRealLeaderboard(unittest.TestCase):
     """The exact reproducibility check Task 2 asks for, as a standing test:
     joining the real, committed citations file against the real, committed
-    leaderboard.csv must produce exactly 38 populated markup rows (37 of
+    leaderboard.csv must produce exactly 49 populated markup rows (48 of
     which also get an estimated price -- the Clopidogrel spread_pct row
-    gets a spread but no price, see above)."""
+    gets a spread but no price, see above). Was 38/37 before the
+    litigation and 46brooklyn citation extraction pass added 11 new
+    confirmed drugs."""
 
-    def test_exactly_38_populated_markup_rows(self):
+    def test_exactly_49_populated_markup_rows(self):
         leaderboard_path = config.OUTPUT_DIR / "leaderboard.csv"
         if not leaderboard_path.exists():
             self.skipTest("output/leaderboard.csv not present -- run the pipeline first")
@@ -135,8 +141,8 @@ class TestRunAgainstRealLeaderboard(unittest.TestCase):
             errors="ignore",
         )
         out = g_public_citations.run(leaderboard)
-        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 38)
-        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 37)
+        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 49)
+        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 48)
 
 
 if __name__ == "__main__":
