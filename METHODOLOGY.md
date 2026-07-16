@@ -320,25 +320,76 @@ lists every one of them (not just the max that wins `best_confirmed_spread`)
 -- e.g. Abiraterone shows both Maine MHDO's 1,727.73% and Lewandowski v.
 J&J's 6,391.86%, making the max-selection visible rather than hidden.
 
-### `output/catalog_gaps.csv` -- Drugs with court-confirmed PBM markups that Cost Plus does not currently carry.
+### `output/catalog_gaps.csv` -- Drugs with a confirmed public markup that Cost Plus does not currently carry (`modules/h_catalog_gaps.py`)
 
-The two ERISA complaints above name several drugs with real, court-filed
-PBM markup percentages that never resolved to any leaderboard row at all --
-not a strength-ambiguity problem, but a **catalog gap**: Cost Plus Drugs
-doesn't currently sell the molecule, so there's no row for a citation to
-attach to regardless of how precisely the source specifies strength. Kept
-separate from `public_spreads_matched.csv` (which only ever holds rows tied
-to a real leaderboard RxCUI) so this gap stays visible rather than silently
-dropped.
+**Generated, not static.** This file used to be hand-built during the
+litigation-disambiguation pass, and it was wrong for 3 of the 5 drugs an
+external audit checked (Glatiramer, Mycophenolic Acid, and Ribavirin are
+all actually present in the raw Cost Plus catalog) -- it was never
+re-derived after later crosswalk fixes changed what could resolve, so it
+silently drifted out of sync with reality. `modules/h_catalog_gaps.py`
+removes that entire class of staleness: on every run, it takes every
+`markup_pct`-type citation in `data/public_spreads.csv` (every source:
+FTC, Maine MHDO, the litigation complaints), extracts an ingredient
+search key and any brand name per drug, and does a live substring search
+against the **raw** Cost Plus catalog (`data/costplus.GRAPHQL.csv`'s
+`drug` and `brand_name` columns -- not the leaderboard, which already
+excludes brand rows and unpriced rows for unrelated reasons; see
+`modules/i_unpriced_drugs.py` below). A drug is only ever listed here if
+that search comes back completely empty. Different sources naming the
+same molecule differently (FTC's `"Octreotide (Sandostatin)
+Injectable"` vs. litigation's `"Octreotide Acetate"`) are consolidated
+to one row by search key, not left as separate near-duplicate rows.
 
-`ftc_markup_pct` adds a third, independent confirmation for 5 of these 8
-drugs (Glatiramer, Mycophenolic Acid, Octreotide, Ribavirin,
-Sofosbuvir/Velpatasvir): a federal industry study and plaintiff litigation
--- sources with opposite selection biases (see the source-type caveat
-above) -- independently identify the same drugs as absent from the Cost
-Plus catalog. Neither source's selection bias explains a catalog gap; the
-agreement is a genuine, source-independent fact about what Cost Plus
-stocks, not an artifact of who happened to go looking.
+As of the regeneration, 7 drugs qualify: Daptomycin, Enoxaparin Sodium,
+Fondaparinux Sodium, Octreotide Acetate, Pregabalin, Sofosbuvir/
+Velpatasvir, and Vigabatrin. Three of these (Daptomycin, Pregabalin,
+Vigabatrin) were never previously flagged at all -- the hand-built file
+only ever checked a specific 8-drug candidate list assembled during the
+litigation pass, not every citation in `public_spreads.csv`; the
+regenerated version checks all of them.
+
+Where more than one source cites the same genuine gap drug, their
+figures sit side by side in per-source `<tag>_markup_pct` columns (e.g.
+`jj_markup_pct`, `ftc_markup_pct`) on the same row -- e.g. a federal
+industry study and plaintiff litigation, sources with opposite selection
+biases (see the source-type caveat above), independently confirming the
+same drug is absent from the catalog is a genuine, source-independent
+fact, not an artifact of who happened to go looking.
+
+### `output/unpriced_drugs.csv` -- Drugs Cost Plus carries and the crosswalk resolves, but NADAC has no current price for (`modules/i_unpriced_drugs.py`)
+
+A third, distinct bucket, added alongside the catalog_gaps.csv fix:
+during that audit, Ribavirin turned out to crosswalk perfectly (a real,
+correctly-typed SCD, 16 and 4 real NDCs for its two catalog products)
+but have **zero** NADAC-priced NDCs among all 20 -- not a catalog gap
+(Cost Plus sells it) and not a crosswalk bug (the RxCUI is right), just
+an external data-coverage gap: NADAC is a voluntary pharmacy survey, not
+a census (see the NADAC section above), and it simply has no current
+acquisition-cost data for this drug right now. `modules/i_unpriced_drugs.py`
+scans the *entire* catalog (not just a known candidate) for this same
+pattern -- resolved to a real, typed RxCUI, at least one NDC found, but
+zero of those NDCs priced -- and Ribavirin is far from alone: **204
+catalog rows / 191 distinct RxCUIs** currently fall into this bucket.
+
+### Salt/ester synonym fix in the token-overlap check (`shared/crosswalk.py`)
+
+A second bug the catalog_gaps.csv audit surfaced: `_has_token_overlap()`
+rejected a real rank-1 SCD match for Cost Plus's "Mycophenolate Sodium"
+because RxNorm's canonical name for the same substance is "mycophenolic
+acid" -- `"mycophenolATE"` and `"mycophenolIC"` share zero literal
+tokens. Two changes, both scoped to the token-overlap relevance check
+only (not `normalize_drug_name`'s separate salt-suffix list used for the
+Part D/SDUD join key, left untouched): `_SALT_QUALIFIER_WORDS` (sodium,
+sulfate, mesylate, hydrochloride, tartrate, fumarate, acetate, etc.) are
+now excluded from the required-token set, the same way dosage-form words
+already were, so a bare salt word alone can never drive a false-positive
+match; and `_ester_acid_stem()` tries an ester/free-acid stem match
+(`"mycophenolate"`/`"mycophenolic"` both reduce to `"mycophenol"`) as a
+fallback when the literal token doesn't appear. The `tirzepatide`/
+`dulaglutide`/azithromycin regression (neither word ends in `-ate` or
+`-ic`) and the `amlodipine`/`atorvastatin` combo-collision regression are
+both re-verified passing after this change (`tests/test_crosswalk_ftc_name_format.py`).
 
 ### FTC name-format crosswalk fix (`shared/crosswalk.py`)
 

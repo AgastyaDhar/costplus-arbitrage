@@ -8,6 +8,13 @@ Regression tests for the FTC name-format crosswalk fix:
     the token-overlap relevance check, since the leaderboard is built
     entirely from Cost Plus's generic catalog and a branded RxCUI can
     never join to it.
+  - _ester_acid_stem()/_SALT_QUALIFIER_WORDS (catalog_gaps.csv audit
+    follow-up): the token-overlap check used to reject a real rank-1 SCD
+    match for Cost Plus's "Mycophenolate Sodium" because RxNorm's
+    canonical name is "mycophenolic acid" -- zero literal shared tokens
+    ("mycophenolATE" vs "mycophenolIC"). Salt-qualifier words (sodium,
+    sulfate, etc.) are now excluded from the required-token set, and an
+    ester/acid stem match ("mycophenol") is tried as a fallback.
 """
 import sys
 import unittest
@@ -106,6 +113,66 @@ class TestTtyPreference(unittest.TestCase):
         # Re-verified after the TTY-preference rewrite: the token-overlap
         # check must still gate candidates before TTY preference is ever
         # consulted, so an unrelated drug can't win just by being SBD.
+        azithromycin_candidate = {"rxcui": "861417", "name": None, "rank": 4, "score": 750.0}
+        for term in ("tirzepatide Single-dose Pen", "dulaglutide Single-dose Pen"):
+            with patch.object(crosswalk, "approximate_term", return_value=[azithromycin_candidate]), \
+                 patch.object(crosswalk, "get_rxcui_tty", return_value="SBD"), \
+                 patch.object(
+                     crosswalk, "get_rxcui_name",
+                     return_value="azithromycin 1000 MG Powder for Oral Suspension [Zithromax]",
+                 ):
+                resolved = crosswalk.resolve_dispensable_rxcui(term)
+            self.assertIsNone(resolved)
+
+
+class TestSaltEsterSynonym(unittest.TestCase):
+    def test_mycophenolate_sodium_resolves_via_ester_acid_stem(self):
+        # Real data observed live against RxNav: rank-1 candidate for
+        # "Mycophenolate Sodium DR 180mg Delayed Release Tablet" IS the
+        # correct SCD (485020), but its RxNorm name says "mycophenolic
+        # acid" -- the token-overlap check must accept it via the
+        # "mycophenol" stem shared between "mycophenolate" and
+        # "mycophenolic", not reject it for having zero literal overlap.
+        candidates = [
+            {"rxcui": "485020", "name": "MYCOPHENOLATE SODIUM 180 mg ORAL TABLET, DELAYED RELEASE", "rank": 1, "score": 17.29},
+        ]
+        with patch.object(crosswalk, "approximate_term", return_value=candidates), \
+             patch.object(crosswalk, "get_rxcui_tty", return_value="SCD"), \
+             patch.object(
+                 crosswalk, "get_rxcui_name",
+                 return_value="mycophenolic acid 180 MG Delayed Release Oral Tablet",
+             ):
+            resolved = crosswalk.resolve_dispensable_rxcui("Mycophenolate Sodium DR 180mg Delayed Release Tablet")
+
+        self.assertIsNotNone(resolved)
+        self.assertEqual(resolved["rxcui"], "485020")
+        self.assertEqual(resolved["tty"], "SCD")
+
+    def test_bare_salt_word_alone_cannot_drive_a_match(self):
+        # A query token that IS a salt-qualifier word (here, the whole
+        # query reduces to one) must never overlap-match a candidate
+        # just because the word "sodium" appears in both -- salt words
+        # are excluded from the required-token set entirely, matching the
+        # existing false-positive guard for dosage-form-only queries.
+        query_tokens = crosswalk._extract_ingredient_tokens("Sodium 10mg Tablet")
+        self.assertEqual(query_tokens, [])
+        self.assertFalse(crosswalk._has_token_overlap(query_tokens, "some unrelated sodium drug"))
+
+    def test_ester_acid_stem_ignores_short_coincidental_suffixes(self):
+        # "rate" ending in "ate" must not stem down to the near-useless
+        # single letter "r" -- the >=4-char stem-length floor exists
+        # precisely to keep this kind of match from ever firing.
+        self.assertIsNone(crosswalk._ester_acid_stem("rate"))
+
+    def test_ester_acid_stem_real_pair(self):
+        self.assertEqual(crosswalk._ester_acid_stem("mycophenolate"), "mycophenol")
+        self.assertEqual(crosswalk._ester_acid_stem("mycophenolic"), "mycophenol")
+
+    def test_tirzepatide_and_dulaglutide_still_do_not_resolve_to_azithromycin(self):
+        # Re-verified once more after the salt/ester stem addition: neither
+        # word ends in "-ate" or "-ic" ("tirzepatIDE", "dulaglutIDE"), so
+        # the new stem fallback never activates for them, and the
+        # unrelated azithromycin candidate is still correctly rejected.
         azithromycin_candidate = {"rxcui": "861417", "name": None, "rank": 4, "score": 750.0}
         for term in ("tirzepatide Single-dose Pen", "dulaglutide Single-dose Pen"):
             with patch.object(crosswalk, "approximate_term", return_value=[azithromycin_candidate]), \

@@ -118,24 +118,66 @@ _RELEASE_WORDS = {
 _UNIT_WORDS = {
     "mg", "mcg", "g", "ml", "iu", "units", "unit", "meq", "mmol", "mL",
 }
-_RELEVANCE_STOPWORDS = _DOSAGE_FORM_WORDS | _ROUTE_WORDS | _RELEASE_WORDS | _UNIT_WORDS
+# Salt/ester qualifier words: they name a specific formulation, not the
+# ingredient itself, and a catalog term can carry one where RxNorm's
+# canonical name doesn't (or vice versa) -- e.g. Cost Plus's "Mycophenolate
+# Sodium" vs RxNorm's "mycophenolic acid" for the same substance. Stripped
+# from the token-overlap query set alongside dosage-form/route/release/unit
+# words so a bare salt word (e.g. "sodium") can never be the ONLY thing
+# driving a match -- the same false-positive risk the token-overlap check
+# already guards against for generic dosage-form words. Deliberately a
+# separate, smaller list from _SALT_SUFFIXES below (that one also folds in
+# release-timing words for a different purpose, normalize_drug_name's
+# Part D/SDUD join key -- not touched here).
+_SALT_QUALIFIER_WORDS = {
+    "sodium", "potassium", "calcium", "magnesium", "sulfate", "mesylate",
+    "hydrochloride", "hcl", "tartrate", "fumarate", "acetate", "maleate",
+    "succinate", "citrate", "phosphate", "besylate", "bisulfate",
+}
+_RELEVANCE_STOPWORDS = _DOSAGE_FORM_WORDS | _ROUTE_WORDS | _RELEASE_WORDS | _UNIT_WORDS | _SALT_QUALIFIER_WORDS
 
 
 def _extract_ingredient_tokens(term: str) -> list[str]:
     """Pull the meaningful (ingredient-identifying) tokens out of a free-text
     drug query: letters-only words, lowercased, with dosage-form/route/
-    release/strength-unit words and short tokens dropped."""
+    release/strength-unit/salt-qualifier words and short tokens dropped."""
     words = re.findall(r"[a-zA-Z]+", term.lower())
     return [w for w in words if w not in _RELEVANCE_STOPWORDS and len(w) > 2]
 
 
+def _ester_acid_stem(word: str) -> Optional[str]:
+    """The shared stem between an ester/salt name ending in "-ate" (e.g.
+    Cost Plus's "mycophenolate") and RxNorm's free-acid name for the same
+    substance ending in "-ic" (e.g. "mycophenolic" in RxNorm's
+    "mycophenolic acid") -- both reduce to "mycophenol". A real, common
+    pharmacology naming pattern (also e.g. valproate/valproic), not
+    specific to one drug. Returns None when the word doesn't end in either
+    suffix or is too short for the stem to be a meaningful signal rather
+    than a coincidental suffix match (guards against over-matching short
+    words like "rate" -> "r").
+    """
+    for suffix in ("ate", "ic"):
+        if word.endswith(suffix) and len(word) - len(suffix) >= 4:
+            return word[: -len(suffix)]
+    return None
+
+
 def _has_token_overlap(query_tokens: list[str], candidate_name: Optional[str]) -> bool:
-    """True if at least one meaningful query token appears in the resolved
-    RxNorm drug name (case-insensitive substring match)."""
+    """True if at least one meaningful query token -- or its ester/acid stem
+    (see _ester_acid_stem) -- appears in the resolved RxNorm drug name
+    (case-insensitive substring match). The stem check is what lets
+    "Mycophenolate Sodium" match RxNorm's "mycophenolic acid" for the same
+    substance despite zero literal shared tokens."""
     if not query_tokens or not candidate_name:
         return False
     lowered = candidate_name.lower()
-    return any(tok in lowered for tok in query_tokens)
+    for tok in query_tokens:
+        if tok in lowered:
+            return True
+        stem = _ester_acid_stem(tok)
+        if stem and stem in lowered:
+            return True
+    return False
 
 
 # Preference order among the dispensable TTYs once a candidate has passed
