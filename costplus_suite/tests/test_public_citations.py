@@ -51,6 +51,27 @@ class TestLoadCitations(unittest.TestCase):
         self.assertEqual(len(row), 1)
         self.assertAlmostEqual(row.iloc[0]["best_confirmed_spread"], 6391.86, places=2)
 
+    def test_source_type_is_one_of_four_known_values(self):
+        citations = g_public_citations.load_citations()
+        self.assertEqual(
+            set(citations["source_type"].unique()),
+            {"litigation", "state_disclosure", "peer_reviewed"},
+        )
+
+    def test_abiraterone_all_confirmed_sources_shows_both_source_types(self):
+        # RxCUI 1100075 (Abiraterone Acetate 250mg): best_confirmed_spread is
+        # litigation's 6391.86% (Lewandowski v. J&J), but Maine MHDO's
+        # state_disclosure figure (1727.73%) is real, sourced, and must not
+        # be hidden just because it lost the max-value selection -- Task 4's
+        # whole point is making that selection visible.
+        citations = g_public_citations.load_citations()
+        row = citations[citations["rxcui"] == 1100075].iloc[0]
+        self.assertEqual(row["source_type"], "litigation")
+        self.assertIn("6,391.86%", row["all_confirmed_sources"])
+        self.assertIn("litigation", row["all_confirmed_sources"])
+        self.assertIn("1,727.73%", row["all_confirmed_sources"])
+        self.assertIn("state_disclosure", row["all_confirmed_sources"])
+
     def test_non_markup_type_wins_on_value_but_gets_no_price_formula(self):
         # RxCUI 309362 (Clopidogrel bisulfate) has only spread_dollars (8.59)
         # and spread_pct (70.2) rows -- the higher raw value (spread_pct)
@@ -90,6 +111,8 @@ class TestRun(unittest.TestCase):
         # = 0.01704 * (1 + 10850/100) = 1.86588
         self.assertAlmostEqual(row["estimated_pbm_price_per_unit"], 1.8659, places=4)
         self.assertEqual(row["estimated_pbm_price_basis"], g_public_citations.ESTIMATED_PBM_PRICE_BASIS)
+        self.assertEqual(row["source_type"], "state_disclosure")
+        self.assertIn("10,850.00%", row["all_confirmed_sources"])
 
     def test_unmatched_rxcui_gets_null_citation_columns(self):
         out = g_public_citations.run(self._leaderboard_fixture())
@@ -139,6 +162,7 @@ class TestRunAgainstRealLeaderboard(unittest.TestCase):
         leaderboard = pd.read_csv(leaderboard_path)
         leaderboard = leaderboard.drop(
             columns=["best_confirmed_spread", "best_confirmed_type", "best_confirmed_source",
+                     "source_type", "all_confirmed_sources",
                      "estimated_pbm_price_per_unit", "estimated_pbm_price_basis"],
             errors="ignore",
         )

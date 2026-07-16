@@ -4,14 +4,24 @@ Module G: public citation enrichment.
 Attaches independently-sourced, hand-researched confirmed markup percentages
 to the leaderboard by RxCUI, and computes an estimated PBM billing price from
 each confirmed markup. Source data is `data/public_spreads_matched.csv` --
-markup percentages extracted from named government/academic reports (Maine
-MHDO, FTC, JAMA Health Forum, etc.; see costplus_suite/data/sources/ for the
-underlying PDFs), matched to specific RxCUIs by hand during research.
+markup percentages extracted from named government/academic/litigation
+sources (Maine MHDO, FTC, JAMA Health Forum, ERISA class-action complaints,
+etc.; see costplus_suite/data/sources/ for the underlying PDFs), matched to
+specific RxCUIs by hand during research.
 
 This module does not change any arbitrage math -- overpayment_partd and
 overpayment_medicaid are untouched. best_confirmed_spread/source and
 estimated_pbm_price_per_unit are supplementary public-record corroboration,
 clearly distinct from the modeled overpayment figures (see METHODOLOGY.md).
+
+Every citation also carries a `source_type` (federal_study /
+state_disclosure / peer_reviewed / litigation, set by hand per row in
+public_spreads_matched.csv) -- these have different selection properties
+(see the "Source types have different selection properties" caveat in
+METHODOLOGY.md) and are never presented as equivalent: `best_confirmed_type`
+picks the single highest value across all of them for the headline column,
+but `all_confirmed_sources` lists every source's own figure so that
+max-selection is visible rather than hidden.
 """
 from __future__ import annotations
 
@@ -28,6 +38,27 @@ CITATIONS_PATH = config.ROOT_DIR / "data" / "public_spreads_matched.csv"
 ESTIMATED_PBM_PRICE_BASIS = "Estimated from confirmed markup % — not a directly observed price"
 
 
+def _format_value(value: float, spread_type: str) -> str:
+    if spread_type == "spread_dollars":
+        return f"${value:,.2f}"
+    return f"{value:,.2f}%"
+
+
+def _all_sources_string(rows: pd.DataFrame) -> str:
+    """One '<value> (<source_type>, <source_name>, p.<page>)' entry per
+    citation row for this RxCUI, highest value first, pipe-separated -- so a
+    drug with citations from more than one source type (e.g. Abiraterone:
+    Maine MHDO's 1,727.73% AND Lewandowski v. J&J's 6,391.86%) shows every
+    figure, not just the max that wins best_confirmed_spread."""
+    ordered = rows.sort_values(["confirmed_spread_value", "source_page"], ascending=[False, True])
+    parts = [
+        f"{_format_value(r.confirmed_spread_value, r.confirmed_spread_type)} "
+        f"({r.source_type}, {r.source_name}, p.{int(r.source_page)})"
+        for r in ordered.itertuples()
+    ]
+    return " | ".join(parts)
+
+
 def load_citations(path: Path | None = None) -> pd.DataFrame:
     """One row per RxCUI: the strongest (highest) confirmed spread value
     documented in a named public source for that drug, regardless of which
@@ -42,6 +73,12 @@ def load_citations(path: Path | None = None) -> pd.DataFrame:
     A single RxCUI can also have multiple rows of the SAME type (e.g. Maine
     MHDO reports a separate average payer-paid-as-%-of-WAC figure per
     manufacturer for the same drug) -- the same max-value rule applies.
+
+    source_type carries the winning row's own type (federal_study /
+    state_disclosure / peer_reviewed / litigation) alongside it, and
+    all_confirmed_sources preserves every row (not just the winner) so a
+    reader can see the full spread of figures across source types, not
+    only the max.
     """
     path = path or CITATIONS_PATH
     df = pd.read_csv(path)
@@ -50,7 +87,18 @@ def load_citations(path: Path | None = None) -> pd.DataFrame:
         .drop_duplicates(subset="rxcui", keep="first")
     )
     best["best_confirmed_source"] = best["source_name"] + ", p." + best["source_page"].astype(int).astype(str)
-    return best[["rxcui", "confirmed_spread_value", "confirmed_spread_type", "best_confirmed_source"]].rename(
+
+    all_sources = (
+        df.groupby("rxcui", group_keys=False)
+        .apply(_all_sources_string, include_groups=False)
+        .rename("all_confirmed_sources")
+    )
+    best = best.merge(all_sources, on="rxcui", how="left")
+
+    return best[[
+        "rxcui", "confirmed_spread_value", "confirmed_spread_type", "best_confirmed_source",
+        "source_type", "all_confirmed_sources",
+    ]].rename(
         columns={"confirmed_spread_value": "best_confirmed_spread", "confirmed_spread_type": "best_confirmed_type"}
     )
 
@@ -58,7 +106,7 @@ def load_citations(path: Path | None = None) -> pd.DataFrame:
 def run(leaderboard: pd.DataFrame, citations_path: Path | None = None) -> pd.DataFrame:
     """Left-joins the citation columns onto `leaderboard` by rxcui.
     Leaderboard rows with no matching RxCUI in the citations file simply get
-    NaN in all 5 columns -- the vast majority of the catalog has no public
+    NaN in all columns -- the vast majority of the catalog has no public
     per-drug markup citation, which is expected, not an error."""
     citations = load_citations(citations_path)
     # rxcui's dtype differs depending on the caller: the live pipeline's

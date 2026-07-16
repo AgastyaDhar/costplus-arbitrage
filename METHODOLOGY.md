@@ -301,6 +301,25 @@ strength -- never guessed. This enrichment never touches the arbitrage math
 (`overpayment_partd`/`overpayment_medicaid`); it is supplementary public-
 record corroboration, clearly distinct from the modeled overpayment figures.
 
+Source types have different selection properties. Federal studies (FTC)
+sample across a PBM's book of business. Litigation exhibits are selected by
+plaintiffs' counsel as evidence and are not a representative sample -- they
+systematically skew toward the largest markups. Where multiple sources cite
+the same drug, this pipeline reports the highest confirmed figure, which
+favors litigation sources. Both figures are shown where available.
+
+Every citation carries a `source_type` -- `federal_study` (FTC interim
+reports), `state_disclosure` (Maine MHDO), `peer_reviewed` (JAMA Mattingly),
+or `litigation` (the J&J and Wells Fargo ERISA complaints) -- surfaced as its
+own column on `leaderboard.csv` and its own color-coded column in
+`PBM_Markup_Analysis.xlsx` (navy / dark green / purple / dark red
+respectively) so a reader isn't left to assume a federal industry study and
+a plaintiff's litigation exhibit carry the same evidentiary weight. Where a
+drug has citations from more than one source type, `all_confirmed_sources`
+lists every one of them (not just the max that wins `best_confirmed_spread`)
+-- e.g. Abiraterone shows both Maine MHDO's 1,727.73% and Lewandowski v.
+J&J's 6,391.86%, making the max-selection visible rather than hidden.
+
 ### `output/catalog_gaps.csv` -- Drugs with court-confirmed PBM markups that Cost Plus does not currently carry.
 
 The two ERISA complaints above name several drugs with real, court-filed
