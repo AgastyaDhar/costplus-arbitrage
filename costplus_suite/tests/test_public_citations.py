@@ -17,18 +17,19 @@ from modules import g_public_citations  # noqa: E402
 
 
 class TestLoadCitations(unittest.TestCase):
-    def test_45_distinct_rxcuis_49_leaderboard_rows_after_join(self):
-        # data/public_spreads_matched.csv has 45 distinct RxCUIs (34 from the
-        # original public-report citations, +11 new drugs added from the
-        # Lewandowski v. J&J / Navarro v. Wells Fargo ERISA litigation
-        # complaints -- see the "litigation and 46brooklyn citation
-        # extraction" commit) -- one row per RxCUI here. A handful of those
-        # RxCUIs (Tadalafil 20mg/(PAH) 20mg, 4 Clobetasol Propionate 0.05%
-        # Ointment package variants) map to more than one leaderboard row
-        # each, which is why the join in TestRunAgainstRealLeaderboard below
-        # produces 49 populated rows from these 45 distinct citations.
+    def test_51_distinct_rxcuis_55_leaderboard_rows_after_join(self):
+        # data/public_spreads_matched.csv has 51 distinct RxCUIs (34 from the
+        # original public-report citations, +11 from the first litigation
+        # pass, +6 from the follow-up strength-disambiguation pass over the
+        # previously-unmatched litigation rows -- see the "litigation and
+        # 46brooklyn citation extraction" commits) -- one row per RxCUI here.
+        # A handful of those RxCUIs (Tadalafil 20mg/(PAH) 20mg, 4 Clobetasol
+        # Propionate 0.05% Ointment package variants) map to more than one
+        # leaderboard row each, which is why the join in
+        # TestRunAgainstRealLeaderboard below produces 55 populated rows
+        # from these 51 distinct citations.
         citations = g_public_citations.load_citations()
-        self.assertEqual(len(citations), 45)
+        self.assertEqual(len(citations), 51)
         self.assertEqual(citations["rxcui"].duplicated().sum(), 0)
 
     def test_metoprolol_tartrate_25mg_matches_known_value(self):
@@ -124,13 +125,14 @@ class TestRun(unittest.TestCase):
 class TestRunAgainstRealLeaderboard(unittest.TestCase):
     """The exact reproducibility check Task 2 asks for, as a standing test:
     joining the real, committed citations file against the real, committed
-    leaderboard.csv must produce exactly 49 populated markup rows (48 of
+    leaderboard.csv must produce exactly 55 populated markup rows (54 of
     which also get an estimated price -- the Clopidogrel spread_pct row
-    gets a spread but no price, see above). Was 38/37 before the
-    litigation and 46brooklyn citation extraction pass added 11 new
-    confirmed drugs."""
+    gets a spread but no price, see above). Was 38/37 before the first
+    litigation and 46brooklyn citation extraction pass (-> 49/48), then
+    49/48 before the follow-up strength-disambiguation pass over the
+    previously-unmatched litigation rows added 6 more confirmed drugs."""
 
-    def test_exactly_49_populated_markup_rows(self):
+    def test_exactly_55_populated_markup_rows(self):
         leaderboard_path = config.OUTPUT_DIR / "leaderboard.csv"
         if not leaderboard_path.exists():
             self.skipTest("output/leaderboard.csv not present -- run the pipeline first")
@@ -141,8 +143,8 @@ class TestRunAgainstRealLeaderboard(unittest.TestCase):
             errors="ignore",
         )
         out = g_public_citations.run(leaderboard)
-        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 49)
-        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 48)
+        self.assertEqual(out["best_confirmed_spread"].notna().sum(), 55)
+        self.assertEqual(out["estimated_pbm_price_per_unit"].notna().sum(), 54)
 
 
 if __name__ == "__main__":

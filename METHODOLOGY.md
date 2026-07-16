@@ -282,3 +282,32 @@ a given drug/strength; this cannot be verified from the data as specified.
 the same molecule, clearly labeled as such in every column name
 (`costplus_generic`, not `costplus_brand`) and in the printed exhibit header.
 It is never presented as an apples-to-apples comparison of the same drug.
+
+## Public citation enrichment (`modules/g_public_citations.py`)
+
+`best_confirmed_spread`/`best_confirmed_source`/`estimated_pbm_price_per_unit`
+on `leaderboard.csv` come from `data/public_spreads_matched.csv` --
+independently-sourced, hand-researched confirmed markup percentages from
+named government/academic reports and, as of the litigation and 46brooklyn
+citation extraction pass, two ERISA fiduciary-breach complaints (*Lewandowski
+v. Johnson & Johnson*, D.N.J. 1:24-cv-00671; *Navarro v. Wells Fargo & Co.*,
+D. Minn. 0:24-cv-03043) that plead drug-level NADAC-vs-PBM-billed-price
+tables as factual allegations. Every row is matched to a specific RxCUI by
+hand or, where the source table doesn't state a strength, only promoted to
+`public_spreads_matched.csv` when the molecule has exactly one strength in
+the leaderboard, the source states an explicit strength, or the source's
+implied per-unit price is within 10% of the leaderboard's NADAC for that
+strength -- never guessed. This enrichment never touches the arbitrage math
+(`overpayment_partd`/`overpayment_medicaid`); it is supplementary public-
+record corroboration, clearly distinct from the modeled overpayment figures.
+
+### `output/catalog_gaps.csv` -- Drugs with court-confirmed PBM markups that Cost Plus does not currently carry.
+
+The two ERISA complaints above name several drugs with real, court-filed
+PBM markup percentages that never resolved to any leaderboard row at all --
+not a strength-ambiguity problem, but a **catalog gap**: Cost Plus Drugs
+doesn't currently sell the molecule, so there's no row for a citation to
+attach to regardless of how precisely the source specifies strength. Kept
+separate from `public_spreads_matched.csv` (which only ever holds rows tied
+to a real leaderboard RxCUI) so this gap stays visible rather than silently
+dropped.
