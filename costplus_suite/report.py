@@ -185,3 +185,10 @@ def write_digest(text: str, filename: str, is_sample: bool = False) -> Path:
     path.write_text(text, encoding="utf-8")
     print(f"[report] Wrote digest -> {path}")
     return path
+
+
+def write_workbook(wb, filename: str, is_sample: bool = False) -> Path:
+    path = config.OUTPUT_DIR / f"{_sample_prefix(is_sample)}{filename}"
+    wb.save(path)
+    print(f"[report] Wrote workbook -> {path}")
+    return path

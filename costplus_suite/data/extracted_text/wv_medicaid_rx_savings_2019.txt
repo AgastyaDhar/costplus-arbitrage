@@ -1,0 +1,416 @@
+
+===PAGE 1===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 1 
+PHARMACY SAVINGS REPORT 
+Original February 25, 2019 
+Amended April 2, 2019 
+WEST VIRGINIA MEDICAID 
+ 
+ 
+ 
+Actuarial Assessment of the SFY18 Impact of Carving out Prescription Drugs 
+from Managed Care for West Virginia’s Medicaid Program 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+===PAGE 2===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 2 
+ 
+ 
+Table of Contents 
+Overview & Intended Use .......................................................................... 3 
+Caveats ..................................................................................................... 4 
+Executive Summary .................................................................................. 5 
+Overview of Methodology .......................................................................... 6 
+Summary Analysis ..................................................................................... 7 
+Analyzing Claims .................................................................................... 7 
+Analyzing Administrative Expenses ....................................................... 8 
+Total Difference ...................................................................................... 9 
+Observations & Considerations .............................................................. 9 
+Appendix A – Statistical Observations .................................................... 12 
+ 
+  
+===PAGE 3===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 3 
+Overview & Intended Use 
+This version of the report is amended as of April 2, 2019. This update corrects the level of 
+Federal financial participation that is applied to the total Medicaid savings for the program. 
+Additional statements of clarification were also provided. No calculation in this report has 
+changed since the original version dated February 25, 2019, aside from the amount of savings 
+to the State of West Virginia due to Federal financial participation. 
+The West Virginia Department of Health and Human Resources, Bureau for Medical Services 
+(BMS) requested that Navigant Consulting, as a subcontractor to The Lewin Group, assess the 
+potential savings that have been achieved during SFY18 (July 1, 2017 – June 30, 2018) due to 
+the carve-out of prescription drug services from West Virginia’s Medicaid managed care 
+program. 
+The information contained in this document was prepared to estimate the cost savings to the 
+State of West Virginia and may not be appropriate for any other purpose. Any user of the 
+information should possess a familiarity with West Virginia’s Medicaid program, and a certain 
+level of expertise in pharmacy claim costs, actuarial science, and healthcare modeling is 
+required to avoid misinterpretation of the data presented.  
+===PAGE 4===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 4 
+Caveats 
+The figures presented rely heavily on data received from DXC and are only appropriate insofar 
+as the base data is credible. Additionally, note that about 10% of claims in either the SFY17 or 
+the SFY18 periods were unable to be priced under the NADAC repricing step. For those claims, 
+the unit cost was assumed to be the same under both a FFS/MCO scenario and NADAC. These 
+figures represent Navigant’s best estimate of cost savings to the State at the time of this report. 
+Furthermore, additional considerations could be made such as risk adjusting different periods to 
+ensure the same level of acuity. This would be a practical method to ensure equivalence 
+between populations of different time periods, with respect to the underlying risk that is 
+changing between those time periods. At the time of this analysis, a risk adjustment model was 
+not able to be run on the data due to the time needed to consider such an adjustment, so this 
+was excluded from the modeling of savings. 
+  
+===PAGE 5===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 5 
+Executive Summary 
+BMS requested that Navigant Consulting, as a subcontractor to The Lewin Group, assess the 
+potential savings that have been achieved during SFY18 (July 1, 2017 – June 30, 2018) due to 
+the carve-out of prescription drug services from West Virginia’s Medicaid managed care 
+program.  
+Navigant took a prescribed approach by repricing both SFY18 and SFY17 pharmacy claims to 
+the unit cost rates from the National Average Drug Acquisition Cost (NADAC) fee schedule to 
+appropriately compare the two years of data. Navigant also adjusted the SFY18 fee-for-service 
+(FFS) experience to reflect how claims would be reimbursed under managed care. A 
+comprehensive review of pricing in SFY18 along with managed care experience prior to SFY17 
+suggests that the current FFS arrangement is more cost effective than the prior managed care 
+arrangement, even though actual FFS costs in SFY18 were significantly higher than managed 
+care experience in SFY17 even after accounting for trend and membership differences. 
+Additionally, it is our understanding that the drastically higher dispensing fees present in 
+SFY2018 are a result of mandated CMS rule and not necessarily a byproduct of carving 
+pharmacy benefits out of managed care. More detail on this conclusion is provided in this report.  
+Additionally, administrative expenses must be factored into savings estimates. Due to significant 
+MCO administrative burden and taxes and fees, such as the Health Insurance Provider Fee 
+(HIF), the State ended up saving money on pharmacy due to the carve-out. In total, our 
+actuarial estimate suggests savings of $54,450,000 in SFY18 to the West Virginia Medicaid 
+program. We estimate that 89.27%1 of West Virginia’s Medicaid prescription drug costs for this 
+analysis are paid by Federal funds due to Federal Medical Assistance Percentage (FMAP) 
+based on the blend of different match rates across populations, as well as State administered 
+costs. This produces a savings to the State’s budget of approximately $5,840,000. We consider 
+these savings estimates conservative and note that this estimate is a baseline and that different 
+assumptions and scenarios result in different figures. Alternative scenarios resulted in higher 
+levels of savings and could be outlined further in an expanded analysis that breaks this down by 
+population. Additionally, we note that additional analysis could be performed to explain what 
+caused this counterintuitive result, as managed care typically can be expected to result in lower 
+costs than FFS arrangements. 
+Additional details on how these savings are determined can be found below. Note that these 
+savings were also determined by examining the claims and administrative expenses and 
+repricing the claims. Actual pharmacy claim costs increased significantly from SFY17 to SFY18, 
+with much of this being attributable to significantly higher dispensing fees as well as greater 
+volume of claims. However, it is important to note that year-to-year pharmacy costs under 
+managed care varied significantly in the years leading up to the carve out in SFY18. For 
+instance, the use of SFY15 base data to project manage care expenses that would have 
+occurred in SFY18 results in higher projected managed care claim costs than FFS in SFY18. 
+Therefore, it is important for the State to recognize that experience will vary year-to-year and 
+that proper utilization controls, especially for new pipeline drugs, will be necessary to manage 
+and maintain savings.   
+                                                 
+1 FMAP percentage revised as of April 2, 2019 
+===PAGE 6===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 6 
+Overview of Methodology 
+As of July 1, 2017, pharmacy services were shifted from managed care to a FFS reimbursement 
+structure. This memo describes how Navigant determined the SFY18 fiscal impact of 
+implementing the carve-out pharmacy services to West Virginia’s Medicaid program and 
+summarizes the savings and important considerations for the State. 
+Navigant took the following steps to calculate these savings: 
+1. Reprice both SFY17 managed care and SFY18 FFS experience to NADAC rates to 
+establish baseline comparison of costs, adjust for dispensing fees, and calculate 
+difference in expected claim costs as of SFY18. 
+2. Analyze differences in adminis trative costs covered by the State under both managed 
+care and FFS reimbursement arrangements. 
+3. Forecast SFY18 managed care claim costs, as if managed care was still in place, using 
+actual SFY17 experience as the base data. 
+4. Ensure all base expenses and projections have appropriate ex clusions for drugs that 
+were not covered by MCOs in SFY17 or FFS in SFY18. 
+Step 1 
+Navigant reviewed the State’s drug costs in SFY18 and compared the effective rates to NADAC 
+rates for individual drugs to determine the percentage of NADAC the State was paying for 
+prescription drugs. A similar exercise was done for the MCOs’ SFY17 experience, even though 
+they were not originally indexed to NADAC. Then, total claim costs in SFY18 were repriced to 
+model SFY18 experience under managed care. To do this, Navigant removed the dispensing 
+fees and repriced the FFS claims to the average MCO reimbursement using NADAC as the 
+index. The MCO dispensing fee pricing was then added back to show the SFY18 amount under 
+MCO pricing. This total repricing difference is shown below in Table 1.  
+Step 2 
+Navigant examined administrative expense fees under managed care (capitation admin amount 
+and HIF) compared to FFS (DXC, State, and additional vendor fees). This can be found at the 
+bottom of both Tables 1 and 2. This administrative cost difference combined with the repricing 
+difference results in a total likely savings shown in Table 3. 
+Step 3 
+Separately from the calculations made above, managed care claim costs from SFY17 were 
+projected forward using trends by therapeutic class, as sourced from Express Scripts. These 
+claim costs, projected into SFY18, were used for comparison to the implied savings from the 
+repricing exercise. 
+Step 4 
+Drugs not covered by MCOs in SFY17 or FFS in SFY18 were excluded from this analysis. This 
+includes Hepatitis-C and hemophiliac drugs, as well as Spinraza.  
+===PAGE 7===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 7 
+Summary Analysis 
+As described in the methodology, managed care costs for SFY17 were compared to SFY18 
+both for claims and administrative expenses. 
+Analyzing Claims 
+The steps described in the methodology for repricing FFS SFY18 experience to what it would 
+have been under managed care comprises the claims component of our comparison, shown 
+below in Table 1. From this, it can be observed that repricing to managed care shows that FFS 
+costs are slightly higher (about $2.5m) than managed care for just the claims component. Note 
+that the figures, such as the percentages, are rounded for presentation purposes. 
+Table 1 
+ 
+CLAIM COST DIFFERENCES    
+SFY18 FFS Rx Claim Cost for MCO members (a) $569,774,383 
+      
+Dispensing fees (b) $122,511,975 
+SFY18 Claim Cost w/o dispensing fees (c) = (a) - (b) $447,262,407 
+MCO as % of FFS compared to NADAC (d) 125.14% 
+SFY18 FFS Rx Claim Cost for MCO members adj. 
+for NADAC (e) = (c) * (d) $559,722,448 
+MCO Dispensing Fees % of Base Claims (f) 1.4% 
+SFY18 Rx Claim Cost (w/MCO pricing) (g) = (e) * [1 + (f)] $567,288,359 
+      
+Claim cost difference due to repricing (h) = (a) - (g) $2,486,024 
+ 
+===PAGE 8===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 8 
+In Table 1, line item (a) represents the total FFS pharmacy experience for MCO members 
+during SFY18. It should be noted that differences in member mix among populations, notably 
+SSI and West Virginia Health Bridge (ACA Expansion), will occur year-to-year, especially 
+between SFY17 and SFY18 as some populations were still relatively new to managed care. 
+Line item (d) is a ratio of NADAC-based pricing for both the respective time periods (MCO 
+experience for SFY17 and FFS experience for SFY18) while also accounting for differences in 
+population mix. 
+For NADAC pricing, Navigant applied the NADAC price based on the date of service on the 
+claim and matched that with the applicable effective date range from the NADAC schedules. 
+Analyzing Administrative Expenses 
+Administrative expenses differ significantly between managed care and FFS. Under managed 
+care, the administrative expenses paid to the MCOs exceeded 10% of the pharmacy costs in 
+aggregate. In addition, we note that taxes and fees (such as the HIF) do not need to be paid 
+under the FFS arrangement. The figures from SFY17 were grossed up to SFY18 to account for 
+both change in membership as well as pharmacy utilization and unit cost changes. This results 
+in $66.8m paid in MCO admin expenses compared to $9.9m paid in State admin expenses 
+under FFS. This can be shown below in Table 2. 
+ 
+Table 2 
+ 
+ADMINISTRATIVE COST DIFFERENCES    
+SFY17 MCO Rx Admin (i) $49,995,426 
+Annual HIF Amount (j) $11,362,597 
+Annual Rx Trend Factor (k) 1.089 
+Grosses up for SFY18 (Total Trend) (l) = [(i) + (j)] * (k) $66,829,253 
+      
+SFY18 DXC Rx admin expense for MCO members (m) $8,943,624 
+BMS extra staffing and vendor costs (n) $950,739 
+SFY18 FFS Rx admin for MCO members (o) = (m) + (n) $9,894,363 
+      
+Administrative cost difference (p) = (o) - (l) ($56,934,890) 
+ 
+===PAGE 9===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 9 
+The administrative expense used in line item (i) is based on the SFY17 MCO capitation rates 
+and the effective administrative load applied to the rates and therefore the pharmacy portion of 
+those rates. Navigant recognizes this amount could vary based on a more isolated analysis of 
+expected administrative spend for standalone pharmacy managed care rates and the impact of 
+spread pricing. The annual HIF amount may also vary year-to-year due to moratorium statuses. 
+This analysis assumes the HIF is in place moving forward and that the HIF amount allocated to 
+West Virginia MCOs would be adjusted to reflect the lower base premiums, net of the pharmacy 
+carve-out. Additionally, line item (k) represents an annual pharmacy trend of 8.9%. This is 
+designed to also include member mix change between SFY17 and SFY18. 
+Total Difference 
+The difference between the FFS experience, repriced as if it were managed care pricing, leads 
+to the following table. This includes cost differentials both for claim cost repricing as well as 
+administrative expenses for the State. 
+Table 3 
+ 
+Carve-out Net Cost/(Savings) 
+Impact    
+Claim cost difference due to repricing (h) $2,486,024  
+Admin cost difference (p) ($56,934,890) 
+Total (q) = (h) + (p) ($54,448,866) 
+Observations & Considerations 
+This analysis indicates that the bulk of the savings are due to administrative costs. Appropriate 
+control of utilization will continue to be required over time to maintain achieved savings.  
+Merely projecting SFY17 MCO experience to SFY18 shows a potential claim cost differential of 
+$54.4m, which would remove much of the potential savings as shown above in Table 3. 
+However, when Navigant examined past data periods, it appears that MCO experience in 
+SFY17 may have been suppressed and therefore lower than expected. With that said, the 
+change in population mix could be further examined on how these aggregate experience 
+amounts should be projected forward, rather than using a simple trend amount. Navigant 
+compared the SFY17 and SFY18 data SFY15 data summaries from the State, which showed a 
+similar level of experience, after adjusting for excluded drugs and despite being two years older. 
+As shown in Table 4, forecasting with older data in SFY15 shows that projected SFY18 
+managed care spend is closer to actual SFY18 FFS spend. In this case, it is in the best interest 
+of the actuary to look at multiple base periods to have a more reasonable projection of future 
+experience. Note that SFY16 experience is not referenced only because a validated data set, 
+either from an actuarial rate certification or MCO attestation, was not readily available at the 
+time of the analysis. 
+===PAGE 10===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 10 
+Table 4 
+ 
+Pharmacy Claim Expenses for Populations Impacted by Carve-out 
+SFY15 Experience (used in base data for SFY17 rates) $474,124,543 
+SFY17 Experience (from overall MCO financials collected for 
+SFY20 rate development) $475,724,437 
+Projected SFY18 (from SFY17) $518,144,282 
+Projected SFY18 (from SFY15) $560,616,509 
+Projected SFY18 (average SFY15/17) $539,360,489 
+Actual SFY18 (FFS) $569,774,383 
+ 
+As seen in Table 4, differences in claim expenses vary from $9.2m (Projection from SFY15 
+data) to $51.6m (Projection from SFY17), independent of NADAC-based repricing. In both 
+cases, the State of West Virginia appears to be saving money in large part due to the 
+differences in administrative expenses. It is critical that multiple years of data be considered for 
+a projection rather than just relying on the most recent year of managed care experience 
+(SFY17). This brings greater credibility to the projection rather and smooths out year-to-year 
+volatility in experience.  
+Additional factors that could be considered in this analysis but are not subject to the savings 
+estimate include rebates, changes in the State’s preferred drug list (PDL), and pharmacy benefit 
+changes: 
+Rebates 
+Rebates do not play a factor in the savings. These are received by the State directly 
+from manufacturers. Excluding physician-administered drugs (which are still part of the 
+managed care claims), total rebates invoiced for all members increased from $417.6m in 
+SFY17 to $423.2m in SFY18.  
+Preferred Drug List (PDL) 
+While numerous changes have been made to the State’s PDL, Navigant recognizes that 
+these would be savings the State has achieved independent of the shift from managed 
+care to FFS. These changed have not been fully calculated but the drugs covered by 
+these PDL changes are likely a small fraction of overall expenses.  
+Exclusions from Analysis 
+BMS has overseen several other benefit changes. These have included carve-outs of 
+hemophiliac and Hepatitis-C drugs. These drugs have been appropriately excluded from 
+this analysis.  
+Point-of-Sale vs. Outpatient Setting 
+Over the past couple years, there has been a nationwide trend with greater utilization of 
+===PAGE 11===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 11 
+high cost outpatient drugs. This analysis only examines drugs covered by the 
+prescription drug benefit (point-of-sale drugs) and does not include outpatient 
+administered drugs that would still be covered by the MCOs through a hospital setting. 
+State Economic Impact 
+This analysis is not intended to address the economic advantage to the State resulting 
+from the carve-out, notably that State-based pharmacies are receiving more revenue 
+rather than being spread out across national networks. 
+ 
+Additional statistical observations of the data can be found in Appendix A. Note that breakouts 
+by category of aid do not show material differences in impacts on utilization and savings. 
+ 
+Sincerely, 
+ 
+ 
+__________________________________  ___________________________ _______ 
+ 
+Colby Schaeffer     S t e r ling Felsted 
+A S A ,  M A A A       ASA, MAAA 
+ 
+ 
+CC: Russ Ackerman 
+    ASA, MAAA 
+  
+===PAGE 12===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 12 
+Appendix A – Statistical Observations 
+Navigant made the following observations regarding the data received from the State for both 
+managed care experience in SFY17 and FFS experience in SFY18.  
+The average dispensing fee in SFY17 under managed care (through the PMCs the MCOs used) 
+was $0.59 per script. In SFY18 under FFS this was increased to $10.49 per script, resulting in 
+total dispensing fees of $122.5m in SFY18. In the FFS model, dispensing fees are based on the 
+actual costs of a pharmacy to dispense a prescription. Dispensing fees increased for one 
+primary reason. In February 2016, CMS required states to submit state plan amendments for 
+reimbursement changes to outpatient pharmacies in the Covered Outpatient Drug final rule. 
+CMS required reimbursement to pharmacies at aggregate actual acquisition cost with a cost-
+based dispensing fee. West Virginia was able to utilize the cost-to dispense study conducted by 
+the state of Ohio, and the resulting $10.49 dispensing fee and other reimbursement was 
+approved by CMS and implemented before the July 1, 2017 carve-out. The National Average 
+Drug Acquisition Cost (NADAC) survey was chosen as the actual drug cost used to reimburse 
+pharmacies.  
+A table for the top five therapeutic classes, in terms of dispensing fee percentage of drug cost, 
+is shown as follows.  
+Table 5 
+Rank Therapeutic Class 
+Dispensing 
+Fee as % of 
+Rx Class 
+Costs 
+Dispensing 
+Fee Expense 
+1 Pain 66.0% $4,317,155 
+2 Depression 54.7% $10,008,232 
+3 Hi gh Blood Pressure/Heart Disease 43.7% $15,282,524 
+4 Ulcer Disease 40.5% $5,093,266 
+5 Flu 38.0% $192,533 
+ 
+Additionally, there are insights that can be gained by examining percentage of total spend by 
+therapeutic class. Because savings calculations either involve older summary data that is not 
+broken down by class or rely on NADAC repricing where about 10% of drugs are not allocated, 
+savings estimates cannot be allocated at this level. Total pharmacy costs from claims for 
+managed care members by therapeutic class for both FFS (SFY18) and managed care (SFY17) 
+is found on the next page in Table 6. 
+  
+===PAGE 13===
+ 
+©2019 Navigant Consulting, Inc. All rights reserved. Page 13 
+ 
+ 
+Table 6 
+Therapeutic Class 
+FFS % of 
+Spend (SFY18) 
+MCO % of 
+Spend (SFY17) 
+Change in 
+Distribution 
+Asthma 10.0% 10.1% -0.1% 
+Attention Disorders 6.0% 7.3% -1.3% 
+Chemical Dependence 8.1% 7.4% 0.7% 
+Contraceptives 1.3% 1.0% 0.3% 
+Cystic Fibrosis 0.5% 0.4% 0.1% 
+Depression 2.1% 2.1% 0.0% 
+Diabetes 11.9% 12.5% -0.7% 
+EpiPen (split out as own class) 0.3% 0.7% -0.4% 
+Flu 0.1% 0.0% 0.0% 
+Growth Deficiency 1.0% 1.0% 0.0% 
+Hereditary Angioedema 0.4% 0.5% -0.1% 
+High Blood Cholesterol 1.5% 1.7% -0.2% 
+High Blood Pressure/Heart Disease 3.9% 3.6% 0.3% 
+HIV 2.0% 2.0% 0.0% 
+Infections 5.3% 4.9% 0.3% 
+Inflammatory Conditions 6.5% 6.3% 0.3% 
+Mental/Neurological Disorders 4.5% 5.6% -1.1% 
+Miscellaneous Specialty Conditions 0.0% 0.0% 0.0% 
+Multiple Sclerosis 2.3% 2.8% -0.5% 
+Oncology 2.1% 2.1% -0.1% 
+Other (Mental Health Related) 0.9% 0.9% 0.0% 
+Other (Not Mental Health Related) 19.3% 18.5% 0.8% 
+Pain 0.7% 0.6% 0.2% 
+Progestational Agents 0.0% 0.0% 0.0% 
+Pulmonary Arterial Hypertension 0.3% 0.2% 0.1% 
+Seizures 4.6% 4.2% 0.5% 
+Transplant 0.1% 0.1% 0.0% 
+Ulcer Disease 1.5% 1.3% 0.1% 
+Unclassified 2.5% 1.9% 0.6% 
+Therapy Class not found 0.3% 0.0% 0.3% 
+ 

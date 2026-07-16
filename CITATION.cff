@@ -7,6 +7,11 @@ authors:
     given-names: "Agastya"
 version: "1.0.0"
 date-released: "2026-07-16"
+# date-released is this dataset's snapshot date: all live-fetched sources
+# (Cost Plus catalog, CMS NADAC, Part D, SDUD) were accessed 2026-07-16,
+# against the NADAC file with effective date 2026-07-15. NADAC refreshes
+# weekly and CMS Part D/SDUD refresh on their own schedules, so this is a
+# dated snapshot, not a live claim -- see dataset/PROVENANCE.md.
 url: "https://github.com/AgastyaDhar/costplus-arbitrage"
 repository-code: "https://github.com/AgastyaDhar/costplus-arbitrage"
 license: "CC-BY-4.0"

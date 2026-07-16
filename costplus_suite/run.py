@@ -160,9 +160,16 @@ def _run_pipeline(args: argparse.Namespace, source: str, enabled: set[str]) -> t
 
     leaderboard_path = report.write_leaderboard(result["leaderboard"], is_sample)
     report.write_leaderboard_by_state(result["state_breakdown"], is_sample)
-    report.write_state_summary(result["state_summary"], is_sample)
+    state_summary_path = report.write_state_summary(result["state_summary"], is_sample)
     report.write_spread_changes(result["spread_changes"], is_sample)
     report.print_aggregate_summary(result)
+
+    # --- Module J: PBM_Markup_Analysis.xlsx, the human-browsable rendering
+    # of leaderboard.csv + state_summary.csv. Always runs right after those
+    # are written, same as Module G above. ---
+    from modules import j_workbook
+    workbook = j_workbook.run(leaderboard_path=leaderboard_path, state_summary_path=state_summary_path)
+    report.write_workbook(workbook, "PBM_Markup_Analysis.xlsx", is_sample)
 
     # --- Phase 2, toggle-gated ---
     e_result = None

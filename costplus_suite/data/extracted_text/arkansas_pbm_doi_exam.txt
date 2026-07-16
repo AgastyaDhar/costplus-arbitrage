@@ -1,0 +1,922 @@
+
+===PAGE 1===
+ 
+ 
+LIMITED SCOPE EXAMINATION OF  
+PHARMACY BENEFIT MANAGERS 
+ 
+Prepared for the: 
+By: 
+DAVE DILLON, FSA, MAAA, MS 
+ CASEY NELSON, PharmD 
+TODD KRUEGER, PharmD 
+DAVE HANSON, PharmD 
+HOLLY BLANCHARD, FLMI, AINS, AIRC, CCP 
+PIETER WILLIAMS, JD, MCM 
+ 
+July 27, 2020 
+===PAGE 2===
+LIMITED EXAMINATION OF PBMS  TABLE OF CONTENTS 
+ 
+ 
+  7/27/2020 
+Executive Summary ................................ ................................ ................................ .............. 1 
+Purpose & Scope ................................ ................................ ................................ .................. 3 
+Background and Scope ......................................................................................................... 3  
+Limits on Distribution and Utilization ................................................................................... 4 
+Confidentiality of Review & Reliances ................................................................................... 5 
+Definitions of PBM Pricing Practices Evaluated ................................ ................................ .. 7 
+Audit Procedures ................................ ................................ ................................ ............... 10 
+Data Collection .................................................................................................................... 10 
+Data Normalization ............................................................................................................. 14 
+Data Analysis Approach ...................................................................................................... 15 
+Audit Results ................................ ................................ ................................ ...................... 17 
+Data Demographics ............................................................................................................. 17 
+Differential Pricing Analysis Results: .................................................................................... 18 
+Conclusions ................................ ................................ ................................ ........................ 25 
+ASOP 41 Disclosures ................................ ................................ ................................ ......... 26 
+Appendices ................................ ................................ ................................ ........................ 28 
+Appendix 1. Examiner Verification ...................................................................................... 29 
+Appendix 2. BCBSAR (CVS Caremark) Summary Data Tables .............................................. 30 
+Appendix 3. Centene (CVS Caremark) Summary Data Tables .............................................. 31 
+Appendix 4. Empower (CVS Caremark) Summary Data Table .............................................. 32 
+Appendix 5. Summit Community Care (Express Scripts) Summary Data Table..................... 33 
+Appendix 6. QualChoice (Optum Rx) Summary Data Table .................................................34 
+===PAGE 3===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 1 
+ 
+ 
+  7/27/2020 
+EXECUTIVE SUMMARY 
+Health insurers utilize the services of Pharmacy Benefit Managers (“PBMs ”) to manage 
+prescription drug benefits on their behalf. While PBMs were originally designed to reduce 
+administrative costs in administering a prescription drug program, PBMs have grown and now 
+have substantial profitmaking ability through price spreading and rebates.  
+Amid concerns about PBM practices, the state of Arkansas  passed the 2018 PBM Licensure Act 
+which authorizes the Arkansas Insurance Commissioner ("Commissioner") to license and 
+regulate t he activities of PBMs . Subsequently, t he Arkansas Insurance Department  (“AID”) 
+issued Rule 118 : Pharmacy Benefits Managers Regulation  which licens es and regulat es the 
+activities of PBMs . Additionally, the Arkansas State Legislature passed Act 994 of 2019 which 
+explicitly prohibited spread pricing as of July 24, 2019. Additional guidance surrounding this was 
+provided in AID Bulletin No. 7-2019.  
+In 2019 the Commissioner engaged Lewis & Ell is, Inc.  (“L&E”) and its subcontractors, Ideal 
+Health Strategies (“IHS”) and Regulatory Insurance Advisors, LLC, (“RIA”), (collectively the 
+“auditors” or “examiners”) to perform a limited scope market conduct examination to review 
+spread pricing
+1 and other reimbursement activities of PBMs providing prescription coverage for 
+state funded health plans issued through either the Arkansas Works (“AR Works”) program 
+(Arkansas Works Act of 2016, Ark. Code Ann. §§ 23-61-1001 et seq) or the Provider-led Arkansas 
+Shared Savings Entity (PASSE) system created by Act 775 of 2017.  The PBMs subject to the 
+examination were Optum Rx, CVS/Caremark, and Express Scripts, Inc. (ESI) 
+The differential pricing analysis showed that National Chain pharmacies were reimbursed more 
+(defined as greater than 5% difference) than Regional Chain and Independent Pharmacies for 
+the same drug product unit (i.e. tablet, capsule).  
+The spread pricing analysis showed that one of the three  PBMs being audited, ESI , was 
+employing significant spread pricing practices during the audit time frame.  Specifically, ESI was 
+charging the health benefit plan an estimated 15.26% more than was being paid to the 
+pharmacies. 
+ 
+1 "spread pricing" is defined in AID Rule 118 to mean "the model of prescription drug pricing in which the pharmacy 
+benefit manager charges a h ealth benefit plan a contracted price for prescription drugs although the contracted 
+price may differ with the amount the pharmacy benefits manager pays the pharmacist"  
+===PAGE 4===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 2 
+ 
+ 
+  7/27/2020 
+The Direct and Indirect Remuneration (DIR) or “clawback” analysis showed that both CVS 
+Caremark (9.71%) and ESI. (4.55%) assessed DIR or “clawback” fees to the pharmac ies during 
+the audit timeframe. OptumRx’s clawback pricing could not be evaluated. 
+While the report focuses on several pharm aceutical pricing practices, it does not provide a 
+complete picture of pharmacy costs and PBM compensation. There are a number of additional 
+factors that impact PBM revenues and pharmacy reimbursements that were either outside of 
+the scope of this report or unavailable due to the lack of PBM response. These additional factors 
+include rebates, additional insurer fees, and pharmacy fees.  
+  
+===PAGE 5===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 3 
+ 
+ 
+  7/27/2020 
+PURPOSE & SCOPE 
+BACKGROUND  AND SCOPE  
+Health insurers utilize the services of Pharmacy Benefit Managers (“PBMs ”) to manage 
+prescription drug benefits on their behalf. PBMs offer a variety of services, including but not 
+limited to  claim adjudications; customer service or ca ll centers; clinical services such as prior 
+authorizations; drug utilization reviews; and mail-order and specialty pharmacies.  
+PBMs provide many cost-cutting measures to health insurers, e.g. by establishing pharmacy 
+networks. These networks give PBMs purchasing power, allowing them to negotiate discounted 
+prescription coverage for insur ers and their customers. PBMs can also negotiate manufacturer 
+rebates directly with the pharmaceutical company to further reduce prescription drug costs. 
+These services allow PBMs to generate revenue through several approaches, including 
+administration and service fees charged to insur ers for processing prescriptions , through 
+operation of their own mail- order and specialty pharmacies , and on the margin between the 
+amount cha rged to insurance plan sponsors and the amount paid out to pharmacies for a 
+prescription.   
+While PBMs were originally designed to reduce administrative costs in administering a 
+prescription drug benefit program, PBMs have grown and now have substantial pr ofitmaking 
+ability through price spreading and rebates, which are payments negotiated directly with 
+pharmaceutical manufacturers. It can be difficult for health insurers to oversee compliance with 
+prescription benefit programs outsourced to PBMs in part because they are not subject to 
+industry-wide regulation. Exact terms of the financial arrangements for pharmacy services are 
+obscured in part by the sheer number of entities involved in every transaction including insurers, 
+PBMs, pharmacies, wholesalers, manufacturer , and by the contract provisions that keep most 
+of the transactional details confidential. These issues result in a lack of transparency in the 
+expenditure of Arkansas’s dollars spent on public pharmaceutical programs.  
+Therefore, amid growing concerns about PBM practices, the state of Arkansas passed Act One 
+(1) and Act Three (3) of the Second Extraordinary Session of 2018 by the Ninety -First (91st) 
+Arkansas Gen eral Assembly, " An Act To Create The Arkansas Pharmacy Benefits Manager 
+Licensure Act," (hereafter, the "PBM Licensure Act") which authorizes the Arkansas Insurance 
+Commissioner ("Commissioner") to license and regulate the activities of pharmacy benefits 
+managers ("PBMs"). 
+The PBM Licensure Act was amended by Act 994 of 2019. On August 18, 2018, AID issued a rule 
+licensing and regulating the activities of PBMs in AID Rule 118: "Pharmacy Benefits Managers 
+Regulation". 
+===PAGE 6===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 4 
+ 
+ 
+  7/27/2020 
+Pursuant to the PBM Licensure Act and AID Rule 118, in 2019 the Commissioner engaged Lewis 
+& Ellis, Ideal Health Strategies , and Regulatory Insurance Advisors  to perform a limited scope 
+market conduct examination to review spread pricing and other reimbursement activities of 
+PBMs providing prescription coverage for state funded health plans issued through either the 
+Arkansas Works (“AR Works”) program (Arkansas Works Act of 2016, Ark. Code Ann. §§ 23 -61-
+1001 et seq) or the Provider-led Arkansas Shared Savings Entity (PASSE) system created by Act 
+775 of 2017.   
+This examination is autho rized to be conducted under the following Arkansas Code and 
+Arkansas Insurance Department (AID) rules: 
+• Ark. Code Ann. § 23-61-201 for health insurance issuers. 
+• Ark. Code Ann. § 23-76-122 for health maintenance organizations.  
+• AID Rule 117, Section 7 (A)(7) for PASSE organizations, and  
+• Ark. Code Ann. § 23-92-508 and AID Rule 118, Section 8 for PBMs.  
+ 
+The Health Plans and their contracted PBMs included in this examination are defined in Table 1 
+below. 
+ 
+Table 1. Arkansas Health Plans and PBMs Examined 
+Arkansas Health Plan Program PBM 
+Arkansas Total Care PASSE CVS Caremark 
+Celtic Insurance Company d/b/a/ Arkansas Health & Wellness Arkansas Works CVS Caremark 
+Empower Healthcare Solutions PASSE CVS Caremark 
+QCA Health Plan Arkansas Works OptumRx 
+QualChoice Life and Health Insurance Company Arkansas Works OptumRx 
+Summit Community Care PASSE Express Scripts (ESI) 
+USAble Mutual Ins Co d/b/a/ Arkansas Blue Cross Blue Shield  Arkansas Works CVS Caremark 
+ 
+LIMITS ON DISTRIBUTION AND UTILIZATION  
+This report has been prepared for the use of the AID regarding the financial examination of 
+health insurers and PBMs  specifically participating in e ither the Arkansas Works or PASSE 
+programs. A review of ERISA plans, Commercial Markets and comparable markets was not 
+performed.  The data and information presented is not appropriate for any other purpose. 
+Any user of this report must possess a certain level of expertise in health insurance, pharmacy 
+services, actuarial science , and/or financial examinations,  so as not to misinterpret the data 
+presented.  Any distribution of this report should be made in its entirety.  Any third party with 
+access to this report acknowledges, as a condition of receipt, that the authors do not make any 
+===PAGE 7===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 5 
+ 
+ 
+  7/27/2020 
+representations or warranties as to the accuracy or completeness of the material.  Any third 
+party with access to these materials cannot bring suit, claim, or action against the authors, under 
+any theory of law, related in any way to this material. 
+CONFIDENTIALITY OF REVIEW & RELIANCE S 
+Examination records of AID are considered confidential and privileged under §§ 23- 61-207, 23-
+61-107, 23 -61-103(d), provisions  which are applicable to both health insurers under 
+examinations, and PBMs, pursuant to Rule 118, Section 8, and Ark. Code Ann. § 23-92-508.  
+The auditors  were required to share and access data, records, work papers and other 
+information, from this limited scope examination. The auditors  agreed to accept the same 
+restrictions limiting the disclosure of any of the above referenced data, records, and information 
+as are applicable to AID. 
+The term “confidential data” includes all working papers, recorded information, documents, and 
+copies produced by, obtained by, or disclosed to the Commissioner or any other person during  
+this examination. 
+The auditors  certified that they would use the confidential data received pursuant to this 
+Agreement for the sole p urpose of the examination and not for any other purpose, and in no 
+event shall the auditors  disseminate or communicate the confidential data in any form to any 
+other person or entity, other than to AID.   
+The auditors certified that they would not use or d isclose any confidential data with any of its 
+personnel or departments that are not directly engaged in the examination.  
+The auditors certified that any claims data or rebate information received in the course of the 
+examination shall only be disclosed to persons within its organization who: ( 1) are required to 
+protect and otherwise not disclose or use the confidential data except as provided in the 
+examination; and (2) need to know the confidential data.   
+Confidential data was held in the strictest confidence at all times and will not be divulged to any 
+party other than the auditors , including but not limited to, other employees, officers, directors 
+or agents of the auditors, and will not be used for any purpose other than the examination. 
+The auditors’ work was based upon data and information obtained through the AID, the insurers, 
+the PBMs, and Pharmacies.  The auditors did not perform a complete audit of the data provided. 
+The auditors relied upon the above parties to attest to the accuracy of the information provided. 
+The auditors  did review the data for overall appropriateness. I f there we re any material 
+inaccuracies in the data provided, the conclusions reached in this report may be invalid. 
+===PAGE 8===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 6 
+ 
+ 
+  7/27/2020 
+As examiners appointed by you pursuant to Ark. Code Ann. § 23-61-201 et seq, L&E and its 
+subcontractors Ideal Health Strategies (IHS) and Regulatory Insurance Advisors, LLC (RIA) shall 
+have immunity from liability for any statements made or conduct performed in good faith while 
+carrying out the provisions of the examination statutes stated above. 
+===PAGE 9===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 7 
+ 
+ 
+  7/27/2020 
+DEFINITIONS OF PBM PRICING PRACTICES 
+EVALUATED 
+SPREAD PRICING 
+Spread pricing is the PBM practice of charging the health plan a certain amount for a prescription 
+but reimbursing the pharmacy at a lower rate an d retaining the difference (“spread”) as profit. 
+Figure 1 provides an illustration of PBM spread pricing. 
+ 
+DIRECT AND INDIRECT REMUNERATION (DIR) OR “CLAWBACK” FEES 
+Direct and Indirect Remuneration (DIR) or “clawback” are retroactive fees assessed by the PBMs 
+on the dispensing pharmacy after the prescription is dispensed.  DIR fees can be in numerous 
+forms (e.g. service fees, network access fees, administrative fees, reconciliation fees, etc.) that 
+are often unclear to pharmacies who are forced to accept the PBMs DIR fees  in the pharmacy 
+network agreement.   
+
+===PAGE 10===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 8 
+ 
+ 
+  7/27/2020 
+DIR fees are difficult for the pharmacy to quantify and reconcile due to the lack of transparency 
+in the pharmacy’s agreement with the PBM. Most pharmacies are unable to accurately reconcile 
+DIR fees ba ck to the original prescription claim to ensure DIR fees were imposed correctly per 
+the contract because the PBMs  do not provide claim -level reporting to pharmacies for the DIR 
+fees 2. DIR fees are often assessed months after the point of sale and add to the PBM profit at 
+the cost of the pharmacies.  Figure 2 provides an illustration of PBM DIR/Clawback fees. 
+ 
+ 
+DIFFERENTIAL REIMBURSEMENT 
+For the purposes of this audit, “differential reimbursement” refers to differences in 
+reimbursement rates from the PBM to the pharmacies.  The analysis compares the 
+reimbursement of drugs down to the drug unit cost level (i.e. individual drug tablet, capsule, mg, 
+etc.) between national, regional and inde pendent pharmacies, as well as differences between 
+pharmacies affiliated with the PBM, specifically CVS Caremark, and non- PBM affiliated 
+pharmacies.  
+The purpose of the differential reimbursement analysis was to determine if the PBMs were 
+providing reimbursement to certain pharmacies at higher reimbursement rate ver sus other 
+pharmacies. Figure 3 provides an illustration of differential reimbursement. 
+ 
+2  Direct and Indirect Remuneration (DIR) Performance and the Impact on Pharmacies Serving Medicare Part D 
+Beneficiaries. A White Paper by INMAR Intelligence  February 2019, Revised July 2019. A White P aper by Inmar 
+Intelligence, commissioned by NACDS (National Association of Chain Drug Stores ). Accessed June 2020, 
+https://www.nacds.org/pdfs/government/2019/DIR-Whitepaper.pdf. 
+
+===PAGE 11===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 9 
+ 
+ 
+  7/27/2020 
+ 
+
+===PAGE 12===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 10 
+ 
+ 
+  7/27/2020 
+AUDIT PROCEDURES 
+DATA COLLECTION  
+Beginning in July 2019, data was requested from the Arkansas sponsored health plans and the 
+PBMs that provide prescription benefit management to the health plans as detailed in Table 1.   
+The data requested included: 
+HEALTH PLAN 
+• PBM contracts and amendments. 
+• All pharmacy claims. 
+o These claims were requested from the health plans, but provided, directly or 
+indirectly, by the PBMs 
+PHARMACY BENEFIT MANAGERS (PBM) 
+• Complete and unredacted PBM management agreements, amendments, and 
+appendices. 
+• A listing of all reimbursement agreements with pharmacies in the State of Arkansas. 
+• Complete and unredacted copies of all pharmaceutical rebate agreements between the 
+PBM and pharmaceutical manufacturers. 
+• A complete set of pharmacy claims for all Arkansas health plans for the audit timeframe 
+of January 1 through June 30, 2019 . This time frame was chosen because the AID 
+assumed oversight of the PBMs on January 1, 2019. 
+• The pharmacy paid claims tape for each Arkansas health plan. 
+• A copy of actual paid claims tape report to support pharmacy payments for the month of 
+March 2019. 
+• Pharmacy claims processing information for all Arkansas health plans. 
+o Bank Identification Number (BIN) 
+o Processor Controller Number (PCN) 
+o Group #/Group ID 
+ 
+Pharmacies 
+A sample of 100 Arkansas pharmacies were chosen to receive the pharmacy data request. The 
+data requested was for March 2019.  Th is shortened timeframe was chosen to  assist the 
+pharmacies with the management of the volume of data requested. It was also determined that 
+by reviewing a truncated timeframe, the information would still lead to confirmation of spread 
+===PAGE 13===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 11 
+ 
+ 
+  7/27/2020 
+pricing and clawback disparities. The pharmacies are not under the oversight of the AID, so any 
+data submitted by the pharmacies was voluntary. 
+ 
+The 100 pharmacies were sent a letter requesting pharmacy claims processing data specific to 
+the information above. The purpose of the pharmacy data request was to acquire the 
+pharmacies claim system level data so that it could be compared to the data provided by the 
+PBMs.  Beginning February 20, 2020, a letter was sent to the pharmacies requesting the 
+following data: 
+ 
+• Claims level detail for each of the Arkansas sponsor ed insurance companies (carriers or 
+PASSE entities) that were processed by the pharmacy during the month of March 2019.  
+Key data points that were requested included: 
+o Processing information (BIN/PCN/Group ID) to identify the PBM that covered the 
+claim. 
+o All payment information (e.g. patient copay, amount paid by carrier, total 
+received by the pharmacy, dispensing fee paid to pharmacy). 
+o Any retroactive fees (DIR, etc.) assessed on the pharmacy by the PBM. 
+• Unredacted copies of pharmacy contracts with each of the PBMs evaluated by the audit, 
+namely CVS Caremark, OptumRx and Express Scripts. 
+• The name and contact information for the pharmacy contact person.  
+ 
+ 
+ 
+The data received or omitted from the Health Plans and the PBMs included: 
+HEALTH PLANS 
+• Arkansas Blue Cross Blue Shield (CVS Caremark) 
+o Provided PBM contracts and amendments 
+o Provided full set of claims, but data set was provided to health plan by CVS 
+Caremark 
+• Empower (CVS Caremark) 
+o All data was provided by CVS Caremark 
+• Centene 
+o All data was provided by CVS Caremark 
+• QualChoice (Optum Rx) 
+o Provided PBM contracts and amendments 
+o Provided full set of claims, but data set was provided to health plan by OptumRx 
+===PAGE 14===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 12 
+ 
+ 
+  7/27/2020 
+• Summit (Express Scripts) 
+o All data provided by Express Scripts 
+PHARMACY BENEFIT MANAGERS 
+• CVS Caremark 
+o Provided copies of PBM agreements with health plans (BCBSAR, Empower, 
+Centene) 
+o Provided a list of reimbursement agreements with pharmacies in the State of 
+Arkansas 
+o Provided complete and unredacted copies of all agreements between the PBM 
+and pharmaceutical manufacturers regarding rebates. However, these were not 
+provided until May 28, 2020 (requested in July of 2019) 
+o Provided a complete set of pharmacy claims for all Arkansas health plans for the 
+audit timeframe of January 1 through June 30, 2019 
+o Provided pharmacy paid claims tape for each Arkansas health plan 
+o Provided a copy of actual paid claims tape report to support pharmacy payments 
+for the month of March 2019 
+o Provided processing information for all Arkansas health plans 
+o Processing information (BIN/PCN/Group ID) for CVS Caremark plans: 
+ Arkansas BCBS  
+• 004336/ADV/RX3961 
+• 004336/-/RX3956 
+ Centene 
+• Ambetter – 004336/-/RX5448 
+• Arkansas Total Care – 004336/MCAIDADV.RX5476 
+ Empower 
+• 004336/ADV/RX2798 
+• OptumRx 
+o Provided copies of PBM agreements with health plan, however all specialty 
+pricing was redacted from contracts and amendments 
+o Provided a list of reimbursement agreements with pharmacies in the State of 
+Arkansas 
+o Provided copies of agreements between the PBM and pharmaceutical 
+manufacturers regarding rebates. These documents were uploaded May 26, 2020 
+(Requested in July of 2019).  Due to timing, these documents have not been 
+reviewed for completeness. 
+o Provided a complete set of pharmacy claims for all Arkansas health plans for the 
+audit timeframe of January 1 through June 30, 2019. 
+===PAGE 15===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 13 
+ 
+ 
+  7/27/2020 
+o Did not provide pharmacy paid claims tape for each Arkansas health plan. 
+o Provided a copy of actual paid claims tape report to support pharmacy payments 
+for the month of March 2019. 
+o Provided processing information for all Arkansas health plans. 
+o Processing information (BIN/PCN/Group ID) for OptumRx plans: 
+ QualChoice 
+• 005947/-/QCAQHP 
+• 005947/-/QCA 
+• Express Scripts 
+o Provided copies of PBM agreements with health plan (Summit), however all 
+specialty pricing was redacted from contracts and amendments. 
+o Provided a list of reimbursement agreements with pharmacies in the State of 
+Arkansas. 
+o ESI did not provide any manufacturer rebate agreements stating that there are 
+no rebates for PASSE entities. 
+o Provided a complete set of pharmacy claims for all Arkansas health plans for the 
+audit timeframe of January 1 through June 30, 2019. However, this data was not  
+provided in the format (24 data fields) or with the terminology requested.  Rather, 
+the claims were submitted in a set with 284 individual data fields using ESI 
+terminology, which added complexity to the audit due to having to identify the 
+data fields relevant to the analysis. 
+o Provided pharmacy paid claims tape for each Arkansas health plan. 
+o Did not provide a copy of actual paid claims tape report to support pharmacy 
+payments for the month of March 2019. 
+o Provided processing information for all Arkansas health plans. However, the 
+spreadsheet provided had 123,872 individual BIN/PCN/Group ID combinations .  
+Upon discussion with one of the pharmacies in our subset, auditors were 
+informed that there was only one BIN/PCN/Group ID combination relevant to the 
+State funded plan. 
+o Processing information (BIN/PCN/Group ID) for ESI plans: 
+ Summit 
+• 020107/NS/WPKA 
+PHARMACY SUBSET 
+• Thirty-six (36) of the 100 pharmacy companies  (representing 51 pharmacies ), to whom 
+data requests were sent provided meaningful responses (claims and/or contracts) to the 
+data request.  
+===PAGE 16===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 14 
+ 
+ 
+  7/27/2020 
+• Pharmacies that responded to the data request represented a mix of independent 
+pharmacies and regional pharmacy chains. No national chains responded to the request.    
+• Summary of responses provided: 
+o Claims data - 51 pharmacies provided claims data with PBM payment information 
+o DIR/Clawback data - Only one regional pharmacy chain was able to provide 
+DIR/Clawback data 
+ Multiple pharmacies contacted the auditors stating that the PBMs  had 
+locked the pharmacies out of accessing this information on their access 
+portals. 
+o PBM Contracts - Only 10 pharmacy companies provided copies of their PBM 
+contract 
+ Several pharmacies contac ted the auditors stating that the PBMs  had 
+instructed them that their contracts were proprietary and that they were 
+not allowed to share the contracts with auditors under threat of contract 
+termination. 
+DATA NORMALIZATION 
+Data files from PBMs  by carrier were uploaded to a secure Citrix ShareFile site for the auditors 
+to analyze.  All claims data sets were converted to Excel spreadsheets, if necessary.  Claims data 
+from each PBM were converted into a standard and consistent data layout and formatting.   
+Negative claims (reversals and rejections) were removed along with the matched positive claims 
+to net only fully adjudicated claims. For the Optum claims set, a large number of reversed claims 
+did not have an equal number of positive (e.g. processed) claims.  As an example, RX number 
+129140 had 20 reversals at the same pharmacy on 3/8/2019, but no positive processed claim in 
+the data set.   This did not affect our analyses as there were net positive claims to match the 
+pharmacy data set.  However, this does affec t the overall summary of net claims.  After data 
+normalization was performed, the individual pharmacy claims sets were combined into a single 
+claims data set. 
+For the purposes of the differential pricing analysis, pharmacies in the PBM data set were 
+classified as either an Independent (I), National Chain (N), or a Regional Chain (R).   
+An independent pharmacy was defined as a pharmacy that had 3 or less locations.  A national 
+chain was defined as a company with pharmacies equally distributed throughout the United 
+States (e.g. CVS, Walgreens, Wal-Mart). A regional chain was defined as a pharmacy company  
+not defined as a national chain with more than 3 locations in the state of Arkansas.  
+===PAGE 17===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 15 
+ 
+ 
+  7/27/2020 
+Claims from March 2019 were isolated from each of the PBM  data sets for the Spread Pricing 
+and DIR/Clawback Analysis. 
+DATA ANALYSIS  APPROACH  
+During the audit analysis, it was discovered that a portion of claims information received from 
+the health plans included claims that were outside the Arkansas Works plans.  The auditors were 
+able to obtain from the Arkansas All-Payer Claims Database (APCD) the percent of claims from 
+each health plan that were applicable to Arkansas Works plans.   
+The APCD data was applied to the total data set of claims submitted by Blue Cr oss Blue Shield 
+of Arkansas (CVS), Centene (CVS), Empower (CVS) and QualChoice  (Optum) to estimate the 
+actual number and total spend of AR Works claims.  It should be noted that Summit ( Express 
+Scripts) participates in the PASSE program only and does not participate in AR Works.  
+While the auditors did not use the insurer s’ National Association of Insurance Commissioners 
+(NAIC) Annual Statement data for the analysis, the NAIC statement information is available 
+publicly and contains information regarding market penetration for pharmacy data.  
+ 
+DIFFERENTIAL PRICING  
+For each PBM data set , claims were calculated to the unit cost level for each drug product 
+national drug code (NDC) (e.g. NDC 00597015230 - JARDIANCE TAB 10MG,  Claim Quantity 90, 
+Total paid = $1375.04, Calculated Unit Cost = 15.28 ($1375.04/90)) to accurately compare the 
+amount paid to the pharmacy for each drug product. Claims for each drug vary by the quantity 
+dispensed so the unit cost calculation normalizes the data for comparison of reimbursement 
+across drugs and pharmacies.  
+The auditors categorized the pharmacies associated with each claim into “Pharmacy Type” 
+categories to compare the reimbursement of the individual drug unit costs based upon the type 
+of pharmacy. These categories were: 
+• National chain pharmacy. 
+• Regional chain pharmacy. 
+• Independent pharmacy. 
+• Specialty pharmacy, and 
+• Institutional pharmacy (e.g. hospital pharmacies and native American tribal pharmacies). 
+===PAGE 18===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 16 
+ 
+ 
+  7/27/2020 
+The focus of the differential pricing analysis was to compare the PBMs’ reimbursement for each 
+drug between n ational chain pharmacies, regional chain pharmacies, and independent 
+pharmacies operating within Arkansas. Claims for specialty pharmacies and institutional 
+pharmacies were excluded from the differential pricing analysis since the normal drug 
+reimbursement for these types of pharmacies have inherent high volatility across pharm acies 
+and by drug type. 
+Comparative analytics were completed based upon the pharmacy type (national chain 
+pharmacies, regional chain pharmacies, and indep endent pharmacies) and the corresponding 
+unit cost for each drug product dispensed across the pharmacies.  
+SPREAD PRICING  
+The individual PBM datasets from March 2019 were combined with the pharmacy data, 
+matching claims based on prescription number, fill number and date filled.  To identify the 
+presence of “spread”, the “total paid” to the pharmacy from the pharmacy claims data set was 
+subtracted from the “total paid” to the pharmacy from the PBM claims data set.  Any difference 
+between the “total paid” numbers was defined as “spread”.   
+Spread is reported both as a total amount, as well as the percentage of total paid of the claims 
+in the matched data set. Percent of claims with spread pricing is also presented. 
+The pharmacy data set represents claims from  a subset of pharmacies from a single month of 
+the audit timeframe.  The results from this subset analysis was extrapolated to estimate the total 
+spread amount from January 1st through June 30th, 2019. 
+DIR/CLAWBACK 
+“DIR/Clawback Fees” was a data field in both the PBM and the Pharmacy data request. Claims 
+with DIR reported were totaled and reported as the percentage clawed back compared to the 
+total spent. 
+The pharmacy data set represents claims from a subset of pharmacies from a single month of 
+the audit timeframe.  The results from this subset analysis was extrapolated to estimate the total 
+spread amount from January 1st through June 30th, 2019. 
+ 
+  
+===PAGE 19===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 17 
+ 
+ 
+  7/27/2020 
+AUDIT RESULTS 
+DATA DEMOGRAPHICS  
+PBM DATA 
+The claims data submitted by the PBMs is summarized in Table 2 below.   
+Table 2. PBM Data Demographics (Claim Records) 
+PBM CVS Caremark OptumRx Express Scripts 
+Health Plan BCBSAR Centene Empower QualChoice Summit 
+Total Claims 1,626,536 705,177 144,476 318,724 110,003 
+Total Claims by Pharmacy Type 
+Independent 490,998 196,380 55,121 73,001 40,757 
+Regional Chain 281,090 119,818 57,506 53,376 24,147 
+National Chain 833,393 380,040 29,865 184,860 42,096 
+Other 21,055 8,939 1,984 7,487 3,003 
+ 
+Claims from CVS Caremark -covered health plans accounted for most  claims (85.16%) from 
+Arkansas Works plans. D ue to incomplete data , the r eported claims were removed from the 
+Express Scripts (6,207 claims) and OptumRx (70,208 claims). 
+PHARMACY DATA 
+The claims submitted by the pharmacies are summarized in Table 3 below. 
+Table 3. Pharmacy Data Demographics (Claim Records) 
+  All 
+Plans CVS Caremark OptumRx Express 
+Scripts 
+   BCBSAR Centene Empower QualChoice Summit 
+Total Claims 32,257 16,600 5,427 3,470 3,901 1,730 
+Claims with Clawback Data 5,203 2,806 482 1,134 0 798 
+ 
+Fifty-one (51) pharmacies submitted a total of 32,257 claims for the timeframe of March 1 st 
+through March 31st, 2019.  A small number of claims (1,129) were submitted by pharmacies that 
+were from marketplace plans not part of Arkansas Works plans.  These claims were excluded.   
+ 
+===PAGE 20===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 18 
+ 
+ 
+  7/27/2020 
+LIMITATIONS OF DATA: 
+• PBM Data. 
+o There were zero DIR/Clawback fees reported by the PBMs for the audit 
+timeframe. 
+• Pharmacy Data 
+o Claims data received from the pharmacies represents a small sample size (1.7%) 
+of the total audit claims data set. 
+o No national chain pharmacies submitted claims data, so that section of retail 
+pharmacies could not be evaluated. 
+o Only one pharmacy company submitted DIR/Clawback data.  That data set does 
+not include any claims from OptumRx, so auditors are unable to evaluate 
+DIR/Clawback results for OptumRx. 
+ 
+DIFFERENTIAL PRICING ANALYSIS RESULT S:  
+The results of the differential pricing analysis are summarized in Table 4 below. The analysis uses 
+negative numbers to represent pharmaceutical pricing approaches that favor certain pharmacy 
+types over another (e.g. favors National Chain Pharmacies over Independent Pharmacies). 
+Pharmacies participate in the PBMs  pharmacy network by contractual agreement. The 
+agreement defines the guaranteed average wholesale price (AWP) and maximum allowable cost 
+(MAC) reimbursement rates in which the PBM will reimburse the pharmacy for claims submitted 
+for PBM members. The PBMs  agreements with pharmacies will vary in regard to the 
+reimbursement rate guarantees based upon the number of pharmacies participating, estimated 
+volume of PBM member claims processed and timing (i.e. when the agreement was signed). 
+PBMs may apply different  contractual language in the agreement with the pharmacy which 
+allows the PBM to classify certain drug products differently (i.e. brand versus generic) and/or 
+apply different MAC lists. Overall, the difference in reimbursement rates between pharmacies 
+should be minimal, differing by only a few percentage points. The auditors consider differential 
+reimbursement of 5% or greater to be material.   
+===PAGE 21===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 19 
+ 
+ 
+  7/27/2020 
+Table 4. Differential Pricing Analysis Summary 
+  CVS Caremark OptumRx Express 
+Scripts 
+  BCBSAR Centene Empower QualChoice Summit 
+Independent vs National           
+All Claims -3.69%* -3.69%* -17.70%* 0.70%# 0.09%# 
+Brand Claims -0.36%* -0.36%* -12.79%* -12.74%* -17.60%* 
+Generic Claims -4.76%* -4.76%* -24.56%* 3.20%# 1.78%# 
+Specialty -0.56%* -0.56%* -2.49%* -20.51%* N/A 
+*Independent Pharmacies were Paid Less than National Chains, # Independent Pharmacies 
+were Paid More than National Chains 
+ 
+  CVS Caremark OptumRx Express 
+Scripts 
+  BCBSAR Centene Empower QualChoice Summit 
+Independent vs. Regional            
+All Claims -0.30%* -0.30%* -8.86%* -9.80%* -18.86%* 
+Brand Claims 0.00% 0.00% -26.44%* -4.47%* -2.63%* 
+Generic Claims -0.54%* -0.54%* -5.20%* -10.58%* -20.18%* 
+Specialty -2.89%* -2.89%* -1.38%* -5.31%* N/A 
+*Independent Pharmacies were Paid Less than Regional Chains, # Independent Pharmacies 
+were Paid More than Regional Chains 
+ 
+  CVS Caremark OptumRx Express 
+Scripts 
+  BCBSAR Centene Empower QualChoice Summit 
+Regional vs. National           
+All Claims -4.56%* -4.56%* -21.60%* -4.66%* -0.78%* 
+Brand Claims 0.58%# 0.58%# -3.38%* -8.99%* -2.03%* 
+Generic Claims -6.04%* -6.04%* -26.94%* -3.84%* -0.66%* 
+Specialty -0.27%* -0.27%* -12.78%* -6.26%* N/A 
+*Regional Pharmacies were Paid Less than National Chains, # Regional Pharmacies were Paid 
+More than National Chains 
+ 
+===PAGE 22===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 20 
+ 
+ 
+  7/27/2020 
+  CVS Caremark OptumRx Express 
+Scripts 
+  BCBSAR Centene Empower QualChoice Summit 
+Independent vs. CVS-
+Owned           
+All Claims -0.71%* -1.16%* 28.80%# N/A N/A 
+Brand Claims -1.62%* 1.25%# 0.19%# N/A N/A 
+Generic Claims -0.49%* -1.73%* 33.34%# N/A N/A 
+Specialty -0.44%* -4.48%* N/A N/A N/A 
+*Independent Pharmacies were Paid Less than CVS Pharmacies, # Independent Pharmacies 
+were Paid More than CVS Pharmacies 
+ 
+For the BCBSAR and Centene plans (both CVS Caremark), the data set shows a small preference 
+in pricing toward the National Chain and Regional Chain pharmacies over the Independent 
+Pharmacies.  The  auditors consider the difference to be acceptable. However, the R egional 
+Chain pharmacies were paid less (-6.04%) than National Chain pharmacies for generic claims  
+which is considered material as the difference is greater than 5%.    
+ 
+For the Empower (CVS Caremark), QualChoice (OptumRx) and Summit (ESI) data sets, the 
+pricing advantage to the larger pharmacy entities  (i.e. Nation al Chains) is much more 
+pronounced versus Regional Chain s and Independent Pharmacies .  The auditors consider the 
+difference to be material since it is greater than 5%.    
+ 
+Overall, the BCBSAR and Centene plans (both CVS Caremark) data sets demonstrated a small 
+reimbursement difference based upon the pharmacy type which is considered normal and 
+acceptable. The exception is Regional Chain pharmacies were paid less ( -6.04%) than National 
+Chain pharmacies for generic claims which is considered material as the difference is greater 
+than 5%.  Please refer to Table 4. 
+Empower (CVS Caremark), QualChoice (OptumRx), and Summit (ESI) almost always reimbursed 
+national pharmacies at higher rates than the rates at which they reimbursed regional or 
+independent pharmacies.  Not only were national pharmacies reimbursed at higher rates, Table 
+4 illustrates that the difference in rates usually  resulted in national pharmacies being 
+compensated for the same drug at a rate often 5% higher, if not more than 5% higher, than the 
+rate provided to regional or independent pharmacies.  
+The auditors also compared the reimbursement between Arkansas operating CVS Caremark 
+owned pharmacies (CVS Pharmacies) versus Arkansas Independent Pharmacies to determine if 
+CVS Caremark was reimbursing its’ owned pharmacies more than locally owned and operated 
+Arkansas pharmacies. The difference in reimbursement for the BC BSAR and Centene data sets 
+===PAGE 23===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 21 
+ 
+ 
+  7/27/2020 
+is considered acceptable. For the Empower data set the Independent Pharmacies were paid 
+significantly more than the CVS Pharmacies.    
+LIMITATIONS OF ANALYSIS 
+• Auditors were unable to obtain copies of contracts between PBM and pharmacy to 
+assess whether pricing is in line with individual pharmacies contracted pricing. 
+• No “specialty” indicator on ESI claims to assess differences in pricing. 
+• For CVS Caremark and OptumRx data set, the number of matching specialty NDC’s 
+between pharmacy types was extremely small. 
+ 
+ 
+SPREAD PRICING ANALYSIS 
+The results of the spread pricing analysis are summarized in Table 5 below by health plan and 
+PBM.   
+Table 5. Arkansas Works/PASSE PBM Analysis Summary – Pharmacy Data Set March 2019 
+PBM CVS Caremark OptumRx Express 
+Scripts 
+Health Plan BCBSAR Centene Empower QualChoice Summit 
+Total Matched Claims - 
+Pharmacy Data 13,342 4,995 2,910 1,522 1,542 
+  
+Claims w/ Spread 63 14 4 1 1,290 
+Total $ Spread $8,299 $593 $65 $2 $29,363 
+Total PBM Spend $669,469 $1,304 $227,558 $4.94 $160,976 
+      
+% Spread 1.24% 45.45% 0.03% 47.77% 18.24% 
+% of Claims w/ Spread 0.47% 0.28% 0.14% 0.07% 83.66% 
+ 
+Overall, the auditors did not see significant spread pricing practices with CVS Caremark o r 
+OptumRx plans.   
+Conversely, there was significant spread pricing found in the ESI -administered PASSE plan.  
+More than 83% of claims in the pharmacy data subset showed spread pricing practices . This  
+spread accounted for more than an 18% difference between the amount that the health plan 
+was charged and the amount the pharmacy was paid.  
+===PAGE 24===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 22 
+ 
+ 
+  7/27/2020 
+These results were extrapolated to the full claims set from the six -month audit timeframe to 
+provide an estimate of spread pricing over the entire audit period.  The results are summarized 
+in Table 6 below. 
+Table 6. Arkansas Works/PASSE PBM Analysis Summary - January 1st-June 30th, 2019 
+PBM CVS Caremark Optum Express 
+Scripts 
+Health Plan BCBSAR Centene Empower QualChoice Summit 
+Total Claims in Data 
+Set 1,626,536 705,177 144,476 248,516 106,637 
+Total Health Plan 
+Spend $133,285,068 $52,894,989 $13,089,025 $14,637,357 $11,793,275 
+Average $/RX $81.94 $75.01 $90.60 $58.90 $110.59 
+% AR Works 66.00% 67.00% 67.00% 66.00% 100% 
+Approximate RX's – 
+ARW 1,073,514 472,469 96,799 164,021 106,637 
+Total Health Plan 
+Paid ARW $87,968,145 $35,439,642 $8,769,647 $9,660,655 $11,793,275 
+Approximate Claims 
+w/ Spread 5,069 1,324 133 105 89,210 
+      
+Estimated Total 
+Spread Amount $5,149 $45,146 $3.46 $6,347.34 $1,799,632 
+Percent of Total 
+Spend 0.004% 0.085% 0.000% 0.043% 15.26% 
+ 
+LIMITATIONS OF ANALYSIS 
+• Claims data received from the pharmacies represents a small sample size (1.7%) of the 
+total audit claims data set. 
+• No claims were submitted by any national chain pharmacies. 
+ 
+ 
+ 
+===PAGE 25===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 23 
+ 
+ 
+  7/27/2020 
+DIR/CLAWBACK PRICING ANALYSIS  
+The results of the DIR/Clawback pricing analysis are summarized in Table 7 below. 
+Table 7. Arkansas Works/PASSE PBM Analysis Summary – Pharmacy Data Set March 2019 
+PBM CVS Caremark Optum Express Scripts 
+Health Plan BCBSAR Centene Empower QualChoice Summit 
+Claims w/ DIR Reported  
+(>/ $0.05) 2,319 400 891 0 592 
+Total Clawbacks 
+Assessed $12,224 $2,951 $73,957 0 $3,748 
+Total PBM Spend on 
+Claims w/ DIR Fees $124,820 $30,841 $7,241 0 $82,436 
+% Clawback Assessed 9.79% 9.57% 9.79% N/A 4.55% 
+ 
+Only one pharmacy submitted DIR/Clawback information.  There were no claims covered by 
+OptumRx in this pharmacy’s claims dataset. Therefore, no DIR/Clawback analysis can be 
+completed for OptumRx.   
+Both CVS Caremark and ESI assessed  DIR/Clawback fees on the pharmacies during the audit 
+timeframe.  Across the 3 Arkansas Works plans, CVS Caremark’s average DIR/ Clawback fees 
+were 9.72% of the total  amount paid by the applicable health plan.  ESI’s average DIR fees 
+averaged 4.55% over the sample period.   
+These results were extrapolated to the full claims set from the 6 -month audit timeframe to 
+provide an estimate over the entire audit period.  The results are summarized in Table 8 below. 
+===PAGE 26===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 24 
+ 
+ 
+  7/27/2020 
+Table 8. Arkansas Works/PASSE PBM Analysis Summary - January 1st-June 30th, 2019 
+PBM CVS Caremark Optum Express Scripts 
+Health Plan BCBSAR Centene Empower QualChoice Summit 
+Total Claims in Data Set 1,626,536 705,177 144,476 248,516 106,637 
+Total Health Plan Spend $133,285,068 $52,894,989 $13,089,025 $14,637,357 $11,793,275 
+Average $/RX $81.94 $75.01 $90.60 $58.90 $110.59 
+% AR Works 66.00% 67.00% 67.00% 66.00% 100% 
+Approximate RX's - ARW 1,073,514 472,469 96,799 164,021 106,637 
+Total Health Plan Paid ARW $87,968,145 $35,439,642 $8,769,647 $9,660,655 $11,793,275 
+      
+Estimated Total Clawback $8,614,934 $3,390,666 $858,560 N/A $536,124 
+ 
+LIMITATIONS OF ANALYSIS 
+• Claims data received from the pharmacies repr esents a small sample size (1.7%) of 
+the total audit claims data set. Only one pharmacy submitted DIR/Clawback data for 
+analysis, which further reduced the sample size. 
+• No DIR/Clawback data was available for OptumRx plans so no analysis could be 
+performed on that PBMs pricing practices. 
+• No claims were submitted by any national chain pharmacies. 
+ 
+===PAGE 27===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 25 
+ 
+ 
+  7/27/2020 
+CONCLUSIONS 
+The differential pricing analysis showed that National Chain pharmacies were reimbursed more 
+(defined as greater than 5% difference) than Regional Chain and Independent Pharmacies for 
+the same drug product unit (i.e. tablet, capsule).  
+The spread pricing analysis showed that one of the 3 PBMs being audited, Express Scripts Inc., 
+was employing significant spread pricing practices during the audit time frame.  Specifically, ESI 
+was charging the health benefit plan an estimated 15.26% more than was being paid  to the 
+pharmacies. 
+The DIR/”clawback” analysis showed that both CVS Caremark (9.71%) and Express Scripts Inc. 
+(4.55%) assessed DIR or “clawback” fees to the pharmacy during the audit timeframe. 
+OptumRx’s clawback pricing could not be evaluated. 
+While the report focuses on several pharmaceutical pricing practices, it does not provide a 
+complete picture of pharmacy costs and PBM compensation. There are a number of additional 
+factors that impact PBM revenues and pharmacy reimbursements that were either outsid e of 
+the scope of this report or unavailable due to the lack of PBM response. These additional factors 
+include rebates, additional insurer fees, and pharmacy fees.  
+  
+===PAGE 28===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 26 
+ 
+ 
+  7/27/2020 
+ASOP 41 DISCLOSURES 
+The Actuarial Standards Board (ASB), vested by the U.S. -based actuarial organizations 3 , 
+promulgates Actuarial Standards of Practice  for use by actuaries when providing professional 
+services in the United States.   
+Each of these organizations requires its members, through its Code of Professional Condu ct 4, 
+to observe the ASOPs of the ASB when practicing in the United States. ASOP No. 41 provides 
+guidance to actuaries with respect to actuarial communications and requires certain disclosures 
+which are contained in the following. 
+1. IDENTIFICATION OF THE RESPONSIBLE ACTUARY  
+The responsible actuaries are: 
+• Dave Dillon, FSA, MAAA, MS, Senior Vice President & Principal at Lewis & Ellis, Inc. 
+The actuaries are available to provide supplementary information and explanation.   
+2. IDENTIFICATION OF ACTUARIAL DOCUMENTS  
+The date of this document i s July 27, 2020. The date (a.k.a. “latest information date”) through 
+which data or other information has been considered in performing this analysis is  April 28 , 
+2020. 
+3. DISCLOSURES IN ACTUARIAL REPORTS 
+• The contents of this report are intended for the use of the Arkansas Insurance 
+Department. Any third party with access to this report acknowledges, as a condition of 
+receipt, that they cannot bring suit, claim, or action against L&E, under any theory of law, 
+related in any way to this material. 
+• Lewis & Ellis Inc. is financially and organ izationally independent from the PBMs under 
+examination. L&E is not aware of anything that would impair or seem to impair the 
+objectivity of the work.   
+• The purpose of this report is to assist the AID with the limited financial examination of 
+Pharmacy Benefit Managers.  
+• The responsible actuar y identified above is  qualified as specified in the Qualification 
+Standards of the American Academy of Actuaries. 
+ 
+3 The American Academy of Actuaries (Academy), the American Society of Pension Professionals and Actuaries, 
+the Casualty Actuarial Society, the Conference of Consulting Actuaries, and the Society of Actuaries. 
+4 These organizations adopted identical Codes of Professional Conduct effective January 1, 2001. 
+===PAGE 29===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 27 
+ 
+ 
+  7/27/2020 
+• Lewis & Ellis has reviewed the data provided for reasonableness but has not audited it. 
+L&E nor the responsible actuar ies assume responsibility for items that may have a 
+material impact on the analysis. To the extent that there are material inaccuracies in, 
+misrepresentations in, or lack of adequate disclosure by the data, the results may be 
+accordingly affected. 
+• L&E is not aware of any subsequent events that may have a material effect on the 
+findings. 
+4. ACTUARIAL FINDINGS 
+The actuarial findings of the report can be found in the body of this report. 
+5. METHODS, PROCEDURES, ASSUMPTIONS, AND DATA 
+The methods, procedures, assumptions, and data used by the actuary can be found in the body 
+of this report. 
+6. ASSUMPTIONS OR METHODS PRESCRIBED BY LAW 
+This report was prepared as prescribed by applicable law, statutes, regulations, and other legally 
+binding authority.    
+7. RESPONSIBILITY FOR ASSUMPTIONS AND METHODS 
+The actuary does not disclaim responsibility for material assumptions or methods. 
+8. DEVIATION FROM THE GUIDANCE OF AN ASOP 
+The actuary does not believe that material deviations from the guidance set forth in an 
+applicable ASOP have been made. 
+  
+===PAGE 30===
+LIMITED FINANCIAL EXAMINATION OF PBMS  Page | 28 
+ 
+ 
+  7/27/2020 
+APPENDICES 
+ 
+APPENDIX 1. EXAMINER VERIFICATION  
+APPENDIX 2. BCBSAR (CVS CAREMARK) SUMMARY DATA TABLES 
+APPENDIX 3. CENTENE (CVS CAREMARK) SUMMARY DATA TABLES 
+APPENDIX 4. EMPOWER (CVS CAREMARK) SUMMARY DATA TABLE 
+APPENDIX 5. SUMMIT COMMUNITY CARE (EXPRESS SCRIPTS) SUMMARY DATA TABLE 
+APPENDIX 6. QUALCHOICE (OPTUM RX) SUMMARY DATA TABLE 
+  
+===PAGE 31===

@@ -1,0 +1,1936 @@
+
+===PAGE 1===
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+REPORT TO CONGRESS 
+Prescription Drug Spending, 
+Pricing Trends, and Premiums 
+in Private Health Insurance Plans 
+Report Required by the Consolidated Appropriations Act, 2021 
+U.S. Department of Health and Human Services  
+Office of the Assistant Secretary for Planning and Evaluation  
+November  2024  
+Office of the Assistant Secretary for Planning and Evaluation 
+===PAGE 2===
+    
+      
+     
+     
+   
+ 
+      
+       
+ 
+ 
+      
+       
+   
+     
+    
+  
+ 
+ 
+        
+     
+   
+ 
+    
+    
+        
+ 
+ 
+ 
+  
+The Assistant Secretary for Planning and Evaluation (ASPE) advises the Secretary of the U.S. Department 
+of Health and Human Services (“HHS” or “the Department”) on policy development in health, disability, 
+human services, data, and science; and provides advice and anal ysis on economic policy. ASPE leads 
+special initiatives; coordinates the Department's evaluation, research, and demonstration activities; and 
+manages cross-Department planning activities such as strategic planning, legislative planning, and review 
+of regul ations. Integral to this role, ASPE conducts research and evaluation studies; develops policy 
+analyses; and estimates the cost and benefits of policy alternatives under consideration by the 
+Department or Congress. 
+Office of Health Policy 
+The Office of Heal th Policy (HP) provides a cross -cutting policy perspective that bridges Departmental 
+programs, public and private sector activities, and the research community, in order to develop, analyze, 
+coordinate, and provide leadership on health policy issues for the Secretary. HP carries out this mission 
+by conducting policy, economic and budget analyses, assisting in the development and review of 
+regulations, assisting in the development and formulation of budgets and legislation, and assisting in 
+survey design efforts, as well as conducting and coordinating research, evaluation, and information 
+dissemination on issues relating to health policy. 
+Suggested Citation 
+Office of the Assistant Secretary for Planning and Evaluation, U.S. Department of Health & Human 
+Services. Prescription Drug Spending, Pricing Trends, and Premiums in Private Health Insurance Plans . 
+November 2024. https://aspe.hhs.gov/ 
+Acknowledgements 
+Many people at ASPE contributed to this project. The lead authors are Anne Hall and Kenneth Finegold. 
+Other contributors include Thomas Buchmueller, Nancy De Lew, Steve Sheingold, and Rachael Zuckerman. 
+ASPE also acknowledges support from RAND staff. The statements expressed in this r eport do not 
+necessarily reflect the views of RAND. 
+November 2024 REPORT TO CONGRESS 2 
+===PAGE 3===
+    
+ 
+     
+   
+   
+   
+     
+   
+    
+   
+  
+  
+  
+  
+ 
+  
+    
+  
+  
+  
+   
+  
+  
+ 
+  
+Table of Contents 
+Executive Summary: Key Findings on Prescription Drug Spending, Pricing Trends, and Contributions to 
+Premium Changes 4 .....
+........................................................................................................... 
+Improv
+ing RxDC 7 .....
+...................................................................................................... 
+Overvi
+ew of Report 7 .....
+................................................................................................. 
+I. Backg
+round: Prescription Drug Coverage, Benefit Design, and the Pricing of Retail Prescription 
+Drugs 9 .....
+............................................................................................................................ 
+Trends i
+n Prescription Drug Coverage and Benefits 9 .....
+...................................................... 
+Trends i
+n Prescription Drug Benefit Design 10 .....
+................................................................
+Underst
+anding Prescription Drug Pricing and the Market for Prescription Drugs 12 .....
+.............
+Recent 
+Increases in Drug Spending Mostly Driven by Increases in Drug Prices 13 .....
+.................
+Rising
+ Prescription Drug Prices Affect Adherence and Health Through Higher Cost-Sharing 14 ....
+II. The Need f
+or RxDC 15 .....
+....................................................................................................
+RxDC
+ Can Help Answer Basic Questions 15 .....
+.....................................................................
+Introduc
+tion to RxDC 15 .....
+..............................................................................................
+III. Brief
+ Description of the 2020 and 2021 RxDC and Initial Findings 16 .....
+.....................................
+Brief
+ Description of RxDC 16 .....
+........................................................................................
+Limitat
+ions of the Initial Two Years of RxDC 17 .....
+...............................................................
+Illus
+trative Analyses of 2020 and 2021 RxDC Data 18 .....
+.......................................................
+IV.  Conc
+lusion 22 .....
+...............................................................................................................
+Appendix
+ A. Ratio of Net to Gross Spending by Geography in the 2020 and 2021 RxDC Data 24 .....
+.....
+Endnotes 26 .....
+......................................................................................................................
+Novem
+ber 2024 REPORT TO CONGRESS 3 
+===PAGE 4===
+    
+    
+ 
+     
+        
+        
+         
+    
+      
+     
+         
+   
+           
+         
+        
+    
+ 
+   
+       
+       
+   
+       
+     
+          
+           
+       
+     
+    
+      
+ 
+  
+ 
+    
+   
+       
+    
+    
+      
+  
+  
+  
+  
+   
+Executive Summary: Key Findings on Prescription Drug Spending, Pricing Trends, 
+and Contributions to Premium Changes 
+Prescription drug prices are a top concern for policymakers and the public. As detailed in a recent report 
+by ASPE, more than 4,200 drug products had manufacturer list price increases from January 2022 to 
+January 2023; the average change in the manufacturer list price of these drugs was 15.2 percent, and 46.0 
+percent of these drugs had price increases that were higher than the rate of general inflation. 1 For ma ny 
+drugs, however, list prices are not the prices ultimately paid to manufacturers; payers or pharmacy benefit 
+managers (PBMs) negotiate with manufacturers over formulary placement in exchange for discounts in 
+the form of rebates a off the list price. 
+a As used throughout this report, the term “rebates” includes rebates, fees, and other remuneration transferred t o 
+PBMs from drug manufacturers and pharmacies. 
+Furthermore, these post-rebate or net prices paid by private health insurance plans and issuers may be 
+higher than the net prices received by manufacturers given supply chain markups and amounts retained 
+by or paid to PBMs. However, comprehensive data on the net prices paid by private health insurance 
+plans, issuers, and consumers do not exist for private health insurance coverage. To address that gap in 
+data availability, section 204 of Division BB of Title II of the Consolidated Appropriations Act, 2021 (CAA) 
+(“Section 204”) directed group health plans and health insurance issuers offering group or individual (non-
+group) health insurance coverage (“private health insurance plans and issuers”) to submit annually certain 
+data on premiums, enrollment, nondrug medical spending, spending on prescription drugs, and 
+prescription drug rebates to HHS, the Department of Labor (DOL) and the Department of the Treasury 
+(UST) (collectively “the Departments”) . b,2 The Office of Personnel Management (OPM) has joined the 
+Departments to promote transparency in prescription drug and health care spending in the Federal 
+Employees Health Benefits (FEHB) Program by requiring FEHB carriers to report information to the 
+Departments, consistent with Section 204 and implementing regulations issued by the Departments and 
+OPM. This new data collection is referred to in this report as the Prescription Drug Data Collection or 
+“RxDC.” On November 23, 2021, regulations directing private health insurance plans and issuers on how 
+to report the data to the Departments appeared in the Federal Register . 
+c Data for the first two years 
+(2020 and 2021) were submitted by January 31, 2023. d 
+b In this report, the term “private health insurance plans and issuers” will be used to refer to all group health pla ns 
+and coverage (both self-insured and fully insured) issued by private health insurance issuers and/orsponsored by 
+employers (includingFederal,state and local governments) and all individual(non-group)health insurancecoverage 
+issued by private health insurance issuers . The term “private health insurance coverage” will be used to refer 
+collectively to the coverage offered by these plansand issuers. These terms do not include plans operated by priva t e 
+companies for beneficiaries of public insurance programs such as Medicare or Medicaid. The participants, 
+beneficiaries, and/or enrollees covered by private health insurance coverage will collectively be referred to as 
+“members.” 
+c The regulations relating to RxDC may be found at https://www.federalregister.gov/documents/2021/11/23/2021-
+2
+5183/prescription -drug-and-health-care-spending. 
+d Data for 2022 were submitted by June 1, 2023 and will be analyzed in the next biannual report to Congress . 
+Section 204 further directs the Secretary of HHS, throug h ASPE and in coordination with the Inspector 
+General of HHS, to make available on the HHS website a report on “prescription drug reimbursements 
+November 2024 REPORT TO CONGRESS 4 
+===PAGE 5===
+    
+    
+      
+      
+    
+      
+        
+    
+     
+      
+  
+    
+        
+    
+       
+  
+       
+   
+    
+        
+       
+       
+ 
+ 
+  
+      
+   
+     
+    
+   
+   
+ 
+    
+  
+ 
+       
+    
+   
+     
+     
+       
+    
+under group health plans and group and individual health insurance coverage, prescription drug pricing 
+trends, and the role of prescription drug costs in contributing to premium increases or decreases under 
+such plans or coverage,” with similar direction to DOL and UST. The Departments agreed to address this 
+directive by submitting and posting to their internet websites one report covering all private health 
+insurance plans and issuers subject to Section 204 reporting requirements as well as FEHB plans. ASPE, 
+acting on behalf of the Departments and OPM, contracted with RAND to conduct a literature review, 
+analyze the RxDC data, and present the results, which may be found in the report from RAND Health Care, 
+“Prescription Drug Prices, Rebates, and Insurance Premiums” (“RAND Background Report”) posted 
+alongside this report. We summarize key findings from RAND’s analysis and other published data, on each 
+of these topics below. 
+Prescription Drug Spending (or Reimbursements) and Coverage 
+• The US spent a total of $406 billion on retail prescription drugs net of rebates in 2022, according to 
+the N
+ational Health Expenditure Accounts (NHEA), rising from $291 billion in 2014. e Per capita retail 
+prescription drug spending rose an average of 3.8 percent per year over the same period, from $974 
+in 2014 to $1,227 in 2022.
+f 
+e For the purposes of this report, retail prescription drugs are defined as prescription drugs dispensed through ret a il 
+brick-and-mortar pharmacies and drug stores and mail-order pharmacies. For patients with insurance, retail drugs 
+are generally paid for through pharmaceutical benefits. Retail drugs do not include prescription drugs administ ered 
+in physicians’ offices and hospitals and which are generally paid for through insurance plans’ medical benefits. 
+f The NHEA may be found at https://www.cms.gov/data-research/statistics-trends-and-reports/national-h ealth-
+expe
+nditure-data/historical. Total and per capita retail prescription drug spending are presented in Table 2 of the 
+NHE
+A. These figures are not adjusted for inflation; inflation, as measured by the CPI-U, averaged 2.7% annually 
+during this period. 
+• An estimated 143 million Americans had prescription drug coverage from private group hea lt h 
+insur
+ance plans (mostly employer -sponsored), and an estimated 11 million had prescription drug 
+coverage from individual market health insurance plans in 2020. g 
+g These numbers were calculated from theHousehold Component of theMedical Expenditure Panel Survey(MEPS-
+HC) and only include those individuals living in the community. The sampling frame for the MEPS-HC is based on t ha t 
+of the National Health Interview Survey which excludes people with no fixed address or residing permanently in a n 
+institution such as a nursing home. 
+• Most private health insurance coverage includes prescription drug benefits. Most i ndividual (non-
+gro
+up) market and small group market plans are statutorily required to provide prescription drug 
+coverage. Nearly all large group market plans provide prescription drug coverage though they are not 
+required to. h 
+h The requirement for certain health insurance coverage toprovide Essential Health Benefits (EHB) was introduced 
+by the Affordable Care Act(ACA). See section 1301(a)(1)(B) of the ACA and section 2707 of the Public Health Service 
+(PHS) Act. Large group market plans and self-insuredgroup health plans are not required to cover EHB.Certain hea lt h 
+plans already in force at the time the ACA was enacted that also meet certain other requirements (“grandfathered” 
+plans), and certain individua l and small group market plans in force at the time many of the ACA’s market ref orm s 
+took effect for the 2014 plan year(“grandmothered” plans)are notrequired tocoverEHB. Plans that are not subject 
+to the requirement may nonetheless offer partial or comprehensive drug coverage. 
+November 2024 REPORT TO CONGRESS 5 
+===PAGE 6===
+    
+    
+          
+        
+     
+   
+  
+       
+ 
+  
+        
+         
+       
+   
+           
+     
+        
+     
+     
+  
+ 
+   
+  
+ 
+  
+    
+      
+     
+         
+     
+    
+   
+           
+      
+    
+   
+      
+     
+ 
+    
+  
+• Average deductibles and out-of-pocket maximums in employer-sponsored coverage have generally 
+inc
+reased since 2014. i Employer-sponsored health insurance plans are making greater use of 
+coinsurance, in which members pay a percentage of a drug’s cost, rather than fixed copayment s. 
+Employer-sponsored health insurance plans have also adopted benefit designs with a larger number 
+of cost-sharing tiers, allowing them to set higher cost-sharing for more expensive brand drugs. 
+i The trends in this bullet come from RAND’s analysis of theKFF Employer Health Benefits Surveyin the years 2014-
+22. The sample includes private firms and nonfederal government employers with three or more employees. The 
+survey does not include multiemployer plans. 
+Prescription Drug Pricing Trends 
+• Despite differences in methods, data sources, the prescription drugs analyzed, and the period 
+cov
+ered, estimates of recent trends consistently suggest gross drug prices have been growing more 
+rapidly than prices net of rebates paid by manufacturers to PBMs. j, 3 
+j The IQVIA Institute for Human Data Sciences, for example, estimated that between 2017 and 2022, prescript ion 
+drug spending at list (gross) prices grew 7.4 percent, while payer net spending increased 4.5 percent and spending 
+at manufacturer net prices  increa sed 5.6 percent. Because the volume component of each of these spending 
+estimates is the same,the differences among them are due to differences between trends in gross and net prices. 
+See IQVIA Institute for Human Data Sciences, The Use of Medicines in the U.S. 2023, April 2023 
+(https://www.iqvia.com/-/media/iqvia/pdfs/institute-reports/the-use-of-medicines -in-the-us-2023/the -use-of-
+med
+icines-in-the-us-2023.pdf), p.27. In addition, Mallatt et al. (2024) find thatlist prices of retail drugs grew by an 
+ave
+rage of 9.1 percentannually between 2007 and 2020 but pricesafter rebates grew by an average of 4.3 percent 
+annually over the same period. 
+• RAND analyzed the first two years of RxDC data and found that ratios of total spending net of rebates 
+to g
+ross spending including rebates were 0.80 in 2020 and 0.78 in 2021, with variation a cross 
+therapeutic class, market segment, and state. k Rebates therefore accounted for 20-22 percent of 
+gross drug spending in employer-sponsored and individual market plans in the RxDC data,  a  s ma ller 
+share than the 31 percent in Medicare Part Dl or the 53 percent in Medicaid. m 
+k Market segments are categories of different types of private health insurance coverage. RxDC specifies seven 
+market segments: self-insured large employer plans, self-insured small employer plans, fully-insured large group 
+plans, fully-insured small group plans, individual plans, student health plans, and FEHB plans. 
+l Direct and Indirect Remunera tion (DIR), which includes pharmacy fees as well as PBM rebates, accounted for31.3 
+percent of Medicare Part D gross drug costs incalendaryear 2022. Table IV.B8 of the 2024Medicare Trustees Report 
+(https://www.cms.gov/oact/tr/2024) presents historical and projected DIR as a share of gross drug costs for 
+Med
+icare Part D . 
+m Medicaid rebates represented 52.8 percent of gross drug spending in Fiscal Year 2021. ASPE calculation from da t a 
+in https://www.macpac.gov/wp-content/uploads/202 2/12/MACSTATS_Dec2022_WEB -508.pdf, pp. 74-76. 
+Contribution of Prescription Drug Costs in Contributing to Changes in Premiums 
+• Previous work by ASPE and literature cited by RAND in the RAND Background Report indicate that 
+cons
+umers are highly sensitive to premiums and consider premiums more than expected out -of-
+pocket costs when choosing health insurance plans, which would give plans an incentive to increase 
+out-of-pocket costs rather than premiums when faced with increases in prescription drug prices. 
+November 2024 REPORT TO CONGRESS 6 
+===PAGE 7===
+    
+     
+       
+   
+  
+     
+  
+      
+     
+       
+        
+ 
+ 
+     
+            
+ 
+     
+     
+   
+ 
+    
+   
+        
+ 
+ 
+   
+   
+  
+     
+ 
+   
+  
+      
+ 
+    
+ 
+  
+              
+ 
+• In a technical expert panel convened by ASPE with RAND contractor support, some participants in the 
+pane
+l mentioned that plans and issuers may respond to increases in prescription drug costs with 
+changes to formularies or utilization management rather than premium increases. 
+Improving RxDC 
+RxDC development over the past three-and-a-half years has appropriately focused on devel oping 
+regulations and guidance, building the data collection platform, and establishing relationships with 
+submitting entities (plan sponsors, PBMs, issuers, third-party administrators (TPAs), and other 
+organizations). Nevertheless, RAND encountered some limitations when analyzing the data, which are 
+detailed later in this report . Experience with the first round of data submission for 2020 and 2021 
+indicates that some improvements to the RxDC data would allow ASPE and the Departments to offer 
+expanded analyses in future reports. 
+Overview of Report 
+ASPE developed this report to provide background on the prescription drug market, discuss the need for 
+RxDC, and summarize the findings from the initial two years of RxDC. n This report contains the following 
+sections: 
+n The RAND Background Report, prepared by RAND Health Care under contract to ASPE, provides a detailed 
+description of the data and reports the findings from RAND’s analyses of the data. It may be found at 
+https://aspe.hhs.gov/. 
+• Background: Prescription Drug Coverage , BenefitDesign, and the Pricing of Retail Prescription 
+Dru
+gs lays out the background on prescription drug coverage, spending, and pricing in the US 
+that led to the development of RxDC. It discusses recent trends in prescription drug coverage 
+and benefits, reviews the functioning of the market for prescription drugs and how prescription 
+drugs are priced, and discusses the potential impact of drug pricing on cost-sharing and 
+affordability. 
+• The Need for RxDC lays out the Federal statutory requirement for private health insurance plans 
+and i
+ssuers to submit data on prescription drug spending annually to the Departments.  It 
+explains how RxDC will help improve our understanding of retail prescription drug prices and 
+spending in private health insurance coverage. 
+• Brief Description of the 2020 and 2021 RxDC and Initial Findings describes the format of the 
+fi
+rst two years of RxDC, describes the limitations encountered when using the data, and 
+summarizes the results of illustrative analyses RAND conducted on the initial two years of data. 
+o The initial results for the first two years of data show the potential for increasing our 
+under
+standing of prescription drug reimbursements in private health insurance 
+coverage and prescription drug pricing trends in the private health insurance coverage 
+market. 
+o However, certain limitations of the data precluded analysis of some questions of 
+int
+erest to policymakers such as the contribution of prescription drug price changes to 
+changes in private health insurance premiums. 
+November 2024 REPORT TO CONGRESS 7 
+===PAGE 8===
+    
+    
+  
+• Conclusion reviews the results, presents suggestions for improving the data, and discusses 
+opportunities for further analyses. 
+November 2024 REPORT TO CONGRESS 8 
+===PAGE 9===
+    
+    
+      
+        
+        
+       
+     
+         
+      
+       
+  
+      
+    
+         
+           
+    
+       
+     
+    
+ 
+        
+        
+    
+   
+       
+    
+    
+   
+      
+  
+  
+       
+        
+ 
+     
+   
+  
+I.  Background:  Prescription Drug Coverage,  Benefit Design,  and the Pricing  
+of Retail Prescription Drugs  
+Trends in Prescription Drug Coverage and Benefits 
+Private health insurance coverage, which financed 38% of total retail drug spending in 2022 according to 
+the NHEA, is by far the largest source of prescription drug coverage for Americans. o, p Most private health 
+insurance coverage includes prescription drug insurance coverage. Most small group and individual 
+health insurance plans are required by the ACA to offer prescription drug coverage. Large group market 
+plans and self-insured plans are not required to offer prescription drug coverage, but RAND found in its 
+analysis of the MEPS-HC that, from 2014 to 2020, over 90 percent of individuals enrolled in private group 
+health insurance coverage had prescription drug coverage. Some individual (non-group) health insurance 
+coverage is not required to offer prescription drug benefits, and prescription drug coverage rates were 
+much lower among those enrolled in such coverage, standing at just over 60 percent in 2020. q 
+o Private health insurance coverage may be divided into private group health insurance coverage and p r ivate 
+individual (non-group)health insurancecove rage. In this report, private group health insurancecoverage includes 
+employer-sponsored coverage (both self-insured and fully-insured, and both large group and smallgroup), coverage 
+sponsored by employee organizations such as unions, and coverage sponsored jointly by both. Private individual 
+(non-group) health insurance coverage includes both planssoldthrough the ACAMarketplaces(“Marketplace plans” 
+or “on-Marketplace plans”) and those purchased outside the Marketplaces (“off-Marketplace plans”). 
+p The NHEA may be found at https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-
+e
+xpenditure-data/historical. The source of funds for retail prescription drug expenditures is presented in Table 16. 
+q The requirement for certain hea lth insurance coverage to provide EHB was introduced by the ACA. See sect i on 
+1301(a)(1)(B) of the ACA and section 2707 of the PHS Act. Large group market plans and self-insured group healt h 
+plans are not required to cover EHB. Certain health plans already in force at the time the ACA was enacted that also 
+meet certain other requirements (“grandfathered” plans), and certain individual and small group market plans in 
+force at the time many ofthe ACA’s market reformstook effect for the 2014 plan year(“grandmothered” plans) a re 
+not required to cover EHB. Plans tha t are not subject to the requirement may nonetheless offer partia l or 
+comprehensive drug coverage. 
+Based on RAND’s analysis of the MEPS-HC as detailed in the RAND Background Report , the estimated 
+number of people with prescription drug coverage through private group health insurance coverage rose 
+from 149 million in 2014 to 156 million in 2017, before falling back to 152 million in 2019. It then fell 
+further to 143 million in 2020 following the onset of the COVID-19 pandemic. r In the MEPS-HC data, the 
+number of people with prescription drug coverage through private individual health insurance hovered 
+between 9 and 11 million from 2014 to 2020. Figure 1 shows the numbers of individuals with group 
+coverage, Marketplace individual (non-group) coverage, and off-Marketplace individual (non-group) 
+coverage, and the shares of each category with prescription drug coverage from 2014-2020. 
+r For more information on changes in health insurance coverage in the COVID-19 pandemic, see the ASPE report 
+“Tracking Health Insurance Coverage in 2020 -21”, available at https://aspe.hhs.gov/reports/tracking-he alth-
+i
+nsurance -coverage. 
+November 2024 REPORT TO CONGRESS 9 
+===PAGE 10===
+    
+ 
+ 
+    
+   
+          
+      
+     
+    
+      
+     
+   
+Figure 1.  Number and Percentage of Group  Market  and  Individual  (Non-Group)  Market  Health  
+Insurance  Plan Members Reporting Having Prescription Drug Coverage Under their Health  Plan,  2014– 
+2020  
+Source: RAND analysis of the 2014- 2020 MEPS-HC. 
+Note:  On-Marketplace coverage includes all individual (non-g roup) plans purchased through the Marketplaces. Off-
+Marketplace coverage includes all  individual  (non-group)  plans purchased outside the Marketplaces.  In the ME PS-
+HC,  Marketplace coverage includes coverage purchased in all types of  Marketplaces: federally-facilitated, state-
+based, and state-based using the federal platform.   
+Trends in Prescription Drug Benefit Design 
+RAND also analyzed two data sources, the KFF Employer Health Benefits Survey and the Centers for 
+Medicare & Medicaid Services (CMS) Center for Consumer Information and Insurance Oversight (CCIIO) 
+Health Insurance Exchange Public Use Files , to examine trends in prescription drug coverage design in 
+employer-sponsored group health plans and individual (non-group) plans purchased through the 
+Federally-facilitated Marketplaces (FFM) and the State-based Marketplaces using the Federal Platform 
+(SBM-FP). Trends in plan design measured across plans indicate out-of-pocket costs may have risen 
+between 2014 and 2023. Average deductibles and average out-of-pocket maximums in both employer-
+November 2024 REPORT TO CONGRESS 10 
+===PAGE 11===
+    
+          
+      
+    
+ 
+       
+         
+      
+ 
+ 
+  
+    
+ 
+    
+  
+   
+sponsored plans and individual (non-group) plans purchased in the FFMs and SBM -FPs increased.s As 
+Figure 2 shows, formularies in employer-sponsored plans increased in complexity with a rise in the share 
+of plans with 4 or more tiers, particularly from 2014 to 2018. t, u 
+s These numbers were not adjusted for inflation. 
+t A formulary is a list of prescription drugs covered bya health plan. It may be split into subgroups called “tiers” with 
+each tier having a different copayment or coinsurance. 
+u As discussed in the table note, starting in 2017, formulary tiers exclusively for specialty drugs are not being counted 
+in Figure 2. The actual increase in formulary complexity may therefore have been higher. 
+Figure 2. Trends in  the Distribution of Covered Workers In  Employer-Sponsored  Health  Plans  Facing  
+Different Numbers of Formulary Tiers, 2014-2023  
+0% 
+10% 
+20% 
+30% 
+40% 
+50% 
+60% 
+70% 
+80% 
+90% 
+100% 
+2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 
+Percent of Covered Workers 
+4 + Ti e rs 3 Tiers 2 Tiers Payment same regardless No cost sharing after deductible Other 
+Source: RAND analysis of 2014 -2023 KFF Employer Health Benefit s Survey data. 
+Note: Categories are mutually exclusive.   The survey only asks about each employer’s largest plan so this  cha rt  
+represents the share of covered workers that has a plan with that number of tiers available to them. The num ber of  
+formulary tiers is inclusive of any specialty -only tiers.   Starting in  2017, the survey started asking employers  
+separately about formulary tiers that do not exclusively contain specialty tiers and those that do.   Prior survey years  
+collected data on the number of formulary tiers but did not differentiate between the types of tiers in the same way,  
+so the 2014 -2016 data may not be directly comparable to the 2017 -2024 data.    
+Cost-sharing  and  utilization management  in  prescription drug coverage  
+Private health insurance plans and issuers use multiple strategies to encourage effective use of medical 
+services and prescription drugs by members, including setting cost -sharing for prescription drugs and 
+managing drug utilization: 
+November 2024 REPORT TO CONGRESS 11 
+===PAGE 12===
+    
+         
+           
+           
+ 
+       
+  
+ 
+ 
+    
+     
+     
+     
+    
+      
+     
+   
+   
+    
+        
+  
+ 
+     
+        
+     
+      
+        
+           
+       
+    
+         
+         
+       
+      
+ 
+   
+   
+     
+   
+   
+• They can require payment of either copayments or coinsurance by members. Copayments are 
+fi
+xed amounts that do not vary with the total price of the prescription drug while coinsurance is 
+expressed as a percentage of the drug’s total price. Plans can also vary the levels of copayments 
+and coinsurance. 
+• They can group prescription drugs into tiers within their formularies, with different copayments 
+a
+nd/or coinsurance by tier. 
+• They can use utilization management rules such as step therapy, prior authorization, and quantity 
+lim
+its. 
+• They can refuse to cover certain drugs at all, subject to certain constraints. v 
+v Private health insurance coverage subject to the ACA’s EHB requirements must cover at least the greater of one 
+drug in each U.S. Pharmacopeia (USP) category and class; or the same number of prescription drugs in ea ch U SP 
+category and class as the applicable EHB -benchmark plan. 45 CFR 156.122(a)(1) . 
+Recent evidence indicates that private health insurance plan members may be increasingly exposed to 
+higher cost-sharing. As detailed in the RAND Background Report , RAND finds in its analysis of the KFF 
+Employer Health Benefits Survey that employer-sponsored group health plans are increasingly shifting 
+toward cost-sharing structures that make patients more sensi tive to list prices.  Since higher formulary 
+tiers are more likely to require coinsurance rather than copayments as cost-sharing from the patient, this 
+trend suggests that patients are more likely to be exposed to the risk of either paying large amounts in 
+coinsurance or going without the drug. 
+In an analysis of claims data for private health insurance plans, Mallatt et al. (2024) find that out-of-pocket 
+pr
+ices of retail prescription drugs rose by 5.8 percent annually between 2007 and 2020, a rate higher than 
+the growth rate that they calculate for retail prescription drug prices after rebates. 4 They find that much 
+of the growth is driven by increases in deductible and coinsurance payments, which are largely set on drug 
+list prices. 
+Understanding Prescription Drug Pricing and the Market for Prescription Drugs 
+The national market for retail prescription pharmaceuticals is complex. Retail pharmaceuticals move from 
+the manufacturer to the distributor to the pharmacy, and finally to the patient, with payments from one 
+party to the other along each step of the way. Health insurance coverage plays a substantial and steadily 
+increasing role in financing pharmaceutical purchases. E ither public or private health insurance covered 
+16 percent of national prescription drug spending in 1970, 68 percent in 2000 and 85 percent in 2022 
+according to the NHEA. w Private health insurance issuers and employers, and the PBMs they hire to 
+manage pharmaceutical benefits, are therefore additional stakeholders in the system. 
+w The NHEA may be found at https://www.cms.gov/data-research/statistics-trends-and-reports/national-h ealth-
+e
+xpenditure-data/historical. The source of funds for retail prescription drug expenditures is presented in Table 16. 
+Figure 3, taken from the RAND Background Report, is a visual representation of the financial transactions 
+that typically occur when a patient receives a brand-name prescription drug covered by insurance. T he 
+green arrows show the primary financing route: the patient and insurer, plan sponsor or PBM together 
+pay the pharmacy for the drug; the pharmacy in turn pays the distributor , who then pays the 
+November 2024 REPORT TO CONGRESS 12 
+===PAGE 13===
+    
+       
+         
+          
+  
+   
+ 
+         
+   
+        
+       
+          
+     
+  
+      
+        
+     
+       
+      
+        
+   
+    
+  
+manufacturer. The blue arrows show an accompanying set of financial transactions that reduce the 
+amounts paid by the PBM, plan sponsor, or insurer. Months after the transaction, the manufacturer may 
+pay the PBM a rebate in return for favorable placement on the PBM’s formulary. Part or all of this rebate 
+may be passed on to the insurer or plan sponsor. 
+Figure 3. Illustrative Flows of Product and Payments for Retail Pharmacy-dispense d Brand-name Drugs 
+The amounts shown in Figure 3 are purely illustrative; relatively little is known by the public about the 
+typical percentages actually retained by each commercial entity in these transactions. Nor is very much 
+known about the negotiation processes that produce the rebate amounts or the provisions of the 
+contracts between PBMs and private health insurers or sponsors. In addition, for the sake of clarity, Fig ure 
+3 does not show all flows of payments among entities. For example, there can be payments from the 
+manufacturer back to wholesalers, or payments from manufacturers to pharmacies, on behalf of patients, 
+in the form of coupons. 
+Recent Increases in Drug Spending Mostly Driven by Increases in Drug Prices 
+In a review of research literature, RAND reports that multiple studies have found that higher prices have 
+been a significant factor in recent increases in drug spending. IQVIA found, for example, that prescription 
+volume (as measured by defined daily doses) grew 1.9 percent from 2018 to 2022 while prescription drug 
+spending at net prices grew 5.6 percent over the same time period, implying that much of the growth was 
+driven by increases in spending per dose. 
+5 Other sources have found evidence that one significant factor 
+in higher drug spending is increased utilization of highly-priced pharmaceuticals such as specialty drugs, 
+drugs administered in providers’ offices, and biologics.  One paper found, for example, that gross spending 
+on retail specialty drugs increased 14.5 percent per year between 2010 and 2017. 6 
+November 2024 REPORT TO CONGRESS 13 
+===PAGE 14===
+    
+       
+   
+  
+      
+  
+     
+       
+    
+      
+       
+       
+     
+    
+       
+     
+         
+           
+    
+       
+         
+          
+   
+     
+       
+     
+        
+     
+    
+          
+        
+          
+    
+ 
+     
+         
+        
+    
+     
+Rising Prescription Drug Prices Affect Adherence and Health Through Higher Cost-Sharing 
+It is well- established that higher out -of-pocket costs worsen patient adherence to prescription drug 
+treatment. 7,8 Patients report in surveys that costs impact their decisions to take prescription drugs and 
+issues with prescription drug affordability seem to be common even among insured patients.  An 
+estimated 6.6 percent of adults aged 18-64 who took prescription medication in the past year and who 
+had private prescription drug coverage did not take medicine as prescribed due to cost in 2021 according 
+to the National Health Interview Survey. 9 Research reviewed in a recent ASPE report found that 18.8 
+percent of privately insured patients using insulin rationed their insulin because of the cost. 10 
+These affordability issues can have serious consequences as adherence to prescription drug treatment 
+has been shown to have significant effects on the health of patients with chronic conditions.  The effects 
+of poor adherence on patient outcomes have been well -studied for diabetes, for example.  Poor 
+adherence to medication by diabetes patients has been associated with increased morbidity and 
+mortality, increased utilization of medical services, and higher total medical spending. 11,12 
+Rising drug list prices combined with the increasing levels of rebates can have detrimental effects on 
+prescription drug adherence and health for private health insurance plan members through higher cost-
+sharing. Higher list prices likely induce higher cost-sharing in the short term since coinsurance is typically 
+calculated as a percent of the drug’s list price, not what the plan pays for the drug net of rebates . 
+However, plans may adjust their cost-sharing structures to address the tradeoff between more generous 
+coverage, which provides more risk protection, and higher costs that translate into higher premiums 
+instead of higher cost-sharing. On the other hand, as discussed above, plans appear to be choosing cost-
+sharing structures with more formulary tiers and higher coinsurance percentages in recent years . 
+Furthermore, limited evidence has been put forth that higher rebates induce higher list prices. 13,14 
+When considering the tradeoff between raising premiums and raising cost-sharing when faced with rising 
+drug prices, plans may face incentives to raise out-of-pocket costs rather than premiums. Some research 
+has found that consumers consider premiums more than expected out-of-pocket costs when choosing 
+plans, so plans might prioritize keeping premiums down to attract enrollees. 15,16 Other studies suggest 
+that some plans deliberately choose higher cost-sharing over raising premiums to discourage selection of 
+the plan by consumers with high-cost drug needs. 17,18 
+The magnitudes of the effects of higher pricing on cost-sharing and on premiums are unclear at this point, 
+which makes it hard to assess potential policy solutions. Furthermore, r esearchers, analys t s, and 
+policymakers have raised questions about issues such as the business practices of PBMs and the 
+downstream effects on patients of the highlevel of concentration in the PBM market. 19,20, 21 
+As outlined in the RAND Background Report, none of the currently available data sources used for studying 
+the private health insurance market give a complete and detailed perspective on drug net prices or 
+rebates in that market. Therefore, little is known about the post-rebate prices being paid by plans even 
+though those prices are what go into the plans’ true costs.  Commercial data sources such as IQVIA’s 
+National Sales Perspective data give gross prices received by the manufacturer while sources such as 
+medical claims data or the MEPS-HC give the prices paid at the point of sale (including pharmacy costs) 
+November 2024 REPORT TO CONGRESS 14 
+===PAGE 15===
+    
+        
+ 
+      
+  
+     
+          
+   
+          
+         
+      
+     
+   
+     
+      
+  
+  
+ 
+  
+ 
+    
+  
+     
+   
+      
+        
+         
+    
+    
+      
+          
+  
+  
+   
+      
+     
+    
+with no information on rebates, which are paid months later.  The NHEA measure s prescription drug 
+spending with payer rebates netted out at an aggregated level. 
+II.  The Need for RxDC   
+The pricing of retail prescription drugs in private health insurance has the potential to significantly affect 
+access to and spending on drugs for millions of Americans. The complexities of the pharmaceutical pricing 
+system and the gaps in our understanding of the impact of the system on prescription drug spending and 
+cost-sharing, health insurance premiums in the private market, and member welfare and health have led 
+to a need for data on the rebates being paid by private health insurance plans and issuers. The goal of 
+RxDC is to contribute to greater transparency in the pricing of prescription drugs by filling in this gap. T he 
+Secretary of HHS specifically cited RxDC as one of the administrative actions being undertaken by CMS to 
+improve transparency in the prescription drug industry and increase our understanding of the impact of 
+prescription drug rebates on premiums and out-of-pocket costs. 
+22 
+RxDC Can Help Answer Basic Questions 
+RxDC has the potential to answer a number of important yet basic questions relating to prescription drug 
+benefits in private health insurance coverage and to prescription drug pricing. These include: 
+• What are the trends in gross and net pharmaceutical spending by private health insurance 
+coverage market segment and therapeutic class? 
+• What are the trends in health insurance premiums and in employer/employee 
+contributions? 
+• How do rebates in the private health insurance coverage market compare with rebates in 
+Medicare and Medicaid? 
+• How do different categories of spending such as prescription drugs, outpatient services, and 
+inpatient services contribute to premiums? 
+Some of these questions may be answered with the RxDC system in place for the two first years, as 
+discussed in the next section. Other questions are harder to address and will require both further 
+improvements to RxDC and additional data analysis. The last question in the list above will be particularly 
+challenging to answer , even with more detailed data than is currently available , as p rivate health 
+insurance plans and issuers consider many factors simultaneously when setting premiums. Moreover, 
+other factors, such as the market environment for plans, will not be observed in the data but might affect 
+the level of premiums. Breaking out the separate contributions of different categories will require both 
+great expertise and careful analysis of complete and detailed data. 
+Introduction to RxDC 
+Under Division BB, Title II, Section 204 of the CAA, private health insurance plans and issuers must annually 
+submit data to the Departments on premiums, enrollment, nondrug medical spending, spending on 
+prescription drugs, and prescription drug rebates . Under 5 U.S.C. 8910, OPM mus t make a continuing 
+study of the operation and administration of the FEHB Program, including surveys and reports on FEHB 
+November 2024 REPORT TO CONGRESS 15 
+===PAGE 16===
+    
+       
+       
+       
+   
+       
+          
+      
+  
+   
+  
+  
+       
+ 
+   
+    
+   
+      
+        
+       
+   
+     
+    
+    
+     
+         
+   
+ 
+ 
+   
+    
+ 
+ 
+  
+  
+plans and on the experience of these plans. Pursuant to its authority under section 8910, OPM has joined 
+the Departments to promote transparency in FEHB prescription drug and health care spending by 
+requiring FEHB carriers to report information to the Departments, consistent with Section 204 and 
+implementing regulations issued by the Departments and OPM. 
+The Departments and OPM issued regulations and designed data templates for RxDC. x Pursuant to these 
+regulations, TPAs and PBMs may submit data on behalf of private health insurance plans and issuers. In 
+this report, we refer to the private health insurance plans and issuers , TPAs, PB Ms, and other 
+organizations who submit data as part of RxDC as “submitting entities.” 
+x The regulations relating to RxDC may be found at https://www.federalregister.gov/documents/2021/11/23/2021-
+25
+183/prescription -drug-and-health-care-spending. 
+Section 204 directed the Secretary of HHS as follows: 
+[T]he Secretary, acting through the Assistant Secretary of Planning and Evaluation and in 
+co
+ordination with the Inspector General of the Department of Health and Human Services, shall 
+make available on the internet website of the Department of Health and Human Services a report 
+on prescription drug reimbursements under group health plans and group and individual health 
+insurance coverage, prescription drug pricing trends, and the role of prescription drug costs in 
+contributing to premium increases or decreases under such plans or coverage, aggregated in such 
+a way as no drug or plan specific information will be made public. 
+Similar statutory mandates apply to DOL and UST with regard to the private health insurance coverage 
+under
+ their regulatory authority. The Departments and OPMagreed toissue one report covering all plans 
+subject to the Section 204 reporting requirements as well as FEHB plans. 
+III.   Brief  Description of  the 2020 and 2021 RxDC  and  Initial Findings   
+Brief Description of RxDC 
+In RxDC, submitting entities are required to submit a variety of information about prescription drug 
+spending and rebates, medical services spending, and premiums. Each submission for the years 2020 and 
+2021 consisted of between one and eight data tables labelled D1 through D8 along with documentation 
+of plan characteristics and narrative responses to certain questions. The submitted data was aggregated 
+by each submitting entity to the market segment, state, and year level. Table 1 summarizes the contents 
+of the eight templates. 
+Table 1. RxDC Data Template Contents 
+Data 
+Template 
+Short Description Content 
+D1 Premium and life years Average premiums, total premiums, member 
+life-years 
+November 2024 REPORT TO CONGRESS 16 
+===PAGE 17===
+    
+ 
+   
+    
+ 
+  
+ 
+  
+  
+  
+ 
+ 
+   
+ 
+  
+ 
+ 
+  
+ 
+  
+ 
+ 
+     
+     
+  
+ 
+    
+ 
+ 
+ 
+     
+        
+     
+      
+   
+   
+      
+         
+       
+        
+         
+     
+ 
+       
+    
+           
+ 
+    
+     
+    
+  
+  
+Data 
+Template 
+Short Description Content 
+D2 Medical spending other than retail 
+prescription drugs 
+Spending and cost-sharing by medical 
+spending categories 
+D3 Top 50 most frequently dispensed 
+brands of retail prescription drugs 
+Net spending, number of paid claims, number 
+of utilizing members, dosage units, cost-
+sharing for 50 drugs 
+D4 Top 50 most costly retail prescription 
+drugs 
+Net spending, number of paid claims, number 
+of utilizing members, dosage units, cost-
+sharing for 50 drugs 
+D5 Top 50 retail prescription drugs with 
+largest spending increases 
+Net spending, number of paid claims, number 
+of utilizing members, dosage units, cost -
+sharing for 50 drugs 
+D6 Total retail prescription drug spending Net spending, rebates totaled across all drugs 
+D7 Rebates by therapeutic class of drug Net spending, number of paid claims, number 
+of utilizing members, dosage units, cost-
+sharing, rebates for all therapeutic classes 
+D8 Rebates for the top 25 drugs Net spending, number of paid claims, number 
+of utilizing members, dosage units, cost-
+sharing, rebates for 25 drugs 
+Limitations of the Initial Two Years of RxDC 
+As a new data collection effort, the first two years of submission of RxDC data contained valuable 
+information but, at the same time, had limitations, which are identified in the RAND Background Report. 
+Two of the most significant limitations and their consequences can be described as follows: 
+• Templates D1 and D2, which contained nondrug data, were often aggregated to the plan or issuer 
+l
+evel and typically submitted by the private health insurance plan or issuer. Templates D3 through 
+D8, which contained drug data, were sometimes submitted by the plan or issuer’s PBM with the 
+data aggregated with those of other plans that the PBM served. RAND found that in many cases, 
+it was not possible to directly link data from the same underlying health plan across the eight 
+required templates for the purposes of conducting the analyses of the first two years of data 
+collection described here and in its report. 
+y Because of this limitation, RAND was not able to use 
+the RxDC data to address the role of prescription drug costs in contributing to changes in premium 
+levels. 
+y RAND assessed the success of linkages using the unit ofRxDC reporting level combination, whichis a combination 
+of submitting entity, market segment, state, and year. Less than half ofreporting level combinations submittingthe 
+first template (D1), with data on premiums and life years, can be linked to reporting level combinations submitting 
+the seventh template (D7), with data on rebates. Overall, RAND reports that only 10.6 percent of reporting level 
+combinations consisted of a full set of ei ght templates that could be linked together in its analysis. 
+• While the instructions indicate that reported spending must be spending by the plan or issuer,  it 
+a
+ppears in some cases that the reported spending aggregated at the PBM level in templates D3 
+through D8 was spending by the PBM that submitted the data. W hen PBMs retain a portion of 
+November 2024 REPORT TO CONGRESS 17 
+===PAGE 18===
+    
+     
+        
+    
+       
+       
+     
+        
+        
+    
+   
+    
+   
+     
+ 
+   
+            
+        
+        
+         
+    
+      
+  
+     
+ 
+       
+ 
+      
+        
+     
+  
+      
+      
+          
+        
+ 
+  
+     
+ 
+negotiated rebates and do not pass them on to the plan sponsor or issuer, the amounts reported 
+via RxDC may include those amounts. This limits the ability to use the data to understand what 
+portion of rebates is retained by PBMs. 
+The Departments and OPM are working together to make the data more useful for analysis. For example, 
+t
+hey are looking for opportunities to improve the consistency of the aggregation of data and to facilitate 
+linkages among templates from related entities , for example between the enrollment, premium, and 
+nondrug spending data submitted by a plan or issuer or TPA and the drug spending data submitted by a 
+PBM on the plan or issuer’s behalf. Such changes could, for example, allow the Departments and OPM to 
+estimate in future Reports to Congress rebates and prescription drug spending per member per month by 
+market segment and by state, and to better compare the contributions of changes in drug spending and 
+changes in nondrug health spending to changes in premiums for employer -sponsored and individual 
+market health coverage. When considering these improvements to RxDC, the Departments will engage 
+with stakeholders and consider the tradeoffs with the data submission burden to submitting entities and 
+implementation costs to the government. 
+Illustrative Analyses of 2020 and 2021 RxDC Data 
+RAND conducted a set of “illustrative analyses” of the first two years of RxDC to show the potential 
+usefulness of the data. Due to challenges related to linking templates containing data from the same 
+health insurance plan, RAND only conducted analyses on data from one template at a time. RAND warns 
+that the data for each template used for the analyses are not necessarily representative of the entities 
+who were required to submit data nor of the entities who actually submitted data. For this reason, datasets 
+used in the analyses can be thought of as convenience samples, although all analyses used the full universe 
+of applicable submitted data after deduplication. 
+The following are the contents and results of RAND’s analyses, briefly summarized. The full results may 
+be
+ found in the RAND Background Report. 
+Ratios of net to gross prescription drug spending overall, by market segment, and by geography 
+RxDC requires the submission in template D6 of the total amount spent on prescription drugs by health 
+insurance plans and members net of rebates (“net spending”) and, separately, of the amount received by 
+plans in the form of rebates. RAND calculates gross spending as the sum of net spending and rebates a nd 
+then calculates the ratio of net to gross spending. This ratio can be interpreted as an approximation to 
+the ratio of net to gross prices (or one minus the rebate discount across all drugs). 
+RAND found the ratio of net spending to gross spending across all market segments to be 0.80 in 2020 
+a
+nd 0.78 in 2021. Interpreting these figures as price ratios would imply average discounts of 20 percent 
+in 2020 and 22 percent in 2021.  The ratios are slightly higher than estimates from other sources , but 
+those other sources used different methods or were either based on or include the non-private market.z 
+z The 2024 Medicare Trustees Report analyzed the Medicare market and found that direct and indirect remunera t ion 
+(which includes rebates and fees) were 31.3% of Part D expenditures in calendar year 2022(Table IV.B8), implying a 
+November 2024 REPORT TO CONGRESS 18 
+===PAGE 19===
+    
+  
+ 
+       
+      
+ 
+ 
+As shown in Table 2, RAND found only slight variations in ratios across market segments  with higher ratios  
+in self-insured  small employer  plans,  individual plans,  and student plans, and the lowest ratio in self-
+insured large employer plans.   While RAND found a larger degree of variation across states, differences in 
+the  shares  of plans in each market  segment,  patient case mix, and practice patterns  likely  explains some  
+of  this variation.  Appendix  A  lists ratios of net to gross spending by state.   
+net-to-gross spending ratio of 0.71. IQVIA (2022) finds that the net-to-gross spending ratio for all medicines is 0.76 
+but their estimate is approximate and based on proprietary modelling. Mulcahy et al. (2021) finds a net-to-gross 
+spending ratio of 0.67 but their estimates are based on net spending from the manufacturer perspective, not on 
+what final payers pay. 
+November 2024 REPORT TO CONGRESS 19 
+===PAGE 20===
+    
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+ 
+ 
+ 
+     
+ 
+     
+ 
+     
+ 
+ 
+ 
+     
+ 
+      
+      
+ 
+ 
+ 
+ 
+     
+ 
+  
+ 
+     
+ 
+Table 2. Ratio of Net to Gross Spending in the 2020 and 2021 RxDC Data, Overall and by Market 
+Segment 
+2020 2021 
+Market 
+segment 
+RxDC  
+Reporting  
+Level  
+Combinations  
+(count in  
+millions)  
+Gross Spending 
+($ millions) 
+Net to Gross 
+Ratio 
+Gross Spending 
+($ millions) 
+Net to Gross 
+Ratio 
+All market 
+segments 17,493 190,006 0.795 199,083 0.779 
+Self-insured 
+large employer 
+plans 
+7,213 101,140 0.782 106,993 0.767 
+Fully-insured 
+small group 
+plans 
+4,796 17,167 0.799 16,851 0.779 
+Fully-insured 
+large group 
+plans 
+3,075 39,675 0.797 38,724 0.776 
+Self-insured 
+small employer 
+plans 
+1,761 3,884 0.821 4,139 0.808 
+Individual 
+market 425 21,740 0.839 25,434 0.825 
+Student market 148 650 0.833 643 0.803 
+Federal 
+Employees 
+Health Benefits 
+plans 
+75 5,749 0.798 6,300 0.792 
+Source: RAND analysis of RxDC data from the total prescription drug volume and spending template (D6) 
+(April 26, 2023, extract). 
+Note: An RxDC reporting level combination is a combination of submitting entity, market segment, state,  
+and year.  Net total spending on prescription drugs is reported as total spending in the total prescription 
+drug volume  and spending table (D6).  Gross total spending is calculated as net spending plus rebates  
+(current  year total rebates/fees/other remuneration).   Further  details on how  the  dataset was constructed 
+and the calculation of spending ratios  may be found in the accompanying RAND Background Report.  
+Ratios of net to gross prescription drug spending by therapeutic class 
+RAND calculated the same ratios for five selected therapeutic classes of drugs: 
+November 2024 REPORT TO CONGRESS 20 
+===PAGE 21===
+    
+    
+  
+    
+     
+     
+      
+          
+         
+        
+        
+       
+        
+      
+     
+      
+          
+        
+          
+          
+   
+    
+       
+     
+       
+     
+  
+      
+         
+     
+     
+   
+        
+• Factor Xa inhibitors (oral anticoagulants) 
+• Insulin analogs 
+• Tumor necrosis factor blockers (biologic anti-inflammatory agents) 
+• Glucagon-like peptide (GLP)-1 receptor antagonists (antihyperglycemics) 
+• Kinase inhibitors (biologic oncology drugs) 
+These classes were selected to cover a range of net-to-gross ratios. Previous work indicated that the first 
+four classes in the list had ratios of spending at net prices to spending at gross prices significantly below 
+1, suggesting a high level of rebates, and that the fifth class, kinase inhibitors, had a ratio of close to 1, 
+suggesting little rebating. 23 The RAND analysis of RxDC data found similar ratios with insulin analogs,  for 
+example, having a ratio of 0.50 and kinase inhibitors a ratio of 0.98. RAND suggests that the difference in 
+ratios results from the three insulin analogs in their class being close therapeutic substitutes (drugs used 
+on similar conditions with similar effects) with one another while the drugs within the kinase inhibitor 
+class are notsubstitutes. The existence of therapeutic substitutesincreases the bargaining power of PBMs 
+when negotiating prices with manufacturers, leading to the manufacturers paying larger rebates. 
+Ratios of patient cost-sharing to net and gross spending by therapeutic class 
+RAND calculated ratios of patient cost -sharing to both net and gross spending for the same five 
+therapeutic classes and separately for 2020 and 2021. The ratio of cost-sharing to spending at net prices 
+rose slightly for four of the five classes, even as the ratio of overall net to gross spending fell, suggesting 
+that the growth in rebates, which is leading to relative decreases in net prices, may not be resulting in 
+lower cost-sharing for patients in the submitted data. 
+Implied gross and net prices by therapeutic class 
+RAND calculated the implied average gross and net prices per claim for the same five therapeutic classes 
+in both 2020 and 2021 based on submitted spending and volume information. Both net and gross prices 
+generally rose from 2020 to 2021 but the price increase was above general inflation for only one of the 
+five classes of drugs (factor Xa inhibitors). 
+Comparison of ranked drug lists 
+The submitting entities submitted ranked lists of the 50 drugs with the most net spending and the 50 
+mostly frequently dispensed brand-name drugs. Under the disclosure restrictions in Section 204, 
+prohibiting HHS from disclosing any confidential or trade secret information submitted to it under RxDC, 
+we cannot provide information on specific drugs in this report but can analyze general patterns in the 
+rankings. 
+Whi
+ch drugs  appeared on the ranked lists  (top 50  most frequently  dispense prescription drugs, top 50  
+most costly retail prescription drugs, and top 50  prescription drugs with the  largest spending increases)  
+differed substantially  across plans,  but  RAND found evidence  of  strong correlations across lists .   Drugs  
+that had lower  average ranks on the  lists they appeared on also appeared  on a higher  percentage of  lists.   
+Fo
+r example, in the 2020 data, drugs that fall, on average, in the top ten drugs by spending across plans 
+November 2024 REPORT TO CONGRESS 21 
+===PAGE 22===
+    
+       
+         
+    
+          
+     
+    
+    
+      
+        
+      
+      
+          
+      
+   
+    
+      
+ 
+         
+     
+    
+       
+     
+      
+          
+  
+      
+        
+           
+  
+     
+        
+     
+  
+      
+ 
+    
+in the lists that they appear on are also all listed on at least 20 percent of all lists. By contrast, most of the 
+drugs whose spending ranks them, on average, in the 30 th position or above appear on less than 20 
+percent of all lists. aa 
+aa See Figure 5.7 , Panel A in the RAND Background Report . 
+A few drugs appeared on a small percentage of the lists of drugs with the greatest amounts of net 
+spending while being highly ranked on the lists they did appear on; RAND suggested their absence on 
+other lists may have reflected the successful negotiation of rebates for the plans submitting data. 
+IV.  Conclusion  
+An estimated 143 million Americans had prescription drug insurance coverage through health insurance 
+plans, either through their or a family member’s employment, and 11 million had it through health 
+insurance coverage purchased in the individual market in 2020 according to the MEPS-HC. As discussed 
+above in Section I, recent evidence indicates that members of private health insurance plans are 
+increasingly exposed to higher out-of-pocket costs in recent years. To better understand trends in private 
+health insurance coverage, and the role of prescription drug spending, Section 204 of Title II of Division 
+BB of the CAA established a new data collection from private health insurance plans and issuers including 
+information about enrollment, premiums, drug, and other medical spending. 
+This report and the RAND Background Report have presented key findings on these issues from exis t ing 
+data
+ and literature, and also presented initial findings fromRAND’s analysis ofthe first two years ofRxDC. 
+The new data indicate that: 
+• The ratio of net spending to gross spending in private health insurance coverage averaged 0.80 in 
+2020 and 
+0.78 in 2021, with some variation by market segment and state. If we interpret these 
+ratios as price ratios, this evidence suggests that the net-to-gross price ratios in the private health 
+insurance coverage market are higher than the equivalent ratios seen in Medicare and Medicaid. 
+Higher net-to-gross price ratios in the private health insurance coverage market suggest th at 
+rebates and other remuneration are lower in that market than in Medicare and Medicaid. 
+• Net-to-gross spending ratios varied by therapeutic class , in line with the results of previous 
+resea
+rch on rebates from the manufacturer perspective by therapeutic class. 
+• Between 2020 and 2021, ratios of cost-sharing to spending at net prices rose slightly for four of 
+five t
+herapeutic classes chosen for this analysis, even as the ratio of overall net to gross spending 
+fell. RAND suggest s that growth in rebates is leading to relative decreases in net prices but that 
+this decrease may not be reflected in lower cost-sharing for patients. 
+Private health insurance coverage is the largest source of prescription drug coverage for Americans. As 
+summ
+arized above, research has found that higher gross prices for certain specialty drugs appear to have 
+been a significant factor in recent increases in drug spending , spending at net prices was growing at a 
+slower rate than spending at gross prices, and spending at both kinds of prices was growing faster than 
+drug volume alone. Understanding trends in drug prices paid by private health insurance plans and issuers 
+November 2024 REP ORT TO CONGRESS 22 
+===PAGE 23===
+    
+       
+         
+        
+       
+     
+  
+  
+is, therefore, becoming increasingly important. Previously, no regular data source existed, however, that 
+tracks drug prices and rebates in the private health insurance coverage market. The new results from 
+RxDC are a valuable first contribution to understanding prescription drug rebates in the private health 
+insurance market . Going forward, data quality should improve as submitting entities become more 
+accustomed to gathering and submitting their data and as the Departments consider if any changes should 
+be made to the RxDC requirements. These changes may allow for deeper analyses of the relationship s 
+between drug spending and premiums. 
+November 2024 REPORT TO CONGRESS 23 
+===PAGE 24===
+    
+    
+ 
+ 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+Appendix A. Ratio of Net to Gross Spending by Geography in the 2020 and 2021 
+RxDC Data 
+Geography 
+RxDC 
+Reporting  
+Level  
+Combinations  
+(count in 
+millions)  
+Gross Spending 
+2020 ($ millions)  
+Net to  
+Gross 
+Ratio 2020  
+Gross Spending 
+2021 ($millions)  
+Net to  
+Gross 
+Ratio  
+2021  
+All geographies 17,493 190,006 0.795 199,083  0.779 
+Alabama 110 2,742 0.804 3,098  0.777 
+A
+laska 51 303 0.812 327  
+0.803 
+A
+rizona 182 2,670 0.786 2,261  
+0.762 
+A
+rkansas 105 1,627 0.810 1,840  
+0.798 
+C
+alifornia 551 15,362 0.830 14,141  
+0.809 
+C
+olorado 169 2,393 0.838 2,280  
+0.822 
+C
+onnecticut 316 3,067 0.787 3,453  
+0.754 
+D
+elaware 217 962 0.793 1,017  
+0.777 
+District of 
+Columbia 87 4,383 0.780 4,643  0.765 
+F
+lorida 1,456 10,294 0.791 11,558  
+0.772 
+G
+eorgia 374 6,384 0.788 6,531  
+0.775 
+G
+uam 10 64 0.819 69  
+0.797 
+H
+awaii 42 1,025 0.813 1,066  
+0.803 
+I
+daho 82 864 0.929 766  
+0.906 
+I
+llinois 685 8,718 0.769 10,122  
+0.756 
+I
+ndiana 640 2,076 0.785 2,024  
+0.768 
+Io
+wa 157 1,285 0.805 1,415  
+0.794 
+K
+ansas 141 1,202 0.756 1,304  
+0.746 
+K
+entucky 217 2,034 0.808 2,479  
+0.783 
+Lo
+uisiana 201 2,647 0.821 2,876  
+0.787 
+Ma
+ine 85 775 0.813 532  
+0.799 
+M
+aryland 252 5,198 0.792 5,681  
+0.779 
+M
+assachusetts 228 4,493 0.794 5,203  
+0.782 
+M
+ichigan 453 3,990 0.787 3,921  
+0.791 
+M
+innesota 129 5,986 0.796 6,089  0.
+774 
+M
+ississippi 107 662 0.790 762  
+0.750 
+M
+issouri 233 4,055 0.790 4,237  
+0.780 
+Montana 99 263 0.804 282  
+0.790 
+N
+ebraska 86 962 0.759 995  
+0.743 
+N
+evada 116 1,196 0.780 1,105  
+0.750 
+Ne
+w Hampshire 60 814 0.793 685  
+0.780 
+N
+ew Jersey 321 5,692 0.763 6,325  
+0.742 
+N
+ew Mexico 68 630 0.769 668  
+0.763 
+Ne
+w York 503 13,328 0.783 13,790  
+0.765 
+N
+orth Carolina 247 7,155 0.765 7,478  
+0.755 
+North Dakota 29 528 0.765 574  0.763 
+November 2024 REPORT TO CONGRESS 24 
+===PAGE 25===
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+      
+      
+    
+ 
+ 
+ 
+  
+RxDC 
+Reporting 
+Level Net to 
+Combinations Net to Gross 
+Geography 
+(count in 
+millions) 
+Gross Spending 
+2020 ($ millions) 
+Gross 
+Ratio 2020 
+Gross Spending 
+2021 ($millions) 
+Ratio 
+2021 
+Ohio 1,562 7,583 0.785 6,729 0.766 
+Oklahoma 443 1,688 0.771 1,798 0.758 
+Oregon 121 2,002 0.842 2,084 0.825 
+Pennsylvania 455 7,398 0.766 7,857 0.754 
+Puerto Rico 2,085 816 0.887 1,582 0.922 
+Rhode Island 85 924 0.751 982 0.747 
+South Carolina 123 2,196 0.784 2,455 0.753 
+South Dakota 1,384 608 0.791 697 0.791 
+Tennessee 212 5,590 0.809 6,125 0.785 
+Texas 719 15,318 0.766 16,909 0.754 
+Utah 114 3,817 0.937 4,064 0.933 
+Vermont 29 243 0.812 239 0.781 
+Virginia 476 6,397 0.805 5,328 0.788 
+Washington 350 5,157 0.841 5,877 0.827 
+West Virginia 92 813 0.732 1,032 0.767 
+Wisconsin 353 3,258 0.786 3,378 0.772 
+Wyoming 67 300 0.801 275 0.784 
+Source: RAND analysis of RxDC data from the total prescription drug volume and spending template (D6) (April 
+26, 2023, extract). 
+Note: Net total  spending on prescription drugs is reported as total spending in the total prescription drug 
+volume and spending table (D6).  Gross total spending is calculated as net  spending  plus  rebates  (current  year  
+total rebates/fees/other remuneration). The ratio of n et spending to gross spending is reported for RxDC  
+reporting level  combinations  for which data was submitted by a single reporting entity; and further restricted to  
+combinations reporting >$0 in gross total spending by the same entity in both reference yea rs. U.S. Virgin  
+Islands and Northern Mariana Islands omitted due to small sample size (N<10).  RAND warns that the data for  
+each  analys is are not necessarily representative of the entities who were required to submit data nor of the 
+entities who actually submitted data across all templates .  
+November 2024 REPORT TO CONGRESS 25 
+===PAGE 26===
+    
+ 
+    
+  
+    
+   
+ 
+    
+  
+  
+      
+  
+     
+  
+ 
+  
+  
+   
+  
+   
+  
+ 
+  
+  
+      
+  
+    
+  
+ 
+      
+    
+      
+ 
+   
+  
+  
+ 
+  
+      
+  
+    
+  
+    
+  
+  
+ 
+  
+ 
+Endnotes 
+1 Bosworth A, Sheingold S, Finegold K, Sayed BA, De Lew N, and Sommers BD. Changes in the List Prices of 
+Prescription Drugs. October 2023. Available at: https://aspe.hhs.gov/reports/changes-list-prices-prescription-drugs. 
+2 Consolidated Appropriations Act, 2021 (Pub. L. 116-260), Division BB, Title II, Section 204 added parallel provisions 
+at section 9825 of the Internal Revenue Code (the Code), section 725 of the Employee Retirement Income Security 
+Act (ERISA), and section 2799A-10 of the Public Health Service Act (PHS Act). 
+3 Mallatt J, Dunn A, and Fernando L. 2024. “Consumer Out-of-Pocket Drug Prices Grew Faster Than Prices Faced By 
+Insurers After Accounting For Rebates,” Health Affairs, Vol. 43, No. 9. 
+4 Ibid. 
+5 IQVIA, The Use of Medicines in the U.S. 2023. April 2023. Available at: 
+https://www.iqvia.com/-/media/iqvia/pdfs/institute-reports/the-use-of-medicines-in-the-us-2023/the-use-of-
+medicines-in-the-us-2023.pdf. 
+6 Hill SC, Miller GE and Ding Y. 2020. “Net Spending on Retail Specialty Drugs Grew Rapidly, Especially for Private 
+Insurance and Medicare Part D,” Health Affairs, Vol. 39, No. 11. 
+7 Heidari P, Cross W, and Crawford K. 2018. “Do out-of-pocket costs affect medication adherence in adults wit h 
+rheumatoid arthritis? A systematic review.” Seminar in Arthritis and Rheumatism, 48(1): 12-21. 
+8 Reynolds E, Burke J, Banerjee M, Kerber K, Skolarus L, Magliocco B, Esper G, and Callaghan B. 2020. “Association of 
+out-of-pocket costs on adherence to common neurologic medications.” Neurology 94(13): e1415-e1426. 
+9 Mykyta L and Cohen RA. Characteristics of Adults Aged 18-64 Who Did Not Take Medication as Prescribed to Reduce 
+Costs: United States, 2021. June 2023. Available at: https://www.cdc.gov/nchs/data/databriefs/db470.pdf. 
+10 Gaffney A, Himmelstein D U and Woolhandler S, “Prevalence and Correlates of Patient Rationing of Insulin in t he 
+United States: A National Survey.” Annals of internal medicine, 175(11), 1623–1626.  https://doi.org/10.7326/M22-
+2477 . Cited in Office of the Assistant Secretary for Planning and Evaluation, U.S. Department of Health and Hum an 
+Services. Report on the Affordability of Insulin. December 2022. Available at: https://aspe.hhs.gov/reports/insulin-
+affordability-rtc. 
+11 Polonsky W and Henry R. 2016.“Poor medication adherence in type 2 diabetes: Recognizing the scope of the 
+problem and its key contributors.” Patient Preferences and Adherence, 10, 1299-1307. 
+https://doi.org/10.2147%2FPPA.S106821. 
+12 Evans M, Engberg S, Faurby M, Fernandes J, Hudson P, and Polonsky, W. 2022. “Adherence to and persist ence 
+with antidiabetic medications and associations with clinical and economic outcomes in people with type 2 diabet es 
+mellitus: A systematic literature review.” Diabetes, Obesity & Metabolism, 24(3), 377–390. 
+https://doi.org/10.1111/dom.14603. 
+13 Sood N, Ribero R, Ryan M, and Van Nuys K, The Association Between Drug Rebates and List Prices, USC Sc haeffer 
+Center, 2020. 
+14 Yeung K, Dusetzina SB, and Basu A, “Association of Branded Prescription Drug Rebate Size and Patient Out-of-
+Pocket Costs in a Nationally Representative Sample, 2007-2018,” JAMA Network Open, Vol. 4, No. 6, 2021. 
+15 DeLeire T and Marks C. October 2015. Consumer Decisions Regarding Health Plan Choices, in the 2014 and 2015 
+Marketplaces. Available at: https://aspe.hhs.gov/reports/consumer-decisions-regarding-health-plan-choic es-2014-
+2015-marketplaces-0. 
+16 Abaluck J and Gruber J. 2011 “Choice Inconsistencies Among the Elderly: Evidence from Plan Choice in the 
+Medicare Part D Program,” American Economic Review, Vol. 101, No. 4. 
+17 Geruso M, Layton T, and Prinz D. 2019. “Screening in Contract Design: Evidence from  the ACA Health Insura nce 
+Exchanges.” American Economic Journal: Economic Policy, May. https://pubmed.ncbi.nlm.nih.gov/34012503/. 
+18 Carey, C. 2017. “Technological Change and Risk Adjustment: Benefit Design Incentives in Medicare Part D.” 
+American Economic Journal: Economic Policy, 9 (1): 38-73. 
+19 Seeley E and Kesselheim AS. Pharmacy Benefit Managers: Practices, Controversies, and What Lies Ahead. March 
+2019. Accessed at https://www.commonwealthfund.org/sites/default/files/2019-
+03/Seeley_pharmacy_benefit_managers_ib_v2.pdf. 
+November 2024 REPORT TO CONGRESS 26 
+===PAGE 27===
+    
+ 
+  
+   
+  
+ 
+  
+  
+      
+  
+        
+  
+20 Minority Staff of the U.S. Senate Committee on Finance. A Tangled Web: An Examination of the Drug Supply and 
+Payment Chains. June 2018. Available at https://www.scribd.com/document/382721468/A-Tangled-Web. 
+21 Garthwaite C and Scott Morton F. Perverse Market Incentives Encourage High Prescription Drug Prices. 
+November 2017. Available at https://www.promarket.org/2017/11/01/perverse-market-incentives-encourage-
+high-prescription-drug-prices/. 
+22 Office of the Assistant Secretary for Planning and Evaluation, U.S. Department of Health and Human Services. 
+Comprehensive Plan for Addressing High Drug Prices: A Report in Response to the Executive Order on Competit ion 
+in the American Economy . September 2021. Available at: https://aspe.hhs.gov/sites/default/files/2021-
+09/Drug_Pricing_Plan_9-9-2021.pdf. 
+23 Mulcahy A W, Schwam D, Rao P, RennaneS, and Shetty K. 2021.“Estimated Savings from International Reference 
+Pricing for Prescription Drugs,” JAMA, Vol. 326, No. 17. 
+November 2024 REPORT TO CONGRESS 27 
+===PAGE 28===
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+   
+ 
+ 
+This communication was printed, published, or produced and disseminated at U.S. taxpayer expense. 
+Links and references to information from non-governmental organizations are provided for informational 
+purposes and are not HHS endorsements, recommendations, or preferences for the non-governmental 
+organizations. 
+November 2024 REPORT TO CONGRESS 28 

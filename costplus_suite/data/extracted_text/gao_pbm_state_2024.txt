@@ -1,0 +1,1900 @@
+
+===PAGE 1===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PRESCRIPTION 
+DRUGS 
+Selected States' 
+Regulation of 
+Pharmacy Benefit 
+Managers 
+ 
+ 
+Report to Congressional Requesters 
+March 2024 
+ 
+GAO-24-106898 
+ 
+ 
+United States Government Accountability Office 
+
+===PAGE 2===
+ United States Government Accountability Office 
+ 
+March 2024 
+PRESCRIPTION DRUGS 
+Selected States’ Regulation of Pharmacy Benefit 
+Managers 
+What GAO Found 
+Private health plans contract with pharmacy benefit managers (PBM) to 
+administer their prescription drug benefits and help control costs. Each of the five 
+states selected for review—Arkansas, California, Louisiana, Maine, and New 
+York—enacted a variety of laws to regulate PBMs. 
+• Fiduciary or other “duty of care” requirements. Four of the five states
+(California, Louisiana, Maine, and New York) enacted laws to impose a duty
+of care on PBMs. The laws varied from imposing a fiduciary duty—that is, a
+r
+equirement to act in the best interest of the health plan or other entity to
+w
+hich the duty is owed—to what state regulators described as “lesser”
+standards such as a requirement to act in “good faith and fair dealing.”
+• Drug pricing and pharmacy reimbursement requirements. The five states
+enacted a variety of laws relating to drug pricing and pharmacy payments,
+such as laws limiting PBMs’ use of manufacturer rebates and their ability to
+pay pharmacies less than they charge health plans—a practice referred to as
+“spread pricing.”
+• Transparency, including licensure and reporting requirements. To
+increase the transparency of PBM operations, the five states enacted laws
+that require PBMs to be licensed by or registered with the state, or both, and
+t
+o report certain information such as drug pricing, fees charged, and the
+am
+ounts of rebates received and retained.
+• Pharmacy network and access requirements. The five states also enacted
+l
+aws regarding pharmacy networks and patient access. Examples include
+l
+aws prohibiting discrimination against unaffiliated pharmacies and limiting
+patient co-pays charged by PBMs.
+The regulators GAO interviewed from selected states described lessons learned 
+regarding PBM regulation. Examples include the following. 
+• Regulators in four states said that providing regulators with broad regulatory
+authority was more effective than enacting specific statutory provisions.
+Doing so allowed regulators to address emerging issues without new
+legislation, according to regulators from one state.
+• Some regulators also stressed the need for robust enforcement of PBM laws
+and effective penalties to enforce them. Two pharmacy associations GAO
+interviewed concurred with these views, while a health plan association said
+t
+hat monitoring is needed to ensure compliance with PBM requirements.
+Three regulators also said that clear reporting requirements and definitions
+helped ensure consistent enforcement.
+The Department of Labor provided technical comments on a draft copy of this 
+report, which GAO incorporated as appropriate. 
+Highlights of GAO-24-106898, a report to 
+congressional requesters 
+Why GAO Did This Study 
+Prescription drug spending by private 
+health plans climbed to nearly $152 
+billion in 2021, an 18 percent increase 
+from 2016. Health plans generally rely 
+on PBMs to process claims, develop 
+pharmacy networks, and negotiate 
+rebates from drug manufacturers. 
+However, some researchers and 
+stakeholders have questioned certain 
+PBM practices, such as PBMs 
+retaining a share of the rebates and 
+use of spread pricing. In response, 
+states have begun to enact legislation 
+addressing PBMs, with all 50 states 
+having enacted at least one PBM-
+related law between 2017 and 2023. 
+GAO was asked to review states’ 
+regulation of PBMs serving private 
+health plans. Among other things, this 
+report describes actions selected 
+states have taken to regulate PBMs, 
+and lessons learned that state 
+regulators identified for PBM 
+regulation.  
+GAO focused on a selection of five 
+states that have enacted a wide range 
+of PBM laws, based on existing 
+inventories maintained by national 
+policy research organizations, such as 
+the National Conference of State 
+Legislatures. GAO reviewed states’ 
+laws and interviewed state regulators 
+as well as a variety of other 
+stakeholders. These included state 
+pharmacy associations and state 
+health plan associations in each of the 
+five states, and four national 
+organizations representing interests of 
+PBMs, patients, employers, and drug 
+manufacturers, respectively. 
+View GAO-24-106898. For more information, 
+contact John E. Dicken at (202) 512- 7114 or 
+dickenj@gao.gov. 
+===PAGE 3===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page i GAO-24-106898  Prescription Drugs 
+Letter  1 
+Background 4 
+States We Reviewed Have Enacted a Variety of Laws to Regulate 
+PBMs 10 
+Stakeholders Expressed Mixed Views on Selected State Actions 
+to Regulate PBMs 17 
+State Regulators Identified Lessons Such as Providing Broad 
+State Regulatory Authority and Robust Enforcement Powers 22 
+Agency Comments 26 
+Appendix I Stakeholders Interviewed by GAO 28 
+ 
+Appendix II Stakeholders Views on Areas of State Pharmacy Benefit Manager  
+(PBM) Regulation in Five Selected States 29 
+ 
+Appendix III GAO Contact and Staff Acknowledgments 34 
+ 
+Tables 
+Table 1: Selected State-Level Actions to Regulate Pharmacy 
+Benefit Managers (PBMs) Serving Private, Employer-
+Sponsored Health Plans, as of November 2023 16 
+Table 2: Stakeholder Positions on Areas of Pharmacy Benefit 
+Manager (PBM) Regulation 20 
+Table 3: Examples of Comments Offered by Stakeholders 
+Regarding Areas of State Pharmacy Benefit Manager 
+(PBM) Regulation 21 
+ 
+Figure 
+Figure 1: Example of the Flow of Funds and Prescription Drugs 
+through the Supply Chain When a Health Plan Member 
+Purchases a Drug through a Pharmacy Benefit Manager 
+(PBM) 9 
+ 
+ 
+ 
+ 
+Contents 
+===PAGE 4===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page ii GAO-24-106898  Prescription Drugs 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Abbreviations 
+ 
+ERISA  Employee Retirement Income Security Act of 1974 
+MAC  maximum allowable cost 
+PBM  pharmacy benefit manager 
+ 
+ 
+This is a work of the U.S. government and is not subject to copyright protection in the 
+United States. The published product may be reproduced and distributed in its entirety 
+without further permission from GAO. However, because this work may contain 
+copyrighted images or other material, permission from the copyright holder may be 
+necessary if you wish to reproduce this material separately. 
+===PAGE 5===
+ 
+ 
+Page 1 GAO-24-106898  Prescription Drugs 
+441 G St. N.W. 
+Washington, DC 20548 
+March 18, 2024 
+The Honorable Virginia Foxx 
+Chairwoman 
+Committee on Education and the Workforce 
+House of Representatives 
+The Honorable Bob Good 
+Chairman 
+Subcommittee on Health, Employment, Labor, and Pensions 
+Committee on Education and the Workforce 
+House of Representatives 
+The H
+onorable Rick Allen 
+House of Representatives 
+The H
+onorable Diana Harshbarger 
+House of Representatives 
+Retail prescription drug spending by private health plans in the U.S. 
+totaled nearly $152 billion in 2021—almost 13 percent of total private 
+health care spending and an almost 18 percent increase over 2016.1 To 
+help manage rising prescription drug costs, private health plans generally 
+contract with pharmacy benefit managers (PBM) to administer their 
+pharmacy benefits. PBMs may negotiate prices or rebates with drug 
+manufacturers, develop networks of pharmacies and negotiate prices 
+paid to pharmacies for dispensing drugs to plan enrollees, and adjudicate 
+claims. 
+Researchers and various stakeholders have noted advantages of, but 
+have also raised questions about, the services that pharmacy benefit 
+managers provide.
+2 Some health plans and the PBM trade association 
+1Centers for Medicare & Medicaid Services, Office of the Actuary, National Health 
+Statistics Group, Table 16: Retail Prescription Drugs Expenditures; Levels, Percent 
+Change, and Percent Distribution, by Source of Funds: Selected Calendar Years 1970-
+2021 (Baltimore, MD.: 2022). This figure does not include out-of-pocket expenses (i.e., 
+expenditures not covered by insurance) or non-retail prescriptions (e.g., those dispensed 
+in hospitals or physicians’ offices). 
+2See, for example, T. Joseph Mattingly, David A. Hyman and Ge Bai, “Pharmacy Benefit 
+Managers: History, Business Practice, Economics, and Policy,” JAMA Health Forum, vol. 
+4, no. 11 (2023). 
+Letter 
+===PAGE 6===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 2 GAO-24-106898  Prescription Drugs 
+have generally noted that PBMs’ market power enables them to directly 
+negotiate rebates with manufacturers to lower prescription drug costs for 
+enrollees and health plans. They also highlight the other functions that 
+PBMs provide, such as promoting generic substitution, improving 
+patients’ drug adherence, and identifying possible adverse drug reactions. 
+However, an employer organization, a pharmacy association, and a 
+patient advocacy organization have raised questions about whether 
+pharmacy benefit managers have too much market power, and whether 
+PBM arrangements are too complex and opaque, making it difficult to 
+identify all their sources of revenue. For example, PBMs may derive their 
+revenue from various sources including retention of some manufacturer 
+rebates, administrative fees charged to health plans, and the spread 
+between what they pay pharmacies to dispense drugs and what they 
+charge health plans. According to the Commonwealth Fund, some of 
+these revenue sources are generally kept confidential even from the 
+health plans that hire the PBMs. 
+Trends in the industry have also raised concerns about the market power 
+of pharmacy benefit managers. Consolidation among PBMs has resulted 
+in the three largest PBMs processing approximately 79 percent of all 
+prescription drugs in 2022.3 Another trend which also increases PBM 
+market power is their vertical integration with other entities. The Federal 
+Trade Commission announced an inquiry in 2022, which is ongoing as of 
+January 2024, intended to assess the effect of vertical integration on the 
+access to and affordability of prescription drugs, noting that the three 
+largest PBMs are each integrated with both a health insurer and wholly 
+owned mail order and specialty pharmacies.
+4 
+States, as the primary regulators of private health insurance, have taken 
+actions to regulate PBMs to lower prescription drug costs and address 
+some of their concerns about PBM business practices. You asked us to 
+review states’ actions to regulate PBMs serving private health plans. In 
+this report we describe: 
+1. actions selected states have taken to regulate PBMs, 
+ 
+3Additionally, the six largest PBMs control 96 percent of the market, according to one 
+source. See Drug Channels Institute, The Top Pharmacy Benefit Managers of 2022: 
+Market Share and Trends for the Biggest Companies (Philadelphia, PA: 2023). 
+4Federal Trade Commission, “FTC Launches Inquiry Into Prescription Drug Middlemen 
+Industry” (June 7, 2022), accessed March 15, 2023, 
+https://www.ftc.gov/news-events/news/press-releases/2022/06/ftc-launches-inquiry-prescri
+ption-drug-middlemen-industry. 
+===PAGE 7===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 3 GAO-24-106898  Prescription Drugs 
+2. selected stakeholders’ views of these actions, and 
+3. lessons for PBM regulation identified by state regulators. 
+For all three objectives, we focused on a nongeneralizable selection of 
+five states with experience implementing state laws affecting PBM 
+business practices. To select states, we first reviewed existing inventories 
+of state PBM laws maintained by three national policy research 
+organizations to identify states that had enacted a wide range of PBM 
+laws.5 We also considered geographic diversity to the extent possible. 
+Based on these criteria we selected five states: Arkansas, California, 
+Louisiana, Maine, and New York. 
+To describe actions that the five selected states have taken to regulate 
+PBMs, we reviewed state laws and related documents. We also 
+interviewed state regulators from the primary oversight agency (e.g., state 
+departments of insurance) to discuss the PBM laws passed by their 
+legislatures and the implementation of these laws. 
+To describe stakeholder views of states’ actions to regulate PBMs and 
+any lessons learned from stakeholders about PBM regulation, we 
+interviewed the state health plan association and state pharmacy 
+association in each selected state, in addition to the state regulators.
+6 To 
+augment these perspectives, we also interviewed four national 
+organizations, including the trade association representing PBMs and 
+three national advocacy organizations representing employers’ interests, 
+patient interests, and pharmaceutical manufacturers. See appendix I for a 
+list of the stakeholders we interviewed. 
+We conducted this performance audit from June 2023 through March 
+2024 in accordance with generally accepted government auditing 
+standards. Those standards require that we plan and perform the audit to 
+ 
+5The three organizations were National Academy for State Health Policy, National 
+Conference of State Legislators, and National Association of Insurance Commissioners. 
+Compendia of state laws are available on the organizations’ websites at 
+https://nashp.org/state-drug-pricing-laws-2017-2023, 
+https://www.ncsl.org/health/prescription-drug-state-bill-tracking-database-2015-present, 
+and https://content.naic.org/cipr-topics/pharmacy-benefit-managers, respectively 
+(accessed December 4, 2023). 
+6In one state where there was no health plan association, we instead interviewed the 
+state’s largest insurer that covered 86 percent of individuals in the state in 2022. For 
+simplicity, in some cases we use the term health plan association for this insurer in the 
+report. 
+===PAGE 8===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 4 GAO-24-106898  Prescription Drugs 
+obtain sufficient, appropriate evidence to provide a reasonable basis for 
+our findings and conclusions based on our audit objectives. We believe 
+that the evidence obtained provides a reasonable basis for our finding 
+and conclusions based on our audit objectives. 
+ 
+Nearly half of the population in the U.S.—about 158 million individuals—
+receives health coverage through private health plans sponsored by their 
+employers.
+7 Generally, employers provide health coverage in two ways. 
+They may purchase coverage from state-regulated issuers on behalf of 
+their employees (also known as fully insured plans). Alternately, they can 
+self-fund their plans (also known as self-insured plans)—that is, they pay 
+directly for at least some of their employees’ health care costs and 
+typically contract with an issuer or other company to administer benefits 
+and process claims. In 2022, about 65 percent of covered employees 
+were in self-insured plans.8 
+Both states and the federal government have regulatory roles in private 
+health coverage. The federal government, led by the Department of 
+Labor, regulates private employer-sponsored health plans under the 
+Employee Retirement Income Security Act of 1974 (ERISA), which sets 
+minimum standards for group health plans, both fully insured and self-
+insured. Among these standards are claims and appeals processes, 
+reporting and disclosure requirements, and fiduciary responsibilities for 
+those who administer the plan and its assets.
+9 
+ 
+7Kaiser Family Foundation, Health Insurance Coverage of the Total Population, 2022 (San 
+Francisco, CA: 2023). In addition, about another 20 million individuals purchased health 
+coverage through private health plans as individuals, outside of the workplace. These 
+estimates are based on the 2008-2022 American Community Survey. 
+In general, those who obtain private health coverage do so in the individual or group 
+market. The individual market includes plans purchased directly from an insurer, while the 
+group market—which includes small and large groups—is largely made up of employer-
+sponsored plans. 
+8See Kaiser Family Foundation, Employer Health Benefits 2022 Annual Survey (San 
+Francisco, CA: October 2022). 
+9A fiduciary is required to act in the best interest of the entity (e.g., health plan) to which 
+the duty is owed. ERISA requires fiduciaries to act prudently and solely in the interest of 
+health plan participants and beneficiaries. Group health plans are also subject to certain 
+health care reforms and consumer protections, including those added by the Patient 
+Protection and Affordable Care Act, No Surprises Act, and Mental Health Parity and 
+Addiction Equity Act of 2008. 
+Background 
+Overview of Private, 
+Employer-Sponsored 
+Health Coverage 
+Regulation of Private, 
+Employer Sponsored 
+Health Coverage and 
+PBMs 
+===PAGE 9===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 5 GAO-24-106898  Prescription Drugs 
+States are the primary regulators of health insurance issuers. Health 
+plans offered by state regulated issuers, including fully insured plans, are 
+subject to both state and federal requirements.10 Each state’s insurance 
+department enforces the states’ insurance laws and regulations. State 
+insurance departments typically manage the licensing of issuers and 
+agents selling insurance products. Additionally, states regulate issuers’ 
+financial operations to ensure funds are adequate to pay claims, review 
+premium rates, and implement consumer protections such as claims 
+appeals processes. 
+ERISA preempts state laws that “relate to” any employee benefit plan and 
+has been interpreted by courts to restrict the extent to which states can 
+regulate self-insured plans.
+11 For example, self-insured plans are not 
+required to comply with state-mandated benefit requirements, such as 
+coverage of certain benefits or procedures. Therefore, an advantage of 
+self-insured plans to large, multi-state employers is the ability to offer a 
+uniform benefit package across different locations, as long as it complies 
+with ERISA requirements. While ERISA generally limits states’ ability to 
+regulate self-insured plans, the Supreme Court has ruled that states may 
+impose certain regulatory requirements that do not have an impermissible 
+connection or impermissible reference to an ERISA plan.
+12 PBM 
+advocates have claimed that certain state laws regulating PBM practices 
+are preempted by ERISA, in part because the laws have a direct 
+regulatory effect on how ERISA-governed plans manage drug benefits.13 
+As the role of PBMs has grown from that of processing claims to a larger 
+role in fully administering drug benefits and negotiating prices along the 
+pharmaceutical supply chain, states have begun to regulate PBMs. 
+According to a few stakeholders, states have taken different approaches 
+to regulating PBMs as, among other factors, oversight and enforcement 
+ 
+10Issuers are entities licensed by a state to engage in the business of health insurance in 
+that specific state.  
+11Under ERISA, states retain the authority to regulate issuers. Therefore, a fully insured 
+health plan, where an employer purchases health coverage from an issuer, is regulated by 
+state insurance laws (through state regulation of the issuer) and ERISA (through federal 
+regulation of the plan). 
+12See, for example, Gobeille v. Liberty Mut. Ins. Co., 577 U. S. 312 (2016); New York 
+State Conference of Blue Cross & Blue Shield Plans v. Travelers Ins. Co., 514 U. S. 645 
+(1995). More recently, the Supreme Court held that ERISA does not preempt an Arkansas 
+law regulating PBM reimbursement to pharmacies. Rutledge v. Pharm. Care Mgmt. 
+Assoc., 141 S. Ct. 474 (2020). 
+13See Pharm. Care Mgmt. Assoc. v. Mulready, No. 22-6074 (10th Cir. 2023). 
+===PAGE 10===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 6 GAO-24-106898  Prescription Drugs 
+authority may be divided among different departments or laws within a 
+state. For example, a state’s insurance department may license PBMs as 
+third-party administrators under its insurance law; PBM duties of care 
+may be specified under its public health and safety law; and enforcement 
+authority may rest with a different entity, such as the Attorney General’s 
+office. According to one group tracking PBM legislation at the state level, 
+between 2017 and 2023, all 50 states had enacted at least one law 
+regulating PBM business practices. These laws have included licensure 
+and registration requirements, mandated transparency reporting, and 
+requirements regarding consumer protections and pharmacy 
+reimbursement.
+14 
+Prescription drug spending has consistently grown over the past decade, 
+prompting health plans to seek ways to better manage these costs. Retail 
+prescription drug expenditures by private health plans grew from $129.1 
+billion to nearly $152 billion between 2016 and 2021, an increase of 
+approximately 18 percent.15 
+The main driver of that growth is increased prescription drug prices, as 
+opposed to increased prescription drug utilization (i.e., the number of 
+prescriptions filled). While retail prescription drug spending grew by 13 
+percent between 2016 and 2021, retail prescription drug utilization only 
+increased by 5.7 percent in this same period. The increase in spending is 
+driven in part by growing spending on high-cost prescription drugs known 
+as specialty drugs.
+16 In 2021, specialty drugs comprised 15.4 percent of 
+retail prescriptions but represented 41.8 percent of retail prescription 
+spending. Additionally, retail specialty drug prescriptions declined by 18.3 
+percent between 2016 and 2021, while retail spending on specialty drugs 
+increased by 21.9 percent in the same period. 
+ 
+14National Academy for State Health Policy, “State Tracker: State Pharmacy Benefit 
+Manager Legislation, 2017-2023” (Washington, DC: November 2023), accessed 
+November 3, 2023, https://nashp.org/state-pharmacy-benefit-manager-legislation. 
+15Department of Health and Human Services, Assistant Secretary for Planning and 
+Evaluation (ASPE), Office of Science & Data Policy. Trends in Prescription Drug 
+Spending, 2016-2021 (Washington, DC: 2022). 
+Retail drugs are defined as those filled in an outpatient setting such as standalone 
+pharmacies or mail order prescriptions. Non-retail drugs are those administered in an 
+inpatient setting such as a hospital, clinic, or physician office.  
+16The data used by ASPE defines specialty drugs as generally high-cost products used to 
+treat complex, rare, or chronic disease. See Department of Health and Human Services, 
+Trends in Prescription Drug Spending, 2016-2021. 
+Overview of Prescription 
+Drug Spending Trends 
+===PAGE 11===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 7 GAO-24-106898  Prescription Drugs 
+Many health plans contract with PBMs to manage prescription drug 
+benefits. The Pharmaceutical Care Management Association (PCMA), a 
+PBM trade association, reports that more than 275 million Americans 
+receive prescription drug benefits through PBMs across several insurance 
+markets including employer-sponsored plans, Medicaid, and Medicare 
+Part D. There are over 60 PBMs in the United States, but a large majority 
+of prescription drug claims are processed by just three: CVS 
+Health/Caremark, Cigna/Evernorth/Express Scripts, and United 
+Health/OptumRx. 
+Pharmacy benefit managers offer services that reduce the complexity of 
+administering prescription drug benefits and negotiate rebates with 
+manufacturers to reduce the overall cost of prescription drugs. PBMs 
+generally handle rebate negotiations, claims processing, and payments at 
+various points within the pharmaceutical drug supply chain (see fig. 1). 
+Additionally, some PBMs have a direct role in the physical distribution of 
+prescription drugs.
+17 
+Pharmacy benefit managers receive compensation from health plans for 
+their services in a variety of ways. Health plans may opt for an 
+administrative fee contract, where they pay the PBM directly for all the 
+services provided. Alternatively, health plans may elect to use a spread 
+pricing option. Under spread pricing, the health plan pays the PBM a set 
+price for each prescription filled, and the PBM retains the difference 
+between the price paid by the health plan and the price paid to the 
+pharmacy as a form of compensation. Additionally, PBMs may retain a 
+portion of manufacturer rebates to offset the fees health plans would 
+otherwise pay. 
+PBMs provide the following services within the pharmaceutical supply 
+chain. 
+• Rebate negotiation and formulary development. The number of 
+covered individuals receiving prescription drug benefits through PBMs 
+gives PBMs power to negotiate with pharmaceutical manufacturers. 
+PBMs use this to negotiate rebates with pharmaceutical 
+manufacturers—generally for brand-name and specialty drugs—in 
+exchange for placement on health plans’ formularies. Rebates are 
+ 
+17While PBMs generally do not have a direct role in the physical distribution of prescription 
+drugs, some PBMs operate mail order pharmacies or specialty drug facilities to fill 
+prescriptions. The largest PBMs are fully vertically integrated with the largest health 
+insurers and wholly owned mail order and specialty pharmacies. 
+Private Health Plans’ Use 
+of PBMs 
+===PAGE 12===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 8 GAO-24-106898  Prescription Drugs 
+applied after sales, and PBMs may pass some of these rebates on to 
+health plans to reduce premiums for plan beneficiaries. 
+• Pharmacy network development. PBMs negotiate drug prices and 
+reimbursements with pharmacies to create networks where plan 
+members can fill prescriptions. Enrollees have incentives to use in-
+network pharmacies as they typically offer lower out-of-pocket costs 
+compared to out-of-network pharmacies. 
+• Utilization management. PBMs assist health plans in administering 
+and monitoring patient drug utilization. This includes actions such as 
+step therapy, a requirement where patients must first try less 
+expensive alternatives before moving onto a more expensive drug 
+their physician initially prescribed. Another example is prior 
+authorization, where patients must receive approval before obtaining 
+a particular drug. 
+• Claims processing. PBMs process claims filed by pharmacies and 
+adjudicate claims on behalf of health plans. 
+===PAGE 13===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 9 GAO-24-106898  Prescription Drugs 
+Figure 1: Example of the Flow of Funds and Prescription Drugs through the Supply Chain When a Health Plan Member 
+Purchases a Drug through a Pharmacy Benefit Manager (PBM) 
+ 
+ 
+According to a few stakeholders, health plans generally include a “duty of 
+care” provision or clause in their contracts with pharmacy benefit 
+managers, which typically require PBMs to perform their specified duties 
+with good faith and in accordance with the terms of their contract. 
+According to one state regulatory agency, health plans may terminate 
+their PBM contracts if the PBM breaches this duty. However, some states 
+have imposed additional duties of care on PBMs beyond those specified 
+in their contracts with health plans. One type of duty of care is a fiduciary 
+Duty of Care Provisions 
+and Fiduciary Duty 
+===PAGE 14===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 10 GAO-24-106898  Prescription Drugs 
+duty, which requires PBMs to act in the best interests, and protect the 
+financial interests, of the party to which they owe the duty, such as their 
+health plan clients. Fiduciaries may be held liable for restoring losses to 
+the plan or returning profits gained through improper use of plan assets. 
+The five selected states enacted a wide range of laws to regulate PBMs, 
+including imposing duty of care requirements and other policies related to 
+drug pricing and pharmacy reimbursement, transparency reporting, and 
+enrollee access to pharmacy networks. These laws apply to PBMs 
+serving fully insured plans, and, depending on the state and type of law, 
+may also apply to PBMs serving self-insured plans.
+18 
+Four of the five selected states imposed a duty of care on PBMs to the 
+health plans for which they administered pharmacy benefits. 
+• Maine. Maine’s law states that PBMs are agents of, and owe a 
+fiduciary duty to, the health plans with which they contract.19 Plans are 
+responsible for ensuring PBMs comply with these and other contract 
+terms.20 
+• California, New York, and Louisiana. Laws in California, Louisiana, 
+and New York impose some version of a duty of good faith on PBMs. 
+California requires PBMs to exercise “good faith and fair dealing.”
+21 
+New York requires PBMs to act with “care, skill, prudence, diligence, 
+and professionalism” and imposes a duty of good faith and fair dealing 
+to all parties with whom they interact in the performance of PBM 
+services.
+22 Louisiana establishes “the duties of good faith, honesty, 
+ 
+18Arkansas officials told us that, except for the Maximum Allowable Cost (MAC) list 
+provision, they do not enforce PBM laws against pharmacy benefit managers that only 
+serve self-insured plans. California officials told us that their PBM laws do not apply to 
+pharmacy benefit managers serving self-insured plans. Louisiana officials told us that their 
+PBM laws do not specifically address self-insured plans. Maine officials told us the only 
+PBM laws that apply to pharmacy benefit managers serving self-insured plans are the 
+licensing and reporting requirements. New York officials told us their PBM laws apply to all 
+pharmacy benefit managers regardless of the type of plan they serve. 
+In some states, these laws may also apply to PBMs serving other plans such as Medicaid, 
+which are beyond the scope of this report. 
+1924-A M.R.S. § 4349(2). 
+2024-A M.R.S. § 4349(1)-(2). 
+21CA Bus. & Prof. Code § 4441(c). 
+22N.Y. Pub. Health Law § 280-a(2). 
+States We Reviewed 
+Have Enacted a 
+Variety of Laws to 
+Regulate PBMs 
+Four of Five Selected 
+States Imposed a Duty of 
+Care on PBMs, but States 
+Took Different Approaches 
+===PAGE 15===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 11 GAO-24-106898  Prescription Drugs 
+trust, confidence, and candor” for PBMs.23 Laws in two states—
+Louisiana and New York—specify that the PBMs’ duty of care is to 
+both health plans and enrollees. 
+• Arkansas. This state does not impose a specific duty of care on 
+PBMs. State regulators told us that, after a bill that included a 
+fiduciary requirement failed to pass, legislators thought existing state 
+PBM regulations were sufficient, and an additional duty of care 
+standard was not required. 
+The five selected states have taken a range of other actions to regulate 
+PBMs. Three states—Arkansas, Louisiana, and Maine—have 
+implemented several provisions relating to drug pricing and pharmacy 
+reimbursement. California regulators told us that their legislature has 
+generally not enacted PBM-related legislation regarding drug pricing and 
+reimbursement that would affect health plans under their purview, with the 
+exception of a maximum allowable cost (MAC) law.
+24 New York officials 
+told us that state regulators are in the process of promulgating regulations 
+to implement recently enacted PBM legislation. However, all five states 
+have imposed licensure, registration (including transparency and/or 
+reporting), or access requirements for PBMs. 
+Drug pricing and pharmacy reimbursement requirements. Four of the 
+five states have implemented provisions governing PBMs’ usage of 
+rebates, spread pricing, retroactive payment adjustments to pharmacies, 
+reimbursement of pharmacies, or MAC lists. 
+• Rebate usage. Two of the five states regulate PBMs’ use of 
+manufacturer rebates. Maine requires that PBMs either remit all 
+rebates to enrollees at the point of sale or remit them to the issuer, in 
+which case the issuer is required to use those funds to reduce 
+premiums or out-of-pocket costs for enrollees.25 Arkansas requires 
+ 
+23LA Rev. Stat. § 40:2864. 
+24According to California regulators, the primary law governing state oversight of managed 
+health care provides the department authority to oversee health plans in the state, 
+including contractual relationships with PBMs, but the law does not establish direct 
+oversight over PBMs. A stakeholder told us there are forty-four plans in California under 
+the purview of the Department of Managed Health Care, representing primarily health 
+maintenance organizations but also some traditional insurers. Roughly three to five 
+percent of other health plans, primarily traditional insurers, are governed by the California 
+Department of Insurance. 
+2524-A M.R.S. § 4350-A. 
+Selected States’ 
+Requirements for PBMs 
+on Drug Pricing and 
+Pharmacy 
+Reimbursement, 
+Transparency, and Access 
+===PAGE 16===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 12 GAO-24-106898  Prescription Drugs 
+that PBMs and health plans set enrollee cost-sharing amounts for 
+prescription drugs based on post-rebate prices.26 
+• Spread pricing. Two of the five states enacted legislation addressing 
+PBMs’ use of spread pricing—a practice in which PBMs reimburse 
+pharmacies at one rate and charge plans a different rate, retaining 
+any positive difference as revenues.
+27 Arkansas prohibits spread 
+pricing, while Louisiana prohibits spread pricing unless a PBM 
+provides a written notice at least biannually to policyholders indicating 
+the aggregate spread pricing amounts charged by the PBM in that 
+period.
+28 
+• Retroactive payment adjustments. Three of the five states regulate 
+PBMs’ ability to retroactively reduce or deny payments to pharmacies. 
+For example, Maine and Arkansas prohibit retroactive payment 
+reductions except in cases of fraud or error.29 
+• Pharmacy reimbursement rates. Three of the five states regulate 
+PBMs’ reimbursement of pharmacies. Arkansas and Louisiana 
+prohibit pharmacy benefit managers from reimbursing a pharmacy not 
+owned or affiliated with a PBM less for a pharmacy service, such as 
+filling a prescription, than the PBM would reimburse a PBM-owned or 
+affiliated pharmacy for the same pharmacy service.
+30 Both states also 
+permit pharmacies to decline to fill a prescription if the pharmacy 
+benefit manager would pay less than the pharmacy acquisition cost.
+31 
+Maine requires PBMs to reimburse pharmacies at ingredient cost plus 
+a dispensing fee, minus any enrollee cost-sharing.
+32 
+• Maximum allowable costs (MAC) lists. Four states regulate how 
+PBMs use or construct their MAC lists in some way. MAC lists specify 
+the maximum amounts PBMs will reimburse pharmacies for generic 
+ 
+26Ark. Code § 23-79-2503. 
+27In addition, while Maine has not enacted legislation regulating spread pricing, Maine 
+officials told us that their regulations require PBMs to remit the proceeds of spread pricing 
+to the enrollee or issuer in the same manner as rebates. Officials in New York told us that 
+health maintenance organizations are required to include in their contracts with PBMs a 
+prohibition on spread pricing. 
+28Ark. Code § 23-92-505(c); LA Rev. Stat. § 22:1867. 
+2924-A M.R.S. § 4350(8)(D); Ark. Code § 23-92-506(c).  
+30Ark. Code § 23-92-506(b)(4)(A); LA Rev. Stat. § 40:2870(A)(8). 
+31Ark. Code § 17-92-507(e); LA Rev. Stat. § 22:1860.3(B)(1). 
+3224-A M.R.S. § 4350(8)(A). 
+===PAGE 17===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 13 GAO-24-106898  Prescription Drugs 
+drugs and branded drugs with generic competition. Maine requires 
+PBMs to use the same MAC list for all pharmacies.33 Louisiana 
+requires PBMs to make available to pharmacies a comprehensive list 
+of drugs subject to their MAC lists and the sources used to obtain 
+drug price data.34 Louisiana, Arkansas, Maine, and California have 
+established criteria for drugs’ inclusion on a MAC list.35 
+Transparency. To increase the transparency of PBMs’ operations, all five 
+selected states require PBMs to be licensed by or registered with the 
+state, or both, and to provide certain information, such as rebates and 
+fees, to the state or to the health plans with which they contract. 
+• Licensure and registration. All five states require PBMs to obtain a 
+license to operate or register with the state, or both. State licensing 
+and registration requirements may either be separate from reporting 
+requirements or linked to each other. For example, in California, 
+PBMs are required to register with the Department of Managed Health 
+Care and must provide quarterly reports to health plans regarding 
+rebates, fees, and other payments.36 In Louisiana, PBMs must submit 
+an annual transparency report to the Louisiana Department of 
+Insurance to maintain their license.37 
+• Transparency reporting. Laws in the selected states vary in how 
+often and to whom they require PBMs to submit data. Maine requires 
+PBMs to annually disclose drug pricing data to the state.38 Arkansas 
+operates on a system in which the Insurance Commissioner initiates 
+PBM audits as necessary and requires PBMs to comply upon 
+request.
+39 Louisiana requires PBMs to report to the Louisiana 
+Department of Insurance aggregate rebates from manufacturers, the 
+aggregate percentage of those rebates that PBMs retain, and 
+ 
+3324-A M.R.S. § 4350(1). 
+34LA Rev. Stat. § 22:1864(A)(4). 
+35LA Rev. Stat. § 22:1864(A); Ark. Code § 17-92-507(b); CA Bus. & Prof. Code § 4440(d); 
+24-A M.R.S. § 4350(2). 
+36CA Health & Safety Code § 1385.005; CA Bus. & Prof. Code § 4441(e). 
+37LA Rev. Stat. § 22:1657.1(A). 
+3822 M.R.S. § 8732. 
+39Ark. Code § 23-92-505(b). 
+===PAGE 18===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 14 GAO-24-106898  Prescription Drugs 
+aggregate administrative fees received.40 New York requires annual 
+reporting by PBMs of rebates and other information to both the state 
+and the health plans.41 California requires PBMs to report quarterly on 
+rebates and other information to the health plans with which they 
+contract upon those plans’ request.42 
+Networks and access. All five selected states enacted legislation to 
+expand patient access to affordable drugs, such as the following. 
+• Pharmacy networks. Two of the five selected states have laws that 
+regulate PBMs’ pharmacy network design or prohibit discrimination 
+against unaffiliated pharmacies.
+43 Arkansas requires that the nearest 
+in-person pharmacy in a PBM’s network be within a reasonable 
+distance from an enrollee’s home.44 Arkansas also restricts PBMs 
+from imposing more stringent certification standards on pharmacies in 
+its network than those imposed by the state board without review and 
+approval by the insurance commissioner in coordination with the state 
+board of pharmacy.45 Louisiana prohibits PBMs from “steering” 
+enrollees to pharmacies in which the PBM has an ownership interest, 
+unless they provide a written disclosure and receive 
+acknowledgement from enrollees.46 
+• Limits on enrollee co-pays. Three of the five selected states limit 
+enrollee co-pays charged by PBMs.47 Maine requires PBMs to cap 
+point-of-sale costs for enrollees at the least of three amounts: the 
+enrollee’s cost-sharing amount, the price of the drug without any drug 
+benefits or discounts, or the total amount the pharmacy will be 
+ 
+40LA Rev. Stat. § 22:1657.1. 
+41N.Y. Pub. Health Law § 280-a(2)(c); N.Y. Ins. Law § 2904  
+42CA Bus. & Prof. Code § 4441(e). 
+43In addition, laws in Maine and California regulate issuers’ or health plans’ pharmacy 
+networks but do not apply directly to PBMs. Maine has also promulgated a regulation 
+requiring PBMs to demonstrate that their pharmacy network will be adequate for patients. 
+44Ark. Code §§ 23-92-505(a)(1), 23-92-509(b)(2)(B). 
+45Ark. Code § 23-92-506(b)(3). 
+46LA. Rev. Stat. § 40:2870(A)(5)(a). 
+47In addition, California law requires health plans to cap costs for patients at the lesser of 
+the patient’s co-pay or the retail price of the drug; however, this law applies to health 
+plans. 
+===PAGE 19===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 15 GAO-24-106898  Prescription Drugs 
+reimbursed.48 New York prohibits PBMs from collecting co-pays from 
+enrollees greater than the charges submitted by the pharmacy.49 
+Arkansas prohibits charging an enrollee more for drugs than the 
+amount retained by the pharmacy from all payment sources.50 
+• Price disclosure to enrollees. The five states have taken action to 
+ensure that pharmacies are not prohibited in their contracts from 
+informing enrollees when a less costly alternative to paying for a 
+prescription through their insurance is available. 
+• Utilization management. Only one state regulates PBMs’ use of step 
+therapy, in which patients must try a less expensive drug before the 
+PBM will authorize use of a more expensive drug.
+51 Specifically, 
+Louisiana prohibits PBMs from requiring step therapy if the prescribed 
+drug is already on the health plan’s formulary, the beneficiary 
+previously tried the prescribed drug, and the provider submits a 
+justification and supporting clinical documentation.
+52 
+Table 1 below provides a summary of the laws the selected states have 
+enacted to regulate PBMs. 
+  
+ 
+4824-A M.R.S. § 4349(4). 
+49N.Y. Pub. Health Law § 280-a(5)(b). 
+50Ark. Code § 4-88-1004. 
+51Arkansas regulates issuers’ use of step therapy, but it does not directly regulate PBMs’ 
+use of step therapy. 
+52LA. Rev. Stat. § 40:2870(A)(15). 
+===PAGE 20===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 16 GAO-24-106898  Prescription Drugs 
+Table 1: Selected State-Level Actions to Regulate Pharmacy Benefit Managers (PBMs) Serving Private, Employer-Sponsored 
+Health Plans, as of November 2023 
+State action  Arkansasa Californiab Louisianac Mained New Yorke 
+Imposes a duty of care on PBMs, generally to health 
+plans 
+     
+ Fiduciary duty n/a n/a n/a  n/a 
+ Good faith n/a   n/a  
+Drug pricing and pharmacy reimbursement 
+     
+ Regulates PBMs’ use of manufacturer rebates   n/a n/a  n/a 
+ Regulates PBMs’ use of spread pricingf   n/a  n/a n/a 
+ Regulates PBMs’ ability to retroactively adjust pharmacy 
+payments 
+ n/a   n/a 
+ Requires PBMs to reimburse pharmacies at minimum 
+thresholds  
+ n/a   n/a 
+ Regulates how PBMs use or construct Maximum 
+Allowable Costs (MAC) lists 
+    n/a 
+ Allows pharmacies to refuse to fill prescriptions 
+reimbursed below their acquisition costs 
+ n/a  n/a n/a 
+Transparency  
+     
+ Requires PBMs to be licensed by or registered (or both) 
+with the state 
+     
+ Requires PBMs to provide certain information to the state 
+or health plans, such as rebates, fees, and other 
+payments 
+     
+Networks and access 
+     
+ Regulates some element of PBMs’ pharmacy network 
+design 
+ n/a  n/a n/a 
+ Limits on PBMs’ enrollee co-pays   n/a n/a   
+ Allows pharmacies to inform patients of lower prices for 
+their prescription drugs 
+     
+ Utilization management n/a n/a  n/a n/a 
+Legend:  = State has enacted legislation, n/a = State has not enacted legislation. 
+Source: GAO analysis of state laws.  |  GAO-24-106898 
+Note: In addition to these laws that directly regulate PBMs, selected states may regulate the 
+prescription drug benefits offered by health plans. To the extent health plans contract with PBMs to 
+deliver such prescription drug benefits, PBMs may also be required to adhere to those requirements. 
+However, laws regulating health plans’ prescription drugs benefits are beyond the scope of this 
+report. 
+aArkansas officials told us that except for the MAC list provision, they do not enforce PBM laws 
+against PBMs that only serve self-insured plans. 
+bCalifornia officials told us their PBM laws do not apply to PBMs serving self-insured plans. 
+cLouisiana officials told us their PBM laws do not specifically address self-insured plans. 
+dMaine officials told us the only PBM laws that apply to PBMs serving self-insured plans are the 
+licensing and reporting requirements. 
+===PAGE 21===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 17 GAO-24-106898  Prescription Drugs 
+eNew York officials told us their PBM laws apply to all PBMs, regardless of the type of plan they 
+serve. 
+fSpread pricing is a practice in which PBMs reimburse pharmacies at one rate and charge plans a 
+different rate, retaining any positive difference as revenues. 
+ 
+Stakeholders we interviewed expressed mixed views about the actions 
+the five selected states have taken to regulate PBMs. Most 
+stakeholders—mainly state regulators, pharmacy associations, and 
+national advocacy organizations—supported state efforts to impose a 
+duty of care on PBMs, while most health plan associations and the PBM 
+trade association generally opposed the imposition of a duty of care on 
+PBMs. Additionally, most stakeholders also supported other legislative 
+efforts such as increased transparency requirements, regulating rebates, 
+and other pricing and reimbursement laws as well as network access 
+laws. However, most health plan associations and the PBM trade 
+association generally opposed state actions regulating pricing and 
+reimbursement and network access. 
+Most stakeholders we interviewed told us they believed a duty of care 
+requirement was appropriate for PBMs although some stakeholders we 
+interviewed disagreed. Regulators from three states, officials from four 
+pharmacy associations, and officials from three national advocacy 
+organization told us that a duty of care should be imposed on PBMs. 
+However, officials from four health plan associations, officials from one 
+health plan, and officials from the PBM trade association told us that they 
+did not think a duty of care should be imposed. 
+Stakeholders expressed varied views on the applicability of, need for, and 
+scope of, a fiduciary duty requirement for PBMs, as in the following 
+examples. 
+• Applicability. Regulators from the one state (Maine) that successfully 
+enacted a fiduciary duty law told us that they believed a fiduciary duty 
+was applicable to PBMs because PBMs exercise significant 
+management and discretion over prescription drug coverage.
+53 
+However, officials from a PBM trade association told us that plan 
+sponsors are the fiduciaries since they are the ones offering and 
+designing the benefits; PBMs are simply carrying out their 
+ 
+53A national advocacy organization representing large employers’ health care interests 
+similarly stated that a fiduciary duty was relevant to PBMs due to their management over 
+prescription drug benefits. 
+Stakeholders 
+Expressed Mixed 
+Views on Selected 
+State Actions to 
+Regulate PBMs 
+Stakeholder Views on a 
+Duty of Care Requirement 
+for PBMs 
+===PAGE 22===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 18 GAO-24-106898  Prescription Drugs 
+instructions. They also said that PBMs do not manage plan assets, as 
+a fiduciary would. 
+• Need. Regulators from three selected states, as well as officials from 
+four pharmacy associations and three national advocacy 
+organizations, indicated that a fiduciary duty was necessary to ensure 
+PBMs act in good faith, while others disagreed. 
+• Regulators from two states told us that fiduciary duty laws would 
+help remedy concerns they have about certain PBM business 
+practices, such as PBMs violating their contracts with pharmacies, 
+not notifying pharmacies of reimbursement errors, and improperly 
+recouping reimbursements from pharmacies. One pharmacy 
+association stated that health plans generally had little interest in 
+pushing PBMs to change practices that were harmful to patients, 
+and a fiduciary duty would allow patients to take legal action 
+against PBMs for engaging in bad faith. Officials from a national 
+advocacy organization representing patients stated that a fiduciary 
+duty would help ensure that any financial savings that PBMs 
+achieve are passed on to the patients. Officials from this 
+organization noted that additional vertical consolidation in the 
+health care market, such as PBMs owning their own pharmacies, 
+creates the need for a fiduciary duty. 
+• However, officials from four health plan associations, one health 
+plan, and a PBM trade association told us that they did not think a 
+duty of care, including a fiduciary duty, needed to be imposed on 
+PBMs. An official from a health plan association and one from the 
+PBM trade association noted that good faith and fair dealing are 
+standard contracting language and are generally already expected 
+of PBMs; therefore, additional legislation is not necessary. An 
+official from the PBM trade association also stated that imposing a 
+fiduciary duty on PBMs could increase prescription drug costs due 
+to the increased liability associated with such a duty. 
+• Regulators from the four selected states that have not enacted a 
+fiduciary duty requirement for PBMs said their states were unable 
+to do so due to political opposition from the PBM trade association 
+or perceived concerns about ERISA preemption.
+54 Due to these 
+concerns, regulators from two states and pharmacy association 
+officials from two states noted that their respective states settled 
+for what they referred to as “lesser” duty of care standards such 
+ 
+54ERISA preemption restricts the extent to which states can regulate covered benefit 
+plans, including self-insured health plans and the entities administering those plans, such 
+as PBMs, to ensure uniform benefits administration across state lines. 
+===PAGE 23===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 19 GAO-24-106898  Prescription Drugs 
+as good faith and fair dealing contract requirements. One state 
+removed the duty of care provision from proposed legislation 
+entirely. 
+• Scope. Some stakeholders disagreed on the entities (e.g., health 
+plan, enrollee, pharmacy) to which they believed the fiduciary duty 
+should be owed. 
+• One official from a national advocacy organization representing 
+large employers’ healthcare interests stated that the fiduciary duty 
+should only be owed to the health plan since PBMs work on behalf 
+of the health plan. Officials from one pharmacy association and 
+two national advocacy organizations stated that a fiduciary duty 
+should be owed by PBMs to pharmacists, health plans, and 
+patients. Additionally, an official from a national advocacy 
+organization representing pharmaceutical manufacturers stated 
+that in the event of a conflict of interest, the fiduciary duty to the 
+patient should be prioritized. 
+• However, one health plan association official highlighted that 
+imposing a fiduciary duty on PBMs could result in a conflict of 
+interest between plans and patients. This official stated that if a 
+PBM owed a fiduciary duty to both a health plan and its 
+beneficiaries, PBMs could face a conflict between what is best for 
+individual plan beneficiaries and managing costs for the overall 
+plan. For example, an individual plan member may need an 
+expensive, off-formulary drug, but this could increase costs for the 
+entire health plan. 
+Most state regulators, pharmacy associations, and national advocacy 
+organizations we interviewed supported state efforts to regulate PBM 
+drug pricing and pharmacy reimbursement, increase transparency about 
+PBM business practices, and increase access of independent and 
+community pharmacies to PBM pharmacy networks. Most health plan 
+associations and the PBM trade association we interviewed opposed 
+state actions regulating pharmacy reimbursement and network design, 
+but some health plan associations supported increasing transparency 
+reporting of rebates and other data along the entire pharmaceutical 
+supply chain. Table 2 below provides information on whether each of the 
+stakeholder groups we met with were generally in favor of or generally 
+opposed to actions taken to regulate PBM in the five selected states. 
+  
+Stakeholder Views on 
+PBM Laws Related to 
+Pricing, Transparency, and 
+Access 
+===PAGE 24===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 20 GAO-24-106898  Prescription Drugs 
+Table 2: Stakeholder Positions on Areas of Pharmacy Benefit Manager (PBM) Regulation  
+ 
+Generally in favor or opposed 
+Area of regulation 
+State 
+regulators 
+Pharmacy 
+Associations 
+Health Plan 
+Associations 
+Employer 
+Advocacy 
+Organization 
+Patient 
+advocacy 
+organization 
+PBM trade 
+association 
+Drug 
+manufacturer 
+advocacy 
+association 
+Drug pricing and  
+pharmacy reimbursement 
+(n=5) (n=5) (n=5) n/a n/a n/a n/a 
+ Rebates Yes (3) Yes (4) — Yes Yes — Yes 
+ Spread pricing 
+prohibitiona 
+Yes (3) Yes (5) No (3) Yes — No Yes 
+ Retroactive payment 
+adjustments 
+Yes (2) Yes (3) — — Yes — — 
+ Regulation of pharmacy 
+reimbursement 
+— Yes (5) No (1) — — — — 
+ Maximum allowable costs Yes (1) Yes (2) No (1) — — — — 
+Transparency  
+     
+  
+  Yes (5) Yes (4) Yes (3) Yes Yes Yes Yes 
+Networks and access 
+     
+  
+  Yes (3) Yes (4) No (4) — Yes No Yes 
+Legend: — = Stakeholders did not offer a position, n/a = Not applicable because only one such organization was interviewed.  
+Source: GAO interviews with selected stakeholders.  |  GAO-24-106898 
+Note: Information in the table is based on interviews and correspondence between June and 
+November 2023. “Yes” indicates that most of the stakeholder(s) who responded were generally in 
+favor, “No” indicates they were generally opposed, and “—” indicates the stakeholder did not offer a 
+position. 
+aSpread pricing is a practice in which PBMs reimburse pharmacies at one rate and charge plans a 
+different rate, retaining any positive difference as revenues. 
+  
+===PAGE 25===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 21 GAO-24-106898  Prescription Drugs 
+Within each of the broad areas of PBM regulation, stakeholders offered 
+comments regarding specific topics. See table 3 for a summary of 
+comments offered by the stakeholders we interviewed. More detailed 
+comments are in appendix II. 
+Table 3: Examples of Comments Offered by Stakeholders Regarding Areas of State Pharmacy Benefit Manager (PBM) 
+Regulation  
+Area of regulation and comments offered to GAO Stakeholder type(s) 
+Drug pricing and pharmacy reimbursement  
+Rebates  
+  Should apply to patients at point of sale Drug manufacturer association 
+  Should apply to health plans so all members can benefit from lower 
+premiums  
+Health plan  
+  Should be transparently reported  State regulator, pharmacy association, employer 
+advocacy association, patient advocacy 
+association, drug manufacturer association 
+Spread pricing prohibitiona  
+  Bans were necessary due to lack of transparency with spread pricing  Pharmacy association, employer advocacy 
+association 
+  Had contributed to rising prescription drug costs  State regulator, pharmacy association, employer 
+advocacy association 
+  Preferred pricing options under spread pricing Health plan association, PBM trade association 
+  Spread pricing offered more flexibility for health plans  Health plan association, PBM trade association 
+Retroactive payment adjustments (i.e., “clawbacks”)  
+  Bans had effectively eliminated clawbacks Pharmacy association 
+  Clawbacks were based on arbitrary benchmarks and caused 
+pharmacies to lose money on claims 
+Pharmacy association 
+Regulation of pharmacy reimbursement  
+  State’s Medicaid flat fee per prescription payment that is above costs 
+should be expanded to private plans  
+Pharmacy association 
+  Allowing pharmacists to decline prescriptions if payment is below costs 
+could restrict patient access  
+Health plan association 
+Maximum allowable costs (MAC)  
+  Has resulted in increased pharmacy reimbursement  Pharmacy association 
+  Has allowed pharmacies to successfully challenge inadequate PBM 
+reimbursement  
+Pharmacy association 
+  MAC laws can lead to higher copayment for patients  Health plan association 
+Transparency  
+  PBM transparency and reporting laws can apply to all types of plans, 
+including self-insured plans  
+State regulator 
+  More detailed reporting of PBM data is required State regulator 
+===PAGE 26===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 22 GAO-24-106898  Prescription Drugs 
+Area of regulation and comments offered to GAO Stakeholder type(s) 
+  Reporting should be required across the entire pharmaceutical supply 
+chain, including drug manufacturers 
+State regulator, pharmacy association, health plan 
+association, patient advocacy association, employer 
+advocacy association, PBM trade association 
+  Reporting laws can create administrative burdens and increased costs  Health plan association 
+Networks and Access  
+  Laws ensure that community pharmacies are not excluded from PBM 
+networks if they are willing to accept PBM contract terms  
+Pharmacy association 
+  Laws ensure that independent or community pharmacies are paid the 
+same as PBM-owned or affiliated pharmacies  
+State regulators, pharmacy association 
+  A variety of network and formulary options allow plans flexibility to 
+select based on plans’ cost needs  
+Health plan association 
+  Network adequacy laws hinder PBMs ability to control costs and 
+monitor pharmacy quality  
+Health plan association 
+Source: GAO interviews with selected stakeholders.  |  GAO-24-106898 
+Note: Information in the table is based on interviews and correspondence between June and 
+November 2023. 
+aSpread pricing is a practice in which PBMs reimburse pharmacies at one rate and charge plans a 
+different rate, retaining any positive difference as revenues. 
+ 
+The state regulators we interviewed described the lessons they learned 
+about regulating PBMs based on their varied perspectives and 
+experiences. In some cases, they commented on the factors that either 
+contributed to, or hampered, effective regulation and enforcement at the 
+state level. Other stakeholders shared concerns about states creating a 
+patchwork of laws that undermine large employers’ ability to operate their 
+plans under consistent requirements across multiple states. 
+Importance of broad regulatory authority. Four of five state regulators 
+stated that granting state agencies broad regulatory authority was more 
+effective than specific statutory provisions to regulate PBMs. 
+Regulators in one state said that the state’s legislature provided them with 
+broader authority with respect to PBMs than insurance regulators in most 
+states, and that this allows the department to actively address emerging 
+concerns related to PBMs. Specifically, state regulators told us that their 
+PBM oversight law allows the department of insurance to take regulatory 
+action it deems necessary to enforce a range of requirements related to 
+market conduct, including network adequacy, pharmacy contracts, 
+pharmacy audits, pricing models, and consolidation and integration in the 
+PBM industry. As a result, officials said the department does not have to 
+rely on specific statutory provisions alone to exercise its authority. The 
+officials said that using this regulatory flexibility rather than relying on 
+State Regulators 
+Identified Lessons 
+Such as Providing 
+Broad State 
+Regulatory Authority 
+and Robust 
+Enforcement Powers 
+===PAGE 27===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 23 GAO-24-106898  Prescription Drugs 
+statutes has reduced loopholes and industry influence over policy and 
+allowed them to address problematic conduct and issue guidance without 
+having to go through the legislative process again. 
+Regulators in another state characterized their agency’s regulatory 
+authority as among the most comprehensive in the country, although this 
+was not always the case. The state originally regulated PBMs as they do 
+other third-party administrators. However, the regulators we spoke with 
+said that legislation was not sufficient to address PBMs, so the state 
+enacted new PBM-specific legislation. They stated that they now rely on a 
+combination of statute and agency rulemaking to regulate PBMs. The 
+requirements not spelled out in statute were further developed through 
+regulation, they said. 
+Regulators in a third state said that an important lesson in retrospect was 
+the need to expand their general supervisory authority to include not just 
+oversight of health plans, but the third-party administrators, like PBMs, 
+that serve the plans. They provided examples of areas in which they 
+believe more regulation is needed but said that narrow authorizing 
+legislation without broad rulemaking authority prevents them from taking 
+action. For example, they said that the state’s statutory prohibition on 
+spread pricing was not effective because it provided an exception that the 
+department said it is unable to address without broader regulatory 
+authority.
+55 
+Robust enforcement. Some state regulators indicated that without 
+robust enforcement, state PBM laws may not be effective, a view echoed 
+by some of the other stakeholders we interviewed. 
+Regulators from the five states noted that they rely on complaints as the 
+primary mechanism to ensure PBM compliance with laws and, in some 
+states, had taken actions such as audits to address complaints. 
+Regulators from three states said they had designated departments to 
+investigate complaints. Regulators from one of these states noted that, in 
+addition to acting on complaints, they have the authority to promulgate 
+regulations to ensure compliance, and the registration and licensure 
+process allow them visibility into PBM practices. Regulators from another 
+state said they had not taken any enforcement actions to date because 
+ 
+55Specifically, the exception allows PBMs to utilize spread pricing in this state so long as 
+they provide a biannual written notice to plan enrollees. 
+===PAGE 28===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 24 GAO-24-106898  Prescription Drugs 
+the requirements were so new that they had not yet created an 
+enforcement structure. 
+Other stakeholders also noted factors that hampered or facilitated the 
+state’s ability to investigate complaints. A pharmacy association in one 
+state claimed that the only way PBM laws can be enforced is if there is a 
+sufficiently large volume of complaints that warrants a local district 
+attorney or state Attorney General’s time to investigate given their 
+workload. The pharmacy association said that, in their state, pharmacists 
+must hire an attorney to sue PBMs over violations of the laws, and this is 
+often too expensive. On the other hand, a pharmacy association in 
+another state noted that having a designated agency to which pharmacies 
+can address their complaints was more effective than submitting 
+complaints directly to the PBMs. 
+Regulators from two states said that two keys to strong enforcement are 
+substantial penalties and sufficient resources. The regulators explained 
+that if PBMs do not face large financial disincentives, they may see 
+paying minor fees as a cost of doing business. For example, one state 
+regulator said they had imposed a $4,000 per day penalty for every day of 
+late filing of a required report after PBMs were opting to pay the previous 
+one-time late fee of $500. Regarding resources, this state regulator noted 
+that they had created a bureau to handle PBM oversight, with 30 full-time 
+equivalent positions, including a team of examiners, and authority to 
+contract with outside consultants. In contrast, regulators from another 
+state said that with only 3.5 staff in their department, they are limited in 
+their ability to conduct oversight.
+56 
+Reducing ambiguous or fragmented authority. Regulators from two 
+states identified ambiguous or fragmented authority over different aspects 
+of PBM activities as factors that limited their authority to enforce PBM 
+laws. Regulators from one state said that their department is charged with 
+collecting high-level information from PBMs through the registration 
+process, but that the state law does not give the department direct 
+oversight authority over PBMs. Further, the regulators said they only have 
+jurisdiction over enrollee-facing practices—such as requirements 
+pertaining to drug formularies or the adequacy of pharmacy networks—
+ 
+56Two pharmacy associations stressed the need for enforcement, noting that PBMs may 
+not comply with state requirements if there is no threat of consequences, while a health 
+plan association identified the lack of compliance monitoring as an impediment to 
+regulatory compliance. 
+===PAGE 29===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 25 GAO-24-106898  Prescription Drugs 
+but not over PBMs’ dealings with pharmacies or health plans in their 
+state. 
+Regulators from another state noted that oversight authority in their state 
+is split among three different divisions depending on the PBM function—
+specifically, the Board of Pharmacy when PBMs perform the functions of 
+a pharmacist, the Department of Insurance when they act as payers of 
+claims, and the state Attorney General in all other cases. Moreover, 
+regulators said that the Department of Insurance’s authority falls within 
+the state’s insurance code which allows them to address reimbursement 
+and payment issues. However, the regulators said duties related to 
+managing pharmacy benefits fall under the state’s public health and 
+safety code, and the laws do not clearly specify which agencies are 
+supposed to enforce these provisions. The national advocacy 
+organization representing employers’ interests further described an 
+inconsistent patchwork of laws across states, with many plans operating 
+across state lines and needing to navigate this patchwork. 
+Clarity and precision in requirements. Three state regulators 
+commented on the need for clear requirements to minimize unintended 
+exceptions that may lessen compliance. Specifically, the regulators 
+expressed that in order for PBM laws to be most effective, regulators 
+should (1) be very clear about the information that PBMs must provide 
+and how to report the data, and (2) provide clear, functional definitions for 
+important terms.
+57 For example, according to regulators in two states, 
+some PBMs avoided complying with rebate pass-through requirements by 
+defining these payments as fees. 
+Regulators in a third state described another situation where terminology 
+can affect PBM behavior. Specifically, the officials said that PBMs there 
+insist that financial penalties be referred to as “warnings,” rather than 
+penalties, because, according to the officials, having a record of penalties 
+imposed by state regulators can prevent PBMs from obtaining federal 
+contracts. This is a concern for large PBMs that may bid for business 
+under federal programs, they said. 
+Information on PBMs across different kinds of plans. Three state 
+regulators expressed their desire to have more information on pharmacy 
+ 
+57In addition to providing PBMs and health plans with better clarity regarding their states’ 
+requirements, one state regulator also commented on the importance of obtaining input 
+from technical experts on the feasibility of PBMs’ ability to report the proposed 
+requirements. 
+===PAGE 30===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 26 GAO-24-106898  Prescription Drugs 
+benefit managers serving self-insured plans, similar to the transparency 
+that fully insured plans must demonstrate in their states. Regulators in 
+these three states described how concerns regarding ERISA preemption 
+of state regulation of self-insured plans affected the enactment or 
+enforcement of PBM laws in their states and resulted in less transparency 
+for PBMs serving self-insured plans. For example, an ERISA preemption 
+issue that regulators in one state said they contend with relates to 
+situations in which PBMs serving fully insured plans lose revenue due to 
+PBM regulations, like limits or prohibitions on certain fees. The regulators 
+said that, in such situations, PBMs may seek to recover those funds from 
+other types of health plans, including self-insured health plans. These 
+state regulators believed that ERISA preemption prevents the state from 
+knowing whether or to what extent this may be happening, they said. 
+Regulators in another state similarly noted that their state’s narrow 
+authority prevents them from having insight into PBMs serving self-
+insured plans. Regulators in a third state said that they are unable to hold 
+PBMs serving self-insured health plans to the higher standards applicable 
+to fully insured health plans until it is clearer which areas of PBM 
+regulation are federally preempted by ERISA. 
+An official from the national advocacy organization representing 
+employers’ interests agreed with the need for greater transparency over 
+pharmacy benefit managers and noted that some states have enacted 
+laws that align with their PBM reform goals. However, the official also 
+expressed concern about state regulation of PBMs that may conflict with 
+one of the purposes of ERISA preemption—to allow large employers the 
+ability to design uniform plans across multiple states. State regulation that 
+varies widely across an employers’ multiple locations also increases the 
+employers’ costs, according to the PBM trade association. 
+The Department of Labor provided technical comments on a draft copy of 
+this report, which we incorporated as appropriate. 
+As agreed with your offices, unless you publicly announce the contents of 
+this report earlier, we plan no further distribution until 30 days from the 
+report date. At that time, we will send copies to the Secretary of Labor. In 
+addition, the report will be available at no charge on the GAO website at 
+http://www.gao.gov. 
+  
+Agency Comments 
+ 
+===PAGE 31===
+ 
+ 
+ 
+ 
+ 
+ 
+Page 27 GAO-24-106898  Prescription Drugs 
+If you or your staff have any questions about this report, please contact 
+me at (202) 512-7114 or DickenJ@gao.gov. Contact points for our Offices 
+of Congressional Relations and Public Affairs may be found on the last 
+page of this report. GAO staff who made key contributions to this report 
+are listed in appendix III. 
+ 
+John E. Dicken 
+Director, Health Care  
+
+===PAGE 32===
+ 
+Appendix I: Stakeholders Interviewed by GAO 
+ 
+ 
+ 
+ 
+Page 28 GAO-24-106898  Prescription Drugs 
+To obtain the perspective of relevant stakeholders for this report, we 
+interviewed regulators, health plan associations, and pharmacy 
+associations from a selection of five states, as well as representatives 
+from four national organizations. 
+State regulators. Arkansas Insurance Department, California 
+Department of Managed Health Care, Louisiana Department of 
+Insurance, Maine Bureau of Insurance, and New York Department of 
+Financial Services. 
+Health plan associations. California Association of Health Plans, 
+Louisiana Association of Health Plans, Maine Association of Health 
+Plans, and New York Health Plan Association. In one state where there 
+was no health plan association, we instead met with the state’s largest 
+insurer—Arkansas Blue Cross/Blue Shield—since the insurer covered 86 
+percent of individuals in the state in 2022. 
+State pharmacy associations. Arkansas Pharmacists Association, 
+California Pharmacists Association, Louisiana Independent Pharmacies 
+Association, Maine Pharmacy Association, and Pharmacists Society of 
+the State of New York. 
+National organizations. Pharmacy Care Management Association (a 
+trade association representing PBMs), the Business Group on Health, 
+Patients for Affordable Drugs Now, and the Pharmaceutical Research and 
+Manufacturers of America. 
+  
+Appendix I: Stakeholders Interviewed by 
+GAO 
+===PAGE 33===
+ 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+ 
+ 
+ 
+ 
+Page 29 GAO-24-106898  Prescription Drugs 
+Most state regulators, pharmacy associations, and national advocacy 
+organizations we interviewed in five selected states—Arkansas, 
+California, Louisiana, Maine, and New York—supported state efforts to 
+regulate PBMs. These efforts included laws that states enacted regarding 
+drug pricing and pharmacy reimbursement, increased transparency about 
+PBM business practices, and increased access by independent and 
+community pharmacies to PBM pharmacy networks. Most health plan 
+associations and the PBM trade association we interviewed opposed 
+state actions regulating pharmacy reimbursement and network design, 
+but some health plan associations supported increasing transparency 
+along the entire pharmaceutical supply chain. 
+All five state regulators, all five pharmacy associations, and three national 
+advocacy organizations we interviewed supported state regulation of drug 
+pricing and pharmacy reimbursements for PBMs. However, four health 
+plan associations and the PBM trade association generally opposed state 
+regulation of PBM drug pricing and pharmacy reimbursement practices. 
+• Rebates. Regulators from three states, four pharmacy associations, 
+and three national advocacy associations supported policies 
+regulating PBM’s use of rebates but differed in the policies they 
+favored. 
+• Application of the rebate. One national advocacy association 
+representing pharmaceutical manufacturers said that rebates 
+should be applied at the point-of-sale to offset prescription drug 
+costs at the counter. However, a health plan said that rebates 
+should go to the health plan so that all members, not only those 
+receiving prescription drugs, can benefit from rebates through 
+lower premiums. 
+• Rebate transparency. Two stakeholders also expressed support 
+for rebate reporting requirements. A patient advocacy organization 
+representative stated that rebate transparency would allow 
+patients to see if drugs were on formularies because they are the 
+most effective or because the PBM received greater rebates. 
+Regulators from one state noted that despite having rebate 
+reporting requirements in their state, the law has yet to have the 
+desired impact of ensuring rebates are fully passed through to 
+health plans and patients. 
+• Spread pricing. Regulators from three states as well as officials from 
+all five pharmacy associations and a national advocacy organization 
+representing large employers’ healthcare interests supported spread 
+pricing prohibitions due to the lack of transparency around spread 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+Stakeholder Views on 
+PBM Laws Related to 
+Drug Pricing and 
+Pharmacy Reimbursement 
+===PAGE 34===
+ 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+ 
+ 
+ 
+ 
+Page 30 GAO-24-106898  Prescription Drugs 
+pricing and concerns that spread pricing increases prescription drug 
+costs.1 Most health plan associations and the PBM trade association 
+opposed spread pricing prohibitions, noting that spread pricing 
+provides plans with flexibility to manage prescription drug costs. 
+• Effect on prescription drug costs. A pharmacy association 
+official stated that, prior to their state prohibiting spread pricing, 
+the state insurance commissioner found that spread pricing was 
+contributing to rising prescription drug costs. Regulators from one 
+state noted that the state took action to prohibit spread pricing 
+after the states’ largest health plan elected a spread pricing 
+option. The state regulators said that following pharmacist 
+complaints, the state banned spread pricing and was able to 
+successfully ensure that pharmacies were being paid what health 
+plans paid for prescriptions. However, the state did not yet have 
+information on whether or the extent to which prohibiting spread 
+pricing has affected prescription drug costs. Officials from another 
+pharmacy association stated that since PBMs in their state are 
+only required to report the average spread, they are unable to see 
+the extent to which spread pricing is occurring in their state. 
+• Cost flexibility. Three health plan associations, a non-profit 
+health plan, and the PBM trade association supported allowing 
+spread pricing as an option to provide flexibility for plans in 
+managing their pharmacy benefits. Health plan officials said that 
+spread pricing offered the health plan increased flexibility and 
+stated that a spread pricing contract cost the health plan $8 million 
+less than a traditional pass-through contract. Additionally, officials 
+from a health plan association also noted that many health plans 
+in their state felt they had better pricing options prior to the 
+implementation of the state ban on spread pricing. 
+• Retroactive payment adjustments. One state regulator and two 
+pharmacy associations supported states prohibiting retroactive 
+pharmacy payment reductions by PBMs. Pharmacy associations refer 
+to these retroactive payment adjustments as “clawbacks.” Officials 
+from one of the pharmacy associations noted that their state’s 
+clawback ban had effectively eliminated retroactive reimbursement 
+adjustments filed by PBMs. Officials from another pharmacy 
+association located in a state where clawbacks were not prohibited 
+told us that clawbacks were based on seemingly arbitrary benchmarks 
+set by PBMs and caused pharmacies to lose money on claims. 
+ 
+1Spread pricing is when PBMs reimburse pharmacies at one rate and charge health plans 
+a different rate, retaining any positive difference as revenue. 
+===PAGE 35===
+ 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+ 
+ 
+ 
+ 
+Page 31 GAO-24-106898  Prescription Drugs 
+• Regulation of pharmacy reimbursement. Officials from all five 
+pharmacy associations supported existing laws that regulate 
+pharmacy reimbursement and in some states advocated for additional 
+legislation. However, officials from a health plan association opposed 
+state efforts to regulate pharmacy reimbursement levels. Pharmacy 
+association officials from two selected states said that their states’ 
+Medicaid program fixed pharmacy reimbursement that is equal to a 
+flat fee per prescription plus the pharmacy’s acquisition cost. The 
+pharmacy association officials said that these laws ensure 
+pharmacies serving Medicaid patients have a reliable revenue stream 
+and do not lose money dispensing prescription drugs. Regulators from 
+one of these states supported expanding these same requirements to 
+commercial plans. One health plan association official stated that 
+reimbursement and payment laws restrict patient access to 
+medication in rural areas. For example, the same official noted that 
+their state has a “decline to dispense” law that allows pharmacists to 
+decline to fill a prescription if the PBM reimburses the pharmacy 
+below the prescription’s acquisition cost, which could affect patients’ 
+ability to access prescriptions in rural areas. 
+• Maximum allowable costs (MAC). Three stakeholders commented 
+on state laws that regulate MAC lists. One pharmacy association 
+official stated that they have seen increased pharmacy 
+reimbursements in their state following the enactment of MAC list 
+pricing legislation. This official noted a specific example where the 
+pharmacy association was able to successfully challenge an 
+inadequate reimbursement because of MAC list transparency 
+requirements. Officials from a health plan association opposed 
+regulating MAC lists because they said such laws can lead to higher 
+co-pays for patients since the PBM is unable to adjust MAC list prices 
+when needed. 
+All stakeholder types we interviewed expressed support for PBM 
+transparency requirements such as licensure, registration, and annual 
+reporting on rebates and revenue sources. Regulators from all five states, 
+officials from four pharmacy associations, officials from one health plan, 
+and officials from three national advocacy organizations expressed 
+support for PBM transparency requirements. Additionally, officials from 
+three health plan associations supported transparency requirements that 
+applied to all actors along the pharmaceutical supply chain such as 
+manufacturers and wholesalers. However, some stakeholders we 
+interviewed noted that some transparency laws do not go far enough and 
+do not allow state regulatory agencies to collect information on such 
+things as PBM revenue and expenses, rebate data, or spread pricing 
+Stakeholder Views on 
+PBM Laws Related to 
+Transparency 
+===PAGE 36===
+ 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+ 
+ 
+ 
+ 
+Page 32 GAO-24-106898  Prescription Drugs 
+information. Additionally, some stakeholders said that it is too soon to 
+draw conclusions based on the collected data. 
+• PBM transparency and reporting across all plan types. Regulators 
+from three states noted that their licensure, registration, and reporting 
+requirements were generally applicable to PBMs serving all types of 
+plans including Medicare Part D or self-insured plans. Regulators from 
+one of these states said that they had the authority to inspect the 
+record of any PBM, such as those contracting with self-insured or Part 
+D plans, even if they cannot regulate the plans directly. 
+• Shortcomings and additional reporting requirements. Officials 
+from a state regulator said that, while the additional insight from 
+transparency requirements has allowed them to observe changes on 
+an individual basis, it is too soon to draw conclusions on a 
+systemwide basis. Officials from two pharmacy associations echoed 
+this sentiment and noted that data is not yet available or too complex 
+to be useful to consumers. Additionally, regulators from four states 
+told us that additional information is needed to gain a better 
+understanding of prescription drug cost drivers. For example, one 
+state regulator said that despite having transparency laws, they have 
+relatively limited information on PBM revenue sources and rebates. 
+Similarly, officials with a patient advocacy organization stated that 
+even with mandatory PBM reporting, other parts of the supply chain, 
+and their effect on spending, will remain opaque. 
+• Reporting challenges. Three health plan associations expressed 
+support for transparent reporting requirements along the entire 
+pharmaceutical supply chain, including (for example) pharmaceutical 
+manufacturers, wholesalers, and health plans. Two health plans 
+associations warned against unreasonable reporting requirements 
+due to the potential to increase costs and administrative burdens. 
+Regulators from one state said that transparency laws should reflect 
+the technological capabilities of PBMs to report the information 
+requested by the state. One health plan association noted that 
+transparency requirements alone may not address escalating 
+prescription drug costs and instead create new administrative barriers 
+without lowering costs. 
+All state regulators, most pharmacy associations, and two national 
+advocacy organizations we interviewed supported PBM laws regarding 
+pharmacy networks, such as legislation addressing differences in 
+reimbursement between PBM and non-PBM affiliated pharmacies as well 
+as regulating utilization management practices, while four health plan 
+associations we interviewed opposed limits on how PBMs create 
+Stakeholder Views on 
+PBM Laws Related to 
+Pharmacy Networks and 
+Access 
+===PAGE 37===
+ 
+Appendix II: Stakeholders Views on Areas of 
+State Pharmacy Benefit Manager (PBM) 
+Regulation in Five Selected States 
+ 
+ 
+ 
+ 
+Page 33 GAO-24-106898  Prescription Drugs 
+pharmacy networks. Regulators from one state and officials from a 
+pharmacy association supported “any willing provider” laws, which require 
+PBMs to contract with any pharmacy willing to accept the terms of their 
+contract, noting that these laws are an important consumer protection and 
+allow pharmacies to gain access to PBM networks. Four health plan 
+associations and the PBM trade association stated that network access 
+laws hinder their ability to control costs and manage pharmacy quality. 
+• Equal pharmacy reimbursement for independent and PBM-
+owned or affiliated pharmacies. Regulators from one state and an 
+official from one pharmacy association told us that prior to enacting 
+patient access laws addressing pharmacy networks, they found 
+independent and community pharmacies were being reimbursed at 
+lower rates than PBM-affiliated pharmacies. Officials from a pharmacy 
+association stated, and provided documentation to show, that patients 
+were receiving mail telling them their pharmacy was out of network, 
+only to receive additional correspondence that the letter was sent in 
+error after they had already switched to an in-network pharmacy. 
+• Utilization management and formulary development. An official 
+from the national advocacy organization representing patient interests 
+stated that certain utilization management practices can prevent 
+patients from accessing drugs prescribed by their physician. Another 
+official, from the organization representing pharmaceutical 
+manufacturers, noted that 79 percent of prescriptions go through three 
+PBMs, and therefore it is difficult to access necessary drugs that are 
+not on those PBM’s formularies. 
+• Cost and quality control. Four health plan associations and the PBM 
+trade association stated that network access laws hinder PBMs ability 
+to control costs and monitor pharmacy quality. Officials from two 
+health plan associations stated that PBMs offer a variety of formulary 
+and network options that health plans can select based on cost 
+needs. A health plan association said that the network and formulary 
+a health plan selects is based on network needs and the costs plans 
+are willing to accept. Another health plan association official stated 
+that they believed network access laws limit PBM’s ability to control 
+costs. The PBM trade association noted that some any willing 
+provider laws have been challenged in courts and that network 
+adequacy laws can impact health plans’ margins. 
+===PAGE 38===
+ 
+Appendix III: GAO Contact and Staff 
+Acknowledgments 
+ 
+ 
+ 
+ 
+Page 34 GAO-24-106898  Prescription Drugs 
+John Dicken, (202) 512-7114 or DickenJ@gao.gov 
+In addition to the contact named above, Iola D’Souza (Assistant Director), 
+Perry Parsons (Analyst-in-Charge), Tim Planert, Emily Wilson Schwark, 
+and Christopher Wolf made key contributions to this report. Michelle 
+Duren, Joy Grossman, David Jones, Laurie Pachter, and Jennifer 
+Whitworth also made important contributions. 
+ 
+Appendix III: GAO Contact and Staff 
+Acknowledgments 
+GAO Contact 
+Staff 
+Acknowledgments 
+===PAGE 39===
+ 
+ 
+ 
+ 
+ 
+ 
+The Government Accountability Office, the audit, evaluation, and investigative 
+arm of Congress, exists to support Congress in meeting its constitutional 
+responsibilities and to help improve the performance and accountability of the 
+federal government for the American people. GAO examines the use of public 
+funds; evaluates federal programs and policies; and provides analyses, 
+recommendations, and other assistance to help Congress make informed 
+oversight, policy, and funding decisions. GAO’s commitment to good government 
+is reflected in its core values of accountability, integrity, and reliability. 
+The fastest and easiest way to obtain copies of GAO documents at no cost is 
+through our website. Each weekday afternoon, GAO posts on its website newly 
+released reports, testimony, and correspondence. You can also subscribe to 
+GAO’s email updates to receive notification of newly posted products. 
+The price of each GAO publication reflects GAO’s actual cost of production and 
+distribution and depends on the number of pages in the publication and whether 
+the publication is printed in color or black and white. Pricing and ordering 
+information is posted on GAO’s website, https://www.gao.gov/ordering.htm.  
+Place orders by calling (202) 512-6000, toll free (866) 801-7077, or  
+TDD (202) 512-2537. 
+Orders may be paid for using American Express, Discover Card, MasterCard, 
+Visa, check, or money order. Call for additional information. 
+Connect with GAO on Facebook, Flickr, Twitter, and YouTube. 
+Subscribe to our RSS Feeds or Email Updates. Listen to our Podcasts. 
+Visit GAO on the web at https://www.gao.gov. 
+Contact FraudNet: 
+Website:
+ https://www.gao.gov/about/what-gao-does/fraudnet 
+Automated answering system: (800) 424-5454 or (202) 512-7700 
+A. Nicole Clowers, Managing Director, ClowersA@gao.gov, (202) 512-4400, U.S. 
+Government Accountability Office, 441 G Street NW, Room 7125, Washington, 
+DC 20548 
+Chuck Young, Managing Director, youngc1@gao.gov, (202) 512-4800 
+U.S. Government Accountability Office, 441 G Street NW, Room 7149  
+Washington, DC 20548 
+Stephen J. Sanford, Managing Director, spel@gao.gov, (202) 512-4707 
+U.S. Government Accountability Office, 441 G Street NW, Room 7814, 
+Washington, DC 20548 
+GAO’s Mission 
+Obtaining Copies of 
+GAO Reports and 
+Testimony 
+Order by Phone 
+Connect with GAO 
+To Report Fraud, 
+Waste, and Abuse in 
+Federal Programs 
+Congressional 
+Relations 
+Public Affairs 
+Strategic Planning and 
+External Liaison 
+Please P rint on Recycled Paper.

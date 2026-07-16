@@ -1,0 +1,2199 @@
+
+===PAGE 1===
+JANUARY | 2022
+© Andy Piatt/Shutterstock.com
+Prescription Drugs: 
+Spending, Use, and Prices
+
+===PAGE 2===
+At a Glance
+In recent years, policymakers have expressed concerns about the high prices of prescription drugs. 
+Those drugs offer wide-ranging benefits, such as reducing the need for services provided by physicians 
+and hospitals, improving the quality of life, and extending life. However, high prices reduce 
+consumers’ access to such medications. They also contribute to higher spending that strains budgets, 
+including the federal budget. 
+In this report, the Congressional Budget Office examines trends in nationwide spending on 
+prescription drugs over the 1980–2018 period. The report also provides a more detailed analysis 
+of trends in spending, use, and prices in the Medicare Part D and Medicaid programs over the 
+2009–2018 period. 
+• Spending on Prescription Drugs. After decades of increases, per capita spending on prescription 
+drugs began to level off in real terms (that is, with the effects of economywide inflation excluded) 
+in the mid-2000s. Since that time, such spending has fallen as a percentage of total spending on 
+health care services and supplies. That slower growth in spending is associated with the growing 
+availability of generic drugs, which tend to have much lower prices than their brand-name 
+counterparts. 
+The period from 2013 to 2015 was an exception; during that time, spending on prescription drugs 
+increased sharply, both in dollar terms and as a share of total spending on health care services and 
+supplies. Although per enrollee spending in Medicare Part D was fairly stable from 2009 to 2018, 
+per enrollee spending in Medicaid increased somewhat faster than nationwide per capita spending 
+over that period.
+• Use of Prescription Drugs. Consumers’ use of prescription drugs has increased over time. Greater 
+use of generic drugs is a key factor in that increase.
+• Prices of Prescription Drugs. The average net price of a prescription—that is, the price of a 
+prescription after subtracting the discounts and rebates that manufacturers provide to private 
+insurers and federal programs—fell from $57 in 2009 to $50 in 2018 in the Medicare Part D 
+program and from $63 to $48 in the Medicaid program. That trend reflects the increased use of 
+lower-cost generic drugs, which was partially offset by rising prices for brand-name drugs. The 
+average net price of brand-name prescription drugs increased substantially over that period: from 
+$149 to $353 in Medicare Part D and from $147 to $218 in Medicaid. Average prices for generic 
+drugs in Medicare Part D and Medicaid fell over that period. Nationwide changes in average 
+prices—overall and for both brand-name drugs and generic drugs—probably followed similar 
+patterns.
+www.cbo.gov/publication/57050
+===PAGE 3===
+Contents
+Summary 1
+What Are Recent Trends in Spending for Prescription Drugs? 1
+How Has the Use of Prescription Drugs Changed Over Time? 2
+How Has the Average Price of a Prescription Changed Over Time? 2
+Trends in Spending for Prescription Drugs  3
+Nationwide Spending on Prescription Drugs 3
+Medicare and Medicaid Spending on Prescription Drugs 8
+Trends in the Use of Prescription Drugs 9
+Underlying Drivers of Increased Use 9
+Factors Contributing to Changes in the Use of Generic Drugs 10
+Trends in the Average Price of a Prescription  12
+Comparing Prices Among Payers 13
+Prices for Brand-Name Drugs 15
+Prices for Generic Drugs 22
+List of Figures 24
+About This Document 25
+Boxes
+1. The Flow of Payments and Products in Prescription Drug Markets 6
+2. Diverging Trends in Retail and Net Prices 18
+3. The Profitability of Manufacturers of Brand-Name Drugs 20
+===PAGE 4===
+Notes
+T o remove the effects of general inflation when comparing prices and spending over time, all 
+estimates of drug spending and prices in this report have been adjusted to 2018 dollars using the 
+gross domestic product price index from the Bureau of Economic Analysis. 
+Unless otherwise indicated, all drug spending totals are based on net prices. Net drug spending 
+and net prices include the total amount paid to a pharmacy less any discounts and rebates that 
+manufacturers and pharmacies provide to “payers” (such as commercial and government-sponsored 
+health insurance plans and the Medicaid program). In the case of Medicare Part D, those rebates and 
+discounts include statutory discounts in the coverage gap. Because the Congressional Budget Office 
+could not obtain data on the rebates and discounts paid for generic drugs in the Medicare Part D 
+program, rebates and discounts for generic drugs were not subtracted from drug spending totals and 
+net prices for that program.
+For the analysis underlying this report, CBO used data from the Centers for Medicare & Medicaid 
+Services. Spending totals, prescription counts, and average prices for prescription drugs in the 
+Medicare Part D program were derived from data from the Part D Event File; those data were 
+combined with detailed data on the rebates that Medicare Part D plans receive from manufacturers 
+and pharmacies for brand-name drugs. For the Medicaid program, those values were derived from 
+the State Drug Utilization Data and data on statutory Medicaid rebate amounts. Medicaid spending 
+reflects total program spending, including both federal and nonfederal contributions.
+Unless this report specifies otherwise, all discussions about prescription drugs—and all dollar 
+amounts—pertain to drugs purchased in retail settings, such as local pharmacies or mail-order 
+pharmacies, and exclude drugs that are administered in physicians’ offices or hospitals. (In some cases, 
+Medicaid’s administrative data include drugs that are administered in physicians’ offices; those drugs 
+are included in this analysis.)
+All prescription counts and average prices for medications obtained through Medicare Part D have 
+been adjusted to reflect standardized 30-day prescriptions. Any prescription for which the number of 
+days supplied is less than or equal to 30 counts as a single standardized prescription; for prescriptions 
+in which the number of days supplied exceeds 30, the number of standardized prescriptions is equal 
+to the number of days supplied divided by 30. For example, a prescription that has a 90-day supply 
+equals three standardized prescriptions. Prescription counts and average prices for medications 
+obtained through Medicaid were not adjusted for duration of supply because that information is not 
+included in the Medicaid data.
+CBO has corrected this report since its original publication. Corrections are listed at the end of the 
+report.
+===PAGE 5===
+Prescription Drugs:  
+Spending, Use, and Prices
+Summary
+Prescription drugs have become an increasingly import-
+ant part of U.S. health care, as evidenced by the growth 
+in nationwide spending on those drugs from 1980 
+to 2018.1 Over that period, such spending increased 
+more than tenfold in real terms (that is, with the effects 
+of economywide inflation excluded). This report by 
+the Congressional Budget Office discusses trends in 
+nationwide spending on prescription drugs in the retail 
+market from 1980 to 2018. It also presents a detailed 
+analysis of trends in spending, use, and prices in the 
+Medicare Part D and Medicaid programs over the 
+2009–2018 period. 
+What Are Recent Trends in Spending for 
+Prescription Drugs?
+Nationwide spending on prescription drugs increased 
+from $30 billion in 1980 to $335 billion in 2018. (All 
+estimates of drug spending and prices in this report are 
+expressed in 2018 dollars.) Over that period, real per 
+capita spending on prescription drugs increased more 
+than sevenfold: from $140 to $1,073.2 That increase 
+in spending was driven by the development and use of 
+many types of drugs that have yielded myriad health 
+benefits. Because of those health benefits, some drugs, 
+such as those that treat cardiovascular conditions, are 
+associated with reductions in spending on services pro-
+vided by hospitals and physicians.3 Other types of drugs, 
+such as those that treat multiple sclerosis or cancer, may 
+not offer such compensating savings, but they have 
+improved the lives of those with chronic conditions and 
+have also extended life. 
+1. When CBO conducted its analysis, 2018 was the most recent 
+year for which data were available.
+2. In this report, “per capita” is used to describe averages for the 
+nationwide population, whereas “per enrollee” is used to describe 
+averages for enrollees in Medicare Part D or in Medicaid.
+3. See David M. Cutler and others, “Explaining the Slowdown in 
+Medical Spending Growth Among the Elderly, 1999–2012,” 
+Health Affairs, vol. 38, no. 2 (February 2019), pp. 222–229, 
+www.healthaffairs.org/doi/10.1377/hlthaff.2018.05372.
+Spending on prescription drugs increased particularly 
+rapidly after the mid-1990s with an increase in the 
+number of drugs that attained “blockbuster” status by 
+generating at least $1 billion in sales annually. Those 
+blockbuster drugs generally treat conditions, such as high 
+cholesterol or high blood pressure, that affect a large 
+segment of the population. 
+Aside from a pronounced increase between 2013 and 
+2015, spending on prescription drugs has grown more 
+slowly since the mid-2000s. That slower growth in 
+spending—and the accompanying reduction in per cap-
+ita spending—is associated with the growing availability 
+of generic drugs, which tend to have much lower prices 
+than their brand-name counterparts. The brief, sharp 
+increase in spending between 2013 and 2015 coincided 
+with the introduction of a particularly expensive class of 
+drugs that treat hepatitis C. 
+Although per enrollee spending in Medicare Part D—
+Medicare’s pharmaceutical benefit—was fairly stable 
+from 2009 to 2018, per enrollee spending in Medicaid 
+increased somewhat faster than nationwide per cap-
+ita spending over that period. Per enrollee spending 
+on prescription drugs in Medicare Part D averaged 
+about $2,700 per year. Annual per enrollee spending in 
+Medicaid increased over that period by 20 percent, from 
+$445 to $530, whereas nationwide per capita spending 
+increased by 10 percent. 
+Differences in average spending among enrollees in 
+Medicare and Medicaid and the nation as a whole most 
+likely stemmed from differences in the health profiles of 
+their respective patient populations and statutory rebates 
+in the Medicaid program. (Those rebates represent 
+payments from drug manufacturers to “payers,” such as 
+commercial and government-sponsored health insurance 
+plans and the Medicaid program.) Medicare beneficiaries 
+are more likely to be prescribed medications for various 
+chronic conditions, whereas many Medicaid beneficia-
+ries who have prescription drug coverage through that 
+
+===PAGE 6===
+2 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+program are younger and healthier and therefore are less 
+likely to have medications prescribed for them on an 
+ongoing basis.
+How Has the Use of Prescription Drugs 
+Changed Over Time?
+Nationwide per capita use of prescription drugs has 
+increased in recent years. Per enrollee use of prescrip-
+tion drugs has also increased in Medicare Part D and 
+Medicaid—from an average of 48 prescriptions per year 
+in 2009 to 54 in 2018 in Medicare Part D, and from 
+7 prescriptions per year to 11 in Medicaid over that 
+period. Increased use of prescription drugs is primarily 
+associated with the increasing availability and use of 
+generic drugs, along with the continued development of 
+new treatments. In addition, the share of spending on 
+prescription drugs that insurers cover has increased sub-
+stantially: In 1990, consumers paid 57 percent of their 
+prescription drug costs out of pocket, on average. By 
+2009, that share had fallen to 20 percent; it fell further, 
+to 15 percent, in 2018. 
+The share of prescriptions for generic drugs has also 
+increased substantially. Nationwide, that share increased 
+from 75 percent in 2009 to 90 percent in 2018. In 
+Medicare Part D, the share of prescriptions for generic 
+drugs increased from 72 percent to 90 percent between 
+2009 and 2018; in Medicaid, it increased from 70 per-
+cent to 87 percent over that period. Increased use of 
+generic drugs is attributable to several factors: their grow-
+ing availability; their lower prices; and the lower out-
+of-pocket liability for consumers with health insurance 
+compared with the amount people would pay for brand-
+name drugs. The share of prescriptions for generic drugs 
+may be less likely to rise in the future, both because the 
+90 percent dispensing rate for such drugs is already high 
+and because newer brand-name drugs tend to be more 
+costly to manufacture and may be more challenging to 
+replicate as generic drugs. 
+How Has the Average Price of a Prescription 
+Changed Over Time?
+The average price of a prescription has fallen in both the 
+Medicare Part D and Medicaid programs in recent years: 
+from $57 in 2009 to $50 in 2018 in Medicare Part D 
+and from $63 to $48 in Medicaid over that period. 
+Those decreases were largely driven by the increased 
+use of generic drugs in those programs. The growing 
+use of generic drugs has put downward pressure on the 
+nationwide average price of a prescription in recent years 
+as well. 
+Brand-name drugs, while accounting for a declining 
+share of prescriptions, have experienced substantial 
+growth in average prices. Over the 2009–2018 period, 
+the average price of a prescription for a brand-name drug 
+more than doubled in the Medicare Part D program and 
+increased by 50 percent in Medicaid. T wo key drivers of 
+those increases were higher launch prices for new drugs 
+and growth in the prices of individual drugs already on 
+the market. The growing shift toward specialty drugs 
+among new drug entrants was an important factor in the 
+increased launch prices of new drugs. (Specialty drugs, 
+which treat complex, chronic, or rare conditions—such 
+as different types of cancer, rheumatoid arthritis, or mul-
+tiple sclerosis—tend to be costly to manufacture, serve 
+relatively small markets, and have high prices. They may 
+also require special handling or patient monitoring.)4 
+Federal policies have also played a role in the pricing 
+patterns for brand-name drugs. For example, Medicaid’s 
+statutory rebates create an incentive for manufacturers 
+to negotiate higher prices for commercial insurers as well 
+as higher marketwide launch prices. (However, those 
+rebates also create an incentive for manufacturers to 
+increase prices more slowly over time, which probably 
+mitigates the effect of higher initial prices.) In addition, 
+the increase in the share of overall drug spending that 
+is covered by Medicare and Medicaid may dampen the 
+pressure on manufacturers to restrain prices because 
+patients are more willing to purchase high-priced drugs 
+when they have less exposure to those prices.
+Unlike prices for brand-name drugs, average prices for 
+generic drugs have fallen in recent years. From 2009 to 
+2018, the average price of a prescription for a generic 
+drug fell from $22 to $17 in Medicare Part D and from 
+$27 to $23 in Medicaid. Although the federal govern-
+ment and nearly all of the states have pursued legal 
+action against several generic drug manufacturers for 
+price fixing and other anticompetitive behavior, prices 
+have probably increased for only a minority of generic 
+4. Different companies and different analysts use varied criteria to 
+define specialty drugs. CBO uses the definition developed by 
+IQVIA Institute for Human Data Science, a health information 
+technology company. For more information on that definition 
+and how CBO has followed it, see Congressional Budget Office, 
+A Comparison of Brand-Name Drug Prices Among Selected Federal 
+Programs (February 2021), www.cbo.gov/publication/56978.
+
+===PAGE 7===
+3
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+drugs that represent a relatively small share of spending 
+on prescription drugs.
+Trends in Spending for 
+Prescription Drugs 
+From 1980 until the mid-2000s, spending on prescrip-
+tion drugs increased steadily—both in dollar terms and 
+as a share of overall health care spending. That growth 
+was driven by increases in the availability and use of 
+different types of new drug therapies along with increas-
+ing prices of brand-name drugs. However, after the 
+mid-2000s, the increasing availability and use of generic 
+drugs put downward pressure on spending growth. 
+Nationwide, real per capita spending and the share of 
+overall health care spending attributable to prescription 
+drugs began to decrease in the mid-2000s, with the 
+exception of a sharp increase from 2013 to 2015. That 
+increase coincided with the introduction of a particularly 
+expensive class of drugs that are used to treat hepatitis C. 
+Per enrollee spending was relatively flat in the Medicare 
+Part D program from 2009 to 2018, whereas Medicaid’s 
+per enrollee drug spending grew over that period.
+Nationwide Spending on Prescription Drugs
+Since 1980, the share of nationwide spending on health 
+care services overall that can be attributed to prescrip-
+tion drugs has nearly doubled, from about 5 percent to 
+almost 10 percent in 2018. Through the 1980s and early 
+1990s, 5 percent to 6 percent of all spending on health 
+care services and supplies was on prescription drugs 
+obtained in the retail market (that is, from pharmacies—
+either in stores or by mail order). By 2018, that share 
+was 10 percent (see Figure 1). In comparison, the share 
+of spending on health care services and supplies that was 
+attributable to hospital services fell from 40 percent in 
+1980 to 31 percent in 2018, and the share attributable to 
+services provided by medical professionals and in clinical 
+settings was about 20 percent over that period. 
+Nationwide per capita spending on prescription drugs 
+increased from $140 in 1980 to $1,073 in 2018 (see 
+Figure 2).5 (Those spending amounts are net of rebates 
+5. Those spending figures come from the National Health 
+Expenditure Accounts (NHEA), which report total spending on 
+prescription drugs purchased at retail or mail-order pharmacies, 
+minus the rebates that drug manufacturers pay to pharmacy 
+benefit managers and health insurance plans. The spending 
+figures are adjusted to account for inflation using the gross 
+domestic product price index from the Bureau of Economic 
+Analysis and are expressed in 2018 dollars. For more information 
+on how NHEA data are constructed, see National Health 
+and discounts. For background information on rebates, 
+negotiations, and other attributes of pharmaceutical 
+markets, see Box 1 on page 6.) Per capita spending 
+on prescription drugs roughly doubled every 10 years 
+before slowing down in the mid-2000s. 
+Although this report focuses on prescription drugs 
+obtained through the retail market, spending on pre-
+scription drugs purchased in nonretail settings—such 
+as physicians’ offices, clinics, and hospitals—represents 
+a substantial share of overall spending on prescription 
+drugs. A recent estimate suggests that nonretail drugs 
+represented approximately 30 percent of overall net 
+spending on prescription drugs in the United States 
+in 2016.6 The general pattern of total drug spending 
+over the period studied in this report is similar when 
+those other sources and types of prescription drugs are 
+included.7
+Trends in Spending Over the 1995–2013 Period. 
+Spending on prescription drugs rose particularly rapidly 
+after 1995 as a number of drugs reached blockbuster 
+status.8 That wave of blockbuster drugs consisted of top 
+sellers that were in high demand because they offered 
+Statistics Group, Office of the Actuary, Centers for Medicare 
+& Medicaid Services, National Health Expenditure Accounts: 
+Methodology Paper, 2020—Definitions, Sources, and Methods 
+(2020), https://go.usa.gov//xswJJ (PDF , 621 KB).
+6. In that estimate, gross margins were projected to be the same 
+in retail and nonretail settings—in other words, the percentage 
+difference between a provider’s or pharmacy’s revenues and 
+invoice costs for prescription drugs was the same, on average, in 
+those two types of settings. See Charles Roehrig, Projections of the 
+Prescription Drug Share of National Health Expenditures Including 
+Non-Retail (Altarum, May 2018), https://tinyurl.com/d62yuens 
+(PDF , 1.87 MB).
+7. IQVIA is another commonly cited data source for spending 
+on prescription drugs. That company’s data report spending 
+on prescription drugs from all channels, including those 
+administered in hospitals and physicians’ offices. Those data 
+do not include markups along the distribution chain, such as 
+dispensing fees or wholesalers’ markups. As a result, it is difficult 
+to directly compare IQVIA data with NHEA data. For IQVIA’s 
+data on prescription drug spending over a recent 10-year period, 
+see IQVIA Institute for Human Data Science, Medicine Use and 
+Spending in the U.S.: A Review of 2018 and Outlook to 2023 
+(May 2019), https://tinyurl.com/byjnzd7.
+8. See Murray Aitkin, Ernst R. Berndt, and David M. Cutler, 
+“Prescription Drug Spending T rends in the United States: 
+Looking Beyond the T urning Point,” Health Affairs, 
+vol. 27 (2008), pp. w151–w160, https://www.healthaffairs.org/
+doi/10.1377/hlthaff.28.1.w151.
+
+===PAGE 8===
+4 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+new treatments for relatively common health condi-
+tions. The most prominent of those drugs were statins 
+for high cholesterol, ACE inhibitors for high blood 
+pressure, proton-pump inhibitors for acid reflux and 
+gastric ulcers, and antidepressants and antipsychotics 
+for mental illnesses. When the patents on those drugs 
+began to expire—an event often referred to as the patent 
+cliff—lower-priced generic substitutes were introduced 
+and gained market share.9 In the midst of that shift, 
+the Medicare Part D program was created, which both 
+increased access to prescription drugs for Medicare ben-
+eficiaries and contributed to the shift from brand-name 
+drugs to generic alternatives.10 As a result, per capita 
+9. Since 1995, U.S. patents have been granted for 20 years from the 
+date of filing. With time for processing the patent application 
+and, in particular, for testing a new drug and gaining approval 
+from the Food and Drug Administration to market it, the 
+effective life of a drug patent is often about 10 years.
+10. Most Part D plans have a benefit design that includes lower 
+out-of-pocket costs for generic drugs. See Murray Aitkin, 
+Ernst R. Berndt, and David M. Cutler, “Prescription Drug 
+Spending T rends in the United States: Looking Beyond the 
+T urning Point,” Health Affairs, vol. 27 (2008), pp. w151–w160, 
+www.healthaffairs.org/doi/10.1377/hlthaff.28.1.w151. 
+spending on prescription drugs leveled off at about 
+$940 in the mid-2000s and then fell to $900 by 2013, 
+and the share of overall health care spending for prescrip-
+tion drugs peaked at 10.5 percent in 2006 and then fell 
+to 9.2 percent in 2013. 
+Trends in Spending Since 2013. Spending on prescrip-
+tion drugs increased again over the 2013–2015 period 
+before leveling off thereafter. A key factor in that increase 
+was the introduction, at the end of 2013, of a class of 
+specialty drugs that treat hepatitis C. The drugs for 
+hepatitis C were introduced at particularly high prices.11 
+Insurers and patients may have been willing to pay 
+those prices because of the enormous clinical benefits 
+those drugs offer when compared with older therapies 
+11. For example, Sovaldi was launched in December 2013 with a list 
+price of $84,000 for a standard 12-week regimen, and Harvoni 
+was launched in October 2014 with a list price of $94,500 for 
+a standard 12-week regimen. Viekira Pak was launched soon 
+after, in December 2014, with a list price of $83,319 for a 
+standard 12-week regimen. See Medicaid and CHIP Payment 
+and Access Commission, High-Cost HCV Drugs in Medicaid: 
+Final Report (prepared by Brian Bruen and others, January 2017), 
+https://go.usa.gov/xswhd.
+Figure 1 .
+Spending on Prescription Drugs Purchased From Pharmacies as a  
+Share of Total Spending on Health Care Services and Supplies
+Percent
+0
+4
+8
+12
+1982 1988 1994 2000 2006 2012 2018
+From 1980 to 2018, the 
+availability and use of 
+different types of new 
+drug therapies, along with 
+rising prices for brand-
+name drugs, contributed to 
+increases in spending on 
+prescription drugs. At the 
+same time, the availability 
+and use of generic drugs  
+put downward pressure on 
+such spending.
+Data source: Congressional Budget Office, using data from Centers for Medicare & Medicaid Services, National Health Expenditure Data, Historical, 
+National Health Expenditures by Type of Service and Source of Funds: Calendar years 1960 to 2019, entries for “Prescription Drugs” and “Total National Health 
+Expenditures” (accessed December 10, 2021), https://go.usa.gov/xASdV. See www.cbo.gov/publication/57050#data.
+Spending on prescription drugs is net of rebates paid by manufacturers to payers, such as commercial and government-sponsored health insurance plans and 
+the Medicaid program. 
+Data for prescription drug spending exclude spending on drugs that are administered in physicians’ offices or hospital settings. 
+
+===PAGE 9===
+5
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+(they successfully treat about 95 percent of patients with 
+chronic hepatitis C infection) and the stiff demand for 
+that kind of therapy.12 However, the patient popula-
+tion for that class of drugs is larger than that for many 
+specialty drugs, leading to a larger impact on spending 
+than would have occurred for a similarly priced drug that 
+treats a smaller patient population. 
+Implementation of the insurance expansions under the 
+Affordable Care Act (ACA) also occurred during this 
+period.13 Researchers have found that new take-up of 
+Medicaid in states that expanded coverage under the 
+12. See Department of Veterans Affairs, “Hepatitis C 
+Medications: An Overview for Patients” (accessed March 16, 
+2021), https://go.usa.gov/xs7qe.
+13. As referred to in this report, the Affordable Care Act comprises 
+the Patient Protection and Affordable Care Act (Public Law 
+111-148), the health care provisions of the Health Care and 
+Education Reconciliation Act of 2010 (P .L. 111-152), and the 
+effects of subsequent judicial decisions, statutory changes, and 
+administrative actions.
+terms of the ACA was associated with greater use of 
+prescription drugs because those benefits reduced out-
+of-pocket spending for the previously uninsured and 
+also tended to be more generous than previous sources 
+of coverage.14 Take-up of marketplace health insurance 
+options under the insurance expansions may have been 
+associated with a similar response. However, overall use 
+of prescriptions in the Medicaid program did not grow 
+faster in the years immediately following the insurance 
+expansions than it did in prior years, suggesting that 
+the expansions were not a key driver of the increase in 
+spending on prescription drugs over that period.15
+14. See Ausmita Ghosh, Kosali Simon, and Benjamin D. Sommers, 
+“The Effect of Health Insurance on Prescription Drug Use 
+Among Low-Income Adults: Evidence From Recent Medicaid 
+Expansions,” Journal of Health Economics, vol. 63 (January 2019), 
+pp. 64–80, https://doi.org/10.1016/j.jhealeco.2018.11.002. 
+15. See IQVIA Institute for Human Data Science, Medicines Use 
+and Spending in the U.S.: A Review of 2016 and Outlook to 2021 
+(May 2017), Chart 8, https://tinyurl.com/32ea3225. 
+Figure 2 .
+Total Nationwide Spending, per Capita, on Prescription Drugs 
+Purchased From Pharmacies
+2018 Dollars
+0
+200
+400
+600
+800
+1,000
+1,200
+1982 1988 1994 2000 2006 2012 2018
+Growth in per capita 
+spending on prescription 
+drugs began to slow in the 
+mid-2000s, coinciding with 
+the increasing availability 
+and use of lower-priced 
+generic drugs. However, 
+the introduction of a 
+particularly expensive class 
+of drugs that are used to 
+treat hepatitis C led to a 
+sharp increase in per capita 
+spending from 2013 to 2015.
+Data source: Congressional Budget Office, using data from Centers for Medicare & Medicaid Services, National Health Expenditure Data, Historical, 
+National Health Expenditures by Type of Service and Source of Funds: Calendar years 1960 to 2019, entries for “Prescription Drugs” and “Population” 
+(accessed December 10, 2021), https://go.usa.gov/xASdV. See www.cbo.gov/publication/57050#data.
+Spending on prescription drugs is net of rebates paid by manufacturers to payers, such as commercial and government-sponsored health insurance plans and 
+the Medicaid program. 
+Data for prescription drug spending exclude spending on drugs that are administered in physicians’ offices or hospital settings. 
+To remove the effects of general inflation when comparing prices and spending over time, estimates of spending on prescription drugs have been adjusted to 
+2018 dollars using the gross domestic product price index from the Bureau of Economic Analysis.
+
+===PAGE 10===
+6 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+Box 1 .
+The Flow of Payments and Products in Prescription Drug Markets
+Markets for prescription drugs purchased at pharmacies in the 
+United States are served by a complex supply chain, with pay-
+ment flows involving multiple actors, including intermediaries 
+(such as pharmacy benefit managers, or PBMs, which negoti-
+ate prices but do not distribute or dispense the products). The 
+supply process begins with pharmaceutical manufacturers 
+selling their output to wholesale distributors. The distributors 
+resell those drugs to pharmacies, at prices that may have 
+been negotiated by group-purchasing organizations on behalf 
+of members, including pharmacies. Pharmacies package the 
+drugs into prescriptions and sell them a third time, to consum-
+ers. As a result, the concept of “price” differs depending on the 
+entity that is receiving payment—or paying—for a prescription.
+Payments That Pharmacies Receive
+The retail price of a drug at the pharmacy counter is deter-
+mined by negotiations between pharmacies and insurers (or 
+their PBMs) and reflects both wholesale and retail markups. 
+Those markups compensate the wholesaler and pharmacy, 
+respectively, for the services they provide and for their inven-
+tory costs. The retail price of a given drug is probably similar 
+for most payers.1 (Payers are the entities that pay for prescrip-
+tion drugs, namely commercial insurers and federal health care 
+programs, as well as individuals without insurance coverage 
+for prescription drugs.) Consumers who have not yet satisfied 
+their insurance plan’s annual deductible pay that retail price or 
+possibly much less if the manufacturer has a coupon program 
+for that drug and the consumer is eligible for the program. (A 
+deductible is the amount of spending an enrollee incurs before 
+an insurer begins covering expenses.) Consumers with health 
+insurance who have met their deductible pay only a portion 
+of the retail price, as specified by their plan’s copayment or 
+coinsurance schedule; the remainder is paid by their plan or 
+its PBM. (A copayment is a specified dollar amount that an 
+enrollee pays at the time a drug is purchased. Coinsurance is 
+cost sharing in the form of a set percentage of the drug’s cost.) 
+Consumers without insurance may pay a pharmacy’s “usual 
+and customary” price—which tends to be higher than the retail 
+1. The Congressional Budget Office found that retail prices for a given basket 
+of drugs were very similar for Medicare and Medicaid. See Congressional 
+Budget Office, A Comparison of Brand-Name Drug Prices Among Selected 
+Federal Programs (February 2021), www.cbo.gov/publication/56978.
+prices paid by other payers—or may pay a discounted amount 
+using a coupon program such as GoodRx.2
+Prices That Insurers Pay
+For insurance plans, a drug’s retail price bears little relation 
+to the plan’s costs for prescription drug claims, especially in 
+the case of brand-name drugs. The actual price to the insurer 
+is largely determined by the rebate, the negotiated payment 
+it later receives from the manufacturer. (Manufacturers of 
+generic drugs generally do not offer rebates to insurance 
+plans, although they pay rebates to pharmacies.)3 The size of 
+the rebate, which varies by drug, health insurance plan, and 
+enrollees’ total purchases of the drug in that plan, is nego-
+tiated in advance by the insurer or the insurer’s PBM. (That 
+process is described below in the section titled “Negotiations 
+With Manufacturers.”) 
+For brand-name drugs, the PBM may achieve its markup by 
+retaining a small portion of the manufacturer’s rebate, with 
+the remainder going to the insurer or payer. The insurer, in 
+turn, shares most of the rebate with its enrollees in the form 
+of lower premiums or more generous benefits on its insurance 
+coverage.4 For generic drugs, there is generally no rebate to 
+share; consequently, the PBM may mark up the net prices of 
+those drugs or may instead charge the plans higher fees for its 
+administrative services.
+Negotiations With Manufacturers. The process by which 
+net prices are negotiated is similar for most insurance plans, 
+2. See Adam J. Fein, “How GoodRx Profits From Our Broken Pharmacy Pricing 
+System” (blog entry, August 31, 2020), https://tinyurl.com/2dh6hxyw.  
+3. Unlike rebates for brand-name drugs, those rebates do not reduce net 
+costs to plans because they are paid to pharmacies or wholesalers rather 
+than to plans or PBMs. See Steven M. Lieberman and Paul B. Ginsburg, 
+Would Price Transparency for Generic Drugs Lower Costs for Payers 
+and Patients? (Leonard D. Schaeffer Center for Health Policy and 
+Economics and the Center for Health Policy at Brookings, June 2017), 
+https://tinyurl.com/2mczpcxs.
+4. PBMs have recently reported that 90 percent of rebates are passed through 
+to insurers and plan sponsors, though small insurers and employers 
+have reported that they receive smaller shares of rebates. See Elizabeth 
+Seeley and Aaron S. Kesselheim, Pharmacy Benefit Managers: Practices, 
+Controversies, and What Lies Ahead (Commonwealth Fund, March 2019), 
+https://tinyurl.com/b7xh8vup (PDF, 405 KB).
+Continued
+
+===PAGE 11===
+7
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+although the net prices themselves can vary widely across 
+those plans. A PBM bargains with a manufacturer for a larger 
+rebate on a drug in exchange for preferred placement of that 
+drug in a plan’s formulary (or list of covered drugs). Those 
+negotiations may also include stronger restrictions on—or 
+exclusion of—competing drugs as well as “price protection” 
+rebates that protect the PBM and plan against large price 
+increases during the benefit year. 
+For drugs in the preferred tier of a plan’s formulary, enrollees 
+typically have a lower copayment or coinsurance rate and 
+may face fewer restrictions—such as the requirement that 
+a beneficiary obtain prior authorization before purchasing 
+a drug. The opposite is true for drugs in nonpreferred tiers. 
+(Drugs in nonpreferred tiers generally have higher cost-sharing 
+requirements or more restrictions on utilization than drugs 
+in preferred tiers.) Net prices for the Medicaid program are 
+heavily influenced by rebates determined by statutory rules, 
+though smaller supplemental rebates may be negotiated by 
+states through a similar process in exchange for placement on 
+a preferred drug list.5
+That process generally does not extend to drugs that must be 
+administered by a physician. In such cases, the insurer often 
+reimburses the administering physician who provided the drug 
+rather than purchasing it from a pharmacy. Those drugs tend 
+to be covered by an insurance plan’s medical benefit rather 
+than its pharmacy benefit. For that reason, the pricing for 
+physician-administered drugs mostly relies on the prices that 
+physicians pay to purchase those drugs.
+Manufacturers tend to offer larger rebates on drugs that face 
+competition from other products. (In the absence of compe-
+tition, a pharmaceutical company may offer only minimal or 
+no rebates.) That applies to rebates for commercial insurance 
+plans as well as to those provided to Medicare Part D, which 
+is administered by private insurers. A large share of rebates 
+provided to Medicaid, by contrast, are not directly negoti-
+ated, although they partly depend on the rebates negotiated 
+by commercial insurers. Specifically, Medicaid receives the 
+5. The Medicaid price and spending figures in this report do not include those 
+supplemental rebates because CBO does not have information about such 
+rebates.
+greater of the largest rebate paid to any commercial insurer 
+or a statutory minimum rebate (currently 23.1 percent of the 
+average manufacturer price, or AMP—the average price that 
+wholesalers have paid for drugs they sell to retailers or that 
+retailers paid directly to manufacturers).
+Payments From Pharmacies. Pharmacies are another source 
+of post-sale payments to PBMs and plans that reduce the net 
+prices they have paid for prescription drugs. Such payments, 
+which generally take the form of fees that pharmacies pay to 
+PBMs and plans, are much smaller than those from manufac-
+turers and can apply to purchases of both brand-name and 
+generic drugs.6 Those fees are generally related to inclusion of 
+a pharmacy in a plan’s network of preferred pharmacies or to 
+discounts associated with prompt payment.7
+Additional Rebates Paid to Medicaid and Other Federal 
+Payers. Rebates paid to Medicaid are also subject to the 
+inflation-adjustment provision described in the section of the 
+report titled “Comparing Prices Among Payers.” Most states 
+also negotiate with manufacturers for supplemental Medicaid 
+rebates in exchange for providing beneficiaries easier access 
+to the drugs associated with those rebates. Other federal 
+payers negotiate discounts that make the prices paid by those 
+programs substantially lower than net prices in Part D but 
+somewhat higher than those paid by Medicaid.8 Although man-
+ufacturers of generic drugs do not generally pay a negotiated 
+rebate to insurers, Medicaid receives a statutory minimum 
+rebate, currently 13 percent of the AMP plus an inflation-based 
+rebate, on generic drugs.
+6. The size of those fees in the Part D program has been growing in recent 
+years. By one estimate, post-sale discounts accounted for 18 percent 
+of all rebates and discounts collected by Part D plans in 2019. See 
+Adam J. Fein, “Pharmacy DIR Fees Hit a Record $9 Billion in 2019—That’s 
+18% of Total Medicare Part D Rebates” (blog entry, February 13, 2020), 
+https://tinyurl.com/5xsuhua3.
+7. See Deana Bell and Tracy Margiott, Medicare Part D DIR: Direct and Indirect 
+Remuneration Explained (Milliman, January 2018), https://tinyurl.com/
+p7r5dp9v. 
+8. See Congressional Budget Office, A Comparison of Brand-Name Drug 
+Prices Among Selected Federal Programs (February 2021), www.cbo.gov/
+publication/56978. 
+Box 1. Continued
+The Flow of Payments and Products in Prescription Drug Markets
+
+===PAGE 12===
+8 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+Medicare and Medicaid Spending on 
+Prescription Drugs
+Measured in 2018 dollars, spending on prescription 
+drugs grew from $74 billion in 2009 to $120 billion in 
+2018 in the Medicare Part D program and from $18 bil-
+lion to $32 billion in Medicaid. Those programs account 
+for a large share of all U.S. spending on retail prescrip-
+tion drugs. T ogether, beneficiaries in those programs 
+were responsible for about 45 percent of nationwide 
+spending on retail prescription drugs in 2018 as mea-
+sured in the National Health Expenditure Accounts. 
+The analysis in this section covers a shorter period than 
+the period examined for nationwide spending because 
+Medicare Part D was not implemented until 2006, and 
+early data were not representative of the program’s spend-
+ing because it took time for enrollees to adapt to the new 
+program. This was particularly true for people who were 
+dually eligible for Medicare and Medicaid and whose 
+prescription drug coverage transitioned from Medicaid 
+to Medicare Part D.16 CBO therefore decided to focus on 
+the most recent 10-year period for which data were avail-
+able for both programs. (Those totals reflect amounts 
+spent by insurers and patients, less rebates and discounts 
+for brand-name drugs.) 
+For the purposes of making comparisons between 
+different populations, it is most meaningful to compare 
+patterns in per capita or per enrollee spending. Changes 
+in spending per person reflect a variety of factors, such 
+as changes in average health status—both at the pop-
+ulation level and the program level—and changes in 
+prices. For example, the aging of members of the baby-
+boom generation most likely increased nationwide per 
+capita spending over the 2009–2018 period because 
+of the corresponding increase in the average age of the 
+population.17 At the same time, that trend probably 
+put downward pressure on per enrollee spending in 
+Medicare Part D because it corresponded to a larger 
+relative increase in the younger Medicare population. 
+Changes in total spending are also affected by population 
+and enrollment growth—and enrollment in Medicare 
+Part D and Medicaid grew much faster than the nation-
+wide population over the study period.18 For Medicare 
+16. See Kaiser Family Foundation, The Transition of Dual Eligibles to 
+Medicare Part D Prescription Drug Coverage: State Actions During 
+Implementation (2006), https://tinyurl.com/2v4crsf8.
+17. The baby-boom generation is the cohort born between 
+1946 and 1964.
+18. In Medicare Part D, enrollment grew by about 60 percent—
+about the same amount as for spending—whereas the number 
+Part D, net per enrollee spending on prescription drugs 
+remained relatively stable, averaging about $2,700 from 
+2009 to 2018. Medicaid’s per enrollee spending grew 
+by about 20 percent over that period, starting from 
+$445 per enrollee in 2009 and reaching $530 in 2018.19 
+Over the same period, nationwide per capita spending 
+grew by nearly 10 percent—from $957 to $1,073.
+The greater increase in Medicaid’s per enrollee spend-
+ing may partly relate to new specialty drugs that treat 
+conditions, such as HIV or hepatitis C, with a higher 
+prevalence in the Medicaid population than in the 
+Part D population.20 Another key factor is a greater 
+increase in per enrollee use of prescription drugs in 
+Medicaid than in Medicare Part D, as demonstrated 
+below. The role of the Medicaid expansions in those 
+trends is unclear, depending on the average usage 
+patterns of the newly eligible Medicaid population 
+compared with the previously eligible population. One 
+study found that increases in prescription volume were 
+similar to increases in enrollment in states that expanded 
+Medicaid, suggesting that the impact on per enrollee 
+spending depends on the average prices for drugs used 
+by the newly eligible population compared with the 
+previously eligible population.21 
+of people who received coverage for prescription drugs from the 
+Medicaid program grew by about 50 percent. In comparison, the 
+nationwide population grew by less than 10 percent.
+19. For the purposes of this analysis, beneficiaries who are dually 
+enrolled in Medicare and Medicaid are counted as Medicare 
+enrollees because their prescription drug use is covered by the 
+Medicare Part D benefit. In addition, some Medicaid-only 
+enrollees are eligible only for limited benefits. The calculations 
+of per enrollee Medicaid spending and prescription drug use 
+in this report incorporate CBO’s estimate of the number of 
+people with Medicaid coverage for prescription drugs. For more 
+details, see Anna Anderson-Cook, Jared Maeda, and Lyle Nelson, 
+Prices for and Spending on Specialty Drugs in Medicare 
+Part D and Medicaid: An In-Depth Analysis, Working Paper 
+2019-02 (Congressional Budget Office, March 2019), p. 32, 
+www.cbo.gov/publication/55011.
+20. See Kaiser Family Foundation, “Medicaid and HIV” (October 
+1, 2019), https://tinyurl.com/y53tecc8; and Haley Bush and 
+others, “Impact of Hepatitis C Virus and Insurance Coverage 
+on Mortality,” American Journal of Managed Care, vol. 25, no. 2 
+(February 2019), pp. 61–67, https://tinyurl.com/2t4t2prk.  
+21. See Ausmita Ghosh, Kosali Simon, and Benjamin D. Sommers, 
+“The Effect of Health Insurance on Prescription Drug Use 
+Among Low-Income Adults: Evidence From Recent Medicaid 
+Expansions,” Journal of Health Economics, vol. 63 (January 2019), 
+pp. 64–80, https://doi.org/10.1016/j.jhealeco.2018.11.002.
+
+===PAGE 13===
+9
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+Differences in the amounts of per enrollee spending 
+in Medicare Part D and Medicaid and in per capita 
+spending in the United States as a whole are stark. They 
+are most likely driven by a combination of differences 
+in average health status and statutory rebates in the 
+Medicaid program. Per enrollee spending in Medicare 
+is much higher than the national average, probably 
+because many Medicare beneficiaries have chronic health 
+conditions and may fill several prescriptions per month. 
+By contrast, lower per enrollee spending in Medicaid 
+is probably attributable to a combination of the statu-
+tory rebates in that program—which lead to lower net 
+prices—and the fact that many Medicaid beneficiaries 
+with prescription drug coverage are relatively healthy 
+adults or children. That offsets higher average spending 
+by the less healthy disabled population in the Medicaid 
+program. 
+Trends in the Use of 
+Prescription Drugs
+Utilization of prescription drugs nationwide has 
+increased in recent years, both because the prevalence 
+of chronic conditions has increased with the aging of 
+the U.S. population and because new therapies and 
+generic drugs have become available.22 Over the past 
+several decades, consumers, health care providers, and 
+insurers have witnessed the emergence of blockbuster 
+therapies that treat common conditions, such as high 
+blood pressure, high cholesterol, anxiety, and depres-
+sion; and the emergence of generic alternatives for those 
+drugs has improved access to such treatments by offering 
+lower-cost options. In addition, consumers’ share of 
+spending on prescription drugs has fallen substantially 
+as the combined share of spending covered by federal 
+programs and private health insurance has increased over 
+time. 
+Use of prescription drugs among those enrolled in 
+Medicare Part D and Medicaid increased as well. 
+Administrative data about Medicare Part D show that 
+from 2009 to 2018 the average number of standardized 
+prescriptions per beneficiary rose from 48 to 54 per 
+year—a 13 percent increase. (Standardized prescrip-
+tions are adjusted to 30-day equivalents for more than a 
+30-day supply.) According to administrative data about 
+Medicaid, the number of prescriptions per person with 
+Medicaid coverage for prescription drugs rose from an 
+average of 7 to 11 per year over that same period—an 
+increase of 57 percent. (The administrative data on 
+22. See, for example, IQVIA Institute for Human Data Science, 
+Medicines Use and Spending in the U.S.: A Review of 2016 and 
+Outlook to 2021 (May 2017), https://tinyurl.com/32ea3225.
+Medicaid drug use and spending do not include infor-
+mation on days supplied and thus are unadjusted.) 
+As with per enrollee spending, the variation in per 
+enrollee use of prescription drugs between those two 
+programs reflects differences in the health status of their 
+beneficiaries. 
+Underlying Drivers of Increased Use
+The reduction in consumers’ out-of-pocket costs for 
+prescription drugs is one key factor that explains the 
+increased use of prescription drugs. In 1990, consumers’ 
+share of spending on prescription drugs was 57 per-
+cent. By 2009, that share had fallen to 20 percent. It 
+continued to fall thereafter, declining to 15 percent in 
+2018. That long-term decline is largely explained by a 
+gradual increase in the share of spending covered by the 
+Medicare and Medicaid programs, which grew from 
+13 percent in 1990 to 36 percent in 2018.23 
+Some of that increase is attributable to the creation 
+of Medicare Part D in 2006. In that year, the share of 
+spending covered by Medicare and Medicaid increased 
+to 25 percent, up from 19 percent in 2005. That share 
+has steadily increased since 2006. More recent increases 
+were partly attributable to the increased generosity of the 
+Part D benefit that was mandated by both the ACA in 
+2010 and the Bipartisan Budget Act of 2018, as well as 
+to the Medicaid expansions that were encouraged by the 
+ACA.24 
+The role of private health insurance in paying for pre-
+scription drugs has also increased since 1990. Its share 
+of spending was 26 percent in 1990 and 44 percent 
+in 2018, although the share covered by private health 
+23. Those spending figures, along with the ones in the next two 
+paragraphs, are from Centers for Medicare & Medicaid Services, 
+National Health Expenditure Data, Historical, NHE Tables, 
+Table 16: “Retail Prescription Drugs Expenditures; Levels, 
+Percent Change, and Percent Distribution, by Source of Funds: 
+Selected Calendar Years, 1970–2018,” https://go.usa.gov/xASdV.
+24. The Affordable Care Act required that cost sharing in the Part D 
+coverage gap gradually fall from 100 percent of retail prices in 
+2010 to 25 percent in 2020. (Also known as the donut hole, 
+the coverage gap represents a range of spending for which 
+beneficiaries were originally required to pay the full cost of their 
+prescription drugs. Although the coverage gap was eliminated 
+in 2019, the term is still defined in federal law to refer to that 
+phase of the benefit.) The Bipartisan Budget Act accelerated 
+that change by setting maximum cost sharing for brand-name 
+drugs dispensed in the coverage gap to 25 percent in 2019. 
+(That provision also applied to biosimilars, which are drugs that 
+contain the same active molecule as a drug made from a living 
+organism—referred to as a biologic drug.) 
+
+===PAGE 14===
+10 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+insurance was highest in the early 2000s, ranging from 
+47 percent to 50 percent. That share has since fallen.
+Greater access to generic drugs in those programs may 
+be another key factor that explains the increased use of 
+prescription drugs: Lower-cost options make it easier 
+for people to purchase their prescribed medications. 
+Nationwide, the share of standardized prescriptions 
+dispensed for generic drugs was 75 percent in 2009 
+and reached 90 percent by 2018.25 In Medicare Part D, 
+the number of standardized prescriptions dispensed for 
+generic drugs more than doubled from 2009 through 
+2018, whereas the number of standardized prescrip-
+tions dispensed for brand-name drugs declined by a 
+third. In Medicaid, the number of generic prescriptions 
+roughly tripled over that time, whereas the number of 
+brand-name prescriptions was essentially unchanged 
+(see Figure 3). As a result, the share of prescriptions for 
+generic drugs in Medicare Part D increased from 72 per-
+cent in 2009 to 90 percent in 2018; that share increased 
+from 70 percent to 87 percent in Medicaid over the same 
+period. Increased use of generic drugs also helps explain 
+why per enrollee spending in federal programs rose more 
+slowly than the increase in overall use of prescription 
+drugs in those programs.
+Factors Contributing to Changes in the 
+Use of Generic Drugs
+One of the primary factors contributing to the increased 
+use of generic drugs over the 2009–2018 period was the 
+availability of generic equivalents for a growing number 
+of brand-name drugs as their patents expired or were 
+successfully challenged by manufacturers of generic 
+drugs. That process accelerated in the first decade of the 
+2000s when the blockbuster drugs of the previous decade 
+began losing their sales-exclusivity rights. In addition, 
+insurers have used a variety of tools to steer patients 
+toward generic drugs. 
+However, the rate of increase in the share of prescrip-
+tions for generic drugs has slowed in recent years. That 
+reduced growth coincides with the leveling off of two 
+former sources of growth: First, the share of prescriptions 
+25. See Ernst R. Berndt and Murray L. Aitken, “Brand Loyalty, 
+Generic Entry, and Price Competition in Pharmaceuticals in the 
+Quarter Century After the 1984 Waxman-Hatch Legislation,” 
+International Journal of the Economics of Business, vol. 18, no. 2 
+(August 2011), pp. 177–201, https://doi.org/10.1080/1357151
+6.2011.584423; and IQVIA Institute for Human Data Science, 
+Medicine Use and Spending in the U.S.: A Review of 2018 and 
+Outlook to 2023 (May 2019), https://tinyurl.com/2byjnzd7.
+for which a generic option is available has equaled 
+92 percent since 2016. Second, since 2013, 97 percent 
+of prescriptions that have both a brand-name option and 
+a generic option have been dispensed as generic drugs.26 
+Also, going forward, further availability of generic drugs 
+may be somewhat limited if newer and more com-
+plex brand-name drugs are less likely to attract generic 
+competition. That could be the case if those drugs treat 
+conditions that affect fewer patients and are more chal-
+lenging to replicate.
+Factors that Increase the Use of Generic Drugs. 
+Health insurers use a variety of methods to encour-
+age the use of generic drugs when they are available. 
+A common tool is to charge lower out-of-pocket costs 
+for generics than for brand-name alternatives. For 
+example, employment-based insurance plans required 
+a copayment—that is, a specified dollar amount that 
+an enrollee pays at the time a drug is purchased—of 
+$11, on average, in 2019 for prescription drugs in their 
+first tier, which is usually largely restricted to generic 
+drugs.27 Average copayments for drugs in the second and 
+third tiers ranged from $33 to $59; those tiers tend to 
+include preferred and nonpreferred brand-name drugs.28 
+Plans often require lower cost sharing for drugs with 
+“preferred” formulary placement and higher cost sharing 
+for drugs with “nonpreferred” formulary placement. 
+(A formulary is the plan’s list of covered prescription 
+drugs.) Plans typically require even higher cost sharing 
+for specialty drugs, which are less likely to have generic 
+alternatives. 
+Similarly, median copayments for generic drugs ranged 
+from no cost for preferred generics to $3 for nonpre-
+ferred generics among stand-alone Medicare Part D plans 
+in 2020. (The median copayment divides copayment 
+amounts into two equal groups; that is, half of enrollees 
+in stand-alone Part D plans paid nothing for preferred 
+generics and no more than $3 for nonpreferred generics, 
+26. See IQVIA Institute for Human Data Science, Medicine Use 
+and Spending in the U.S.: A Review of 2018 and Outlook to 2023 
+(May 2019), https://tinyurl.com/2byjnzd7. 
+27. Tiered formularies allow insurance plans to cover less expensive 
+options more generously and more expensive options less 
+generously. Generic drugs often require the lowest amount of cost 
+sharing, whereas very expensive drugs or those for which plans 
+have negotiated smaller rebates tend to have higher cost-sharing 
+requirements.
+28. See Kaiser Family Foundation, 2019 Employer Health Benefits 
+Survey (September 25, 2019), https://tinyurl.com/wc9smxep.
+
+===PAGE 15===
+11
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+and the other half paid no less than those amounts.) 
+Copayments for generic drugs topped out at $10 that 
+year, and the median copayment for preferred brand-
+name drugs was $42.29 In general, cost sharing for non-
+preferred brand-name drugs and specialty drugs tended 
+to be set at a percentage of retail prices—the prices 
+that plans pay to pharmacies, which do not account for 
+rebates provided by manufacturers.30 
+Other tools are used to manage utilization directly: 
+For the most part, the Medicaid program requires that 
+generic versions of a drug be dispensed when available, 
+and most Medicare Part D plans exclude the brand-name 
+version of a drug from its formulary when a generic 
+alternative is available.31 
+29. Some people are enrolled in a Medicare Advantage plan for 
+services provided in hospitals and by physicians and then enroll 
+in a connected Part D plan provided by the same Medicare 
+Advantage insurer. Those who are not enrolled in Medicare 
+Advantage enroll in a stand-alone Part D plan.
+30. See Juliette Cubanski and Anthony Damico, Medicare Part D: 
+A First Look at Prescription Drug Plans in 2020 (Kaiser Family 
+Foundation, November 2019), http://tinyurl.com/8kw9x2ts.
+31. See Kaiser Family Foundation, How State Medicaid 
+Programs Are Managing Prescription Drug Costs (2020), 
+https://tinyurl.com/vuee3xz3; and Stacie B. Dusetzina and 
+When consumers pay the full amount for a prescription 
+drug out of pocket, the difference in the amount they 
+pay for a generic drug versus a brand-name alternative 
+is generally larger than the differences described above. 
+That leads to a greater incentive to choose a generic 
+substitute over a brand-name drug. Consumers may have 
+to pay the full amount for a drug for three reasons: They 
+lack health insurance (or their plan does not include 
+coverage for prescription drugs); their prescribed drug 
+is not covered by their plan; or they have not met their 
+insurance plan’s annual deductible (if any) for prescrip-
+tion drugs. (A deductible is the amount of spending 
+an enrollee incurs before an insurer begins covering 
+expenses.) In the first two cases, consumers may pay a 
+pharmacy’s “usual and customary” price—which tends 
+to be higher than the retail prices paid by other federal 
+health care programs and commercial insurers—or 
+they may pay a discounted amount using a coupon 
+program such as GoodRx.32 In the third case, the 
+others, “Medicare Part D Plans Rarely Cover Brand-Name Drugs 
+When Generics Are Available,” Health Affairs, vol. 39, no. 8 
+(August 2020), pp. 1326–1333, www.healthaffairs.org/doi/
+full/10.1377/hlthaff.2019.01694.
+32. See Adam J. Fein, “How GoodRx Profits From Our Broken 
+Pharmacy Pricing System” (blog entry, August 31, 2020), 
+https://tinyurl.com/2dh6hxyw.  
+Figure 3 .
+Changes in the Number of Brand-Name and Generic Prescription Drugs 
+Dispensed Through Medicare Part D and Medicaid
+Index (2009 = 100)
+0
+50
+100
+150
+200
+250
+300
+350
+2009 2012 2015 2018
+Medicare Part D (Brand)
+Medicaid (Brand)
+Medicare Part D (Generic)
+Medicaid (Generic) Although the use of generic 
+drugs grew over the 
+2009–2018 period, the use 
+of brand-name drugs did 
+not. Two factors account 
+for that difference: Generic 
+equivalents for a growing 
+number of brand-name 
+drugs became widely 
+available, and insurers 
+increasingly steered 
+patients toward generic 
+drugs.
+Data source: Congressional Budget Office, using administrative data for Medicare Part D and Medicaid. See www.cbo.gov/publication/57050#data.
+
+===PAGE 16===
+12 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+consumer pays the retail price that the plan negotiated 
+with the pharmacy. In 2019, 13 percent of people with 
+employment-based insurance were enrolled in a plan 
+with a deductible specific to prescription drugs, up from 
+10 percent in 2005.33
+Constraints on Further Increases in the Use of 
+Generic Drugs. The use of generic drugs may not 
+increase much further for two reasons: First, generic 
+drugs are used extensively. (Those drugs represent 
+90 percent of all prescriptions.) Second, newer drugs are 
+more likely to be biologics (drugs that are produced from 
+living organisms). Those drugs are more complex and 
+harder to manufacture or replicate than small-molecule 
+drugs. Consequently, there may be fewer generics devel-
+oped from them when their patents expire. 
+Manufacturing a biologic with the same active 
+molecule—called a biosimilar—introduces an additional 
+layer of complexity compared with small-molecule drugs. 
+Biosimilars are necessarily created from different cell 
+lines than the originals, so they are not identical at the 
+molecular level. As a result—unlike for generic versions 
+of small-molecule drugs—noninnovator firms (that is, 
+manufacturers of generic or biosimilar drugs) typically 
+need to run clinical trials to demonstrate that their bio-
+similars are not meaningfully different from the reference 
+biologic product. For certain biologic drugs that have 
+small markets, the difficulty that prospective imitators 
+might face is compounded. The lower potential reve-
+nues from sharing a small market, at lower prices, may 
+increase the risk that firms producing biosimilars will fail 
+to recover their higher development costs from imitating 
+a complex drug.34 As a result, future competition from 
+noninnovators may be less robust in some cases as the 
+patents for today’s newer drugs expire. 
+In addition, drug manufacturers have been able to partly 
+neutralize insurance plans’ ability to steer their enroll-
+ees toward generic drugs by issuing coupons directly 
+to consumers. Drug coupons make expensive therapies 
+more affordable and increase manufacturers’ unit sales. 
+33. See Kaiser Family Foundation, 2019 Employer Health Benefits 
+Survey (September 25, 2019), https://tinyurl.com/wc9smxep. 
+34. This difficulty remains even though the price discounts 
+associated with biosimilars are generally smaller than those 
+associated with generic drugs. See IQVIA Institute for Human 
+Data Science, Biosimilars in the United States 2020–2024: 
+Competition, Savings, and Sustainability (September 2020), 
+https://tinyurl.com/ydsjhc6y.
+However, coupons interfere with insurers’ cost-control 
+efforts: Specifically, by covering some or all of an enroll-
+ee’s copayment or coinsurance (cost sharing in the form 
+of a set percentage of the drug’s cost), coupons reduce 
+or eliminate the cost difference between a more expen-
+sive drug and a cheaper generic or preferred alternative. 
+When a coupon induces an enrollee to choose a brand-
+name drug over a generic, it increases the cost to insurers 
+because they then must cover the more expensive brand-
+name drug for that enrollee. (Coupons also provide 
+a discount for consumers who have not yet met their 
+deductible or who lack insurance coverage.) 
+Coupon programs offered by manufacturers have 
+become more prevalent over time: Whereas in 
+2009 manufacturers issued coupons for fewer than 
+100 brand-name drugs, by 2015 more than 700 drugs 
+were covered by coupons.35 Some policymakers have 
+taken steps to limit the use of those coupons. For exam-
+ple, California has banned their use for brand-name 
+drugs that have generic equivalents. By one estimate, that 
+ban affects about 20 percent of the drugs covered by cou-
+pons.36 Other states are considering similar legislation. In 
+addition, coupons for brand-name drugs cannot be used 
+by Medicare and Medicaid beneficiaries because they 
+constitute a violation of the anti-kickback statute.37
+Trends in the Average Price of a 
+Prescription 
+Nationwide data on the average prices of prescription 
+drugs are not readily available, but it is unlikely that the 
+average net price of a prescription has increased consider-
+ably in recent years. Nationwide per capita spending on 
+prescription drugs has generally held steady or declined 
+since the mid-2000s—other than the increase from 
+2013 to 2015—whereas use of prescription drugs has 
+most likely increased over that period. Further, a recent 
+35. See Karen Van Nuys, Geoffrey Joyce, and Rocio Ribero, 
+“Prescription Drug Coupons: A One-Size-Fits-All Policy 
+Approach Doesn’t Fit the Evidence” (Health Affairs blog 
+entry, February 16, 2018), www.healthaffairs.org/do/10.1377/
+hblog20180215.988517/full/.
+36. Ibid. 
+37. Certain copayment assistance programs are available for Medicare 
+Part D enrollees to use, as long as they are sponsored by a bona 
+fide independent charity. See Office of Inspector General, 
+Department of Health and Human Services, Supplemental 
+Special Advisory Bulletin: Independent Charity Patient Assistance 
+Programs, 79 Fed. Reg., no. 104 (May 30, 2014), 31120–31123, 
+https://go.usa.gov/xsfqF.
+
+===PAGE 17===
+13
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+industry analysis shows that reductions in spending 
+resulting from losses of exclusivity and generic pricing 
+reductions nearly offset the growth in spending resulting 
+from the entry of new drugs and price growth among 
+other brand-name drugs.38 
+Changes in average prices in the Medicare and Medicaid 
+programs also support that assessment. In Medicare 
+Part D, the average net price of a prescription (measured 
+in 2018 dollars) fell from $57 in 2009 to $50 in 2018. 
+The decline was greater in Medicaid; in that program, 
+net prices fell from $63 in 2009 to $48 in 2018 (see 
+Figure 4).39 
+Changes in the average net price of a prescription are 
+driven by two opposing trends: increases in the use 
+of lower-cost generic drugs and increases in the prices 
+of brand-name drugs. The share of prescriptions for 
+generic medications that people have purchased at retail 
+pharmacies has grown to 90 percent. That shift toward 
+generic drugs has put considerable downward pressure 
+on the average price of the prescription drugs that people 
+have purchased. However, average prices of brand-name 
+drugs—which constitute the remaining 10 percent of 
+prescriptions—have increased considerably over time. 
+Those increases in average prices represent the combined 
+effect of price increases for drugs already on the market 
+and prices for new drugs, which tend to be higher than 
+prices for drugs already on the market. 
+Comparing Prices Among Payers
+Underlying the overall trends are differences in the prices 
+paid by various payers. (Payers are the entities that pay 
+for prescription drugs, namely commercial insurers 
+and federal health care programs, as well as individuals 
+38. See IQVIA Institute for Human Data Science, Medicine 
+Spending and Affordability in the U.S.: Understanding Patients’ 
+Costs for Medicines, Exhibit 3: “Net Manufacturer Revenues and 
+Growth 2014–2019, All Channels, US$Bn” (August 2020), 
+https://tinyurl.com/3y7s33rd.
+39. The average net prices of a prescription for Medicare Part D 
+and Medicaid that are discussed in this section are calculated 
+by dividing total spending, net of rebates and discounts, by the 
+total count of prescriptions. In the case of Medicare Part D, 
+the denominator is standardized prescriptions, whereas it is 
+the simple count of prescriptions in the case of Medicaid. In 
+addition, rebates and discounts in the Medicare Part D program 
+reflect only those received for brand-name drugs. Average prices 
+for brand-name and generic drugs are calculated using the same 
+approach, stratified by brand status; average retail prices are 
+calculated using total spending at retail prices, rather than netting 
+out rebates and discounts.
+without prescription drug coverage.) One key factor that 
+drives those differences is that manufacturers provide 
+different rebate amounts to different payers for a given 
+drug. Another key factor is that people with different 
+sources of coverage tend to use different sets of drugs 
+that have different average prices. 
+Comparisons Between Medicare and Medicaid. The 
+similarity in the net prices for drugs covered by Medicare 
+and Medicaid masks large differences in average retail 
+prices—that is, the prices paid to pharmacies—for the 
+drugs that beneficiaries of those programs purchase. The 
+average retail price of a prescription covered by Medicaid 
+is much higher than that of a prescription covered 
+by Medicare. In 2018, that average price was $98 for 
+Medicaid beneficiaries—about 40 percent higher than 
+the average of $69 that Medicare beneficiaries incurred 
+that year. Because retail prices for a given drug tend to 
+be similar in Medicare and Medicaid, those differences 
+primarily reflect differences in the mix of drugs used in 
+the two programs.40 
+The differences in average retail prices are most likely 
+attributable to differences in the two populations’ 
+underlying health care needs. Medicare beneficiaries tend 
+to use less complex drugs that treat chronic conditions. 
+Those drugs tend to have lower retail prices. By contrast, 
+the prescriptions that Medicaid-only beneficiaries fill are 
+more likely to be costly drugs that treat complex condi-
+tions. (Such drugs include psychotherapeutic drugs and 
+HIV treatments.) Nevertheless, per enrollee spending on 
+prescription drugs is lower in Medicaid than in Medicare 
+because Medicaid beneficiaries tend to use fewer drugs.
+In addition, Medicaid beneficiaries tend to have low 
+cost-sharing requirements—and sometimes none at all—
+and any cost sharing is generally not tied to the price of 
+a drug. Therefore, Medicaid beneficiaries may be more 
+likely to fill prescriptions for more expensive medications 
+40. The comparisons in this report differ from those of a recent 
+CBO report on the prices paid for brand-name drugs in federal 
+programs. See Congressional Budget Office, A Comparison 
+of Brand-Name Drug Prices Among Selected Federal Programs 
+(February 2021), www.cbo.gov/publication/56978. This report 
+documents the average prices for prescriptions filled in each 
+program; the other report examined price differences for a set 
+basket of prescriptions. That is, the average price differences in 
+this report reflect not only price differences for given drugs, but 
+also differences in the mix of drugs used by people in the two 
+programs.
+
+===PAGE 18===
+14 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+than Medicare beneficiaries, whose cost sharing is more 
+directly tied to the price of a drug. 
+Another CBO report indicated that Medicare beneficia-
+ries tend to use less expensive drugs within a therapeutic 
+class than do Medicaid beneficiaries.41 Medicare benefi-
+ciaries also tend to use generic drugs to a slightly greater 
+degree than Medicaid beneficiaries do. The remaining 
+difference in retail prices stems from differences in aver-
+age prices for the sets of brand-name and generic drugs 
+used by the two populations.
+Comparisons With Commercial Plans. Although CBO 
+does not have data on per capita drug use or average 
+prices for the rest of the U.S. population, it is plausible 
+that both average use and average retail prices for that 
+group are between the Medicare and Medicaid averages. 
+41. See Congressional Budget Office, Competition and the Cost 
+of Medicare’s Prescription Drug Program (July 2014), p. 31, 
+www.cbo.gov/publication/45552.
+The average age of people without public insurance 
+(most of whom have commercial insurance) and the 
+average health status of that population are probably 
+between those of the Medicaid population (which has 
+a large proportion of younger parents and children) 
+and the Medicare population (which consists mostly of 
+elderly people and disabled people). In addition, the fact 
+that the nationwide share of prescriptions for generic 
+drugs is about the same as the share of such prescrip-
+tions in Medicare suggests that the generic share among 
+commercially insured people is closer to Medicare’s 
+percentage (90 percent) and higher than Medicaid’s 
+percentage (87 percent). 
+Average net prices for commercial plans most likely differ 
+from net prices in Medicare and Medicaid not only 
+because of differences in the set of drugs those plans’ 
+enrollees take, but also because of differences in how 
+those prices are determined. In CBO’s assessment, retail 
+prices for a given drug are generally similar across pay-
+ers. However, the net price of a given drug is generally 
+Figure 4 .
+Average Price of a Prescription Drug Obtained Through Medicare Part D and Medicaid
+2018 Dollars
+Medicare Part D (Net)
+Medicaid (Net)
+Medicare Part D (Retail)
+Medicaid (Retail)
+0
+20
+40
+60
+80
+100
+120
+2009 2012 2015 2018
+Despite increases in the 
+use of lower-cost generic 
+drugs over the 2009–2018 
+period, the average price of 
+a prescription drug did not 
+fall significantly, because 
+of increases in the prices 
+of brand-name drugs. 
+Variations in prices between 
+Medicare Part D and 
+Medicaid reflect differences 
+in the types of drugs that 
+physicians prescribed for 
+enrollees and differences in 
+the two programs’ post-sale 
+rebates and discounts.
+Data source: Congressional Budget Office, using administrative data for Medicare Part D and Medicaid. See www.cbo.gov/publication/57050#data.
+Net prices reflect the rebates and fees paid by manufacturers and pharmacies to payers, such as government-sponsored health insurance plans and the 
+Medicaid program, for brand-name drugs. Rebates and fees paid for generic drugs are not included because CBO’s access to those data is restricted.
+The data in these series reflect the average price of prescriptions filled each year and exclude drugs that are administered in physicians’ offices or hospital 
+settings. 
+To remove the effects of general inflation when comparing prices and spending over time, estimates of prices for prescription drugs have been adjusted to 
+2018 dollars using the gross domestic product price index from the Bureau of Economic Analysis.
+
+===PAGE 19===
+15
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+lower for Medicaid than for commercial plans or for 
+Medicare Part D because of rebates that manufacturers 
+are required to pay to Medicaid plans—particularly for 
+brand-name drugs. Medicaid programs are entitled by 
+law to receive the greater of 23.1 percent of the drug’s 
+average manufacturer price (AMP) or the largest rebate 
+that the manufacturer gives to any payer (excluding 
+certain government programs, such as Medicare Part D) 
+for all brand-name drugs.42 The rebate also includes an 
+additional component that is determined on the basis 
+of growth in the drug’s AMP relative to inflation.43 For 
+generic drugs, Medicaid’s rebate includes a basic rebate 
+(equal to 13.0 percent of the drug’s AMP) and the same 
+inflation-based component as Medicaid’s rebate for 
+brand-name drugs.44
+In CBO’s judgment, the average net price of a given 
+brand-name drug is probably lower in Medicare Part D 
+than in commercial plans. The Medicare Part D bene-
+fit is administered by private insurers who also provide 
+commercial insurance plans, and rebate negotiations 
+by both types of plans are handled in similar fashion, 
+perhaps even by the same negotiators. Those negotiations 
+operate under the same general set of incentives for both 
+Part D plans and private plans in that the availability of 
+therapeutic alternatives—and a plan’s willingness to steer 
+enrollees toward a particular drug—increases the amount 
+that manufacturers are willing to provide to that plan in 
+the form of a rebate (see Box 1 on page 6). 
+The primary difference in bargaining leverage between 
+commercial plans and Medicare Part D plans is that the 
+largest rebate that a manufacturer offers to a commercial 
+plan also has to be made available to Medicaid, which 
+reduces the size of the largest rebate that manufacturers 
+would otherwise be willing to pay. In contrast, rebates 
+that manufacturers pay to Part D plans do not directly 
+affect Medicaid prices. Therefore, manufacturers may 
+42. The AMP is the average price paid to a manufacturer for a drug 
+distributed to retail pharmacies, either through wholesalers or 
+through sales directly from manufacturers to pharmacies.
+43. For more details about how prices for brand-name drugs differ 
+between Medicare Part D and Medicaid, see Congressional 
+Budget Office, A Comparison of Brand-Name Drug Prices Among 
+Selected Federal Programs (February 2021), www.cbo.gov/
+publication/56978.
+44. Those minimum rebate percentages were set in 2010 with the 
+enactment of the Affordable Care Act. Before then, the minimum 
+rebate was 15.1 percent for brand-name drugs and 11.0 percent 
+for generic drugs.
+be willing to pay larger rebates to Part D plans than to 
+commercial insurance plans. 
+However, another difference is that Part D plans must, 
+by statute, cover all available drugs in each of six “pro-
+tected” therapeutic classes.45 That puts Part D plans at 
+a disadvantage when negotiating rebates on those drugs 
+because their pharmacy benefit managers (PBMs) cannot 
+credibly threaten to exclude such drugs from the Part D 
+formularies they manage if the manufacturer does not 
+offer a sufficient rebate.46 (PBMs are intermediaries who 
+manage prescription drug benefits for insurance plans 
+or other payers.) Although there may be some variation 
+in the extent of price differences for a given drug across 
+therapeutic classes, CBO believes that the link between 
+Medicaid’s “best price” requirements and the rebates 
+paid to commercial plans outweighs the impact of the 
+protected classes in Part D because the best price require-
+ment applies to all brand-name drugs.
+Prices for Brand-Name Drugs
+Net prices for brand-name drugs reflect the competitive 
+landscape for a given drug. In cases in which therapeutic 
+alternatives are limited, the manufacturer tends to have 
+greater leverage, particularly for drugs that offer larger 
+benefits to patients than other treatment options. In 
+those cases, manufacturers have considerable monopoly 
+power to exercise, particularly given that insured 
+patients often pay a small share of the total price of a 
+brand-name drug and that plans may feel considerable 
+pressure to cover those drugs in order to retain market 
+share. Similarly, as employers make decisions about the 
+generosity of their employment-based plans, they may 
+feel pressure to provide coverage for such drugs in order 
+to retain employees. In situations in which there are 
+therapeutic alternatives, payers and PBMs tend to have 
+greater leverage to negotiate for lower net prices. In those 
+cases, net prices would probably be set lower—or grow 
+more slowly—because manufacturers typically accept 
+lower prices in exchange for greater formulary access (or 
+reduced formulary access for their competitors).
+45. The protected classes are anticonvulsants, antidepressants, 
+antineoplastics, antipsychotics, antiretrovirals, and 
+immunosuppressants.
+46. Part D plans retain other forms of negotiating leverage. For 
+instance, even for those protected classes, PBMs can still use 
+“steering tools,” such as utilization management or formulary-tier 
+placements, to encourage beneficiaries to choose one drug over 
+another. 
+
+===PAGE 20===
+16 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+Since 2008, Medicare and Medicaid have both expe-
+rienced substantial increases in the prices they pay for 
+brand-name drugs. For Medicare Part D, the average net 
+price of a prescription for a brand-name drug (measured 
+in 2018 dollars) more than doubled between 2009 and 
+2018, from $149 to $353. For Medicaid, the average 
+net price increased by about 50 percent, from $147 to 
+$218 (see Figure 5). Retail prices have increased even 
+more dramatically. Between 2009 and 2018, the aver-
+age retail price of a prescription for a brand-name drug 
+in Medicare Part D more than tripled, from $175 to 
+$547. For Medicaid, the average retail price more than 
+doubled, from $262 to $584. (For more detail on the 
+divergence between retail and net prices, see Box 2.)
+Factors Underlying Rapid Increases in Prices for 
+Brand-Name Drugs. Growth in average prices reflects a 
+combination of several factors. For example, the com-
+position of brand-name prescriptions that people fill has 
+shifted from less expensive drugs toward more expensive 
+drugs. One key factor in the shift toward more expensive 
+drugs is that newer drugs tend to be more expensive than 
+older drugs. In addition, prices for drugs already on the 
+market tend to grow faster than inflation. Finally, federal 
+policies influence manufacturers’ pricing strategies and 
+lead to higher prices in certain circumstances.
+The Role of Launch Prices. Newer drugs are often 
+launched at higher prices than those paid for drugs 
+currently on the market. For example, in the Medicare 
+Part D program, the average net price in 2015 for 
+brand-name drugs that were launched after 2010 was 
+nearly four times the average net price for brand-name 
+drugs already on the market in 2010. And in 2017, the 
+average net price for new drugs launched after 2015 was 
+12 times the average net price for brand-name drugs 
+already on the market in 2015.47 As a result, the combi-
+nation of take-up of new brand-name drugs and shifting 
+from older brand-name drugs to generic alternatives has 
+led to higher average prices for brand-name drugs. 
+The phenomenon of increasingly high launch prices 
+for new drugs is partly driven by the rising number of 
+specialty drugs. Specialty drugs tend to be more complex 
+47. Calculations in this section are based on an extension of the 
+analysis in the following paper: Anna Anderson-Cook, Jared 
+Maeda, and Lyle Nelson, Prices for and Spending on Specialty 
+Drugs in Medicare Part D and Medicaid: An In-Depth Analysis, 
+Working Paper 2019-02 (Congressional Budget Office, March 
+2019), www.cbo.gov/publication/55011.
+to develop and manufacture than nonspecialty drugs, 
+and they generally have much higher prices because of 
+the larger benefits to health and well-being that they 
+tend to confer on their patients. In 2015, they accounted 
+for 78 percent of spending on new drugs (launched after 
+2010) in Medicare Part D and 8 percent of prescriptions 
+for new drugs. In 2017, specialty drugs accounted for 
+88 percent of that spending and 39 percent of pre-
+scriptions for new drugs (those launched after 2015). 
+Although prices for a given drug vary across payers, the 
+rising influence of specialty drugs on spending—and 
+therefore on usage-weighted average prices—probably 
+plays a role for all payers. An industry report supports 
+that idea, noting that specialty drugs represented the 
+largest share of new drugs over the 2014–2018 period 
+and that specialty drugs have “far higher” costs per 
+patient than nonspecialty drugs.48
+The Role of Price Growth. Another key component of 
+the growth in average net prices for brand-name drugs 
+is year-over-year price growth for a given drug, though 
+the importance of that factor may differ substantially 
+among payers. Using a price index approach, CBO 
+found that net prices for brand-name drugs increased 
+by an average of 6.3 percent per year from 2010 to 
+2017 in the Medicare Part D program, after removing 
+the effects of general inflation.49 In contrast, using a 
+similar approach, recent research on nationwide drug 
+spending patterns found that nominal net prices (that is, 
+net prices with no adjustments for inflation) for brand-
+name drugs grew by an average of only 3 percent per 
+year over the 2012–2017 period. CBO estimates that 
+nominal price growth for brand-name drugs in Medicare 
+Part D was an average of 7.3 percent per year over the 
+2012–2017 period, although the two calculations are 
+not directly comparable because they consist of some-
+what different sets of drugs. In addition, the net prices 
+in the nationwide study are net of all discounts along the 
+supply chain—including discounts provided to distrib-
+utors or directly to patients as well as rebates that payers 
+48. See IQVIA Institute for Human Data Science, Medicine Use 
+and Spending in the U.S.: A Review of 2018 and Outlook to 2023 
+(May 2019), p. 21, https://tinyurl.com/2byjnzd7.
+49. CBO used a chained Laspeyres price index approach, which 
+enabled the agency to gradually incorporate new brand-name 
+specialty drugs introduced over the 2011–2016 period into the 
+price index. An initially high launch price for a new drug does 
+not affect that measure. Instead, it captures only the percentage 
+increase in a drug’s price between two consecutive years after it is 
+already on the market.
+
+===PAGE 21===
+17
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+received—whereas the net prices in CBO’s analysis 
+account only for the rebates that payers received.50 
+However, the large difference does suggest that prices 
+paid by Part D over the 2012–2017 period grew more 
+quickly than the prices paid by other payers, on aver-
+age. That difference may have been driven by slower 
+price growth in Medicaid, stemming from the statutory 
+rebates that Medicaid receives. In addition, enrollees in 
+commercial insurance plans may have been more likely 
+to use drugs that face therapeutic competition than 
+enrollees in Part D, which may have also led to slower 
+growth in prices paid by commercial plans.
+50. In particular, the other analysis excluded drugs that might 
+be more likely to have faster price growth, such as oncology 
+products, other injectables, and drugs approved with an orphan 
+indication. (An orphan drug treats a rare disease or condition.) 
+See Pragya Kakani, Michael Chernew, and Amitabh Chandra, 
+Rebates in the Pharmaceutical Industry: Evidence From Medicines 
+Sold in Retail Pharmacies in the U.S., Working Paper 26846 
+(National Bureau of Economic Research, March 2020), 
+www.nber.org/papers/w26846.
+The Role of Federal Policies. Federal policies may have 
+contributed to the growth in drug prices. Medicaid is 
+entitled to the largest rebate that a manufacturer provides 
+to any payer. (That requirement does not apply to the 
+rebates provided to certain government programs, such 
+as Medicare Part D.) That probably has increased average 
+net prices for commercial payers more broadly. Similarly, 
+the additional statutory rebate provided to Medicaid for 
+drugs whose retail prices rise faster than inflation may 
+have contributed to the higher launch prices of new 
+drugs.51 However, that rebate requirement may also have 
+dampened price growth over time; as a result, average 
+51. See Fiona M. Scott Morton, “The Interaction Between a Most-
+Favored-Customer Clause and Price Dispersion: An Empirical 
+Examination of the Medicaid Rebate Rules of 1990,” Journal of 
+Economics and Management Strategy (Spring 1997), vol. 6, no. 1, 
+pp. 151–174, https://onlinelibrary.wiley.com/doi/10.1111/
+j.1430-9134.1997.00151.x; and Fiona M. Scott Morton, “The 
+Strategic Response by Pharmaceutical Firms to the Medicaid 
+Most-Favored-Customer Rules,” RAND Journal of Economics, 
+vol. 28, no. 2 (Summer 1997), pp. 269–290, www.jstor.org/
+stable/2555805.
+Figure 5 .
+Average Price of a Brand-Name Prescription Drug Obtained Through 
+Medicare Part D and Medicaid
+2018 Dollars
+Medicare Part D (Net)
+Medicaid (Net)
+Medicare Part D (Retail)
+Medicaid (Retail)
+0
+100
+200
+300
+400
+500
+600
+2009 2012 2015 2018
+Growth in prices for brand-
+name drugs from 2009 
+to 2018 was the result of 
+a combination of factors: 
+higher average prices for 
+drugs entering the market 
+than for drugs already on 
+the market and year-over-
+year price growth for drugs 
+after they entered the 
+market.
+Data source: Congressional Budget Office, using administrative data for Medicare Part D and Medicaid. See www.cbo.gov/publication/57050#data.
+Net prices for brand-name drugs reflect rebates and fees paid by manufacturers and pharmacies to payers, such as government-sponsored health insurance 
+plans and the Medicaid program. 
+The data in these series reflect the average price of brand-name prescriptions filled each year and exclude drugs that are administered in physicians’ offices or 
+hospital settings. 
+To remove the effects of general inflation when comparing prices and spending over time, estimates of prices for prescription drugs have been adjusted to 
+2018 dollars using the gross domestic product price index from the Bureau of Economic Analysis.
+
+===PAGE 22===
+18 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+prices may have approached the level they would have 
+without the policy. 
+Likewise, Medicare’s minimum formulary require-
+ments may contribute to higher net drug prices in that 
+program. In addition to the requirement that Part D 
+plans cover all drugs in the six protected classes, plans 
+are also required to cover at least two drugs in all other 
+therapeutic classes. Those requirements diminish the 
+leverage that PBMs bring to their negotiations with 
+manufacturers over drug prices for Part D plans. 
+Manufacturers may also feel less pressure to constrain 
+prices because of the increase in the share of overall drug 
+spending that is covered by insurers. That reduction 
+in consumers’ exposure to high prices increases their 
+Box 2 .
+Diverging Trends in Retail and Net Prices
+The divergence between net and retail prices coincides with 
+sizable increases in the rebates that “payers”—such as com-
+mercial insurers and federal health care programs—receive 
+from manufacturers. For Medicare Part D, the average rebate 
+on a brand-name drug, as a fraction of its retail price, has more 
+than doubled since 2009, increasing from 15 percent to 35 per-
+cent of the program’s spending for brand-name drugs at retail 
+prices in 2018. For Medicaid, the rebate percentage increased 
+from 44 percent in 2009 to 63 percent in 2018. Recent 
+research has found that, on a nationwide basis, average 
+rebates for brand-name drugs have increased as well, from 
+32 percent in 2012 to 48 percent in 2017.1 In general, consumer 
+cost sharing is not directly affected by those increases in 
+rebates. Instead, rebates tend to be shared among all enroll-
+ees in a given plan through reductions in premiums.
+Factors That Increase Rebates
+Some of those increases can be traced to statutory require-
+ments. In the Medicare Part D program, manufacturers have 
+been required since 2011 to provide a discount known as the 
+coverage gap discount. That discount constitutes a substan-
+tial portion of the retail prices paid by beneficiaries on the 
+manufacturers’ brand-name drugs while they are within the 
+coverage gap. (Also known as the donut hole, the coverage 
+gap represents a range of spending for which beneficiaries 
+were required to pay the full cost of their prescription drugs. 
+Although the coverage gap was eliminated by legislation 
+in 2019, the term is still defined in federal law to refer to 
+that phase of the benefit.) The discount was originally set at 
+50 percent of the retail price and was increased to 70 percent 
+in 2019. In the Medicaid program, rebates have increased both 
+1. See Pragya Kakani, Michael Chernew, and Amitabh Chandra, Rebates 
+in the Pharmaceutical Industry: Evidence From Medicines Sold in Retail 
+Pharmacies in the U.S., Working Paper 26846 (National Bureau of Economic 
+Research, March 2020), www.nber.org/papers/w26846.
+as a consequence of the additional statutory rebate provided 
+to Medicaid for drugs whose retail prices rise faster than 
+inflation and because of the increase in the minimum rebate as 
+required by the Affordable Care Act. However, the adjustment 
+is limited by a cap on the total rebate Medicaid receives for a 
+drug: It cannot exceed the drug’s average manufacturer price.2 
+(The average manufacturer price is the average price paid to a 
+manufacturer for a drug distributed to retail pharmacies, either 
+through wholesalers or through sales directly from manufactur-
+ers to pharmacies.)
+Rebates may also have grown as a consequence of increased 
+competition. The availability of substitute drug therapies gives 
+insurance plans leverage they can use to negotiate larger 
+rebates from manufacturers—for instance, by threatening to 
+favor another manufacturer’s drug by offering it to beneficia-
+ries for a smaller copayment. The Medicaid program benefits 
+indirectly from that leverage because commercial insurance 
+plans use it to negotiate larger rebates for themselves, and the 
+Medicaid rebate on brand-name drugs is partially based on the 
+largest rebate received by any of those plans. Many Medicaid 
+programs also engage in negotiation with manufacturers on 
+a smaller scale, bargaining over supplemental rebates they 
+would receive in exchange for placing a drug on a preferred 
+drug list.3 
+How Rebates Affect Consumers’ Costs
+Net prices are usually a better measure than retail prices of 
+what consumers and insurance plans actually pay for a drug. In 
+2. That cap will be removed beginning on January 1, 2024, as a result 
+of the American Rescue Plan Act of 2021 (Public Law 117-2). For more 
+information on the rebate cap, see Medicaid and CHIP Payment and Access 
+Commission, Next Steps in Improving Medicaid Prescription Drug Policy 
+(June 2019), Chapter 1, pp. 1–15, https://go.usa.gov/xsfdy.
+3. The Medicaid price and spending figures in this report do not include those 
+supplemental rebates because CBO does not have information on such rebates.
+Continued
+
+===PAGE 23===
+19
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+willingness to purchase high-priced drugs. Manufacturers 
+may interpret that phenomenon as a higher overall “will-
+ingness to pay” and set higher prices, or increase their 
+prices faster, as a result. Policymakers and stakeholders 
+have pointed to the high and rising prices of prescrip-
+tion drugs as a reason to question whether the profits 
+of brand-name drug manufacturers are excessive. (For a 
+brief overview of the profitability of the pharmaceutical 
+industry, see Box 3.)
+Factors That Constrain Growth in the Prices of Brand-
+Name Drugs. The availability of therapeutic substitutes 
+provides insurance plans and PBMs with leverage to 
+negotiate lower prices. When alternatives are limited, 
+particular, net prices reflect manufacturers’ net revenues and 
+the effect of drug spending on insurance premiums. How-
+ever, there are several exceptions. For example, consumers 
+enrolled in a plan with a deductible for prescription drugs pay 
+the retail price of a drug until they meet that deductible. (A 
+deductible is the amount of spending an enrollee incurs before 
+an insurer begins covering expenses.) In addition, in plans 
+with a coinsurance requirement, enrollees pay a percentage 
+of the drug’s retail price rather than making a copayment of a 
+fixed dollar amount. (Coinsurance is cost sharing in the form of 
+a set percentage of the drug’s cost. A copayment is a speci-
+fied dollar amount that an enrollee pays at the time a drug is 
+purchased.) Furthermore, average cost sharing for Medicare 
+Part D beneficiaries is required to be based on retail prices—
+which means that beneficiaries pay for a larger share of net 
+drug spending as rebate percentages grow. 
+Consumers do not get the rebates directly. But with com-
+petitive forces in insurance markets and regulatory medical 
+loss ratio (MLR) requirements, consumers probably receive 
+a substantial fraction of those rebates—in the form of lower 
+premiums or more generous benefits. The MLR provisions 
+require insurers to devote at least 80 percent of their enroll-
+ees’ premium payments—85 percent for large group plans—to 
+paying claims or making quality improvements. Failing that, 
+they must provide a rebate equal to the difference between 
+that requirement and what the plan actually paid in claims to 
+their enrollees.4 As a result, rebates benefit all enrollees in a 
+plan, regardless of the number or type of prescription drugs 
+they purchase. 
+Some enrollees make higher out-of-pocket payments that are 
+based on the prices their plans pay to pharmacies, rather than 
+4. See Rachel Fehr and Cynthia Cox, “Data Note: 2019 Medical Loss 
+Ratio Rebates” (Kaiser Family Foundation, September 26, 2019), 
+https://tinyurl.com/2wu295ke.
+on net prices that account for manufacturers’ rebates. That 
+is particularly true of enrollees in Part D plans because their 
+benefit designs are required to be actuarially equivalent to a 
+plan with the standard benefit design. (The standard benefit 
+calls for a coinsurance rate of 25 percent once the deductible 
+is met—until the catastrophic threshold is reached.) In addition, 
+cost sharing in the coverage gap tends to take the form of 
+coinsurance rather than a flat copayment. When competition 
+from other drugs leads to larger rebates and lower net prices, 
+that 25 percent coinsurance constitutes a larger share of the 
+net price than for drugs with net prices that are closer to retail 
+prices—that is, for drugs with less competition (or generic 
+drugs). As a result, enrollees who are more likely to use 
+brand-name drugs that face competition from other drugs pay 
+a greater share of net drug costs than enrollees who primarily 
+use generic drugs or brand-name drugs without therapeutic 
+competition. 
+That dynamic was one of the factors that led CBO to esti-
+mate in 2019 that premiums for the Medicare Part D benefit 
+would increase under the Proposed Rule on Safe Harbors 
+for Pharmaceutical Rebates.5 CBO anticipated that the rule 
+would result in pharmacies’ charging beneficiaries prices for 
+prescription drugs that reflect the discounts that pharmacy 
+benefit managers negotiate with manufacturers. Enrollees 
+who use brand-name drugs that face greater competition and 
+have larger rebates would benefit from the lower cost sharing 
+that results from rebates being applied when the prescription 
+is purchased. However, directing part of those rebates toward 
+reducing cost-sharing payments would reduce the amount of 
+rebate dollars that could be used toward reducing premiums 
+for all enrollees, leading to higher premiums.
+5. See Congressional Budget Office, “Incorporating the Effects of the 
+Proposed Rule on Safe Harbors for Pharmaceutical Rebates in CBO’s Budget 
+Projections” (supplemental material for Updated Budget Projections: 
+2019 to 2029, May 2019), www.cbo.gov/system/files/2019-05/55151-
+SupplementalMaterial.pdf (286 KB).
+Box 2. Continued
+Diverging Trends in Retail and Net Prices
+
+===PAGE 24===
+20 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+such as when a new drug is the first to treat a particular 
+condition, then insurance plans and PBMs have limited 
+leverage to negotiate lower prices. As competing products 
+enter the market, payers gain the flexibility to exclude a 
+given drug or to limit patients’ use of that drug through 
+higher cost sharing or other utilization management 
+tools. 
+Consolidation within the pharmacy-benefit-management 
+industry has also increased the leverage that PBMs wield 
+in negotiating on behalf of their client insurers. In the 
+1980s, the industry consisted of many small PBMs, 
+which, for the most part, simply processed pharmacy 
+claims. Since then, the industry has evolved and now 
+develops and administers many insurance plans’ drug 
+Box 3 .
+The Profitability of Manufacturers of Brand-Name Drugs
+Policymakers and stakeholders often express concern that the 
+profits of manufacturers of brand-name drugs are excessive—
+particularly given the high and rising prices of many brand-
+name drugs and the budgetary pressures posed by rising 
+health care costs. That concern may stem from the observation 
+that brand-name prescription drugs are often priced at levels 
+that greatly exceed the immediate costs of manufacturing and 
+distributing them.1 
+However, the profitability of pharmaceutical manufactur-
+ers depends on long-term comparisons of revenues versus 
+spending—that is, spending for research and development 
+(R&D) and for production of the firm’s entire portfolio of poten-
+tial products. In general, studies that make those longer-range 
+comparisons find that the profitability of the pharmaceuti-
+cal industry is similar to that of other industries, whereas 
+shorter-range comparisons find that the profitability of the 
+pharmaceutical industry exceeds that of other industries.
+Factors Underlying the Profitability of 
+Pharmaceutical Manufacturers
+Understanding the profitability of the pharmaceutical industry 
+requires distinguishing the revenues and short-run costs of 
+producing a drug once it is approved from the much larger 
+long-run costs of drug development and gaining approval for 
+sale. Small-molecule brand-name drugs tend to have incre-
+mental production costs of just pennies per pill. Production 
+costs are often higher for biological drugs, which might require 
+more complex and costlier manufacturing processes. But those 
+costs still tend to be low when compared with the prices that 
+such brand-name prescription drugs often command. Mean-
+while, the process of developing and testing a new drug and 
+bringing it to market is risky, costly, and time-consuming.
+Brand-name drugs generally command high prices once 
+they are approved, because of the market power that 
+1. Generic drug prices are usually close to their unit cost of production, 
+particularly when many generic versions of a drug are available. 
+manufacturers of brand-name drugs often have.2 To encour-
+age R&D, manufacturers of a brand-name drug are granted 
+exclusive rights to produce and market that drug through a 
+combination of patents (granted by the U.S. Patent and Trade-
+mark Office) and exclusivity periods (set by statute, depending 
+on the type of drug and the population it treats). Depending 
+on factors such as the timing of a manufacturer’s patent 
+application and how long a drug spends in clinical trials, those 
+rights might be in force for a decade or more following the 
+drug’s approval by the Food and Drug Administration. During 
+that time, the manufacturer is the sole producer of that drug, 
+although it may face competitive pressure if there are other, 
+similar drugs available in the same therapeutic class. When the 
+market-exclusivity period expires, other firms typically intro-
+duce generic versions of that drug, and those generic drugs 
+are often sold at much lower prices than the brand-name drug. 
+The period of exclusive sales rights can be highly profitable for 
+the manufacturer, particularly when a drug confers substantial 
+clinical benefits and few or no therapeutic alternatives are 
+available. 
+However, from the firm’s perspective, profitability reflects its 
+expenditures for all of the drugs in its portfolio of R&D activity, 
+as well as its revenue streams and production costs for drugs 
+that have reached the market. Decisions about whether to 
+undertake the necessary laboratory research and clinical trials 
+for any particular compound must be made in the face of 
+uncertainty about its ultimate clinical value. Most drug com-
+pounds yield no significant therapeutic results; of those that 
+enter clinical trials, only about 12 percent make it to market.3 
+2. Another factor underlying brand-name drug prices is that insured patients are 
+insulated from the full cost of their prescription drug choices, with the result 
+that consumers are less sensitive to prices than they otherwise would be. 
+3. See Joseph A. DiMasi, Henry G. Grabowski, and Ronald W. Hansen, 
+“Innovation in the Pharmaceutical Industry: New Estimates of R&D 
+Costs,” Journal of Health Economics, vol. 47 (May 2016), p. 25, 
+https://doi.org/10.1016/j.jhealeco.2016.01.012.
+Continued
+
+===PAGE 25===
+21
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+formularies. In addition, the PBM industry has come to 
+be dominated by just a few large firms. A 2015 merger 
+between the third- and fourth-largest firms left the three 
+largest PBMs handling more than 70 percent of the 
+industry’s prescription drug claims. That market power 
+helps those large PBMs negotiate bigger rebates and 
+steeper discounts because they represent a larger share 
+of the patient population. However, their market power 
+remains limited when negotiating net prices of drugs 
+without direct substitutes. 
+Nevertheless, greater consolidation within the PBM 
+industry also has implications for plans’ costs. For exam-
+ple, PBMs probably use their increased leverage when 
+negotiating with insurance plans over contract terms to 
+charge higher fees to plans (which could take the form of 
+PBMs keeping a larger fraction of rebates). The insurance 
+plans then pass some share of those higher costs on to 
+consumers in the form of higher premiums. In addition, 
+over time, there has been an increase in consolidation 
+between PBMs and insurers, as well as between PBMs 
+So, for a firm with 100 products in development and 12 that 
+make it to market, profitability depends on the revenues from 
+the 12 marketed products and the cost of all 100 products in 
+development. Even in those few cases in which a manufacturer 
+successfully develops a new product, it sees no revenue for 
+years following the various decisions about whether to pro-
+ceed with the requisite stages of development. 
+Investment capital that is committed to drug R&D could have 
+been invested instead in other activities that are less risky yet 
+still profitable. Because of the relatively high risk of failure in 
+drug development, investors in R&D for those drugs tend to 
+require, in compensation, a high return on their investment 
+if drug development is successful. The investment decisions 
+of manufacturers of brand-name drugs are informed by that 
+same mechanism. A recent report by the Congressional Budget 
+Office found that both total spending on R&D by manufac-
+turers of brand-name drugs and the fraction of their reve-
+nues devoted to spending on R&D have increased in recent 
+years.4 Accordingly, the opportunity costs of that investment 
+capital—the returns that could have been earned through other 
+investments—are an important component of a manufacturer’s 
+total costs and must be taken into account when measuring the 
+company’s profitability over the long term. 
+Estimates of Pharmaceutical Firms’ Profits
+Estimating the long-term profits that manufacturers of brand-
+name drugs realize requires examining the entire life cycle 
+of development of a portfolio of drugs and the sales of those 
+drugs. In CBO’s assessment, those costs (including long-term 
+capital costs) and revenues constitute the most comprehensive 
+measures of profitability. Estimates of such measures present 
+challenges, and the results can be sensitive to the methods 
+4. See Congressional Budget Office, Research and Development in the 
+Pharmaceutical Industry (April 2021), www.cbo.gov/publication/57025.
+used. Some analyses that have made such an adjustment have 
+found that, compared with other industries, the pharmaceutical 
+industry does not have unusually high profits. A pair of recent 
+studies found that when capital costs and financial risks are 
+taken into account, the pharmaceutical industry’s profits are 
+close to—or just below—the middle of the distribution of all 
+industries and might be trending downward.5 
+Some estimates of the pharmaceutical industry’s profitability 
+reflect profits earned during a specific period, such as a year 
+or a quarter. Such estimates often indicate that profit margins 
+are higher for manufacturers of brand-name drugs than they 
+are for many other firms.6 An annual profit estimate provides a 
+glimpse of a drug manufacturer’s performance during a given 
+year, but because it does not reflect the long-term opportunity 
+costs and risks associated with R&D investment choices, it 
+does not provide a complete assessment of the profitability of 
+that firm’s drug development activity. A full discussion of the 
+profitability of the pharmaceutical industry is beyond the scope 
+of this report.
+5. See Congressional Budget Office, Research and Development in the 
+Pharmaceutical Industry (October 2006), www.cbo.gov/publication/18176; 
+Office of Technology Assessment, Pharmaceutical R&D: Costs, Risks, and 
+Rewards, OTA-H-522 (February 1993); Richard Manning and Saurav Karki, 
+Economic Profitability of the Biopharmaceutical Industry, Bates White Policy 
+Brief (September 2018); www.bateswhite.com/newsroom-insight-219.html; 
+and Richard Manning and Saurav Karki, Economic Profitability of the 
+Biopharmaceutical Industry: 2020 Update, Bates White Policy Brief 
+(May 2020), https://tinyurl.com/h736mvj8. 
+6. See Fred D. Ledley and others, “Profitability of Large Pharmaceutical 
+Companies Compared With Other Large Public Companies,” JAMA, vol. 323, 
+no. 9 (March 2020), pp. 834–843, https://doi.org/10.1001/jama.2020.0442; 
+and Government Accountability Office, Drug Industry: Profits, Research 
+and Development Spending, and Merger and Acquisition Deals, GAO-18-40 
+(November 17, 2017), www.gao.gov/products/GAO-18-40.
+Box 3. Continued
+The Profitability of Manufacturers of Brand-Name Drugs
+
+===PAGE 26===
+22 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES JANUARy 2022
+and pharmacies, including mail-order and specialty phar-
+macies. Although that type of consolidation can increase 
+efficiency and reduce plans’ costs, the extent to which 
+reduced costs are passed on to enrollees depends on the 
+amount of competition in the market. In addition, to 
+the extent that insurers, PBMs, and pharmacies negotiate 
+with entities outside their ownership group, there may 
+be an incentive to charge higher fees to rival companies.52
+Prices for Generic Drugs
+As with brand-name drugs, the competitive landscape 
+for generic drugs has a great deal of influence over prices 
+for those drugs. Unlike brand-name drugs, however, 
+generic drugs often face direct competition because the 
+same drug is often manufactured by several companies. 
+Although new generic drugs may have higher prices 
+when they first enter the market, those prices tend to fall 
+as competitors enter the market. 
+As a result, in contrast with the growth observed in 
+the average prices of brand-name drugs, average prices 
+of generic drugs have tended to fall in real terms in 
+recent years. In Medicare Part D, the average price of 
+a generic prescription was $22 in 2009 and gradually 
+fell to $17 in 2018.53 For Medicaid, the average price of 
+a generic prescription fell from $27 in 2009 to $23 in 
+2018 (see Figure 6). A 2016 federal review found that, 
+from mid-2013 to mid-2014, nearly 65 percent of 
+prescriptions for generic drugs in the Medicaid program 
+were for drugs whose prices had declined over that time, 
+52. See Rachel Schmidt, Principal Analyst, Medicare Payment 
+Advisory Commission, “Vertical Integration and Medicare 
+Payment Policy” (presentation at a public meeting, October 2, 
+2020), https://go.usa.gov/xtxAK (PDF , 293 KB); and Medicare 
+Payment Advisory Commission, transcript of a public meeting 
+(October 1, 2020), pp. 83–86, https://go.usa.gov/xtxAR 
+(PDF , 927 KB). 
+53. The magnitude of this reduction is much smaller than what the 
+Medicare Payment Advisory Commission (MedPAC) found 
+in a recent study. However, the MedPAC analysis used a price 
+index approach that does not reflect the introduction of new 
+products or changes in the mix of products. The figures reported 
+in this publication are simple averages of the price of generic 
+drugs that Part D enrollees purchased. Because the first generic 
+for a particular drug tends to enter at a higher price, which also 
+leads to a natural shift toward more expensive generic drugs 
+upon entry, the difference in results is unlikely to represent an 
+inconsistency between the two analyses. See Medicare Payment 
+Advisory Commission, July 2021 Data Book: Health Care 
+Spending and the Medicare Program (July 2021), Section 10, 
+Chart 10-25, https://go.usa.gov/xta3x.
+even before accounting for rebates to the Medicaid 
+program. That review, by the Department of Health 
+and Human Services (HHS), also cited a finding from 
+Express Scripts, a PBM: Specifically, Express Scripts 
+indicated that for the top 80 percent of generic drugs (by 
+unit sales), the average prescription price fell in 2014 by 
+20 percent. HHS concluded that generic prices are not 
+a key driver of high spending on prescription drugs.54 
+Other recent evidence suggests that year-over-year prices 
+for generic drugs have fallen in the past several years, on 
+average.55
+Even so, price increases for some generic drugs have 
+raised concerns for policymakers. For example, there 
+are ongoing criminal and civil proceedings related to 
+anticompetitive behavior that led to higher prices.56 In 
+addition, HHS has found that for about one-fourth of 
+generic drugs with the highest spending in the Medicaid 
+program, prices in recent years have increased faster than 
+the rate of inflation (before accounting for Medicaid’s 
+rebates). However, HHS also found that the set of drugs 
+with particularly large price increases represents a very 
+small share of the market and that those price increases 
+did not have a sizable impact on overall spending.57 
+More generally, increases in the prices of specific generic 
+drugs—whether facilitated by anticompetitive behavior 
+or by the exercise of market power, or simply reflecting 
+54. See Office of the Assistant Secretary for Planning and Evaluation, 
+Department of Health and Human Services, Understanding 
+Recent Trends in Generic Drug Prices, ASPE Issue Brief (January 
+2016), https://go.usa.gov/xsfPp.
+55. See Richard G. Frank, Andrew Hicks, and Ernst R. Berndt, 
+The Price to Consumers of Generic Pharmaceuticals: Beyond the 
+Headlines, Working Paper 26120 (National Bureau of Economic 
+Research, July 2019), www.nber.org/papers/w26120.
+56. See Department of Justice, “Sixth Pharmaceutical Company 
+Charged in Ongoing Criminal Antitrust Investigation: Fifth 
+Company to Admit It Fixed Prices of Generic Drugs” (press 
+release, July 23, 2020), https://go.usa.gov/xsfEx; and Office of the 
+Attorney General of Connecticut, “Drug Price-Fixing Complaint 
+Unsealed: Unredacted Emails Provide Evidence of Conspiracy to 
+Inflate Prices and Hinder Competition, Obstruct Justice” (press 
+release, June 24, 2019), https://tinyurl.com/5r2sks7p.
+57. See Office of the Assistant Secretary for Planning and Evaluation, 
+Department of Health and Human Services, Understanding 
+Recent Trends in Generic Drug Prices, ASPE Issue Brief 
+(January 2016), https://go.usa.gov/xsfPp. (The price here is the 
+average manufacturer price, or AMP , which is the average price 
+paid by wholesalers for drugs distributed to the retail class of 
+trade, net of customary prompt-pay discounts.)  
+
+===PAGE 27===
+23
+JANUARy 2022 PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES
+shifts in supply or demand—affect total drug spend-
+ing only to the extent that those drugs are sold in large 
+quantities. Nevertheless, those price increases could have 
+a substantial impact on consumers who use drugs that 
+have increased in price, especially if those consumers’ 
+out-of-pocket costs are based on the price of the drug.
+Figure 6 .
+Average Price of a Generic Prescription Drug Obtained Through 
+Medicare Part D and Medicaid
+2018 Dollars
+Medicare Part D (Retail)
+Medicaid (Retail)
+0
+5
+10
+15
+20
+25
+30
+35
+2009 2012 2015 2018
+Whereas the average 
+prices of brand-name drugs 
+tend to rise over time, the 
+opposite is true for generic 
+drugs. Average prices for 
+generic drugs tend to fall 
+over time as competitors 
+enter the market, which 
+has led to a decline in the 
+average prices of generic 
+drugs in recent years.
+Data source: Congressional Budget Office, using administrative data for Medicare Part D and Medicaid. See www.cbo.gov/publication/57050#data.
+The data in these series reflect the average price of generic prescriptions filled each year and exclude drugs that are administered in physicians’ offices or 
+hospital settings. 
+To remove the effects of general inflation when comparing prices and spending over time, estimates of prices for prescription drugs have been adjusted to 
+2018 dollars using the gross domestic product price index from the Bureau of Economic Analysis.
+
+===PAGE 28===
+List of Figures
+Figures
+1. Spending on Prescription Drugs Purchased From Pharmacies as a  
+Share of Total Spending on Health Care Services and Supplies 4
+2. Total Nationwide Spending, per Capita, on Prescription Drugs Purchased From Pharmacies 5
+3. Changes in the Number of Brand-Name and Generic Prescription Drugs 
+Dispensed Through Medicare Part D and Medicaid 11
+4. Average Price of a Prescription Drug Obtained Through Medicare Part D and Medicaid 14
+5. Average Price of a Brand-Name Prescription Drug Obtained Through Medicare Part D and Medicaid 17
+6. Average Price of a Generic Prescription Drug Obtained Through Medicare Part D and Medicaid 23
+
+===PAGE 29===
+About This Document
+This report was prepared at the request of the Chairman of the Senate Committee on Finance. In 
+keeping with the Congressional Budget Office’s mandate to provide objective, impartial analysis, the 
+report makes no recommendations.
+Tamara Hayford and David Austin prepared the report with guidance from Joseph Kile, Lyle Nelson 
+(formerly of CBO), and Julie T opoleski. Ru Ding contributed to the analysis. Anna Anderson-Cook 
+(formerly of CBO), Colin Baker, Elizabeth Bass, Julia Christensen, Ryan Greenfield, Stuart Hammond, 
+Lara Robillard, Asha Saavoss, Ellen Werble, Chapin White, and Kate Young provided useful 
+comments. Joshua Varcie fact-checked the report.
+Amitabh Chandra of the Kennedy School of Government and Harvard Business School, Sean Keehan 
+of the Centers for Medicare & Medicaid Services’ Office of the Actuary, Chris Park of the Medicaid 
+and CHIP Payment and Access Commission, and Rachel Schmidt and Shinobu Suzuki of the 
+Medicare Payment Advisory Commission commented on an earlier draft. The assistance of external 
+reviewers implies no responsibility for the final product; that responsibility rests solely with CBO.
+Mark Doms, Jeffrey Kling, and Robert Sunshine reviewed the report. Loretta Lettner edited it, and 
+Jorge Salazar created the graphics and prepared the text for publication. The report is available at 
+www.cbo.gov/publication/57050.
+CBO seeks feedback to make its work as useful as possible. Please send comments to 
+communications@cbo.gov.
+Phillip L. Swagel
+Director
+January 2022
+CBO has corrected this page since the report was originally published. Corrections are listed at the end of the report.
+===PAGE 30===
+Corrections
+The Congressional Budget Office has corrected this report since its original publication. Both the 
+PDF and online versions were corrected, but for ease of reference, this notice indicates the location of 
+the correction in the PDF .
+The following change was made on January 21, 2022:
+Page 25, third paragraph: The list of external reviewers was amended to add a missing name.

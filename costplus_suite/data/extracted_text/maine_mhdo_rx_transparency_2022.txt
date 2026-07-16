@@ -1,0 +1,1367 @@
+
+===PAGE 1===
+1
+51 CAPITOL STREET  
+102 STATE HOUSE STATION  
+AUGUSTA, MAINE 
+04333 - 0102  
+JOEL ALLUMBAUGH 
+ 
+CHAIR
+COMMISSIONER ANNE HEAD 
+ 
+VICE-CHAIR
+JANET T. MILLS 
+ 
+GOVERNOR
+KARYNLEE HARRINGTON 
+ 
+EXECUTIVE DIRECTOR
+D
+ATE: 
+T
+O: 
+CC:
+ 
+F
+ROM: 
+RE: 
+December 14, 2022 
+Members of the Joint Standing Committee on Health Coverage, Insurance and 
+Financial Services  
+Senator Vitelli  
+Colleen McCarthy Reid, OPLA Analyst  
+Bethany Beausang, Senior Policy Advisor, Office of Governor Janet T. Mills 
+Joel Allumbaugh, Chair MHDO Board of Directors  
+Commissioner Head, Vice-Chair, MHDO Board of Directors  
+Karynlee Harrington, Executive Director, Maine Health Data Organization 
+Prescription Drug Transparency Report  
+P
+ublic Law 2019, Chapter 470, An Act to Further Expand Drug Price Transparency, requires the 
+Maine Health Data Organization to submit an annual report on prescription drug pricing to 
+the Joint Standing Committee on Health Coverage, Insurance and Financial Services.  
+A
+ttached are the findings of our third annual report.  
+P
+lease don’t hesitate to contact me directly with any questions. 
+===PAGE 2===
+  
+2 
+Maine Health Data Organization 
+Table of Contents 
+Executive Summary ................................................................................................................................................. 3 
+Key Findings......................................................................................................................................................... 3 
+Abbreviations .......................................................................................................................................................... 5 
+Definitions ............................................................................................................................................................... 5 
+Introduction ............................................................................................................................................................ 6 
+Title 22, §8736. Public report .............................................................................................................................. 6 
+Overview of Prescription Drug Spending in Maine ................................................................................................. 7 
+Trends in the Cost of Prescription Drugs ................................................................................................................ 9 
+Changes in Wholesale Acquisition Costs ............................................................................................................. 9 
+Manufacturer Price Trends Over Time .............................................................................................................. 10 
+Impact of WAC Changes on Pricing for Multisource Drug Products ................................................................. 11 
+Brand to Generic Drug Utilization in Maine ...................................................................................................... 11 
+Analysis of Manufacturer Pricing and Drug Costs to Payers ................................................................................. 12 
+Major Components of Prescription Drug Pricing along the Supply Chain ............................................................ 17 
+Impacts on Insurance Premiums and Cost Sharing ............................................................................................... 19 
+Public Law 2019, Chapter 469, Section 4350-A ................................................................................................ 19 
+Public Law 2019, Chapter 469, Section 4350-D ................................................................................................ 20 
+Conclusion ............................................................................................................................................................. 21 
+Appendix A – Correlation between WAC Changes and AWP Pricing .................................................................... 22 
+Appendix B – NDCs with Average Fill Cost in Maine Over $100 / Average Markup > 10x WAC ........................... 23 
+Appendix C – Average WAC and Payer Paid Change Percent by Therapeutic Class ............................................. 26 
+Appendix D – Summary of Rule Chapter 570 and Related Processes ................................................................... 28 
+MHDO Rule Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets .......................... 28 
+Public Notice of Substantial Drug Price Change or Introduction ...................................................................... 28 
+Notifications by MHDO to Reporting Entities ................................................................................................... 28 
+ 
+ 
+ 
+  
+===PAGE 3===
+  
+3 
+Maine Health Data Organization 
+Executive Summary 
+Public Law 2019, Chapter 470, An Act to Further Expand Drug Price Transparency (“Public Law 2019, Chapter 
+470”) requires the Maine Health Data Organization (MHDO) to submit an annual report on prescription drug 
+pricing to the Joint Standing Committee on Health Coverage, Insurance and Financial Services.  The findings of 
+this report were developed using drug pricing component data MHDO received per the requirements of 90-
+590 CMR Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets, from pharmaceutical 
+manufacturers, wholesale drug distributors and pharmacy benefits managers (PBMs) for calendar year 2021; 
+pharmacy claims data submitted by payers per the requirements of 90-590 CMR Chapter 243, Uniform 
+Reporting System for Health Care Claims Data Sets;  and drug pricing data procured from Wolters Kluwer.   
+This third annual report continues to build on previous analysis of data elements collected for drugs that meet 
+requirements for reporting under Public Law 2019, Chapter 470 and expands further to explore the impact of 
+both price increases and decreases on actual amounts paid by payers during the reporting period.  Where 
+practical, MHDO compares analytical findings from one year to the next to show changes for a given measure.  
+These comparisons must be considered broadly given that the specific drugs analyzed differ from one year to 
+the next.  Additionally, the Covid-19 pandemic is a factor that impacted access to medical care beginning in 
+2020 and may have been an influencer of drug pricing behavior during the 2021 reporting period.   
+Pricing details related to drug products with price increases of significance as well as overall price change 
+statistics by therapeutic class are provided in Appendices B and C. 
+ 
+Key Findings 
+• During the previous five years, the percentage of drugs that incur wholesale acquisition cost (WAC) 
+increases has decreased from 14.41% in 2017 to 9.67% in 2021.  
+• The average percent of increase of 9.90% across brand and generic drugs that had WAC increases in 
+2021 remains above the consumer price index (CPI-U) for 2021 of 7.0%.  
+• Less than 1% of all drugs in the market (15 drugs total) had WAC increases in 2021 that hit one of the 
+triggers requiring Public Notice of Substantial Drug Price Change as described in Title 22, §8732, (1-
+A)(A-C) 
+• Pricing and rebate practices vary greatly between brand and generic drugs before and after generic 
+drugs enter the marketplace.  As a result, changes in wholesale acquisition cost (WAC) by 
+manufacturers are more directly correlated to amounts paid by payers for brand drugs than for generic 
+drugs. 
+o The amount that a retail pharmacy is reimbursed by a payer can vary greatly from one product 
+to another depending on the amount that the Average Wholesale Price (AWP) – the typical 
+negotiated price basis – is marked up from WAC.   
+o AWP for brand drugs is generally a markup of 20% above WAC and changes as WAC is changed 
+over time. 
+o AWP for generic drugs often reflects a discount from the WAC or AWP value of the equivalent 
+brand drug at the time the first generic product is introduced to market and does not change 
+as the value of generic WAC changes over time.  While WAC prices differ between generic 
+manufacturers, AWP prices show very little variation and are often the same value.  
+o Pharmacies are incentivized to reduce costs by acquiring generic products from manufacturers 
+with the lowest WAC.  However, payers do not receive a corollary benefit from lower WAC 
+===PAGE 4===
+  
+4 
+Maine Health Data Organization 
+prices when AWP, the basis for pharmacy reimbursement, remains static across generic 
+manufacturers.  Instead, the reductions the manufacturers make in WAC result in a higher 
+margin to the pharmacy – in some instances a pharmacy receives greater income for a product 
+than the product’s manufacturer.   
+o MHDO identified 77 NDCs with average costs of over $100 per fill and payer paid amounts of 
+greater than 10x the WAC amount – See Appendix B 
+• MHDO reviewed 430 unique NDCs for which pricing component data was submitted from reporting 
+entities and APCD commercial claims were paid during 2021.  Data was requested for NDCs included 
+on MHDO’s List of Trigger NDCs for CY2021, falling on at least two of the lists of the MHDO’s top 25 
+Drug Reports, o r  having average claim paid amounts of more than 10 times WAC – See Appendix D.  
+For these 430 NDCs: 
+o The average amount paid by commercial payers (including member cost share) after rebates 
+represented 71.21% of WAC for brand drugs – a decrease of 11% from the net paid amount 
+reflected for 2020 (82.71%). 
+o The generic drug WAC prices in our sample remained static or decreased for all but one drug; 
+however, the average amount paid by commercial payers (including member cost share) as a 
+percentage of WAC after rebates for generic drugs rose to 163.65%.  This represents a 20% 
+increase in average markup from the same measure in 2020 (143.47%) and a continued impact 
+of manufacturer WAC decreases without concurrent decreases to AWP. 
+o PBMs received rebates from manufacturers representing 26.68% of the average WAC amount 
+for brand NDCs and 0.17% for generic NDCs.   
+o PBMs, on average, retained payments from payers in the form of spread1 and/or 
+administrative fees at a rate of approximately 13.97% over what PBMs reimbursed to 
+pharmacies, an increase from the rate of 2.14% reported for 2020.  
+o The consumer share of total payment after the application of rebates was approximately 
+14.75% for commercial claims, a similar rate to drugs reviewed for 2020. 
+  
+ 
+1 Spread occurs when a PBM charges a payer a contracted price for prescription drugs that is higher than the amount the 
+PBM pays the pharmacy. 
+===PAGE 5===
+  
+5 
+Maine Health Data Organization 
+Below is a key to commonly used abbreviations and terms used in the report: 
+Abbreviations 
+APCD – All Payer Claims Database 
+AWP – Average Wholesale Price 
+FDA – The federal Food and Drug Administration 
+NDC – National Drug Code 
+PBM – Pharmacy Benefits Manager 
+WAC – Wholesale Acquisition Cost 
+Definitions 
+Average Wholesale Price – a prescription drug term originally intended to convey the average price for 
+medications offered at the wholesale level.  Manufacturers may provide publishers of AWP with a suggested 
+AWP value or specify a markup value to be applied to WAC.  Where manufacturers do not provide AWP 
+guidance, the value is typically set as a 20% markup over WAC2.   
+Brand Drug – a prescription drug, having a unique NDC, marketed under a proprietary name or registered 
+trademark name, including a biological product, and approved under a New Drug Application or Biologics 
+License Application. 
+Drug Product Family – a group of one or more prescription drugs that share a unique generic drug description 
+(non-trade name) and drug form. 
+Fill – The dispensing of a prescription drug by a pharmacist whether as the initial dispensing of a prescription 
+or as a subsequent refill. 
+Generic Drug – a prescription drug, having a unique NDC, whether identified by its chemical, proprietary or 
+nonproprietary name, that is not a brand drug, is therapeutically equivalent to a brand drug in dosage, 
+strength, method of consumption, performance and intended use, and approved under an Abbreviated New 
+Drug Application.  Generic Drug includes a biosimilar product. 
+Market Price – the price set by a wholesaler for sale of a drug product to a pharmacy.  This price may vary 
+from one pharmacy to another and change independent of manufacturer price changes. 
+Multisource Drug – a brand drug or generic drug that is available from more than one manufacturer. 
+Negotiated Price – the price established between payers and pharmacies to be paid to pharmacies for drug 
+products as they are dispensed. 
+National Drug Code – a code maintained by the federal Food and Drug Administration that is uniquely 
+assigned by manufacturer, product, and packaging.   
+Rebate – a discount, chargeback, or other price concession that affects the price of a prescription drug 
+product. 
+Single Source Drug – a brand drug or generic drug that is only available from one manufacturer.  
+Therapeutic Class – a group of drugs used for the treatment, remediation, or cure of a specific disorder or 
+disease. 
+Wholesale Acquisition Cost – a manufacturer’s published list price for sale of a prescription drug product with 
+a unique NDC to a wholesale drug distributor or other entity that purchases a prescription drug directly from 
+the manufacturer, not including any price concessions. 
+ 
+2 WoltersKluwer Website. AWP Policy. Accessed September 7, 2022 at https://www.wolterskluwer.com/-
+/media/project/wolterskluwer/oneweb/www/health/ce/files/clinical/wkh -awp-policy.pdf 
+===PAGE 6===
+  
+6 
+Maine Health Data Organization 
+Introduction  
+Public Law 2019, Chapter 470, was enacted to enable Maine to better understand the factors that influence 
+the cost of prescription drugs in the State.  The law requires reporting per the requirements of 90-590 CMR 
+Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets, from pharmaceutical 
+manufacturers, wholesale drug distributors and PBMs (collectively, “reporting entities”).  Data collected 
+provides details regarding the costs to, and payments received by, reporting entities to make a prescription 
+drug available to consumers and allows analysis of pharmaceutical pricing and rebates at milestones 
+throughout the supply chain.  A summary of 90-590 CMR Chapter 570 and related processes is included as 
+Appendix D. 
+ 
+MHDO published its first annual report on prescription drug pricing in February 2020 with a focus on the 
+relationships between entities in the pharmaceutical supply chain and the role they each play in affecting costs 
+to consumers.  The second annual report was published in January 2021 and explored the impacts of 
+manufacturer price changes on the costs realized by payers and consumers over time.  
+ 
+This third annual report updates several metrics provided in the previous reports; and provides a broader 
+scope of analysis related to drugs with high costs and significant markups between manufacturer list prices and 
+amounts paid by payers and consumers at the point of sale. 
+ 
+Under contract with MHDO, Ten2Eleven Business Solutions provided MHDO technical support in the 
+preparation of this report. 
+ 
+Title 22, §8736. Public report  
+Title 22, §8736, requires the MHDO to produce and post on its publicly accessible website an annual Drug Price 
+Transparency Report.  The content of the report is to include information developed from the disclosures 
+submitted to MHDO from manufacturers, wholesale drug distributors and pharmacy benefits managers, 
+referred to as reporting entities.  Specifically, the report will provide (if data is available), information on 
+trends in the cost of prescription drugs, analysis of manufacturer prices and price increases, the major 
+components of prescription drug pricing along the supply chain, and the impacts on insurance premiums and 
+cost sharing and any other information the MHDO determines is relevant to providing greater consumer 
+awareness of the factors contributing to the cost of prescription drugs in the State.    
+ 
+  
+===PAGE 7===
+  
+7 
+Maine Health Data Organization 
+Overview of Prescription Drug Spending in Maine 
+In 2021, prescription drug spending by and on behalf of Mainers was $2.4B as reported to the MHDO APCD for 
+all NDCs per the requirements in 90-590 Rule Chapter 243, Uniform Reporting System for Health Care Claims 
+Data Sets.  This represents approximately 25% of the total health care spending in the state as reported in the 
+MHDO’s APCD.  A breakdown of pharmacy claims by payer type is provided in Table 2 below. 
+ 
+Payer Type Total Pharmacy Claims Total Paid Amount 
+Commercial                    3,697,520  $702,812,274  
+MaineCare                    2,677,990  $452,671,698  
+Medicare                    7,343,753  $1,243,561,873  
+Total 13,719,263  $2,399,045,845  
+Table 2 – Pharmacy Claims by Payer Type 
+ 
+The top 10 most costly drug families based on MHDO data in 2021 are shown in Table 3 below. 
+Drug Family Therapeutic Class Total Claims Total Paid 
+Adalimumab Pen-injector Kit Analgesics - Anti-Inflammatory 18,226 $134,678,730 
+Apixaban Tablet Hematological Agents - Anticoagulants 114,162 $96,455,494 
+Ustekinumab Solution Prefilled Syringe Dermatologicals 3,288 $72,082,653 
+Dulaglutide Solution Pen-injector Endocrine and Metabolic Agents - 
+Antidiabetics 47,946 $58,646,653 
+Lenalidomide Capsule Miscellaneous Therapeutic Classes (Oncology 
+Agent) 2,960 $49,351,662 
+Insulin Glargine Solution Pen-injector Endocrine and Metabolic Agents - 
+Antidiabetics 68,817 $43,545,590 
+Empagliflozin Tablet Endocrine and Metabolic Agents - 
+Antidiabetics 40,639 $39,563,412 
+Buprenorphine HCl-Naloxone HCl Dihydrate Film Analgesics – Opioid (Use Disorder) 207,035 $36,497,691 
+Elexacaftor-Tezacaftor-Ivacaftor Tablet Therapy 
+Pack 
+Antihistamines/Nasal Agents/Cough & 
+Cold/Respiratory/Misc (Cystic Fibrosis Agent) 1,415 $34,077,277 
+Rivaroxaban Tablet Hematological Agents - Anticoagulants 37,081 $33,609,375 
+Table 3 – 2021 Top 10 Most Costly Drug Families 
+ 
+The top 10 most utilized drug families based on MHDO data in 2021 are shown in Table 4 below. 
+Drug Family Therapeutic Class Total Claims Total Paid 
+Atorvastatin Calcium Tablet Cardiovascular Agents - Antihyperlipidemics 446,779 $9,338,196 
+Levothyroxine Sodium Tablet Endocrine and Metabolic Agents - Thyroid 
+Agents 391,186 $9,723,112 
+Lisinopril Tablet Cardiovascular Agents - Antihypertensives 370,288 $3,219,317 
+Albuterol Sulfate Aerosol Solution 
+Antihistamines/Nasal Agents/Cough & 
+Cold/Respiratory/Misc - Antiasthmatic And 
+Bronchodilator Agents 
+262,967 $14,420,385 
+Sertraline HCl Tablet Central Nervous System Agents - 
+Antidepressants 256,183 $3,975,792 
+Omeprazole Capsule Delayed Release Gastrointestinal Agents - Ulcer 
+Drugs/Antispasmodics/Anticholinergics 253,785 $4,324,082 
+COVID-19 (SARS-CoV-2) mRNA Virus Vaccine 
+Suspension Vaccines 248,850 $8,439,158 
+Amlodipine Besylate Tablet Cardiovascular Agents - Calcium Channel 
+Blockers (Antihypertensive) 242,669 $2,156,994 
+Gabapentin Capsule Neuromuscular Agents - Anticonvulsants 210,609 $4,300,339 
+Buprenorphine HCl-Naloxone HCl Dihydrate Film Analgesics – Opioid (Use Disorder) 207,035 $36,497,691 
+===PAGE 8===
+  
+8 
+Maine Health Data Organization 
+Table 4 – 2021 Top 10 Most Costly Drug Families 
+ 
+The top 10 drug families with the highest year over year increase in 2021 based on MHDO data are shown in 
+Table 5 below. 
+Drug Family Therapeutic Class 
+Additional 
+Claims  
+Over Claims 
+Count in 2020 
+Additional 
+Paid Amounts 
+Over Paid 
+Amounts in 
+2020 
+Adalimumab Pen-injector Kit Analgesics - Anti-Inflammatory 1,715 $21,717,625 
+Apixaban Tablet Hematological Agents - Anticoagulants 14,811 $21,201,907 
+Dulaglutide Solution Pen-injector Endocrine and Metabolic Agents - 
+Antidiabetics 14,986 $20,274,772 
+Ustekinumab Solution Prefilled Syringe Dermatologicals 581 $15,809,543 
+Empagliflozin Tablet Endocrine and Metabolic Agents - 
+Antidiabetics 13,079 $14,267,303 
+COVID-19 (SARS-CoV-2) mRNA Virus Vaccine 
+Suspension Vaccines 248,030 $8,425,562 
+Palbociclib Tablet Antineoplastics And Adjunctive Therapies 583 $8,186,504 
+Dupilumab Solution Pen-injector Dermatologicals 2,280 $7,716,955 
+Fluticasone-Umeclidinium-Vilanterol Aerosol 
+Powder Breath Activated 
+Antihistamines/Nasal Agents/Cough & 
+Cold/Respiratory/Misc - Antiasthmatic And 
+Bronchodilator Agents 
+7,017 $7,363,659 
+Semaglutide Solution Pen-injector Endocrine and Metabolic Agents - 
+Antidiabetics 4,897 $6,841,138 
+Table 5 – 2021 Top 10 Highest Year over Year Cost Increase Drug Families 
+ 
+ 
+  
+===PAGE 9===
+  
+9 
+Maine Health Data Organization 
+Trends in the Cost of Prescription Drugs 
+Changes in Wholesale Acquisition Costs 
+MHDO analyzed the average change in WAC pricing for both brand and generic name drugs during calendar 
+year 2021 for NDCs for which pricing component data was submitted.  NDCs included on MHDO’s List of 
+Trigger NDCs for CY2021, appearing on at least two of the lists of the MHDO’s top 25 Drug Reports, or having 
+average claim paid amounts over 10x WAC were compared to related NDCs within the same product family.  
+In 2021 the data shows that the WAC set by manufactures for generic drugs decreased in all but one category, 
+while the WAC set by manufacturers for existing brand drugs rose in most categories at similar rates to what 
+was observed in the MHDO’s previous annual reports. See Table 6 below.   
+ 
+2021 Inclusion Criteria 
+Target NDCs NDCs In Related Drug Product Families 
+Total 
+NDCs 
+Average WAC Percent Change 
+Total 
+NDCs 
+Average WAC Percent Change 
+Brand Generic 
+Brand & 
+Generic 
+Combined Brand Generic 
+Brand & 
+Generic 
+Combined 
+High Cost / High Margin          
+  WAC < $100 16 No NDCs -21.10% -21.10% 229 4.97% -11.38% -11.24% 
+  WAC $100 - $500 15 No NDCs -20.27% -20.27% 204 -18.03% -8.35% -8.87% 
+  WAC > $500 0 No NDCs No NDCs No NDCs 136 0.97% -2.72% -1.77% 
+  All NDCs 31 No NDCs -20.70% -20.70% 569 -3.22% -8.58% -8.13% 
+Multiple Top 25 Lists          
+  WAC < $100 0 No NDCs No NDCs No NDCs 27 0.56% 0.00% 0.19% 
+  WAC $100 - $500 14 2.37% 0.00% 1.36% 44 2.47% 0.00% 0.90% 
+  WAC > $500 8 4.87% No NDCs 4.87% 20 3.26% 0.00% 3.10% 
+  All NDCs 22 3.62% 0.00% 2.63% 91 2.42% 0.00% 1.17% 
+New Drug Trigger        
+  WAC < $100 0 No NDCs No NDCs No NDCs 111 3.54% -11.26% -10.46% 
+  WAC $100 - $500 3 No NDCs -82.43% -82.43% 172 3.81% -10.03% -7.38% 
+  WAC > $500 45 0.24% -12.40% -7.06% 200 3.95% -2.40% 1.15% 
+  All NDCs 48 0.24% -19.64% -11.77% 483 3.90% -8.40% -4.56% 
+WAC Increase Trigger         
+  WAC < $100 0 No NDCs No NDCs No NDCs 1 No NDCs 0.00% 0.00% 
+  WAC $100 - $500 1 No NDCs 21.15% 21.15% 12 4.99% 0.00% 0.83% 
+  WAC > $500 0 No NDCs No NDCs No NDCs 1 5.00% No NDCs 5.00% 
+  All NDCs 1 No NDCs 21.15% 21.15% 14 4.99% 0.00% 1.07% 
+All NDCs         
+  WAC < $100 16 No NDCs -21.10% -21.10% 368 2.13% -10.73% -10.13% 
+  WAC $100 - $500 33 2.37% -21.21% -15.49% 432 -0.37% -8.12% -7.01% 
+  WAC > $500 53 1.61% -12.40% -5.26% 357 3.25% -2.56% 0.16% 
+  All NDCs 102 1.78% -17.76% -11.06% 1,157 2.26% -7.97% -5.79% 
+Table 6 – WAC Percent Change by Interest Category 
+ 
+  
+===PAGE 10===
+  
+10 
+Maine Health Data Organization 
+Manufacturer Price Trends Over Time 
+MHDO used publicly available pricing data to analyze WAC pricing trends over the previous five years for all 
+drug products with at least one incurred claim in the Maine APCD during 2021.  The analysis shows that during 
+the five-year period the percentage of drugs that incur price increases has decreased overall from 14.14% of 
+active NDCs in 2017 to 9.67% in 2021; however, the data shows a slight increase (0.86%) over 2020.  The 
+average percent of increase for price increases has also decreased over time; however, the 2021 average 
+percent of increase of 9.90% remains above the consumer price index (CPI-U) for 2021 of 7.0%.   
+ 
+While the percentage of brand and generic drugs with WAC decreases has varied over time the average 
+percent of decrease has remained between -49.31% and -49.83% during the last three years with a value of -
+49.40% in 2021.  See Table 7 and Chart 1 below. 
+NDC 
+Group / 
+Year 
+Active 
+NDCs3 
+All Changes WAC Increases WAC Decreases 
+WAC 
+Change 
+NDCs 
+Percent 
+Active 
+NDCs  
+w/ WAC 
+Change 
+Average 
+WAC  
+Percent   
+Change 
+WAC 
+Increase 
+NDCs 
+Percent 
+Active 
+NDCs 
+w/ WAC 
+Increase 
+Average 
+WAC  
+Percent 
+Increase 
+WAC 
+Decrease 
+NDCs 
+Percent 
+Active 
+NDCs 
+w/ WAC 
+Decrease 
+Average 
+WAC  
+Percent 
+Decrease 
+2017 18,113 3,884 21.44% -1.28% 2,610 14.14% 19.43% 1,274 7.03% -43.69% 
+2018 20,598 3,710 18.01% 1.65% 2,688 13.05% 20.16% 1,022 4.96% -47.05% 
+2019 23,579 3,659 15.52% 4.19% 2,598 11.02% 26.04% 1,061 4.50% -49.31% 
+2020 26,877 4,030 14.99% -12.02% 2,367 8.81% 14.54% 1,663 6.19% -49.83% 
+2021 30,639 4,755 15.52% -12.43% 2,964 9.67% 9.90% 1,791 5.84% -49.40% 
+Table 7 – Prescription Drug WAC Change Statistics by Year 
+ 
+Chart 1 –WAC Change Statistics by Year 
+ 
+3 Active NDCs are those NDCs that are currently available in the market.  
+
+===PAGE 11===
+  
+11 
+Maine Health Data Organization 
+There were 30,639 active brand and generic prescription drugs for which Mainers filled prescriptions in 2021.  
+Less than 1% of these drugs (15 drugs total – 10 brand drugs and 5 generic drugs) had WAC increases in 2021 
+that hit triggers requiring Public Notice of Substantial Drug Price Change.   
+ 
+Impact of WAC Changes on Pricing for Multisource Drug Products 
+MHDO used pricing component data submitted by reporting entities to evaluate the difference in price 
+between brand and generic NDCs for products where brand and generic equivalents were available during the 
+year (multisource drug products).  Of 84 multisource drug products reviewed, 81 had generic NDCs priced 
+lower than brand equivalent NDCs before and after application of WAC changes, with an average year end 
+generic discount from brand WAC of 62.26%.  The brand manufacturer for 3 of these drug products decreased 
+the brand WAC of each item by 77.46%, resulting in a price that was 3.28% less than the average generic WAC 
+for the same products. 
+MHDO next applied average net costs per unit4 for each drug product to evaluate the difference in amounts 
+actually paid by payers for brand and generic drugs.  When generic products were dispensed, the cost to 
+payers was significantly lower than what was paid when equivalent brand name products were used, with an 
+average net cost reduction of 50.93%.  
+ 
+Brand to Generic Drug Utilization in Maine 
+MHDO reviewed the rate of utilization of generic drugs found in claims data submitted by payers to the MHDO 
+APCD in CY 2021.  The analysis determined that Mainers were provided brand drug products for 5.76% of 
+claims where generic drugs were alternatively available, which is slightly lower than 2020.  Payments for brand 
+name drugs made up 45.20% of total payment amounts from payers and consumers for multisource drug 
+products
+5.  .  A comparison of year-over-year brand to generic drug utilization statistics is provided in Table 7 
+below. 
+ 
+Description 
+MHDO Report Year 
+2019 2020 2021 
+Brand Drug Utilization 6.11% 5.92% 5.76% 
+Brand Cost Percentage 36.42% 38.84% 45.20% 
+Percent Brand Claims Indicated Dispensed as Written 25.92% 26.77% 21.61% 
+Table 7 – Year-Over-Year Brand to Generic Drug Utilization Statistics 
+ 
+  
+ 
+4 Average net costs were determined by decreasing the total paid amo unt reported by payers by the average rebate 
+amount reported by reporting entities for the same NDCs on a per unit basis. 
+5 Claim payments do not reflect the effect of drug rebates.  21.61% of the brand claims represented were prescribed as 
+Dispense As Written, indicating the medical provider determined that the branded NDC was more appropriate for the 
+patient and should not be filled as a generic.   
+===PAGE 12===
+  
+12 
+Maine Health Data Organization 
+Analysis of Manufacturer Pricing and Drug Costs to Payers 
+MHDO analyzed pharmaceutical claims data to evaluate the impact of both price increases and decreases on 
+actual amounts paid by payers during the reporting period.  Analysis was limited to 3,159 NDCs that incurred 
+WAC changes during 2021 and for which claims were incurred both before and after the WAC changes.  This 
+sample includes the following drug products that were listed on MHDO’s report of Top 25 Most Frequently 
+Prescribed Drugs for 2021: 
+ 
+Therapeutic Class Drug Name 
+ADHD/Anti-Narcolepsy/Anti-Obesity/Anorexiants Lisdexamfetamine Dimesylate 
+Antihistamines/Nasal Agents/Cough & 
+Cold/Respiratory/Misc - Antiasthmatic And 
+Bronchodilator Agents 
+Albuterol Sulfate 
+Budesonide-Formoterol Fumarate Dihydrate 
+Fluticasone Furoate-Vilanterol 
+Fluticasone Propionate HFA 
+Tiotropium Bromide Monohydrate 
+Umeclidinium Bromide 
+Umeclidinium-Vilanterol 
+Endocrine and Metabolic Agents - Antidiabetics Dulaglutide 
+Gastrointestinal Agents - Ulcer 
+Drugs/Antispasmodics/Anticholinergics Pantoprazole Sodium 
+Genitourinary Agents - Miscellaneous Tamsulosin HCl 
+Hematological Agents - Anticoagulants Apixaban 
+Neuromuscular Agents - Anticonvulsants Gabapentin 
+Vaccines Zoster Vaccine Recombinant Adjuvanted 
+ 
+Wholesale Acquisition Cost (WAC) Relationship to Payer Paid Amounts 
+The WAC change analysis showed a relative correlation between average WAC increase amounts (7.34%) and 
+increases to average amounts paid by payers (8.34%) after WAC increases took place.  However, where WAC 
+prices decreased, the relative percent of decrease in amounts paid by payers was significantly lower, with WAC 
+prices decreasing 49.75% and average amounts paid only decreasing 10.09%.  See table 8 below. 
+ 
+2021 WAC Increases 2021 WAC Decreases 
+NDC Count 
+Average WAC  
+Percent Change  
+Average Payer Paid 
+Percent Change  NDC Count 
+Average WAC 
+Percent Change  
+Average Payer 
+Paid Percent 
+Change  
+1,931 7.34% 8.34% 1,228 -49.75% -10.09% 
+Table 8 – WAC Change Impact on Payer Paid Amounts 
+ 
+  
+===PAGE 13===
+  
+13 
+Maine Health Data Organization 
+Average Wholesale Price (AWP) Relationship to Payer Paid Amounts  
+Negotiated prices between pharmacies and payers are typically derived as a percentage-based discount from 
+AWP plus a fixed price dispensing fee.  Manufacturers may provide publishers of AWP with a suggested AWP 
+value or specify a markup value to be applied to WAC.  Where manufacturers do not provide AWP guidance, 
+the value is typically set as a 20% markup over WAC.   
+ 
+MHDO organized the NDCs analyzed above into brand and generic items and categorized them by source type 
+(single source vs. multisource) to evaluate differences in pricing behaviors and methods across categories.  
+AWP values were also incorporated for comparison to WAC and claims paid values.  Statistical outcomes of the 
+analysis are provided in Appendix A. 
+ 
+Key findings based on MHDO’s sample of prescription drugs: 
+• Brand drugs  
+o Most drug products with WAC increases in 2021 were brand drugs (88.85% of NDCs in the 
+sample).   
+o Amounts paid by payers after the application of WAC increases rose at a slightly higher rate 
+than the rate of WAC increase 
+o AWP for brand drugs increased at nearly the same rate as WAC increased.   
+o AWP for brand drugs had an average markup from WAC between 19.98% and 20.10% after 
+price increases. 
+o PBMs receive rebates for brand drugs that further offset costs to payers and may result in net 
+costs below WAC.  Data submitted to MHDO by PBMs for a subset of 132 brand NDCs 
+dispensed in Maine during 2021 indicated average rebate amounts of approximately 27%. 
+• Generic drugs 
+o Multisource generic drugs made up 96.75% of all NDCs with WAC decreases and had an 
+average percent decrease of 49.70%.   
+o The average amount paid by payers for multisource generic drugs after WAC decreases fell by 
+only 9.37%.  
+o When represented as a percentage of WAC, payer paid amounts for multisource generic drugs 
+with WAC decreases increased by 122.70% with average payer paid amounts reflecting 
+251.31% of WAC after WAC decreases.   
+o AWP for multisource generic drugs with WAC decreases did not fall at the same rate as WAC 
+and remained within 5.96% of pre-WAC change AWP.   
+o AWP for multisource generic drugs had an average markup from WAC of 1,823.67% after 
+WAC decreases. 
+o Unlike brand drugs, PBMs generally do not receive rebates from generic manufacturers.  Data 
+submitted to MHDO by PBMs for a subset of 297 generic NDCs dispensed in Maine during 
+2021 indicated average rebate amounts of less than 1%. 
+ 
+AWP and Generic Drugs 
+MHDO reviewed AWP price history for the generic drugs reviewed and found that AWP values were often set 
+by manufacturers as a discount from the WAC or AWP value of the equivalent brand drug as it existed at the 
+time the first generic product was introduced to market.  For generic drugs, AWP often does not change as the 
+value of WAC changes over time.  As a result, while WAC prices differ between generic manufacturers, AWP 
+prices show very little variation and are often the same across manufacturers.  
+ 
+===PAGE 14===
+  
+14 
+Maine Health Data Organization 
+Pharmacies are incentivized to reduce costs by acquiring generic products from manufacturers with the lowest 
+WAC.  However, payers do not receive a corollary benefit from lower WAC prices when AWP, the basis for 
+pharmacy reimbursement, remains static across generic manufacturers.  Instead, the reductions the 
+manufacturers make in WAC result in a higher margin to the pharmacy – in some instances a pharmacy 
+receives greater income for a product than the product’s manufacturer.  To illustrate the impact of this 
+phenomenon, MHDO identified 77 NDCs with average payer paid amounts of over $100 per fill and average 
+cost mark ups of more than 10x WAC – see Appendix B. 
+ 
+Case Study – Zytiga (Abiraterone Acetate) 250 Mg 120 Count Tablets 
+MHDO reviewed brand and generic WAC and AWP pricing to amounts paid by payers between 2019 and 2021 
+for multisource drug product Zytiga (Abiraterone Acetate) 250 Mg 120 Count Tablets.  Zytiga is used to treat 
+men with prostate cancer that has spread to other parts of the body.  Pharmacy claims totaling $18.7M were 
+paid for the drug product in Maine during the three-year period. The brand product was introduced to market 
+in 2011 by Janssen Biotech with a WAC value of $5,000.00 and an AWP value of $6,000.00.  The drug then 
+launched generically in November 2018 with first generic products having WAC prices for a 30-day course of 
+therapy that ranged between $3,499.40 and $8,840.58.   
+ 
+AWP values for the first generic products were specified at either $11,050.73 or $11,664.66, exactly 90% and 
+95% respectively of Janssen’s AWP value for the brand name drug at the time ($12,278.59).  Additional generic 
+manufactures have since joined the market with the same or similar AWP values.  In all instances, AWP values 
+initially set by generic manufacturers did not change after product introduction to market.  See Table 9 below. 
+  
+===PAGE 15===
+  
+15 
+Maine Health Data Organization 
+ 
+  Manufacturer NDC 
+Price Period 
+WAC AWP 
+Average 
+Payer Paid 
+Amount 
+Effective 
+Date 
+ 
+End Date 
+Brand 
+JANSSEN BIOTECH                57894015012 5/2/2011 12/27/2011 $5,000.00 $6,000.00  
+Not 
+Reviewed 
+12/28/2011 6/4/2012 $5,495.00 $6,594.00  
+6/5/2012 3/4/2013 $5,819.21 $6,983.05  
+3/5/2013 10/14/2013 $6,395.31 $7,674.37  
+10/15/2013 8/5/2014 $6,836.59 $8,203.91  
+8/6/2014 5/5/2015 $7,376.68 $8,852.02  
+5/6/2015 3/2/2016 $7,996.32 $9,595.58  
+3/3/2016 2/8/2017 $8,628.03 $10,353.64  
+2/9/2017 1/2/2018 $9,395.88 $11,275.06  
+1/3/2018 1/9/2019 $10,232.16 $12,278.59  $9,145.35  
+1/10/2019 12/31/2021 $10,887.02 $13,064.42  $10,803.78  
+Generic 
+AMNEAL PHARMACEUTICALS         69238116507 1/8/2019 12/8/2019 $3,499.40 
+$11,664.66 
+$5,833.16  
+12/9/2019 7/16/2020 $800.00 $4,832.55  
+7/17/2020 12/31/2021 $475.00 $3,904.82  
+APOTEX                         60505432701 11/23/2018 11/26/2019 $4,972.77 
+$11,050.61  
+$6,413.09  
+11/27/2019 2/11/2020 $2,625.00 $4,749.77  
+2/12/2020 12/31/2021 $2,000.00 $3,776.06  
+AVKARE                         42291002412 12/7/2019 12/31/2021 $431.30 $11,664.66  $6,550.79  
+CELLTRION USA                  72606056601 2/7/2020 12/31/2021 $425.00 $510.00  $371.27  
+DR.REDDY'S LABORATORIES, INC.  43598035804 6/11/2020 12/31/2021 $425.00 $11,664.70  $6,892.82  
+MYLAN                          00378692078 11/21/2018 1/2/2020 $4,665.86 $11,664.66 $6,795.06  
+1/3/2020 12/31/2021 $1,700.00 $5,521.89  
+NORTHSTAR RX                   16714096301 9/7/2020 12/31/2021 $336.92 $11,223.27  $1,167.08  
+NOVADOZ PHARMACEUTICALS        72205003092 8/7/2019 2/16/2020 $1,505.00 
+$11,649.00 
+$3,621.09  
+2/17/2020 6/9/2020 $600.00 $3,878.20  
+6/10/2020 12/31/2021 $225.00 $3,614.04  
+PATRIOT PHARMACEUTICALS LLC    57894015512 11/26/2018 12/31/2021 $9,188.48 $11,026.18  $5,748.35  
+RISING PHARMACEUTICALS         64980041812 11/1/2019 3/23/2021 $600.00 $11,664.66 $3,859.69  
+3/24/2021 12/31/2021 $260.00 $3,971.67  
+WOCKHARDT USA                  64679002101 4/9/2019 7/26/2021 $1,500.00 $11,664.66 $4,891.54  
+7/27/2021 12/31/2021 $225.00 $4,385.42  
+Table 9 – Zytiga (Abiraterone Acetate) 250 Mg 120 Count Tablet – WAC, AWP and Average Payer Paid Amount by Price Period 
+===PAGE 16===
+  
+16 
+Maine Health Data Organization 
+During the three-year period for which MHDO prescription claims were reviewed (2019-2021), the average WAC for generic Zytiga products fell from $5,165.18 
+to $1,432.71.  In contrast, average generic AWP prices fell from $11,291.37 to $10,594.21.   
+The average amount paid by payers for the brand Zytiga product before rebates was $10,802.17 and was closely correlated to the brand WAC amount during the 
+period which was $10,887.02. 
+The average amount paid by payers for generic Zytiga products was $4,619.38, a markup above average WAC of 163.92% during this period.  See Chart 2 below.  
+When calculated on an average markup per claim basis, the average amount paid as a percentage of WAC on the day the prescription was filled was 741.84%. 
+ 
+ Chart 2 – Zytiga (Abiraterone Acetate) 250 Mg 120 Count Tablet – WAC & AWP Correlation to Payer Paid Amounts 
+
+===PAGE 17===
+  
+17 
+Maine Health Data Organization 
+Major Components of Prescription Drug Pricing along the Supply Chain 
+MHDO used pricing component data collected from reporting entities combined with pharmaceutical claims 
+data submitted to the MHDO APCD by commercial payers for the same period to analyze key factors 
+contributing to the cost of prescription drugs along the supply chain6.  Medicaid and Medicare claims were 
+excluded from this analysis because rebate amounts for government programs are not available.   
+ 
+Primary entities in the pharmaceutical supply chain include: 
+ Manufacturers – entities that produce and/or repackage drug products for which they set the WAC 
+value. 
+ Wholesale Drug Distributors – entities that distribute products, of which they are not the 
+manufacturer, to non-consumer entities.  Wholesalers acquire the products they distribute from 
+manufacturers and later sell the products to pharmacies at market prices. 
+ Pharmacies – entities that fill patient prescriptions using drug products acquired from 
+wholesalers
+7.   
+ Pharmacy Benefit Managers (PBM) – third party administrators of prescription drug programs for 
+payers with major duties including development and management of payer drug formularies, 
+negotiation of contract pricing between payers and pharmacies, and negotiation of rebates from 
+manufacturers for products administered on behalf of payers. 
+ Commercial Payers – Providers of health plans and insurance coverage for enrolled members.  
+Payers establish contracted rates with pharmacies and cost sharing terms for the plans they 
+administer. 
+ 
+The pharmaceutical supply chain is complex with steps that include physical product acquisition as well as 
+transactional elements triggered by contractual arrangements.  While manufacturers set the WAC prices of the 
+drugs they sell, manufacture rebates play a major role in lowering the acquisition costs realized by wholesalers 
+and pharmacies, and the final amounts paid by payers.   
+ 
+Rebates accrue as drug products are exchanged between supply chain entities over time and may represent a 
+fixed amount per unit or a percentage of an agreed upon price point such as WAC.  A summary of average 
+manufacturer rebates reported by reporting entities during 2021 is provided in Table 10 below.  Rebate values 
+are calculated at an NDC level for each reporting entity as the total rebate receivable amount divided by the 
+average WAC amount
+8 for the NDC. 
+ 
+ 
+ 
+ 
+ 
+6 MHDO reviewed 430 unique NDCs for which pricing component data was submitted from reporting entities and APCD 
+commercial claims were paid during 2021. 
+7 Pharmacies may also contract directly with manufacturers to procure drug products.  In these cases, MHDO assumes 
+pharmacy acquisition costs are more favorable than what is otherwise available from wholesalers, increasing pharmacy 
+profitability.  All other supply chain components remain the same.  
+8 Average WAC is calculated by summing the mathematical product(s) of the number of days dur ing the year a drug 
+product is priced at a unique WAC value multiplied by the unique WAC value and  dividing the sum of all mathematical 
+products by the number of days in the year. ((($a x 31 days) + ($b x 150 days) + ($c x 184 days)) / 365 days)  
+===PAGE 18===
+  
+18 
+Maine Health Data Organization 
+Source Group 
+Brand / 
+Generic 
+NDC 
+Count 
+Average Manufacturer Rebates 
+(Percent of WAC) 
+Wholesale 
+Rebate 
+PBM  
+Rebate 
+Total  
+Rebate 
+Single Source 
+Brand 58 6.73% 27.61% 34.35% 
+Generic 2 13.40% 0.00% 13.40% 
+Multisource 
+Brand 74 11.50% 26.59% 37.94% 
+Generic 295 32.89% 0.17% 32.83% 
+Table 10 – Average Manufacturer Rebates by Source Group and Drug Type 
+ 
+ 
+While rebates play a role in amounts ultimately paid by payers, amounts paid by payers and consumers to 
+pharmacies are determined by contract pricing established and managed by PBMs.  Commercial payers engage 
+PBMs to negotiate payment rates with pharmacies for the drugs the pharmacies dispense.  As prescriptions are 
+filled, PBMs charge payers their negotiated price less the consumer payment amount and facilitate payment to 
+the pharmacy.  Analysis of pricing component data provided by PBMs shows that negotiated prices paid by 
+payers and consumers to pharmacies were higher than market prices paid by pharmacies to wholesalers (the 
+amount paid to acquire the drug dispensed) by an average margin of 1.56% for brand NDCs and 360.09% for 
+generic NDCs. 
+ 
+Analysis of MHDO’s CY 2021 commercial claims data for the 430 NDCs reviewed shows that on average, 
+consumers paid 10.95% of consumer / plan payments before rebates for brand NDCs (average consumer share 
+of $314.20 on $2,868.95 claim paid amount) and 15.64% for generic NDCs (average consumer share of $134.25 
+on $858.35 claim paid amount). 
+ 
+ 
+ 
+ 
+ 
+===PAGE 19===
+  
+19 
+Maine Health Data Organization 
+Impacts on Insurance Premiums and Cost Sharing 
+After manufacturer rebates to PBMs are passed through to commercial payers (referred to as payers), the 
+amount that was initially paid to pharmacies by payers was offset by 16.75% for brand NDCs with no reduction 
+for generic NDCs.  If rebate amounts were distributed between payers and consumers at the point of sale 
+(when the consumer is at the pharmacy), consumers would have realized out-of-pocket cost savings of 
+approximately 14.91% for brand name NDCs.   
+ 
+A comparison of out-of-pocket amounts paid per person between 2019 and 2021 as reported to MHDO for all 
+NDCs per the requirements in 90-590 Rule Chapter 243, Uniform Reporting System for Health Care Claims Data 
+Sets, is provided in table 11 below. 
+ 
+Claim 
+Incurred 
+Year 
+Total Patient 
+Population 
+Patient Total Out of Pocket Amount 
+$0  $0.01 - $250.00 $250.01 - $500.00 $500.01 - $1,000.00 Over $1,000.00 
+Patient 
+Count 
+Population 
+Percent 
+Patient 
+Count 
+Population 
+Percent 
+Patient 
+Count 
+Population 
+Percent 
+Patient 
+Count 
+Population 
+Percent 
+Patient 
+Count 
+Population 
+Percent 
+2019 788,895 113,687 14.41% 515,627 65.36% 76,709 9.72% 48,908 6.20% 33,965 4.31% 
+2020 774,337 147,100 19.00% 476,053 61.48% 72,141 9.32% 45,647 5.89% 33,396 4.31% 
+2021 803,530 271,534 33.79% 392,541 48.85% 64,260 8.00% 41,962 5.22% 33,233 4.14% 
+Table 11 – Year over year comparison of out-of-pocket paid amounts per person 
+ 
+Overall, for the subset of 430 NDCs reviewed by MHDO (see footnote 6), the average amount paid by payers 
+(including member cost share) after rebates for a given NDC was 71.21% of the average WAC amount for 
+brand NDCs and 163.65% for generic NDCs.  On average, consumers paid 14.75% of the total paid amount after 
+rebates overall. 
+ 
+Public Law 2019, Chapter 469, Section 4350-A 
+Public Law 2019, Chapter 469, An Act to Protect Consumers from Unfair Practices Related to Pharmacy Benefits 
+Management, Section 4350-A requires beginning January 1, 2020, any compensation received by PBMs from 
+manufacturers must be “remitted directly to the covered person at the point of sale to reduce the out-of-
+pocket cost to the covered person associated with a particular prescription drug; or remitted to, and retained 
+by, the carrier.  Compensation remitted to the carrier must be applied by the carrier in its plan design and in 
+future plan years to offset the premium for covered persons.” 
+ 
+The sample of pricing component data (430 NDCs in the sample) reported to MHDO by PBMs shows that of the 
+overall value of rebates received in 2021 only 48.45% was passed through to commercial payers, a significant 
+decrease from the of 90.96% reported passed through in 2020.   
+ 
+90-590, CMR Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets, specifies that 
+rebate data submitted by PBMs should represent receivable and payable amounts accrued during the year.  
+One PBM provided a statement that the rebate values provided represented payment amounts for prior year 
+accruals.  While this data was not incorporated into MHDO’s analysis, incorrect reporting of rebates paid for 
+prior period accruals by PBMs is a potential influencer in the decrease in passthrough percentage represented 
+above.  Further, to validate the requirements in PL 2019, Chapter 469, in a comprehensive way, MHDO would 
+need to collect rebate data for all NDCs.   
+ 
+===PAGE 20===
+  
+20 
+Maine Health Data Organization 
+Public Law 2019, Chapter 469, Section 4350-D 
+Public Law Chapter 469, Section 4350-D specifies that for purposes of calculating a carrier’s anticipated loss 
+ratio, any PBM compensation from a carrier “[c]onstitutes an administrative cost incurred by the carrier in 
+connection with a health plan; and [m]ay not constitute a benefit provided under a health plan.”  Specifically, 
+“[a] carrier may claim only the amounts paid by the PBM to a pharmacy or pharmacist as an incurred claim.” 
+ 
+As requested, MHDO analyzed the paid amounts reported by payers in the MHDO APCD for prescription drugs 
+against the sample of pricing component data provided by PBMs to evaluate compliance with Section 4350-D.  
+The analysis found that the average pharmacy reimbursement amount reported by PBMs represented 90.92% 
+of the average APCD paid amount across NDCs.  This is a decrease of 6.94% from the same measure in 2020 
+(97.86%).   
+ 
+MHDO’s pricing component data provided by PBMs shows that, on average, PBMs retained payments from 
+payers in the form of spread and/or administrative fees at a rate of 2.62% above what PBMs reimbursed to 
+pharmacies for brand NDCs and 18.99% for generic NDCs (13.97% overall). 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 21===
+  
+21 
+Maine Health Data Organization 
+Conclusion 
+In this third annual report, MHDO leveraged changes enacted by Public Law 2021, Chapter 305 to request 
+pricing component data from reporting entities for a broader range of NDCs for calendar year 2021.  This 
+additional data provided a greater sample size from which MHDO was able to evaluate rebate values for high 
+cost and highly utilized drug products.  Additionally, MHDO expanded its analysis of the correlation of WAC 
+and AWP values to amounts actually paid by consumers and payers with particular focus on drugs with high 
+costs and significant markups between manufacturer list prices and amounts paid. 
+ 
+A commonality across reports is the fact that drug pricing along the pharmaceutical supply chain is highly 
+complex.  The increased sample of data received by MHDO for the third year continues to show that there is 
+variability in pricing and rebate practices across reporting entities and drug products and that no single entity 
+in the pharmaceutical supply chain is responsible for the increases in prescription drug costs in Maine.  Instead, 
+the relationship between prices set by manufacturers to contractual markups and rebate incentives 
+throughout the supply chain benefit each entity in different ways depending on whether a drug is a brand drug 
+or a generic drug, and the number of manufacturers from which a given drug product is available. 
+ 
+The volume and rate of WAC increases appear to show signs of improvement when viewed against the 
+previous five years; however, WAC increases continue to occur at rates that exceed the annual consumer price 
+index and with greater frequency for brand drugs than observed for generic drugs.  While generic drugs 
+showed a general decrease in WAC during the year, AWP values remained largely static resulting in only 
+marginal decreases in amounts paid by payers and consumers for generic products when compared to the 
+reduction in cost realized by pharmacies. 
+ 
+Additional research regarding drug procurement costs to pharmacies, rebates received and paid by PBMs, and 
+net paid amounts realized by payers across all drugs dispensed in the State is recommended to examine the 
+efficacy of Public Law 2019, Chapter 469 and identify areas of potential cost savings.  To provide this analysis, 
+MHDO should consider adding new requirements to 90-590 CMR Chapter 243, Uniform Reporting System for 
+Health Care Claims Data Sets, for payers to provide rebate and administrative cost data by NDC. 
+ 
+MHDO is pleased to present this analysis towards increasing awareness of the various factors contributing to 
+the cost of prescription drugs.   
+===PAGE 22===
+  
+22 
+Maine Health Data Organization 
+Appendix A – Correlation between WAC Changes and AWP Pricing 
+ 
+NDCs with Claims Incurred Before and After 2021 WAC Changes9 
+ 
+ 
+ 
+Change Type 
+/ Source Type 
+Brand 
+ / Generic 
+NDC  
+Count 
+Average WAC 
+Change Percent 
+Average AWP 
+Change 
+Percent 
+Average AWP 
+Percent of 
+WAC After 
+Change 
+Average AWP 
+Percent of WAC 
+Change Percent 
+Average 
+APCD Paid 
+Change 
+Percent 
+Average APCD 
+Paid Percent  
+of WAC  
+After Change 
+Average APCD 
+Paid Percent 
+of WAC 
+Change 
+Percent 
+Average APCD 
+Paid Percent  
+of AWP  
+After Change 
+Average APCD 
+Paid Percent of 
+AWP Change 
+Percent 
+Price Increases 
+Single Source 
+Brand 978  5.30% 5.29% 119.98% 0.00% 8.45% 97.59% -3.06% 81.33% -2.54% 
+Generic 43  23.70% 16.73% 126.50% -13.97% 3.86% 90.70% -23.22% 72.08% -8.36% 
+Multisource 
+Brand 736  5.51% 5.23% 120.09% -0.05% 9.48% 110.09% 4.60% 91.80% 3.89% 
+Generic 174  22.46% 14.14% 182.74% -65.88% 4.00% 92.24% -20.19% 67.71% -6.58% 
+Price Decreases 
+Single Source 
+Brand 1  -77.46% -77.46% 120.00% 0.01% -80.83% 92.20% -16.19% 76.83% -13.50% 
+Generic 12  -44.46% -9.01% 949.55% -465.39% -3.35% 387.02% 176.70% 146.75% 100.88% 
+Multisource 
+Brand 27  -51.70% -43.12% 188.56% 55.62% -41.85% 105.78% 20.61% 73.92% 7.20% 
+Generic 1,188  -49.74% -5.98% 1826.22% 935.06% -9.38% 251.46% 122.83% 37.13% 4.86% 
+ 
+   
+9 Analysis of NDCs that incurred WAC changes during 2021 and for which claims were submitted to the MHDO APCD that were incurred both before and after 
+the WAC changes. 
+===PAGE 23===
+  
+23 
+Maine Health Data Organization 
+Appendix B – NDCs with Average Fill Cost in Maine Over $100 / Average Markup > 10x WAC10 
+ 
+NDC Item Description Manufacturer 
+Average 
+APCD Paid 
+Per Fill 
+Average 
+APCD Paid 
+Per Unit 
+Dispensed 
+Average 
+WAC Per 
+Unit 
+Dispensed  
+Average 
+APCD Paid 
+Per Fill 
+Percent of 
+WAC 
+43598035804 Abiraterone Acetate 250 MG Tablet 120.000 EA DR.REDDY'S LABORATORIES, INC.  $7,342.94 $61.19 $3.54 1727.73% 
+72205003092 Abiraterone Acetate 250 MG Tablet 120.000 EA NOVADOZ PHARMACEUTICALS        $3,203.55 $28.59 $1.88 1558.05% 
+64980041812 Abiraterone Acetate 250 MG Tablet 120.000 EA RISING PHARMACEUTICALS         $3,624.60 $33.21 $2.93 1321.51% 
+64679002101 Abiraterone Acetate 250 MG Tablet 120.000 EA WOCKHARDT USA                  $2,532.12 $36.01 $7.83 1018.72% 
+65162089903 Aripiprazole 15 MG Tablet 30.000 EA AMNEAL PHARMACEUTICALS         $109.16 $3.38 $0.31 1551.36% 
+60505267503 Aripiprazole 15 MG Tablet 30.000 EA APOTEX                         $363.74 $24.25 $1.49 1631.08% 
+67877043303 Aripiprazole 15 MG Tablet 30.000 EA ASCEND LABORATORIES            $101.94 $2.78 $0.24 1213.77% 
+31722082830 Aripiprazole 15 MG Tablet 30.000 EA CAMBER PHARMACEUTICALS         $131.60 $4.51 $0.81 1017.29% 
+43598096830 Aripiprazole 15 MG Tablet 30.000 EA DR.REDDY'S LABORATORIES, INC.  $286.37 $10.89 $0.90 1261.33% 
+16729028210 Aripiprazole 20 MG Tablet 30.000 EA ACCORD HEALTHCARE              $151.37 $5.78 $0.41 1292.46% 
+67877043403 Aripiprazole 20 MG Tablet 30.000 EA ASCEND LABORATORIES            $122.91 $2.95 $0.28 1083.97% 
+31722082930 Aripiprazole 20 MG Tablet 30.000 EA CAMBER PHARMACEUTICALS         $190.79 $5.23 $0.74 1246.75% 
+43598096630 Aripiprazole 5 MG Tablet 30.000 EA DR.REDDY'S LABORATORIES, INC.  $137.78 $4.97 $0.84 1207.52% 
+16714087402 Atorvastatin Calcium 10 MG Tablet 500.000 EA NORTHSTAR RX                   $162.63 $2.08 $0.13 1447.51% 
+00904647561 Baclofen 10 MG Tablet 100.000 EA UD MAJOR PHARMACEUTICALS          $1,061.90 $22.59 $0.42 5355.21% 
+16729007329 Capecitabine 500 MG Tablet 120.000 EA ACCORD HEALTHCARE              $873.13 $10.83 $1.02 1137.82% 
+72485020512 Capecitabine 500 MG Tablet 120.000 EA ARMAS PHARMACEUTICALS          $1,073.51 $12.36 $1.00 1306.73% 
+72205000792 Capecitabine 500 MG Tablet 120.000 EA NOVADOZ PHARMACEUTICALS        $610.30 $7.17 $0.50 1519.26% 
+69097041002 Cinacalcet HCl 30 MG Tablet 30.000 EA CIPLA USA                      $656.93 $18.51 $1.97 1817.02% 
+16729044015 Cinacalcet HCl 30 MG Tablet 90.000 EA ACCORD HEALTHCARE              $333.70 $19.53 $0.82 2449.58% 
+16729044110 Cinacalcet HCl 60 MG Tablet 30.000 EA ACCORD HEALTHCARE              $697.82 $23.94 $2.75 1295.21% 
+69097041102 Cinacalcet HCl 60 MG Tablet 30.000 EA CIPLA USA                      $855.69 $21.91 $2.43 1720.25% 
+ 
+10 Average WAC Per Unit Dispensed values represent WAC per unit of measure (tablet, caplet, etc.) as of the date of fill provided in Wolters Kluwer’s Medi-Span 
+MedFile v2 data file database.  Average APCD Paid Amounts are based on pharmacy claims data submitted by payers for claims incurred in by Mainers during 
+calendar year 2022.  Average APCD Paid Per Unit dispensed represents the total amount paid by payers and consumers for a drug during the year divided by 
+the total number of units (tablets, caplets, etc.) dispensed. 
+===PAGE 24===
+  
+24 
+Maine Health Data Organization 
+NDC Item Description Manufacturer 
+Average 
+APCD Paid 
+Per Fill 
+Average 
+APCD Paid 
+Per Unit 
+Dispensed 
+Average 
+WAC Per 
+Unit 
+Dispensed  
+Average 
+APCD Paid 
+Per Fill 
+Percent of 
+WAC 
+16729044210 Cinacalcet HCl 90 MG Tablet 30.000 EA ACCORD HEALTHCARE              $935.18 $21.33 $5.07 1071.75% 
+71093015401 Cinacalcet HCl 90 MG Tablet 30.000 EA ACI HEALTHCARE USA             $2,185.96 $60.72 $5.00 1215.79% 
+69097041202 Cinacalcet HCl 90 MG Tablet 30.000 EA CIPLA USA                      $2,760.12 $61.34 $2.07 3690.26% 
+43598036930 Cinacalcet HCl 90 MG Tablet 30.000 EA DR.REDDY'S LABORATORIES, INC.  $6,104.09 $67.82 $4.39 1545.76% 
+42291007760 Clobetasol Propionate 0.05 % Ointment 60.000 GM UU AVKARE                         $257.50 $4.50 $0.14 3182.87% 
+27241021030 Clomipramine HCl 25 MG Capsule 30.000 EA AJANTA PHARMA LIMITED          $480.92 $5.55 $0.50 1075.60% 
+16571068309 Clomipramine HCl 25 MG Capsule 90.000 EA RISING PHARMACEUTICALS         $306.28 $3.40 $0.33 1021.04% 
+16571068409 Clomipramine HCl 50 MG Capsule 90.000 EA RISING PHARMACEUTICALS         $1,149.19 $6.38 $0.40 1596.10% 
+60505353205 Clopidogrel Bisulfate 300 MG Tablet 500.000 EA APOTEX                         $193.83 $96.92 $7.42 1306.92% 
+71839010701 Daptomycin 500 MG Solution Reconstituted 1.000 EA UD BE PHARMACEUTICALS             $884.22 $392.98 $35.00 1111.32% 
+70700027030 Deferasirox 180 MG Tablet 30.000 EA XIROMED                        $8,528.08 $71.07 $1.00 7106.73% 
+70710127603 Deferasirox 180 MG Tablet 30.000 EA ZYDUS PHARMACEUTICALS (USA)    $2,112.05 $70.40 $5.47 1287.82% 
+70700027130 Deferasirox 360 MG Tablet 30.000 EA XIROMED                        $4,478.36 $49.76 $2.00 2531.31% 
+68462049630 Deferasirox 500 MG Tablet Soluble 30.000 EA GLENMARK PHARMACEUTICALS       $4,400.67 $73.34 $6.66 1101.27% 
+60687036911 Dicyclomine HCl 10 MG Capsule 1.000 EA UD AMERICAN HEALTH PACKAGING      $366.64 $28.20 $0.55 5127.83% 
+69238209503 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA AMNEAL PHARMACEUTICALS         $789.84 $18.45 $1.33 1472.39% 
+65862035430 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA AUROBINDO PHARMA               $748.49 $19.28 $2.55 1078.44% 
+42385095330 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA LAURUS LABS PRIVATE LIMITED    $755.00 $15.80 $0.83 2258.12% 
+68180028706 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA LUPIN PHARMACEUTICALS          $472.55 $15.75 $1.00 1575.15% 
+33342010607 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA MACLEODS PHARMACEUTICALS       $1,130.57 $20.07 $1.00 1573.43% 
+64380071904 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA STRIDES PHARMA                 $1,254.43 $29.77 $2.50 1300.34% 
+70710136703 Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA ZYDUS PHARMACEUTICALS (USA)    $707.37 $16.96 $2.13 1284.52% 
+00093770456 
+Emtricitabine-Tenofovir Disoproxil Fumarate 200-300 MG Tablet 30.000 EA 
+UU TEVA PHARMACEUTICALS USA       $1,191.93 $23.56 $11.24 1603.35% 
+31722083430 Entecavir 1 MG Tablet 30.000 EA CAMBER PHARMACEUTICALS         $901.53 $32.20 $2.22 1755.04% 
+51991089133 Erlotinib HCl 100 MG Tablet 30.000 EA BRECKENRIDGE                   $6,050.14 $201.67 $13.33 1512.54% 
+51660020030 Ezetimibe 10 MG Tablet 30.000 EA OHM LABS                       $495.66 $6.47 $0.45 1388.09% 
+00904644261 Hydralazine HCl 50 MG Tablet 100.000 EA UD MAJOR PHARMACEUTICALS          $227.40 $18.95 $0.14 13761.80% 
+===PAGE 25===
+  
+25 
+Maine Health Data Organization 
+NDC Item Description Manufacturer 
+Average 
+APCD Paid 
+Per Fill 
+Average 
+APCD Paid 
+Per Unit 
+Dispensed 
+Average 
+WAC Per 
+Unit 
+Dispensed  
+Average 
+APCD Paid 
+Per Fill 
+Percent of 
+WAC 
+72485020290 Imatinib Mesylate 100 MG Tablet 90.000 EA ARMAS PHARMACEUTICALS          $1,438.04 $19.97 $1.22 1687.47% 
+51991037690 Imatinib Mesylate 100 MG Tablet 90.000 EA BRECKENRIDGE                   $6,826.74 $75.85 $1.20 6332.67% 
+00093762998 Imatinib Mesylate 100 MG Tablet 90.000 EA TEVA PHARMACEUTICALS USA       $1,455.21 $15.37 $1.49 1102.44% 
+72485020330 Imatinib Mesylate 400 MG Tablet 30.000 EA ARMAS PHARMACEUTICALS          $4,958.88 $175.63 $4.33 4210.31% 
+59651024130 Imatinib Mesylate 400 MG Tablet 30.000 EA AUROBINDO PHARMA               $4,108.36 $107.30 $4.33 3152.49% 
+51991037733 Imatinib Mesylate 400 MG Tablet 30.000 EA BRECKENRIDGE                   $1,327.63 $38.48 $4.25 1039.23% 
+47335047583 Imatinib Mesylate 400 MG Tablet 30.000 EA SUN PHARMACEUTICALS            $2,336.81 $75.89 $6.93 1181.64% 
+00093763056 Imatinib Mesylate 400 MG Tablet 30.000 EA TEVA PHARMACEUTICALS USA       $4,081.70 $133.70 $5.61 3055.42% 
+13107019799 Losartan Potassium 100 MG Tablet 1000.000 EA AUROBINDO PHARMA USA           $238.80 $2.65 $0.07 3817.75% 
+51079025501 Metoprolol Tartrate 25 MG Tablet 1.000 EA UD MYLAN INSTITUTIONAL            $151.90 $10.85 $0.10 10850.00% 
+72888002301 Metoprolol Tartrate 75 MG Tablet 100.000 EA ADVAGEN PHARMA                 $351.22 $1.95 $0.18 1087.03% 
+67877042712 Mycophenolate Sodium 360 MG Tablet Delayed Release 120.000 EA ASCEND LABORATORIES            $1,362.01 $4.86 $0.37 1217.77% 
+31722061290 Pregabalin 75 MG Capsule 90.000 EA CAMBER PHARMACEUTICALS         $125.05 $1.10 $0.13 1516.44% 
+50742063660 Quetiapine Fumarate 150 MG Tablet Extended Release 24 Hour 60.000 EA INGENUS PHARMACEUTICALS        $1,074.88 $11.94 $0.28 4342.95% 
+65862068890 Sildenafil Citrate (Pulmonary Hypertension) 20 MG Tablet 90.000 EA AUROBINDO PHARMA               $195.96 $1.59 $0.22 1288.94% 
+59762003301 Sildenafil Citrate (Pulmonary Hypertension) 20 MG Tablet 90.000 EA GREENSTONE                     $129.81 $6.18 $0.52 1197.49% 
+65862088060 Tadalafil (Pulmonary Hypertension) 20 MG Tablet 60.000 EA AUROBINDO PHARMA               $421.19 $8.08 $0.83 1522.59% 
+69097052603 Tadalafil (Pulmonary Hypertension) 20 MG Tablet 60.000 EA CIPLA USA                      $1,377.24 $24.47 $0.83 2795.81% 
+00093333406 Tadalafil (Pulmonary Hypertension) 20 MG Tablet 60.000 EA TEVA PHARMACEUTICALS USA       $1,646.68 $28.46 $1.41 2121.96% 
+27241011303 Tadalafil 10 MG Tablet 30.000 EA AJANTA PHARMA LIMITED          $459.14 $16.33 $0.67 2302.68% 
+33342026707 Tadalafil 10 MG Tablet 30.000 EA MACLEODS PHARMACEUTICALS       $100.35 $12.54 $0.48 2640.79% 
+27241011105 Tadalafil 2.5 MG Tablet 500.000 EA AJANTA PHARMA LIMITED          $281.19 $9.37 $0.33 2812.18% 
+27241011403 Tadalafil 20 MG Tablet 30.000 EA AJANTA PHARMA LIMITED          $580.54 $29.36 $0.67 4563.03% 
+27241011203 Tadalafil 5 MG Tablet 30.000 EA AJANTA PHARMA LIMITED          $189.33 $3.10 $0.33 1026.65% 
+42291078730 Tadalafil 5 MG Tablet 30.000 EA UU AVKARE                         $170.00 $5.67 $0.33 1727.59% 
+31722082211 Tetrabenazine 25 MG Tablet 112.000 EA CAMBER PHARMACEUTICALS         $23,505.26 $65.29 $5.36 1218.80% 
+70436010209 Tetrabenazine 25 MG Tablet 112.000 EA SLATE RUN PHARMACEUTICALS      $5,242.85 $50.39 $4.24 1261.21% 
+69097096453 Vigabatrin 500 MG Packet 50.000 EA UD CIPLA USA                      $8,678.04 $90.20 $9.57 1270.57% 
+===PAGE 26===
+ 
+26 
+Maine Health Data Organization 
+ 
+Appendix C – Average WAC and Payer Paid Change Percent by Therapeutic Class 
+All Active Prescription Drugs 
+ 
+Therapeutic Class 
+Active 
+NDCs 
+Average 
+WAC 
+Change 
+Percent 
+Average 
+APCD Paid 
+Change 
+Percent 
+ADHD/Anti-Narcolepsy/Anti-Obesity/Anorexiants 882 -5.73% -4.12% 
+Allergenic Extracts/Biologicals Misc 4 4.49% -3.26% 
+Analgesics - Anti-Inflammatory 882 3.36% 0.39% 
+Analgesics - Nonnarcotic 87 -0.88% 0.24% 
+Analgesics - Opioid 989 -0.06% 0.08% 
+Anorectal And Related Products 87 0.59% 1.14% 
+Anti-Infective Agents - Amebicides 1 0.00% 0.00% 
+Anti-Infective Agents - Aminoglycosides 78 -2.89% 0.34% 
+Anti-Infective Agents - Anthelmintics 19 0.49% -3.40% 
+Anti-Infective Agents - Antifungals 238 -2.91% 4.27% 
+Anti-Infective Agents - Antimalarials 68 -3.54% -1.73% 
+Anti-Infective Agents - Antimycobacterial Agents 49 0.11% 0.23% 
+Anti-Infective Agents - Antivirals 450 -3.64% -1.03% 
+Anti-Infective Agents - Cephalosporins 395 -2.96% 0.19% 
+Anti-Infective Agents - Fluoroquinolones 138 -0.42% 0.10% 
+Anti-Infective Agents - Macrolides 212 -2.74% -1.60% 
+Anti-Infective Agents - Misc 555 -2.01% -1.09% 
+Anti-Infective Agents - Penicillins 418 -2.70% 1.00% 
+Anti-Infective Agents - Tetracyclines 239 -2.23% -0.84% 
+Antidotes And Specific Antagonists 104 -0.31% 0.75% 
+Antihistamines/Nasal Agents/Cough & Cold/Respiratory/Misc - Antiasthmatic And 
+Bronchodilator Agents 526 -1.98% 0.24% 
+Antihistamines/Nasal Agents/Cough & Cold/Respiratory/Misc - Antihistamines 166 0.30% -1.95% 
+Antihistamines/Nasal Agents/Cough & Cold/Respiratory/Misc - Cough/Cold/Allergy 155 0.70% 1.33% 
+Antihistamines/Nasal Agents/Cough & Cold/Respiratory/Misc - Misc 21 1.19% 1.46% 
+Antihistamines/Nasal Agents/Cough & Cold/Respiratory/Misc - Nasal Agents - 
+Systemic And Topical 47 -7.49% -1.48% 
+Antineoplastics And Adjunctive Therapies 794 -1.78% 0.35% 
+Cardiovascular Agents - Antianginal Agents 166 1.76% 0.99% 
+Cardiovascular Agents - Antiarrhythmics 197 -2.06% -0.53% 
+Cardiovascular Agents - Antihyperlipidemics 1,140 -1.99% -0.08% 
+Cardiovascular Agents - Antihypertensives 1,819 -1.34% 0.09% 
+Cardiovascular Agents - Beta Blockers 875 -1.75% 0.05% 
+Cardiovascular Agents - Calcium Channel Blockers 593 0.24% -0.16% 
+Cardiovascular Agents - Cardiotonics 43 -3.46% -2.49% 
+Cardiovascular Agents - Diuretics 497 -1.39% -0.25% 
+Cardiovascular Agents - Misc 370 -2.32% -0.27% 
+Cardiovascular Agents - Vasopressors 126 -3.37% -3.69% 
+Central Nervous System Agents - Antianxiety Agents 502 -0.35% -1.14% 
+Central Nervous System Agents - Antidepressants 1,727 -1.70% 0.31% 
+Central Nervous System Agents - Antipsychotics/Antimanic Agents 1,415 -4.04% -1.08% 
+Central Nervous System Agents - Hypnotics/Sedatives/Sleep Disorder Agents 391 -5.01% -0.33% 
+Dermatologicals 2,080 -2.79% -1.15% 
+===PAGE 27===
+ 
+27 
+Maine Health Data Organization 
+Therapeutic Class 
+Active 
+NDCs 
+Average 
+WAC 
+Change 
+Percent 
+Average 
+APCD Paid 
+Change 
+Percent 
+Endocrine and Metabolic Agents - Androgens-Anabolic 121 -0.78% 1.77% 
+Endocrine and Metabolic Agents - Antidiabetics 936 -0.05% 1.03% 
+Endocrine and Metabolic Agents - Contraceptives 469 -3.55% -1.75% 
+Endocrine and Metabolic Agents - Corticosteroids 397 0.69% 6.81% 
+Endocrine and Metabolic Agents - Estrogens 179 1.46% 1.07% 
+Endocrine and Metabolic Agents - Misc 445 -4.19% -0.17% 
+Endocrine and Metabolic Agents - Oxytocics 10 0.00% 0.00% 
+Endocrine and Metabolic Agents - Progestins 61 -5.24% -3.05% 
+Endocrine and Metabolic Agents - Thyroid Agents 385 -12.81% -1.27% 
+Gastrointestinal Agents - Antidiarrheal/Probiotic Agents 40 -2.67% 0.00% 
+Gastrointestinal Agents - Antiemetics 194 -3.26% -1.13% 
+Gastrointestinal Agents - Digestive Aids 34 3.37% 2.62% 
+Gastrointestinal Agents - Laxatives 51 0.99% 0.14% 
+Gastrointestinal Agents - Misc 256 -1.65% -0.24% 
+Gastrointestinal Agents - Ulcer Drugs/Antispasmodics/Anticholinergics 645 -2.74% 0.19% 
+General Anesthetics 3 0.00% 0.00% 
+Genitourinary Agents - Miscellaneous 245 -4.87% 2.20% 
+Gout Agents 132 -4.60% -2.30% 
+Hematological Agents - Anticoagulants 514 -6.01% 0.16% 
+Hematological Agents - Hematopoietic Agents 196 0.44% 0.80% 
+Hematological Agents - Hemostatics 63 -4.95% 2.27% 
+Hematological Agents - Misc 151 2.50% 0.06% 
+Local Anesthetics-Parenteral 68 0.70% -8.40% 
+Medical Devices And Supplies 1 0.00% 0.00% 
+Migraine Products 273 -1.15% 18.10% 
+Miscellaneous Therapeutic Classes 278 -1.05% 0.26% 
+Mouth/Throat/Dental Agents 137 0.61% 0.63% 
+Neuromuscular Agents - Anticonvulsants 1,538 -1.47% 1.08% 
+Neuromuscular Agents - Antimyasthenic/Cholinergic Agents 21 0.58% -0.52% 
+Neuromuscular Agents - Antiparkinson And Related Therapy Agents 471 -1.17% 0.30% 
+Neuromuscular Agents - Musculoskeletal Therapy Agents 432 -3.44% 1.12% 
+Neuromuscular Agents - Neuromuscular Agents 19 0.95% 0.82% 
+Nutritional Products - Dietary Products/Dietary Management Products 96 0.91% -0.27% 
+Nutritional Products - Minerals & Electrolytes 388 -0.60% 2.48% 
+Nutritional Products - Multivitamins 87 0.85% -1.59% 
+Nutritional Products - Nutrients 46 3.40% -1.31% 
+Nutritional Products - Vitamins 37 -0.30% -2.32% 
+Ophthalmic Agents 427 -0.58% 0.80% 
+Otic Agents 38 -2.21% -0.93% 
+Passive Immunizing And Treatment Agents 119 4.30% 2.03% 
+Pharmaceutical Adjuvants 79 0.89% 29.38% 
+Psychotherapeutic and Neurological Agents - Miscellaneous - Misc 549 -2.93% 0.15% 
+Toxoids 26 3.59% 34.15% 
+Urinary Antispasmodics 312 -2.08% -1.55% 
+Vaccines 86 3.56% 23.64% 
+Vaginal And Related Products 58 1.00% 1.03% 
+ 
+  
+===PAGE 28===
+ 
+28 
+Maine Health Data Organization 
+Appendix D – Summary of Rule Chapter 570 and Related Processes 
+ 
+MHDO Rule Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets  
+90-590, CMR Chapter 570, Uniform Reporting System for Prescription Drug Price Data Sets, defines the 
+requirements for the registration of reporting entities; conditions under which MHDO must provide notice of 
+substantial drug price changes or introductions; conditions under which the MHDO requires pricing 
+component data from a reporting entity; the data elements contained in the various reports; proper coding, 
+formatting, and submission of data; and submission deadlines.   
+As of June 22, 2021, 518 manufacturers, 199 wholesale drug distributors and 33 pharmacy benefit managers 
+have registered with the MHDO.   
+ 
+Public Notice of Substantial Drug Price Change or Introduction 
+Beginning January 30, 2022, MHDO is required to compile and publicly post on its website a list of all 
+prescription drugs for which a manufacturer has during the prior calendar year: 
+1. Increased the WAC of a brand drug by more than 20% per pricing unit; 
+2. Increased the WAC of a generic drug that costs at least $10 per pricing unit by more than 20% per 
+pricing unit; or 
+3. Introduced a new prescription drug for distribution in this State when the WAC is greater than the 
+amount that would cause the drug to be considered a specialty drug under the Medicare Part D 
+program. 
+ 
+Notifications by MHDO to Reporting Entities 
+Beginning February 15, 2022, and annually thereafter, MHDO must produce and post on its publicly accessible 
+website a list of drug product families for which it intends to require reporting of pricing component data by 
+reporting entities.  In determining this list, MHDO considers the relevance of specific drug products in 
+providing greater consumer awareness of the factors contributing to the cost of prescription drugs in the state.  
+MHDO included 50 drug product families in the list for calendar year 2021
+, each of which met at least two of 
+the following criteria: 
+• Average claim paid amount per prescription >= $100  
+• Aggregate paid amount of > $1M 
+• One or more NDCs: 
+o included on MHDO’s List of Trigger NDCs for CY2021; or  
+o included on at least two of the lists of the MHDO’s top 25 Drug Reports as required in Title 22, 
+Chapter 1683, §8712 (5) for the most costly, most utilized and/or having the highest year-over-
+year cost increases for Mainers during the July 1, 2020 to June 30, 2021 comparison period; or 
+o having average claim paid amount >= 10x WAC 
+ 
+MHDO Notification to Reporting Entities requesting Pricing Component Data 
+MHDO is responsible for identifying specific drug products of interest and notifying reporting entities that they 
+must report detailed pricing component data to MHDO as defined in 90-590 CMR Chapter 570, 
+Uniform 
+Reporting System for Prescription Drug Price Data Sets, for those drug products.  Each drug product is identified 
+by its NDC.  For the remainder of this report, NDC will be used to describe a manufacturer specific drug 
+product.  
+MHDO requested pricing component data from reporting entities for 1,259 NDCs (which represents less than 
+1% of all NDCs) based on inclusion criteria described in Table 1 below: 
+===PAGE 29===
+ 
+29 
+Maine Health Data Organization 
+2021 Target Inclusion Criteria 
+Distinct 
+Manufacturers 
+Target 
+NDCs 
+Related 
+NDCs 
+Brand 
+NDCs 
+Generic 
+NDCs 
+Total 
+NDCs 
+High Cost / High Margin 75 31 569 48 552 600 
+Multiple Top 25 Lists 24 22 91 60 53 113 
+New Drug Trigger 61 48 483 170 361 531 
+WAC Increase Trigger 6 1 14 3 12 15 
+Total 115 102 1,157 281 978 1,259 
+Table 1 – 2021 Target Inclusion Criteria 
+ 
+Data Consolidation and Analysis 
+Pricing component data files were submitted by reporting entities to the MHDO Prescription Drug Price Data 
+Portal.  Data values not meeting expected data formats were isolated for analyst review.  The subset of NDCs 
+for which MHDO received pricing component data is used to highlight pricing, rebate, and brand to generic 
+drug utilization statistics for drugs identified as having high impact to prescription drug costs in Maine.   
+In addition to incorporating data submitted by reporting entities in this annual report, MHDO included 
+descriptive drug product and historical pricing information compiled from Wolters Kluwer’s Medi-Span 
+MedFile v2 data file, and pharmaceutical claims data submitted to the MHDO APCD as required by 90-590 Rule 
+Chapter 243, Uniform Reporting System for Health Care Claims Data Sets. These supplemental data sets 
+enabled review of claim volume and costs before and during the 2021 reporting period.  Additionally, portions 
+of the report use supplemental data to expand beyond NDCs reported by reporting entities to show more 
+general trends in the overall prescription drug marketplace. 
+ 

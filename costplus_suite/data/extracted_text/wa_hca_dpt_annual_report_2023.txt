@@ -1,0 +1,2188 @@
+
+===PAGE 1===
+ 
+ 
+Drug Price 
+T ransparency (DPT) 
+program 
+ 
+Annual Report 2023  
+ 
+  
+ 
+===PAGE 2===
+ 
+ 
+ 
+Table of Contents 
+ 
+Drug Price Transparency (DPT) program ................................ ................................ ................................ ............... 1 
+Annual Report 2023 ................................ ................................ ................................ ................................ ............... 1 
+Executive summary ................................ ................................ ................................ ................................ .................... 4 
+Key findings from carrier analysis ................................ ................................ ................................ ................... 4 
+Key findings from PBM analysis ................................ ................................ ................................ ...................... 4 
+Key findings from manufacturer analysis ................................ ................................ ................................ ...... 6 
+Conclusion ................................ ................................ ................................ ................................ ...............................  6 
+Purpose ................................ ................................ ................................ ................................ ................................ .... 7 
+Results ................................ ................................ ................................ ................................ ................................ .......... 8 
+Data submission summaries ................................ ................................ ................................ ................................  8 
+Carrier report ................................ ................................ ................................ ................................ ..........................  8 
+Trends in health insurance premiums ................................ ................................ ................................ ............ 8 
+Trends in health insurance premiums by drug type ................................ ................................ .................. 10 
+Trends in top 25 drugs by cost, utilization, rebates, and price ................................ ...............................  11 
+Pharmacy Benefit Managers report ................................ ................................ ................................ .................. 12 
+Trends in pharmacy benefit management ................................ ................................ ................................ .. 13 
+Trends in total WAC paid to pharmacies and reimbursement discount  ................................ ................ 13 
+Trends in gross and net paid to pharmacies, and direct and indirect fees  ................................ ........... 14 
+Trends in spread pricing between carriers and pharmacies  ................................ ................................ .... 14 
+Trends in member cost share ................................ ................................ ................................ ........................ 15 
+Trends in rebates received and retained by PBMs ................................ ................................ .................... 15 
+Trends in administrative fees paid by carriers ................................ ................................ ............................  16 
+Summary of trends in how PBMs manage prescription drug benefits  ................................ .................. 17 
+Trends in PBM ownership ................................ ................................ ................................ ..............................  17 
+Trends in pharmacy appeals to PBM ................................ ................................ ................................ ............ 17 
+Drug manufacturers report ................................ ................................ ................................ ................................  19 
+Trends in manufacturer drug pricing ................................ ................................ ................................ ........... 19 
+Trends in manufacturer submitting NDSs and BLAs  ................................ ................................ ................. 22 
+Pharmacy services administrative organizations report ................................ ................................ ............... 23 
+Conclusions ................................ ................................ ................................ ................................ ...............................  24 
+Overall impact of drug costs on health care premiums  ................................ ................................ ................ 24 
+Appendix ................................ ................................ ................................ ................................ ................................ .... 26 
+===PAGE 3===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+3 | P a g e  
+ 
+Prescription drug supply chain ................................ ................................ ................................ ..................... 26 
+Glossary of terms ................................ ................................ ................................ ................................ ................. 28 
+===PAGE 4===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+4 | P a g e  
+ 
+Executive summary 
+Key findings from carrier analysis 
+ 
+The average statewide premium for health 
+insurance per person, Table 1, shows how 
+premiums have increase each year the Drug Price 
+Transparency (DPT) has data, rising from $6,375.82 
+in 2017 to $6,987.60 in 2020, a 9.6% increase. 
+Table 1: Average statewide annual premium per 
+person 
+Year Average annual 
+premium per person 
+Percent increase 
+from prior year 
+2017 $6,375.82 NA 
+2018 $6,752.85* 5.91%* 
+2019 $6,889.11 3.27% 
+2020 $6,987.60 3.29% 
+ 
+The proportion of the average statewide premium 
+attributable to prescription drugs, shown in Table 
+2, rose from $1,062.42 in 2017 to $1,242.24 in 2020 
+(a 9.7% increase)*.  
+Table 2: Proportion of average statewide 
+premium attributable to prescription drugs 
+Year Average premium for 
+prescription drugs 
+Percent increase 
+from prior year 
+2017 $1,062.42 NA 
+2018 $1,110.90* 0.3% 
+2019 $1,165.43* 6.6% 
+2020 $1,242.24 2.8% 
+ 
+The proportion of the health care premium 
+attributable to prescription drugs has increased 
+from 2018 (16.45%) to 2020 (17.77%).  
+Much of the increase in prescription drug spending 
+can be attributable to specialty drugs, which 
+increased as a proportion of total drugs spend, 
+rising from 43.32% in 2017 to 50.50% in 2020. 
+Specialty drugs were also among the highest cost 
+and highest rebated drugs for carriers, as show in 
+Table 3.  
+ 
+ 
+ 
+ 
+Table 3: Prescription drug spending attributable 
+to specialty drugs 
+Year Specialty drug proportion 
+2017 43.32% 
+2018 46.25% 
+2019 50.24% 
+2020 50.50% 
+ 
+Key findings from PBM analysis 
+ 
+The total wholesale acquisition cost (WAC) of all 
+paid drug claims has increased from $940 million in 
+2018 to $1.15 billion in 2020 (Table 4). It is unclear 
+why the data shows an increase in paid drug claims.  
+This significant difference could reflect different 
+populations served by these pharmacy benefit 
+managers (PBM) in Washington state. PBMs also 
+contract with community pharmacies to be 
+included in the pharmacy network that is offered to 
+a health plan. These contracts have multiple levels 
+of reimbursement in depending on which network 
+the pharmacy has agreed to participate.   
+ 
+Table 4: Total WAC of all paid drug claims 
+Year Total WAC of drug claims paid 
+2018 $940 million 
+2019 $1,70 billion 
+2020 $1,15 billion 
+ 
+The top four PBMs in Washington state account for 
+approximately 99% of the total dollar value of 
+prescription drug claims, with the top two 
+accounting for 68% of statewide dollars. 
+PBMs continue to keep spread pricing, which is the 
+difference between what the carrier pays the PBM 
+and what the PBM pays the pharmacy for a drug 
+claim. In 2020, 11 of the 16 PBMs reported retaining 
+dollars due to spread pricing. The amount retained 
+by these PBMs decreased from $155 million in 2019 
+to $36 million in 2020, a 65.4% decrease. 
+ 
+The amount Washingtonian members pay out-of-
+pocket for prescription drugs has increased each 
+year, rising from $37.1 million in 2018 to $115.4 
+million in 2020.  
+ 
+ 
+===PAGE 5===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+5 | P a g e  
+ 
+PBMs also make money by retaining some amount 
+of rebate dollars for claims they process. In 2020, 
+PBMs received $774 million from manufacturers 
+and retained $227.5 million, with the difference 
+passed on to carriers. 
+ 
+Pharmacies submitted 80,494* appeals between 
+the two reporting years of 2018 and 2019. For the 
+reporting year 2020 appeals decreased to 78,774, as 
+shown in Table 5. 
+ 
+Table 5: Pharmacy appeals to PBMs on 
+reimbursement of a drug’s cost 
+Year Total 
+appeals 
+ Appeals 
+approved 
+Appeals 
+denied 
+Appeals 
+overturned 
+2018 32,605 2,386 28,127 2,800 
+2019 47,889 4,386 42,243 1,260 
+2020 78,774 2,800 75,972 2 
+ 
+The denial rate for pharmacy appeals increased 
+from 86.3% in 2018 to 96.4% in 2020, with the top 3 
+PBMs who received appeals from pharmacies 
+denying 99.3%.   
+===PAGE 6===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+6 | P a g e  
+ 
+Key findings from manufacturer 
+analysis 
+ 
+In 2021, HCA received 269 notifications of New Drug 
+Applications (NDA) and Biologics License 
+Applications (BLA) submitted to the Food and Drug 
+Administration (FDA) for review and approval to be 
+marketed.  
+• Of these submissions, 90 drugs are 
+expected to have a significant impact on 
+prescription drug expenditure. Table 6. 
+ 
+In 2022, HCA received 97 notifications of NDAs and 
+BLAs submitted to the FDA for review and approval 
+to be marketed.  
+• Of these submissions, 34 drugs are 
+expected to have significant impact on 
+prescription drug expenditure. 
+ 
+Table 6: New Drug Applications and significant 
+impact 
+Year New drug 
+applications 
+Significant 
+impact  
+2021 269 90 
+2022 97 34 
+ 
+A total of 54 manufacturers introduced 70 Covered 
+Drugs to the market with a WAC of $10,000 or more 
+for a course of treatment lasting less than one 
+month or a 30-day supply. Thirty-six of those drugs 
+were due to prices exceeding $10,000 per month 
+when introduced to market. Of the 70 covered 
+drugs reported with a price increase: 
+• 31 covered drugs had a WAC increase of 
+20% within a 1-year period, and 
+• 2 covered drugs had a WAC increase of 50% 
+within a 3-year period.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Conclusion 
+ 
+The data reported to HCA suggests that drug price 
+increases lead to increases in health care 
+premiums, but the exact relationship is unclear. 
+Health care premiums are typically set using cost 
+and utilizations data two years in the past (e.g., 
+2021 premiums are set in 2020 using 2019 data). 
+The effect of drug price increases in this period may 
+help illustrate how drug costs in 2018 affected 
+premiums in 2020, but this would be an indirect 
+comparison not knowing exactly how premiums 
+were set by the carriers. Generally speaking, 
+premium increases reported in this report may be 
+the result of drug price increases, increases in 
+utilization, and new-to-market drugs that occurred 
+in two years prior to the years they were effective. 
+ 
+ 
+ 
+  
+===PAGE 7===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+7 | P a g e  
+ 
+Purpose 
+ 
+Washington State has an interest in the rising drug 
+costs and consumers’ ability to access prescription 
+drugs. The State legislature created a Drug Price 
+Transparency (DPT) program under Chapter 43.71C 
+RCW and tasked the program with developing a 
+better understanding of the drivers and impacts of 
+drug costs. Health Care Authority (HCA) created this 
+report in accordance with RCW 43.71C.100 to 
+analyze and report on the overall impact of drug 
+costs, rebates, and other discounts on health care 
+premiums. Data was submitted to HCA by health 
+carriers, pharmacy benefit managers (PBM), drug 
+manufacturers, and pharmacy services 
+administrative organizations (PSAO), collectively 
+referred to as Reporting Entities. This data is 
+analyzed and presented in the Results section. 
+===PAGE 8===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+8 | P a g e  
+ 
+Results 
+Data submission summaries 
+HCA received registrations from 24 carriers, 47 
+PBMs, 531 manufacturers, and three PSAOs as 
+described in Tables 7 and 8. The carriers, PBMs, and 
+PSAOs were required to submit their reportable 
+information by the deadlines as communicated by 
+HCA. Entities requesting an extension for technical 
+assistance with submissions were granted on a 
+case-by-case basis. Some entities that registered 
+did not have data to report during this data period 
+because they did not meet the requirements in 
+Chapter 43.71C RCW. 
+ 
+Table 7. Summary of registration and data 
+reported to HCA from Carriers, PBMs, and PSAOs 
+in 2020 
+Reporting 
+entity type 
+Entities 
+registered 
+with DPT 
+Entities 
+required 
+to report 
+this 
+reporting 
+period 
+Entities 
+that 
+submitted 
+all 
+required 
+reports 
+Carriers 24 18 18 
+PBMs 47 16 16 
+PSAOs 3 0 N/A 
+ 
+Table 8. Summary of registration and data 
+reported to HCA from Manufacturers in 2020 
+Reporting 
+entity Type 
+Entities 
+registered 
+with DPT 
+Covered 
+drug 
+report 
+New drug 
+application 
+Manufacturer 531 70 97 
+ 
+Drug manufacturers were required to report to HCA 
+based on the timing of a qualifying drug price 
+increase, a covered drug being introduced to 
+market, or on the acceptance of an NDA or BLA to 
+be reviewed by the FDA. In total, HCA received 70 
+reports on Covered Drugs from 54 and 97 reports on 
+new drug applications from 60 registered drug 
+manufacturers. 
+ 
+ 
+Carrier report 
+Trends in health insurance 
+premiums 
+ 
+Health carriers are responsible for creating and 
+providing health plans to cover medical costs, 
+including hospitalizations, office visits, and 
+prescription drugs. To cover the cost of these 
+services, carriers set monthly premiums for 
+enrollees to pay. Carriers must submit to DPT data 
+regarding their health plan premiums, how much of 
+their premiums are attributable to prescription 
+drug spending, and other information necessary to 
+understand how drug pricing impacts health care 
+premiums. 
+ 
+From the data reported by the 18 carriers, HCA 
+received information on health care premiums for 
+approximately 2.04* million Washingtonians for 
+2018, and 2.09 million in 2020. This data can be 
+found in Table 9. 
+ 
+78% of these Washingtonians (1.59 million) were 
+enrolled in Large Group plans: 
+ 
+• 1.6* million (78%) in 2018 
+• 1.6* million (79%) in 2019 
+• 1.7 million (81%) in 2020 
+ 
+11% of these Washingtonians were enrolled in 
+Small Group plans: 
+ 
+• 224,000* in 2018 
+• 207,000* in 2019  
+• 192,000 in 2020  
+ 
+11% of these Washingtonians were enrolled in 
+individual plans: 
+ 
+• 224,000* in 2018 
+• 227,000* in 2019  
+• 209,000 in 2020 
+ 
+Some Washingtonians may be enrolled in other 
+health plans that are not required to report, 
+including Medicare, Medicaid, Employee 
+Retirement Income Security Act (ERISA) health 
+plans offered by employers, other public or private 
+===PAGE 9===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+9 | P a g e  
+ 
+health care, or are uninsured. Additionally, 
+members enrolled in these health plans may not 
+live in Washington, such as a child enrolled in their 
+parents’ health plan while attending an out-of-state 
+college.  
+ 
+Table 9: Breakdown of Washingtonians per plan 
+(millions) 
+Year # of WA 
+lives 
+(millions) 
+Large 
+groups 
+Small 
+groups 
+Individual 
+plan 
+2018 2.04* 78% 11% 11% 
+2019 2.07 79%* 10%* 11%* 
+2020 2.09 84% 9.2% 10% 
+ 
+The average statewide premiums for health 
+insurance have increase each year the DPT has 
+data. The average statewide premium was 
+$5,375.82 in 2017, but it has increased by $611.78 to 
+$6,987.60 in 2020. However, the rate of change in 
+annual premium has slowed since the initial 
+increase reported in 2018 as shown in Table 10 and 
+Table 11. 
+Table 10: Average statewide annual premium per 
+person 
+Year Average annual 
+premium per person 
+Percent increase 
+from prior year 
+2017 $6,375.82 NA 
+2018 $6,752.85* 5.91%* 
+2019 $6,889.11 3.27% 
+2020 $6,987.60 3.29% 
+ 
+Table 11: Proportion of average statewide 
+premium attributable to prescription drugs 
+Year Average premium for 
+prescription drugs 
+Percent increase 
+from prior year 
+2017 $1,062.42 NA 
+2018 $1,110.90* 0.3% 
+2019 $1,165.43* 6.6% 
+2020 $1,242.24 2.8% 
+ 
+Annual premiums can change for many different 
+reasons, including newly covered services or price 
+increases for already covered services. The DPT 
+requires carriers to report the change in premium 
+attributable to prescription drug costs versus all 
+other health care costs. Carriers reported changes 
+in premiums as shown in Table 12 and Figure 1. 
+Most of the change from 2017 to 2018 was 
+attributable to all care whereas the change from 
+2019 to 2020 was primarily due to prescription 
+drugs. Consequently, the percentage of health 
+insurance premiums attributable to prescription 
+drugs rose. Health insurance premiums attributable 
+to prescription drugs statewide increased 6.7% 
+($77.55) in 2020 to the highest percentage since the 
+DPT began receiving data. 
+ 
+This measure helps us understand how rising drug 
+prices, increased utilization of drugs, and newly 
+marketed drugs affects health insurance premiums.  
+ 
+Table 12: Annual premiums attributable to drug 
+costs versus all other health care costs 
+Year Premium 
+change 
+(all care) 
+Premium 
+change 
+(pharmacy) 
+Premium 
+attributable 
+to pharmacy 
+2018 6.0%* 4.6%* 16.5%* 
+2019 3.3%* 3.0%* 17.0%* 
+2020 3.3% 6.7% 17.8% 
+ 
+ 
+Figure 1: Annual premiums attributable to drug 
+costs versus all other health care costs 
+ 
+ 
+ 
+$1,062.42
+$1,165.43
+$1,242.24
+$950.00
+$1,000.00
+$1,050.00
+$1,100.00
+$1,150.00
+$1,200.00
+$1,250.00
+$1,300.00Annual premiums
+2018 2019 2020
+17.8%
+17.0%
+16.5%
+===PAGE 10===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+10 | P a g e  
+ 
+Health carriers typically offer insurance within 
+different lines of business depending on the 
+business or individuals they are selling their health 
+plans to. The different types of lines of business 
+reflect different populations within Washington, so 
+some people may feel the impacts of rising health 
+care premiums differently. 
+ 
+Carriers reported changes in health insurance 
+premiums for three different lines of business: 
+Individuals, Small Groups, and Large Groups. The 
+data reported over the last three reporting years 
+shows the volatility in how health care premiums 
+can change. Individual health plans offered in 
+Washington state were more likely to experience 
+volatile changes in health insurance premiums 
+between years whereas health plans offered as 
+Small Groups or Large Groups were more insulated 
+from drastic changes in health insurance premiums 
+between years. 
+ 
+Furthermore, it appears as though health plans 
+with higher percentages of costs attributable to 
+drugs were more likely to see drastic changes 
+between years. The reasons why these health plans 
+were affected greater than the others may be 
+because they are more prone to increased spend 
+due to rising drug costs or are limited in strategies 
+in managing appropriate utilization of prescription 
+drugs by enrollees. 
+ 
+Trends in health insurance 
+premiums by drug type 
+ 
+Carriers reported the dollar value of health 
+insurance premium attributable to three different 
+categories of prescription drugs: brand-name drugs 
+(brand), generic drugs (generic), or specialty drugs 
+(specialty). These values are displayed in Table 13. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 13: Overall health insurance premiums 
+attributable to brand drugs 
+Year Premium 
+brand 
+Premium 
+generic 
+Premium 
+specialty 
+2017 $358.27* $243.91* $460.24* 
+2018 $365.00* $232.09* $513.87* 
+2019 $357.14* $222.91* $585.56* 
+2020 $374.01* $238.58 $627.45 
+ 
+Table 14 shows the proportion of health insurance 
+premiums attributable to these three categories of 
+drugs. Despite brand and specialty drugs increasing 
+in total dollar value, the rise in specialty drug 
+spending accounts for a decrease in the proportion 
+of brand drugs in the premium. 
+Table 14: Percentage of change in annual 
+premium attributable to prescription drug spend  
+Year Premium 
+brand 
+Premium 
+generic 
+Premium 
+specialty 
+2017 33.7%* 22.9% 43.3%* 
+2018 32.9%* 21.0%* 46.2%* 
+2019 31.0% 19.1% 50.2%* 
+2020 30.0% 19.2% 50.5% 
+ 
+Of note, these values do not total 100% because 
+non-drug related costs (e.g., diabetic supplies and 
+other non-drug supplies) are not included in this 
+drug mix. 
+ 
+The range of percent of health insurance premium 
+attributable to drug costs varied by type of plan 
+between 2018 and 2020. For example, plans with 
+smaller populations had more volatility in drug 
+utilization and costs.  
+Between 2019 and 2020, individual health plans 
+saw a decrease in percent of the premium 
+attributable to generic drugs. We suspect this was 
+due to the increase in the amount of premiums 
+being attributed to brand and specialty drugs.  
+Specialty drugs plans saw increases in all 
+prescription drug spending categories from 2017 to 
+2020, the rate at which they increased was variable, 
+as shown in Figure 2. 
+ 
+ 
+ 
+===PAGE 11===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+11 | P a g e  
+ 
+Figure 2: Annual premiums (Specialty Drugs) 
+ 
+ 
+Large Group health plans saw an increase in 
+proportion attributable to specialty drugs between 
+2018 and 2020, rising from 41.05%* of prescription 
+drug spending to 48.70%.   
+ 
+Small Group health plans have the highest 
+proportion attributable to specialty drugs between 
+2017 and 2020, rising from 52.27%* of prescription 
+drug spending to 60.83% 2020. 
+ 
+Trends in top 25 drugs by cost, 
+utilization, rebates, and price 
+ 
+Next, we analyzed the carriers’ reported lists of 
+drugs as ranked by cost, utilization, rebate dollars 
+received, and by increase in WAC, a standard of 
+drug pricing set by manufacturers. We categorized 
+these drugs by the conditions they treat to provide 
+a general picture of how these types of drugs 
+appeared in these rankings. Drugs used to treat 
+various conditions appeared throughout these 
+carrier reports, helping demonstrate what disease 
+states may be attributable to higher drug 
+expenditure, and therefore, higher health insurance 
+premiums. 
+ 
+Summary: 
+➢ Drugs used for the treatment of diabetes 
+appear in both the high utilization and high-
+cost categories.  
+➢ Drugs used for the treatment of diabetes are 
+also reported for being among the highest 
+amounts of rebates retained. 
+➢ Drugs used for the treatment of blood pressure 
+and depression show high utilization and high 
+price increases. 
+ 
+• Top 5 drug classes by utilization 
+Our analysis of the information reported 
+by the carriers reflects the top 25 drugs 
+most commonly treat:   
+o Thyroid conditions 
+o Cholesterol 
+o High blood pressure 
+o Diabetes 
+o Depression 
+ 
+• Top 5 drug classes by costs 
+Our analysis of the information reported 
+by the carriers reflects the top 25 drugs 
+most commonly treat:   
+o Arthritis 
+o Cancers 
+o HIV 
+o Diabetes 
+o Dermatology 
+ 
+• Top 5 drug classes by rebates retained 
+Our analysis of the information reported 
+by the carriers reflects the top 25 drugs 
+most commonly treat:   
+o Arthritis 
+o Diabetes 
+o ADHD 
+o Asthma and chronic obstructive 
+pulmonary disease (COPD) 
+o Thyroid conditions 
+ 
+ 
+ 
+ 
+ 
+ 
+43.32 46.25 50.24 50.5
+53.41 57.47 54.43 57.23
+52.27
+55.61 58.24 60.83
+41.05
+43.54
+48.65 48.7
+0
+50
+100
+150
+200
+250
+2017 2018 2019 2020
+Percentage
+Overall Individual
+Small Group Large Group
+===PAGE 12===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+12 | P a g e  
+ 
+• Top 5 drug classes by price increase 
+Our analysis of the information reported 
+by the carriers reflects the top 25 drugs 
+most commonly treat:   
+o High blood pressure 
+o Diabetic supplies 
+o Sleep disorders 
+o Depression 
+o Gastrointestinal disorders 
+ 
+Among the top 25 drugs, specialty drugs (as 
+reported by the carriers in their specialty drug lists) 
+were represented as some of the highest cost and 
+highest rebate retained, while very few specialty 
+drugs were submitted with a high utilization 
+ranking. Single-source non-specialty drug types 
+were represented as some of the highest cost and 
+highest rebate retained rankings. Multi-source 
+generics were predominately represented in the 
+top utilization rankings. 
+ 
+In summary, HCA observed a statewide increase in 
+health care premiums attributable to prescription 
+drug spending, rising from $1,062.42 in 2017 to 
+$1,1242.24 in 2020. Much of the increase in 
+prescription drug spending can be attributable to 
+specialty drugs, which increased in spend from 
+$460.24 in 2017 to $627.45 in 2020.  
+ 
+The proportion of the health care premium 
+attributable to pharmacy remained relatively 
+steady rising from 16.5% in 2018 to 17.8% in 2020.  
+These figures suggest that prescription drugs are 
+contributing to rising health insurance premiums.  
+The next section attempts to better understand 
+some of the reasons why prescription drug 
+spending has increased. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pharmacy benefit managers 
+report 
+ 
+ 
+Pharmacy benefit managers (PBM) are typically 
+subcontractors of health carriers, responsible for 
+managing almost all aspects of the prescription 
+drug benefit for health plans. Some of their tasks 
+include: 
+• Developing and maintaining drug 
+formularies or preferred drug lists (PDL) 
+• Contracting with pharmacies to set 
+reimbursement rates for drugs 
+• Creating pharmacy policies and handling 
+prior authorization reviews for drugs with 
+utilization management 
+• Handling customer service calls from 
+patients and prescribers 
+• Negotiating rebates or discounts with 
+manufacturers 
+ 
+Formularies or PDLs are one of the most important 
+strategies for managing prescription drug benefits.  
+PBMs manage access and cost-sharing to 
+prescription drugs covered under health plans by 
+placing drugs into tiers on the formulary or PDL. 
+These tools are methods of structuring cost-shares 
+and utilization management to optimize costs and 
+utilization of drugs. Drugs that are proven to be 
+safe, effective, and cost-effective for the general 
+population are often placed on the lowest tier of a 
+formulary, thus incentivizing their use, whereas 
+drugs that are less cost-effective or have 
+questionable safety or efficacy will be placed on 
+higher tiers or have prior authorization to justify 
+their medical necessity for the patient. 
+ 
+Given their central role in managing virtually all 
+aspects of prescription drug benefits, PBMs have 
+important data to help improve drug price 
+transparency and the relationship of how drug 
+costs impact health insurance premiums. 
+ 
+ 
+ 
+===PAGE 13===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+13 | P a g e  
+ 
+ 
+Trends in pharmacy benefit 
+management 
+ 
+PBMs reported data to HCA pursuant to RCW 
+43.71C.030 through RCW 43.71C.040. These 
+required data elements were divided into a 
+formulary management report, a PBM ownership 
+report, and a pharmacy appeals report.  
+ 
+HCA received data from PBMs regarding how 
+money was collected, distributed, and retained 
+between different businesses within the health care 
+industry, including with carriers, manufacturers, 
+pharmacies, and patients. This data helps us 
+understand how PBMs serve health plans and 
+generate revenue as well as their role in explaining 
+the relationship between drug costs and health 
+insurance premiums. 
+ 
+The results of the PBM analyses were aggregated 
+consistent with RCW 43.71C.100(2), and the results 
+displayed in this section represent different 
+groupings of at least two PBMs together, including 
+the top two PBMs in each analysis. This means that 
+each analysis does not necessarily reflect the same 
+two PBMs throughout the report. 
+ 
+Trends in total WAC paid to 
+pharmacies and reimbursement 
+discount 
+ 
+Of the data reported to HCA, the approximate 
+dollar value of drug claims processed by PBMs, 
+defined as the total WAC of all paid drug claims in a 
+year, was: 
+ 
+• $940* million dollars in 2018  
+• $1.70* billion in 2019 (difference of 81%*)  
+• $1.15 billion in 2020 (difference of -31.8%)  
+ 
+The change in $217 million between 2018 and 2020 
+is likely due to the changes to the number of 
+covered lives served by PBMs in Washington State, 
+though the population sizes of these PBMs were not 
+reported in this data.  
+ 
+ 
+The 2020 data reported to HCA shows: 
+• The top two PBMs in terms of dollar value 
+accounted for 68%  
+• Next two PBMs account for 26% 
+• The bottom 10 PBMs account for 1% of the 
+PBM market  
+ 
+This market dominance of these top four PBMs can 
+be seen in Figure 3. 
+ 
+Figure 3: PBM in terms of dollar value 
+ 
+ 
+The amount of money PBMs pay pharmacies is 
+typically a percentage of a pricing benchmark that 
+is negotiated between the pharmacy or a PSAO.  
+The WAC is a price set by manufacturers, meaning 
+we can relate it to pricing data reported by 
+manufacturers, but it is not the primary method for 
+how PBMs reimburse pharmacies.  
+ 
+PBMs contract with community pharmacies to be 
+included in the pharmacy network that is offered to 
+a health plan. These contracts have multiple levels 
+of reimbursement in depending on which network 
+the pharmacy has agreed to participate.   
+ 
+67.59%
+25.71%
+0.96%
+0.00% 20.00% 40.00% 60.00% 80.00%
+Top 2
+ Next 2
+  Bottom 10
+PBM market share ranking
+===PAGE 14===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+14 | P a g e  
+ 
+The pharmacy reimbursement percentage varies 
+between PBMs, pharmacies, drugs, and 
+prescriptions. In aggregate of all data submitted by 
+PBMs for 2018-2020, pharmacies received the 
+following percentages of the cost of WAC: 
+ 
+• 65.5%* in 2018 and 2019 
+• 88% in 2020  
+ 
+Total pharmacies received when total WAC paid by 
+PBMs was: 
+• Pharmacies paid $940 million in drug costs 
+in 2018 and were reimbursed $712* million 
+(76%) by PBMs. 
+• Pharmacies paid $1.70 billion in drug costs 
+in 2019 and were reimbursed $1.02 billion 
+(60%) by PBMs. 
+• Pharmacies paid $1.15 billion in drug costs 
+in 2020 and were reimbursed $1.02 billion 
+(88%) by PBMs. 
+ 
+These costs by pharmacies for drugs are reported 
+by PBMs and may not accurately reflect actual paid 
+amounts. Since DPT does not receive data from 
+pharmacies, we can only estimate based on the 
+data submitted by PBMs. Part of the reason that 
+pharmacies are not reimbursed the full amount for 
+the cost of the drug may be due to the discounted 
+prices they are able to purchase from their 
+wholesaler and due to direct and indirect fees 
+assessed by PBMs on pharmacies. 
+ 
+Trends in gross and net paid to 
+pharmacies and direct and 
+indirect fees 
+ 
+DPT collected two measures of how PBMs 
+reimburse pharmacies for dispensing prescription 
+drugs to patients: 
+• The gross amount paid by PBMs to 
+pharmacies is the amount of all 
+reimbursements paid by the PBM to the 
+pharmacy for each drug dispensed. 
+• The net amount paid by the PBMs is the 
+amount of all reimbursements paid to 
+pharmacies minus all direct and indirect 
+fees. 
+ 
+Direct fees may be assessed by the PBM to the 
+pharmacy for each claim, such as a cost to submit a 
+claim to a PBM for them to process. Indirect fees 
+may be assessed by the PBM to the pharmacy that 
+are not attributable to any specific claim, such as a 
+fee to be in the PBM’s preferred pharmacy network. 
+To account for this indirect relationship, the PBMs 
+were instructed to report the total indirect fees to a 
+pharmacy or pharmacy chain by the total number 
+of claims dispensed by that pharmacy or pharmacy 
+chain. The trend from 2018 to 2020 can be seen in 
+Table 15. 
+ 
+Table 15: Overall health insurance premiums 
+attributable to brand drugs 
+Year Gross 
+amount 
+PBM to 
+pharmacies  
+Difference 
+between 
+gross to net 
+amount  
+Percent 
+difference 
+2018 $712 m $39 m 4.1% 
+2019 $1,018 b $61 m 7.3% 
+2020 $1,015 b $118 m 11.6% 
+ 
+The gross amount paid by PBMs to pharmacies 
+increased by 43.3% from 2018 to 2020 whereas the 
+difference between gross-to-net, or an estimate of 
+the direct and indirect fees assessed by PBMs to 
+pharmacies, increased by 210.5%. 
+ 
+Trends in spread pricing between 
+carriers and pharmacies 
+ 
+The spread amount, or the difference between 
+what the carrier pays the PBM for a claim and the 
+amount reimbursed to a pharmacy for that same 
+claim, was also reported. The amount that the PBM 
+pays to the pharmacy may not be the same amount 
+charged to the plan. The difference is the “spread”, 
+which the PBM retains as revenue. For example, the 
+PBM pays a pharmacy $10 for a prescription but 
+charges the plan $30 and the PBM keeps the $20 
+difference. Typically, these contract arrangements 
+are put in place to “subsidize” the administrative 
+costs of managing the pharmacy benefit. 
+ 
+ 
+ 
+===PAGE 15===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+15 | P a g e  
+ 
+• Ten of 13 PBMs reported retaining a spread 
+amount in 2018. 
+o The total spread amount retained 
+by the ten PBMs was $115 million. 
+• Twelve of 16 PBMs reported retaining a 
+spread amount in 2019. 
+o The total amount retained by the 
+12 PBMs was $155 million.  
+• Eleven of 16 PBMs reported retaining a 
+spread amount in 2020. 
+o The total amount retained by the 
+11 PBMs was $36 million, as 
+shown in Figure 4. 
+ 
+Figure 4: Total amount retained by PBMs (in 
+millions) 
+ 
+ 
+This data seems to demonstrate that only a couple 
+of PBMs dominate the state in retaining dollars 
+through spread pricing, though this is similar to the 
+pattern to the market size of the PBMs in 
+Washington as determined by the dollar value of 
+claims processed.  
+ 
+Unfortunately, the way the data is reported to HCA 
+does not allow HCA to analyze the impact of spread 
+pricing on health insurance premiums. 
+ 
+Trends in member cost share 
+ 
+Although PBMs may not determine the cost-share 
+for prescription drugs when health carriers create a 
+health plan, they do influence how much patients 
+pay for drugs based on how they manage the plan 
+and what tier a drug is on the formulary or PDL. The 
+amount Washington members pay for prescription 
+drugs at pharmacies or member cost share was 
+analyzed. The trends are reported below.  
+ 
+• $37.1* million in 2018  
+• $58* million in 2019  
+• $115.4 million in 2020 
+ 
+Trends in rebates received and 
+retained by PBMs 
+ 
+Some manufacturers will offer rebates to PBMs 
+depending on how a drug is covered by a health 
+plan. These rebates are paid by the manufacturer to 
+the PBM, but it is not always clear how these 
+rebates are shared with health carriers or what 
+impact they may have in reducing health insurance 
+premiums. PBMs are required to report information 
+about how many rebate dollars they receive from 
+manufacturers as well as how many dollars they 
+retain and do not pass on to their health plans. 
+ 
+Of the rebate data reported to HCA, PBMs received: 
+ 
+• $48.6* million in 2018 
+• $194.3* million in 2019  
+• $227.5 million in 2020 
+ 
+The increase in rebate dollars received by the PBMs 
+is largely attributable to the increase in claims 
+processed. 
+ 
+Of the rebate data received by PBMs 
+(approximately): 
+ 
+• $371* million (0.7%) in 2018 
+• $448* million (0.2%) in 2019  
+• $774 million (0.3%) in 2020 
+ 
+Of all the rebate dollars retained by PBMs, the top 2 
+PBMs that retained the most dollars each year 
+accounted for: 
+ 
+• 94.9% in 2018, 
+• 71.9% in 2019  
+• 83.1% in 2020 
+ 
+$115 
+$155 
+$36 
+$0
+$20
+$40
+$60
+$80
+$100
+$120
+$140
+$160
+$180
+2018 2019 2020
+Millions
+===PAGE 16===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+16 | P a g e  
+ 
+In 2020, the top two PBMs that received the highest 
+rebates as shown in Figure 5. 
+• Top two PBMs received 84.06%  
+• Next two PBMs received 11.51% 
+• Bottom eight PBMs received 0.55% 
+ 
+Figure 5: 2020 PBMs receiving highest rebates 
+ 
+ 
+In 2020 the top two PBMs retained the highest 
+rebates as shown in Figure 6. 
+• Top two PBMs retained 93.47%  
+• Next two PBMs retained 6.49% 
+• Bottom eight PBMs retained 0.02% 
+ 
+Figure 6: 2020 PBMs retaining highest rebates
+ 
+This data shows that PBMs collect a significant 
+amount of money from manufacturers in the form 
+of rebates. Additionally, different PBMs have 
+different practices around how they retain or share 
+rebates. 
+Trends in administrative fees paid 
+by carriers 
+ 
+PBMs may offer carriers different options for paying 
+for their services; charging administrative fees is a 
+common method as reported by PBMs. These fees 
+can be collected or assessed in several different 
+ways, but the most common method in Washington 
+is by drug claim. This means that a PBM charges a 
+carrier for every claim processed, and the amount 
+of revenue is generated depending on how many 
+prescriptions the members of the health plan use. 
+Another type of administrative fees are annual fees, 
+which are set prior to a plan year. Only one PBM 
+manages their contract with a carrier using a ‘per-
+member-per-month’ fee, which is similar to a 
+health plan premium as it charges a set amount 
+depending on the number of members enrolled in 
+the plan for that month. 
+ 
+84.06%
+11.51%
+0.55%
+0.00%
+10.00%
+20.00%
+30.00%
+40.00%
+50.00%
+60.00%
+70.00%
+80.00%
+90.00%
+Top 2 PBMs Next 2 PBMs Bottom 8
+PBMs
+93.47%
+6.49%
+0.02%
+0.00%
+10.00%
+20.00%
+30.00%
+40.00%
+50.00%
+60.00%
+70.00%
+80.00%
+90.00%
+100.00%
+Top 2 PBMs Next 2 PBMs Bottom 8
+PBMs
+===PAGE 17===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+17 | P a g e  
+ 
+Summary of trends in how PBMs 
+manage prescription drug 
+benefits 
+ 
+In summary, four PBMs dominate prescription drug 
+benefits in Washington State, as demonstrated by 
+the volume of claims processed by dollar amount, 
+by fees assessed to pharmacies, by spread pricing 
+between carriers and pharmacies, by member cost 
+share, and by rebate dollars received and retained. 
+Several other PBMs serve smaller populations and 
+may not use all the methods measured, which 
+explains why the size of the bottom grouping of 
+PBMs is different between measures. 
+ 
+Since the PBM data and carrier data are not linked 
+at a health plan level, which is where annual 
+premiums, covered services, and benefit designs 
+are determined, it is challenging to draw 
+conclusions between the data reported in the 
+carrier section and the data reported in the PBM 
+section. 
+ 
+Trends in PBM ownership  
+ 
+HCA received data from PBMs regarding their 
+ownership interests in carriers and pharmacies and 
+any ownership interest in them from carriers or 
+pharmacies. Of the 18 PBMs that reported, 9 
+reported different ownership entities than the PBM 
+as defined by different Employer Identification 
+Numbers (EIN). The different EIN does not 
+necessarily represent whether a carrier or 
+pharmacy has ownership in the PBM or whether the 
+PBM has ownership in a carrier or pharmacies. Of 
+the 10 that reported different ownership EIN, only 
+half had some type of ownership interest in a 
+carrier or pharmacy or a carrier or pharmacy had 
+ownership in the PBM.  
+Trends in pharmacy appeals to 
+PBM  
+ 
+In 2014, Washington State created a law, now 
+codified as RCW 48.200.280(3), by which PBMs must 
+have a process for pharmacies to appeal 
+predetermined reimbursement costs for 
+multisource generic drugs. Pharmacies may need 
+to appeal to a PBM to be reimbursed the actual 
+acquisition costs of a drug when a PBM sets the 
+reimbursement rate below what a pharmacy may 
+be able to pay when acquiring a generic drug. For 
+example, if a PBM sets the reimbursement for Drug 
+A at $0.10 per unit and the pharmacy can only 
+acquire the drug at $0.12 per unit, the pharmacy 
+would lose money dispensing the drug on every 
+prescription because they would be reimbursed 
+$0.02 less per unit dispensed. With this law in effect, 
+the pharmacy could appeal to the PBM and request 
+a reimbursement rate that is appropriate to reflect 
+what the pharmacy may be able to purchase. This 
+law was made as an attempt to help ensure 
+pharmacies are reimbursed appropriately for their 
+services, but no analysis on the effectiveness of this 
+law has been published to date. 
+ 
+HCA received data from PBMs regarding the 
+number of appeals and their outcomes under this 
+law. Of the data HCA received there were: 
+ 
+• 32,605 appeals in 2018  
+• 47,889 appeals in 2019  
+• 78,774 appeals in 2020 
+ 
+Of the 159,268 total appeals made during this 
+three-year reporting period: 
+• 38% were made to only two PBMs 
+• 36% were made to the next five PBMs 
+• Among the other PBMs, eight reported the 
+remaining 0.12% of appeals 
+• 12 PBMs reported no appeals 
+ 
+In 2020, of the 78,774 appeals made, only 2,800 
+(4%) were approved, 75,972 (96.4%) were denied, 
+and 2 (.002%) were originally denied before being 
+overturned by the Office of the Insurance 
+Commissioner (OIC) as shown in Table 16 and 
+Figure 7. 
+ 
+Table 16: 2020 PBMs receiving highest rebates 
+Decision 2020 Percentage 
+Approved 2,800 4% 
+Denied 75,972 96.4% 
+Overturned 2 0.002% 
+Totals 78,774 100% 
+ 
+===PAGE 18===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+18 | P a g e  
+ 
+Figure 7: Appeals by year and decision
+ 
+ 
+In 2020, a total of 166 pharmacies or pharmacy 
+chains submitted at least one appeal to any PBM 
+during this period. Of the 78,774 appeals 
+submitted, 66 pharmacies or pharmacy chains 
+submitted at least 100-999 appeals, and 12 
+submitted at least 1,000 appeals.  
+The top three pharmacy chains with the most 
+appeals submitted had 45,413 in this reporting 
+period:  
+• 321 (0.7%) were approved  
+• 45,092 (99.3%) were denied  
+• Zero appeals were overturned  
+The data suggests that many pharmacies are using 
+the appeal process, with approximately 145 
+appeals being made every day over the last three-
+year (2018-2020) reporting period. Despite this 
+process, many of these claims are denied with few 
+being overturned by OIC, meaning that pharmacies 
+may not be adequately reimbursed by PBMs for the 
+claims they dispense. Given the high rate of denials 
+and subsequent appeals to OIC, pharmacies may be 
+discouraged from submitting appeals and that 
+these numbers may actually be suppressed 
+compared to the frequency at which pharmacies 
+are not adequately reimbursed for the prescriptions 
+they dispense. 
+ 
+  
+2386
+28127
+2800
+4386
+42243
+1260
+2800
+75972
+2
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+Approved Denied Overturned
+Number of appeals
+2018 2019 2020
+===PAGE 19===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+19 | P a g e  
+ 
+Drug manufacturers report 
+Trends in manufacturer drug 
+pricing  
+ 
+2022 (September 1, 2021, through 
+August 31, 2022) 
+Manufacturers are required to report to DPT when 
+drugs become covered drugs, either from having a 
+qualifying price increase or when they enter the 
+market with a price of over $10,000. These notices 
+of covered drugs help DPT monitor and report on 
+trends in how manufacturers set the prices of 
+drugs. 
+ 
+Drug manufacturer data 
+ 
+54 drug manufacturers submitted data for 359 
+drugs. 
+ 
+• One manufacturer had 10 or more covered 
+drugs reported (covered drugs with a WAC 
+of $10,000 or more for a course of 
+treatment lasting less than one month or a 
+30-day supply.  
+• Four manufacturers reported drug price 
+increases for drugs with only a one-year 
+change of 20% or greater. 
+• One manufacturer reported drug price 
+increases for drugs with only a three-year 
+change of 50% or greater.  
+• Five total manufacturers reported drug 
+price increases for drugs that met both the 
+one-year and three-year change criteria.  
+• 16 total manufacturers reported 
+introduced drugs to market. 
+• Four covered drugs per reports were 
+submitted. 
+ 
+70 covered drugs due to prices of $10,000 or more 
+for a course of treatment lasting less than one 
+month or a 30-day supply, whichever period is 
+longer. Of these 70 Covered Drugs, the price of 
+these introduced to market drugs ranged from just 
+over $10,000 to over $3,930,000, with an average 
+price of $214,915 and a median of $21,597 as shown 
+in Table 17. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 20===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+20 | P a g e  
+ 
+Table 17: Drug manufacturers data 
+Year Number of 
+drug 
+manufacturers 
+10 or 
+more 
+covered 
+drugs 
+1-year 
+price 
+change 
+of 20% 
+or 
+greater 
+3-year 
+price 
+change 
+of 50% 
+or 
+greater 
+Met both 1- 
+and 3-year 
+requirements 
+Number of 
+drugs that 
+met the 
+introduced 
+to market 
+criteria 
+Number of 
+covered 
+drugs per 
+report 
+2021 89 6 11 14 19 33 5 
+2022 54 1 4 1 5 16 4 
+Covered drugs 
+ 
+Of the 70 drugs that met the definition of covered 
+drug through WAC increase shown in Table 18: 
+• 31 drugs met the definition of covered 
+drug by having a 20% WAC increase within 
+a 1-year period. 
+o Average price increase of these 
+drugs was 23%. 
+• Two drugs met the definition of covered 
+drug by having a 50% WAC increase within 
+a 3-year period. 
+o Average price increase of these 
+drugs was 50%. 
+• 13 drugs met both criteria for 20% increase 
+in a 1-year period and a 50% increase in a 
+3-year period. 
+o Average price increase of these 
+drugs in one-year was 36.34%. 
+ 
+It is important to note that drugs that did not meet 
+the definition of a covered drug in Chapter 43.71C 
+RCW were not required to be reported by 
+manufacturers.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 18: Covered drugs 
+ 
+Year 
+Covered 
+drugs 
+Number of drugs with a 
+20% WAC Increase 
+within a 1-year period 
+Number of drugs with a 
+50% WAC Increase within 
+a 3-year period 
+Number of drugs with 
+a both 20% and 50% 
+increases 
+2021 217 86 34 97 
+2022 70 31 2 13 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 21===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+21 | P a g e  
+ 
+Qualifying price increase 
+ 
+• 44 covered drugs with qualifying price 
+increases over a one-year period as shown 
+in Table 19 
+o Average price after increase was 
+$401 
+• 15 covered drugs with a qualifying price 
+increase over a three-year period 
+o Average price after increase was 
+$999 
+• Of these covered drugs, the drugs 
+increased on average by $1,533. 
+ 
+It is important to note that drugs that did not meet 
+the definition of covered drug in Chapter 43.71C 
+RCW were not required to be reported by 
+manufacturers.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 19: Qualifying price increase 
+Year Covered drugs with a 
+qualifying price 
+increase over 1-year 
+period 
+Average price after 
+price increase  
+Covered drugs with 
+a qualifying price 
+increase over 3-
+year period 
+Average price 
+after price 
+increase 
+Average covered 
+drug price increase 
+2021 183 $1,285 131 $1,634 $806 
+2022 44 $401 15 $999 $1,533 
+ 
+ 
+ 
+ 
+ 
+  
+===PAGE 22===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+22 | P a g e  
+ 
+Trends in manufacturer 
+submitting NDAs and BLAs  
+ 
+Drug manufacturers reported submitting New Drug 
+Applications (NDA) and Biologics License 
+Applications (BLA) to the FDA to review for approval 
+to be marketed in the United States, pursuant to 
+RCW 43.71C.060. The data was analyzed and 
+reported below to describe potentially impactful 
+drugs to Washington State expenditures. 
+  
+ 
+HCA received new NDAs or BLAs 
+86 new drug reports, of these submissions: 
+o 57 were submitted as NDAs  
+o 29 were submitted as BLAs  
+o 11 were submitted as abbreviated new 
+drug applications (ANDAs) 
+• 34 (35.05%) drugs that had the potential of 
+significant expenditure.  
+o 15 were submitted as BLAs  
+o 20 were submitted as NDAs 
+• 52 (53.6%) of the new drug reports 
+received by HCA may not have been for 
+new chemical entities as other versions of 
+these chemical entities were already 
+marketed in the US, either by the current 
+manufacturer or by another company.  
+• 97 new drugs reported by 64 different 
+manufacturers. Of those 97 new drugs 
+reported 39 listed new chemicals. Table 20. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 20: New drug applications received  
+Year Number of 
+applications received 
+NDAs BLAs Significant expenditure New chemical 
+entities 
+2021 269 60 30 90 54 
+2022 97 57 29 34 45 
+These submissions may be related to new dosage 
+forms of existing chemical entities or requests for 
+the FDA to review new indications for use. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 23===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+23 | P a g e  
+ 
+Pharmacy services 
+administrative organizations 
+(PSAO)report  
+ 
+HCA did not receive any data from PSAOs during 
+this reporting period. HCA assumes PSAOs did not 
+report because they are exempt from reporting 
+under RCW 43.71C.080(2) due to their payment 
+structure with pharmacies. The statute does not 
+require that PSAOs who identify as exempt from 
+attesting or proving their exemption status, nor 
+does it allow for HCA to require the PSAOs attest or 
+prove their exemption status. 
+ 
+  
+===PAGE 24===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+24 | P a g e  
+ 
+Conclusions  
+Overall impact of drug costs 
+on health care premiums 
+ 
+In this report, HCA analyzed data received from the 
+reporting entities serving Washingtonians for the 
+purpose of describing how drug pricing impacts 
+health care premiums. HCA also presented the data 
+from prior data submissions and data analyses to 
+create a longitudinal picture of how prescription 
+drug benefits changed from 2017 to 2020. As 
+mentioned in the report, health carriers use 
+prescription drug data from the prior year to set 
+premiums for the subsequent year (e.g., in 2019, a 
+carrier may use data from 2018 to set a premium for 
+a health plan in 2020). This means we’re beginning 
+to understand how drugs with a price increase in 
+2017 may have led to increased expenditures in 
+2018. These impacts may be reflected in the 
+premiums set. For example, a drug price may 
+experience an increase in one year and a PBM or 
+carrier may respond by not covering the drug and 
+requiring patients to switch to a lower-cost and 
+equally effective alternative. This type of 
+information is not reportable under the current 
+requirements of Chapter 43.71C RCW, yet it would 
+help explain how carriers and PBMs are responding 
+to drug prices and drug cost increases. To properly 
+identify the exact relationship and nature of how 
+drug prices impact health care premiums and other 
+aspects of health care costs and access a more 
+robust data set of health claims data and all drug 
+price increases would be required. 
+ 
+The DPT program now has four years (2017-2020) of 
+data to compare and pass along to the legislature.  
+ 
+HCA acknowledges that drug price increases may 
+have an impact on health care premiums, but the 
+exact relationship and the nature of this impact is 
+indeterminate from the data that HCA can receive 
+under the Drug Price Transparency program. HCA is 
+limited in its ability to properly analyze all 
+components of change in health care premiums 
+without a complete and comprehensive set of 
+claims data for all health plans in the state, where 
+these changes in drug costs and drug utilization are 
+identifiable. Therefore, although the trends in the 
+data received from these entities indicate there is a 
+relationship between increasing drug pricing, 
+increasing drug expenditure, and increasing health 
+care premiums, the exact relationship and 
+magnitude of these factors cannot be determined. 
+ 
+New ServiceNow project 
+Entities can now log in to a portal and update or 
+make edits to their own accounts. This process 
+used to be time consuming for both the entity and 
+HCA. It involved the entity emailing the DPT 
+program manager who would then send a ticket to 
+have several other HCA staff change and update 
+lists. Entities can request an extension through this 
+same process.   
+We have improved the submission process with this 
+project. In the past, an entity would submit their 
+required report and at 6 p.m., DPT would kick off 
+the validation process. The entity would get an 
+email notifying them if the report passed or failed 
+technical validation. If the report failed, they would 
+fix their errors and try again the next night.  
+Now, an entity submits a required report and 
+receives immediate feedback if their report passed 
+or failed. If the report fails, they receive the errors 
+that must be corrected. The entity can now fix any 
+errors and resubmit within minutes. If the report 
+passes, they receive a message that the upload was 
+successful.  
+ 
+Updated Data Submission Guides  
+Yearly updates to the data submission guides (DSG) 
+are completed to reflect the needs of HCA and to 
+clarify to the entities what the DPT program is 
+asking for with every single field. If we find that 
+reports must be sent back or are rejected because 
+they are submitting the wrong information or giving 
+the information to us incorrectly, then we know we 
+need to explain it better in the DSG.  
+===PAGE 25===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+25 | P a g e  
+ 
+These DSGs go through our internal DPT review and 
+are sent to the entities for their review for 30 days. 
+DPT takes their comments into consideration when 
+making language determination. Finally, DPT 
+publishes and updates the templates the entities 
+will use for the next reporting cycle. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 26===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+26 | P a g e  
+ 
+Appendix 
+ 
+Prescription drug supply chain 
+ 
+The prescription drug supply chain ensures that 
+safe and effective drugs are made available to 
+patients. However, many different and parallel 
+steps occur that result in the drug being sold by a 
+manufacturer to being administered by a patient or 
+provider. In Diagram 1, a simplified model shows 
+the complexity of the prescription drug distribution 
+system. 
+ 
+Diagram 1. Model of prescription drug 
+distribution system 
+ 
+ 
+ 
+In Diagram 1, three of the four reporting entities for 
+the DPT program are represented. In this model 
+PSAOs, who may or may not be part of a 
+wholesaler, help contract between pharmacies and 
+PBMs. 
+ 
+Tracking the flow of a prescription drug (red 
+arrows), the journey begins with the manufacturer 
+who sells their products to wholesalers.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Wholesalers purchase from many different 
+manufacturers and sell their products to 
+pharmacies who often order daily from 
+wholesalers. Wholesalers then distribute the 
+selected drugs to pharmacies who keep the drugs 
+in storage until a prescription for a patient arrives. 
+When the prescription is processed, the pharmacy 
+dispenses the drug to the patient. 
+ 
+
+===PAGE 27===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+27 | P a g e  
+ 
+Following the flow of funds (purple arrows), 
+employers and patients pay a monthly premium to 
+the carrier for the health plan. Carriers, who 
+subcontract services to a PBM, provide the PBM 
+with the funds to reimburse pharmacies for a paid 
+claim on a covered drug. The pharmacies use these 
+funds to replenish their stock of prescription drugs 
+by purchasing from wholesalers, who purchase 
+directly from manufacturers. PBMs make their 
+revenue through: 
+ 
+1. The administrative fees charged to the 
+carrier 
+2. PBMs collecting a spread between the 
+carrier and the pharmacy on claims 
+processed 
+3. Rebates from manufacturers retained by 
+the PBM 
+4. A combination of the above three methods 
+ 
+The four reporting entity types identified in Chapter 
+43.71C RCW may have information pertaining to 
+how drug prices affect health care costs. Drug 
+manufacturers, the entities responsible for 
+developing, producing, and selling drugs set the 
+price of drugs sold in the United States. Carriers are 
+businesses that offer health insurance and manage 
+health plans, where they set a monthly premium for 
+enrollment based on the services provided and the 
+employer or member cost. PBMs are businesses 
+that manage the prescription drug benefit for 
+carriers. They help negotiate the reimbursement of 
+drugs with pharmacies, contract for rebates with 
+drug manufacturers, and provide clinical and 
+operational services to carriers. Pharmacy services 
+administrative organizations (PSAO) negotiate with 
+PBMs on behalf of a pharmacy or group of 
+pharmacies for drug reimbursement rates, network 
+participation, and other fees. 
+ 
+  
+===PAGE 28===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+28 | P a g e  
+ 
+Glossary of terms 
+ 
+Appeals – Washington State created a law, now 
+codified as RCW 48.200.280(3), by which PBMs 
+must have a process for pharmacies to appeal 
+predetermined reimbursement costs for 
+multisource generic drugs. 
+ 
+Carriers – A disability insurer regulated under 
+chapter 48.20 or 48.21 RCW, a health care service 
+contractor as defined in RCW 48.44.010, or a 
+health maintenance organization as defined in 
+RCW 48.46.020, and includes "issuers" as that 
+term is used in the patient protection and 
+affordable care act (P.L. 111-148). 
+ 
+Covered Drugs – Any prescription drug that: 
+(a) A covered manufacturer intends to 
+introduce to the market in Washington 
+state at a wholesale acquisition cost of ten 
+thousand dollars or more for a course of 
+treatment lasting less than one month or 
+a thirty-day supply, whichever period is 
+longer; or 
+(b) Meets all of the following: 
+(i) Is currently on the market in 
+Washington state; 
+(ii) Is manufactured by a covered 
+manufacturer; and 
+(iii) Has a wholesale acquisition cost of 
+more than one hundred dollars for a 
+course of treatment lasting less than one 
+month or a thirty-day supply, and, taking 
+into account only price increases that take 
+effect on or after October 1, 2019, the 
+manufacturer increases the wholesale 
+acquisition cost such that: 
+(A) The new wholesale acquisition cost is 
+twenty percent higher than the wholesale 
+acquisition cost on the same day of the 
+month, twelve months before the date of 
+the proposed increase; or 
+(B) The new wholesale acquisition cost is 
+fifty percent higher than the wholesale 
+acquisition cost on the same day of the 
+month, thirty-six months before the date 
+of the proposed increase. 
+ 
+Employee Retirement Income Security Act 
+(ERISA) – Establishes minimum standards for 
+pension plans in private industry. 
+ 
+ 
+Generic Drugs – Are a copy of a brand name drug. 
+ 
+Individual Group – A health plan offered to a 
+single subscriber that does not belong to any 
+group or collective risk pool. 
+ 
+Large Group – In general, a group health plan that 
+covers employees of an employer that has 51 or 
+more employees. In some states large groups are 
+defined as 101 or more. 
+ 
+Lines of Business – The Line of Business you are 
+reporting on. Possible values are: Large Group, 
+Small Group, Individual, ERISA, Medicaid, 
+Medicare, or Other. 
+ 
+Manufacturers – A person, corporation, or other 
+entity engaged in the manufacture of prescription 
+drugs sold in or into Washington state. "Covered 
+manufacturer" does not include a private label 
+distributor or retail pharmacy that sells a drug 
+under the retail pharmacy's store, or a 
+prescription drug repackager. 
+ 
+Medicare Part D – Voluntary outpatient 
+prescription drug benefit for people with 
+Medicare, provided through private plans. 
+ 
+Medicaid – Health coverage for low-income 
+adults, children, pregnant women, elderly adults, 
+and people with disabilities. In Washington state, 
+Medicaid is referred to as Apple Health. 
+ 
+National Drug Code (NDC) – 3-segment numeric 
+identifier assigned to each medication listed under 
+Section 510 of the U.S. Federal Food, Drug and 
+Cosmetic Act. 
+ 
+New-to-Market Drugs (New Covered Drug) – 
+Means any prescription drug that: 
+(a) A covered manufacturer intends to 
+introduce to the market at a wholesale 
+acquisition cost of ten thousand dollars or 
+more for a course of treatment lasting less 
+than one month or a thirty-day supply, 
+whichever period is longer; or 
+(b) Is currently on the market, is 
+manufactured by a covered manufacturer, 
+and has a wholesale acquisition cost of 
+more than one hundred dollars for a 
+course of treatment lasting less than one 
+month or a thirty-day supply, and, taking 
+into account only price increases that take 
+===PAGE 29===
+ 
+ Updated since publication of 2022 Annual Report 
+ 
+29 | P a g e  
+ 
+effect after July 28, 2019, the 
+manufacturer increases the wholesale 
+acquisition cost at least: 
+(i) Twenty percent, including the 
+proposed increase and the 
+cumulative increase over one 
+calendar year prior to the date of 
+the proposed increase; or 
+(ii) Fifty percent, including the 
+proposed increase and the 
+cumulative increase over three 
+calendar years prior to the date 
+of the proposed increase. 
+ 
+Non-Specialty Drugs – Drugs that treat both 
+chronic and acute diseases that affect larger 
+populations in the U.S. In contrast to specialty 
+medications, non-specialty drugs are typically 
+small-molecule medications, meaning they are 
+chemically synthesized. 
+ 
+Office of Insurance Commissioner (OIC) – 
+Regulates the insurance industry. 
+ 
+Preferred Drug List (PDL) – List of medications 
+that Medicaid will cover the cost for without the 
+need to request a prior authorization. 
+ 
+Pharmacy Benefit Managers (PBM) – A person 
+that contracts with pharmacies on behalf of an 
+insurer, a third-party payor, or the prescription 
+drug purchasing consortium established under 
+RCW 70.14.060. 
+ 
+Pharmacy Service Administrative 
+Organizations – An entity that contracts with a 
+pharmacy to act as the pharmacy's agent with 
+respect to matters involving a pharmacy benefit 
+manager, third-party payor, or other entities, 
+including negotiating, executing, or administering 
+contracts with the pharmacy benefit manager, 
+third-party payor, or other entities and provides 
+administrative services to pharmacies. 
+ 
+Per-Member-Per-Month (PMPM) – The amount 
+of money paid or received on a monthly basis for 
+each individual enrolled in a managed care plan. 
+ 
+Rebate – Means negotiated price concessions or, 
+discounts, however characterized, that accrue 
+directly or indirectly to a reporting entity in 
+connection with utilization of prescription drugs 
+by reporting entity members. These include but 
+are not limited to, rebates, administrative fees, 
+market share rebates, price protection rebates, 
+performance-based price concessions, volume-
+related rebates, other credits, and any other 
+negotiated price concessions or discounts that are 
+reasonably anticipated to be passed through to a 
+reporting entity during a coverage year, as well as 
+any other form of price concession prearranged 
+with a covered manufacturer, dispensing 
+pharmacy, PBM, rebate aggregator, group 
+purchasing organization, or other party which are 
+paid to a reporting entity and are directly 
+attributable to the utilization of certain drugs by 
+reporting entity members. 
+ 
+Reporting entity – Carriers, covered 
+manufacturers, carriers, health plans, PBMs, and 
+pharmacy services administrative organizations, 
+which are required to or voluntarily submit data 
+according to Chapter 43.71C. 
+ 
+Small Group – Most states define small group as 
+1-50 employees. 
+ 
+Specialty Drugs – High-cost prescription 
+medications used to treat complex, chronic 
+conditions. 
+ 
+Wholesale Acquisition Cost (WAC) – With 
+respect to a prescription drug, the manufacturer's 
+list price for the drug to wholesalers or direct 
+purchasers in the United States, excluding any 
+discounts, rebates, or reductions in price, for the 
+most recent month for which the information is 
+available, as reported in wholesale acquisition 
+cost guides or other publications of prescription 
+drug pricing. 
+ 
+Wholesaler – A person or company that sells 
+goods in large quantities at low prices, typically to 
+retailers. 

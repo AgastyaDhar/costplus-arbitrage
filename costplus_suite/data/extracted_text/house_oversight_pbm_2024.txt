@@ -1,0 +1,2172 @@
+
+===PAGE 1===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+===PAGE 2===
+Page | 2  
+ 
+Table of Contents 
+ 
+Executive Summary ........................................................................................................................ 3 
+Key Findings ................................................................................................................................... 4 
+Background ..................................................................................................................................... 6 
+I. The Role of Pharmacy Benefit Managers ........................................................................... 6 
+II. The Current Marketplace .................................................................................................... 7 
+III. The Committee’s Investigation ....................................................................................... 8 
+PBMs’ Anticompetitive Behavior ................................................................................................... 9 
+I. Pharmacy Networks .......................................................................................................... 11 
+II. Retroactive Fees ................................................................................................................ 12 
+III. Steering Patients to Pharmacies owned by PBMs ........................................................ 15 
+Spread Pricing ............................................................................................................................... 20 
+I. Medicaid and Private Health Insurance ............................................................................ 21 
+II. Impacts on Pharmacies ..................................................................................................... 23 
+Rebates and Fees ........................................................................................................................... 24 
+I. Formulary Manipulation and Abuse ................................................................................. 27 
+II. Rebates Effects on Biosimilars and Competition ............................................................. 31 
+III. PBMs’ creation of foreign business entities to hide rebates and fees ........................... 33 
+PBMs’ Impact on Patient Care ..................................................................................................... 35 
+Impacts on Federal and State Health Care Programs .................................................................... 37 
+I. Federal Employee Health Benefits (FEHB) ..................................................................... 37 
+II. Medicare ........................................................................................................................... 39 
+III. Medicaid ....................................................................................................................... 40 
+IV. TRICARE ..................................................................................................................... 41 
+Impacts of Recent Policy Proposals .............................................................................................. 42 
+I. Anti-kickback Rebate Rule ............................................................................................... 42 
+II. Medicare Price Negotiation .............................................................................................. 43 
+Legislative Reforms ...................................................................................................................... 46 
+I. Federal reforms ................................................................................................................. 46 
+II. State reforms ..................................................................................................................... 48 
+C
+onclusion .................................................................................................................................... 51 
+ 
+  
+===PAGE 3===
+Page | 3  
+ 
+Executive Summary  
+ 
+Pharmacy Benefit Managers’ (PBMs) role as intermediaries between drug manufacturers 
+and health insurance providers should have made them, in theory, the best positioned entities to 
+decrease the cost of prescription drugs.1  The three largest PBMs, CVS Caremark (Caremark), 
+Cigna Express Scripts (Express Scripts), and UnitedHealth Group’s Optum Rx (Optum Rx), 
+control more than 80 percent of the market and are vertically integrated with health insurers, 
+pharmacies, and providers.
+2  As large health care conglomerates, some have argued that these 
+PBMs’ vertical integration with insurers and pharmacies would better position them to improve 
+patient access and decrease the cost of prescription drugs.3  Instead, the opposite has occurred: 
+patients are seeing significantly higher costs with fewer choices and worse care.  
+ 
+Americans spend more today on prescription drugs than any other country, and 
+prescription drug prices in the U.S. are more than double the cost of identical drugs in other 
+high-income nations.
+4  In 2023, the U.S. health care system spent $772.5 billion on prescription 
+drugs, including $307.8 billion on retail drugs.5  This mammoth spending is largely driven by a 
+small number of high-cost products; brand name drugs accounted for 80 percent of prescription 
+drug spending, despite the fact that 80 percent of prescriptions in the U.S. are for generic drugs.6  
+Additionally, the cost of specialty drugs, which accounted for 54 percent of spending in 2023,7 
+has increased more than 40 percent since 2016.8  Patient out-of-pocket costs for prescriptions 
+were $91 billion in 2023 alone.9  Higher drug utilization and new drugs are also contributing to 
+higher costs, with Americans being prescribed more and paying for more prescription drugs.10 
+ 
+This report describes the Committee on Oversight and Accountability’s findings that 
+PBMs inflate prescription drug costs and interfere with patient care for their own financial 
+benefit.   
+ 
+ 
+ 
+ 
+ 
+1 U. S. FED. TRADE COMM’N, INTERIM STAFF REP., PHARMACY BENEFIT MANAGERS: THE POWERFUL MIDDLEMEN 
+INFLATING DRUG COSTS AND SQUEEZING MAIN STREET PHARMACIES, 8 (Jul. 2024). 
+2 Adam J. Fein, Mapping the Vertical Integration of Insurers, PBMs, Specialty Pharmacies, and Providers: A May 
+2023 Update, DRUG CHANNELS (May 10, 2023). 
+3 Matthew Fiedler, Loren Adler, and Richard G. Frank, A brief look at current debates about pharmacy benefit 
+managers, THE BROOKINGS INSTITUTION (Sept. 7, 2023). 
+4 Andrew Mulcahy et al., International Prescription Drug Price Comparisons: Current Empirical Estimates and 
+Comparisons with Previous Studies, RAND Corporation (2021).  
+5 Eric M. Tichy, et al., National Trends in Prescription Drug Expenditures and Projections for 2024, 81 AM. J. OF 
+HEALTH-SYSTEM PHARMACY 583 (2024). 
+6 Sonal Parasrampuria & Stephen Murphy, Trends in Prescription Drug Spending, 2016-2021, Assistant Secretary 
+for Planning and Evaluation Office of Science & Data Policy (Sept. 30, 2022).  
+7 IQVIA Inst. for Human Data Science, The Use of Medicines in the U.S. 2024: Usage and spending trends and 
+outlook for 2028 (Apr. 2024). 
+8 Supra note 6   
+9 Supra note 7.  
+10 CONG. BUDGET OFF., 57050, PRESCRIPTION DRUGS: SPENDING, USE, AND PRICES, 9 (Jan. 2022); Supra note 5. 
+===PAGE 4===
+Page | 4  
+ 
+Key Findings 
+ 
+ 
+ The three largest PBMs have used their position as middlemen and integration with 
+health insurers, pharmacies, providers, and recently manufacturers, to enact 
+anticompetitive policies and protect their bottom line.   
+The Committee found evidence that PBMs share patient information and data across their 
+many integrated companies for the specific and anticompetitive purpose of steering 
+patients to pharmacies a PBM owns.  Furthermore, the Committee found that PBMs have 
+sought to use their position to artificially reduce reimbursement rates for competing 
+pharmacies. 
+ 
+ PBMs frequently tout the savings they provide for payers and patients through 
+negotiation, drug utilization programs, and spread pricing, even though evidence 
+indicates that these schemes often increase costs for patients and payers.   
+The Committee identified numerous instances where the federal government, states, and 
+private payers have found PBMs to have utilized opaque pricing and utilization schemes 
+to overcharge plans and payers by hundreds of millions of dollars. 
+ 
+ The largest PBMs force drug manufacturers to pay rebates in exchange for the 
+manufacturers’ drugs to be placed in a favorable tier on a PBM’s formulary, 
+making it difficult for competing, lower-priced prescriptions (often generics or 
+biosimilars) to get on formularies.   
+The Committee has found evidence that PBMs regularly place higher cost medications in 
+more preferable positions based on their formularies, even when there are lower-cost and 
+equally safe and effective competing options. 
+ 
+ As many states and the federal government weigh and implement PBM reforms, the 
+three largest PBMs have begun creating foreign corporate entities and moving 
+certain operations abroad to avoid transparency and proposed reforms.   
+The Committee found that these PBMs have created group purchasing organizations 
+(GPOs) to centralize the negotiation of rebates and fees in Switzerland and Ireland.  They 
+have also created companies in Ireland and the Cayman Islands to manufacture and 
+market certain highly profitable generics and biosimilars.  The creation of entities in 
+locations well known for their lack of financial transparency and movement of operations 
+that would be subject to impending regulations only heightens concerns that PBMs will 
+do anything to avoid transparency. 
+ 
+ The largest PBMs’ use of tools such as prior authorizations, fail first policies, and 
+formulary manipulations have significant detrimental impacts on Americans’ health 
+outcomes.   
+The Committee found that the use of these tools enables PBMs to slow the market uptake 
+of cheaper generics and biosimilars.  Furthermore, the Committee found that these tools 
+often delay and negatively impact patient care. 
+===PAGE 5===
+Page | 5  
+ 
+ 
+ The anti-competitive policies of the largest PBMs have cost taxpayers and reduced 
+patient choice.   
+The Committee found that PBMs have intentionally overcharged or withheld rebates and 
+fees from many taxpayer-funded health programs.  Additionally, the Committee found 
+that in these taxpayer-funded health programs, PBMs use their position as middlemen to 
+steer patients to the pharmacies they own rather than pharmacies that may have closer 
+proximity or provide better care.  
+ 
+  
+===PAGE 6===
+Page | 6  
+ 
+Background   
+I. The Role of Pharmacy Benefit Managers 
+PBMs are companies that manage prescription drug benefits for health insurers, Medicare 
+Part D drug plans, self-insured employers, and other payers, such as state Medicaid programs 
+(collectively known as “payers”).11  When they were originally created in the 1960s, PBMs 
+functioned as passive processors of prescription drug claims.12  However, as the pharmaceutical 
+industry has evolved, the role of PBMs has evolved with it.13  Today, PBMs have a more 
+significant role and function as intermediaries between drug manufacturers, payers, and 
+pharmacies.  PBMs’ central role in the pharmaceutical market is clearly observable in Figure 1:   
+ 
+Figure 1: Flow of Money in Pharmaceutical Markets14
+ 
+PBMs’ primary responsibilities include negotiating prices with drug manufacturers and 
+pharmacies on behalf of payers.15  When negotiating with a drug manufacturer, PBMs will 
+frequently offer to place the manufacturer’s drug in a lower tier on an insurance plan’s 
+ 
+11 Supra note 3.  
+12 Robin J. Strongin, The ABCs of PBMs, NAT. HEALTH POLICY FORUM, Issue Brief, No. 749 (Oct. 27, 1999).  
+13 Id.  
+14 Brandt Dietary, Pharmacy Benefit Manager Regulation: What Happens Now?, Michael Best Strategies, (Jan. 14, 
+2019).  
+15 Supra note 3.  
+
+===PAGE 7===
+Page | 7  
+ 
+formulary, making the drug more accessible to a wider range of patients; in return, the drug 
+manufacturer will give the PBM a discount, or rebate, on the drug.16  These rebates are 
+frequently “calculated as a percentage of a drug’s list price.”17  This creates a perverse incentive 
+wherein PBMs prioritize more expensive drugs so they can get a larger rebate.18   
+ 
+PBMs also negotiate with individual pharmacies by offering a pharmacy a place in the 
+plan’s network, increasing the pharmacy’s potential for business.19  In return, the PBM 
+reimburses pharmacies at a set amount for dispensing prescriptions.20  Additionally, PBMs 
+operate electronic systems that process prescription drug claims at the pharmacy.21  
+ 
+A PBM’s compensation is determined by its business model.  One such model is based 
+on health plans paying PBMs for services directly by establishing an administrative fee 
+contract.
+22  Another route is spread pricing, where a health plan pays a PBM an agreed-upon 
+price for each prescription that is filled and the PBM retains the difference between the health 
+plan’s price and the pharmacy’s price.
+23  Finally, PBMs may keep portions of manufacturer 
+rebates as a form of compensation.24 
+ 
+II. The Current Marketplace 
+There are currently 66 PBMs operating in the United States; however, the three largest 
+PBMs—CVS Caremark, Express Scripts, and Optum Rx—control approximately 80 percent of 
+the market.25  Collectively, the largest six PBMs collectively control approximately 96 percent of 
+the market.26  Moreover, the largest PBMs are now vertically integrated with health insurers, 
+group purchasing organizations (GPOs), and retail, mail-order, and specialty pharmacies, 
+forming a consolidated marketplace.27  This vertical integration can be seen in Figure 2:    
+ 
+ 
+16 Supra note 3.  
+17 Nitzan Arad et al., Realizing the Benefits of Biosimilars: Overcoming Rebate Walls, DUKE UNIVERSITY 
+MARGOLIS CENTER FOR HEALTH POLICY (March 2022).  See also Sarah Bhatnagar, High Drug Prices: Are 
+PBMs the Right Target, Bipartisan Policy Center (Feb. 02, 2023). 
+18 Id.  
+19 Supra note 3. . 
+20 Supra note 3. ; see also Press Release, Federal Trade Commission, FTC Launches Inquiry Into Prescription Drug 
+Middlemen Industry (June 7, 2022); see also Hannah Rogers, Jennifer Staman, Alexander Pepper, Pharmacy Benefit 
+Managers: Current Legal Framework, Congressional Research Service (November 20, 2023). 
+21 Supra note 3. ; see also Supra note 20.  
+22 U.S. GOV’T ACCOUNTABILITY OFF., GAO-24-106898, PRESCRIPTION DRUGS: SELECTED STATES’ REGULATION OF 
+PHARMACY BENEFIT MANAGERS, 7 (Mar. 2024). 
+23  Id.  
+24 Id.  
+25 Pharmacy Benefit Managers, NAIC available at https://content.naic.org/cipr-topics/pharmacy-benefit-managers; 
+see also Paige Twenter, Top PBMs by 2022 market share, BECKER’S HOSPITAL REVIEW (May 23, 2023)  
+26 Id.  
+27 Supra note 20.  
+===PAGE 8===
+Page | 8  
+ 
+Figure 2: Vertical Integration in PBM Markets28
+ 
+III. The Committee’s Investigation  
+In response to mounting concerns over the escalating cost of prescription drugs , then- 
+Ranking Member James Comer initiated an investigation into PBMs on November 17, 2021, with 
+the forum “Reviewing the Role of Pharmacy Benefit Managers in Pharmaceutical Markets.” 29  
+Experts, including pharmacists, physicians, and representatives of PBMs, were able to discuss the 
+role of PBMs  in the pharmaceutical market with lawmakers and repeatedly testified to the need 
+for greater transparency in order to determine the full extent of PBMs’ tactics and their effects.  
+ 
+In December 2021, the Committee issued a report highlighting initial findings that large 
+PBM consolidation has negatively impacted patient health, increased costs for consumers, forced 
+manufacturers to raise their prices, and created conflicts of interest which distort the market and 
+limit high quality care for patients.
+30   
+ 
+On March 1, 2023, Chairman Comer sent document requests related to formulary design 
+and management, rebates, and fees to CVS Caremark, Express Scripts, Optum Rx, and the three 
+federal agencies that oversee federal health plans: the Centers for Medicare and Medicaid 
+Services (CMS), the Office of Personnel Management (OPM), and the Defense Health Agency 
+ 
+28  Supra note 2.  
+29 Press Release, H. Comm. on Oversight & Accountability, PBM Forum Wrap Up: Greater Transparency, Further 
+Congressional Review Needed to Lower Drug Prices (Nov. 17, 2021). 
+30 Staff Report, H. Comm. on Oversight and Reform, Report: A view from Congress: Role of Pharmacy Benefit 
+Managers in Pharmaceutical Markets, 117th Cong. (Dec. 10, 2021).  
+
+===PAGE 9===
+Page | 9  
+ 
+(DHA).31  Since then, the Committee has received and reviewed more than 140,000 pages of 
+documents.  Additionally, the Committee has held two hearings regarding PBMs32 and marked 
+up and favorably reported H.R. 6283, the Delinking Revenue from Unfair Gouging (DRUG) Act, 
+which would apply to the Federal Employees Health Benefits Act (5 U.S.C. §§ 8901 et seq.).33   
+ 
+ 
+PBMs’ Anticompetitive Behavior  
+ 
+“A recent poll by Morning Consult showed that in March 2023…85 percent 
+of Americans are concerned that PBMs are overcharging for prescription 
+medicines and pocketing the difference as profit.  In that survey, 88 percent 
+of Democrats and 88 percent of Republicans shared that concern … I think 
+we have a mandate from the American people to investigate.”
+34 – Rep. Raja 
+Krishnamoorthi (D-Ill.) 
+  
+The PBM industry has experienced significant consolidation and vertical integration over 
+the last few decades.35  In 1995, five PBMs controlled 80 percent of the market; by the 2010s, 
+CVS Caremark, Express Scripts, and Optum Rx dominated 80 percent of the market.36  CVS 
+Health Corporation, a healthcare company, owns both CVS Caremark, a PBM, CVS Pharmacy, a 
+retail pharmacy chain, and CVS Specialty, a specialty pharmacy.  Cigna, a large healthcare 
+company, owns Express Scripts, a PBM, and Express Scripts Pharmacy, a mail-order pharmacy.  
+UnitedHealth Group, another large healthcare company, owns both Optum Rx, a PBM, and an 
+Optum Specialty Pharmacy.  
+ 
+31 Press Release, H. Comm. on Oversight & Accountability, Comer Launches Investigation into Pharmacy Benefit 
+Managers’ Role in Rising Health Care Costs (Mar. 1, 2023). 
+32 The Role of Pharmacy Benefit Managers in Prescription Drug Markets Part I: Self-Interest of Healthcare?: 
+Hearing Before H. Comm. on Oversight & Accountability, 118th Cong. (May 23, 2023); The Role of Pharmacy 
+Benefit Managers in Prescription Drug Markets Part II: Not What the Doctor Ordered: Hearing Before H. Comm. 
+on Oversight & Accountability, 118th Cong. (Sept. 19, 2023). 
+33 Delinking Revenue from Unfair Gouging Act, H.R.6283, 118th Cong. (2023). 
+34  Supra note 32. 
+35 T. Joseph Mattingly II & David Hyman, Pharmacy Benefit Managers History, Business Practices, Economics, 
+and Policy, JAMA HEALTH FORUM (Nov. 3, 2023).  
+36 Andrew Lautz, How Pharmacy Benefit Managers Impact Taxpayers and Government Spending, NATIONAL 
+TAXPAYERS UNION (Jan. 23, 2023). 
+===PAGE 10===
+Page | 10  
+ 
+Figure 3: Vertical Relationships within PBM Markets37 
+  
+ 
+37 Supra note 2.  
+
+===PAGE 11===
+Page | 11  
+ 
+“It is possible to operate a PBM, restrain costs for the employer and 
+taxpayers while still providing the best pharmacy care available. But 
+changes must be made to require greater transparency and allow for 
+greater competition for this to happen.” 38 – Greg Baker, CEO, 
+AffirmedRx 
+I. Pharmacy Networks 
+PBMs administer pharmacy networks, typically comprised of independent community 
+and chain pharmacy providers as well as specialty pharmacies and physician-dispensing facilities 
+associated with medical practices.39  Establishing these networks is a key function of PBMs, and 
+they utilize this function to “steer” patients to the pharmacies they control.40  Each of the big 
+three PBMs own their own pharmacies, disincentivizing negotiation, enabling benefitting from 
+higher prices, and hurting their competition by reducing patients’ pharmacy choices.41  
+ 
+“My wife and I bought the local pharmacy with an SBA loan… What I hoped 
+could be and can be a great opportunity for my community is in peril ...” 42 
+– Kevin Duane, PharmD, pharmacist and owner of Panama Pharmacy, 
+Jacksonville, Florida 
+ 
+Anticompetitive practices make it difficult for unaffiliated chain and independent 
+community pharmacies to survive.  PBMs reimburse independent and unaffiliated chain 
+pharmacies at low rates and charge retroactive fees.43  Retroactive fees are often arbitrary and 
+can be levied weeks to months after a prescription is processed.44  Even though a pharmacy may 
+be in-network, extraneous PBM fees add up, often costing a pharmacy more to fill a prescription 
+than it is reimbursed.45  Due to the market share of the three largest PBMs, pharmacies are often 
+faced with choosing between accepting fees or not serving patients.   
+ 
+Community and independent pharmacies are struggling to keep up.  Dr. Duane testified 
+before the Committee that his pharmacy “cannot negotiate any aspect of [their] contracts with 
+[PBMs] in any meaningful type of fashion.”
+46  Additionally, Dr. Duane explained: 
+ 
+ 
+38 Supra note 32. 
+39  Supra note 22.; see also Specialty Drug Dispensing for Physician Offices, McKesson, 
+https://www.mckesson.com/specialty/drug-purchasing-and-management/dispensing-services/. 
+40 Interim Staff Report, Pharmacy Benefit Managers: The Powerful Middlemen Inflating Drug Costs and 
+Squeezing Main Street Pharmacies, U.S. FEDERAL TRADE COMMISSION (July 2024) available at 
+https://www.ftc.gov/system/files/ftc_gov/pdf/pharmacy-benefit-managers-staff-report.pdf; see also Reviewing the 
+Role of Pharmacy Benefit Managers in Pharmaceutical Markets Forum, House Comm. On Oversight and Reform 
+Minority, 117th Congress. (Nov. 17, 2021). 
+41 Supra note 2.  
+42 Press Release, H. Comm. on Oversight and Accountability, Comer Announces First Hearing on Pharmacy Benefit 
+Managers’ Role in Rising Health Care Costs (May 16, 2023).   
+43 Stacy Mitchell, How the FTC Protected the Market Power of Pharmacy Benefit Managers, ProMarket, (Feb. 19, 
+2021). 
+44 Nat’l Ass’n of Chain Drug Stores, DIR Fees, available at https://www.nacds.org/dir-fees/.  
+45 PBM Reform: It’s Time for Washington to Protect, WSPA available at https://www.wsparx.org/page/PBM. 
+46 Supra note 32. 
+===PAGE 12===
+Page | 12  
+ 
+“The outsized role PBMs take in the pharmacy space has caused many 
+problems for our patients and our practice. The three largest PBMs control 
+80 percent of the market today, which means patients are forced by PBMs 
+into using a certain pharmacy, often one owned and operated by the PBM, 
+or they may be forced to get their drugs through the mail even though they 
+want a pharmacist face -to-face in their community. Patients and their 
+doctors have virtually no say in what drugs are used, since the PBM 
+essentially forces which drugs can be used – not because a drug is better or 
+worse, but because the PBM can make more money from it.”
+47 – Kevin 
+Duane, PharmD, pharmacist and owner of Panama Pharmacy, 
+Jacksonville, Florida 
+ 
+These practices have sometimes violated state law, leading to enforcement actions and 
+legal settlements.  In January 2022, CVS Caremark agreed to pay $4.8 million to the Oklahoma 
+Insurance Department for alleged violations of Patient’s Right to Pharmacy Choice Act.
+48  In 
+March 2023, Ohio Attorney General Dave Yost sued Express Scripts, Prime Therapeutics and 
+five other PBMs for colluding to keep drug prices high and to exclude competing pharmacies 
+from their networks by forcing them to accept drug reimbursement rates “far below what they 
+have to pay for these drugs” and pay “exorbitant ‘administrative’ fees.”
+49  
+II. Retroactive Fees 
+“[Independent pharmacies] can be the center of a community. We are more 
+than just providing medication for people… We can help on things that they 
+can’t get into right away with their physicians. [Rising PBM fees are] huge. 
+Indescribable amount of chaos. We cannot adequately plan because of the 
+amount of money that is taken back  are”
+ 50 – Kevin Duane, PharmD, 
+pharmacist and owner of Panama Pharmacy, Jacksonville, Florida 
+ 
+Direct and Indirect Remuneration (DIR) fees are retroactively levied on pharmacies for 
+prescriptions purchased under Medicare Part D benefits.  DIR fees were intended in Medicare 
+Part D to ensure accurate reporting and payment for the actual cost of a drug and avoid over-
+reimbursement by the government.
+51  Instead, DIR fees are an avenue for PBMs and plan 
+sponsors to claw back or charge back pharmacies after a reimbursement claim has been 
+ 
+47 Supra note 32. 
+48 Oklahoma Ins. Dep’t, Press Release, OID Reaches $4.8 Million Settlement Agreement with CVS Caremark for 
+Alleged Violations of the Patient’s Right to Pharmacy Choice Act, Dependent on Federal Court Decision (Jan. 20, 
+2022). 
+49 News Release, Ohio Attorney General, Yost Sues Express Scripts, Prime Therapeutics and 5 Others, Blaming 
+Exorbitant Drug Prices on Their Collusion (Mar. 27, 2023).  
+50 Supra note 32. 
+51 DIR Fees, Frier Levitt Attorneys at Law, available at https://www.frierlevitt.com/what-we-do/pharmacy-law/dir-
+fees/#:~:text=PBMs%20typically%20utilize%20DIR%20fees,adjustments%2C%E2%80%9D%20or%20similar%20
+names 
+===PAGE 13===
+Page | 13  
+ 
+submitted.52  Retroactive fees are being manipulated by PBMs to increase profits and introduce 
+vast uncertainty for pharmacies that are hit with unpredictable fees that result in negative 
+reimbursement rates.53  
+ 
+ 
+Figure 4: Illustration of DIR Fees’ Impact on Pharmacy Business Operations54 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+One way that PBMs penalize competing independent and specialty pharmacies is by 
+basing DIR fees on opaque performance ratings, which are based on retail medication therapy 
+management and chronic disease management.
+55  For example, PBM rating systems grant higher 
+performance ratings to pharmacies that frequently dispense generics and “maintenance 
+medications” for chronic conditions such as hypertension or diabetes.56  As such, specialty 
+pharmacies, like in-house oncology clinics, receive low performance ratings and therefore higher 
+DIR fees.57  In July 2022, Aids Healthcare Foundation (AHF) sued Express Scripts alleging they 
+manipulated Medicare star ratings to ensure pharmacies get unfairly low scores, allowing 
+ 
+52 Pharmacy Direct and Indirect Renumeration (DIR) Fees: Recommendations for Reforms to Benefit Patients, 
+Pharmacists, and Government, McKesson, available at 
+https://www.mckesson.com/globalassets/mckesson/documents/about-mckesson/public-affairs/reining-in-pharmacy-
+dir-fees  
+53 Supra note 51. 
+54 Supra note 52. 
+55 True North Political Solutions, White Paper: DIR Fees Simply Explained, PHARMACY TIMES (Oct. 25, 2017). 
+56 Id. 
+57 Id.  
+
+===PAGE 14===
+Page | 14  
+ 
+Express Scripts to “claw back” Medicare benefits from pharmacies.  According to AHF, Express 
+Scripts was engaged in 14 different violations across nine states.58 
+ 
+“According to the government, these [Direct and Indirect Remuneration 
+(DIR)] fees increased by 107,400 percent from 2010 to 2020. This is a 
+travesty. You know what PBM really stands for? It stands for Pretty Big 
+Markups. We’ve got to stop this.” – Rep. Raja Krishnamoorthi (D-Ill.) 
+  
+In 2017, CMS released a fact sheet about the rise in DIR fees reported in recent years and 
+its impact on net drug costs.
+59  According to CMS, higher DIR fees lead to higher out-of-pocket 
+spending.60  DIR fees do not translate to cost-savings for Medicare beneficiaries, as they are not 
+reflected in the negotiated price that determines patient cost-sharing.61  Similarly, DIR fees do 
+not save taxpayers money since CMS is reimbursing the drug’s negotiated price, rather than the 
+price after DIR fees are applied.62  Additionally, higher out-of-pocket drug costs increase 
+Medicare plan liability as beneficiaries spend more towards their plan’s out-of-pocket 
+maximum.63  After out-of-pocket spending reaches a certain point ($8,000 in 2024), beneficiaries 
+enter the catastrophic coverage phase.64  Once a beneficiary falls under catastrophic coverage, 
+Medicare is responsible for all covered drugs for the remainder of that year.65 
+ 
+On May 3, 2023, CMS provided guidance for Medicare Part D sponsors on reporting DIR 
+data for contract year 2022.
+66  In the guidance, CMS highlighted concerns that risk-sharing 
+payments and adjustments, including all rebates, subsidies, and post-payment incentives, related 
+to supplemental coverage of Part D drugs were not being reported as DIR.67  It is important that 
+DIR data be reported to CMS accurately, as it determines payment reconciliation for costs 
+incurred by Part D sponsors for Part D drugs, net DIR fees.
+68  Under the new guidance, CMS 
+defines DIR broadly as “discounts, chargebacks, rebates, cash discounts, free goods contingent 
+on a purchase agreement, up-front payments, coupons, goods in kind, free or reduced-priced 
+services, grants, legal judgment amounts, settlement amounts from lawsuits or other legal action, 
+and other price concessions or similar benefits.”
+69  The 2024 DIR reporting guidance for contract 
+year 2023 contained no substantive changes from the previous year’s guidance.70 
+ 
+ 
+58 Paige Minemyer, AIDS Healthcare Foundation Sues Express Scripts over Medicare ‘Clawbacks’, FIERCE 
+HEALTHCARE (Jul. 14, 2022). 
+59 Fact sheet, Ctrs. for Medicare & Medicaid Servs., Medicare Part D – Direct and Indirect Remuneration (DIR) 
+(Jan. 19, 2017). 
+60 Id.  
+61 Id.); see also U. S GOV’T ACCOUNTABILITY OFF., GAO-23-105270, MEDICARE PART D: CMS SHOULD MONITOR 
+EFFECTS OF REBATES ON PLAN FORMULARIES AND BENEFICIARY SPENDING (Sept. 5, 2023). 
+62 Supra note 59. 
+63 Id.  
+64 Id. 
+65 Id. 
+66 Ctrs. for Medicare & Medicaid Servs., Final Medicare Part D DIR Reporting Guidance for 2022 (May 3, 2023). 
+67 Id.  
+68 Id.  
+69 Supra note 66.  
+70 Id. 
+===PAGE 15===
+Page | 15  
+ 
+In 2022, CMS promulgated a final rule impacting pharmacy price concessions for 
+Medicare Advantage (Part C) and Medicare Prescription Drug Benefit (Part D) effective January 
+1, 2024.71  The final rule mandates that all price concessions (including DIR fees) be included in 
+the “negotiated” final price that is paid by patients at the pharmacy counter, rather than being 
+retroactively charged.
+72 The rule was intended to provide greater transparency for patients and 
+pharmacies and “lower total beneficiary out-of-pocket costs,” according to CMS.73 However, 
+instead of benefiting pharmacies and patients, the rule has resulted in PBMs withholding 
+pharmacy reimbursement and reducing reimbursement rates below the cost of the medication.
+74  
+The reduced reimbursement is understood to be in response to the PBMs’ inability to collect 
+retroactive DIR fees.
+75 While the implementation of the rule is still ongoing, the initial impacts 
+indicate that PBMs are simply moving towards replacing DIR fees with reduced reimbursements 
+for competitor pharmacies and not reducing the price of drugs at the pharmacy counter.
+76 
+ 
+While CMS’ DIR reporting guidance and final rule were a step towards eliminating 
+unpredictable retroactive fees, these actions do not remove unfair fees entirely, nor increase 
+transparency into PBM fee policies.  Rather, DIR fees are instead applied to the point-of-sale 
+price paid by Medicare beneficiaries rather than being assessed on the pharmacy weeks or 
+months after a prescription is filled.
+77  As a result, Medicare beneficiaries’ out-of-pocket costs 
+increase, and pharmacies are underwater on the cost of dispensing certain drugs.  The 
+Department of Health and Human Services (HHS) Inspector General (IG) is currently auditing 
+CMS to determine if Part D sponsors are submitting accurate DIR reporting data to Medicare.
+78 
+ 
+III. Steering Patients to Pharmacies owned by PBMs 
+“PBMs use a variety of methods to steer patients away from unaffiliated 
+pharmacies. They create differential cost -sharing structures and arbitrary 
+lists, such as specialty and aberrant drug lists, among other schemes, to 
+limit independent pharmacies’ access  to patients.”
+79 – Hugh Chancy, 
+RPh, Owner, Chancy Drugs Pharmacy, Georgia 
+ 
+71 Contract Year 2023 Policy and Technical Changes to the Medicare Advantage and Medicare Prescription Drug 
+Benefit Programs; Policy and Regulatory Revisions in Response to the COVID-19 Public Health Emergency; 
+Additional Policy and Regulatory Revisions in Response to the COVID-19 Public Health Emergency, 87 Fed. Reg. 
+27,704 (May 9, 2022) (42 C. F. R. § 417, 422, 423). 
+72 Id.  
+73 Maia Anderson, ‘This is an Emergency’: Trade Group Warns Nearly a Third of all Independent Pharmacies Will 
+Go Extinct Because of a CMS Rule, FORTUNEWELL (Mar. 30, 2024).  
+74 Report for February 2024 Survey of Independent Pharmacy Owners/Managers, NCPA, available at 
+https://ncpa.org/sites/default/files/2024-02/Feb2024-DIRsurvey.Exec%20Summary.pdf 
+75 Letter from Community Oncology Alliance to Hon. Chiquita Brooks-LaSure, Adm’r, Ctrs. for Medicare & 
+Medicaid Servs. (Feb. 21, 2024), available at https://assets.mycoa.io/1709818057048_COA_CMS_Letter_ESI-
+UnreasonableREimbursementTerms_FINAL_Redacted_Sanitized.pdf 
+76  Id.  
+77 Supra note 66.  
+78 U.S. Dep’t of Health & Human Servs. Off. of Inspector Gen., Workplan, Part D Sponsors Reporting of Direct and 
+Indirect Renumerations, available at https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-
+0000249.asp.  
+79 Supra note 32. 
+===PAGE 16===
+Page | 16  
+ 
+ 
+PBMs limit patients’ abilities to choose their pharmacies.  The three largest PBMs each 
+own retail, mail-order, and specialty pharmacies that are “preferred” in-network under the 
+pharmacy benefit.80  PBMs steer patients to pharmacies they own by various means, including: 
+(1) preventing patients from receiving 90-day prescriptions at competing pharmacies; (2) abusing 
+data received by the PBM to target patients with highly profitable medications; (3) only covering 
+specialty medications if they are dispensed from a particular pharmacy; and (4) charging patients 
+higher copays at competing pharmacies to incentivize patients to use the PBM owned 
+pharmacy.
+81  Anticompetitive behavior harms patients and independent community pharmacies, 
+increasing drug prices for patients, employers, and government payers.82 
+ 
+PBM efforts to steer patients have resulted in significant recent litigation including in 
+April 2022, the Minnesota Department of Commerce initiated an enforcement action against 
+CVS Caremark for violations of the Pharmacy Benefit Manager Act, seeking to fine the 
+company $1.25 million.  The Department alleged CVS Caremark violated state laws protecting 
+patient choice by requiring patients to fill maintenance medications at CVS retail pharmacies or 
+Caremark-owned mail-order pharmacies.
+83 The State of Oklahoma is in active litigation against 
+the Pharmaceutical Care Management Association (PCMA), the trade association for PBMs, 
+attempting to uphold the state’s ability to prevent PBMs from, amongst other things, steering 
+patients to PBM-affiliated pharmacies over competing pharmacies.
+84  The case is presently being 
+appealed to the Supreme Court.  A bipartisan group of 32 Attorneys General have filed an 
+amicus brief urging the Supreme Court to take up the case and overrule the Tenth Circuit’s 
+decision that states are unable to regulate PBMs.85 
+ 
+ According to the Pharmacists Society of the State of New York, PBMs use various 
+tactics, most of which they contractually prohibit competing pharmacies from doing, to entice 
+patients to use PBM-owned pharmacies for long-term maintenance prescriptions.
+86  At their 
+mail-order pharmacies, PBMs will offer patients a 90-day prescription for the price of 60 days 
+while prohibiting a local community pharmacy from offering patients the same price.87  The 
+Committee’s investigation found examples of outreach to patients in which the PBM will claim 
+to save the patient 29 percent against the local pharmacy, even though that competing 
+pharmacy’s copays are set by the PBM.88  
+ 
+ 
+80 Press Release, Fed. Trade Comm’n, FTC Deepens Inquiry into Prescription Drug Middlemen (May 17, 2023). 
+81 Supra note 32.; see also Supra note 30.; see also Supra note 42.  
+82 Letter from B. Douglas Hoey, CEO, Nat’l Community Pharmacists Ass’n, to Hon. Lina Khan, Chair, Fed. Trad 
+Comm’n (May 23, 2022). 
+83 State moves to fine CVS/Caremark for patient protection law violations, NAT’L CMTY PHARMACISTS ASS’N (Apr. 
+29, 2022). 
+84 Press Release, The Office of Minnesota Attorney General, Attorney General Ellison Leads Effort Asking Supreme 
+Court to rule on States’ Authority to Regulate Pharmacy Benefit Managers (June 10, 2024).  
+85 Brief on Petition for a Writ of Certiorari to the U.S. Ct. of App. for the Tenth Cir., et al. as Amici Curiae 
+Supporting Petitioners, Pharm. Care Mgmt. Ass’n v. Mulready, 78 F.4th 1183 (10th Cir. 2023). available at 
+https://ncdoj.gov/wp-content/uploads/2024/06/Mulready-v.-PCMA-Amicus-Brief-Certiorari.pdf 
+86 PBM Basics, Pharmacists Society of the State of New York, Inc., available at 
+https://www.pssny.org/page/PBMBasics.  
+87 Id.  
+88 Express Scripts Fifth Production, ESI00012629 (Oct. 27, 2023) (on file with Comm.). 
+===PAGE 17===
+Page | 17  
+ 
+ 
+Figure 5: Express Scripts patient outreach for 90-day prescription89 
+Further, the Committee found examples of outreach templates that PBMs use to 
+incentivize patients to use PBM-owned pharmacies.  Below is an example of a letter that would 
+go out to a patient urging them to move their prescription to Express Scripts’ mail-order 
+pharmacy by providing patients the ability to save money and get more of the medication at 
+once.90  While this is made to appear to benefit the patient, what it is instead doing in practice is 
+limiting a patient’s ability to choose their own pharmacy.  Express Scripts can allow a competing 
+brick-and-mortar pharmacy to offer the medication for the same or a lower price and 90-days 
+instead of 30-days, and simply let the patient choose which pharmacy they want to use based on 
+higher quality care or ease of use.  But Express Scripts does not do so.  Instead, they use their 
+position as middlemen to shift long-term maintenance prescriptions to the pharmacies they own.  
+ 
+ 
+89 Id.  
+90 Express Scripts Fifth Production, ESI00012638-ESI00012645 (Oct. 27, 2023) (on file with Comm.). 
+
+===PAGE 18===
+Page | 18  
+ 
+Figure 6: Express Scripts directing patient to Express Scripts Pharmacy91  
+ 
+PBMs not only steer patients to mail-order pharmacies for long-term maintenance drugs 
+but they also specifically target patients with higher cost medications.  A recent review 
+commissioned by the Washington State Pharmacy Association found that filling prescriptions 
+through mail-order pharmacies in the State of Washington cost payers and patients more, despite 
+being touted as a savings benefit.
+92  This analysis found that in Washington, generic 
+prescriptions filled by mail-order cost more than three times higher and branded drugs three to 
+six times higher than if they were filled at traditional pharmacies.93  Alarmingly, branded mail 
+order drugs cost roughly 35 times higher than those filled by independent pharmacies.94  An 
+audit of Florida’s Medicaid managed care program found that PBM anticompetitive practices 
+that guide patients toward PBM-owned pharmacies charged higher prices on specialty drugs than 
+if they were filled at a competing pharmacy.
+95 
+ 
+Below is another example from Express Scripts illustrating just a small portion of the 
+data the three large PBMs have access to for any patient who uses them to manage their 
+pharmacy benefit:   
+ 
+ 
+91 Id. 
+92 Jared S. Hopkins, Mail-order drugs were supposed to keep costs down. It’s doing the opposite., WALL ST. J. (Jun. 
+25, 2024). 
+93 Id.  
+94 Id.  
+95 3 Axis Advisors, Sunshine in the Black Box of Pharmacy Benefits Management: Florida Medicaid Pharmacy 
+Claims Analysis, 126 (Jan. 27, 2020). 
+
+===PAGE 19===
+Page | 19  
+ 
+Figure 7: Express Scripts utilizing patient data to urge the patient to stop using competing pharmacy96 
+  
+Express Scripts not only has the name of a prescription a patient uses but also identifies 
+the costs, which they determine, to the patient.  This enables the PBM to undercut the competing 
+pharmacy for maintenance medications or push patients with high-cost medications to the PBM 
+owned pharmacy.  
+ 
+ Specialty medications are generally used to treat rare and complex health problems and 
+often require specialized storage and dispensing that is closely supervised by a provider.  
+However, there is no widely accepted definition of a specialty medication.  OptumRx policy 
+documents reviewed by the Committee state that specialty pharmacies are necessary for highly 
+complex medications.
+97  According to testimony, PBMs “create differential cost-sharing 
+structures and arbitrary lists, such as specialty and aberrant drug lists,” to shift certain, generally 
+highly profitable, medications to PBM owned pharmacies.
+98  
+ 
+Further, documents and testimony indicate that PBMs only view the specialty pharmacies 
+they own as necessary for treating patients.  When a non-PBM affiliated specialty pharmacy can 
+fill a specialty prescription, PBM coverage tactics shift patients to their affiliated specialty 
+pharmacies, even when it delays or interrupts patient care.99  In oncology and rheumatology 
+treatment, it is common for providers to prescribe high-cost intravenous drugs that are 
+ 
+96 Supra note 90.  
+97 Optum Rx Second Production, ORX-COA-00005477 (May 3, 2023) (on file with Comm.). 
+98 Supra note 32.  
+99 Joyce Frieden, PBM specialty pharmacy requirement hurting patients, specialists say, MEDPAGE TODAY (Aug. 
+23, 2022). 
+
+===PAGE 20===
+Page | 20  
+ 
+administered under the provider’s supervision.  In some instances, PBM specialty pharmacy 
+requirements have forced providers to delay treatments by requiring a prescription to be sent to 
+the PBM’s specialty pharmacy first before it can be shipped to the provider clinic to be 
+administered.100  This can result in delays of weeks or more. These delays, combined with the 
+limited formulary mandates, effectively decide which therapy is best for a sick patient and 
+removes decision-making authority from both providers and patients.  Medical providers, not 
+PBMs, know what treatments are best for their patients and the best venue in which to receive 
+them. 
+ 
+ 
+Spread Pricing 
+ 
+Rep. LaTurner:  “We have seen examples of PBMs engaging in spread 
+pricing. Where the PBM charges more than what they reimburse the 
+pharmacy and then pocket the difference. In my home of Kansas, 
+accusations of this practice were recently settled for $26.7 million dollars… 
+Do you believe that additional transparency in the price setting of drugs 
+important?”    
+ 
+Mr. JC Scott, CEO, Pharmaceutical Care Management Association: “Yes 
+transparency can be helpful.”
+101 
+ 
+PBMs regularly engage in spread pricing, a practice where the PBM charges payers more 
+than what the PBM reimburses the pharmacy, and the PBM pockets the difference, or 
+“spread.”
+102  Spread pricing is a common way that PBMs earn revenue.103  In Figure 8 below, the 
+PBM charges the payer $20 for a prescription but only pays $12 to the pharmacy.  The PBM 
+keeps the $8 spread as profit, and often does not disclose the spread to the payer or pharmacy.
+104 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+100 Id. 
+101 Supra note 32. 
+102 Spread Pricing 101, National Community Pharmacists Association available at https://ncpa.org/spread-pricing-
+101 (last accessed Sept. 1, 2023) 
+103 Supra note 36. 
+104 Todd Mizeski and Conor R. McCabe, Proposed Congressional Bill Seeks to Ban Spread Pricing in State 
+Medicaid Plans, FRIER LEVITT (April 12, 2023).  
+===PAGE 21===
+Page | 21  
+ 
+Figure 8: Spread Pricing Instituted by PBMs105 
+ 
+I. Medicaid and Private Health Insurance 
+“Another harmful, anticompetitive tactic employed by PBMs is spread 
+pricing, which refers to the difference between how much a PBM 
+reimburses the pharmacy for a drug and the higher price they turn around 
+and charge the plan for the same prescription. For ye ars, community 
+pharmacists have said that PBMs have been playing spread pricing games, 
+contributing to higher drug costs to the detriment of patients and the 
+taxpayer-funded programs the PBMs are supposed to serve.”
+106 – Hugh 
+Chancy, RPh, Owner, Chancy Drugs Pharmacy, Georgia 
+ 
+In spread pricing schemes, the payer can include private health insurance plans or, in the 
+case of Medicaid, the government.
+107  Most state Medicaid programs function as managed care 
+programs which pay a monthly rate per enrolled member to contracted managed care 
+organizations (MCOs).108  The MCOs then reimburse the provider for health services under the 
+terms of a Medicaid contract.109 MCOs often contract with PBMs to manage prescription drug 
+ 
+105 Ed Silverman, Spread Pricing: From Largely Unknown to Much Scrutinized and Criticized, MANAGED CARE 
+(Sept. 2019) available at https://lsc-
+pagepro.mydigitalpublication.com/publication/?i=613323&article_id=3460622&view=articleBrowser.  
+106 Supra note 32. 
+107 Supra note 102. 
+108 Hannah Maniates, Why did they do it that way? Understanding Managed Care, Nat’l Assoc. of Medical Dirs. 
+(Jan. 22, 2024). 
+109 Id.  
+
+===PAGE 22===
+Page | 22  
+ 
+benefits.110  Spread pricing occurs when “a PBM charges an MCO more for a drug than the 
+amount a PBM pays a pharmacy,” and the PBM pockets the difference.111   
+ 
+PBMs frequently tout the savings they provide for payers and patients through 
+negotiation, drug utilization programs, and drug discounts.  However, there are numerous 
+instances where state auditors have found significant spread pricing schemes that increase costs 
+for payers and patients.
+112  Multiple states have subsequently audited their Medicaid programs 
+due to concerns about spread pricing amid high Medicaid drug costs.113  In 2018, the Ohio 
+Attorney General found that Centene Corp., while managing Ohio’s Department of Medicaid 
+prescription drug program, engaged in spread pricing and cost the state program nearly $225 
+million.
+114  Ohio brought a lawsuit against Centene, who ultimately agreed to pay $88.3 million 
+to the state.115  Since that lawsuit, Centene has paid nearly $1 billion in 18 states over spread 
+pricing schemes.116 Centene had long contracted with CVS Caremark as its PBM and recently 
+moved to Express Scripts.117  In another audit, the HHS IG  found that PBMs in the District of 
+Columbia improperly kept $23.3 million in spread pricing from 2016-2019.118  In November 
+2022, Express Scripts agreed to pay $3.2 million to settle claims that they overcharged 
+Massachusetts’ workers’ compensation insurance system for prescription drugs.
+119   
+ 
+Due to its cost to taxpayers, several states have taken steps to prohibit spread pricing in 
+Medicaid managed care programs and congressional lawmakers have introduced multiple bills 
+that would prohibit spread pricing.
+120  The Congressional Budget Office (CBO) estimates that 
+eliminating spread pricing in Medicaid managed care organizations, as outlined in the Lower 
+ 
+110 Medicaid MCO PBM Pricing, U.S. Dep’t of Health and Human Services OIG available at 
+https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-
+0000434.asp#:~:text=Managed%20care%20organizations%20(MCOs)%20contract,drug%20benefits%20on%20thei
+r%20behalf  
+111 Catherine Candisky, State Report: Pharmacy Middlemen Reap Millions from Tax-funded Medicaid, THE 
+COLUMBUS DISPATCH (2018) available at  https://stories.usatodaynetwork.com/sideeffects/state-report-
+pharmacy-middlemen-reap-millions-from-tax-funded-medicaid/;  see also  Supra note 110.  
+112 Eric Pachman & Antonio Ciaccia, The cancerous design of the U.S. drug pricing system, 46Brooklyn (Jul. 2018); 
+see also U. S. DEP’T OF HEALTH & HUMAN SERVS. OFF. OF INSPECTOR GEN., THE DISTRICT OF COLUMBIA HAS 
+TAKEN SIGNIFICANT STEPS TO ENSURE ACCOUNTABILITY OVER AMOUNTS MANAGED CARE ORGANIZATIONS PAID TO 
+PHARMACY BENEFIT MANAGERS, A-03-20-00200 (Mar. 16, 2023). 
+113 U.S. DEP’T. OF HEALTH & HUMAN SERVICES OFF. OF INSPECTOR GEN., A-03-20-00200, THE DISTRICT OF 
+COLUMBIA HAS TAKEN SIGNIFICANT STEPS TO ENSURE ACCOUNTABILITY OVER AMOUNTS MANAGED CARE 
+ORGANIZATIONS PAID TO PHARMACY BENEFIT MANAGERS (March 2023).   
+114 News Release, Ohio Attorney General’s Office, Centene Agrees to Pay a Record $88.3 Million to Settle Ohio 
+PBM Case Brought by AG Yost (June 14, 2021); see also Supra note 36. 
+115 Id.  
+116 James Drew, Centene PBM Settlement with South Carolina raises total payout to $964.8M, ST. LOUIS BUS. J. 
+(Jan. 4, 2024). 
+117 Raghav Mahobe & Leroy Leo, Centene to Cut Costs with New Pharmacy Benefit Manager, Shares Jump, 
+Reuters (Oct. 25, 2022).  
+118  Supra note 113. 
+119 Brendan Pierson, Express Scripts to Pay $3.2 Mln to Settle Massachusetts Overcharge Claims, REUTERS (Nov. 7, 
+2022). 
+120 Erin Slifer and Alyssa Llamas, Bipartisan Congressional Support for PBM Reform Grows, THE 
+COMMONWEALTH FUND (June 21, 2023). 
+===PAGE 23===
+Page | 23  
+ 
+Costs, More Transparency Act of 2023,121 would reduce federal spending by $1.1 billion over 
+ten years.122 
+II. Impacts on Pharmacies 
+Problems with spread pricing also manifest in pharmacy networks where PBMs can 
+require patients to use PBM-owned or affiliated “preferred”  pharmacies with more favorable 
+reimbursement contracts.123  Due to PBMs’ role as middlemen reimbursing competing 
+pharmacies for dispensing drugs, PBMs can reimburse pharmacies they own more than they 
+reimburse competing pharmacies, such as community and independent pharmacies.124  In a 
+healthy market this would typically result in the competing pharmacies simply contracting with 
+other PBMs, they are unable to do so because of the consolidation.
+125  Therefore, community and 
+independent pharmacies are left with no choice but to contract with PBMs, otherwise, they could 
+not serve their customers and remain in business.126  The contracts between PBMs and 
+independent and community pharmacies are opaque and often designed to hurt a competing 
+pharmacy’s business, sometimes leading to business closure.
+127   
+ 
+Express Scripts’ contracts beginning in 2024 instituted indefinite reimbursement rates for 
+Medicare Part D participants, meaning that there is no contractual guarantee for consistent 
+reimbursements for a drug.
+128  For example, Express Scripts’ average reimbursement on branded 
+specialty drugs for cancer treatments to independent community oncologists is less than the cost 
+of acquiring the drug, by an average of between 22 and 26 percent less than average wholesale 
+price.129  As a result, pharmacies are absorbing up to 11.5 percent of a drug’s cost to dispense 
+high-cost, life-saving treatment to patients.130  Independent pharmacies are taking a loss to 
+dispense medications to save patient’s lives. They have no way to know what the reimbursement 
+rates will be on a given day for a given medication, and they have no accountability measures to 
+determine if their reimbursement rates are the same as competing pharmacies or pharmacies 
+owned by the PBMs.  Neither these pharmacies, nor their patients, know what the PBM is 
+charging their clients on these medications. 
+ 
+Between 2010 and 2018, roughly 6 percent of independent pharmacies closed in the 
+United States.
+131  Furthermore, the Rural Policy Research Institute “found that reimbursements 
+[to pharmacies] under the cost of [a drug’s] acquisition led to the closure of 1,231 independent 
+pharmacies in rural areas between 2003 and 2018.  As a result, 630 rural communities 
+ 
+121 H.R.5378 - 118th Congress (2023-2024): Lower Costs, More Transparency Act (2023). 
+122 CONG. BUDGET OFF., ANSWERS TO QUESTIONS FOR THE RECORD FOLLOWING A HEARING ON HEALTH CARE 
+SPENDING (Mar. 22, 2024), available at https://www.cbo.gov/publication/60133.  
+123 Supra note 80; see also  Supra note 86; PBM Abuses, Nat’l Cmty. Pharmacists Ass’n, available at 
+https://ncpa.org/sites/default/files/2020-12/pbm-business-practices-one-pagers.pdf. 
+124  Supra note 86. 
+125  Id. 
+126 Id.  
+127 Arthur Allen, What to know about the drug price fight in those TV ads, NPR (July 7, 2023). 
+128  Supra note 75.  
+129 Express Scripts as Primary Plan Name – 2024, Average Script – Branded Specialty Drugs (Documents on file 
+with the Comm.). 
+130 Id. 
+131  Supra note 123. 
+===PAGE 24===
+Page | 24  
+ 
+nationwide that had at least one retail pharmacy in 2003 had zero retail pharmacies in 2018.”132  
+In urban areas, 1 in 8 pharmacies closed between 2009 and 2015 due to “lower-than-cost 
+reimbursements in the Medicaid and Medicare programs, disproportionately affecting 
+independent pharmacies and low-income neighborhoods.”133  When independent pharmacies 
+close, patients are forced to travel further or pay more to receive their medications. 
+ 
+Rebates and Fees 
+ 
+“When PBMs pursue varying rebate agreements with plan sponsors, 
+coverage of generics is delayed and patients suffer as a result. These delays 
+in coverage restrict patient access to lower -cost generics and expose 
+patients to unnecessarily high cost -sharing, even though lower -cost 
+alternatives are available .”
+134 – Craig Burton, Executive Director, 
+Biosimilars Council 
+  
+Drug rebates are partial refunds, or “after-the-fact payments, usually calculated as a 
+percentage of a drug’s list price” paid by the drug manufacturers to PBMs.135  CVS Caremark 
+reports on its formularies that it “may receive rebates, discounts, and service fees from 
+pharmaceutical manufacturers for certain listed products.”
+136  Rebates for prescription 
+medications were first provided safe harbor in 1987 when Congress amended the Anti-Kickback 
+Statute and directed the Secretary of HHS to immunize certain practices from prosecution and 
+create guardrails to prevent abuse.137  Thereafter, the Secretary of HHS delegated this authority 
+to the HHS IG, who promulgated rules delineating the safe harbors and appropriate guardrails.138  
+After significant litigation and confusion in the 1990s, the HHS IG revised the rule to what it 
+remains today.139  The system these regulations have created allow retrospective rebates to be 
+conditioned on a PBM manipulating the market to shift market share to one medication over 
+another, even if those medications are less expensive.140  PBMs have argued that these rebates 
+are vital to driving down the cost of prescription drugs,141 however spending on prescription 
+drugs has increased nearly every year since.142 
+ 
+ 
+ 
+132 Id. 
+133  Id.  
+134 Supra note 32. 
+135 Supra note 17. 
+136 See e.g., CVS Caremark First Production, CCM00000023 (March 31, 2023) (on file with Comm.). 
+137 Medicare and Medicaid Patient and Program Protection Act of 1987, Pub. L. 100-93, 101 Stat. 680 (1987).  
+138 57 FR 3330, Federal Register, available at https://www.federalregister.gov/citation/57-FR-3330.  
+139 42 C.F.R. 1001.952(h)(4), Code of Federal Regulations (July 09, 2024), available at 
+https://www.ecfr.gov/current/title-42/chapter-V/subchapter-B/part-1001/subpart-C/section-1001.952 
+140 Thomas R. Barker & Ross Margulies, The History of Rebates in the Drug Supply Chain and HHS’ Proposed Rule 
+to Change Safe Harbor Protection for Manufacturer Rebates, Foley Hoag LLP (Apr. 2019).   
+141 Prescription Drug Rebates, PCMA available at https://www.pcmanet.org/prescription-drug-rebates.  
+142 Prescription Drug Expenditure in the United States From 1960 to 2022, Statista, available at 
+https://www.statista.com/statistics/184914/prescription-drug-expenditures-in-the-us-since-1960  
+===PAGE 25===
+Page | 25  
+ 
+Figure 9: Prescription Drug Expenditure in the United States from 1960-2022143 
+ 
+The largest PBMs have significantly more leverage when negotiating rebates compared 
+to smaller PBMs and should be able to command higher rebates.144  PBM rebate retention rates 
+vary by company and contract.  The result should be greater savings for patients who receive 
+benefits from these PBMs.  However, this does not appear to be the case.  The image below 
+shows how much it costs to purchase a 30-day supply of a generic chemotherapy drug, Imatinib, 
+from Cost Plus Drugs versus CVS.  Purchasing this drug from Cost Plus Drugs instead of CVS 
+saves a patient or health insurance company hundreds of thousands of dollars each year. 
+ 
+Figure 10: Cost Comparison between Cost Plus Drugs and CVS Pricing for Imatinib145 
+ 
+143  Id.  
+144 S. FIN. COMM., STAFF REPORT, INSULIN: EXAMINING THE FACTORS DRIVING THE RISING COST OF A CENTURY 
+OLD DRUG (Jan. 14, 2021). 
+145 Greg Baker, Written Testimony: Role That Pharmacy Benefit Managers (PBMs) Play in the Pharmaceutical 
+Market (May 23, 2023) available at https://oversight.house.gov/wp-content/uploads/2023/05/AffirmedRx-
+Testimony-to-the-House-Committee-on-Oversight-and-Accountability-May-2023.pdf 
+
+===PAGE 26===
+Page | 26  
+ 
+ 
+ 
+In 2020, a University of Southern California study found a direct correlation between 
+rebate increases and manufacturer price increases: a $1 increase in rebates corresponds with a 
+$1.17 increase in drug list price, “suggest[ing] that rebates do play a role in increasing list 
+prices.”
+146  During a September 2023 Committee hearing, Representative Grothman (R-Wis.) 
+discussed the role of rebates on insulin affordability with Lori Reilly, Chief Operating Officer, 
+Pharmaceutical Research and Manufacturers of America:147 
+ 
+Rep. Grothman: Insulin has been a growing concern for Americans.  How 
+have PBM practices such as rebate negotiations impact the affordability of 
+insulin for patients with diabetes? 
+ 
+Ms. Reilly: The net price of insulin has actually decreased… But most 
+patients haven’t felt that, again, because PBMs insist on charging patients 
+a full list price of the medicine and not the negotiated rate. The typical 
+insulin has a rebate of about 84 percent, which is 84 percent lower than 
+what patients are being asked to pay. The PBMs have not had an interest in 
+putting lower priced insulin on the market. 
+ 
+An alternative PBM market has emerged that provides a more transparent and cost-saving 
+alternative to traditional PBM business model.  Like a traditional PBM, transparent PBMs 
+provide employers, plan sponsors, and insurers with access to prescription drug benefits for their 
+clients.  However, transparent PBMs have clear pass-through business models which provide 
+more direct, clear contracts; frequent opportunities for the client to audit the PBM; fair copays; 
+almost no limitations on client’s access to PBM data; and 100 percent pass-through of rebates.
+148  
+Instead of relying on rebates and mark-ups, many Transparent PBMs’ derive their revenue from 
+flat administrative fees, removing the conflicts of interest that can drive up the costs of 
+prescriptions.149  As a result, transparent PBMs are very effective at negotiating rebates and 
+discounts with drug companies that result in reduced out-of-pocket costs for patients.  For 
+example, Transparency Rx, a coalition of Transparent PBMs, provides clients with 163 percent 
+savings on high blood pressure and heart medications, 184 percent savings on medications for 
+Type 2 diabetes, and 195 percent savings on statin drugs for cholesterol, compared to traditional 
+PBMs.
+150  With transparent contract terms, access to information, and the ability to audit the 
+PBM, payers can verify that they are not paying hidden fees and are actually receiving the 
+PBMs’ promised cost-savings.151 
+ 
+146 Supra note 17.  
+147 Supra note 32. 
+148 Rx Preferred Benefits, Pharmacy Benefits Management, available at https://rxpreferred.com/solutions/pbm-
+services; see also Alliance of Community Health Plans, A Unique Approach: Transparent PBMs (Apr. 5, 2019), 
+available at https://achp.org/wp-content/uploads/PBM-Infographic_4.5.19.pdf 
+149 Id. 
+150 Transparency Rx, Transparency Bridges Gaps, available at https://transparency-rx.com 
+151 Supra note 148.  
+===PAGE 27===
+Page | 27  
+ 
+I. Formulary Manipulation and Abuse  
+“Lack of transparency and the complexity of rebates and fees can make it 
+difficult for plan sponsors to assess whether they are fully benefiting from 
+all price concessions that PBMs negotiate on their behalf.”152 – Lori Reilly, 
+Chief Operating Officer, Pharmaceutical Research and Manufacturers 
+of America 
+  
+ PBMs are responsible for developing formularies, which are lists of drugs that are 
+covered under a health insurance plan.
+153  Formularies are typically divided into four tiers, with 
+Tier 1 including generic drugs and having the lowest copay, and Tier 4 including unique or 
+specialty drugs (e.g., chemotherapy) with the highest out-of-pocket cost.
+154  Since these tiers 
+differ in their cost-sharing amounts, beneficiaries are encouraged to use drugs on the lower tiers 
+when possible.155  Drug manufacturers have a clear financial incentive to secure access on a plan 
+sponsor’s formulary: being included on a formulary, especially in a lower tier, means that more 
+people will have access to the manufacturers’ drugs at lower costs.
+156  For health conditions and 
+diseases, like diabetes, that can be treated by several similar drugs, it is even more important for 
+a manufacturer to be covered on a formulary.157   
+ 
+The Committee found evidence that while each PBM conducts an extensive review of the 
+safety and clinical efficacy of a medication when designing its formularies, each PBM places 
+strong considerations on the financials of a medication when determining what tier to place the 
+medication.  For clarity, these financials do not automatically prioritize medications that are 
+lower costs for plans or patients, but instead prioritize the financial benefit a PBM can obtain by 
+placing the medication in a more desirable tier. 
+ 
+Optum Rx designs its formularies by starting with its National Pharmacy & Therapeutics 
+Committee (P&T), which consists of physicians and pharmacists, not employed by Optum Rx, 
+who “evaluate existing and emerging drugs based on scientific evidence, and review and 
+appraise those drugs in an unbiased and evidenced-based way.  A drug’s cost plays no role in the 
+P&T Committee’s clinical review, only becoming relevant after the P&T Committee has 
+identified drugs in a particular therapeutic class that are clinically effective and should be 
+covered.”
+158  According to a P&T Committee charter, drugs are selected and sorted on the 
+Optum Rx formulary based on “economic considerations” only after safety, efficacy, and 
+therapeutic need have been established.”
+159   
+ 
+ 
+152 Supra note 32. 
+153  Supra note 144.  
+154 Understanding Drug Tiers, PATIENT ADVOCATE FOUNDATION, https://www.patientadvocate.org/explore-our-
+resources/understanding-health-insurance/understanding-drug-tiers/. 
+155  Supra note 59. 
+156  Supra note 144.  
+157  Id. 
+158 Letter from Michael D. Bopp, Partner, Gibson, Dunn & Crutcher LLP, to James Comer, Chairman, H. Comm. on 
+Oversight & Accountability (March 15, 2023). 
+159 Optum Rx Second Production, ORX-COA-00005226-ORX-COA-00005235 (May 3, 2023) (on file with 
+Comm.). 
+===PAGE 28===
+Page | 28  
+ 
+After the P&T Committee has met and provided, Optum Rx turns to the Formulary 
+Management Committee and Business Implementation Committee.160  The Formulary 
+Management Committee is described as an internal leadership group that “makes 
+recommendations on the placement of an FDA-approved prescription drug to an assigned tier” 
+and whether any exclusion programs, and utilization management programs such as prior 
+authorization, quantity limits, and step therapies, that have been recommended by the P&T 
+Committee should be applied.161  The Formulary Management Committee’s recommendations 
+include considerations of “clinical, economic, and pharmacoeconomic evidence on a 
+heterogeneous population, including information from the Optum Rx P&T Committee and 
+supporting financial analyses.”
+162 Whereas the P&T Committee meetings are transparent and 
+open to the public,163 the Formulary Management Committee is not, despite its role in 
+considering “financial effect…to set final formulary tiering.”164  After the Formulary 
+Management Committee recommendations are made, the decisions are sent to the Business 
+Implementation Committee and implemented into plan policies.165  
+ 
+Express Scripts works with payers to design formularies and gives its clients the option to 
+use one of Express Script’s standard formularies or create a custom formulary.166  Its most 
+popular formulary, the Express Scripts National Preferred Formulary, is used by clients that 
+cover 21 million people.  Clients covering an additional 4 million lives utilize one of Express 
+Scripts’ other standard formulary options.  
+ 
+Express Scripts uses a process to develop formularies that incorporates three Committees: 
+the Therapeutic Assessment Committee, the National P&T Committee, and the Value 
+Assessment Committee.
+167  The process starts with the Therapeutic Assessment Committee, 
+consisting of “clinical pharmacists and physicians who are employed by Express Scripts,” which 
+reviews scientific literature and data168 on new medications and then makes a formulary 
+placement recommendation to the P&T Committee.169  The P&T committee, comprised of 
+“practicing physicians and pharmacists not employed by Express Scripts,” reviews formulary 
+placement for all new and old medications.170  Thereafter these recommendations go to the 
+Value Assessment Committee, consisting of “Express Scripts’ employees from formulary 
+management, product management, finance, and clinical account management.”
+171  The Value 
+ 
+160 Optum Rx Second Production, ORX-COA-00002078- ORX-COA-00002087 (May 3, 2023) (on file with 
+Comm.). 
+161 Optum Rx Second Production, ORX-COA-00005268- ORX-COA-00005276 (May 3, 2023) (on file with 
+Comm.). 
+162 Id. 
+163 Optum Rx Second Production, ORX-COA-00005321 (May 3, 2023) (on file with Comm.). 
+164 Optum Rx Second Production, ORX-COA-00005323 (May 3, 2023) (on file with Comm.). 
+165 Supra note 160. 
+166 Letter from Christopher J. Armstrong, Partner, Holland & Knight, to James Comer, Chairman, H. Comm. on 
+Oversight & Accountability (Mts arch 16, 2023). 
+167 Express Scripts First Production, ESI00000001-ESI00000005 (April. 6, 2023) (on file with Comm.). 
+168 “The drug evaluation documents include, at a minimum: a summary of the pharmacology, safety, efficacy, 
+dosage, mode of administration, and the relative place in therapy of the medication under review compared to other 
+pharmacologic alternatives.” Id. 
+169 Id.  
+170 Id. 
+171 Id. 
+===PAGE 29===
+Page | 29  
+ 
+Assessment Committee considers the “value of drugs by evaluating the net cost, market share, 
+and drug utilization trends of clinically similar medications,” and has the authority to designate a 
+medication as “include” or “exclude” from all formularies, not on the basis of whether it benefits 
+patients, but the economics of the medication.172  While the P&T Committee can ignore a 
+recommendation by the Value Assessment Committee for inclusion or exclusion, the Committee 
+did not receive documents illustrating that the P&T does so.
+173  Instead, evidence suggests that 
+decisions were often made based on the economics of a medication, rather than its benefit to 
+patients or affordability.
+174 
+ 
+CVS Caremark develops and reviews formularies in a similar manner to Optum Rx and 
+Express Scripts.  The Trade Relations Group first submits formulary recommendations to the 
+Formulary Review Committee, who in turn submits template formularies to the P&T 
+Committee.
+175  All CVS Caremark template formularies are reviewed and approved on a 
+quarterly basis.176  Additionally, 11 percent of CVS Caremark’s clients choose to use a custom 
+formulary.177 
+ 
+The Formulary Review Committee is an internal CVS Caremark committee responsible 
+for evaluating business factors that can affect a formulary, such as utilization trends, the potential 
+impact of generic drugs or drugs slated to become available over the counter, brand and generic 
+pipeline, line of business, plan sponsor cost, applicable manufacturer agreement, and the 
+potential impact on members.
+178  For example, “when an A-rated generic becomes available, it is 
+typically considered preferred and…encouraged.”179  The Formulary Review Committee takes 
+these factors and uses them to make business recommendations to the P&T Committee, and the 
+P&T Committee must approve all recommendations before they can be included on a 
+formulary.
+180    
+ 
+The P&T Committee is an advisory body independent of CVS Caremark and is 
+comprised of nineteen physicians and three pharmacists; the twenty-two members are not 
+employees of CVS Caremark.
+181  The P&T Committee is “supported by the CVS Caremark 
+Clinical Formulary Department,” which houses clinical pharmacists who prepare drug 
+monographs and therapeutic class reviews based on a clinical literature review.
+182  The P&T 
+Committee bases its decisions on “scientific evidence, standards of practice, peer-reviewed 
+ 
+172 Id. 
+173 Id. 
+174 Express Scripts First Production, ESI00000266 (April. 6, 2023) (on file with Comm.).; – Januvia (peptidase-4 
+inhibitor), test strips, insulin, ESI00000271 Multiple Sclerosis (Aubagio, Tecfidera, Gilenya, Mayzent 
+175 Letter from Nicholas L. McQuaid, Partner, Latham & Watkins, to James Comer, Chairman, H. Comm. on 
+Oversight & Accountability (July 14, 2023). 
+176 Id. 
+177 Letter from Nicholas L. McQuaid, Partner, Latham & Watkins, to James Comer, Chairman, H. Comm. on 
+Oversight & Accountability (May 10, 2024). 
+178 CVS Caremark Seventh Production, CCM00024472 (Dec. 29, 2023) (on file with Comm.). 
+179 CVS Caremark Seventh Production, CCM00024473 (Dec. 29, 2023) (on file with Comm.). 
+180 Supra note 178. 
+181 Supra note 178.; see also CVS Caremark Seventh Production, CCM00024470-CCM00024471 (Dec. 29, 2023) 
+(on file with Comm.). 
+182 CVS Caremark Seventh Production, CCM00024471 (Dec. 29, 2023) (on file with Comm.). 
+===PAGE 30===
+Page | 30  
+ 
+medical literature, accepted clinical practice guidelines, and other appropriate information.”183  
+CVS Caremark works to make sure that the P&T Committee does not have access to or consider 
+information regarding CVS Caremark’s “rebates, negotiated discounts, or net costs.”184 
+ 
+ PBMs also maintain exclusion lists, which are drugs that are not included on 
+formularies.
+185  For example, in 2021, Express Scripts excluded approximately 400 drugs from 
+its formularies.186  When a drug is excluded from a formulary, it will not be covered by the 
+insurer.187  This forces patients to either switch to another drug, potentially affecting health 
+outcomes, or pay out-of-pocket, which is often unsustainable.188 
+ 
+ One example of PBM market manipulation was evident in documents reviewed by the 
+committee which indicate that Express Scripts was discussing how to shift patients from 
+medications going off patent exclusivity to other high-cost medications: 
+ 
+Figure 11: Express Scripts internal document indicating how they would shift claims to more 
+lucrative medications
+189 
+ 
+ 
+183 Id.  
+184 Id. 
+185  Supra note 144. 
+186  Supra note 144.  
+187 Id. 
+188 Id.  
+189 Express Scripts Eighth Production, ESI00012723-00012724 (June. 14, 2024) (on file with Comm.). 
+
+===PAGE 31===
+Page | 31  
+ 
+ PBMs often claim that the threat of exclusion or the benefit of being a “preferred” 
+product typically allows them to extract greater rebates from manufacturers.190  While this may 
+be the case, the Committee found that PBMs often choose higher cost medications for their 
+formularies costing patients more at the counter, employers more to subsidize their prescription 
+drug plans, and taxpayers more for federal health care programs.  In reviewing standard 
+formularies for 2020, 2021, and 2022, from the three largest PBMs, the Committee found 300 
+examples, which can be found in the Appendix to the report, of the three largest PBMs preferring 
+medications that cost at least $500 per claim more than the medication they excluded on their 
+formulary.  While some of these decisions likely have valid clinical reasons, the sheer quantity 
+and dramatic increase in costs highlight the priority of PBMs.  
+ 
+ In total, the Committee identified more than 1000 examples of medications that, 
+according to Medicare Part D data, would have been less expensive had the excluded medication 
+been given preference or simply able to compete on a level playing field. 
+II. Rebates Effects on Biosimilars and Competition  
+“There is significant evidence from the [Office of the Inspector General], 
+[Federal Trade Commission] , [Government Accountability Office],  of a 
+number of different practices that PBMs utilize that make it harder for 
+companies to reduce the list price of their medicines… The Wall Street 
+Journal noted just this past week that [PBMs] often overcharge. So I believe 
+there is a pattern of behavior that has been well documented that 
+demonstrates the large challenges that exist with PBMs that is not to the 
+benefit of patients but to the detriment.” – Lori Reilly, Chief  Operating 
+Officer, Pharmaceutical Research and Manufacturers of America 
+ 
+Drug rebate payments are a PBM negotiation tool used to promote utilization of 
+expensive brand drugs.
+191  Rebates paid to PBMs are typically a percentage of a drug’s list price, 
+so PBMs have an incentive to select more expensive drugs for formulary status.192  A January 
+2023 report released by the Association for Accessible Medicines (AAM) revealed that PBMs 
+block patient access to lower-cost generic drugs in favor of higher priced brand drugs with high 
+rebates.
+193  PBMs also have a financial incentive to promote the use of expensive medications 
+and encourage drug list-price increases in order to increase their profits. 194  Drug manufacturers 
+are increasing drug list prices to satisfy PBMs’ demands for higher rebates. 195  New generic 
+ 
+190 PBM Tools Will Save Health Plan Sponsors and Consumers More than $1 Trillion on Prescription Drug Costs, 
+PCMA, available at https://www.pcmanet.org/pbm-tools.  
+191 Deirdre MacBean, How high prescription drug rebates can derail pharmacy benefit plans, HEALTHPARTNERS 
+available at https://www.healthpartners.com/plan/blog/prescription-drug-rebates-and-pbms (last accessed: May 16, 
+2023).  
+192 Joanna Shepherd, Pharmacy Benefit Managers, Rebates, and Drug Prices: Conflicts of Interest in the Market for 
+Prescription Drugs, YALE LAW & POLICY REVIEW, Vol. 38 (Jan. 1, 2019).  
+193 Study Finds Middlemen Increasingly Block Patient Access to New Generics, ASS’N FOR ACCESSIBLE MEDICINES 
+(Jan. 23, 2023) available at https://accessiblemeds.org/resources/press-releases/middlemen-block-patient-access-
+new-generics.   
+194 Supra note 192. 
+195 Id.  
+===PAGE 32===
+Page | 32  
+ 
+drugs are experiencing historically slow adoption by patients directly resulting from PBM 
+coverage decisions to prefer higher priced drugs with high rebates over lower list price drugs. 196  
+During the Committee’s second hearing on PBM practices, Representative Gary Palmer (R-Ala.) 
+discussed the negative impact of PBM rebates on the availability of prescription drugs with Craig 
+Burton, Executive Director of the Biosimilars Council.197 
+ 
+Rep. Palmer: So, what you are saying is rebates have a negative impact on 
+patients? 
+ 
+Mr. Burton: Yes, sir. 
+ 
+Rep. Palmer: So, what you are saying to the Committee is that this price 
+setting could impact the availability of certain generic drugs… This is a 
+confusing game that is being played. What I don’t want to get lost in all this 
+is that the patient is not the number one concern here. 
+ 
+Mr. Burton: I think that’s right… There seems to be an assumption that a 
+general brand drug will just stay on the market. That isn’t the case. 
+ 
+ Biologics can be used to treat a myriad of illnesses, such as psoriasis, diabetes, and 
+cancer.
+198  They are also some of the costliest prescriptions dispensed in the United States.199 
+Only two percent of Americans use biologics, yet they account for approximately 40 percent of 
+prescription drug spending.200  A less expensive alternative to biologics are biosimilars, a type of 
+biologic medicine that “is highly similar to a biologic medicine already approved by the FDA” 
+and which “have no clinically meaningful differences from the [biologic].”201  They are 
+analogous to generic drugs: a biosimilar is to a biologic what a generic drug is to a brand name 
+drug.   
+ 
+ A consequence of rebates and exclusion lists is that they create a barrier to market entry 
+for biosimilars.
+202  Biosimilars are often excluded from a formulary or are listed on higher tiers 
+of the formulary, which makes them more expensive for plans and patients.203  For example, 
+Amgen, a biotechnology company, recently launched Amjevita, the first non-interchangeable 
+biosimilar of Humira.204  The company launched both a high-list, high-rebate version of the drug 
+and a low-list, low-rebate version of the drug.  Most PBMs and plan sponsors have opted for the 
+ 
+196 Supra note 193.  
+197 Supra note 32. 
+198 Overview for Health Care Professionals, U.S. FOOD & DRUG. ADMIN. (last updated Dec. 13, 2022) available at 
+https://www.fda.gov/drugs/biosimilars/overview-health-care-professionals. 
+199 Biosimilars Handbook, BIOSIMILARS COUNCIL available at https://www.biosimilarshandbook.org/patient-
+learning-track. 
+200 Id. 
+201 Biosimilar Basics for Patients, U.S. Food & Drug Admin. (last updated Aug. 10, 2023).  
+202 Supra note 17.  
+203 Laura Joszt, Margaret Rehayem: Rebates Remain Influential and a Barrier to Biosimilar Adoption for 
+Employers, AJMC (Apr. 28, 2023). 
+204 Leigh Ann Anderson, Is Amjevita Interchangeable with Humira?, DRUGS.com (last updated Apr. 30, 2024).  
+===PAGE 33===
+Page | 33  
+ 
+high-list, high-rebate version.205  The adoption of higher priced versions of drugs will garner 
+higher rebates for PBMs while patients end up paying more out-of-pocket and taxpayers pay 
+more in government run programs such as Medicare and TRICARE.206  
+ 
+ This practice is not reserved for taxpayer funded health care programs.  In emails 
+reviewed by the Committee, staff at Express Scripts highlighted that their account teams should 
+not discuss Humira with their clients “due to rebate impact with Abbvie.”207  These emails also 
+expose that even though PBMs have the market power to negotiate when a biosimilar comes on 
+the market, their negotiations do “not translat[e] to savings or value worth moving against the 
+innovator.”208  In fact, for plan year 2023, as biosimilars to Humira come to market, Express 
+Scripts used its market power to offer biosimilars at the same price as Humira.209 
+ 
+Figure 12: Email from Express Scripts VP for Formulary highlighting that biosimilars would be offered at the same 
+price as Humira210 
+ 
+  
+These comments raise questions as to why they are unable to extract savings from manufacturers 
+when PBMs exert control over the market.  In this case, Express Scripts used its market power to 
+keep all net prices the same, therefore exacting a higher rebate while keeping list prices, and 
+therefore the patient’s copay, higher.   
+ 
+III. PBMs’ creation of foreign business entities to hide rebates and fees   
+  
+In the past five years the three largest PBMs have created group purchasing organizations 
+(GPOs) and moved to centralize negotiation with pharmaceutical manufacturers for rebates and 
+ 
+205 Adam J. Fein, The Warped Incentives Behind Amgen’s Humira Biosimilar Pricing – And What We Can Learn 
+from Semglee and Repatha, DRUG CHANNELS (Feb. 7, 2023).   
+206 Id. 
+207 Express Scripts Eight Production, ESI00012756 (June. 14, 2024) (on file with Comm.). 
+208 Express Scripts Eight Production, ESI00012766 (June. 14, 2024) (on file with Comm.). 
+209 Express Scripts Eight Production, ESI00013648 (June. 14, 2024) (on file with Comm.). 
+210 Id. 
+
+===PAGE 34===
+Page | 34  
+ 
+fees.211  These organizations are not only providing negotiation services for these three PBMs 
+but also for many smaller PBMs as well.212  On its face this seems like a move which would 
+enable the PBMs to better leverage their and other PBM’s negotiating powers to obtain steeper 
+drug discounts.213  However, two of the three GPOs were formed in foreign countries known for 
+their lack of financial transparency and low tax rates.  Express Scripts created the GPO Ascent 
+Health Services (Ascent), based in Switzerland and Optum Rx created Emisar Pharma Services 
+(Emisar), based in Ireland.214 
+ 
+Figure 13: PBM-owned Group Purchasing Organizations and PBM Participation215 
+ 
+Why have these PBMs created GPOs based abroad, when they could easily have created 
+them in the United States?  According to reports, Express Scripts’ motivations for basing Ascent 
+in Switzerland was likely for “[t]ax efficiency” and to “[l]everage GPO safe harbor rules to avoid 
+rebate reform and enable Express Scripts to collect GPO admin fees.”216  Similarly, experts 
+believe that Optum Rx’s decision to base Emisar in Ireland was because they stood “to lose a lot 
+if they got regulated on rebates…[c]reating another organization that’s offshore, they can protect 
+their interests.”217  It appears that the PBMs created these entities with the sole intent to limit 
+transparency and avoid regulations on rebates.   
+ 
+211 Adam J. Fein, Five (or Maybe Six?) Reasons that the Largest PBMS Operate Group Purchasing Organizations, 
+DRUG CHANNELS (May 24, 2023). 
+212 Id.  
+213 Id. 
+214 Id. 
+215 Id. 
+216 Adam J. Fein, Drug Channels News Roundup, May 2019: Express Scripts’ New GPO, More on 
+Amazon/PillPack, a BS Update, and Vegas Video, DRUG CHANNELS (May 30, 2019).   
+217 Deborah Abrams Kaplan, PBMs are Creating GPOs, and Stirring Debate as to Why, MHE Publication (June 12, 
+2022).  
+
+===PAGE 35===
+Page | 35  
+ 
+ 
+ These are not the only foreign entities PBMs use to avoid scrutiny.  In 2021, Cigna 
+created Quallent Pharmaceuticals, a wholly owned subsidiary based in the Cayman Islands,218 
+which “sources select pharmaceuticals from U.S. Food and Drug Administration (FDA)-
+approved pharmaceutical manufacturers.”
+219  Last year, CVS Health created Cordavis, a wholly 
+owned subsidiary based in Dublin, Ireland220, which is being used to “commercialize and/or co-
+produce biosimilar products…for the U.S. pharmaceutical market.”221  The location of these 
+subsidiaries raise significant questions about the purpose of their creation, in particular whether 
+their foreign domicile is intended to prevent transparency and enable PBMs to retain hidden 
+rebates and keep patient costs high. 
+ 
+PBMs’ Impact on Patient Care 
+ 
+“Unfortunately, the PBM preferred drug is often not the best drug for a 
+patient but the most profitable drug for the PBM… Treatment delays, 
+denials, and fueling drug costs is the PBM hell my patients and I live in 
+every day. The top PBMs have such leverage  that they do what they 
+want.”
+222 – Dr. Miriam Atkins, Oncologist, Augusta Oncology  
+ 
+PBMs’ anticompetitive behaviors have significant implications for Americans’ health 
+because of the financial incentives to force patients into more expensive medications.  New-to-
+market generic drugs are experiencing historically slow adoption by patients directly resulting 
+from PBM coverage decisions.
+223  The delays are driven by PBM’s choice to prefer higher priced 
+drugs with high rebates over lower list price generic drugs.224  Dr. Miriam Atkins, a medical 
+oncologist in Augusta, Georgia, testified before the Committee in May 2023, stating that she 
+must challenge PBMs “to get [her] patients [the] evidence-based, lifesaving treatment they 
+need.”
+225    
+ 
+Chairman Comer: Dr. Atkins, do you think a patient is more likely to take 
+a cancer drug if a drug is $72 or $17,000? 
+ 
+Dr. Atkins: $72 for sure. 
+ 
+ 
+218Adam J. Fein, What’s Behind CVS Health’s Novel Vertical Integration Strategy for Humira Biosimilars (Sept 06, 
+2023); see also https://www.quallentpharmaceuticals.com/ (“60 Nexus Way, P.O. Box 30997, Grand Cayman Ky1-
+1204, Cayman Islands”) 
+219 About Us, Quallent Pharmaceuticals available at https://www.quallentpharmaceuticals.com/about-us.  
+220 Who We Are, About Us, Meet Our Team, Cordavis, available at https://www.cordavis.com 
+221 Supra note 216. ; see also CVS Health Launches Cordavis, PR Newswire available at 
+https://www.prnewswire.com/news-releases/cvs-health-launches-cordavis-301908281.html 
+222 Supra note 32. 
+223 Supra note 193.  
+224 Supra note 193. 
+225 Supra note 32. (statement of Dr. Miriam Atkins, AO Multispecialty Clinic). 
+===PAGE 36===
+Page | 36  
+ 
+Chairman Comer:  So would you agree that insane prices on vital 
+medication like this are killing people? 
+ 
+Dr. Atkins: Yes.226 
+ 
+PBM practices not only impact patients’ pocketbooks, but also their health.  PBMs use 
+tactics like prior authorization and fail first requirements, also known as step therapy, which can 
+prevent or delay patients from accessing the medicines they need.
+227 According to the American 
+Medical Association (AMA) a prior authorization is a requirement by a PBM that a physician get 
+approval from the PBM for the prescription they prescribed.228 AMA states that prior 
+authorizations “can lead to negative clinical outcomes.”229 Fail first policies require patients to 
+try and fail on a medicine preferred by their insurer and PBM before the originally prescribed 
+medicine is covered.
+230  PBMs justify these methods to “control costs and enhance safety by 
+ensuring that patients do not use more expensive treatments when less expensive but equally 
+effective therapies are available.”
+231   
+ 
+As part of the Committee’s investigation, Caremark, Express Scripts, and OptumRx 
+cumulatively produced thousands of pages of formularies and narrative letters explaining how 
+each PBM crafts its formularies. Within these PBM’s formularies they specifically delineate 
+certain tiers or certain medications for prior authorization.  Fail first is generally not as clearly 
+identifiable in a formulary but can be found by looking at the lists of medications used to treat a 
+specific disease. When there is only one medication on the lowest tier, with other competing 
+brand name medications on higher tiers, it is designed for a patient to use the medication on the 
+lowest tier until they fail, then they can be approved to use medications on higher tiers. The 
+Committee found countless examples in each formulary of medications that have been 
+designated for prior authorization or that appear to be designated as fail first medications.  
+ 
+Apply prior authorization or fail first policies to certain medications can harm patients by 
+restricting necessary care unless the patient can pay for the prescription out of pocket.
+232  
+Additionally, lengthy delays for prior authorizations can cause suffering or even death as patients 
+wait for PBMs to approve life-saving medications their doctors prescribe.
+233  PBMs enact these 
+policies to manipulate the market share of certain medications to get higher rebates from 
+pharmaceutical manufacturers at the expense of patients.  Patient health should not be 
+compromised for PBM profits. 
+ 
+ 
+226 Supra note 32. 
+227 Katie Koziara, New data show insurers and PBMs increase barriers to care, PhRMA (Dec. 2, 2021),  
+228 Sara Berg, What Doctors Wish Patients Knew About Prior Authorization, AMA (Sep. 11, 2023).  
+229 Sara Berg, What Doctors Wish Patients Knew About Prior Authorization, AMA (Sep. 11, 2023). 
+230 Supra note 227.  
+231 Geoffrey Joyce, et al, Medicare Part D Plans Greatly Increased Utilization Restrictions on Prescription Drugs, 
+2011-20, HealthAffairs (Mar. 2024).  
+232 Id.  
+233 Aaron Tallent, Oncologists Say Prior Authorization is Causing Delays in Care, OBR ONCOLOGY (Mar. 25, 
+2022); What is Prior Authorization, CIGNA (2021); Kevin B. O’Reilly, 1 in 3 doctors has seen prior auth lead to 
+serious adverse event, AMA (Mar. 29, 2023).  
+===PAGE 37===
+Page | 37  
+ 
+ One positive the Committee identified while reviewing PBM care initiatives was that 
+PBMs protect patients’ health and safety by checking for medication interactions and identifying 
+when patients may be taking a medication in an inappropriate manner.  As middlemen, PBMs 
+have access to all patient data and are therefore able to identify when a patient gets multiple of 
+the same medication in a short time period, thus enabling them to identify potential misuse of a 
+medication for both the patient and their physician.  PBMs are also able to identify how 
+medications may interact with one another in a way that could injure a patient.  This is not an 
+uncommon occurrence as many patients, particularly elderly patients, receive care from multiple 
+different physicians and pharmacies.  
+ 
+Figure 14: Identifying potential concerns with a patient’s prescriptions234 
+ 
+Impacts on Federal and State Health Care Programs 
+ 
+In addition to their effects on patients’ health, PBMs’ anticompetitive practices directly 
+affect American taxpayers.  As Mr. Greg Baker, CEO of AffirmedRx, testified before the 
+Committee, “PBMs are not constrained by any obligation to be transparent on their pricing or 
+methodology… this problem is also costing taxpayers significantly since some of the biggest 
+health plans in the country are run by local and state entities.”
+235 
+I. Federal Employee Health Benefits (FEHB) 
+FEHB is the largest employer-sponsored group health insurance program in the United 
+States, covering more than 8 million federal employees, retirees, and family members.236  FEHB 
+ 
+234 Express Scripts Seventh Production, ESI00012672 (Feb. 14, 2024) (on file with Comm.). 
+235 Supra note 32. 
+236 FEHB Handbook, , U.S. Office of Personnel Management (last visited July 11, 2024), available at  
+https://www.opm.gov/healthcare-insurance/healthcare/reference-materials/fehb-
+ 
+
+===PAGE 38===
+Page | 38  
+ 
+enrollees typically share the cost of their health insurance with the federal government as the 
+employer; the government’s portion of premiums paid is set by law, and the enrollee is 
+responsible for paying the difference.237  The government’s contribution can be paid out of 
+agency appropriations or other funds available for the payment of salaries.238      
+ 
+A March 2024 report by the Office of Personnel Management (OPM) IG found that a 
+FEHB plan, the American Postal Workers Union Health Plan, was overcharged nearly $45 
+million by Express Scripts, who had been contracted by the Health Plan to provide pharmacy 
+benefits for enrollees from contract year 2016 through 2021.
+239  This overcharge was due to 
+Express Scripts not passing through all discounts, credits, and rebates that were required by the 
+contract.240  Under the contract’s PBM Transparency Standards, Express Scripts was required 
+and failed to send pass-through transparent drug pricing from retail pharmacy claims, remit 
+several drug purchasing discounts from drugs filled by Express Scripts’ own mail order 
+pharmacy warehouses and specialty pharmacies, return retail pharmacy claim transaction fees 
+that it was credited, share drug manufacturer rebates, and share a portion of FEHB’s drug 
+manufacturer rebates with FEHB and the health plan.
+241  Specifically, a large portion of the 
+rebates collected by Express Scripts and its rebate aggregator, Ascent, were not passed through 
+“due to lower rebate percentages agreed to internally between [Express Scripts] and Ascent, 
+thereby allowing Ascent to keep the portion of rebates that [the OPM IG is] questioning.”
+242   
+ 
+This instance was not the only time that Express Scripts has been found to overcharge an 
+FEHB plan.  In February 2023, the OPM IG audited Group Health Incorporated’s FEHB 
+pharmacy operations for contract years 2015 through 2019.
+243  The IG found that FEHB was 
+overcharged approximately $15 million because Express Scripts did not pass through all the 
+discounts, credits, rebates, and administrative fees that were required in Express Scripts’ 
+contract.244 
+ 
+handbook/#:~:text=It%20is%20the%20largest%20employer,family%20members%2C%20and%20former%20spous
+es 
+237 Cost of Insurance, U.S. Office of Personnel Management(last visited July 11, 2024), available at 
+https://www.opm.gov/healthcare-insurance/healthcare/reference-materials/reference/cost-of-insurance/.  
+238  Id.  
+239 U.S. OFF. OF PERSONNEL MGMT. OFF. OF INSPECTOR GEN., OFF. OF AUDITS, REPORT NO. 2022-SAG-029, FINAL 
+AUDIT REPORT: AUDIT OF THE AMERICAN POSTAL WORKERS UNION HEALTH PLAN’S PHARMACY OPERATIONS AS 
+ADMINISTERED BY EXPRESS SCRIPTS, INC. FOR CONTRACT YEARS 2016-2021 (Mar. 29, 2024). 
+240   Id.  
+241  Id.  
+242  Id.; see also Terence Park, Dae Y. Lee, OIG Audit of Federal Employee Pharmacy Benefits Plan Reveals 
+Express Scripts Retained $44.9 Million in Overpayments and Unreported Rebates, FRIER LEVIT ATTORNEY AT 
+LAW (May 15, 2024). 
+243 U.S. OFF. OF PERSONNEL MGMT. OFF. OF INSPECTOR GEN., OFF. OF AUDITS, REPORT NO. 1H-08-00-21-015, 
+FINAL AUDIT REPORT: AUDIT OF GROUP HEALTH INCORPORATED’S FEDERAL EMPLOYEES HEALTH BENEFITS 
+PROGRAM PHARMACY OPERATIONS AS ADMINISTERED BY EXPRESS SCRIPTS, INC. FOR CONTRACT YEARS 2015 
+THROUGH 2019 (Feb. 16, 2023). 
+244  Id.  
+===PAGE 39===
+Page | 39  
+ 
+II. Medicare  
+Unlike Medicare Parts A and B, which are administered by Medicare, Medicare Parts C 
+(commonly called Medicare Advantage) and D are administered by private health insurance 
+companies.245  Medicare Part D provides prescription drug benefits to enrollees,246 while 
+Medicare Part C is an alternative to Medicare Parts A and B which frequently includes Part D 
+prescription benefit coverage.247  According to GAO, Part D plan sponsors used PBMs to 
+provide 74 percent of drug benefit management services in 2016.248  As more vertical integration 
+has occurred, it is likely that even more than 74 percent of plan sponsors use PBMs to manage 
+their prescription drug benefit. 
+ 
+CVS reported that Medicare Part D plans are required to cover at least two drugs per 
+therapeutic class and “substantially all” drugs in these six categories: anticonvulsants, 
+antidepressants, antineoplastics, antiretrovirals, antipsychotics, and immunosuppressants.
+249  
+Mandating coverage in these six areas can lead to differences in pricing between government 
+plans and commercial plans because it “reduces the incentives for manufacturers to offer 
+meaningful discounts…because manufacturers know plan sponsors must cover their drugs in 
+these classes.
+250  Caremark alleges that coverage mandates lead to higher costs for CMS and Part 
+D enrollees compared to other types of plans.251  
+ 
+PBMs have also been accused of overcharging the federal government with regard to 
+Medicare.  In May 2017, the Department of Justice filed a lawsuit against UnitedHealth Group, 
+which owns Optum Rx, alleging the company overcharged the government by more than $1 
+billion through its Medicare Advantage plans by submitting invalid diagnosis data.  The case is 
+still ongoing. 
+252  In December 2019, CVS and it’s Omnicare business were sued by the 
+Department of Justice over alleged fraudulent billing of Medicare and other government 
+programs for outdated prescriptions for disabled and elderly individuals.
+253  In September 2023, 
+Cigna Group, Express Scripts’ parent company, agreed to pay $172,294 to resolve allegations 
+that it violated the False Claims Act by submitting and failing to withdraw inaccurate and 
+ 
+245 Center for Medicare Advocacy, Part D/ Prescription Drug Benefits available at 
+https://medicareadvocacy.org/medicare-info/medicare-part-d/; Understanding Medicare Advantage Plans, 
+MEDICARE available at https://www.medicare.gov/Pubs/pdf/12026-Understanding-Medicare-Advantage-Plans.pdf 
+246  Id.  
+247 Supra note 245.  
+248 U.S. GOV’T ACCOUNTABILITY OFF., GAO-19-498, MEDICARE PART D: USE OF PHARMACY BENEFIT 
+MANAGERS AND EFFORTS TO MANAGE DRUG EXPENDITURES AND UTILIZATION (Jul 15, 2019). 
+249 Letter from Nicholas L. McQuaid, Partner, Latham & Watkins, to James Comer, Chairman, H. Comm. on 
+Oversight & Accountability (Aug. 28, 2023). 
+250 Id. 
+251 Id.  
+252 United States of America et al v. Unitedhealth Group incorporated et al, no. 1:2022CV00481 - document 138 
+(D.D.C. 2022), Justia Law, https://law.justia.com/cases/federal/district-courts/district-of-
+columbia/dcdce/1:2022cv00481/240495/138/  (last visited May 21, 2024).  
+253 Rebecca Pifer, CVS Long-Term Care Pharmacy Sued by DOJ Over Fraudulent Prescribing Practices, 
+HEALTHCARE DIVE (Dec. 17, 2019).  
+===PAGE 40===
+Page | 40  
+ 
+untruthful diagnosis codes for its Medicare Advantage Plan enrollees to increase Cigna Group’s 
+payments from Medicare.254 
+In the Appendix to this report, the Committee identified more than 300 examples of the 
+three largest PBMs preferring medications that cost at least $500 per claim more than the 
+alternative medication they excluded on their formulary. When this information is applied to the 
+Medicare program, the Committee estimates that these decisions cost taxpayers billions per year. 
+III. Medicaid 
+Medicaid is frequently delivered through a Managed Care Organization (MCO).255  
+PBMs usually serve as third party administrators to an MCO, which contracts with a state’s 
+Medicaid program to manage its prescription drug benefits.256 
+ 
+Over the years, PBMs have repeatedly been found to overcharge Medicaid.  In September 
+2014, CVS agreed to pay $6 million to settle allegations that it knowingly failed to reimburse 
+Medicaid for prescription drug costs.
+257  Furthermore, in 2017 alone, PBMs and their pharmacies 
+made as much as $4.2 billion by improperly engaging in spread pricing and charging the 
+Medicaid program more than they were reimbursing pharmacies.
+258  
+ 
+As previously mentioned in this report, although PBMs frequently tout the savings they 
+provide for payers and patients, there are numerous instances where state auditors have found 
+significant spread pricing schemes that increase costs for payers and patients.259  PBMs have 
+been caught overcharging Medicaid programs in Ohio, Kentucky, Illinois, and Arkansas by more 
+than $415 million.
+260   
+Subsequently, multiple states have audited their Medicaid programs because of concerns 
+about spread pricing amid high Medicaid drug costs and brought lawsuits against the PBMS, 
+alleging that the PBM overcharged the state’s Medicaid program.261  In 2018, the Ohio Attorney 
+General investigated Centene Corp. and found that it engaged in spread pricing while managing 
+Ohio’s Department of Medicaid prescription drug program and cost the state program nearly 
+$225 million.
+262  Ohio sued Centene, who ultimately agreed to pay $88.3 million to the state.263  
+ 
+254 United States ex rel. Cutler v. Cigna Corp., et al., No. 3:21-cv-00748 (M.D. Tenn.) United States Department of 
+Justice (2023) available at https://www.justice.gov/opa/pr/cigna-group-pay-172-million-resolve-false-claims-act-
+allegations (last visited May 14, 2024) 
+255 Elizabeth Hinton & Jada Raphael, 10 Things to Know About Medicaid Managed Care, KFF (May 1, 2024).  
+256 Supra note 249. 
+257 Jonathan Stempel, CVS’ Caremark Unit Settles U.S. False Claims Allegations, REUTERS (Sep. 26, 2014) 
+258 Robert Langreth, David Ingold, Jackie Gu, The Secret Drug Pricing System Middlemen Use to Rake in Millions, 
+BLOOMBERG (Sep. 11, 2018).   
+259 See e.g. Supra note 112.); see also Id.  
+260  Supra note 111; see also Lisa Gillespie, Pharmacy Middlemen Overcharged Medicaid $123.5 Million, State 
+Says, LOUISVILLE PUBLIC MEDIA (Feb. 23, 2019); see also Samantha Liss, Centene Reaches $72M Settlement with 
+Illinois, Arkansas for Alleged Medicaid Overcharges, HEALTHCARE DIVE (Oct. 1, 2021). 
+261  Supra note 113.  
+262  Supra note 114.; see also Supra note 36. 
+263  Supra note 114. 
+===PAGE 41===
+Page | 41  
+ 
+Since that lawsuit, Centene has paid nearly $1 billion in 18 states over spread pricing schemes.264 
+Centene had long contracted with Caremark as its PBM and recently moved to Express 
+Scripts.265  In another audit, the HHS IG found that PBMs in the District of Columbia improperly 
+kept $23.3 million in spread pricing from 2016-2019.266  In November 2022, Express Scripts 
+agreed to pay $3.2 million to settle claims that they overcharged Massachusetts’ workers’ 
+compensation insurance system for prescription drugs.
+267   
+ 
+Due to its cost to taxpayers, several states have taken steps to prohibit spread pricing in 
+Medicaid managed care programs and congressional lawmakers have introduced multiple bills 
+that would prohibit spread pricing.
+268  The CBO estimates that eliminating spread pricing in 
+Medicaid managed care organizations, as outlined in the Lower Costs, More Transparency Act 
+of 2023,
+269 would reduce federal spending by $1.1 billion over ten years.270 
+IV. TRICARE 
+In 2019, a suit was filed against Express Scripts after a whistleblower alleged the 
+company defrauded the federal government and vendors out of billions of dollars through the 
+delivery of unnecessary prescription drugs to military personnel.
+271 In October 2022, it was 
+announced that TRICARE beneficiaries would lose access to approximately 15,000 independent 
+pharmacies due to contract changes between Express Scripts and the Defense Health Agency.272  
+Consequently, U.S. service members and veterans have encountered difficulties trying to access 
+their prescriptions in a timely manner and at their preferred pharmacies.
+273   
+ 
+At the Committee’s first PBM hearing in May 2023, multiple Congressmen expressed 
+their concerns about TRICARE to Kevin Duane, PharmD, a pharmacist and owner of an 
+independent pharmacy in Jacksonville, Florida, home to multiple military facilities and 
+thousands of TRICARE beneficiaries.
+274  In dropping independent pharmacies, TRICARE 
+beneficiaries are encountering significant hurdles when trying to access their prescriptions.  
+Representative Andy Biggs (R-Ariz.) and Dr. Duane discussed the impact of PBM pharmacy 
+networks on our nation’s service men and women:
+275 
+ 
+Rep. Biggs:  Have PBMs made it more difficult for veterans and service 
+members to access prescription drugs in a timely manner? 
+ 
+264  Supra note 116. 
+265  Supra note 117.  
+266  Supra note 113. 
+267 Supra note 119. 
+268 Supra note 120. 
+269 Supra note 121.  
+270 Supra note 122.   
+271 Around the nation: Lawsuit Alleges PBM’s ‘Refill Pill Mill’ Defrauded Government, ADVISORY BOARD (Jun. 23, 
+2022); PBM Faces Suit Over Alleged ‘Refill Pill Mill’ Scheme, NAT’L CMTY PHARMACISTS ASS’N (Jun. 29, 2022).  
+272 TRICARE changes force 15,000 pharmacies out of network, The American Legion (Oct. 27, 2022). 
+273 Jake Stofan, INVESTIGATES: Veterans forced to wait for hours in long lines at NAS Jax pharmacy, Action News 
+Jax (May 23, 2023).  
+274 Jacksonville Florida Military Bases, Military.com available at https://www.military.com/base-
+guide/jacksonville-florida-military-bases.  
+275 Supra note 32. 
+===PAGE 42===
+Page | 42  
+ 
+ 
+Dr. Duane: Absolutely. 
+ 
+Representative Pat Fallon (R-Tex.) engaged with Greg Baker, CEO of AffirmedRx, to 
+discuss the impact of Express Scripts’ decision to reduce pharmacy benefits for TRICARE 
+members:
+276 
+ 
+Rep. Fallon: In the Fall of 2022, Express Scripts announced they would be 
+reducing prescription reimbursements for 10 million T RICARE members. 
+Additionally, 15,000 primarily rural and independent pharmacies were then 
+dropped from the TRICARE network.  That is particularly concerning to me 
+since I represent 10 rural counties… How does this impact access and 
+competition?  It was reported that Express Scripts removed rural staples 
+like Walmart, Kroger, and Sams Club in favor of CVS, of course a pharmacy 
+that is owned by one of the other Big Three. Do you find it harder to compete 
+in the market? 
+ 
+Mr. Baker: We absolutely do. 
+ 
+Rep. Fallon: If we are removing competition from TRICARE networks, how 
+does that improve service and lower costs? 
+ 
+Mr. Baker: It does not do either of those things. 
+ 
+ 
+Impacts of Recent Policy Proposals 
+ 
+I. Anti-kickback Rebate Rule 
+  Medicare Part D rebates were shielded in the 1990s from the federal anti -kickback 
+statutes under safe harbor protections because they were thought to be passed through to 
+Medicare patients and lower out-of-pocket costs.
+277  At the conclusion of Trump Administration, 
+CMS finalized a rule curbing the use of rebates in Medicare Part D to pass along manufacturer 
+rebates to patients.278  However, patient out-of-pocket costs typically do not reflect rebates that 
+are paid directly from drug manufacturers to PBMs and instead reflect coinsurance and copays 
+based on the often inflated list price of the drug.279  Instead, this rule provided safe harbor 
+ 
+276 Id.  
+277 Jeff Lagasse, Updated: Trump-era rebate rule for Medicare Part D on hold until 2023, HEALTHCARE FINANCE 
+(Feb. 1, 2021).  
+278 Removal of Safe Harbor Protection for Rebates Involving Prescription Pharmaceuticals and Creation of New 
+Safe Harbor Protection for Certain Point-of-Sale Reductions in Price on Prescription Pharmaceuticals and Certain 
+Pharmacy Benefit Manager Service Fees, 85 Fed. Reg. 76,666 (Nov. 30, 2020) (to be codified at 42 C.F.R. pt. 
+1001). 
+279  85 Fed. Reg. 76,666 (Nov. 30, 2020) (to be codified at 42 C.F.R. pt. 1001). 
+===PAGE 43===
+Page | 43  
+ 
+provisions for rebates applied to drugs as they are dispensed at the pharmacy counter, thereby 
+encouraging drug manufacturers, PBMs, and plan sponsors to lower drug costs for patients.280   
+ 
+Additionally, the rule would have increased PBM transparency by allowing safe harbor 
+provisions for PBM service fees only under the conditions that PBMs report their compensation 
+via written agreements with drug manufacturers, conduct services in compliance with state and 
+federal law, be paid fair market value compensation for PBM services, and submit annual written 
+disclosures to drug manufacturers that are made available to HHS.281  The implementation of this 
+rule was delayed to January 1, 2032, by a provision within the Inflation Reduction Act of 2022 
+(IRA).282  The rebate rule, while promising for lowering out-of-pocket drug costs, must be 
+implemented carefully to ensure that the benefits of manufacturer discounts do not accumulate to 
+PBMs and are instead passed through to patients. 
+II. Medicare Price Negotiation 
+The passage of the IRA permitted CMS to negotiate the prices of certain prescription 
+drugs covered under Medicare Part D.283  Only those drugs that have been in the marketplace for 
+several years without competition are eligible for negotiations.284  In August 2023, the first ten 
+drugs selected for negotiation were announced, including drugs frequently used to treat common 
+health conditions such as diabetes, heart failure, and blood clots.
+285  Several manufacturers of 
+these medications, including AstraZeneca, Bristol Myers Squibb, Janssen Biotech, and Merck 
+have filed lawsuits against HHS to stop the negotiation process.
+286  As of July 2024, there are 
+approximately 10 outstanding lawsuits which challenge CMS’ ability to negotiate drug prices: 1 
+in Texas, 1 in Illinois, 1 in Ohio, 1 in Connecticut, 1 in D.C., 1 in Delaware, and 4 in New 
+Jersey.287  The lawsuits allege various constitutional violations, including an argument that price 
+negotiation amounts to an illegal taking of a product without just compensation because “it 
+allows Medicare to obtain manufacturers’ patented drugs without paying fair market value under 
+the threat of serious penalties.”288   
+ 
+ 
+280  85 Fed. Reg. 76,666 (Nov. 30, 2020) (to be codified at 42 C.F.R. pt. 1001). 
+281 Supra note 278.  
+282 Margaux J. Hall et al., Congress paves the way for drug pricing reforms with passage of the Inflation Reduction 
+Act of 2022, ROPES & GRAY (Aug. 12, 2022). 
+283 Press Release, U.S. Dept. of Health and Human Services, HHS Selects the First Drugs for Medicare Drug Price 
+Negotiation (Aug. 29, 2023).  
+284 Tami Luhby, Drugmakers want to stop Medicare from negotiating prices.  Here’s what you should know, CNN 
+(June 16, 2023). 
+285 Press Release, The White House, FACT SHEET: Biden-Harris Administration Announces First Ten Drugs 
+Selected for Medicare Price Negotiation (Aug. 29, 2023). 
+286 Joseph Choi, 5 things to know about the first 10 drugs chosen for Medicare negotiation, THE HILL (Aug. 29, 
+2023). 
+287 O’Neill Institute for National and Global Health Law, Georgetown University Law Center, Health Care 
+Litigation Tracker: Inflation Reduction Act, available at 
+https://litigationtracker.law.georgetown.edu/issues/inflation-reduction-act/ (last visited Jul. 10, 2024).  
+288 Supra note 286;see also Supra note 284. 
+===PAGE 44===
+Page | 44  
+ 
+The Administration’s action threatens to negatively impact patients by increasing launch 
+prices for new medications.289  In August 2022, the CBO determined that “the inflation-rebate 
+and negotiation provisions would increase the launch prices for drugs that are not yet on the 
+market relative to what such prices would be otherwise.”290  Additionally, analysts suggest that 
+pharmaceutical companies will attempt to counter limits on future price increases by launching 
+new drugs at higher prices and raising prices on existing drugs under the guise of inflation.
+291  
+Unfortunately, ZS Associates, a consulting firm with a focus on global healthcare, predicts that 
+higher launch prices will most harshly affect treatments for cancer and other rare diseases 
+because the IRA could restrict price increases.
+292 
+ 
+There are also concerns that government price setting will chill research and development 
+(R&D) and reduce patient access as pharmaceutical companies shift R&D from drugs that are 
+most necessary to those not beholden by U.S. price controls.
+293  Additionally, price caps may 
+discourage venture capital investment in pharmaceutical development as future pay-off will 
+decrease.294  In August 2022, the Association for Accessible Medicines (AAM) and the 
+Biosimilars Council expressed disappointment with the IRA, stating it “replace[d] competition – 
+the only proven way to provide patients relief from high brand drug prices – with a flawed 
+framework for government price setting that will chill the development of, and reduce patient 
+access to, lower-cost generic and biosimilar medicines.”
+295  Research conducted at the University 
+of Chicago found that price controls would increase healthcare spending by $50.8 billion over 20 
+years, culminating in 135 fewer drugs, which in turn would result in “a loss of 331.5 million life 
+years in the U.S., 31 times as large as the 10.7 million life years lost from COVID-19 in the U.S. 
+to date.”
+296  Already, 22 drugs and 36 research programs have been discontinued by 
+manufacturers since the passage of the IRA.297 
+ 
+Furthermore, the Biden Administration has failed to demonstrate that Americans will not 
+experience challenges accessing treatments and long wait-times.  The Chamber of Commerce 
+argues that patients in countries with similar price control policies have access to fewer 
+treatments and must wait longer to get those treatments and contends that the Administration has 
+ 
+289 Jared S. Hopkins, A New U.S. Law Aims to Reduce Drug Prices. But First, It Might Raise Them., THE WALL 
+STREET JOURNAL (Jan. 14, 2023). 
+290 Press Release, Energy and Commerce Committee, House Ways and Means Committee, and Senate Finance 
+Committee, Democrats’ Drug Price-Setting Scheme Dismantles Medicare’s Promise, Undermines Seniors’ Health 
+(Aug. 29, 2023) (citing Letter from Phillip L. Swagel, Dir., Congressional Budget Off., to Hon. Jason Smith, 
+Ranking Member, H. Comm. on the Budget (Aug. 4, 2022). 
+291 Id.  (citing to Jared S. Hopkins, A New U.S. Law Aims to Reduce Drug Prices. But First, It Might Raise Them., 
+THE WALL STREET JOURNAL (Jan. 14, 2023). 
+292 Supra note 289.  
+293 Brooke Masters, The world will need to stop piggybacking on US pharma, FINANCIAL TIMES (Sept. 1, 2023).  
+294 Id. 
+295 Press Release, Association for Accessible Medicines, AAM Statement on Senate Passage of Inflation Reduction 
+Act (Aug. 7, 2022). 
+296 Supra note 290.; Christina Smith, The Inflation Reduction Act Will Raise Drug Costs and Reduce Cures, Citizens 
+Against Government Waste (Aug. 5, 2022). 
+297 Life Sciences Investment Tracker, incubate available at https://lifesciencetracker.com.   
+===PAGE 45===
+Page | 45  
+ 
+failed to conduct research or analysis on the impact on access that America’s seniors will face 
+due to the IRA.298 
+ 
+  
+ 
+298 Press Release, U.S. Chamber of Commerce, U.S. Chamber: Biden Administration Rushes to Implement Drug 
+Price Control Scheme, Failing to Examine the Negative Side Effects for Seniors (Aug. 28, 2023),  
+===PAGE 46===
+Page | 46  
+ 
+Legislative Reforms 
+ 
+Amid the complex concerns with PBMs’ anticompetitive tactics that drive up healthcare 
+costs for Americans, federal and state governments are advancing policy solutions to increase 
+transparency and prohibit unfair business practices. 
+I. Federal reforms 
+Both chambers of Congress have proposed reforms in the 118th Congress that tackle 
+problems discussed in this report with the current nature of the PBM market.  These proposals 
+include stopping retroactive DIR fees, setting reimbursement and rate floors, delinking PBM 
+compensation from the price of a medication, standardizing performance measures for 
+pharmacies, eliminating narrow definitions of specialty drugs that turn patients away from 
+preferred pharmacy towards that of the PBM, stopping compulsory mail-order for patients, and 
+expanding in-network pharmacy coverage.  Bipartisan legislative proposals in the House of 
+Representatives and Senate are at various stages of the legislative process and share the same 
+goal of improving transparency in the PBM market to save taxpayers and patients money.   
+ 
+Proposed legislation in the 118th Congress includes: 
+ 
+• Delinking Revenue from Unfair Gouging (DRUG) Act (H.R. 6283) creates certain 
+requirements for PBMs that contract with a carrier offering health benefits plans 
+offered under the FEHB program, including de-linking policies and prohibitions on 
+spread pricing and patient steering.  Earlier this year, the House Committee on 
+Oversight and Accountability favorably reported the DRUG Act with bipartisan 
+support.
+299   
+ 
+• Lower Costs, More Transparency Act (H.R. 5378) passed the House of 
+Representatives on December 11, 2023, with overwhelming bipartisan support.300  
+This legislation requires a variety of transparent pricing disclosures from medical 
+providers, as well as mandating that PBMs semiannually report to health plan 
+sponsors information including spending, rebates, and fees associated with covered 
+plan drugs.  If this bill becomes law, PBM contracts will be required to allow health 
+plan fiduciaries to audit certain claims and cost information to improve transparency.  
+For PBM arrangements under Medicaid, pass-through pricing models are required 
+and spread pricing is prohibited.
+301  According to CBO, H.R. 5378 would produce net 
+savings of $715 million and generate $4.3 billion in revenue by 2033.302 
+ 
+• Pharmacy Benefit Manager Transparency Act of 2023 (S. 127) prohibits PBMs from 
+engaging in certain practices when managing the prescription drug benefits under a 
+ 
+299 Supra note 33.  
+300 Supra note 121. 
+301 Id.  
+302 Cong. Budget Off., Cost Estimate – Estimated Direct Spending and Revenue Effects of H.R. 5378, the Lower 
+Costs, More Transparency Act (Dec. 8, 2023), available at https://www.cbo.gov/system/files/2023-12/hr5378-DS-
+and-Revs_12-2023.pdf.  
+===PAGE 47===
+Page | 47  
+ 
+health insurance plan, including charging the plan a different amount than the PBM 
+reimburses the pharmacy.  The bill also prohibits PBMs from arbitrarily, unfairly, or 
+deceptively (1) clawing back reimbursement payments, or (2) increasing fees or 
+lowering reimbursements to pharmacies to offset changes to federally funded health 
+plans. S. 127 was reported out of the Senate Committee on Commerce, Science, and 
+Transportation in March 2023.
+303 
+ 
+• Medicare PBM Accountability Act (H.R. 5385) amends Title XVIII of the Social 
+Security Act (Medicare Program) to establish PBM extensive reporting requirements 
+with respect to prescription drug plans and Medicare Advantage Prescription Drug 
+(MA-PD) plans under Medicare Part D.  H.R. 5385 was reported favorably by the 
+House Energy and Commerce Committee in December 2023.304  
+ 
+• PBM Reporting Transparency Act (S. 2493) requires the Medicare Payment Advisory 
+Commission (MedPAC) to submit two reports to Congress on arrangements with 
+pharmacy benefit managers with respect to prescription drug plans and MA–PD 
+plans.305  The first report requires (1) a description of trends, including high-level 
+averages and totals for each of the types of information submitted; (2) an analysis of 
+any differences in agreements and their effects on plan enrollee out-of-pocket 
+spending and average pharmacy reimbursement, and any other impacts; and (3) any 
+recommendations the Commission determines appropriate.  The second report must 
+describe any changes with respect to the information in the first report over time, 
+together with any other recommendations deemed appropriate by MedPAC. 
+ 
+• Protecting Patients Against PBM Abuses Act (H.R. 2880) establishes requirements for 
+Medicare pharmacy benefit managers (PBMs) with respect to remuneration, 
+payments, and fees.  Specifically, it restricts PBMs that are under contract with plans 
+under the Medicare prescription drug benefit or Medicare Advantage from (1) 
+receiving income for their services other than flat dollar amount service fees; (2) 
+basing any service fees on the prices of covered drugs or any associated discounts, 
+rebates, or other remuneration; (3) charging plan sponsors for ingredient costs or 
+dispensing fees in amounts that are different than what is reimbursed to the 
+pharmacy; or (4) reimbursing network pharmacies for less than that what is 
+reimbursed to PBM-affiliated pharmacies.  Such PBMs must also report on the 
+difference between certain costs for drugs on the plan's formulary and those that are 
+not on the formulary but are therapeutically equivalent.  PBMs must also report 
+certain information regarding rebates and fees they receive from drug manufacturers.  
+CMS must publish this and other information that is currently reported by PBMs 
+online.  H.R. 2880 was reported favorably by the House Committee on Energy and 
+Commerce in December 2023.
+306 
+ 
+ 
+303 S.127 - 118th Congress (2023-2024): Pharmacy Benefit Manager Transparency Act of 2023 (2023). 
+304 H.R.5385 - 118th Congress (2023-2024): Medicare PBM Accountability Act (2023). 
+305 S.2493 - 118th Congress (2023-2024): PBM Reporting Transparency Act (2023). 
+306 H.R.2880 - 118th Congress (2023-2024): Protecting Patients Against PBM Abuses Act (2023). 
+===PAGE 48===
+Page | 48  
+ 
+• Pharmacy Benefit Manager Sunshine and Accountability Act (H.R. 2816) expands 
+and otherwise modifies reporting requirements for PBMs.  Current law requires 
+PBMs contracting with plans under the Medicare prescription drug benefit or plans 
+that are offered on state health insurance exchanges to report certain information 
+regarding rebates, fees, and other related information.  The bill applies these 
+requirements to PBMs that contract with private health insurers, and it expands these 
+requirements to include more specific information relating to prices and fees, such as 
+rebates that the PBM receives from drug manufacturers that are not passed through to 
+other entities and the highest and lowest rebate percentages the PBM receives among 
+all its contracts.  The bill also requires HHS to annually post the information reported 
+by PBMs on its website.
+307  
+  
+• Pharmacy Benefits Manager Accountability Act (H.R. 2679) establishes reporting 
+requirements for PBMs.  The bill’s requirements include PBMs reporting annually to 
+plan sponsors certain information about the amount of prescription drug copayment 
+assistance funded by drug manufacturers, a list of covered drugs billed under the plan 
+during the reporting period, and the total gross and net spending by the health plan on 
+prescription drugs during the reporting period.  In addition, PBMs must submit 
+specified elements of the report (e.g., the total gross spending on prescription drugs) 
+to the Government Accountability Office (GAO).  With this information, GAO must 
+report on the pharmacy networks of plans or PBMs, including whether such networks 
+under common ownership (i.e., vertical integration) with the plans or PBMs are 
+designed to encourage plan enrollees to use network pharmacies over other 
+pharmacies.
+308 
+II. State reforms  
+Congress may also draw legislative solutions from the success of state-level PBM 
+reforms, as states also act to remedy the anticompetitive nature of the PBM market.  States are 
+the primary regulator of private health insurance and all 50 states have enacted some level of 
+PBM reform since 2017.
+309   
+ 
+The most commonly enacted PBM provision, passed in 44 states, prohibits PBMs from 
+instituting contracts with pharmacies that prevent a pharmacy or pharmacist from disclosing 
+accurate pricing information to patients.
+310  The next most common legislative provision, passed 
+in 30 states, limits the amount a patient is required to pay for their medication through 
+manufacturer rebates or coupons and requires a patient pay the lesser of published costs for a 
+particular drug.
+311  Other state-level PBM reforms include:312 
+ 
+ 
+307 H.R.2816 - 118th Congress (2023-2024): Pharmacy Benefit Manager Sunshine and Accountability Act (2023). 
+308 H.R.2679 - 118th Congress (2023-2024): Pharmacy Benefits Manager Accountability Act (2023). 
+309 Nat’l Acad. for State Health Policy, State Pharmacy Benefit Manager Legislation (last updated Nov. 7, 2023), 
+available at https://nashp.org/state-tracker/state-pharmacy-benefit-manager-legislation/ 
+310 Id.  
+311  Supra note 309.  
+312 Id.  
+===PAGE 49===
+Page | 49  
+ 
+• Requiring PBM licensure/registration 
+• Requiring PBMs to report rebate or other information to the state 
+• Establishing Maximum Allowable Costs (MAC) list requirements 
+• Prohibiting discrimination against 340B-covered entities 
+• Prohibiting claw backs/retroactive denials 
+• Establishing reimbursement requirements 
+• Preventing or prohibiting spread pricing 
+• Creating regulations for the state or a contracted party’s audit of a PBM 
+• Creating regulations for a PBM’s audit of a pharmacy 
+• Requiring PBMs to share rebate or other information to health plans 
+• Requiring a PBM to have a fiduciary duty to insurers  
+• Banning patient steering 
+ 
+GAO recently released a report highlighting five states’ laws regulating PBM drug 
+pricing and pharmacy payments.  Most importantly, the GAO study identified that states 
+enacting these types of reforms are most successful when regulators have “broad state regulatory 
+authority” and “robust enforcement powers” to rely on, in addition to legislative authority.313  In 
+this report, notable state-level reform areas enacted in Arkansas, California, Louisiana, Maine, 
+and New York include: 314  
+ 
+• Fiduciary or other “duty of care” requirements: Fiduciary duty to act in the best 
+interest of the health plan or other entity to which the duty is owed and act in “good 
+faith” or “fair dealing.” 
+ 
+• Drug pricing and pharmacy reimbursement: Limiting PBMs’ use of manufacturer 
+rebates and their ability to pay pharmacies less than they charge health plans (i.e., 
+engage in spread pricing). 
+ 
+• Transparency: Requiring PBMs to be licensed by and/or registered and report certain 
+information such as drug pricing, fees, and amounts of rebates received and retained. 
+ 
+• Pharmacy network and access requirements: Prohibiting discrimination against 
+unaffiliated pharmacies and limiting patient co-pays charged by PBMs. 
+ 
+As these laws go into effect, greater transparency and increased competition in the 
+healthcare market is expected to lead to pass-through cost savings for payers and patients.  Texas 
+has unique insight into the true “cost” of PBMs because its Department of Insurance requires 
+PBMs to file annual reports on rebates, fees, and other payments.315  In 2023, PBMs operating in 
+Texas reported receiving $2.2 billion in manufacturer rebates, of which $91 million were 
+retained as revenue, $2.07 billion were passed on to issuers (payers), which PBMs often own, 
+ 
+313   Supra note 22. 
+314 Id. . 
+315 Adam J. Fein, Texas Shows Us Where PBMs’ Rebates Go, DRUG CHANNELS INST. (Aug. 9, 2022). 
+===PAGE 50===
+Page | 50  
+ 
+and only $15 million were passed through to enrollees (patients).316  This type of reporting for 
+just one state’s PBM revenues is an example of how better transparency measures can hold 
+companies accountable for what they are charging payers and patients. 
+  
+ 
+316 TEX. DEP’T OF INSURANCE, 2023 PRESCRIPTION DRUG COST TRANSPARENCY REVIEW: PHARMACY BENEFIT 
+MANAGERS (last updated May 31, 2024), available at https://www.tdi.texas.gov/reports/life/2023-pharmacy-benefit-
+managers.html 
+===PAGE 51===
+Page | 51  
+ 
+Conclusion 
+ 
+PBMs function as middlemen in the pharmaceutical market, situated between health 
+insurers, drug manufacturers, and pharmacies.  Their primary responsibilities include negotiating 
+prescription drug prices with drug manufacturers and pharmacies on behalf of payers, the 
+creation and maintenance of formularies and pharmacy networks, reimbursing pharmacies for 
+dispensing prescriptions, and the operation of the electronic systems that process prescription 
+drug claims at retail pharmacies.   
+ 
+With these roles, PBMs are ideally positioned to influence the price of prescription drugs. 
+They should be able to decrease the cost of prescription drugs and improve Americans’ health, 
+but that has not occurred. Instead, the opposite has happened: the cost of prescription drugs has 
+increased every year since 2005, patients have fewer choices for which pharmacies they want to 
+use, and physicians are forced to prescribe specific PBM preferred medications which are often 
+more expensive.  
+   
+The Committee has found PBMs’ anticompetitive tactics, implemented by PBMs to 
+protect their profit margins, are often the driving force behind these decisions.  Because a PBM’s 
+compensation is determined by which business model their clients choose, PBMs are 
+incentivized to implement practices such as spread pricing and steering patients to PBM-owned 
+pharmacies.  The largest PBMs have also developed a business model where they can force drug 
+manufacturers to pay high rebates for the manufacturer’s drug to be placed in a favorable 
+formulary tier while excluding competing, lower-priced prescriptions such as generics or 
+biosimilars.  Other tactics, such as prior authorizations and fail first, harm Americans by 
+delaying or preventing their access to life-saving medications.  These tools allow PBMs to slow 
+the market uptake of cheaper generics and biosimilar alternatives to brand-name drugs which 
+serves to keep the cost of prescription drugs high. 
+ 
+As governments have begun to examine PBMs closely and increase transparency in the 
+marketplace, Caremark, Optum Rx, and Express Scripts have begun to create foreign corporate 
+entities to obscure their operations and prevent them from being subject to proposed 
+transparency reforms in the United States.   
+ 
+The Committee’s findings indicate that the present role of PBMs in prescription drug 
+markets is failing and requires change. Congress and states must implement legislative reforms 
+to increase the transparency of the PBM market and ensure patients are placed at the center of 
+our health care system, rather than PBMs’ profits.  
+ 
+ 
+ 
+ 
+ 

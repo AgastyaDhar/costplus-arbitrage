@@ -1,5 +1,14 @@
 # Provenance
 
+**Snapshot date**: this deposit's live-fetched data (Section A) was
+accessed **2026-07-16**, against the NADAC file with effective date
+**2026-07-15** (dataset `fbb83258-11c7-47f5-8b18-5f8e79f7e704`). This is
+a dated snapshot, not a live claim -- NADAC republishes weekly and
+Part D/SDUD refresh on their own federal schedules, so the same pipeline
+run against current CMS data will produce different figures. See each
+source's own "Version / access" line below for its individual access
+date, and "Change notice" at the end of this document.
+
 This document records, for every upstream source this dataset draws on:
 what it is, where it came from, when it was accessed, what its own
 license/terms are, and exactly what was extracted from it. It is the

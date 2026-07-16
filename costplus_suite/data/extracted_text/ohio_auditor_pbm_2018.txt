@@ -1,0 +1,1461 @@
+
+===PAGE 1===
+ 
+
+===PAGE 2===
+ 
+===PAGE 3===
+ 
+ 
+ 
+ 
+Table of Contents 
+Executive Summary ........................................................................................................................................ 1 
+Conclusions .............................................................................................................................................. 4 
+Recommendations .................................................................................................................................... 4 
+Auditor of State Report 
+Background ............................................................................................................................................... 6 
+Data Transparency ................................................................................................................................... 9 
+Disconnect Between Pharmacy Reimbursement and Medicaid Program Costs  ..................................... 11 
+Potential Conflict of Interest ...................................................................................................................... 13  
+Impact of Reductions in Pharmacy Reimbursement on Access to Care .................................................. 14 
+Federal Initiatives...................................................................................................................................... 16 
+Action Taken by the Ohio Department of Medicaid .................................................................................. 16 
+Medicaid Initiatives in Other States .......................................................................................................... 17 
+Recommendations .................................................................................................................................... 18 
+Matters for Further Study .......................................................................................................................... 19 
+Appendix A: Analysis of Maximum Allowable Cost Lists for One Week Period ....................................... 21 
+Appendix B: Minimum and Maximum Spread by Quarter and Drug Type  ............................................... 22 
+Appendix C: Spread by County ................................................................................................................ 23  
+Appendix D: Spread by Managed Care Plan ........................................................................................... 24  
+Appendix E: Regions and Counties .......................................................................................................... 25 
+Appendix F: Pharmacy Closures by Region ............................................................................................. 26 
+ 
+===PAGE 4===
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THIS PAGE INTENTIONALLY LEFT BLANK 
+ 
+===PAGE 5===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ 
+Page 1 
+ 
+EXECUTIVE SUMMARY 
+ 
+Overview of Pharmacy Benefit Managers 
+The Ohio Department of Medicaid (Department) requires Managed Care Plans  (Plans) to offer 
+prescription drug benefits.  However, these Plans contract third party service organizations , known as 
+Pharmacy Benefit Managers (PBMs) , to manage prescription drug benefits on their behalf . PBMs offer a 
+variety of services , including but not limited to:  claim adjudications; customer service or call centers; 
+clinical services such as prior authorizations; drug utilization reviews; and mail -order and specialty 
+pharmacies. While Plans outsource these services to PBMs, the Plans remain responsible for the 
+compliance and accuracy of the services a PBM performs pursuant to the Plans’ agreements with the 
+Department. 
+ 
+PBMs provide cost -cutting measures  to the insurance plans  by establishing pharmacy networks.  These 
+networks give PBMs purchasing power, allowing them to negotiate deeply-discounted prescription 
+coverage for the insurance plans and their customers.  PBMs can also negotiate manufacturer rebates 
+directly with the pharmaceutical company to further reduce prescr iption drug costs.  These services allow 
+PBMs to generate revenue through administration and service fees charged to insurance plan sponsors 
+for processing prescriptions; through operation of their own mail -order and specialty pharmacies; and on 
+the margin between the amount charged to insurance plan sponsors  and the amount paid out to 
+pharmacies for a prescription (also referred to as “spread pricing”).  
+ 
+PBMs were originally designed to reduce administrative costs in administering a prescription drug benefit 
+program. However, PBMs have grown and now have substantial profitmaking ability  through price 
+spreading and rebates, which are payments negotiated directly with pharmaceutical manufacturers . Also, 
+many pharmacy owners maintain that PBMs have a conflict of interest since they can require customers 
+to obtain prescriptions only from mail-order and specialty pharmacies they own.  
+ 
+Amid growing concerns about  declining reimbursements to independent community pharmacies , 
+members of the Ohio General Assembly asked the Auditor of State to independently analyze the following 
+issues: 
+ 
+1) Lack of transparent data on pharmacy services;  
+ 
+2) Disconnect between pharmacy reimbursement and overall costs  to the Medicaid program (spread 
+pricing);  
+ 
+3) Potential conflict of interest related to a retail pharmacy chain that is affiliated with one of the 
+Medicaid PBMs and reported reductions in pharmacy reimbursements; and 
+ 
+4) Impact of reductions in pharmacy reimbursement on access to care , particularly in rural 
+communities.  
+ 
+In response to this request, the Auditor’s office reviewed pharmacy payment data related to the State’s 
+Medicaid managed care program  and performed analyses of price spreading,  the reimbursements to 
+pharmacies and the amounts paid to PBMs.  
+ 
+Data Transparency 
+While the Department requires Plans to adhere to the terms and conditions of the Medicaid program, it is 
+difficult for the Department and the Plans to oversee compliance with prescription benefit programs 
+outsourced to PBMs in part because they are not subject to industry -wide regulation. Exact terms of the 
+financial arrangements for pharmacy services are hidden in part by the sheer number of entities involved 
+in every transaction including managed care plans, PBMs, pharmacies, wholes alers, and manufacturers – 
+===PAGE 6===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ 
+Page 2 
+ 
+and by the contract provisions that keep nearly all of the details of these transactions confidential. These 
+issues result in a lack of transparency in expenditure of Ohio’s Medicaid dollars. Conversely, PBMs 
+maintain that disclosure and transparency in their industry  will lead to increased prescription drug prices 
+because of reduced competition and increased overhead costs. 
+ 
+Disconnect Between Pharmacy Reimbursement and Medicaid Program Costs  
+The Plans reimburse PBMs on a pricing model that is based on a publically available price (the average 
+wholesale price). PBMs reimburse pharmacies using different pricing models based on applicable 
+contracts. As result, the amount reimbursed to a pharmacy by a PBM does not correlate to the amount 
+paid to the PBM by the managed care plan for the same transaction. In other words, pharmacy 
+reimbursements, and any increase or decrease to those reimbursements, has no impact on the overall 
+Medicaid program’s costs as those are based only on the payment from the Plans to the PBMs.  
+ 
+PBMs provide a range of administrative functions on behalf of Plans  and, in lieu of being paid a set fee for 
+these functions; the PBM retains the difference between the Plan’s payment and the amount paid to the 
+pharmacy – the spread. The Auditor’s office obtained and analyzed the difference between the payment 
+from the Plan to the PBM and the PBM’s payment to the pharmacy (the price spread data). Below is a 
+summary of our analysis and illustrates the price spread significance and profitmaking potential for PBMs.  
+ 
+Average Spread by Quarter and by Drug Type from April 1, 2017 through March 31, 2018 
+Quarter  
+Average Spread  
+Brand Generic  Specialty  
+Total Average 
+Spread for All 
+Claims 
+4/1/2017-
+6/30/2017 $2.11 $5.39 $30.12 $5.09 
+7/1/2017-
+9/30/2017 $2.03 $5.71 $31.91 $5.35 
+10/1/2017-
+12/31/2017 $1.57 $7.10 $31.24 $6.47 
+1/1/2018-
+3/31/2018 $1.62 $6.48 $46.04 $6.01 
+ Yearly Total  $1.85 $6.14 $33.49 $5.71 
+     
+ Brand Generic  Specialty  Totals 
+Number of 
+Prescriptions 5,268,144 33,913,042 197,408 39,378,594 
+Percentage of 
+Claims 13.4% 86.1% 0.50% 100% 
+Amount Paid by 
+Plans (millions) $1,246.1 $662.7 $617.6 $2,526.5 
+Total Spread 
+(millions) $9.8 $208.4 $6.6 $224.8 
+Spread Relative 
+to Total Paid 
+Amount by Drug 
+Type 0.8% 31.4% 1.1% 8.9% 
+  
+Potential Conflict of Interest  
+We further compared the spread resulting from  payments from Caremark PCS Health, L.L.C. ( CVS 
+Caremark) and OptumRx to CVS pharmacies and independent community pharmacies due to allegations 
+of preferential treatment for CVS pharmacies. For this analysis, we grouped pharmacies into regions.   
+===PAGE 7===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ 
+Page 3 
+ 
+Spread Analysis by Region and Pharmacy Type 
+  CVS Pharmacies  Independent Pharmacies  
+Region  Brand  Generic  Specialty  Brand  Generic  Specialty  
+Metro  $2.04 $5.49 $57.02 $1.67 $5.50 $43.67 
+       
+Central  $1.60 $5.83 $66.58 $1.80 $5.11 $24.21 
+Northeast  $2.51 $5.60 $50.68 $3.55 $6.71 $39.14 
+Northwest  $4.85 $7.13 $43.50 $3.71 $6.69 $25.32 
+Southeast  $1.91 $5.58 $62.92 $1.88 $4.90 $43.28 
+Southwest  $2.06 $5.57 $50.19 $1.77 $5.27 $31.32 
+Overall Average  
+Without Metro $2.37 $5.74 $53.42 $2.57 $5.80 $35.19 
+Overall Average  
+All  $2.22 $5.63 $55.09 $2.10 $5.66 $39.08 
+ 
+Based on this data, the difference between the Plan’s payment to the PBM and the amount paid to the 
+pharmacy (the spread) is similar for brand and generic drugs between CVS pharmacies and independent 
+pharmacies. In comparison the spread is greater  with CVS pharmacies for specialt y drugs ; however, 
+caution should be used with this analysis  as it does not reflect all transactions that occur between a 
+pharmacy and a PBM. For example, t he spread analysis does not include the direct and indirect 
+remuneration (DIR) fee
+1 paid by the pharm acy to the PBM or other contractual arrangement s that could 
+impact final payments. According to the PBMs, the unit cost reimbursement is not driven by region , and 
+the maximum allowable cost reimbursement is the same for all independents by drug across all regions.  
+ 
+Impact of Reductions in Pharmacy Reimbursement on Access to Care 
+According to data maintained by the Ohio Board of Pharmacy 2, 132 independent community pharmacies, 
+78 small chain pharmacies and 161 large chain pharmacies have closed in Ohio since 2013. 
+ 
+ 
+  
+                                                      
+1 DIR fee is the terminology used to categorize certain pharmacy network participation fees and the 
+reconciliation of certain contractual terms with actual reimbursement. 
+2 The Board considers an independent community pharmacy as one outlet, a small chain p harmacy as 
+having two to 11 outlets and a large chain pharmacy as having 12 or more outlets. The Pharmacy Board 
+licenses other terminal distributers of dangerous drugs such as veterinary clinics, hospitals, physician 
+(prescriber) offices, and nursing homes . This data in this report did not include these other types of 
+terminal distributers.  
+0
+10
+20
+30
+40
+50
+60
+70
+80
+2013 2014 2015 2016 2017 2018
+# of Closures 
+Year 
+Pharmacy Closures by Type and Year 
+Independent
+Pharmacies
+Large Chain
+Pharmacies
+Small Chain
+Pharmacies
+*2018 Numbers only include figures from January through May 2018 
+===PAGE 8===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ 
+Page 4 
+ 
+Conclusions 
+• The Auditor of State’s office obtain ed data on Plans’ payments to the PBMs and the PBMs’ 
+payments to pharmacies and determined that the data was sufficiently reliable for the calculation 
+of spread pricing. The overall average spread of $5.71 is consistent with the average reported by 
+the Department; however, the Auditor of State’s analysis noted that the spread was higher 
+($6.14) for generic drugs which constituted over 86 percent of prescriptions. The Department  
+recently contracted with an independent vendor to analyze the Medicaid pharmacy spread. Based 
+on this vendor’s market intelligence, the costs for the administrative fees covered by the spread 
+would be from $0.95 to $1.903 per prescription, which is one-third of the pharmacy spread passed 
+down in Ohio’s Medicaid managed care program.  According to the Plans, these administrative 
+fees may vary based on other pricing considerations. Although this figure may not include all of 
+services performed by a PBM, it suggests  Ohio’s current spread may be excessive and warrants 
+the State taking further action to mitigate the impact on the Medicaid program.   
+ 
+• Data on pharmacy closures coincide s with concerns expressed by pharmacists regarding 
+reductions in reimbursements. However, this data does not show causality and does not include 
+data on pharmacy openings. Further research is needed to determine the factors that led to these 
+closures. While the Auditor of State’s analysis show s differences in the spread by region , the 
+spread analysis completed for this report was for a limited time frame.  Representatives from the 
+Plans indicated no access issues at this time. 
+ 
+• While much attention has been focused on the spread, it does not provide a complete picture of 
+pharmacy costs and PBM compensation.  There are a number of additional factors that impact 
+PBM revenues and pharmacy reimbursements that were outside of the scope of this r eport, such 
+as rebates, additional Plan fees, and pharmacy fees. The Ohio Legislature should take steps to 
+mandate the reporting of additional statistical and financial data that would provide a more 
+complete understanding. 
+ 
+• Additional concerns regarding pharmacy services were expressed by stakeholders or identified in 
+industry publications which included rebates and rebate audits, automatic refills and impact of 
+spread contracting on the medical loss ratio requirement for managed care organizations. In 
+addition, the Auditor of State noted that the PBM contracts do not i nclude any provision 
+prohibiting the sale of de-identified data by a PBM to a third party. In addition, v arious practices 
+were identified as indications of  potential conflicts of interest that could impact pharmacy services 
+in the Medicaid program and other publically funded health care. These concerns were outside of 
+the scope of this review and are noted as issues for further study.  
+ 
+Recommendations 
+The Auditor of State offers the following r ecommendations for the Ohio Legislature.  Additional 
+recommendations for the Ohio Department of Medicaid can be found on page 18 .  
+1. ADDITIONAL AUDIT REQUIREMENT  - The State should require that the Department engage an 
+independent audit entity to perform periodic compliance audits of each PBM that contracts with a 
+managed care plan. The Department should establish the scope of the compliance examinations. The 
+compliance audits should provide greater assurance about the PBMs' compliance with State 
+requirements. The Department should develop, document, and implement a monitoring process to 
+ensure that the Plans correct any findings from those audits.  
+ 
+2. ADDITIONAL STATISTICAL AND FINANCIAL REPORTING REQUIREMENTS  - The State should 
+go beyond monitoring the spread and obtain statistics and financial information that include 
+transactions that occur outside of claims adjudication. This would give a more accurate picture of 
+actual reimbursement to pharmacies for services rendered. We recommend that the Department 
+require the Plans to report financial terms and payment arrangements they have with its PBM and 
+                                                      
+3 This estimate of fees has not been independently verified by the Auditor of State.  
+===PAGE 9===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ 
+Page 5 
+ 
+prescription drug manufacturers, or labelers, including formulary management, drug- switch programs, 
+educational support, claims processing, pharmacy network fees,  data sales fees, and all  other fees. 
+The Department should also include language ensuring that it has the right to audit this data at any 
+time. The confidentiality of the information disclosed by the Plans should be maintained, to the extent 
+that the information is protected under state or federal law. 
+ 
+3. ANALYSIS OF ALTERNATE CONTRACT MODEL  - The State should perform an analysis to identify 
+the costs and benefits of requiring pass through contracting for its pharmacy services and report on 
+those results including a detail of the methodology used for the analysis. In pass through contracting, 
+the PBM charges the Plan  a flat administrative fee per claim or per member and then passes the 
+exact price paid to the pharmacy through to the Plan . In the interim, the Department should work with 
+its Plans and the PBMs to ensure that reimbursement methodologies  reflect reasonable costs 
+associated with providing the service. 
+ 
+In addition, the State should engage an independent third party to conduct a complete analysis of  the 
+impact of moving pharmacy services to a fee- for-service model similar to the change implemented in 
+West Virginia. The HealthPlan Data Solutions (HDS) executive summary contains a fee- for-service 
+comparison; however, notes that the comparison is incomplete and recommends a follow -up analysis 
+that incorporates the impact of rebates. The Auditor of State requested a copy of the full report 
+developed by HDS but the full report is not yet available. Without the detailed methodology of the 
+analysis performed by HDS, the Auditor of State cannot comment on or evaluate its fee- for-service 
+pricing comparison. 
+===PAGE 10===
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THIS PAGE INTENTIONALLY LEFT BLANK 
+ 
+ 
+  
+===PAGE 11===
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+OHIO'S MEDICAID MANAGED CARE PHARMACY SERVICES 
+ 
+ 
+AUDITOR OF STATE REPORT
+===PAGE 12===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THIS PAGE INTENTIONALLY LEFT BLANK  
+===PAGE 13===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 6 
+ 
+BACKGROUND 
+ 
+Based on request s from State legislators, the Auditor of State reviewed data regarding payment for 
+pharmacy services under the State’s Medicaid managed care program. Legislative concerns have been 
+raised related to reimbursements to pharmacies and the amounts paid to pharmacy benefit managers 
+(PBMs) by managed care plans ( Plans or MCPs). The objective of this report is to increase the 
+transparency surrounding the reimbursement of pharmacy services. 
+ 
+State auditors conducted research on pharmacy -related topics, reviewed contracts and analyzed relevant 
+data. We intervie wed external entities , including the Ohio Department of Medicaid ( Department); Ohio’s 
+five Medicaid managed care plans 4; CaremarkPCS Health, L.L.C. ( CVS Caremark ) and OptumRx; 
+representatives of the Ohio Pharmacists Association;  individual pharmacists; Mer idianRx, a Michigan-
+based PBM; and the Independent Pharmacy Cooperative. In addition, we spoke with representatives of 
+other state Medicaid agencies which have implemented changes to address similar concerns regarding 
+payment for pharmacy services.  
+ 
+We selectively tested pharmacy services under the State’s Medicaid managed care program under the 
+authority of Ohio Revised Code § 117.11(B). However, our objective is not to opine on any aspect of 
+these services . This report includes a compilation of non- audited information from multiple sources . 
+Observations have been drawn from the Auditor of State analysis of independently obtained, non-audited 
+information. 
+ 
+Terminology and Abbreviations Used in the Report 
+Abbreviation Terminology Definition 
+AWP Average Wholesale Price  A publically available benchmark used for the pricing and 
+reimbursement of drugs which does not include discounts 
+or rebates. Described as the “sticker price.”  
+Brand Brand-name Drug A drug originally discovered and developed by a 
+pharmaceutical company and marketed under a 
+proprietary, trademark-protected name. 
+Encounter Encounter Data Encounter data are the records of services delivered to 
+Medicaid beneficiaries enrolled in managed care plans that 
+receive a capitated, per-member-per-month payment. 
+These records allow the Medicaid agency to track the 
+services received by members enrolled in managed care. 
+Encounter data typically come from billed claims that 
+providers submit to managed care plans to be paid for their 
+services. 
+FFS Fee-For-Service Payment method in which providers are paid for each 
+covered service such as an office visit, test, or procedure 
+according to rates set by the state. 
+Generic Generic Drug A drug that is identical to a traditional brand-name drug in 
+dosage, safety, strength, route of administrations, quality, 
+performance characteristics and intended use. 
+MCP Managed Care Plan Medicaid managed care provides for the delivery of 
+Medicaid health benefits and additional services through 
+contracted arrangements between state Medicaid agencies 
+and managed care organizations that accept a set per 
+member per month (capitation) payment for these services. 
+                                                      
+4 Buckeye Community Health Plan, CareSource, Molina Healthcare, Paramount Advantage and United 
+Healthcare Community Plan 
+ We also reviewed pharmacy claims from Ohio’s sixth managed care plan, Aetna, and confirmed that the 
+principle payer for those services was the Medicare program. 
+===PAGE 14===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 7 
+ 
+Abbreviation Terminology Definition 
+MAC Maximum Allowable Cost A pharmacy reimbursement limit, established by the PBM, 
+for a particular strength and dosage of a generic drug that 
+is available from multiple manufacturers with potentially 
+different list prices. 
+NADAC National Average Drug 
+Acquisition Cost 
+The average price pharmacies pay to acquire a drug from a 
+wholesaler or manufacturer. It is calculated from the 
+Centers for Medicare & Medicaid Services (CMS) monthly 
+survey of pharmacies and includes only discounts received 
+by pharmacies at a drug’s acquisition. 
+PBM Pharmacy Benefit 
+Manager  
+A third-party administrator of prescription drug programs for 
+insurance companies. Duties generally include processing 
+pharmacy benefit claims, developing formularies and 
+negotiating drug prices with drug manufacturers.  
+PSAO Pharmacy Service 
+Administrative 
+Organization 
+These organizations negotiate and enter into contracts with 
+third-party payers on behalf of member pharmacies. PSAO 
+services are intended to achieve contract and payment 
+efficiencies for both independent pharmacies and third-
+party payers or their PBMs. 
+PDL Preferred Drug List A list of drugs designated as preferred based on formulary 
+review of efficacy, safety and cost considerations. 
+Prior Auth. Prior Authorization An evaluation of the drug treatment before the treatment 
+starts and typically requires action from the physician, 
+pharmacist or patient to obtain coverage. 
+Specialty Specialty Drug Drugs that treat chronic, complex or life-threatening 
+conditions, are typically costly, and require intensive clinical 
+monitoring, complex patient actions and/or special handling 
+by the pharmacy. 
+Spread Spread Pricing A type of contracting in which the amount paid by the 
+managed care plan to the PBM for a specific prescription is 
+different than the amount paid by the PBM to the pharmacy 
+for the same prescription.  
+Wholesaler Wholesaler  An entity engaged in wide distribution of prescription drugs 
+from manufacturers, usually to retail community 
+pharmacies, distributors and others responsible for 
+distributing pharmaceuticals. 
+ 
+Ohio Medicaid Pharmacy Costs 
+Table 1 shows the number of Medicaid prescriptions and the corresponding amount paid for calendar 
+years 2016 and 2017 along with the amount of rebates collected and discounts. It should be noted that 
+the rebates and discounts shown are not directly tied to the amount paid by year due to differences in 
+timing and processing of rebates and discounts.  
+ 
+The data shows that the total amount paid increased by 1 2 percent from 2016 to 2017 . According to the 
+State Drug Utilization Data - National Totals reported by the Center for Medicare and Medicaid Services, 
+the average increase in drug spending reported by all states was 4.4 percent. Ohio’s Medicaid increase in 
+costs is almost three times this national average; however, the data also shows that the increase in the 
+number of Medicaid prescriptions i n Ohio increased by almost five times the national average. The  
+Department’s caseload reports indicate a two percent decrease in Medicaid eligibles between December 
+2016 and December 2017. 
+  
+===PAGE 15===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 8 
+ 
+Table 1: Medicaid Pharmacy Costs 
+  2016 2017 Percent Change 
+Number of Prescriptions  58,535,755 62,789,010 7.3% 
+Amount Paid $3,633,495,190 $4,074,728,913 12.1% 
+Rebates/Discounts ($1,796,102,667) ($1,977,937,618) 10.1% 
+Total Net Paid $1,837,392,523 $2,096,791,295 14.1% 
+1 Providers can bill Medicaid program for up to 365 days after service delivery (see Ohio Admin Code § 
+5160-1-19) so data for 2017 is still subject to change.  
+2 Data is from the Medicaid Information Technology System (Fund Group: Drugs), the OAKS BI REV-
+0004 Revenue Accounting Entries Report and the five MCPs. The statistics include both managed care 
+(encounter) and fee-for-service data. 
+Ohio’s Medicaid Pharmacy Services - Fee-For-Service 
+In October 2011, the Plans became responsible for drug coverage to Ohio Medicaid enrollees. While the 
+majority of Ohio’s Medicaid services are provided through the Plans, there remain some services paid 
+directly by the Department on a fee- for-service basis. The Department contracts with a third party 
+administrator, Change Healthcare Pharmacy Solutions, Inc., for administrative and claims services for 
+pharmacy benefits reimbursed on the fee- for-service basis. One key service, monitored by the 
+Department and performed by this third party administrator is the processing and collection of rebates. In 
+the State of Ohio Single Audit for the fiscal year ended June 30, 2017
+5, the Auditor of State recommended 
+that the Department strengthen current internal control procedures over drug rebate contract monitoring 
+and identified four specific improvement areas. In addition, the recommendation noted that monitoring 
+procedures performed should be documented and should be updated on a regular basis to address any 
+changes in contractual requirements. 
+ 
+Ohio’s Medicaid Pharmacy Services - Managed Care 
+The Department  pays a capitated payment
+6 (a per member /per month payment) to the Plans for the 
+delivery of Medicaid health benefits , including pharmacy benefits.  In turn, each of the Plans contract with 
+a PBM to manage its delivery of pharmacy services. United Healthcare Community Plan of Ohio  contracts 
+with OptumRx, a UnitedHealth Group company. The remaining four Plans contract with CVS Caremark. 
+The contracts identify similar types of services and responsibilities associated with the Plans and PBMs 
+as summarized in Table 2. PBMs in turn contract with pharmacies, either directly or through a pharmacy 
+service administration organization (PSAO) , which  negotiate and enter into contracts with third- party 
+payers on behalf of member pharmacies.  
+ 
+Table 2: Services and Responsibilities of Managed Care Plans and Pharmacy Benefit Managers  
+  General Services/Responsibilities 
+MCP Provides eligibility information, formulary management, coordination of benefits, and 
+claims and rebate audits 
+PBM Provides claims processing, drug utilization review, pharmacy network management 
+maximum allowable cost list reporting, call center, rebate reporting, monitoring/auditing 
+its pharmacy network, clinical services, prior authorization management, communication 
+materials and operating mail order and specialty pharmacies. 
+1 Summary of Information in Plan contracts with PBMs in effect during calendar years 2016 and 2017. 
+                                                      
+5 Full report found at https://ohioauditor.gov/auditsearch/detail.aspx?ReportID=136353 - see pages 77 to 
+79.  
+6 Capitated payments are fixed, pre- arranged monthly payments. In developing the per member/per 
+month payment , the actuar ial firm reduces retail pharmacy expenditures by the supplemental rebate 
+percentage and for uncollected co-pays.  
+ 
+===PAGE 16===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 9 
+ 
+Pharmacies generally purchase drugs from wholesalers who purchase the drugs from manufacturers and 
+receive rebates that originate from the manufacturer. Some pharmacies purchase drugs through a group 
+purchasing organization. 
+ 
+Chart 1  is an illustration of Ohio’s Medicaid Managed Care Program and provides an overview  of the 
+multiple entities involved in pharmacy transactions and the interactions between these entities.  
+ 
+Chart 1: Ohio’s Medicaid Managed Care System 
+ 
+ 
+DATA TRANSPARENCY 
+ 
+One concern expressed by state lawmakers is that payment for pharmacy services is convoluted and 
+secretive because pricing and reimbursement methodologies are confidential and proprietary. Chart 1  
+shows the many entities that touch a pharmacy transaction, most of which add expense, even though 
+their specific costs are often unknown. For example, while we were able to obtain information on 
+payments made by CVS Caremark to pharmacies, the Plans that paid CVS Caremark were not permitted 
+by this PBM to see this information. 
+ 
+Ohio Medicaid reimburses fee- for-service pharmacy services (not covered by managed care)  based on a 
+two-part formula consisting of the ingredient cost of the drug and a dispensing f ee. The Department uses 
+the National Average Drug Acquisition Cost (NADAC)  to set the ingredient cost . NADAC is published 
+monthly by the Centers for Medicare & Medicaid Services 7. The Department’s dispensing fee varies 
+between $8.30 and $13.64 depending on the volume of prescriptions reported by the pharmacy. 
+                                                      
+7 Federal regulations allow states the flexibility to determine reimbursement amounts , although there is an 
+upper limit that cannot be exceeded. 
+
+===PAGE 17===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 10 
+ 
+In contrast, managed care plans contract with PBMs to provide pharmacy services and the contracts 
+specify the payment structure for brand, generic  and specialty drugs. The negotiated rate represents an  
+annual guaranteed rate and does not reflect the amount paid for a specific prescription on a given date. 
+Additional fees, priced separately, are also paid by the Plans to the PBMs for various services, such as 
+dispensing fees, special reports, manual claims processing and drug utilization review.  
+ 
+During the period reviewed, the Plans paid more than $2.5 billion to  their PBMs. Chart 2  shows this 
+amount broken down by drug type. T he highest percentage of dollars paid to PBMs was for brand drugs, 
+followed by generic and specialty drugs. While brand drugs are prescribed less often than generics, their 
+cost is much higher. 
+ 
+ 
+PBMs also pay pharmacies based on a  two-part formula consisting of the ingredient cost of the drug and 
+a dispensing fee.  One method used by PBMs to set the pricing for the ingredient cost uses a maximum 
+allowable cost8 which is developed by a PBM based on its industry research and analysis. The maximum 
+allowable cost list is a compilation of drugs with prices and their effective dates . The PBMs reported that 
+they develop different lists to meet their contractual annual guarantees and the market characteristic of 
+their pharmacy networks such as volume and predicted acquisition costs. This results in pharmacies 
+being paid diff erent amounts by the PBMs for the same drug on the same day. The Auditor of State’s 
+office obtained the maximum allowable cost lists used to price Ohio Medicaid pharmacy services from 
+CVS Caremark and OptumRx for one week in November 2017. We noted that both CVS Caremark and 
+OptumRx had multiple MAC lists which included different prices for the same drug across the lists. See 
+Appendix A for additional information of the lists.  
+ 
+In addition to the ingredient cost, the PBM pays the pharmacy a dispensing fee.  Both PBMs indicated 
+their dispensing fees are set by contract.  
+  
+                                                      
+8 According to CVS Caremark, depending on the contract, the pharmacy will be paid the lessor of several 
+pricing models such as usual and customary, a percentage discount applied to average wholesal e price 
+or maximum allowable cost. It is possible that the maximum allowable cost may not be the lowest.  
+Brand
+Generic
+Specialty
+Chart 2: MCP Payments to PBMs by Drug Type 
+49% 
+25% 
+26% 
+===PAGE 18===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 11 
+ 
+DISCONNECT BETWEEN PHARMACY REIMBURSEMENT AND MEDICAID PROGRAM COSTS  
+ 
+As requested by members of the Legislature, we calculated the pharmacy spread in the  state’s Medicaid 
+managed care program. Spread pricing refers to a type of contracting in which the amount paid by the 
+Plan to the PBM for a specific prescription is different than the amount paid by the PBM to the pharmacy 
+for the same prescription. In lieu of the Plans paying for certain services, such as drug utilization review or 
+claims processing, the PBM retains the spread amount.  Both CVS Caremark and OptumRx indicated that 
+the spread pricing contract model best supports cost containment. 
+ 
+While much attention has been focused on the spread, it does not provide a complete picture of 
+pharmacy costs and PBM compensation.  There are a number of financial transactions that occur outside 
+of the claims payment process that impact pharmacy costs and PBM revenues . For example, there are 
+additional fees paid by the Plans to the PBMs a nd there are fees paid by pharmacies to the PBMs, 
+including transaction fees, quality fees and fees related to contract performance. None of these fees are 
+included in the spread. Other stat es have taken steps to go beyond a focus on the spread to look at a 
+broader array of statistical and financial data (see Recommendation 3). 
+ 
+The Auditor of State’s office received pharmacy data and performed the analysis shown in Table 3 for the 
+period of April 1, 2017 through March 31, 2018. Auditors elected to use the same period selected by the 
+Department to facilitate timely analysis for  this report and comparability. It should be noted that the period 
+selected by the Department is an open billing period 9, meaning the data is subject to change.  (Note: This 
+period includes increased reimbursement s made by PBMs to pharmacies for certain drugs in January 
+2018, at the request of the Department.) 
+ 
+We reviewed 39.3 million drug claims and determined the average spread by quarter , by drug type and 
+the percentage of claims by drug type. This analysis 10 found the following: 
+• Brand: Average spread per claim decreased by 23 percent from the 1st to last quarter.  
+• Generic: Average spread per claim increased by 20 percent from the 1st to last quarter.  
+• Specialty: Average spread per claim increased by 53 percent from the 1st to last quarter.11  
+• Combined: Average spread per claim increased by 18 percent ( see Appendix B  for Minimum and 
+Maximum Spread, Appendix C  for spread by county and Appendix D  for spread by managed care 
+plan). 
+ 
+  
+                                                      
+9 Providers can bill Medicaid program for up to 365 days after service delivery (see Ohio Admin Code § 
+5160-1-19). 
+10 The scope of this report did not include a detailed analysis as to the causality of these variances.  
+11 Per contracts, many specialty drugs are filled by CVS Caremark’s specialty pharmacy. 
+===PAGE 19===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 12 
+ 
+Table 3: Average Spread by Quarter and by Drug Type  
+Quarter  
+Average Spread  
+Brand Generic  Specialty  
+Total Average 
+Spread for All 
+Claims 
+4/1/2017-
+6/30/2017 $2.11 $5.39 $30.12 $5.09 
+7/1/2017-
+9/30/2017 $2.03 $5.71 $31.91 $5.35 
+10/1/2017-
+12/31/2017 $1.57 $7.10 $31.24 $6.47 
+1/1/2018-
+3/31/2018 $1.62 $6.48 $46.04 $6.01 
+ Yearly Total4  $1.85 $6.14 $33.49 $5.71 
+     
+ Brand Generic  Specialty  Totals 
+Number of 
+Prescriptions 5,268,144 33,913,042 197,408 39,378,594 
+Percentage of 
+Claims 13.4% 86.1% 0.50% 100% 
+Amount Paid by 
+Plans (millions) $1,246.1 $662.7 $617.6 $2,526.5 
+Total Spread 
+(millions) $9.8 $208.4 $6.6 $224.8 
+Spread Relative 
+to Total Paid 
+Amount by Drug 
+Type 0.8% 31.4% 1.1% 8.9% 
+1 Source: Data provided by CVS Caremark and OptumRx 
+2 Based on the period of April 1, 2017 through March 31, 2018 
+3 We matched the spread data with the Medicaid Information Technology System using the pharmacy 
+provider number. We found 334,475 services (0.8 percent) with no matching provider identification and 
+removed those services for the purpose of this analysis. 
+4 Yearly totals are not an average and are weighted based on total records and amount paid.  
+ 
+ 
+Chart 3 shows the total spread by drug type and highlights that 93 percent of the total spread was from 
+generic drugs. This is to be expected because the overall spend is so much higher for this drug type. 
+ 
+ 
+ 
+4% 
+93% 
+3%  
+Chart 3: Percentage of Total Spread by Drug Type 
+Brand
+Generic
+Specialty
+===PAGE 20===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 13 
+ 
+POTENTIAL CONFLICT OF INTEREST  
+ 
+Auditors further broke down the PBM data by region in order to examine concerns regarding independent 
+community pharmacies being targeted with lower reimbursements . Table 4 contains the spread analysis 
+by region and includes a comparison of CVS pharmacies v s. independent community pharmacies within 
+each specific region (see Appendix E  for description of regions) . Based on this data, the difference 
+between the Plan’s payment to the PBM and the amount paid to the pharmacy (the spread) is similar for 
+brand and generic drugs between CVS pharmacies and independent pharmacies. In c omparison the 
+spread is greater with CVS pharmacies for specialty drugs. 
+ 
+Table 4: Spread Analysis by Region and Pharmacy Type 
+  CVS Pharmacies  Independent Pharmacies  
+Region  Brand  Generic  Specialty  Brand  Generic  Specialty  
+Metro  $2.04 $5.49 $57.02 $1.67 $5.50 $43.67 
+       
+Central  $1.60 $5.83 $66.58 $1.80 $5.11 $24.21 
+Northeast  $2.51 $5.60 $50.68 $3.55 $6.71 $39.14 
+Northwest  $4.85 $7.13 $43.50 $3.71 $6.69 $25.32 
+Southeast  $1.91 $5.58 $62.92 $1.88 $4.90 $43.28 
+Southwest  $2.06 $5.57 $50.19 $1.77 $5.27 $31.32 
+Overall Average  
+Without Metro $2.37 $5.74 $53.42 $2.57 $5.80 $35.19 
+Overall Average  
+All  $2.22 $5.63 $55.09 $2.10 $5.66 $39.08 
+1 Source: Data files submitted by CVS Caremark and OptumRx  
+2 Based on the period of April 1, 2017 through March 31, 2018 
+ 
+Spread Analysis Conclusion 
+Caution should be used in drawing conclusions based on this pharmacy spread data as it does not reflect 
+all transactions that occur between a pharmacy and a PBM. For example, the data used for this spread 
+analysis does not include direct and indirect remuneration (DIR) 12 fees paid back to the PBM by the 
+pharmacy. In addition, per contracts, many specialty drugs are filled by  CVS Caremark’s specialty 
+pharmacy – which is a CVS specialty pharmacy both of which are subsidiaries of CVS Health 
+Corporation. This analysis does not address the significant rebates offered to PBMs by the drug 
+manufacturers. Finally, there are other additional contractual arrangements that could impact final 
+payments. To fully address the concerns raised recently would take access to financial and statistical 
+data from the Plans, PBMs and pharmacies that are currently inaccessible. See Appendix F
+ for spread 
+analysis by region and quarter. 
+ 
+We were unable to benchmark the Ohio Medicaid spread data as Ohio is the first state to release a full 
+year’s data on the pharmacy spread. Virginia and Kentucky have analyzed the pharm acy spread in their 
+Medicaid programs and are planning to release reports in the next few months and this may provide 
+some comparative basis. The Department recently contracted with HealthPlan Data Solutions, LLC to 
+analyze the Medicaid pharmacy spread. Based on this vendor’s market intelligence, the costs for the 
+administrative fees covered by the spread would be from $0.95 to $1.90 13 per prescription, which is one-
+third of the pharmacy spread passed down in Ohio’s Medicaid managed care program. Although th is 
+figure may not include all of services performed by a PBM, it suggests Ohio’s current spread may be  
+excessive and warrants the State taking further action to mitigate the impact on the Medicaid program 
+(see Recommendations section).  
+                                                      
+12 DIR fee is the terminology us ed to categorize certain pharmacy ne twork participation fees and the 
+reconciliation of certain contractual terms with actual reimbursement. 
+13 This estimate of fees has not been independently verified by the Auditor of State. .  
+===PAGE 21===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 14 
+ 
+IMPACT OF REDUCTIONS IN PHARMACY REIMBURSEMENT ON ACCESS TO CARE   
+ 
+According to the Ohio Board of Pharmacy’s data, there were 2,088 active independent, small chain and 
+large chain pharmacies licensed in Ohio as of May 15, 2018 14. Of these 2,088 pharmacies, the majority 
+were large chain pharmacies. The Board considers an independent community pharmacy as one outlet, a 
+small chain pharmacy as having two to 11 outlets and a large chain pharmacy as having 12 or more 
+outlets. Chart 4 shows the percentage of pharmacies in Ohio by pharmacy type.  
+ 
+ 
+The Ohio Board of Pharmacy also maintains data on pharmacy closures. This data shows 132  
+independent community  pharmacies, 78 small chain pharmacies  and 161 large chain pharmacies have 
+closed in Ohio since 2013 . Chart 5  shows pharmacy closures by pharmacy type and year. The data 
+shows a significant increase in large chain pharmacy closures in 2016 ; however, the increase was due to 
+CVS pharmacy acquiring Target pharmacy locations. This acquisition made up 81.4 percent of t he large 
+chain closures in 2016 and, while identified as closures in the data, there was no resulting reduction in 
+pharmacies. 
+ 
+ 
+ 
+                                                      
+14 The Pharmacy Board licenses other terminal distributers of dangerous drugs such as veterinary clinics, 
+hospitals, physician (prescriber) offices, and nursing homes . This data in this report did not include these 
+other types of terminal distributers. 
+Chart 4: Active Pharmacies by Type 
+Independent Community
+Pharmacy (393)
+Large Chain Pharmacy (1,556)
+Small Chain Pharmacy (139)
+7% 19% 
+74% 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+2013 2014 2015 2016 2017 2018
+# of Closures 
+Year 
+Chart 5: Pharmacy Closures by Type and Year 
+Independent
+Pharmacies
+Large Chain
+Pharmacies
+Small Chain
+Pharmacies
+*2018 Numbers only include figures from January through May 2018. 
+===PAGE 22===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 15 
+ 
+Auditors also analyzed closures geographically to show any regional impact of these closures. We noted 
+that the northeast region had the hi ghest number of closures with 133, followed by 93 closures in the 
+southwest region, 63  closures in the central  region, 55 in northwest region and 27  closures in the 
+southeast region. The data also shows a spike in closures in the northeast region in 2016.  See Appendix 
+F for closure numbers by region.  The 2018 data includes only January through May 2018 so does not 
+represent a full year. 
+ 
+ 
+Summary on Pharmacy Closure Data 
+Table 4 above shows that the spread for independent community pharmacies in the northeast and 
+northwest regions for this 12 month period was higher than other regions for both brand drugs (69 and 77 
+percent, respectively ) and generic s (19 and 18 percent, respectively ). This raises questi ons as to why 
+pharmacies in these  regions are reimbursed at lower amounts  for these two drug types . The pharmacy 
+closure data shows that 48 percent of Ohio independent pharmacies closed since 2013 were located i n 
+these two regions. Lower reimbursements may result in future closures so continued monitoring of 
+pharmacy closures would be beneficial.  The trend  in independent pharmacy closures  shown in the 
+Pharmacy Board’s data coincides  with concerns expressed by pharmacists regarding reductions in 
+reimbursements. However this data does not show causality and further research is  needed to determine 
+the factors that led to these closures. While the analysis did show differences in the spread by region,  the 
+spread analy sis completed for this report was for a limited time frame and does not reflect the final 
+reimbursements to pharmacies. 
+  
+0
+5
+10
+15
+20
+25
+2013 2014 2015 2016 2017 2018
+# of Closures 
+Year 
+Chart 6: Pharmacy Closures by Region and Year 
+Northeast
+Southeast
+Southwest
+Northwest
+Central
+===PAGE 23===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 16 
+ 
+INITIATIVES, RECOMMENDATIONS AND ISSUES FOR FURTHER STUDY  
+ 
+Federal Initiatives 
+A report released from the U.S. Department of Health and Human Services – Office of Inspector 
+General15 (HHS-OIG) found reimbursement for brand- name drugs increased between 2011 and 2015, 
+even with lower inflation and decreased drug utilization.  The report analyzed pharmacy costs in the 
+Medicare program but i ts findings raise concerns for the Medicaid program  as well. The report notes that 
+reimbursement increased 62 percent over 2011 to 2015, even when factoring in rebates, while the 
+number of prescriptions went down 17 percent. Per unit costs for brand- name drugs increased nearly six 
+times faster than inflation from 2011- 2015 and t hese cost increases were similar to increases in 
+manufacturer prices. The HHS-OIG report highlights the impact that drug manufacturers and wholesalers 
+have on increasing pharmaceutical costs. While this Auditor of State report focuses on PBMs, these other 
+sectors of the pharmacy industry could have higher profit margins than PBMs and be a key factor in 
+Medicaid pharmacy costs. Massachusetts  recently submitted a proposal to negotiate d irectly with 
+manufacturers on the price of drugs and, under certain conditions, to have drug manufacturers justify 
+drug prices, attend public hearings and make information on pricing available to the public  (see Medicaid 
+Initiatives in Other States). 
+ 
+Recently, it was announced that the Department of Health and Human Services (HHS) will take steps to 
+lower drug costs including: 
+ 
+• Streamlining and accelerating the approval process for over-the-counter drugs;  
+• Increased reliance on value-based pricing;  
+• Ending the current Medicaid rebate cap; and  
+• Including drug maker copay discount cards in Medicaid best-price calculations.  
+ 
+Action Taken by the Ohio Department of Medicaid as of August 13, 2018 
+The Department has focused its monitoring on the contract with the Plans and has not extended those 
+monitoring activities to subcontractors (such as PBMs) used by the Plans to carry out core functions of 
+the State’s Medicaid program. In response to concerns around pharm acy reimbursements, the 
+Department amended the agreement with the Plans in April 2018 to include additional disclosure 
+requirements for pharmacy benefits. PBMs are now required to disclose differences between the amounts 
+paid to a pharmacy and the amount c harged to the plan sponsor (the spread pricing) and whether it uses 
+the same maximum allowable cost list for billing a Plan compared to reimbursing a pharmacy.  Each Plan 
+is to develop and publish on its website the requirements and appeal process for pharm acy providers. 
+The amended agreement indicates that upon request, the Plans will provide  all financial terms and 
+arrangements for payment of any kind that apply between the Plan (or the Plan’s first tier, downstream 
+and related entity) and any provider of a Medicaid service. 
+  
+The new agreement also adds a requirement effect ive July 1, 2018 that for sub- contracted payment 
+arrangements in which a vendor is responsible for paying claims on behalf of the Plan, the encounter data 
+must include the amounts paid b y the vendor. This should ensure that the Plans  submit amounts paid by 
+the PBM to the pharmacy in future encounter data.  
+  
+                                                      
+15 Increases in Reimbursement for Brand- Name Drugs in Part D (June 2018 OEI -03-15-00080 
+https://oig.hhs.gov/oei/reports/oei-03-15-00080.pdf 
+ 
+ 
+===PAGE 24===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 17 
+ 
+Medicaid Initiatives in Other States  
+Other state Medicaid programs have taken steps to address concerns around costs of pharmacy 
+services.  
+ 
+• Kentucky: Passed legislation in 2018 to increase reporting requirements of PBMs. The legislation 
+requires PBMs to provide the state’s Medicaid agency the total Medicaid dollars paid by the 
+managed care organizations as well as  the detailed cost components of payments to pharmacies 
+and all direct and indirect fees, charges and assessments a PBM imposes on a pharmacy.  
+Officials from the state Medicaid agency are currently engaged in the development of a reporting 
+mechanism to implement the recent legislation and define terms appropriately so that the correct 
+data is obtained.  In addition, Kentucky  approves contracts between the managed care 
+organizations and PBMs.  
+ 
+• Massachusetts: In an attempt to control rapidly increasing pharmacy and high drug c osts, the 
+state Medicaid agency submitted a waiver to the Centers for Medicare and Medicaid Services 
+(CMS) to implement a value- based pharmacy pricing model. Under this model, Massachusetts 
+would have the ability to negotiate directly with manufacturers on the price of drugs and to 
+exclude certain drugs from its preferred drug list under certain conditions. Under the proposal, if 
+an agreement with drug manufacturers is not reached, manufacturers would be required to justify 
+drug prices, may be required to a ttend public hearings and make information on drug pricing 
+available to the public.  In its initial response, CMS did not approve the waiver as submitted. The 
+final resolution was not known at the time of this report. Following Massachusetts, other states 
+including Arizona announced intentions to request approval for new flexibilities in Medicaid drug 
+coverage. 
+ 
+• Texas: In 2014, Texas Medicaid added to and strengthened provisions in its contract with its 
+managed care organizations to: 
+ 
+• Prohibit contracting with PBMs using the spread pricing model; 
+• Improve monitoring of PBMs; 
+• Prohibit PBMs from charging pharmacies transaction fees; and 
+• Ensure patient access to medications.  
+ 
+Texas requires PBMs to submit quarterly financial and statistical reports in order to analyze their 
+reimbursements to pharmacies compared to their reimbursements from the managed care 
+organizations. 
+  
+Texas also passed legislation in 2017 that requires periodic audits of PBMs to obtain greater 
+assurance about the effectiveness of the PBMs ' internal controls and compliance with state 
+requirements. Representatives from the Texas Medicaid program stated that building positive 
+relationships with PBMs and stakeholders through regular meetings and dialogue was important 
+to obtain support for these changes and for the additional reporting and monitoring activities.  
+ 
+• Virginia: This state added a provision to the budget bill in 2017 requiring the state Medicaid 
+agency to provide quarterly reports on PBM claims data, the amount being paid to pharmacies, 
+and the difference between those amounts (the spread). In October 2018, Virginia will release a 
+report that will include a full year of data enabling officials to identify patterns and trends. In 
+addition, Virginia is working to add a requirement for managed care organizations to report an 
+itemization of all administrative fees, rebates, and processing charges associated with the claim.  
+ 
+• West Virginia: In July of 2017, in response to increasing payments that the state determined were 
+unsustainable, West Virginia moved pharmacy benefits from managed care back to fee- for-
+service. To address concerns by the managed care organizations in relation to care coordination, 
+the state added technology to enable the managed care organizations to view pharmacy data on 
+a real -time basis. The state performed an analysis prior to implementing this change which 
+===PAGE 25===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 18 
+ 
+indicated there would be savings to the state Medicaid program from this change; however, the 
+actual impact of this change was not known at the time of this report.  
+ 
+Recommendations 
+1. SERVICE ORGANIZATION REPORT ON INTERNAL CONTROLS 
+ 
+Service organizations provide services ranging from performing a specific task under the direction of 
+an entity to replacing entire business units or functions of the entity. When the operating activity is not 
+directly administered by the entity, such as when utilizing a service organization, it is critical that the 
+appropriate controls are designed and implemented to reasonably ensure the service organization 
+has adequate controls to a chieve management’s goals and objectives and complies with applicable 
+laws and regulations. Service Organization Controls reports, known as SOC reports, help user 
+organizations monitor their outsourced relationships and manage the associated risks. SOC -1 audits 
+are performed over these service organizations to provide information about internal controls to 
+management and to auditors who rely on the SOC -1 report results for the audit of the user entity’s 
+financial statement. 
+ 
+The Managed Care Plan Provider Agreement outlines the responsibility of the Plans in relation to 
+pharmacy services and submission of encounter data regarding these services. These responsibilities 
+include ensuring appropriate coverage of prescribed drugs, communications with members (Medicaid 
+beneficiaries), conducting a drug utilization review program, and making payments to pharmacies. In 
+order to meet the requirements related to pharmacy services, the Plans contract with PBMs to 
+perform these required functions. Per the agreement, the Plan agrees to hold all subcontractors 
+acting on its behalf in the performance of services responsible for adhering to the requirements.  
+ 
+Without a SOC -1 audit, the Department may not have sufficient information to reasonably ensure 
+controls are in place to ensure the integrity of the data processed, maintained, and reported by the 
+Plans. Data errors could lead to undetected errors in calculation of the capitation payment and federal 
+reporting. We recommend the Department take steps to ensure that an annual SOC -1 audit is 
+completed over PBM services and activities, and to make this information available to auditors 
+evaluating the encounter and financial data reported.  
+ 
+2. ADDITIONAL AUDIT REQUIREMENT 
+ 
+In addition to the SOC -1 audit, the State should require t hat the Department engage an independent 
+audit entity to perform periodic compliance audits of each PBM that contracts with a managed care 
+plan. The Department should establish the scope of the compliance examinations. The compliance 
+audits should provide greater assurance about the PBMs' compliance with State requirements. The 
+Department should develop, document, and implement a monitoring process to ensure that the Plans 
+correct any findings from those audits. 
+ 
+3. ADDITIONAL STATISTICAL AND FINANCIAL REPORTING REQUIREMENTS 
+ 
+The State should go beyond monitoring the spread and obtain statistics and financial information that 
+include transactions that occur outside of claims adjudication. This would give a more accurate 
+picture of actual reimbursement to pharmacies for services rendered. We recommend that the 
+Department require the P lans report financial terms and payment arrangements they have with its 
+PBM and prescription drug manufacturer s, or labelers, including formulary management, drug- switch 
+programs, educational support, claims processing, pharmacy network fees,  data sales fees, and all  
+other fees. The Department should also include language ensuring that it has the right to audit this 
+data at any time.  The confidentiality of the information disclosed by the Plans should be maintained, 
+to the extent that the information is protected under state or federal law. 
+ 
+ 
+ 
+ 
+===PAGE 26===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 19 
+ 
+4. DEVELOPMENT OF BENCHMARKS FOR MONITORING PHARMACY PAYMENTS  
+ 
+If Ohio’s Plans continue to use spread pricing contracts, the Department should develop benchmarks 
+or a performance scorecard to monitor spread pricing and price fluctuations. These benchmarks 
+should include, at a minimum, spread by type of drug, by region, and by managed care plan. As other 
+state Medicaid programs report out on pharm acy data/spread, Ohio could look to these states to 
+benchmark its data. 
+ 
+5. ANALYSIS OF ALTERNATE CONTRACT MODEL 
+ 
+The State should perform an analysis to identify the costs and benefits of requiring pass through 
+contracting for its pharmacy services and report on those results including a detail of the methodology 
+used for the analysis. In pass through contracting, the PBM charges the Plan a flat administrative fee 
+per claim or per member and then passes the exact price paid to the pharmacy through to the Plan. 
+In the interim, the Department should work with its  Plans and the PBMs to ensure that reimbursement 
+methodologies reflect reasonable costs associated with providing the service. 
+ 
+In addition, the State should engage an independent third party to conduct a complete analysis of the 
+impact of moving pharmacy services to a fee-for-service model similar to the change implemented in 
+West Virginia. The HealthPlan Data Solutions (HDS) executive summary contains a fee- for-service 
+comparison; however, notes that the comparison is incomplete and recommends a follow -up analysis 
+that incorporates the impact of rebates. The Auditor of State requested a copy of the full report 
+developed by HDS  but the full report is not yet available. Without the detailed methodology of the 
+analysis performed by HDS, the Auditor of State cannot comment on or evaluate its fee- for-service 
+pricing comparison. 
+ 
+6. MONITOR OTHER STATE INITIATIVES  
+ 
+The Department should continue to monitor approaches being tried in other states, such as the 
+waiver request submitted by Massachusetts, and consider if application of any of these approaches 
+would benefit Ohio. 
+  
+7. STRENGTHEN INTERNAL CONTROLS OVER DRUG REBATE CONTRACT MONITORING  
+ 
+The Department should implement the recommendation regarding the State’s  own third party 
+administrator contained in the State of Ohio Single Audit for the year ended June 30, 2017 and 
+strengthen its current internal control procedures over drug rebate contract monitoring. The 
+monitoring procedures performed should be documented to provide assurance they are performed 
+consistently. Additionally, these procedures should be updated regularly to address any changes in 
+the contract requirements. 
+ 
+Issues for Further Study  
+ 
+The following are issues that were identified but were not reviewed within the scope of this report. 
+ 
+• Automatic Refills: This refers to allowing pharmacies to automatically refill prescriptions for certain 
+medications without any customer action. Concerns with pharmacy automatic refill include the 
+potential for st ockpiling and continued fill ing of discontinued medications which result s in 
+increased costs and waste of prescription medications , as well as fraudulent resale. Two states 
+reviewed by the Government Accounting Office, Florida and Arizona, have prohibited the 
+practice. The impact of this practice on the Medicaid program is unknown, but automatic refills 
+have been identified as a risk factor in fraud, waste and abuse.  
+ 
+• Medical Loss Ratio:  The Medical Loss Ratio places a requirement on insurance companies to  
+spend a set percent of premium dollars on medical care and health care quality improvement 
+rather than administrative costs. Quality improving activities should be designed to improve health 
+===PAGE 27===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 20 
+ 
+outcomes and be based on evidence based practices. The Department's contract with its Plans 
+indicates that the minimum medical loss ratio shall not fall below 85 percent.  
+ 
+During several interviews concerns were expressed that the current practice of spread pricing 
+contracts impacted the medical loss ratio requirement. In addition, a 2017 presentation by the 
+HHS/OIG identified one type of managed care fraud which included misrepresenting the ratio. 
+Additional review of this issue is warranted if Ohio continues to allow spread pricing contracts to 
+fully determine if these practices have any material impact on the medical loss ratio.  
+ 
+• Rebates and Rebate Audits : A rebate is a di scount on a medication provided by a drug 
+manufacturer in return for the manufacturer’s drug product being included on the preferred drug 
+list. Since PBMs impact the managed care plan’s formularies, they can negotiate better prices for 
+certain drugs. The Plan’s contracts address the sharing of rebates obtained by the PBMs.  
+ 
+However, concerns were expressed around PBMs inappropriately withholding rebates and t his 
+practice has been identified as a risk factor for fraud, waste and abuse.  In addition, research on 
+PBMs noted practices that result in higher costs drugs with larger rebates being added to 
+preferred drug lists that may increase overall costs.  Also, PBMs could be negotiating for 
+additional discounts that are unknown to the Plans.  Others have raised concerns that PBMs are 
+charging another fee (in addition to the supplemental rebates), renaming it as a transaction fee, 
+and charging this directly to the manufacturer. 
+ 
+Representatives of the Plans  discussed their rebate audit processes which differed in their scope 
+and depth. If the state of Ohio were to perform rebate audits any discrepancies could be brought 
+to light. Given the complexity and secrecy around rebates, the role of the rebate audit is 
+significant. Rebates are used by  the actuarial firm that  calculates the per member/per month 
+capitation payment. The significance of rebates on the capitation payment is unclear; however, 
+further study of this issue is warranted to fully understand the impact on the Medicaid program.  
+ 
+• Conflicts of Interest/Anti -Competitive Practices: This report presents data on pharmacy closures 
+over past five plus years and spread pricing for a recent 12 month period; however, this high level 
+review is not adequate to fully address the concerns that exist around conflict of interest and anti -
+competitive practices. It should be noted that of the Medicaid PBMs operating in Ohio, CVS 
+Caremark is the only PBM that shares ownership with a pharmacy, or put differently, CVS is the 
+only retail pharmacy affiliated with a PBM (having the same parent company). Representatives of 
+CVS Caremark interviewed as part of this report stated that a firewall is maintained between CVS 
+Retail Pharmacies and CVS Caremark . During interviews with interested parties, it was 
+suggested that CVS Retail pharm acy technicians are prompted as to which drugs to pick from a 
+list to maximize the spread.  CVS Caremark representative deny that this takes place. The limited 
+scope of this report does not address this practice and this area warrants a more thorough audit. 
+ 
+Other potential sources for conflicts of interest were identified in research performed for this 
+report. For example, one conflict noted involves  the PBMs exclusivity with specialty and mail 
+order prescriptions. Most of the Plans agreed to have its PBM be the provider of these types of 
+prescriptions. This arrangement could impact the rates of generic and brand drugs that  may 
+impact the rebates paid to the PBM for  the purchase of the drugs . The potential conflicts of 
+interest surrounding PBMs warrant further study as they could impact not only Ohio Medicaid 
+program but other public payers of health care.  
+ 
+• Sale of De-Identified Information: We inquired with representatives of  both PBMs as to whether 
+they sell de-identified data associated with PBM facilitated transactions. They  both indicated that 
+they would need permission from a Plan to do that . Based on a review of contracts between 
+PBMs and the Plans, there are no provisions prohibiting the sale of de-identified data by a PBM 
+to a third party.  
+===PAGE 28===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 21 
+ 
+Appendix A: Analysis of Maximum Allowable Cost Lists for November 12  - 18, 2017 
+We received maximum allowable cost generic drug pricing lists from OptumRx and CVS Caremark  for 
+one week and analyzed the pricing for a sample of five drugs16. For this period, CVS Caremark provided 
+12 lists and OptumRx provided three lists17. We identified the prices applicable to each of the five 
+selected generic drugs from both PBMs. CVS Caremark had four times  the number of lists  with an 
+average of two different prices for each drug during the week as compared to one different price for 
+OptumRx. However, this data represents a limited snapshot of drug pricing and is not sufficient to draw 
+conclusions about pricing.   
+                                                      
+16 The five drugs selected were: Omeprazole, Hydrocodone-Acetaminophen, Cetirizine HCL, Tramadol 
+HCL, and Amoxicillin. 
+17 Three additional Maximum Allowable Cost lists were provided by O ptumRx; however, they were 
+excluded from this analysis as OptumRx stated the three lists were based on aggregate value based 
+contract pricing and were not reflective of individual negotiated drug prices.  
+ 
+===PAGE 29===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 22 
+ 
+Appendix B: Minimum and Maximum Spread by Quarter and Drug Type 
+This data shows that specialty drugs had the largest minimum and maximum spreads per claim, followed 
+by generics and then brand drugs. We reviewed some of the claims that showed a negative spread and 
+found that these were due to a payment from a third party payer, indicating that the member had other 
+insurance coverage.  
+ 
+Minimum and Maximum Spread by Quarter and Drug Type  
+  Brand  Generic  Specialty    
+Quarter  Min. 
+Spread 
+Max. 
+Spread  
+Min. 
+Spread 
+Max. 
+Spread  
+Min. 
+Spread 
+Max. 
+Spread  
+Combined 
+Average 
+4/1/2017-6/30/2017 ($1.79) $3.32  ($3.22) $7.58  ($33.47) $32.45  $5.09  
+7/1/2017-9/30/2017 ($1.87) $3.20  ($5.07) $7.69  ($52.94) $35.26  $5.35  
+10/1/2017-12/31/2017 ($2.11) $3.05  ($5.02) $8.96  ($41.46) $37.36  $6.47  
+1/1/2018-3/31/2018 ($3.84) $2.96  ($5.92) $8.39  ($87.13) $58.65  $6.01  
+Total  ($2.23) $3.15  ($4.57) $8.20  ($53.87) $38.55  $5.71  
+1 Source: Data files submitted by CVS Caremark and OptumRx 
+2 Based on the period of April 1, 2017 through March 31, 2018 
+  
+===PAGE 30===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 23 
+ 
+Appendix C: Spread by County Based on Pharmacy Location 
+County  Brand  Generic Specialty  All 
+Types County  Brand  Generic Specialty  All 
+Types 
+Adams $0.99  $5.24  $37.69  $4.74  Licking $1.15  $7.20  $82.11  $6.55  
+Allen $2.42  $6.55  $42.18  $6.11  Logan $2.20  $5.56  $7.75  $5.16  
+Ashland $4.58  $5.44  $86.18  $5.41  Lorain $2.14  $5.62  $52.19  $5.23  
+Ashtabula $2.18  $6.16  $53.95  $5.71  Lucas $1.13  $7.48  $32.79  $6.67  
+Athens $1.60  $7.39  $59.45  $6.64  Madison $2.37  $6.00  $21.28  $5.58  
+Auglaize $3.69  $8.32  $95.94  $7.85  Mahoning $2.54  $5.19  $36.58  $4.89  
+Belmont $3.46  $7.99  $56.08  $7.50  Marion $1.00  $5.79  $46.74  $5.33  
+Brown $1.48  $6.53  $95.59  $5.97  Medina $2.27  $5.92  $38.06  $5.53  
+Butler $1.49  $6.08  $16.53  $5.56  Meigs $2.13  $5.45  $96.36  $5.18  
+Carroll $2.05  $5.57  $171.03  $5.20  Mercer $3.08  $7.97  $58.87  $7.49  
+Champaign $1.80  $6.97  $71.60  $6.42  Miami $2.51  $7.01  $45.88  $6.51  
+Clark $1.55  $5.33  $45.12  $4.90  Monroe $1.53  $4.96  $50.52  $4.58  
+Clermont $1.31  $7.37  $69.11  $6.65  Montgomery $1.73  $5.81  $44.68  $5.37  
+Clinton $1.91  $6.78  $55.94  $6.23  Morgan ($17.80) $4.91  $301.45  $2.13  
+Columbiana $3.77  $5.77  $39.20  $5.53  Morrow $1.79  $6.72  $58.99  $6.14  
+Coshocton $2.10  $5.22  $39.83  $4.83  Muskingum $2.20  $6.78  $52.96  $6.21  
+Crawford $1.68  $6.17  $157.17  $5.75  Noble $2.24  $6.99  $108.25  $6.54  
+Cuyahoga $1.70  $5.29  $73.19  $5.08  Ottawa $2.89  $7.26  $47.64  $6.72  
+Darke $2.41  $7.08  $67.82  $6.62  Paulding $3.37  $6.36  $60.14  $6.03  
+Defiance $2.98  $7.14  $36.22  $6.68  Perry $1.30  $6.64  $80.11  $5.99  
+Delaware $1.30  $7.91  $36.09  $7.28  Pickaway $1.10  $6.54  $65.24  $5.90  
+Erie $2.31  $6.58  $82.17  $6.20  Pike $1.88  $6.05  $38.20  $5.56  
+Fairfield $1.41  $6.59  $69.07  $6.01  Portage $3.77  $6.79  $46.78  $6.45  
+Fayette $0.89  $6.75  $50.09  $6.07  Preble $1.75  $5.06  $60.06  $4.70  
+Franklin $1.09  $6.06  $62.13  $5.57  Putnam $1.70  $7.97  $42.19  $7.34  
+Fulton $1.39  $8.96  $49.46  $8.12  Richland $2.95  $6.01  $40.89  $5.66  
+Gallia $2.40  $5.14  $32.65  $4.86  Ross $1.56  $5.39  $61.86  $4.99  
+Geauga $2.63  $7.36  $75.19  $6.90  Sandusky $3.59  $7.87  $101.16  $7.51  
+Greene $2.09  $6.38  $47.55  $5.87  Scioto $2.04  $4.89  $35.52  $4.56  
+Guernsey $2.34  $6.76  $30.01  $6.28  Seneca $4.17  $8.36  $109.86  $7.96  
+Hamilton $0.86  $6.06  $42.91  $5.48  Shelby $2.58  $7.34  $45.99  $6.86  
+Hancock $3.40  $8.59  $30.56  $7.95  Stark $2.93  $6.10  $51.17  $5.78  
+Hardin $2.16  $6.95  $37.24  $6.38  Summit $3.50  $6.10  $67.03  $5.87  
+Harrison $2.85  $6.00  $114.17  $5.75  Trumbull $2.61  $5.64  $36.88  $5.29  
+Henry $1.33  $9.31  $36.82  $8.03  Tuscarawas $3.22  $5.50  $46.13  $5.26  
+Highland $0.98  $6.05  $34.95  $5.40  Union $1.49  $5.89  $49.92  $5.37  
+Hocking $1.05  $7.72  $47.69  $6.93  VanWert $4.28  $8.90  $26.79  $8.38  
+Holmes $9.41  $7.25  $80.79  $7.53  Vinton ($6.39) $4.94  $50.36  $3.44  
+Huron $2.96  $6.62  $83.76  $6.26  Warren $2.26  $6.42  $13.67  $6.03  
+Jackson $2.20  $6.01  $71.97  $5.56  Washington $1.95  $5.58  $72.68  $5.17  
+Jefferson $2.97  $6.98  $61.01  $6.59  Wayne $2.76  $6.49  $56.76  $6.10  
+Knox $1.76  $6.14  $43.51  $5.72  Williams $4.41  $7.66  $30.98  $7.29  
+Lake $2.33  $6.77  $38.35  $6.30  Wood $1.33  $8.27  $62.41  $7.58  
+Lawrence $1.83  $4.98  $66.67  $4.68  Wyandot $1.98  $7.59  $34.81  $6.94  
+1 Source: Data files submitted by CVS Caremark and OptumRx 
+2 Based on the period of April 1, 2017 through March 31, 2018 
+===PAGE 31===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 24 
+ 
+Appendix D: Spread by Managed Care Plan 
+ 
+This data shows the spread as percentage of total paid to a PBM for each of the five Medicaid managed 
+care plans.  
+ 
+Managed Care Plan Total Spread (millions) Total Paid (millions) Percentage 
+Buckeye $32.8 $298 11.0% 
+CareSource $113.5 $1,386 8.2% 
+Molina $27.1 $310.2 8.8% 
+Paramount $22.3 $244.4 9.1% 
+United $28.9 $287.8 10.1% 
+Total $224.8 $2,526.5 8.9% 
+1 Source: Data files submitted by CVS Caremark and OptumRx 
+2 Based on the period of April 1, 2017 through March 31, 2018 
+===PAGE 32===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 25 
+ 
+Appendix E: Regions and Counties  
+Northeast Region 
+ 
+Ashland 
+Ashtabula 
+Carroll 
+Columbiana 
+Coshocton 
+Erie 
+Geauga 
+Harrison 
+Holmes 
+Huron 
+Jefferson 
+Lake 
+Medina 
+Portage 
+Trumbull 
+Tuscarawas 
+Wayne 
+ 
+Southeast Region 
+ 
+Athens 
+Belmont 
+Gallia 
+Guernsey 
+Hocking 
+Jackson 
+Lawrence 
+Meigs 
+Monroe 
+Morgan 
+Muskingum 
+Noble 
+Perry 
+Scioto 
+Vinton 
+Washington 
+Southwest Region 
+ 
+Adams 
+Brown 
+Champaign 
+Clark 
+Clermont 
+Clinton 
+Darke 
+Fayette 
+Greene 
+Highland 
+Miami 
+Pike 
+Preble 
+Ross 
+Warren 
+Northwest Region 
+ 
+Auglaize 
+Crawford 
+Defiance 
+Fulton 
+Hancock 
+Hardin 
+Henry 
+Logan 
+Mercer 
+Ottawa 
+Paulding 
+Putnam 
+Sandusky 
+Seneca 
+Shelby 
+Van Wert 
+Williams 
+Wood 
+Wyandot 
+Central Region 
+ 
+Delaware 
+Fairfield 
+Knox 
+Licking 
+Madison 
+Marion 
+Morrow 
+Pickaway 
+Union 
+Metro Region18 
+ 
+Allen 
+Butler 
+Cuyahoga 
+Franklin 
+Hamilton 
+Lorain 
+Lucas 
+Mahoning 
+Montgomery 
+Richland 
+Stark 
+Summit 
+ 
+ 
+ 
+The analysis of pharmacy closures does not include the Metro Region; however these counties are 
+included in a region based on their location; Allen and Lucas counties are in the Northwest Region, 
+Butler, Hamilton and Montgomery counties are in the Southwes t Region, Franklin County is in the Central 
+Region and the remaining Metro counties are in the Northeast Region.  
+  
+                                                      
+18 Counties identified as metropolitan is based on categorization in the Quality Decision Support System.  
+===PAGE 33===
+Ohio’s Medicaid Managed Care Pharmacy Services 
+ 
+ Page 26 
+ 
+Appendix F: Pharmacy Closures by Region 
+The following table shows a breakdown of the independent, small chain  and large chain pharmacy 
+closures by region and by year as reported by the Ohio Pharmacy Board. The Pharmacy Board’s data did 
+not identify reasons for a closure.  
+ 
+Year 
+ 
+Northeast 
+ 
+Southeast 
+ 
+Southwest 
+ 
+Northwest 
+ 
+Central 
+ 
+Totals 
+2013 15 7 17 11 5 55 
+2014 15 2 15 4 7 43 
+2015 9 2 6 5 4 26 
+2016 52 5 21 11 23 112 
+2017 19 6 15 6 19 65 
+2018 23 5 19 18 5 70 
+Totals 133 27 93 55 63 371 
+Percentage 36% 7% 25% 15% 17% 100% 
+1 Source: State of Ohio Pharmacy Board. 
+2 The 2018 data includes only January through May 2018 so does not represent a full year.  
+ 
+ 

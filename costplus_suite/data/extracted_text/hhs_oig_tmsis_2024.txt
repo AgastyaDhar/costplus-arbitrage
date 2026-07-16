@@ -1,0 +1,943 @@
+
+===PAGE 1===
+Medicaid Managed Care: 
+States Do Not Consistently 
+Define or Validate Paid 
+Amount Data for Drug Claims 
+Department of Health and Human Services 
+Office of Inspector General 
+Ann Maxwell  
+Deputy Inspector General 
+ for Evaluation and Inspections 
+May 20
+24, OEI-03-20-00560 
+
+===PAGE 2===
+ 
+OIG.HHS.GOV 
+May 2024 | OEI-03-20-00560 
+Medicaid Managed Care: States Do Not Consistently Define or 
+Validate Paid Amount Data for Drug Claims 
+Why OIG Did This Review 
+• In Medicaid managed care, consistent and accurate data on the amount pharmacies were reimbursed for 
+filling prescriptions are critical for CMS and States to administer the program and oversee drug spending.  
+Such data are particularly important in light of concerns that pharmacy benefit managers’ (PBMs’) use of 
+spread pricing could inflate Medicaid drug costs.   
+• In the Transformed Medicaid Statistical Information System (T-MSIS), the Medicaid Paid Amount data 
+elements that States report for managed care drug claims could—in practice—represent (1) the amount that 
+the plan or its PBM reimbursed to the pharmacy or (2) the amount that the plan paid to its PBM, which may 
+include PBM administrative fees, such as spread. 
+• If these paid amount data do not consistently and accurately reflect pharmacy reimbursement, this could 
+undermine States’ use of these data to determine actual Medicaid drug spending; to develop plans’ capitation 
+rates; and to combat fraud, waste, and abuse in Medicaid managed care.  Also, CMS has emphasized the 
+importance of these data for Federal oversight, including financial management of Medicaid managed care.   
+ 
+What OIG Found 
+State requirements varied for how plans should report the paid amount for drug claims.  Of the 
+36 States that covered outpatient prescription drugs for Medicaid through managed care in January 2022, 
+28 States required Medicaid managed care plans to report the paid amount for drug claims as the amount 
+the plan or its PBM reimbursed to the pharmacy; 2 States required plans to report the amount the plan 
+paid to its PBM; and 6 States had no reporting requirements. 
+For 37 of 252 managed care drug claims in our review, the T-MSIS paid amount did not equal 
+pharmacy-reported reimbursement, raising concerns about the accuracy or consistency of the paid 
+amounts on these claims.  Twenty-two non-matching claims in our sample were from States where the 
+T-MSIS paid amounts should have equaled pharmacy-reported reimbursement amounts for all claims 
+according to States’ requirements and practices.   
+Although all States relied on drug claim paid amounts to safeguard and administer the Medicaid 
+program, many States did not conduct certain activities to validate these data.  Most States relied on 
+these data to develop capitation rates and identify fraud, waste, and abuse.  Ten States did not validate 
+these data by comparing them to another data source—a recommended, but not required, activity. 
+What OIG Recommends 
+CMS should (1) revise the T-MSIS Data Dictionary to instruct States to report the paid amount as the amount 
+paid to the pharmacy for all Medicaid managed care drug claims; (2) provide additional technical assistance to 
+States to clarify what to include or exclude from the reported paid amounts to providers for Medicaid managed 
+care drug claims; and (3) follow up with States that did not verify that paid amounts for managed care drug 
+claims were complete.  CMS concurred with all three recommendations.  
+===PAGE 3===
+ 
+ 
+TABLE OF CONTENTS 
+ 
+ 
+BACKGROUND ................................................................................................................................................ 1 
+FINDINGS ......................................................................................................................................................... 9 
+State requirements varied for how plans should report the paid amount for drug claims .......................... 9 
+For 15 percent of managed care drug claims in our review, the T-MSIS paid amount did not equal 
+pharmacy reimbursement, raising concerns about the accuracy or consistency of the paid amounts on 
+these claims ............................................................................................................................................................................... 11 
+All States relied on paid amount data from drug claims to safeguard and administer the Medicaid 
+managed care program ........................................................................................................................................................ 12 
+Many States did not conduct certain activities to validate the paid amounts on Medicaid managed 
+care drug claims ...................................................................................................................................................................... 13 
+Half of States in our review faced challenges in using and/or validating drug claim paid amount data
+ ....................................................................................................................................................................................................... 14 
+CONCLUSION AND RECOMMENDATIONS ........................................................................................... 16 
+Revise the T-MSIS Data Dictionary to instruct States to report the paid amount as the amount paid to 
+the pharmacy for all Medicaid managed care drug claims ..................................................................................... 17 
+Provide additional technical assistance to States to clarify what to include or exclude from the 
+reported paid amounts to providers for Medicaid managed care drug claims .............................................. 17 
+Follow up with States that did not verify that paid amounts for managed care drug claims were 
+complete..................................................................................................................................................................................... 18 
+AGENCY COMMENTS AND OIG RESPONSE ......................................................................................... 19 
+APPENDICES................................................................................................................................................. 20 
+Appendix A: Sampling Frame Criteria ............................................................................................................................. 20 
+Appendix B: Agency Comments ........................................................................................................................................ 21 
+ACKNOWLEDGMENTS AND CONTACT ................................................................................................ 26 
+ABOUT THE OFFICE OF INSPECTOR GENERAL ..................................................................................... 27 
+ 
+ 
+ 
+ 
+===PAGE 4===
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 1 
+BACKGROUND 
+OBJECTIVES 
+1. To identify States’ requirements for Medicaid managed care plans to report
+the paid amount on claims for covered outpatient prescription drugs
+(hereinafter drugs).
+2. To determine the extent to which the paid amount equaled the amount
+Medicaid reimbursed the pharmacy for selected managed care drug claims
+in the Transformed Medicaid Statistical Information System (T-MSIS).
+3. To identify the actions that States have taken to validate and use paid
+amount data for Medicaid managed care drug claims.
+Prescription Drug Coverage in Medicaid Managed Care 
+States administer Medicaid according to Federal requirements to provide health 
+coverage to eligible groups, such as low-income adults, pregnant women, children, 
+older adults, and individuals with disabilities.  At the time of our review, Medicaid 
+programs in all 50 States and the District of Columbia (hereinafter States) covered 
+drugs for Medicaid enrollees.  States offer Medicaid services, including drugs, 
+(1) through a fee-for-service (FFS) model; (2) by contracting with Medicaid manage
+d
+c
+are plans (hereinafter plans) to provide coverage to enrollees; or (3) through a
+combination of FFS and managed care.1
+I
+n January 2022, 36 States contracted with plans to provide drug coverage for 
+Medicaid enrollees.2  In fact, plans were responsible for the majority of Medicaid drug 
+utilization and reimbursement, accounting for 66 percent of Medicaid prescriptions in 
+2022.3  That year, plans reimbursed 62 percent ($56.4 billion) of total Medicaid drug 
+expenditures.4  
+_____________________________________________________________________________________________________________________________
+1 The term “managed care plans” may refer to managed care organizations (MCOs), prepaid inpatient 
+health plans (PIHPs), or prepaid ambulatory health plans (PAHPs).  42 CFR § 438.2. 
+2 OIG analysis of State survey data, 2022. 
+3 OIG Analysis of “Number of Prescriptions” from CMS’s State Drug Utilization Data 2022 – National 
+Totals.  Accessed at https://www.medicaid.gov/medicaid/prescription-drugs/state-drug-utilization-data/i
+ndex.html on July 7, 2023.  
+4 OIG Analysis of “Medicaid Amount Reimbursed” from CMS’s State Drug Utilization Data 2022 – 
+National Totals.  For capitated payment arrangements, a zero value could be appropriate for managed 
+care data reported to this field.  Accessed at https://www.medicaid.gov/medicaid/prescription-drugs/stat
+e-drug-utilization-data/index.html on July 7, 2023.
+===PAGE 5===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 2  
+Pharmacy Reimbursement in Medicaid Managed Care 
+Under the managed care model, States pay plans a periodic (usually monthly) fee 
+known as a capitation payment for each enrollee for services covered in the contract, 
+which can include drugs, regardless of whether the enrollee uses any covered services 
+each month.  In turn, when enrollees obtain covered drugs, plans pay the pharmacies 
+that dispensed them.  Many plans subcontract with pharmacy benefit managers 
+(PBMs) to administer their Medicaid drug benefit, which could include paying 
+pharmacies’ drug claims.5   
+PBM Spread Pricing 
+PBMs recently have come under scrutiny for a lack of transparency in the practice of 
+spread pricing, which could result in higher drug costs for plans, States, and the 
+Federal government.6  Spread pricing occurs when a PBM charges a plan more for a 
+drug than the amount that the PBM pays a pharmacy to dispense the drug.7  The PBM 
+retains the difference, or “spread,” for itself.  This practice—if undetected—could 
+prevent a plan from determining what portion of its costs is for the drug itself and 
+what portion is retained by the PBM as administrative fees.  In turn, this could lead to 
+higher costs for States and the Federal government because plans’ spending affects 
+future capitation rates that States pay to plans.  These State payments to plans 
+include Federal matching funds.   
+If a plan includes administrative costs, such as PBM spread, as part of its medical 
+costs, the plan’s medical loss ratio (MLR) could be inflated—which could undermine 
+MLRs as an important tool in the development of capitation rates and the protection 
+of Medicaid managed care funds.
+8  MLRs help to ensure that plans spend most of 
+their premium revenue on covered health care services and quality-improvement 
+activities, thereby limiting the amount that plans can spend on administration and 
+_____________________________________________________________________________________________________________________________ 
+5 Hereinafter, we use “PBMs” to include pharmacy benefit managers, pharmacy benefit administrators, 
+and similar entities. 
+6 CMS, CMS Issues New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit 
+Managers are not Up-Charging Taxpayers, May 2019.  Accessed at https://www.cms.gov/newsroom/press
+-releases/cms-issues-new-guidance-addressing-spread-pricing-medicaid-ensures-pharmacy-benefit-
+managers-are-not on April 13, 2023.  Kaiser Family Foundation, Costs and Savings under Federal Policy 
+Approaches to Address Medicaid Prescription Drug Spending, June 2021.  Accessed at 
+https://www.kff.org/medicaid/issue-brief/costs-and-savings-under-federal-policy-approaches-to-
+address-medicaid-prescription-drug-spending/ on February 7, 2024. 
+7 CMS, CMS Issues New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit 
+Managers are not Up-Charging Taxpayers, May 2019.  Accessed at https://www.cms.gov/newsroom/press
+-releases/cms-issues-new-guidance-addressing-spread-pricing-medicaid-ensures-pharmacy-benefit-ma
+nagers-are-not on April 13, 2023. 
+8 The MLR is the percentage of premium revenue that a managed care plan spent on covered health care 
+services and quality-improvement activities.  CMS requires States to set their managed care plans’ 
+capitation rates so that plans will “reasonably achieve” MLRs of at least 85 percent.  As part of the 
+process for setting capitation rates, States must take into account the MLRs that their managed care 
+plans have reported.  States also have the option to require plans to meet a minimum MLR of at least 85 
+percent.  42 CFR § 438.4(b)(9), 42 CFR § 438.8(c), and 42 CFR § 438.5(b)(5). 
+===PAGE 6===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 3  
+keep as profit.9  According to CMS, PBMs must give plans sufficient data so that plans 
+can count any PBM spread as administrative costs, not medical costs, in their MLR 
+calculations.10 
+Although no Federal prohibition of PBM spread pricing exists in Medicaid, as of 
+January 2022, 27 States reported to OIG that they prohibited all or some plans’ use of 
+spread pricing.11  The Federal Trade Commission and the House Oversight Committee 
+announced investigations focused on PBMs’ role in health care costs in June 2022 and 
+March 2023, respectively.12, 13  Both the U.S. Senate and the House of Representatives 
+have introduced legislation that would prohibit PBM spread pricing if the legislation is 
+enacted.
+ 
+Medicaid Managed Care Drug Payment Data  
+CMS established Medicaid’s national database, T-MSIS, to provide CMS, States, and 
+other stakeholders with accurate and consistent Medicaid data, including payment 
+data, to safeguard and administer the program.  For example, CMS requires its 
+Medicaid program integrity contractors—the Unified Program Integrity Contractors—
+to use T-MSIS data to conduct their Medicaid program integrity activities.14   
+According to Federal regulations, States must require plans to submit complete and 
+accurate encounter records, including managed care drug claims, to States for all 
+covered services provided to Medicaid enrollees.15  In turn, CMS requires States to 
+submit these records to T-MSIS, which includes the amounts paid for drug claims.16  
+The T-MSIS Data Dictionary communicates the requirements for States to correctly 
+_____________________________________________________________________________________________________________________________ 
+9 Medicaid and CHIP Payment and Access Commission, Medical Loss Ratios in Medicaid Managed Care, 
+January 2022.  Accessed at https://www.macpac.gov/publication/medical-loss-ratios-in-medicaid-
+managed-care/ on December 28, 2023. 
+10 CMS, Informational Bulletin: Medical Loss Ratio (MLR) Requirements Related to Third-Party Vendors, May 
+2019.  Accessed at https://www.medicaid.gov/federal-policy-guidance/downloads/cib051519.pdf on 
+October 2, 2019. 
+11 OIG analysis of State survey data, 2022. 
+12 Federal Trade Commission, FTC Launches Inquiry Into Prescription Drug Middlemen Industry, June 2022.  
+Accessed at https://www.ftc.gov/news-events/news/press-releases/2022/06/ftc-launches-inquiry-prescrip
+tion-drug-middlemen-industry on March 22, 2023.  
+13 U.S. House Committee on Oversight and Accountability, Comer Launches Investigation into Pharmacy 
+Benefit Managers’ Role in Rising Health Care Costs, March 2023.  Accessed at https://oversight.house.gov/
+release/comer-launches-investigation-into-pharmacy-benefit-managers-role-in-rising-health-care-costs 
+on March 22, 2023.  
+14 CMS, Availability and Use of Transformed Medicaid Statistical Information System (T-MSIS) Data for 
+Program Integrity (PI) Purposes, Technical Direction Letter (TDL) #U-2021-0005, August 2021. 
+15 42 CFR § 438.242(b) and (c). 
+16 42 CFR § 438.242(d) and 42 CFR § 438.818(a)(3). 
+===PAGE 7===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 4  
+submit data to CMS.17  CMS also provides States with coding guidance in the T-MSIS 
+Coding Blog that gives additional context about CMS’s reporting requirements and 
+expectations.18 
+Medicaid Paid Amount in T-MSIS 
+In its 2020 Medicaid Managed Care Final Rule, CMS emphasized the importance of 
+the paid amount in T-MSIS for “proper monitoring and administration of the Medicaid 
+program, particularly for capitation rate setting and review, financial management, 
+and encounter data analysis.”19  This Final Rule also clarified, in response to a 
+comment, that the paid amount reflects the amount that the plan or subcontractor 
+(e.g., a PBM) actually reimburses to a pharmacy after adjudicating a claim.  However, 
+the T-MSIS Data Dictionary does not instruct States to report the paid amount for 
+managed care drug claims as the amount plans or their PBMs reimbursed to the 
+pharmacy, except for certain sub-capitated encounters (which do not include all 
+encounters in which plans contract with PBMs).  According to CMS, the Medicaid Paid 
+Amount data element for managed care drug claims in T-MSIS could—in practice—
+represent (1) the amount that the plan or its PBM reimbursed to the pharmacy at the 
+point of sale (i.e., pharmacy reimbursement) or (2) the amount that the plan paid to its 
+PBM (i.e., PBM reimbursement), which may include PBM fees such as spread.
+20  
+Validation of Encounter Data 
+CMS defines high-quality encounter data, including payment data, as consistent, 
+accurate, complete, and timely, as shown in Exhibit 1.  CMS requires States to validate 
+these data by performing various activities which include, but are not limited to, 
+(1) ensuring submission of all enrollee encounter data, including the paid amount; 
+(2) setting requirements that plans validate the accuracy and completeness of 
+encounter data; and (3) auditing the accuracy of each plans’ encounter data.21, 22  CMS 
+has the authority to withhold federal financial participation from States that fail to 
+comply with encounter data validation requirements.23  CMS guidance identifies 
+_____________________________________________________________________________________________________________________________ 
+17 CMS publishes an interactive tool, the Data Guide, so that users can easily traverse the T-MSIS Data 
+Dictionary through a modern web interface.  The Data Elements section of this Data Guide specifies 
+definitions of each T-MSIS data element.  CMS, T-MSIS Data Guide.  Accessed at https://www.medicaid.g
+ov/medicaid/data-systems/macbis/transformed-medicaid-statistical-information-system-t-msis/t-msis-d
+ata-guide/index.html on July 12, 2023. 
+18 CMS, T-MSIS Coding Blog.  Accessed at https://www.medicaid.gov/medicaid/data-and-
+systems/macbis/tmsis/tmsis-blog/index.html on December 11, 2023. 
+19 85 Fed. Reg. 72754, 72807-72810 (November 13, 2020). 
+20 CMS response to OIG question regarding pharmacy reimbursement data in T-MSIS, February 2020, and 
+CMS response to OIG question regarding Medicaid Paid Amount requirements for managed care drug 
+claims in T-MSIS, April 2023. 
+21 42 CFR § 438.242(b), (c), and (d) and 42 CFR § 438.818(a)(2). 
+22 According to Federal regulations at 42 CFR § 438.602(e), States must conduct periodic, independent 
+audits of the accuracy of encounter data submitted by each plan at least once every 3 years. 
+23 42 CFR § 438.818(b) and (c). 
+===PAGE 8===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 5  
+activities—though it does not require them—that States should perform, at a 
+minimum, to ensure high-quality encounter data.24  One of these activities is States’ 
+implementation of “back-end” checks that compare encounter data with other data 
+sources (such as comparing paid amounts to plans’ financial reports).   
+ 
+ 
+ 
+ 
+ 
+ 
+Related Work 
+OIG’s body of work on Medicaid managed care and T-MSIS data has identified 
+deficiencies in the completeness of these data.25  Most recently, OIG evaluated T-MSIS 
+claims from January 2020 for the largest plan in each State that offered 
+comprehensive risk-based managed care.  OIG found that, in 10 States, at least 
+10 percent of the plans’ T-MSIS drug claims had inappropriate zeros, negative 
+amounts, or no information in the paid amount field.26  OIG recommended that CMS 
+review States’ managed care payment data in T-MSIS and ensure that States have 
+corrective action plans to improve data completeness and quality, as appropriate.  
+CMS did not concur with this recommendation, noting that it already was undertaking 
+efforts to improve payment data quality.
+27 
+In 2018, the Government Accountability Office (GAO) found that CMS had provided 
+States with limited information regarding the scope and methodology of Federally 
+_____________________________________________________________________________________________________________________________ 
+24 CMS, State Toolkit for Validating and Auditing Medicaid Managed Care Encounter Data, September 
+2023.  Accessed at https://www.medicaid.gov/sites/default/files/2023-10/mmce-data-valdtn-tolkit.pdf  
+on December 13, 2023. 
+25 See, for example, OIG, National Review of Opioid Prescribing in Medicaid Is Not Yet Possible 
+(OEI-05-18-00480) August 15, 2019; T-MSIS Data Not Yet Available for Overseeing Medicaid 
+(OEI-05-15-00050) June 26, 2017; Not All States Reported Medicaid Managed Care Encounter Data as 
+Required (OEI-07-13-00120) July 3, 2015. 
+26 OIG, Data on Medicaid Managed Care Payments to Providers Are Incomplete and Inaccurate 
+(OEI-02-19-00180) March 26, 2021. 
+27 Ibid. 
+E
+ 
+xhibit 1: Components of High-Quality Encounter Data 
+Consistency: Data across encounter records use the same definitions, forms, 
+and formats; and data within an individual encounter record align 
+Accuracy: Data represent the actual services provided, including the amount 
+that was paid for these services 
+Completeness: Data provide a record of all services provided to managed 
+care enrollees 
+Timeliness: Plans submit data in accordance with State deadlines so that 
+States can use data for program administration and submit data to CMS on 
+time 
+Source: CMS, State Toolkit for Validating and Auditing Medicaid Managed Care Encounter Data, September 2023.   
+===PAGE 9===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 6  
+required audits of each plan’s encounter and financial data.  GAO recommended that 
+CMS provide guidance to States on conducting these audits.28  CMS implemented this 
+recommendation and has published guidance to States regarding these audits in its 
+updated encounter data validation toolkit.
+29 
+Methodology 
+To address our study objectives, we used data from (1) a self-administered online 
+survey sent to all States, (2) a purposive sample of managed care drug claims from 
+the T-MSIS pharmacy claims file, and (3) a data request sent to the pharmacies that 
+billed for or dispensed the drugs on sampled T-MSIS drug claims.  
+State Survey.  In May 2022, we sent an online survey to 51 States.  We received 
+responses from all 51 States and analyzed the responses from the 36 States that 
+offered Medicaid enrollees drug coverage through managed care in January 2022.30  
+We reviewed and summarized States’ responses regarding their (1) administration of 
+Medicaid managed care drug benefits; (2) requirements for plans to report paid 
+amounts; and (3) validation and use of paid amount data.  
+T-MSIS Data.  To create our sampling frame, we extracted final-action managed care 
+drug claims for prescriptions filled in January 2022 from the T-MSIS pharmacy claims 
+file on CMS’s Integrated Data Repository (IDR) in June 2022.  We excluded from our 
+sampling frame drug claims that did not meet certain criteria, which included 
+completeness and reliability between summary-level and detail-level data elements.  
+Of the 36 States with managed care drug coverage in January 2022, 35 States had 
+drug claims in T-MSIS that met our sampling frame criteria.  Appendix A includes 
+details about our sampling frame criteria. 
+We selected a purposive (i.e., non-random) sample of 10 drug claims from each of the 
+35 States, for a total of 350 managed care drug claims.  We sampled purposively to 
+maximize the variation of pharmacies and plans selected within each State, to the 
+extent possible.  For example, each State’s drug claims included five claims for 
+prescriptions filled by chain pharmacies and five claims for prescriptions filled by 
+independent pharmacies.  We also reviewed sampled claims to ensure that all 
+pharmacies were not located in the same city. 
+Pharmacy Data Request.  For each sampled drug claim from T-MSIS, we contacted 
+the pharmacy that billed for or dispensed the drug and requested the amounts that 
+_____________________________________________________________________________________________________________________________ 
+28 GAO, Medicaid Managed Care – Additional CMS Actions Needed to Help Ensure Data Reliability, October 
+2018.  Accessed at https://www.gao.gov/products/gao-19-10 on March 21, 2023. 
+29 CMS, State Toolkit for Validating and Auditing Medicaid Managed Care Encounter Data, September 
+2023.  Accessed at https://www.medicaid.gov/sites/default/files/2023-10/mmce-data-valdtn-tolkit.pdf on 
+December 13, 2023. 
+30 The remaining 15 States responded to our survey that that they did not offer Medicaid enrollees drug 
+coverage through managed care in January 2022 and, therefore, did not complete the other survey 
+questions. 
+===PAGE 10===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 7  
+were reimbursed to the pharmacy.  We obtained pharmacy contact information from 
+the National Council for Prescription Drug Programs’ (NCPDP’s) provider file using the 
+National Provider Identifiers (NPIs) that appeared on the T-MSIS drug claims in the 
+sampling frame.  We requested that the pharmacy provide reimbursement amounts 
+as defined by the NCPDP.  Specifically, for each sampled drug claim, we asked 
+pharmacies to report the total amount paid, ingredient cost paid, and dispensing fee 
+paid, as well as other amounts including the patient pay amount, other payer amount, 
+and sales tax.  We received pharmacy-reported reimbursement data for 252 of the 
+350 drug claims in our sample, a 72-percent response rate.31   
+For each of these 252 drug claims, we compared the paid amount in T-MSIS to the 
+pharmacy-reported reimbursement amount and identified claims for which these 
+amounts did not match.  We identified a claim as a non-match if the T-MSIS Medicaid 
+Paid Amount did not equal any of the following reimbursement amounts: (1) the 
+pharmacy-reported NCPDP Total Paid Amount; (2) the calculated NCPDP Total Paid 
+Amount, as determined using the amounts pharmacies reported and following the 
+NCPDP Total Paid Amount definition; (3) the total of the pharmacy-reported 
+ingredient cost paid and dispensing fee paid; and (4) the pharmacy-reported 
+ingredient cost paid.32  In addition, we accounted for the amounts of any post 
+point-of-sale adjustments that occurred for the drug claim at the time of our data 
+collection.33  For the non-matching claims, we determined the direction and 
+magnitude of the difference between the paid amount in T-MSIS and the 
+pharmacy-reported NCPDP Total Paid Amount.  In addition, for each non-matching 
+claim, we identified the State’s requirements, if any, for plans to report paid amounts.   
+Limitations 
+The results of our comparisons of T-MSIS paid amounts to pharmacy-reported 
+reimbursement amounts cannot be generalized to the population of T-MSIS 
+pharmacy claims because we used a purposive, non-random sample.  Therefore, those 
+results are specific to the 252 drug claims in our review.   
+These drug claims were for prescriptions filled in January 2022, and the T-MSIS data 
+for these claims were extracted from CMS’s IDR in June 2022.  However, any edits 
+made to the paid amount data for these drug claims in T-MSIS after June 2022 are 
+not reflected in our analysis.  Some pharmacies reported that post point-of-sale 
+adjustments can happen long after pharmacies dispense or bill for prescriptions.  At 
+the time of our data request, only 1 of the 252 drug claims in our review had a post 
+point-of-sale adjustment that we could account for in our analysis.  For an additional 
+_____________________________________________________________________________________________________________________________ 
+31 These 252 claims included at least 3 claims associated with each of the 35 States in our sample. 
+32 For the T-MSIS Medicaid paid amount, we used data elements CRX041 and/or CRX125.  If the amount 
+in either of these T-MSIS data elements equaled one of the reimbursement amounts specified, we 
+considered it a match. 
+33 For this review, we defined a post point-of-sale adjustment as a payment a pharmacy made to or 
+received from a plan or PBM after the point of sale for a drug claim, regardless of whether the payment 
+was linked to an individual claim or multiple drug claims.   
+===PAGE 11===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560  Background | 8  
+53 drug claims in our review, pharmacies either reported that they were unable to 
+determine whether post point-of-sale adjustments occurred or did not answer our 
+question about post point-of-sale adjustments.   
+Finally, we did not independently verify the self-reported information from States or 
+pharmacies.  We followed up with States and pharmacies when we found incomplete 
+or inconsistent responses or responses that needed further clarification.    
+Standards 
+We conducted this study in accordance with the Quality Standards for Inspection and 
+Evaluation issued by the Council of the Inspectors General on Integrity and Efficiency. 
+ 
+===PAGE 12===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 9  
+FINDINGS 
+State requirements varied for how plans should report the paid 
+amount for drug claims 
+The 36 States that covered drugs for Medicaid through managed care in January 
+2022 responded that they set different requirements for their plans’ reporting of paid 
+amounts for drug claims, as shown in Exhibit 2.34  Without uniform standards for 
+plans’ reporting to States, the paid amounts that States report in T-MSIS may be 
+inconsistent across States.  Lack of consistent paid amount data for managed care 
+drug claims could hinder efforts to safeguard and administer the Medicaid program.  
+Further, T-MSIS paid amount data also may not accurately represent the amounts 
+pharmacies were reimbursed for drugs dispensed to Medicaid enrollees because, in 
+certain States, the reporting requirements allowed paid amount data to equal PBM 
+reimbursement amounts or left it to the discretion of plans.  If paid amounts reported 
+as PBM reimbursement contain administrative fees that are improperly counted as 
+medical costs, this could inappropriately inflate Medicaid managed care costs for 
+States and CMS.   
+_____________________________________________________________________________________________________________________________ 
+34 We use “paid amount” to refer to the amount that a plan reported to the State as the amount the plan 
+paid for a drug claim.  We use “drug claim” to refer to a claim for a prescription drug that was dispensed 
+at a pharmacy and paid by a plan, or its subcontractor, and submitted to the State as an encounter 
+record. 
+Exhibit 2: In January 2022, 28 States required Medicaid managed care plans to report 
+the paid amount for drug claims as pharmacy reimbursement; 8 States required 
+plans to report PBM reimbursement or had no reporting requirements 
+Source: OIG analysis of State survey data, 2022. 
+
+===PAGE 13===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 10  
+Eight of 36 States did not require their plans to report the paid 
+amount for drug claims as the amount that the pharmacy was 
+reimbursed 
+Eight States did not require their plans to report the paid amount for drug claims as 
+pharmacy reimbursement.  Of these eight States, two required plans to report the 
+paid amount as plan reimbursement to PBMs and six had not issued any 
+requirements or guidance to plans regarding how to report the paid amount for drug 
+claims.  In the absence of requirements or guidance, five of these six States stated 
+that plans varied in their practices and reported the paid amount as pharmacy 
+reimbursement only,
+ PBM reimbursement only, or a mix of pharmacy reimbursement 
+or PBM reimbursement (depending on the plan).  The sixth State did not know how 
+their plans were reporting the paid amount for drug claims. 
+Although most States required plans to report paid amounts as 
+pharmacy reimbursement, these States did not define pharmacy 
+reimbursement consistently 
+The 28 States that required plans to report paid amounts as pharmacy reimbursement 
+included this requirement in their contracts or established this requirement through 
+another mechanism (e.g., a policy document).  However, the paid amount data across 
+these States in T-MSIS still may be inconsistent—and, therefore, less reliable for 
+oversight of drug spending—because States’ definitions of pharmacy reimbursement 
+differed on whether pharmacy reimbursement must (1) include both the ingredient 
+cost and dispensing fee paid to the pharmacy; (2) equal the amount the pharmacy 
+received at the point of sale; and (3) include or exclude any other specific amounts, 
+such as amounts paid to the PBM or payments from enrollees.   
+For example, some States specified to their plans that pharmacy reimbursement must 
+include both the ingredient cost and dispensing fee, but these States’ definitions of 
+pharmacy reimbursement did not specify whether to include or exclude other 
+amounts, nor whether it must equal the amount received at the point of sale.  In 
+contrast, another State did not specify to its plans that pharmacy reimbursement must 
+include the ingredient cost and dispensing fee but did specify that it must equal the 
+amount received at the point of sale and must exclude amounts paid to the PBM.  
+Such inconsistencies may hinder CMS’s and other stakeholders’ effectiveness in using 
+T-MSIS to conduct program integrity activities and overseeing States, plans, and 
+PBMs.   
+===PAGE 14===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 11  
+For 15 percent of managed care drug claims in our review, the 
+T-MSIS paid amount did not equal pharmacy reimbursement, 
+raising concerns about the accuracy or consistency of the paid 
+amounts on these claims 
+Thirty-seven of 252 T-MSIS managed care drug claims (15 percent) in our purposive 
+sample had paid amounts that did not match pharmacy-reported reimbursement 
+amounts (i.e., non-matching amounts).35  For these 37 drug claims, the paid amounts 
+in T-MSIS may not accurately represent Medicaid drug spending.  In addition, States 
+may be limited in using these paid amount data to ensure proper payment because 
+they do not equal the amounts that pharmacies reported they received to fill these 
+prescriptions.   
+Twenty-two of the 37 non-matching amounts were from 11 States where the T-MSIS 
+paid amounts should have equaled pharmacy-reported reimbursement amounts for 
+all claims according to States’ requirements and practices.  Specifically, these 
+22 non-matching amounts were from 10 States that required their plans to report 
+paid amounts as pharmacy reimbursement and one State that indicated that—
+although it was not required—its plans reported paid amounts as pharmacy 
+reimbursement.  Some plans may have been non-compliant with States’ paid amount 
+reporting requirements or there may have been data reporting errors.36  For 9 of 
+these 22 drug claims, the paid amounts in T-MSIS ranged from $0.17 to $12.31 higher 
+than the pharmacy-reported reimbursement amounts.  For another 12 drug claims, 
+the paid amounts in T-MSIS ranged from $0.01 to $98.65 lower than the 
+pharmacy-reported reimbursement amounts.37  
+The remaining 15 of 37 non-matching amounts were from 8 States that either (1) did 
+not require plans to report paid amounts as pharmacy reimbursement (6 States) or 
+(2) required plans to report paid amounts as pharmacy reimbursement but also 
+indicated that they did not always report the plan-reported amount to T-MSIS 
+(2 States).38  For eight of these drug claims, the paid amounts in T-MSIS ranged from 
+$0.96 to $57 higher than the pharmacy-reported reimbursement amounts.  For 
+_____________________________________________________________________________________________________________________________ 
+35 For each sampled drug claim, we requested that the pharmacy provide specific reimbursement 
+amounts as defined by the NCPDP, including the total amount paid to the pharmacy, the ingredient cost 
+paid, and the dispensing fee paid.  For this analysis, we compared these pharmacy-reported NCPDP 
+amounts to the paid amounts in T-MSIS.   
+36 For 7 of these 22 claims, pharmacies either reported being unable to determine whether post 
+point-of-sale adjustments occurred or did not answer our question about post point-of-sale adjustments.  
+If such adjustments occurred, they potentially could explain these non-matching amounts. 
+37 We did not include the direction and magnitude of the difference between the T-MSIS paid amount 
+and the pharmacy-reported reimbursement amount for 1 of these 22 drug claims because T-MSIS 
+contained different amounts for the total encounter paid amount and the detail-level (i.e., line item) paid 
+amount. 
+38 For example, one State reported the FFS equivalent amount for all its claims, instead of the 
+plan-reported paid amount, to the Medicaid Paid Amount data element in T-MSIS. 
+===PAGE 15===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 12  
+another seven drug claims, the paid amounts in T-MSIS ranged from $0.82 to $858 
+lower than the pharmacy-reported reimbursement amounts.   
+All States relied on paid amount data from drug claims to 
+safeguard and administer the Medicaid managed care program 
+All 36 States reported that they relied on paid amount data from drug claims to 
+conduct 3 or more activities—outlined in Exhibit 3—to safeguard or administer their 
+Medicaid programs.39  Notably, 32 of 36 States used the paid amount data in setting 
+their plans’ capitation rates.  If these paid amount data are not accurate, States’ rate 
+development calculations—including estimates of future drug spending—may be 
+incorrect.  As another example, 28 States reported that they used the paid amount 
+data to identify potential fraud, waste, and abuse, such as identifying outlier payment 
+amounts or aberrant provider behavior.  In addition, 24 States used the paid amount 
+data to oversee managed care plans’ performance, such as by monitoring utilization 
+and drug spending.  
+ 
+_____________________________________________________________________________________________________________________________ 
+39 States reported that they used paid amount data for drug claims to conduct these activities in 2020, 
+2021, and/or 2022. 
+Exhibit 3: States used paid amount data from managed care drug claims to conduct 
+activities to safeguard and administer Medicaid 
+ 
+Source: OIG analysis of State survey data, 2022. 
+ 
+
+===PAGE 16===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 13  
+Many States did not conduct certain activities to validate the 
+paid amounts on Medicaid managed care drug claims  
+Ten of 36 States did not validate the accuracy of paid amounts 
+for drug claims by comparing them to another data source—a 
+recommended, but not required, activity 
+Despite States’ reliance on drug claim paid amounts to administer and oversee their 
+Medicaid programs, 10 of 36 States did not validate paid amounts by comparing 
+them to another data source (e.g., previous paid amount data or plans’ financial 
+reports) in 2021.  Though it is not required, CMS guidance identifies comparing 
+encounter data with other data sources as a foundational activity States should 
+perform, at a minimum, to ensure high-quality encounter data.
+40   
+Among the 26 States that did validate the paid amounts, 19 reported comparing the 
+paid amounts to multiple data sources, most commonly to paid amount data from 
+the plan’s previous drug claims, other plans’ drug claims, or the plan’s financial report.  
+Other data sources States used to validate drug claim paid amounts included drug 
+acquisition cost data (e.g., National Average Drug Acquisition Cost data), paid amount 
+data from drug claims covered under the State’s FFS program, and paid amount data 
+from the plan’s PBM.    
+Many States did not conduct at least one of three other data 
+validation activities that we reviewed 
+Federal regulations require States to validate the completeness and accuracy of 
+encounter data, including the paid amount for drug claims.  These requirements 
+include but are not limited to (1) ensuring submission of all enrollee encounter data; 
+(2) setting requirements that States’ plans perform validation or other quality checks 
+of encounter data; and (3) auditing the accuracy of each plan’s encounter data.41, 42  
+We reviewed 3 specific types of activities States could undertake that align with these 
+3 requirements, and only 16 States conducted all 3 of these activities for drug claim 
+paid amounts.43, 44   
+_____________________________________________________________________________________________________________________________ 
+40 CMS, State Toolkit for Validating and Auditing Medicaid Managed Care Encounter Data, September 
+2023.  Accessed at https://www.medicaid.gov/sites/default/files/2023-10/mmce-data-valdtn-tolkit.pdf on 
+December 13, 2023. 
+41 42 CFR § 438.242(b), (c), and (d) and 42 CFR § 438.818(a)(2). 
+42 According to Federal regulations at 42 CFR § 438.602(e), States must conduct periodic, independent 
+audits of the accuracy of encounter data submitted by each plan at least once every 3 years. 
+43 This was not a compliance assessment because we did not look at all possible activities that could be 
+conducted to achieve compliance.  States reported whether they checked for missing paid amounts and 
+set requirements for plans to validate data in 2021.  For the Federally required audits, States reported on 
+whether drug claim paid amounts were included in their most recent audit. 
+44 For 1 of the 16 States, only 2 of these validation activities were applicable to the State at the time of 
+our review. 
+===PAGE 17===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 14  
+Many States could have improved their efforts to validate the accuracy and 
+completeness of their paid amount data for managed care drug claims, as shown in 
+Exhibit 4.  Of the 20 States that did not perform all 3 activities we reviewed, 16 States 
+did not include validation or review of paid amounts for managed care drug claims as 
+part of their most recent Federally required periodic audits; 9 States did not require 
+their plans to perform any validation or other quality checks of the paid amounts for 
+drug claims; and 6 States did not verify that paid amounts were complete.  Half of States in our review faced challenges in using and/or 
+validating drug claim paid amount data  
+Eighteen States in our review reported that they faced challenges in using and/or 
+validating paid amounts for drug claims.  These challenges included poor-quality 
+encounter data and other barriers to effectively using or validating paid amount data. 
+Poor-Quality Paid Amount Data.  Nine States reported concerns about the 
+quality of their paid amount data, including missing or inaccurate data, and some of 
+these States indicated that these problems made it difficult to use these data to 
+safeguard or administer the Medicaid program.  Specifically, some of these States 
+reported challenges in using paid amount data for program integrity activities 
+because of reporting inconsistencies or inaccuracies such as the inclusion of PBM fees 
+in paid amounts.  Another State reported that it is a challenge to use paid amount 
+data because paid amounts from managed care drug claims are often missing or 
+reported as “zero.”   
+Other Data Use and Validation Challenges.  Some States reported other data 
+use and validation challenges, including inadequate resources to conduct analysis of 
+paid amount data.  For example, one State reported that conducting analysis to 
+Exhibit 4: Many States could have performed additional validation of 
+paid amount data for managed care drug claims 
+Source: OIG analysis of State survey data, 2022. 
+aThe total for this validation activity does not equal 36 States because, for 1 State, this audit was not applicable 
+at the time of our review. 
+
+===PAGE 18===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Findings | 15  
+compare managed care paid amounts with FFS paid amounts was both costly and 
+time consuming.  Two other States noted that they lacked staff to conduct reviews of 
+drug payment data.  Additionally, one State reported that it could not access 
+pharmacy data from PBMs to validate paid amounts because some PBMs’ contracts 
+with pharmacies prohibit sharing payment data.   
+State and Pharmacy Concerns Regarding Post Point-of-Sale Adjustments.  
+Some States, as well as some pharmacies from our purposive sample of drug claims, 
+reported challenges associated with post point-of-sale adjustments.  Post 
+point-of-sale adjustments are payments a pharmacy makes to or receives from a plan 
+or PBM that could ultimately decrease or increase the amount that the pharmacy is 
+paid at the point of sale for a drug claim.  For example, a PBM could require a 
+pharmacy to pay a fee to the PBM if the pharmacy does not meet a specified metric.  
+If CMS and States are not aware of post point-of-sale adjustments that reduce 
+pharmacy reimbursements, these amounts could be improperly counted as actual 
+Medicaid drug costs.   
+Some pharmacies reported concerns that these adjustments lack transparency 
+because they are collected in the aggregate, after claims are adjudicated, and cannot 
+be linked back to individual claims.  For example, one pharmacy stated, “Reporting 
+provided by PBM is not [at the] claim-level and the adjustments are aggregated at the 
+end of the year.”  Another pharmacy stated that “many times these fees are assessed, 
+and the pharmacy doesn’t know to which scripts the large clawbacks apply.”  Two 
+States also reported a similar concern.  For example, one State noted that “because 
+the data are aggregated…it is difficult to determine the specific impact” on the State’s 
+Medicaid claims.   
+===PAGE 19===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Conclusion and Recommendations | 16  
+CONCLUSION AND RECOMMENDATIONS 
+Consistent, accurate, and complete data on the paid amount for managed care drug 
+claims are critical for CMS and States to safeguard and administer the Medicaid 
+program.  If these data do not consistently and accurately reflect pharmacy 
+reimbursement, this could undermine States’ use of these data for determining actual 
+Medicaid drug spending, developing plans’ capitation rates, reviewing plans’ MLR 
+calculations, and combating fraud, waste, and abuse in Medicaid managed care.  CMS 
+has also emphasized the importance of these data for Federal oversight, including in 
+its financial management of Medicaid managed care.    
+High-quality paid amount data that reflect the amount reimbursed to pharmacies for 
+drug claims are particularly important in light of concerns that PBMs’ use of spread 
+pricing is not transparent and may inflate Medicaid drug costs.  If not properly 
+monitored, spread pricing may constitute a hidden fee that drives up plans’ costs, 
+which, in turn, may drive up States’ future capitation payments to plans.  Further, if a 
+plan includes administrative costs, such as PBM spread, with its medical costs in its 
+MLR, it will appear that this plan is spending more on medical care than it actually is.  
+Federal MLR requirements were established to help ensure that plans spend most of 
+their premium revenue on covered health care services and quality-improvement 
+activities, thereby limiting the amount that plans can spend on administration and 
+keep as profit.  
+Despite these concerns, the T-MSIS Data Dictionary does not instruct States to report 
+the paid amount for all managed care drug claims as the amount plans or their PBMs 
+reimbursed to the pharmacy.  In addition, although CMS clarified in its 2020 Medicaid 
+Managed Care Final Rule that paid amounts should reflect the amount paid to the 
+provider, we found that not all States required their plans to report paid amounts for 
+drug claims as the amount reimbursed to the pharmacy.  Moreover, across the States 
+that did require plans to report paid amounts as pharmacy reimbursement, States’ 
+definitions of pharmacy reimbursement differed—which may result in inconsistencies 
+in T-MSIS.  Further, in our review of 252 managed care drug claims, 15 percent had 
+paid amounts in T-MSIS that did not match pharmacy-reported reimbursement 
+amounts.  Finally, many States had significant gaps in their efforts to validate paid 
+amounts. 
+We recommend that CMS: 
+===PAGE 20===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Conclusion and Recommendations | 17  
+Revise the T-MSIS Data Dictionary to instruct States to report 
+the paid amount as the amount paid to the pharmacy for all 
+Medicaid managed care drug claims  
+Although high-quality paid amount data for drug claims that reflect the amount paid 
+to the pharmacy are essential to safeguard and administer the Medicaid program, we 
+found that some States do not require plans to report the paid amount for managed 
+care drug claims as pharmacy reimbursement.  Currently, the T-MSIS Data Dictionary 
+instructs States to report the paid amount as the amount paid on the claim, but it 
+does not specify that this should be the amount paid to the provider, except for 
+certain sub-capitated encounters (which do not include all encounters in which plans 
+contract with PBMs).  Therefore, CMS should revise the Data Dictionary’s definition of 
+the paid amount (i.e., CRX041 and CRX125) to help ensure that managed care drug 
+claims equal the amount paid to the provider, as CMS clarified in its 2020 Medicaid 
+Managed Care Final Rule.  Very minor revisions to the instructions could significantly 
+add clarity on this point.  For example, CMS could revise the definition of CRX041 to 
+add the bolded text below: 
+The total amount paid to the provider by Medicaid/CHIP or the managed care 
+plan on this claim or adjustment at the claim header level, which is the sum of the 
+amounts paid to the provider by Medicaid or the managed care plan at the 
+detail level for the claim. 
+Provide additional technical assistance to States to clarify what 
+to include or exclude from the reported paid amounts to 
+providers for Medicaid managed care drug claims 
+To help ensure consistent and accurate reporting of paid amounts to providers for 
+Medicaid managed care drug claims, CMS should issue additional technical assistance 
+to States to clarify CMS’s requirements and expectations for what these paid amounts 
+are intended to represent.  CMS should clarify the specific components (e.g., 
+ingredient cost, dispensing fee, amounts paid to the PBM, enrollee copayment) to be 
+included and excluded in reporting of pharmacy reimbursement amounts, and 
+whether reported pharmacy reimbursement amounts should equal the amount the 
+pharmacy received at the point of sale or account for later adjustments.  Such 
+assistance is needed because, we found, even among States that required their plans 
+to report paid amounts as pharmacy reimbursement there were differences in how 
+these States defined pharmacy reimbursement.  In turn, these differences could lead 
+to inconsistencies that hinder the use of paid amount data in T-MSIS for program 
+oversight.  Finally, CMS could also consider reminding States to specify in their 
+contracts with plans that plans must report paid amounts for drug claims as pharmacy 
+reimbursement.  CMS could provide this communication to States in the T-MSIS 
+Coding Blog, as a reporting reminder or through other appropriate means. 
+===PAGE 21===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Conclusion and Recommendations | 18  
+Follow up with States that did not verify that paid amounts for 
+managed care drug claims were complete  
+Many States did not perform one or more activities to validate the completeness and 
+accuracy of paid amount data for managed care drug claims.  Specifically, six States 
+reported that they did not verify that paid amounts for managed care drug claims 
+were complete (i.e., not missing).  At a minimum, CMS should follow up with these six 
+States to help ensure they are taking appropriate measures to verify the completeness 
+of these critical data. 
+In addition, although all States relied on drug claim paid amounts to administer and 
+oversee their Medicaid programs, 10 States did not compare these paid amounts to 
+another data source—which is an activity that is foundational to ensuring accuracy.  
+Therefore, CMS could take additional steps to strengthen States’ validation of paid 
+amounts for drug claims to help ensure these data are suitable for safeguarding and 
+administering the Medicaid program.  These steps could include, but are not limited 
+to: 
+• ensuring that States are setting requirements for their plans to perform 
+validation of paid amount data for managed care drug claims;  
+• identifying and sharing best practices from States that validate their paid 
+amount data for managed care drug claims by comparing these data to other 
+sources; 
+• providing targeted technical assistance to States that did not validate their 
+paid amount data for managed care drug claims by comparing these data to 
+other sources; and 
+• ensuring that the protocols for Federally required periodic audits include 
+review of paid amounts for managed care drug claims. 
+===PAGE 22===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Agency Comments and OIG Response | 19  
+AGENCY COMMENTS AND OIG RESPONSE  
+CMS concurred with all three of OIG’s recommendations.  In response to our first 
+recommendation, CMS stated that it will update the T-MSIS Data Dictionary to clarify 
+that States should report paid amounts as the amount paid to the provider for all 
+managed care drug claims.  To address our second recommendation, CMS stated that 
+it will provide additional technical assistance to States to clarify what should be 
+included and excluded from the reported paid amounts to providers for Medicaid 
+managed care drug claims.  Finally, in response to our third recommendation, CMS 
+stated that it will follow up with States that did not verify that paid amounts for 
+managed care drug claims were complete to ensure these States are complying with 
+all the requirements at 42 CFR § 438.242 and 42 CFR § 438.818.   
+OIG appreciates CMS’s commitments, which it appears will address our 
+recommendations when implemented, and looks forward to reviewing CMS’s actions 
+when complete.   
+For the full text of CMS’s comments, see the Agency Comments appendix at the end 
+of the report.   
+===PAGE 23===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix A | 20  
+APPENDICES 
+Appendix A: Sampling Frame Criteria 
+To be included in our sampling frame of T-MSIS pharmacy claims, each claim had to 
+meet certain criteria.  
+Pharmacy Claims Criteria.  Our sampling frame included only final-action, 
+non-denied claims adjudicated after December 2021 that contained (1) a prescription 
+fill date in January 2022; (2) a non-zero Medicaid payment amount; (3) only 1 line 
+item for payment; (4) consistent amounts between the total encounter paid amount 
+and the detail-level (i.e., line item) paid amount;45 (5) a type of service code and an 
+11-digit national drug code (NDC) that both identified a drug; (6) an NPI for the 
+pharmacy that billed for or dispensed the drug; (7) the prescription number; and (8) a 
+plan identification number.  Further, we excluded drug claims where non-Medicaid 
+payers paid a portion of the claim and drug claims for a compound drug.   
+NDC Criteria.  In addition, for the claim to be included in the sampling frame, the 
+NDC associated with the claim in the T-MSIS pharmacy claims file had to be (1) listed 
+as a human prescription drug in the Food and Drug Administration’s (FDA’s) 
+Comprehensive NDC SPL Data Elements File; (2) have no marketing end date or have a 
+marketing end date after January 31, 2022; and (3) have an active FDA listing for the 
+entire month of January 2022. 
+NPI Criteria.  Finally, for the claim to be included in the sampling frame, the NPI on 
+the pharmacy claim had to have the following in the NCPDP provider file: (1) a 
+primary contact email address; (2) no store closure date prior to December 2022; (3) a 
+primary type code for a community/retail pharmacy or a mail order pharmacy and a 
+dispenser class code for an independent pharmacy or a chain pharmacy; and (4) a 
+secondary and tertiary provider type code that was missing or that indicated a 
+community/retail pharmacy, mail order pharmacy, managed care organization 
+pharmacy, durable medical equipment supplier, specialty pharmacy, or compounding 
+pharmacy.  If neither the billing NPI nor the dispensing NPI associated with a 
+pharmacy claim in T-MSIS matched to the NCPDP provider file, we excluded the claim 
+from the sampling frame. 
+_____________________________________________________________________________________________________________________________ 
+45 For one State, we found many T-MSIS pharmacy claims contained different amounts for the total 
+encounter paid amount and the detail-level (i.e., line item) paid amount in our preliminary analysis.  
+However, the differences between these amounts appeared to follow a logical pattern.  Therefore, we did 
+not exclude these claims from our sampling frame. 
+===PAGE 24===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix B | 21  
+Appendix B: Agency Comments 
+Following this page are the official comments from CMS. 
+  
+===PAGE 25===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix B | 22  
+
+===PAGE 26===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix B | 23  
+
+===PAGE 27===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix B | 24  
+
+===PAGE 28===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Appendix B | 25  
+
+===PAGE 29===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 Acknowledgments and Contact | 26  
+ACKNOWLEDGMENTS AND CONTACT 
+Acknowledgments 
+Craig Diena and Tanaz Dutia served as team leaders for this study.  Others in the 
+Office of Evaluation and Inspections who conducted the study include Nancy J. 
+Molyneaux, Matthew Katz, Rebecca Laster, Stefanie Vance, and Linda Ragone.  Office 
+of Evaluation and Inspections headquarters staff who provided support include 
+Robert Gibbons, Lyndsay Hopper, and Sara Swisher.  
+We would also like to acknowledge the contributions of other Office of Inspector 
+General staff, including Kevin Manley, Lauren McNulty, and Devin Sprong. 
+This report was prepared under the direction of Joanna Bisgaier, Regional Inspector 
+General for Evaluation and Inspections in the Philadelphia regional office; Edward K. 
+Burley, Deputy Regional Inspector General; and Amy Sernyak, Assistant Regional 
+Inspector General. 
+Contact 
+To obtain additional information concerning this report, contact the Office of Public 
+Affairs at Public.Affairs@oig.hhs.gov.  OIG reports and other information can be found 
+on the OIG website at oig.hhs.gov. 
+Office of Inspector General 
+U.S. Department of Health and Human Services 
+330 Independence Avenue, SW 
+Washington, DC 20201 
+ 
+===PAGE 30===
+ 
+Medicaid Managed Care: States Do Not Consistently Define or Validate Paid Amount Data for Drug Claims 
+OEI-03-20-00560 About OIG | 27  
+ABOUT THE OFFICE OF INSPECTOR GENERAL 
+Office of Inspector General 
+https://oig.hhs.gov 
+The mission of the Office of Inspector General (OIG) is to provide objective oversight 
+to promote the economy, efficiency, effectiveness, and integrity of the Department of 
+Health and Human Services (HHS) programs, as well as the health and welfare of the 
+people they serve.  Established by Public Law No. 95-452, as amended, OIG carries out 
+its mission through audits, investigations, and evaluations conducted by the following 
+operating components: 
+The Office of Audit Services.  OAS provides auditing services for HHS, either 
+by conducting audits with its own audit resources or by overseeing audit work done 
+by others.  The audits examine the performance of HHS programs, funding recipients, 
+and contractors in carrying out their respective responsibilities and provide 
+independent assessments of HHS programs and operations to reduce waste, abuse, 
+and mismanagement. 
+The Office of Evaluation and Inspections.  OEI’s national evaluations 
+provide HHS, Congress, and the public with timely, useful, and reliable information on 
+significant issues.  To promote impact, OEI reports also provide practical 
+recommendations for improving program operations. 
+The Office of Investigations.  OI’s criminal, civil, and administrative 
+investigations of fraud and misconduct related to HHS programs and operations 
+often lead to criminal convictions, administrative sanctions, and civil monetary 
+penalties.  OI’s nationwide network of investigators collaborates with the Department 
+of Justice and other Federal, State, and local law enforcement authorities.  OI works 
+with public health entities to minimize adverse patient impacts following enforcement 
+operations.  OI also provides security and protection for the Secretary and other 
+senior HHS officials. 
+The Office of Counsel to the Inspector General.  OCIG provides legal 
+advice to OIG on HHS programs and OIG’s internal operations.  The law office also 
+imposes exclusions and civil monetary penalties, monitors Corporate Integrity 
+Agreements, and represents HHS’s interests in False Claims Act cases.  In addition, 
+OCIG publishes advisory opinions, compliance program guidance documents, fraud 
+alerts, and other resources regarding compliance considerations, the anti-kickback 
+statute, and other OIG enforcement authorities. 

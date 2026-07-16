@@ -1,0 +1,4571 @@
+
+===PAGE 1===
+PERFORMANCE AUDIT REPORT 
+_______________ 
+ 
+Pennsylvania Department of Human Services 
+ 
+PerformRx, LLC 
+ 
+An Audit of the Pharmacy Benefit Manager Services for 
+the Physical HealthChoices Medicaid Program 
+in Pennsylvania 
+_______________ 
+ 
+August 2024 
+ 
+ 
+ 
+
+===PAGE 2===
+This page left blank intentionally 
+ 
+===PAGE 3===
+ 
+ 
+August 21, 2024 
+ 
+ 
+The Honorable Valerie A. Arkoosh, MD, 
+MPH 
+Secretary 
+Pennsylvania Department of Human 
+Services 
+P.O. Box 2675  
+Harrisburg, PA 17110-2675
+Mr. Jim Gartner, MBA, R.Ph. 
+President 
+PerformRx, LLC 
+200 Stevens Drive 
+Philadelphia, PA 19113-1570 
+ 
+Dear Secretary Arkoosh and Mr. Gartner: 
+ 
+This report contains the results of the Department of the Auditor General’s performance audit of 
+the Pennsylvania Department of Human Services (DHS) Physical HealthChoices 
+(HealthChoices) Medicaid program and the pharmacy benefit manager (PBM) PerformRx, LLC 
+(PerformRx). Our audit period was January 1, 2022, through December 31, 2022. This 
+performance audit was conducted pursuant to Sections 402 and 403 of The Fiscal Code and 
+Section 449.2 of the Human Services Code.
+1  
+ 
+We conducted this performance audit in accordance with generally accepted government 
+auditing standards. Those standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions 
+based on our audit objectives.
+2 We believe that the evidence obtained provides a reasonable basis 
+for our findings and conclusions based on our audit objectives. 
+ 
+Our audit included the following three objectives:  
+ 
+Pertaining to DHS, the audit objectives were as follows:  
+ 
+• Determine whether DHS effectively monitored the PBMs’ pharmacy claims, including, 
+but not limited to, the accuracy of the pharmacy information used to prepare the 
+capitation rates for the HealthChoices Medicaid program.
+ 
+1 See 72 P.S. §§ 402 and 403, 62 P.S. § 449.2, effective December 27, 2022 (Act 98 of 2022).  
+2 U.S. Government Accountability Office. Government Auditing Standards. 2018 Revision. Technical Update April 
+2021.  
+===PAGE 4===
+The Honorable Valerie A. Arkoosh, MD, MPH 
+Mr. Jim Gartner, MBA, R.Ph. 
+August 21, 2024 
+Page 2 
+ 
+ 
+• Determine whether DHS effectively monitored the PBMs’ contracts to ensure compliance 
+and transparency for the HealthChoices Medicaid program.  
+ 
+Pertaining to PerformRx, the audit objective was as follows: 
+  
+• Determine if the PBM was compliant with 62 P.S. § 449(h)(3) and (4) of the Human 
+Services Code (as amended by Act 120 of 2020) regarding charges and fees paid to the 
+PBM by the pharmacies, or pharmacy service organizations, as compared to the 
+corresponding amounts billed to the applicable HealthChoices managed care 
+organizations (MCOs) to ensure transparency, compliance, and accountability for the 
+HealthChoices Medicaid Program.  
+ 
+Our methodology to satisfy these audit objectives, along with our evaluation of management’s 
+internal controls significant to these audit objectives, is included in Appendix A of this report.  
+This report presents three findings and 17 recommendations.  
+  
+As discussed in Finding 1, we found that DHS failed to effectively monitor the HealthChoices 
+program’s pharmacy expenditures of $4.6 billion in calendar year 2022. This resulted in 
+undisclosed spread pricing in which PBMs were not reporting transmission fees to the MCOs 
+and DHS that are charged to the pharmacies. This lack of transparency resulted in overstated 
+pharmacy data. DHS declined to provide MCO financial reports, which prevented the auditors 
+from determining whether the transmission fees charged by PBMs were properly accounted for 
+in the MCOs’ Medical Loss Ratio (MLR) calculations or properly accounted for in setting future 
+capitation rates for the HealthChoices program.
+ 
+ 
+In Finding 2, we found DHS did not effectively monitor contracts between the Physical 
+HealthChoices MCOs and PBMs. DHS did not have written policies and procedures for its 
+contract monitoring efforts, and it did not verify that PBM contracts complied with the 
+HealthChoices contract. 
+ 
+ 
+In Finding 3, we found PerformRx, LLC was transparent and accountable to the pharmacies for 
+transmission fees charged during pharmacy drug claims but was not adequately transparent to the 
+three HealthChoices MCOs or DHS. 
+ 
+In closing, we thank DHS and PerformRx for their cooperation and assistance during the audit. 
+DHS is in general disagreement with Finding 1 and general agreement with Finding 2. See DHS’ 
+Response and Auditor’s Conclusion section of this audit report. PerformRx is in general 
+agreement with Finding 3. For further detail, see the PerformRx LLC’s Response and Auditor’s 
+===PAGE 5===
+The Honorable Valerie A. Arkoosh, MD, MPH 
+Mr. Jim Gartner, MBA, R.Ph. 
+August 21, 2024 
+Page 3 
+ 
+ 
+Conclusion section of this audit report. We reserve the right to follow up at an appropriate time 
+to determine whether and to what extent our recommendations have been implemented. 
+ 
+Sincerely, 
+ 
+ 
+Timothy L. DeFoor 
+Auditor General 
+ 
+ 
+
+===PAGE 6===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+i 
+TABLE OF CONTENTS 
+ 
+Executive Summary ........................................................................................................... 1 
+Introduction and Background .......................................................................................... 4 
+Pennsylvania Department of Human Services (DHS) 
+Finding One: DHS did not effectively monitor pharmacy drug claims which 
+resulted in undisclosed spread pricing, overstated pharmacy data, 
+and a lack of transparency
+ ........................................................................13 
+Recommendations ........................23 
+Finding Two: DHS did not effectively monitor contracts between the Physical 
+HealthChoices managed care organizations and pharmacy benefit 
+managers
+ .......................................................................................................25 
+Recommendations ........................28 
+DHS’ Response and Auditor’s Conclusion ..........................................................................29 
+PerformRx, LLC 
+Finding Three: PerformRx, LLC was transparent and accountable to the 
+pharmacies for transmission fees but was not transparent to the 
+MCOs and DHS regarding the fees which resulted in undisclosed 
+spread pricing
+ ...............................................................................................46 
+Recommendations ........................50 
+PerformRx, LLC’s Response and Auditor’s Conclusion .................................................51 
+Appendix A – Objectives, Scope, Methodology, and Data Reliability .......................................57
+===PAGE 7===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+ii 
+TABLE OF CONTENTS (continued) 
+ 
+Appendix B – Definitions .............................................................................................................74 
+ 
+Appendix C – Consultant Memo ..................................................................................................77 
+ 
+Appendix D – MCO Subcontractor Checklist ..............................................................................82 
+ 
+Appendix E – Medical Loss Ratio ................................................................................................88 
+ 
+Appendix F – PerformRx Test Results for a Selection of 60 Claims From its Claims Processing 
+System ....................................................................................................................90 
+ 
+Appendix G – Distribution List ....................................................................................................93 
+ 
+ 
+===PAGE 8===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+1 
+Executive Summary 
+ 
+This report presents the results of our performance audit of the Pennsylvania Department of 
+Human Services (DHS) Physical HealthChoices (HealthChoices) Medicaid program regarding 
+DHS’s monitoring of pharmacy claims and pharmacy benefit manager (PBM) contracts, as well 
+as one of the PBMs, PerformRx, LLC’s (PerformRx) compliance with Act 120 of 2020. Our 
+performance audit included the following three objectives. 
+ 
+Pertaining to DHS, the audit objectives were as follows:  
+ 
+• Determine whether DHS effectively monitored the PBMs’ pharmacy claims, including, 
+but not limited to, the accuracy of the pharmacy information used to prepare the 
+capitation rates for the HealthChoices Medicaid program.  
+ 
+• Determine whether DHS effectively monitored the PBMs’ contracts to ensure compliance 
+and transparency for the HealthChoices Medicaid program.  
+ 
+Pertaining to PerformRx, the audit objective was as follows:  
+ 
+• Determine if the PBM was compliant with 62 P.S. § 449(h)(3) and (4) of the Human 
+Services Code (as amended by Act 120 of 2020) regarding charges and fees paid to the 
+PBM by the pharmacies, or pharmacy service organizations, as compared to the 
+corresponding amounts billed to the applicable HealthChoices managed care 
+organizations (MCOs) to ensure transparency, compliance, and accountability for the 
+HealthChoices Medicaid Program.  
+ 
+The audit period was January 1, 2022, through December 31, 2022.  
+ 
+Our audit results are contained in three findings with 17 recommendations. DHS is in general 
+disagreement with Finding 1 and general agreement with Finding 2. See DHS’ Response and 
+Auditor’s Conclusion section of this audit report. PerformRx is in general agreement with 
+Finding 3’s facts but disagrees with the audit’s interpretation of the transmission fees being 
+spread pricing and the audit’s implication that the transmission fees are not justifiable. For 
+further detail, see PerformRx LLC’s Response and Auditor’s Conclusion section of this audit 
+report. 
+ 
+===PAGE 9===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+2 
+Finding 1 – DHS did not effectively monitor pharmacy drug claims which resulted in 
+undisclosed spread pricing, overstated pharmacy data, and a lack of transparency. 
+ 
+Our audit found that DHS had an inaccurate perception that it lacked authority to audit PBMs; 
+ineffectively monitored MCOs’ pharmacy data reports; and ineffectively monitored spread 
+pricing due to not validating pharmacy data to source documents resulting in DHS’ unawareness 
+of the existence of spread pricing. DHS therefore failed to effectively monitor the HealthChoices 
+program’s pharmacy expenditures of $4.6 billion in calendar year 2022. Additionally, DHS 
+declined to provide MCO financial reports preventing the auditors from determining whether the 
+transmission fees charged by PBMs were properly accounted for in the MCOs’ Medical Loss 
+Ratio (MLR) calculations or properly accounted for in setting future capitation rates for the 
+HealthChoices program. 
+ 
+The following deficiencies noted during the audit, if left unresolved, could put the program’s 
+federal funding at risk: 
+ 
+• DHS’ lack of written policy and procedures for its monitoring of pharmacy encounter 
+data to ensure encounter data submitted to the Centers for Medicare and Medicaid 
+Services (CMS) is a complete and accurate representation of the services provided to the 
+Medicaid members; 
+• DHS’ lack of validation that encounter data provided to CMS is correct; and  
+• DHS’ lack of oversight that the encounter records on PROMISe
+TM were actually 
+reporting the amount the PBMs paid pharmacies.  
+ 
+We offer seven recommendations to DHS to assist in monitoring pharmacy claims and two 
+recommendations to the General Assembly to amend Act 120 of 2020. 
+ 
+Finding 2 – DHS did not effectively monitor contracts between the Physical HealthChoices 
+managed care organizations and pharmacy benefit managers. 
+ 
+DHS did not adequately monitor the contracts between MCOs and PBMs in the HealthChoices 
+program. DHS does not have policies and procedures for its contract monitoring efforts, and it 
+does not verify the current PBM contracts comply with the current HealthChoices contract. 
+ 
+DHS is the Pennsylvania’s Medicaid oversight agency and has the responsibility to ensure 
+compliance with the federal and state laws and its HealthChoices agreement. Reliance on the 
+MCOs to monitor the program compliance is insufficient. For instance, although DHS banned 
+spread pricing and implemented pass-through pricing effective January 1, 2020; by not 
+===PAGE 10===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+3 
+monitoring the PBMs, our audit found that seven of the eight PBMs charged pharmacies 
+transmission fees which created a spread between what the MCO paid the PBM and what the 
+PBM paid the pharmacy for the same drug claim. This spread pricing practice, although 
+allowable by Act 120 of 2020, requires transparency and disclosure to the pharmacies during 
+adjudication of a pharmacy claim. 
+ 
+DHS’ lack of effective oversight of the MCOs’ PBM contracts provided little to no assurance 
+that PBMs’ contracts or practices comply with the current HealthChoices agreements, Act 120 of 
+2020, or specific state and federal regulations, potentially putting the Medicaid program at risk 
+for noncompliance. 
+ 
+We offer five recommendations to DHS to assist in monitoring PBM contracts. 
+ 
+Finding 3 – PerformRx, LLC was transparent and accountable to the pharmacies for 
+transmission fees but was not transparent to the MCOs and DHS regarding the fees which 
+resulted in undisclosed spread pricing. 
+ 
+During calendar year 2022, PerformRx was the PBM for three of the HealthChoices MCOs. Our 
+performance audit determined that PerformRx was partially compliant with Act 120 of 2020 by 
+providing transparency to the pharmacies regarding transmission fees during adjudication. 
+However, PerformRx failed to disclose the transmission fees to the three MCOs and DHS which 
+violated the transparency requirements set forth by Act 120 of 2020. To remedy the 
+noncompliance found by our audit, PerformRx submitted the required information dated back to 
+2019. 
+ 
+We offer three recommendations to PerformRx for transparency and monitoring of its pharmacy 
+adjustments, like reversals.  
+ 
+ 
+===PAGE 11===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+4 
+Introduction and Background 
+ 
+The Department of the Auditor General (DAG) conducted this performance audit of the 
+Pennsylvania Department of Human Services’ (DHS) Physical HealthChoices (HealthChoices) 
+Medicaid program and PerformRx, LLC (PerformRx), a pharmacy benefit manager (PBM) 
+pursuant to Sections 402 and 403 of The Fiscal Code (Code) and Section 449.2 of the Human 
+Services Code.
+3,4,5 
+ 
+In 2022, the Pennsylvania General Assembly and Governor enacted Act 98 of 2022, which 
+authorizes DAG to conduct audits of PBMs. Act 98 states, in part, “The Department of the 
+Auditor General may conduct an audit and review of a pharmacy benefits manager that provides 
+pharmacy benefits management to a medical assistance managed care organization under 
+contract with the department [DHS].” 
+ 
+Our performance audit had three audit objectives and covered the period January 1, 2022, 
+through December 31, 2022. The first two audit objectives relate to DHS and the third to 
+PerformRx: 
+ 
+1. Determine whether DHS effectively monitors the PBMs’ pharmacy claims, including, but 
+not limited to, the accuracy of the pharmacy information used to prepare the capitation 
+rates for the HealthChoices Medicaid program. 
+ 
+2. Determine whether DHS effectively monitors the PBMs’ contracts to ensure compliance 
+and transparency for the HealthChoices Medicaid program. 
+ 
+3. Determine if PerformRx is compliant with 62 P.S. § 449(h)(3) and (4) of the Human 
+Services Code (as amended by Act 120 of 2020
+6) regarding charges and fees paid to the 
+PBM by the pharmacies, or pharmacy service organizations, as compared to the 
+corresponding amounts billed to the applicable HealthChoices managed care 
+ 
+3 PerformRx is a pharmacy benefit manager used by and contracted with three of the current seven HealthChoices’ 
+managed care organizations also referred to as MCOs. 
+4 See 72 P.S. §§ 402 and 403. 
+5 See 62 P.S. § 449.2, effective December 27, 2022 (Act 98 of 2022). 
+6 Pursuant to Section 3 of Act 120, effective January 25, 2021, the amendment of Section 449 “shall apply to any 
+agreement or contract relating to pharmacy services to medical assistance recipients in the managed care delivery 
+system entered into or amended on or after the effective date [i.e., January 25, 2021] of this  section.”  
+===PAGE 12===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+5 
+organizations (MCOs) to ensure transparency, compliance, and accountability for the 
+HealthChoices Medicaid Program.7 
+ 
+Appendix A of this audit report provides a detailed description of the audit objectives, scope, 
+methodology, data reliability, and evaluation of management’s internal controls related to the 
+audit objectives. Appendix B provides definitions for terms used throughout this audit report. 
+ 
+In the sections that follow, we present relevant background information on DHS, HealthChoices’ 
+MCOs, PBMs, PerformRx, LLC, the pharmaceutical supply chain, and the pharmacy claims 
+process.  
+ 
+ 
+Pennsylvania Department of Human Services (DHS)  
+ 
+DHS oversees the Medicaid program (also called Medical Assistance) in Pennsylvania, which 
+pays for health care services for eligible individuals. Medicaid is operated in Pennsylvania 
+primarily as three distinct programs: 1) Physical HealthChoices, 2) Community HealthChoices, 
+and 3) Behavioral HealthChoices. This audit reviewed DHS’ monitoring only within the Physical 
+HealthChoices program, referred to as HealthChoices.
+8  
+ 
+DHS contracts with MCOs to administer health care for its Medicaid members. Each MCO 
+participating in the HealthChoices program subcontracts with a PBM to administer some, if not 
+all, of the prescription drug benefit. The MCO agreements with the PBMs are considered 
+subcontracts of the MCOs and are, therefore, not directly contracted with or executed by DHS.  
+ 
+According to DHS records, the HealthChoices pharmacy expenditures were more than $4.6 
+billion of the $14.5 billion spent for the HealthChoices program in 2022. 
+ 
+ 
+HealthChoices MCOs January 1, 2022, through December 31, 2022 
+ 
+Between January 1, 2022, and December 31, 2022, the HealthChoices contract was re-procured 
+with a start date of the new contract on September 1, 2022. Based on the new contract beginning 
+ 
+7 Note that our audit procedures do not distinguish between pharmacies and pharmacy services organizations, and 
+we refer to all of them as pharmacies. 
+8 We also did not include the Adult Community Autism Program and the Children’s Health Insurance Program 
+(known as CHIP) in our audit. 
+===PAGE 13===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+6 
+September 1, 2022, some of the previous MCOs added regional zones, some MCOs exited 
+regional zones, and one MCO contract was not continued. 
+ 
+The following eight MCOs were contracted for the period January 1, 2022, through August 31, 
+2022:  
+ 
+MCO9 Abbreviation 
+1. Health Partners Plans, Inc. Health Partners 
+2. UnitedHealthcare of Pennsylvania, Inc. UnitedHealthcare 
+3. Keystone First Keystone First 
+4. Highmark Wholecare (formerly Gateway Health Plan) Highmark 
+5. UPMC for You, Inc. UPMC 
+6. AmeriHealth Caritas Pennsylvania AmeriHealth 
+7. Geisinger Health Plan Geisinger 
+8. Aetna Better Health, Inc. Aetna 
+ 
+The contract with Aetna was not continued, while the other seven MCOs were contracted for the 
+new HealthChoices contract effective September 1, 2022. Below is a list of the contracted 
+MCOs, by regional zone, for the two contract periods during calendar year 2022:
+ 
+9 MCOs may use various legal entities with similar, but different, legal names for different services which is out of 
+the scope for this audit. 
+===PAGE 14===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+7 
+January 1 – August 31, 2022 September 1 – December 31, 202210 
+  
+HC Southeast Zone HC Southeast Zone 
+Aetna  Geisinger 
+Health Partners Health Partners 
+UnitedHealthcare  Keystone First 
+Keystone First UnitedHealthcare   
+UPMC 
+  
+HC Southwest Zone HC Southwest Zone 
+Aetna AmeriHealth 
+Highmark Geisinger 
+UnitedHealthcare Health Partners 
+UPMC Highmark  
+UPMC 
+  
+HC Lehigh/Capital Zone HC Lehigh/Capital Zone 
+Aetna AmeriHealth 
+Highmark Geisinger 
+UnitedHealthcare Health Partners 
+UPMC Highmark 
+AmeriHealth UPMC 
+  
+HC New West Zone HC Northwest Zone 
+Aetna AmeriHealth 
+Highmark Geisinger 
+UPMC Health Partners 
+AmeriHealth UPMC 
+  
+HC New East Zone HC Northeast Zone 
+Aetna AmeriHealth 
+Geisinger  Geisinger 
+AmeriHealth Health Partners  
+UPMC 
+ 
+ 
+10 Source: PhysicalHealthChoices-Main (pa.gov), Statewide HealthChoices Physical Health Managed Care Map of 
+MCOs by Zones effective September 1, 2022. See 
+https://www.pa.gov/en/agencies/dhs/resources/medicaid/statewide-mco-map.html (last accessed July 1, 2024). 
+===PAGE 15===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+8 
+HealthChoices MCOs’ PBMs January 1, 2022, through December 31, 2022 
+ 
+During the audit period, each HealthChoices MCO contracted with a PBM to provide various 
+pharmacy benefits, including, but not limited to, the adjudication of pharmacy claims, as follows: 
+ 
+HealthChoices MCOs PBM Vendor 
+1. Geisinger  PerformRx, LLC 
+2. AmeriHealth  PerformRx, LLC 
+3. Keystone First PerformRx, LLC 
+4. Health Partners  CaremarkPCS Health, LLC 
+5. Highmark CaremarkPCS Health, LLC 
+6. AetnaA  CaremarkPCS Health, LLC 
+7. UPMC Express Scripts, Inc. 
+8. UnitedHealthcare  OptumRx, Inc. 
+A As noted in the preceding section, Aetna did not continue with the HealthChoices 
+program for the new contract effective September 1, 2022.  
+ 
+We selected a PBM as part of this audit to determine whether the selected PBM is compliant 
+with Act 120 of 2020, which disallows the use of spread pricing in the Medicaid program unless 
+there is adequate transparency and accountability related to a transmission fee charged by the 
+PBM during the payment process to the pharmacy.
+11 The PBM selected was PerformRx, LLC, 
+since it serves as a PBM for three of the MCOs.  
+ 
+ 
+PerformRx, LLC (PerformRx) 
+ 
+Founded in 1999, PerformRx, a Pennsylvania limited liability company (LLC), serves as a PBM 
+and provides a “boutique service model” for its clients which include MCOs.
+12 It serves three 
+MCOs in the HealthChoices program, as noted in the chart above: Geisinger, AmeriHealth, and 
+Keystone First. AmeriHealth and Keystone First, jointly, contract with PerformRx for PBM 
+ 
+11 Act 120 of 2020 prohibits a differential between the amount paid by the MCO to the PBM and the amount paid by 
+the PBM to the pharmacy unless it is a transmission fee that is disclosed and part of the adjudication process. For 
+purposes of this audit the differential is referred to as spread pricing. Therefore, we interpret the Act as prohibiting 
+spread pricing unless it is for a disclosed transmission fee processed during payment to the pharmacy for the claim. 
+A claim includes, but is not limited to, the drug cost, dispensing fee, and copay amount.  
+12 PerformRx’s website provides the information on the “boutique service model.” Managed Care Organizations - 
+PerformRx (l ast accessed  June 5, 2024). 
+===PAGE 16===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+9 
+services. Additionally, Geisinger contracts with PerformRx for PBM services. See PerformRx, 
+LLC Finding 3 for the results of our audit of PerformRx. 
+ 
+ 
+Pharmaceutical Supply Chain 
+ 
+The following diagram illustrates the pharmaceutical supply chain and the flow of a drug from 
+the manufacturer through the pharmaceutical supply chain to the Medicaid member. It also 
+illustrates the flow of the monthly capitated payment from DHS to the MCO, the payment of the 
+drugs and dispensing fees from the MCO to the PBM, and the payment from the PBM to the 
+pharmacies for dispensed drugs.
+13 
+ 
+ 
+ 
+Source: Developed by DAG auditors based on information reviewed from several public sources, including the DHS 
+website and The 2023 Economic Report on U.S. Pharmacies and Pharmacy Benefit Managers  located at 
+https://drugch.nl/pharmacy. Dollars are reduced as administrative costs are taken.  
+ 
+The PBMs develop and maintain a pharmacy provider network through contracts with 
+pharmacies.14 Through those contracts, the PBMs establish the rates paid to pharmacies for drugs 
+and for costs associated with dispensing those drugs to Medicaid participants. Once the claims 
+ 
+13 The explanation and diagram are simplified for the reader. A drug claim includes, but is not limited to, the cost of 
+the drug, the dispensing fee paid for dispensing the fee, less applicable copay and third -party liability. 
+14 Pharmacies may join Pharmacy Services Administration Organizations (PSAOs) and the PSAO then contracts 
+with the PBMs. For purposes of this audit, we will just refer to pharmacies.  
+
+===PAGE 17===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+10 
+are paid by the PBM to the pharmacy, the PBM provides the encounter information to the MCOs 
+for the MCOs to report the encounter information to DHS’ Provider Reimbursement and 
+Operations Management Information System, referred to as PROMISe
+TM. 
+ 
+DHS’ actuaries use the accumulation of the pharmacy encounter data, associated costs, and other 
+relevant program information to calculate future capitation rates that DHS pays the MCOs to 
+operate the HealthChoices program.
+15 These capitation rates include the cost of the pharmacy 
+benefits that are currently being subcontracted by the MCOs to the PBMs. 
+ 
+ 
+Pharmacy Claims Process 
+ 
+PerformRx and DHS described the pharmacy claims process as follows:  
+ 
+o A Medicaid member obtains a prescription from their physician and takes that 
+prescription to the pharmacy.  
+o The pharmacy then begins the dispensing process by electronically submitting a claim 
+through their adjudication claims processing system.  
+o The system processes the claims in real time.  
+o Once the pharmacy enters the claim, the system pulls in relevant information regarding 
+the member and the prescription, including the benefit, the pricing, and member 
+eligibility for that time period and transaction. 
+ 
+The automated validation of the claim is real-time and the claim either passes or fails the 
+validation criteria.
+16 If the claim passes the validation process, the claims processing system 
+returns an approval. If the claim fails, the claim is rejected.  
+ 
+The claims processing system uses standard approval and rejection codes based on the National 
+Council for Prescription Drug Programs (NCPDP). If rejected, the pharmacy is able to intervene 
+and work with the member to determine if the claim can be corrected and reprocessed. If 
+approved, the pharmacy fills the prescription, and the claim is then processed by the PBM. 
+ 
+ 
+15 An encounter is defined in Appendix B of this audit report as any covered health care service provided to a member, 
+regardless of whether the individual has an associated Claim. A pharmacy claim becomes an encounter when reported 
+to the MCO in the National Council for Prescription Drug Program (NCPDP) format.  
+16 We did not audit the validation criteria, such as eligibility, or the claims processing software which can be 
+different between the PBMs. 
+===PAGE 18===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+11 
+PerformRx’s claims processing system accumulates claims twice a month and creates invoices 
+for each claim to send to the MCO for a payment request. The MCO approves the payment 
+request and sends the payment to the PBM. This process of the claim between the pharmacy and 
+the payment request to the MCO is automated without manual intervention. 
+Upon MCO approval and payment to the PBM, a remittance advice is sent to the pharmacy 
+through the claims processing system. The remittance advice details the claim and includes, but 
+is not limited to, the amounts being paid to the pharmacy for the drug, the dispensing fee paid to 
+the pharmacy, member copays received by the pharmacy, and the transmission fees charged by 
+the PBM to the pharmacy.  
+ 
+Each claim transmitted to the MCO is then considered an encounter for the member and 
+transmitted to DHS as an encounter record into PROMISe
+TM.17 The accumulation of the 
+encounter records then represents the encounter data used by DHS’ actuaries to set future 
+capitation rates. The capitation rates are used by DHS to pay the MCOs to run the HealthChoices 
+program. 
+ 
+The following is an illustration of the above pharmacy claims process: 
+ 
+ 
+ 
+ 
+Source: Developed by DAG auditors based on information received from DHS and PerformRx.  
+ 
+ 
+17 Since this audit is not of the MCOs, we did not review the MCO’s process it does before sending the encounter 
+records to DHS. 
+
+===PAGE 19===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+12 
+The billing practice used by PBMs called spread pricing has drawn scrutiny in Pennsylvania and 
+other states.18,19 Through spread pricing, a PBM pays the pharmacy less than the MCO paid the 
+PBM for the same claim.20 In this audit, we found spread pricing as a result of a transmission fee 
+that the PBM charges the pharmacy per claim. The PBM keeps the fee or spread as another 
+revenue source. Since January 1, 2020, DHS required the PBMs to pay the pharmacies the 
+amount the MCO paid the PBM, which is called pass-through pricing. We conducted this audit 
+to determine if DHS adequately monitors HealthChoices pharmacy claims and PBM contracts to 
+ensure the PBMs are practicing pass-through pricing or alternatively, spread pricing, and whether 
+it complied with Act 120 of 2020 requirements for transparency and accountability.  
+ 
+ 
+ 
+ 
+18 See also, Act 77 of 2024, July 17, 2024. 
+19 Other states include, but are not limited to, Ohio, Kentucky, Illinois, and Arkansas, listed in a letter dated March 
+1, 2023 from the Congress of the United States to the Centers for Medicare & Medicaid Services (CMS ), *Letter-to-
+CMS.pdf (house.gov) (l ast accessed July 8, 2024 ). 
+20 CMS Issues New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit Managers are not 
+Up-Charging Taxpayers | CMS. C MS defines spread pricing  in this press release as: Spread pricing occurs when 
+health plans contract with pharmacy benefit managers (PBMs) to manage their prescription drug benefits, and PBMs 
+keep a portion of the amount paid to them by the health plans for prescription drugs instead of passing the full 
+payments on to pharmacies. Thus, there is a spread between the amount that the health plan pays the PBM and the 
+amount that the PBM reimburses the pharmacy for a beneficiary’s prescription (l ast accessed July 16, 2024). 
+===PAGE 20===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+13 
+DHS Finding 1 – DHS did not effectively monitor pharmacy drug claims 
+which resulted in undisclosed spread pricing, overstated pharmacy data, and 
+a lack of transparency. 
+ 
+The Pennsylvania Department of Human Services (DHS) failed to effectively monitor the 
+Physical HealthChoices (HealthChoices) program’s pharmacy expenditures of $4.6 billion in 
+calendar year 2022.
+21 The following sections in this finding describe: 
+ 
+• DHS’ inaccurate perception that it lacks authority to audit PBMs. 
+• DHS’ ineffective monitoring of MCOs’ reports on pharmacy data. 
+• DHS’ ineffective monitoring and lack of validating pharmacy data to source documents 
+resulted in DHS’ lack of awareness of spread pricing. 
+• DHS declined to provide MCO financial reports to allow the auditors to determine 
+whether the transmission fees were properly accounted for in the MCO Medical Loss 
+Ratio (MLR) calculations and for future capitation rates. 
+ 
+Without effective monitoring of pharmacy data by DHS, PBMs can practice spread pricing 
+without DHS’ knowledge, and MLR and capitation rate calculations may be inaccurate. By not 
+adequately monitoring PBMs, DHS could put Medicaid HealthChoices program funds at risk.  
+ 
+ 
+DHS’ inaccurate perception that it lacks authority to audit PBMs 
+ 
+DHS management stated it has no authority to monitor or conduct audits or reviews of PBMs, 
+and it has no process for auditing PBMs. DHS stated that the state regulations apply to Medicaid 
+providers and a PBM is not a Medicaid provider of services to Medicaid members. We, however, 
+disagree in that DHS has clear authority granted by the Code of Federal Regulations (CFR), 
+Pennsylvania Act 120 of 2020,
+22 and the HealthChoices contracts and subcontracts to audit 
+PBMs as follows:
+ 
+21 References to HealthChoices throughout this audit is referring only to the Physical HealthChoices program.  
+22 Amendment to the state Human Services Code (Code), effective January 25, 2021. Please note that pursuant to 
+Section 3 of Act 120 of 2020, the amendment of Section 449 of the Code “shall apply to any agreement or contract 
+relating to pharmacy services to medical assistance recipients in the managed care delivery system entered into or 
+amended on or after the effective date [i.e., January 25, 2021] of this section.” See 62 P.S. § 449. 
+===PAGE 21===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+14 
+ Title 42 of the CFR requires: 
+ 
+o Subcontractors to agree that DHS has the right to audit and make their records 
+available for audit.23 
+o States to review and validate encounter data and that states have procedures and 
+quality assurance protocols sufficient to ensure submitted encounter data is a 
+complete and accurate representation of the services provided to the Medicaid 
+members.
+24 
+o States to ensure encounter data for Medicaid members is validated for accuracy 
+and completeness before submitting the data to the Centers for Medicare & 
+Medicaid Services (CMS).
+25 
+ 
+ Pennsylvania Act 120 of 2020 provides that DHS may conduct an audit or review of the 
+PBMs to ensure compliance with the law and related contracts; that the PBMs shall 
+maintain records of pharmacy services eligible for payment by Medicaid; and that the 
+PBMs shall disclose the information to DHS upon request.
+26 
+ 
+ HealthChoices contracts between DHS and the MCOs, and each subcontract between the 
+MCOs and the PBMs, contain the required provisions that allow DHS to audit records 
+pertaining to HealthChoices Medicaid pharmacy expenditures. 
+ 
+Due to DHS’ perceived lack of authority, it did not effectively monitor pharmacy encounter 
+records in PROMISe
+TM to ensure the encounter information agrees with pharmacy claims, MCO 
+payments for the claims, and the corresponding PBM payments to the pharmacies. 
+ 
+ 
+DHS’ ineffective monitoring of MCOs’ reports on pharmacy data 
+ 
+Although DHS did not provide written policy and procedures for its monitoring and did not 
+validate individual pharmacy encounter records to ensure the MCOs and PBMs are reporting the 
+amount actually paid to the pharmacies by reviewing source documentation, such as payment 
+remittance advices, we found for calendar year 2022 DHS did monitor aggregate pharmacy 
+encounter data in PROMISeTM and MCO reports, as follows:  
+ 
+23 42 CFR 438.230(c)(3)(i) and (ii). 
+24 42 CFR 438.242(d). 
+25 42 CFR 438.818(a)(2). 
+26 62 P.S. § 449(b)(1)-(2), (d). 
+===PAGE 22===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+15 
+• Annually, DHS staff reviewed MCO policies and procedures related to the HealthChoices 
+pharmacy benefits and how the MCOs are to monitor the PBMs and pharmacies. This 
+type of monitoring, however, does not ensure the actual practices of the PBMs are in 
+accordance with the requirements in the HealthChoices agreement. 
+ 
+• Quarterly, DHS staff reviewed monthly MCO-prepared accuracy reports that demonstrate 
+that at least 90% of the MCO’s encounter records in total for the quarter were accepted 
+into PROMISe
+TM by zone.27 DHS takes no action if the MCO reports that the total 
+encounters for the past quarter meet the benchmark of 90% or more. If the benchmark is 
+not met, DHS contacts the MCO to discuss causes and remediation efforts. We reviewed 
+the accuracy reports for calendar year 2022 and noted three MCOs reported less than 
+90% of the encounters were accepted by PROMISe
+TM for at least one quarter. For one of 
+the three MCOs, the report had no comments of follow-up with the MCO. According to 
+DHS, the MCO had an incorrect identification number resulting in rejected encounters, 
+and that DHS typically applies corrective action when the MCO is not meeting the 
+requirement for two consecutive quarters. 
+ 
+• Quarterly, DHS staff reviewed monthly MCO-prepared timeliness reports that 
+demonstrate that at least 90% of the MCO’s encounter records in total are within the 
+timeliness requirements of the HealthChoices agreement.
+28 If the MCO reports that the 
+total encounters for the past quarter meet the benchmark of 90%, DHS takes no action. If 
+the benchmark is not met, DHS contacts the MCO to discuss remediation efforts. We 
+reviewed the timeliness reports for calendar year 2022 and noted four MCOs reported 
+less than 90% of the encounters met the timeliness requirements in at least one quarter. 
+Each MCOs’ reports notated follow-up by DHS. 
+ 
+• Quarterly, DHS staff reviewed monthly MCO-prepared supplemental reports that 
+compare the total number of supplemental records submitted by the MCO to the total 
+number of encounter records in PROMISe
+TM. These records must also meet a benchmark 
+of 90% or more in total for the quarter. If the benchmark is not met, DHS contacts the 
+MCO to discuss remediation efforts. We reviewed the supplemental reports for calendar 
+ 
+27 Accepted into PROMISeTM means the encounter record met the requirements of the fields needed for the system 
+to accept the encounter record from the MCO’s system. 
+28 Timeliness requirements in the HealthChoices agreement for processing drug claims includes processing 90% of 
+clean claims within thirty days of receipt by the MCO or its subcontractor; 100% of clean claims within forty- five 
+(45) days; and 100% of all claims within ninety (90) days. A “clean” claim is defined as a claim that can be 
+processed without additional information needed from the provider or from a third party.  
+===PAGE 23===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+16 
+year 2022 and noted two MCOs fell below the 90% threshold for at least one quarter, and 
+both MCOs’ reports contained notations on DHS’ follow-up. 
+ 
+• DHS staff reviewed MCO-prepared Lag Reports for Pharmacy Payments, referred to 
+herein as Report 4C. This report is a quarterly report and is used, among other things, to 
+indicate if there is a difference between the total amount the MCO paid the PBM and the 
+total amount the PBMs paid the pharmacy. DHS stated that all the quarterly reports for 
+the MCOs reported zero as the differential for calendar year 2022, indicating that each of 
+the PBMs are practicing pass-through pricing. We confirmed that all the reports were 
+reporting zero as a differential; however, our review of pharmacy claims and encounter 
+records from PROMISe
+TM described in the next section of this finding found 
+contradictory information for all but one MCO. 
+ 
+• DHS staff reviewed MCO-prepared Outpatient Drug Pricing Transparency (Part D) 
+reports, referred to herein as Transparency Reports. DHS relies on this report prepared by 
+the MCOs to determine whether the MCO’s PBM is charging pharmacies fees by 
+reporting the pharmacies fees (the spread) in total by month. However, DHS’ lack of 
+adequate review of the data reported by the MCOs is problematic in that we found the 
+Transparency Reports for calendar year 2022 to be incomplete (missing information), 
+inconsistent (MCOs did not complete the reports like other MCOs), inaccurate (MCOs 
+reported pharmacy fees as PBM paid fees), and misleading (MCOs reports made it appear 
+as though the PBMs were practicing pass-through pricing, when in fact, they were 
+practicing spread pricing). DHS indicated that the Transparency Reports are for 
+informational purposes only. DHS, however, should consider this report an important tool 
+to monitor the MCOs and PBMs administrative fees for rate setting, MLR calculations, 
+and Act 120 of 2020 compliance. 
+ 
+• DHS contracted with a vendor to conduct a mandatory triennial audit of pharmacy data; 
+however, DHS opted out of having the vendor validate information to source 
+documentation at the PBMs and pharmacies.
+29 
+ 
+• DHS contracted with an external quality review organization (EQRO) to conduct the 
+mandated annual external quality review (EQR) statewide and for each MCO.
+30 
+ 
+29 42 CFR 438.602(e). At a minimum, a triennial audit of encounter and financial data must be performed. However, 
+CMS does not require validation of the encounter records to source documentation;  it is merely considered optional. 
+30 42 CFR 438.364.  
+===PAGE 24===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+17 
+However, DHS was unable to confirm whether the EQRO conducted validation of 
+pharmacy claims to source documentation. 
+ 
+• DHS reviewed other various financial reports from the MCOs. DHS would not provide us 
+with copies of the reports which would have allowed us to determine what data would be 
+used by the actuaries for future capitation rate setting and MLR purposes. DHS stated the 
+reports were considered proprietary in nature. See the last section in this finding. 
+ 
+Although DHS is conducting the above aggregate monitoring, DHS failed to ensure the 
+pharmacy encounter records in PROMISE
+TM represent the actual amounts paid by the PBM to 
+the pharmacy. This is evidenced by our test work of 60 claims selected from PerformRx, LLC’s 
+(PerformRx) claims processing system and 40 encounter records selected from PROMISe
+TM as 
+described in the next section.31   
+ 
+ 
+DHS’ ineffective monitoring and lack of validating pharmacy encounter data 
+to source documents resulted in DHS’ lack of awareness of spread pricing  
+ 
+Although DHS management stated that since January 2020, the PBMs were practicing pass-
+through pricing and the Transparency Reports and Report 4Cs reported PBMs are practicing 
+pass-through pricing as we describe in the prior section, DHS did not actually verify this pass-
+through pricing through effective monitoring practices.  
+ 
+Since the Transparency report and Report 4C are the only reporting mechanisms for MCOs to 
+report PBM fees required by Act 120 of 2020,
+32 DHS should reevaluate the importance of the 
+reports and its monitoring of the PBMs actual practices. 
+ 
+ 
+31 The three MCOs tested for the claims were AmeriHealth, Keystone First, and Geisinger. The four MCOs tested 
+for the 40 encounter records were UPMC, United Healthcare, Health Partners Plan, and Gateway. We did not test 
+Aetna encounter records since there were no encounters for Aetna in October 2022 since it was no longer an M CO 
+for HealthChoices effective September 1, 2022. 
+32 Section 449(j) of the Code provides, in part: “(j) A managed care organization utilizing a pharmacy benefit 
+manager shall report to the department [DHS] information related to each outpatient drug encounter, including the 
+following: (1) The amount paid to the pharmacy benefit manager by the managed care organization. (2) The amount 
+paid by the pharmacy benefit manager to the pharmacy. (3) Any differences between the amount paid in paragraph 
+(1) and the amount paid in paragraph (2).” See 62 P.S. § 449(j)(1)-(3).  
+ 
+===PAGE 25===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+18 
+To confirm whether the MCOs’ PBMs were or were not practicing pass-through pricing versus 
+spread pricing, we selected 60 claims from PerformRx’s claims processing system and 40 
+encounter records from PROMISeTM.33 The following provides a summary of our selection 
+methodology: 
+ 
+1. PerformRx’s drug claims processed in calendar year 2022 totaled 34,346,412 claims for 
+its three MCOs, and a total of $1.8 billion was paid to the pharmacies for those claims.
+34 
+We selected 20 claims per MCO for a total of 60 claims to review. Each group of 20 
+claims included haphazardly selecting a claim per month and judgmentally selecting 
+eight claims based on other criteria such as a claim that appeared to be an adjustment. 
+The 60 claims were from 18 different corporate pharmacies. 
+ 
+2. PROMISe
+TM encounter records processed in October 2022 for the four MCOs that did 
+not use PerformRx as a PBM were 1.5 million pharmacy encounter records totaling 
+nearly $208 million. We haphazardly selected 10 encounter records for each of these four 
+MCOs for a total of 40 encounters. We selected these 40 encounter records based on the 
+same 18 corporate pharmacies as selected for the 60 selected claims processed by 
+PerformRx as noted above.  
+ 
+The selection above provided claims or encounters for the seven MCOs for each of the 18 
+corporate pharmacies to conduct confirmations with the pharmacies, as explained further below 
+in this finding. 
+  
+For the 60 claims and 40 encounters, we had DHS, the MCO, or PBM provide the following 
+supporting documentation:  
+ 
+• Claim transaction detail from the PBM’s claims processing system for the selected claim 
+or encounter, and any prior or subsequent information associated with that encounter or 
+claim; 
+• Pharmacy contract payment provisions; 
+• Documentation of MCO payments to the PBM for the claims; 
+• Remittance advices from the PBM to the pharmacies for the claims; and 
+• PROMISe
+TM encounter records and related supplemental files. 
+ 
+33 Based on the HealthChoices contract effective September 1, 2022, we selected October 2022 encounter records 
+which therefore, left Aetna out of the testing since it was no longer an MCO.  
+34 See Appendix A for details regarding assessment of data reliability.  
+===PAGE 26===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+19 
+The following chart illustrates our testing results for attributes discussed below the chart: 
+  
+Number of 
+Claims or 
+Encounters 
+SelectedA 
+Encounter 
+Record 
+Agreed to 
+Pharmacy 
+Paid 
+AmountB 
+Pass-
+Through 
+PricingC 
+Fees & 
+Spread 
+PricingD 
+Transparent 
+to 
+PharmaciesE 
+Transparent 
+to DHS 
+Report 4CF 
+Transparent 
+to DHS 
+Report 6DG 
+MCO 1 20 3 No Yes Yes No No 
+MCO 2 20 0 No Yes Yes No No 
+MCO 3 20 1 No Yes Yes No No 
+MCO 4 10 0 No Yes No No No 
+MCO 5 10 0 No Yes No No No 
+MCO 6 10 0 No Yes No No Yes 
+MCO 7 10 10 Yes No N/A N/A N/A 
+Total 100 14 1 6 3 0 1 
+A We selected 60 claims and 40 encounter records to ensure we were tracing information from the front-end of the claims process 
+to the encounter record, and vice versa. The claims process is explained in the Introduction and Background section of this 
+report. 
+B The encounter record in PROMISeTM and the Pharmacy paid amount from the PBM remittance advice paid amount agreed.  
+C The MCO’s PBM practiced pass-through pricing by paying the pharmacy the amount the MCO paid the PBM for the drug 
+claim.  
+D The MCO’s PBM charged a fee, creating a difference between the amount the MCO paid the PBM and the PBM paid the 
+pharmacy. 
+E At least one pharmacy confirmed the amount it was paid was less than the amount on the PROMISe TM record due to a fee 
+charged by the PBM, indicating transparency regarding the PBM’s fee. 
+F The Report 4C listed transmission fees if the MCO’s PBM was charging the pharmacies a fee.  
+G The Transparency Report accurately reflected the MCO’s PBM was charging pharmacies a fee per drug claim.  
+N/A Not applicable since pass-through pricing was practiced. 
+Source: Developed by DAG auditors based on information received from DHS, MCOs, and PBMs.  For data reliability, we 
+traced the DHS PROMISeTM encounter records to claims data from pharmacies and payment remittances from the PBM to 
+the pharmacies to determine if the PBM was charging a transmission fee and to determine whether the amount listed on 
+the DHS PROMISeTM encounter record was reduced by the transmission fee. Other than the three MCOs that use 
+PerformRx, we did not perform procedures to assess the completeness of the invoices and payment remittances ; therefore, 
+we considered the data from the other four MCOs and their PBMs of undetermined reliability as noted in Appendix A. 
+Although this determination may affect the precision of the numbers we present, there is sufficient evidence in total to 
+support our findings and conclusions.
+ 
+ 
+Our test work found that only one MCO’s PBM actually practiced pass-through pricing, while 
+the other six MCOs’ PBMs were charging fees, and therefore, NOT practicing pass-through 
+===PAGE 27===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+20 
+pricing in calendar year 2022. Although a differential, known as spread pricing, is not permitted 
+by Act 120 of 2020, if the PBM charges a fee creating a spread, it must be disclosed and assessed 
+during adjudication of the claim.35  
+ 
+To determine if the PBMs charging fees were transparent with the pharmacies regarding the fees, 
+we sent confirmations to the 18 corporate pharmacies for the 100 claims and encounters based on 
+the amount listed as paid in PROMISe
+TM. The confirmation letter for each pharmacy requested 
+that the pharmacy verify whether the DHS encounter record amounts recorded in PROMISeTM 
+were the amounts actually received by the pharmacy. Six of the 18 pharmacies confirmed that 
+there were encounter record amounts that were incorrect due to a fee charged by three MCOs’ 
+PBM. This provided evidence that the PBM for those MCOs was transparent to the pharmacies 
+since the pharmacies were aware of the fees.  
+ 
+Since none of the 18 pharmacies indicated any of the other four MCOs’ PBMs were charging a 
+fee, we reviewed these MCOs PBMs’ payment remittances and noted that the fees, if assessed, 
+were either listed line-by-line but not reduced on each line, reducing the payment total at the end; 
+or were not listed until the end of the remittance in total and were offset at the end of the 
+payment remittance. Since none of the 18 pharmacies acknowledged that a transmission fee 
+reduced its payment amount paid by the other three MCOs’ PBMs that charged fees, we 
+concluded these three MCOs’ PBMs were not adequately transparent to the pharmacies as 
+required by Act 120 of 2020. 
+ 
+We also found that not only was the amount in PROMISe
+TM overstated for each encounter record 
+by the amount of the fees charged by the PBMs to the pharmacies, but for one claim which was 
+subsequently voided by the PBM, the claim still appeared paid in PROMISe
+TM, overstating the 
+encounter record. According to the PBM, the void was rejected by PROMISeTM and not 
+resubmitted. This is problematic because: 1) the encounter record was not detected by the MCO 
+or DHS, 2) the claim adjustment should have been resubmitted by the PBM and MCO to offset 
+the amount listed in PROMISeTM but was not, and 3) it overstated the encounter data in calendar 
+year 2022. 
+ 
+ 
+ 
+35 Act 120 of 2020 does not define or call the differential between the MCO and PBM payments as spread pricing. 
+We interpret that the prohibition of a differential is prohibiting spread pricing, unless the differential causing the 
+spread pricing is a transmission fee that is disclosed and processed during adjudication.  
+===PAGE 28===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+21 
+DHS declined to provide MCO financial reports to allow the auditors to 
+determine whether the transmission fees were properly accounted for in the 
+MCO Medical Loss Ratio calculations and for future capitation rates  
+ 
+In 2019, CMS published new guidance on spread pricing in Medicaid to ensure the PBMs were 
+not up-charging taxpayers by inflating encounter pharmacy data, which would lead to inflated 
+capitation rates in future years.
+36 CMS explicitly states that all PBM revenue needs to be 
+accounted for to accurately calculate the MCO’s MLR.37 The importance of the MLR is that the 
+MCOs are to spend at least 85% of its capitated payments on medical care, and no more than 
+15% on administrative costs and profits.
+38 CMS states that: 
+ 
+In calculating and reporting the MLR, states are responsible for ensuring that managed 
+care plans are complying with these MLR requirements and should be routinely 
+auditing reported data and MLR calculations to ensure that revenues, expenditures, and 
+other amounts are appropriately identified and classified within each managed care plan’s 
+MLR; that is, distinguishing which amounts were actually paid for benefits, or activities 
+that improve health care quality, and which amounts were actually paid for 
+administrative services, taxes, or other activities.
+39 (Emphasis added.) 
+ 
+Since we identified that MCOs were practicing spread pricing by charging transmission fees, we 
+requested the financial reports that would be used by DHS actuaries to calculate future capitation 
+rates and which were used by MCOs for MLR calculations. DHS declined to provide the auditors 
+with these financial reports due to the proprietary nature of the information. We were therefore 
+unable to conclude if the MLR calculations were accurate and we were unable to conclude if the 
+data provided to the actuaries for future capitation rate setting were correct. We did however, 
+meet with the actuary team who confirmed that it used encounter data and financial reports 
+provided by DHS. Based on our audit results, it is likely that the MLR for the MCOs that did not 
+report the transmission fees on the transparency reports and Report 4C were inaccurate and the 
+encounter data used for the future capitation rates was overstated by the $7 million in 
+administrative costs the pharmacies paid the PBMs. 
+ 
+36 CIB: Medical Loss Ratio (MLR) Requirements Related to Third-Party Vendors (medicaid.gov) and CMS Issues 
+New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit Managers are not Up- Charging 
+Taxpayers | CMS ( last accessed June 28, 2024).  
+37 Id. 
+38 See Appendix E for an explanation of the MLR. 
+39 CIB: Medical Loss Ratio (MLR) Requirements Related to Third-Party Vendors (medicaid.gov) (last accessed 
+June 28, 2024). 
+===PAGE 29===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+22 
+In summary, DHS failed to effectively monitor the HealthChoices program’s pharmacy 
+expenditures of $4.6 billion in calendar year 2022, which resulted in the following: 
+ 
+• DHS’ lack of awareness that the PBMs assessed pharmacies transmission fees;  
+• PBMs practiced spread pricing rather than pass-through pricing;  
+• PBMs’ non-compliance with Act 120 of 2020;  
+• Report 4Cs and Transparency Reports were inaccurate; and  
+• Pharmacy encounter data was overstated, which affects the pharmacy data used for the 
+capitation rates and potentially the MCOs’ Medical Loss Ratio.  
+ 
+Additionally, the following deficiencies noted during the audit, if left unresolved, could put the 
+program’s federal funding at risk: 
+ 
+• DHS’ lack of written policy and procedures for its monitoring of pharmacy encounter 
+data to ensure encounter data submitted to CMS is a complete and accurate 
+representation of the services provided to the Medicaid members as required by CFR 
+438.242(d); 
+• DHS’ lack of validation that encounter data provided to CMS is correct; and  
+• DHS’ lack of assurance that the encounter records on PROMISe
+TM were actually 
+reporting the amount the PBMs paid pharmacies.  
+ 
+If CMS would decide to penalize DHS for its ineffective monitoring, the financial consequences 
+could be dire. The funds the federal government provides to the state are based on the state’s 
+Federal Medicaid Assistance Percentage (FMAP). The FMAP is a specified percentage of 
+program expenditures paid by the federal government to partially fund a state’s Medicaid 
+program.
+40 Since Pennsylvania receives an FMAP percentage of over 50%, by DHS not 
+effectively monitoring, more than half of the $4.6 billion, or $2.3 billion, could be potentially at 
+risk in Medicaid pharmacy outpatient drug expenditures as based upon calendar year 2022 
+numbers.  
+ 
+ 
+ 
+40 Financial Management | Medicaid (last accessed June 11, 2024). 
+===PAGE 30===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+23 
+Recommendations for DHS Finding 1 
+ 
+We recommend that DHS: 
+ 
+1. Develop written policy and procedures for its monitoring of pharmacy encounter data to 
+ensure encounter data submitted to CMS is a complete and accurate representation of the 
+services provided to the Medicaid members. 
+  
+2. Not only focus on the aggregate performance of accuracy and timeliness benchmarks, but 
+also on whether individual claims processed by each MCO’s PBM are accurate based on 
+prescription, pharmacy remittance advices, and any related adjustment documentation. 
+ 
+3. Design a system of review to audit pharmacy encounter data, on a sample basis, by 
+tracing the encounter data to pharmacy remittance advices for adjudicated claims. 
+Additionally, DHS should audit, on a sample basis, claims from pharmacies and payment 
+remittances to pharmacies, including any adjusted claims, to ensure the final disposition 
+on PROMISe
+TM is accurate. 
+ 
+4. Add pharmacy encounter validation to supporting documentation in the scope of the 
+triennial audit that is currently underway. 
+ 
+5. Reconsider the importance of the Transparency Reports for rate setting, MLR reporting, 
+and Act 120 of 2020 compliance. If DHS believes the transmission fees are not an 
+administrative cost that should be considered for rate setting and MLR reporting, then 
+DHS should contact CMS for further guidance. 
+ 
+6. Re-evaluate the network of PBMs contracted with MCOs to determine if pharmacy 
+claims processing and monitoring of PBM practices could be achieved more effectively, 
+such as contracting with one PBM for use by all the MCOs. 
+ 
+7. Work with its actuary team to ensure that the transmission fees were adequately 
+accounted for in the encounter data, MLR calculations, and capitation rates. 
+ 
+We recommend that the General Assembly:  
+  
+1. Further amend the Code (i.e., Act 120 of 2020) by ensuring that there are clear 
+distinctions between the terms “spread pricing”, “pass-through pricing”, and 
+===PAGE 31===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+24 
+“pharmacy transmission fees” by adding concise and understandable definitions of all 
+three terms. 
+ 
+2. Further amend the Code (i.e., Act 120 of 2020) to make certain that DHS is fully aware 
+of all of its obligations and powers pertaining to PBMs including its monitoring duties 
+under the law and related contracts.  
+ 
+ 
+===PAGE 32===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+25 
+DHS Finding 2 – DHS did not effectively monitor contracts between the 
+Physical HealthChoices managed care organizations and pharmacy benefit 
+managers. 
+ 
+Our audit found that the Pennsylvania Department of Human Services (DHS) did not adequately 
+monitor the contracts between managed care organizations (MCOs) and Pharmacy Benefit 
+Managers (PBMs) in the Physical HealthChoices (HealthChoices) program. DHS does not have 
+policies and procedures for its contract monitoring efforts, and it does not verify the current PBM 
+contracts comply with the current HealthChoices contract. 
+ 
+According to federal regulations, the state must have a monitoring system in place to monitor the 
+MCOs and PBMs and has the right to conduct audits of both the MCOs and PBMs.
+41,42 Although 
+DHS shifts some of its monitoring duties onto the MCOs, the state is still required to maintain an 
+effective monitoring system of the HealthChoices program, otherwise, the federal regulations, as 
+well as Pennsylvania Act 120 of 2020
+43, would not have required the MCOs and subcontractor, 
+like a PBM, to make their records available for audit. Additionally, due to the corporate structure 
+of some of the MCOs using subsidiary companies as the PBM, there is an inherent incentive for 
+the MCOs to not report non-compliance of the PBMs and ensure their profitability. Therefore, 
+DHS has an obligation to evaluate full regulatory compliance through effective and up-to-date 
+oversight of subcontractors, such as PBMs, to ensure the integrity of the program is not 
+compromised.  
+ 
+As Pennsylvania’s Medicaid oversight agency, DHS ultimately has the responsibility to ensure 
+compliance with the HealthChoices agreement. Based on the numerous national issues that have 
+been of concern in recent years, DHS recognized that there was spread pricing and then banned it 
+effective January 1, 2020; however, by not monitoring the PBMs, seven of the eight PBMs 
+continued with spread pricing practices.
+44 
+ 
+ 
+41 42 CFR 438.602(a). 
+42 42 CFR 438.230(c)(3)(i) and (ii). 
+43 Amending the state Human Services Code (Code), effective January 25, 2021.  See 62 P.S. § 449(b). 
+44 Spread pricing is a differential between what the MCO paid the PBM and what the PBM paid the pharmacy for a 
+drug claim according to CMS in its 2019 guidance at CMS Issues New Guidance Addressing Spread Pricing in 
+Medicaid, Ensures Pharmacy Benefit Managers are not Up-Charging Taxpayers | CMS ( last accessed June 28, 
+2024). In this case, the PBM is charging the pharmacy a transmission fee that reduces the PBMs payment to the 
+pharmacy for each drug claim.  
+===PAGE 33===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+26 
+Although DHS did not provide policies and procedures for its monitoring efforts of the MCO 
+and PBM contracts, it did provide the following: 
+ 
+• DHS required the MCOs to submit policies and procedures for how the MCO will conduct 
+business and how the MCO will monitor its subcontractors.45 DHS management indicated 
+that it relies on the MCOs to monitor their own subcontractors, like PBMs. DHS’ reliance on 
+the MCOs, however, is not a sufficient monitoring system to evaluate whether the practices 
+are actually being conducted and that the PBMs are actually compliant with the 
+HealthChoices agreement’s requirements. DHS should be verifying the MCOs are actually 
+monitoring the PBMs, and DHS should be doing its own monitoring of PBMs to ensure 
+compliance with the HealthChoices agreement. 
+ 
+• DHS required the MCOs to complete an Annual Subcontractor Identification report. We 
+obtained each MCOs’ annual report for calendar year 2022. While MCOs list their respective 
+PBM as an approved subcontractor, the list does not ensure the PBMs are actually compliant 
+with applicable provisions of the HealthChoices agreement or transparent with regard to 
+PBMs’ practices of fee assessment and spread pricing. 
+ 
+• DHS required the MCOs to complete a DHS checklist to ensure the MCOs’ subcontract with 
+its PBM addresses specific requirements in the HealthChoices agreement.
+46 To verify the 
+checklist was completed, we requested the checklists for the requirements in the September 
+1, 2022, HealthChoices agreement. DHS provided a blank checklist it had created dated 
+November 2023. The blank checklist did provide 28 provisions required by the September 1, 
+2022, HealthChoices agreement; however, DHS did not have the MCOs complete the 
+updated checklists for the six PBM agreements in place for the September 1, 2022 
+agreement. Instead, DHS provided outdated checklists from the MCOs. DHS explained the 
+reason the checklists were not completed for the September 1, 2022, agreement was that:   
+ 
+… Subcontractor checklists are completed when the subcontract is first entered into. If 
+the subcontractor does not change, a new checklist is not completed, and the previous 
+checklist remains valid. There is no subcontractor checklist available for UPMC’s 
+subcontract with its PBM, Express Scripts, because they have been contracted with that 
+entity since 2006. In 2006, completion of subcontractor checklists was not a program 
+ 
+45 DHS provided the Prior Authorization Review Panel (PARP) Resource Guide for evidence of the monitoring 
+policies and procedures submitted by the MCOs. 
+46 See Appendix D for the 28 requirements listed for MCO contracts with PBMs based on the September 1, 2022 
+HealthChoices agreement. However, none of the checklists provided by DHS were for the September 1, 2022 new 
+HealthChoices agreement. 
+===PAGE 34===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+27 
+requirement or process that was in place. For the same reason, there is no subcontractor 
+checklist available for [the AmeriHealth and Keystone First] subcontract with PerformRx 
+executed in 2011. 
+ 
+Many of the amendments that DHS receives are due to extensions of the original contract 
+with limited content change outside of the dates of coverage and same terms/conditions 
+apply. In those instances, a Subcontractor Checklist is not necessary. A new 
+subcontractor checklist is done on a case-by-case basis dependent upon the nature of the 
+amendment. Staff with appropriate subject matter expertise review the contracts for 
+compliance with HealthChoices Agreement requirements. 
+ 
+Further, our review of the outdated checklists found that the checklists had no markings to 
+evidence review by DHS. The checklists had no dates within the document to ascertain which 
+HealthChoices agreement was used by DHS to create the checklist or which HealthChoices 
+agreement was used by the MCO to complete the checklist. We additionally found that the 
+checklists were not applicable to the PBM contracts or HealthChoices agreements in place for 
+calendar year 2022.
+47 We attempted to confirm the checklists against the PBM contracts but 
+found that provisions of both the HealthChoices agreement and the PBM contracts were not 
+aligned. By DHS not requiring the MCOs to complete a new checklist for a new or updated 
+HealthChoices agreements and for new or updated PBM contracts, DHS does not have assurance 
+that current PBM contracts comply with the current HealthChoices agreement. 
+ 
+DHS’ lack of effective oversight of the MCOs’ PBM contracts and lack of documentation to 
+support monitoring past an initial contract with a PBM provides little to no assurance that PBMs’ 
+contracts or practices comply with the current HealthChoices agreements, Act 120 of 2020, or 
+specific regulations, potentially putting the Medicaid program at risk for noncompliance. For 
+instance, had DHS ensured the PBM agreements were actually updated as of January 1, 2020 to 
+ensure the PBMs are actually practicing pass-through pricing, there would be no spread pricing 
+or if there was, DHS would have been aware of it. Additionally, the lack of verification that the 
+PBMs are not including gag clauses in the pharmacy’s contract does not ensure compliance with 
+the federal prohibition on such clauses.  
+ 
+47 For calendar year 2022, there were initially eight MCOs and seven PBM contracts; however, one MCO and PBM 
+contract was not renewed for the September 1, 2022 HealthChoices contract.  
+===PAGE 35===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+28 
+Recommendations for DHS Finding 2 
+ 
+We recommend that DHS:  
+ 
+1. Utilize its statutory authority to monitor PBMs’ practices to ensure compliance with the 
+HealthChoices agreement. 
+ 
+2. Implement written policies and procedures for its monitoring of PBM contracts to ensure 
+monitoring efforts are documented for the HealthChoices program.  
+ 
+3. Monitor the contract language between MCOs and PBMs, document the review; and put 
+into place enforcement mechanisms to address any non-compliance.  
+ 
+4. Require MCOs to update the PBM contracts for compliance with the HealthChoices 
+agreement and current laws, such as the Code, as amended by Act 120 of 2020.  
+ 
+5. Ensure the current HealthChoices provisions are within the subcontractors’ contracts by 
+requiring the MCOs to complete the DHS checklist (Appendix D) for each new or 
+updated HealthChoices agreement, and for each new or updated PBM contract. 
+ 
+ 
+===PAGE 36===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+29 
+Pennsylvania Department of Human Services’ Response and Auditor’s 
+Conclusion 
+ 
+We provided copies of our draft audit findings and related recommendations to the Pennsylvania 
+Department of Human Services (DHS) for its review. On the pages that follow, we included 
+DHS’ response in its entirety. Following the agency’s response is our auditor’s conclusion. 
+ 
+===PAGE 37===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+30 
+Audit Response from the Pennsylvania Department of Human Services 
+ 
+ 
+
+===PAGE 38===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+31 
+ 
+
+===PAGE 39===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+32 
+ 
+
+===PAGE 40===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+33 
+ 
+
+===PAGE 41===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+34 
+ 
+
+===PAGE 42===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+35 
+ 
+
+===PAGE 43===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+36 
+ 
+
+===PAGE 44===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+37 
+ 
+ 
+
+===PAGE 45===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+38 
+Auditor’s Conclusion to the Pennsylvania Department of Human Services’ 
+Response 
+ 
+The Pennsylvania Department of Human Services (DHS) management generally disagreed with 
+the overall context of the audit report, because the Department of the Auditor General (DAG) 
+classified the act of the pharmacy benefit managers (PBMs) charging transmission fees as a type 
+of spread pricing. Additionally, DHS disagrees that the transmission fee should be disclosed to 
+DHS and accounted for when calculating the Managed Care Organizations’ (MCOs’) Medical 
+Loss Ratios (MLRs). We note DHS’ disagreements and assertions below along with DAG’s 
+conclusions as to each of DHS’ statements. 
+ 
+As reported in our audit, the Centers for Medicare and Medicaid Services (CMS) stated in the 
+2019 Informational Bulletin that any difference between the amount the MCO paid the PBM and 
+the PBM paid the pharmacy for drug claims in which the PBM retains an additional revenue 
+source to cover the PBM’s costs for services procured by the MCO, is spread pricing. It further 
+stated that this is an administrative cost to the MCO that should be accounted for in the MLR and 
+when setting future capitation rates.
+48 
+ 
+Finding 1 – DHS did not effectively monitor pharmacy drug claims which resulted in 
+undisclosed spread pricing, overstated pharmacy data, and a lack of transparency. 
+ 
+DHS’ inaccurate perception that it lacks authority to audit PBMs. 
+ 
+DHS Assertion – “While the DHS Bureau of Program Integrity [BPI] does not have oversight 
+authority over the PBMs, DHS is aware that the Office of Medical Assistance Programs  
+(OMAP) has the authority to audit PBMs. However, DHS has historically held the MCOs 
+responsible as the prime agreement holders for ensuring their subcontractors are compliant with 
+all requirements.” 
+ 
+DAG Response – DAG disagrees that DHS’ BPI does not have authority to audit the PBMs. If 
+OMAP has the authority to audit PBMs, then so does BPI. There is a difference between an 
+agency having the authority to audit PBMs and an Office or Bureau within the agency being 
+assigned the duty to audit the PBM. 
+ 
+48 CIB: Medical Loss Ratio (MLR) Requirements Related to Third-Party Vendors (medicaid.gov) and CMS Issues 
+New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit Managers are not Up- Charging 
+Taxpayers | CMS ( last accessed June 28, 2024).   
+===PAGE 46===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+39 
+DHS’ ineffective monitoring of MCOs’ reports on pharmacy data. 
+ 
+DHS Assertion – “DHS disagrees with the auditor’s conclusion that transmission fees constitute 
+spread pricing.”  
+ 
+DAG Response – DAG disagrees. The May 15, 2019 CMS Informational Bulletin is clear in 
+stating that a PBM needs to classify and report its revenues and expenditures to the MCO for the 
+MCO to accurately reflect medical costs and non-medical administrative costs for the MLR. The 
+transmission fees, permitted under Act 120 of 2020, is an administrative fee charged by the PBM 
+to the pharmacy and should be reported as an administrative cost for the MCO’s MLR, in 
+addition to the amount the MCO pays the PBM for processing claims.  
+ 
+The following chart is an illustration of the amounts the MCOs paid to the PBMs, the amounts 
+the PBMs paid to the pharmacies, the difference of the two amounts paid which is the spread or 
+retained differential caused from the transmission fees, and the amount the MCOs paid the PBMs 
+to process the claims for calendar year 2022.  
+ 
+Source: Developed by DAG auditors based on information received from the Transparency Reports obtained from 
+DHS. As noted in Appendix A, the data from the Transparency Reports obtained from DHS is of undetermined 
+reliability; however, this is the best data available. Although this determination may affect the precision of the 
+numbers we present, there is sufficient evidence in total to support our findings and conclusions.  
+ 
+As illustrated, the spread or retained differential for the transmission fees was nearly $7 million 
+that the PBMs charged pharmacies over and above the $63 million the MCOs paid the PBMs for 
+services. DHS’ lack of knowledge of the transmission fees and its inaccurate classification of the 
+ 
+ 
+MCO 
+ 
+ 
+PBM 
+ 
+Amount MCO 
+Paid to PBM 
+Amount PBM 
+Paid to 
+Pharmacies 
+Spread 
+Amount kept 
+by PBM 
+MCO Admin. 
+Fees Paid to 
+PBM 
+1 PBM 1 $460,162,581 $459,636,599 $526,001 $4,879,515 
+2 PBM 1 631,851,875 631,096,755 755,120 13,431,427 
+3 PBM 1 885,480,707 884,592,719 887,988 19,219,940 
+4 PBM 2 618,914,570 617,759,869 1,154,701 5,418,836 
+5 PBM 2 414,646,906 413,807,469 839,437 3,238,162 
+6 PBM 3 298,234,020 298,234,020 - 4,857,864 
+7 PBM 4 1,011,466,928 1,009,246,871 2,220,057 9,169,748 
+8A PBM 2 236,484,329 236,070,755 413,574 2,878,787  
+Totals $4,557,241,916 $4,550,445,057 $6,796,878 $63,094,279 
+A MCO 8 was not included in our test work for Finding 1 in the report since the population for the DHS 
+PROMISeTM encounter data was selected for October 2022, and MCO 8 was no longer in the HealthChoices 
+program as of August 31, 2022. 
+===PAGE 47===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+40 
+costs as pharmacy costs and not costs of the HealthChoices program should be addressed by 
+DHS with CMS for further clarification. 
+ 
+DHS Assertion – “The standardized, HIPAA compliant, National Council for Prescription Drug 
+Programs (NCPDP) electronic pharmacy claim transaction does not include a field for the 
+transmission fee. Therefore, the MCO drug encounters received by DHS do not include the 
+transmission fee.” 
+ 
+DAG Response – DAG agrees that the encounter records do not report the transmission fees, 
+and therefore, the encounter records are overstated because the amounts listed as the paid 
+amounts are the amounts the MCO paid and not the amounts the PBM paid to the pharmacies 
+which were reduced by the transmission fees. DHS should consult with CMS or the NCPDP to 
+determine how to report transmission fees that are permitted by Act 120 of 2020 and not 
+prohibited by the federal government.  
+ 
+DHS Assertion – “DHS disagrees with the finding that the 4C and Transparency Reports were 
+inaccurate.” 
+ 
+DAG response – DAG disagrees. DHS provided additional information or amended reports for 
+the MCOs that failed to disclose the MCO administrative fees and/or the Pharmacy transmission 
+fees based on the auditors’ inquiries. Additionally, DHS management stated that none of the 
+calendar year 2022 Report 4Cs contained adjustments for a spread pricing differential because all 
+of the PBMs are practicing pass-through pricing. However, our audit found that there are 
+differentials for the MCOs’ PBMs that charge transmission fees, and therefore, DAG asserts both 
+reports from the MCOs were misleading and inaccurate.  
+ 
+DHS’ ineffective monitoring and lack of validating pharmacy encounter data to source 
+documents resulted in DHS’ unawareness of spread pricing.  
+ 
+DHS Assertion – “DHS considers the MCO submitted drug encounters and additional claim 
+data to be the source documents for monitoring spread pricing between the MCO their 
+subcontracted PBM and the PBMs contracted pharmacy.” 
+ 
+DAG Response – DAG disagrees. According to the State Toolkit for Validating Medicaid 
+Managed Care Encounter Data prepared by CMS, dated August 2019 and amended after our 
+audit period, data sources include, but are not limited to, claims data and remittance advices from 
+the plans or plans’ subcontractors, like PBMs.  
+ 
+===PAGE 48===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+41 
+DHS Assertion – “DHS would like to understand how the auditor would characterize the PBM 
+and pharmacy fees if the pharmacies made a separate payment to the PBM as opposed to the 
+remittance advice showing a payment withhold. DHS would also like to know if the auditor 
+reviewed the PBM and pharmacy contract payment provisions to determine if transmission fees 
+are disclosed and collected per the terms and conditions of that contract.” 
+ 
+DAG Response – DAG would characterize the PBM and pharmacy fees collected separately 
+from the drug claim’s remittance advice as spread pricing that is noncompliant with Act 120 of 
+2020 Section 449(h)(3) and (4)
+49 because the fees in this scenario would be a differential that is 
+prohibited under subsection (3) and would also be transmission fees that were not processed 
+during adjudication in non-compliance with subsection (4). Additionally, DAG reviewed 
+pharmacy contract payment provisions to determine if the drug and dispensing fees were 
+collected per the terms and conditions of the contract. We did not request or review the 
+pharmacy contract provisions regarding transmission fees since they were assessed at the same 
+fee amount for the applicable pharmacies for that MCO unless it met other criteria, like a vaccine 
+that had no fee. However, we found that the transmission fees were transparent to the pharmacies 
+for PerformRx, LLC as noted in Finding 3 of our audit report. 
+ 
+DHS Assertion Seven – “The report did not identify any evidence of spread pricing as described 
+by CMS. DHS monitors spread pricing through reporting in the aggregate and has not identified 
+spread pricing. The draft reports states that monitoring should be done on an individual claim 
+level. This recommendation is based on the auditor’s inaccurate description of spread pricing.” 
+  
+DAG Response – DAG disagrees. As previously noted, DAG did identify evidence of spread 
+pricing by the PBMs that charge pharmacies transmission fees as described by CMS. See also the 
+table above that indicates that seven of the eight PBMs were paying the pharmacies less than the 
+MCOs were paying the PBMs for the same drug claim, totaling nearly $7 million in additional 
+revenue to the PBMs for calendar year 2022. 
+ 
+DHS Assertion – “The audit report discloses no evidence that individual claim monitoring 
+would yield different results than aggregate monitoring.” 
+ 
+DAG Response – DAG disagrees. As detailed in the audit report, our audit procedures 
+identified undisclosed transmission fees paid by pharmacies to PBMs and a voided prescription 
+claim record that was not properly voided in PROMISe
+TM by the PBM. DHS’ lack of awareness 
+ 
+49 62 P.S. § 449(h)(3)-(4).   
+ 
+===PAGE 49===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+42 
+was confirmed during meetings between the auditors and DHS management. Had DHS 
+monitored pharmacy claims on an individual basis, at least for a sample of claims, DHS may 
+have identified the overstated pharmacy drug encounter data and the potential weakness in the 
+process for rejected voids that are not resubmitted. 
+ 
+DHS Assertion – “If DHS identifies spread pricing, as described by CMS, and prohibited by the 
+HealthChoices agreement and Act 120 of 2020, the MCOs will be held accountable for the non-
+compliance of their subcontractors.”  
+ 
+DAG Response – DAG disagrees with DHS’ assertion that the HealthChoices agreement and 
+Act 120 of 2020 prohibit spread pricing for the PBM transmission fees. The transmission fees are 
+a legalized type of spread pricing based on CMS description and Act 120 of 2020. Additionally, 
+the HealthChoices agreement has the following provision that does not indicate spread pricing is 
+prohibited:  
+ 
+Appendix BBB.  
+ 
+9. Drug Encounters b. …For all Drug Encounter data… the following data elements are 
+required… iii. Actual paid amount by the PH-MCO, or the PH-MCO’s PBM, to the 
+provider for the drug dispensed. 
+… 
+14. Pharmacy Benefit Manager (PBM) The PH-MCO must: … c. Report differences 
+between the amount paid by the PH-MCO to the PBM and the amount paid by the PBM 
+to the providers of covered drugs as administrative fees.”  
+ 
+The agreement provisions are consistent with DAG’s audit recommending that DHS, not just the 
+MCOs, should be monitoring the PBMs for compliance. 
+ 
+DHS Assertion – “DHS investigated the one voided pharmacy claim identified in the report and 
+concluded that the claim was paid to the pharmacy, and DHS received the paid MCO drug 
+encounter. The discrepancy was related to encounter file load timing lag which was identified 
+and resolved in late 2022 – early 2023.” 
+ 
+DAG Response – DAG agrees that the voided pharmacy claim in question was initially paid to 
+the pharmacy and DHS received the paid MCO drug encounter; however, we disagree that the 
+voided transaction problem was due to a “file load timing lag” issue. The claim in question was 
+subsequently reversed by the pharmacy, refunded to the PBM, and submitted to DHS for 
+reversal. That reversal was rejected by the DHS PROMISe
+TM  and not properly resubmitted by 
+===PAGE 50===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+43 
+the PBM, causing the DHS encounter record to be overstated by the amount of that claim as of 
+June 6, 2024. DHS’ lack of claim-specific monitoring of pharmacy claims and PBM practices is 
+inadequate to ensure the HealthChoices program is compliant with federal and state laws. Had 
+DHS performed claim-specific monitoring, it may have discovered system weaknesses like the 
+overstated claim that was subsequently voided, rejected by PROMISe
+TM, and not resubmitted by 
+the PBMs or MCOs.  
+ 
+DHS Assertion – “The transmission fees paid by the pharmacies to the PBM are a cost to the 
+pharmacy, not an administrative cost to the MCO and are therefore not reported by the MCO on 
+the MLR reports. Because the transmission fees are not an expense of the MCOs, they would not 
+have been included in the MCO cost reports, which are the reports that would have supported the 
+$4.6 billion in drug expenditures.”  
+ 
+DAG Response – DAG disagrees. Although the transmission fees are a cost to the pharmacy, 
+they are revenue to the PBM, and therefore, should be reported to the MCOs for proper 
+accounting in the MLR. 
+ 
+DHS Assertion – “The auditors’ suggestion that CMS might disallow federal financial 
+participation because of ineffective monitoring is based on what the auditors consider spread 
+pricing. In any event, ineffective monitoring is not a basis for disallowing the entire $4.6 billion 
+in drug expenditures. Moreover, the result of what the auditors believe was the ineffective 
+monitoring was $7 million in transmission fees paid by the pharmacies to the PBMs which they 
+believe should be subtracted from the MCO’s incurred claims in the MLR calculations.” 
+ 
+DAG Response – DAG disagrees that the audit indicated that the entire $4.6 billion in drug-
+related expenditures would be disallowed. DAG asserted that the totality of DHS’ ineffective 
+monitoring could put the Federal dollars at risk of CMS disallowance. A disallowance is where 
+the State is required to pay back a percentage or portion of the Federal funds to CMS.  
+ 
+Recommendations for Finding 1 
+ 
+DHS Response to Recommendation 1 – “DHS disagrees with this recommendation. We have 
+written policies and procedures for monitoring pharmacy encounter data.”  
+ 
+DAG Response – DAG disagrees. DAG first requested DHS policies and procedures related to 
+the audit objectives on November 13, 2023. In response DHS provided numerous MCO reports, 
+MCO prepared monitoring reports, systems notices, MCO operations memorandums, participant 
+denial notices, MCO policy and procedures manual, and reporting templates. Since subsequent 
+===PAGE 51===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+44 
+emails and conversations did not result in the receipt of DHS specific policies and procedures, 
+DAG then requested on May 20, 2024, DHS policies and procedures specifically for encounter 
+data validation. DHS responded with Code of Federal Regulations citations, agreement 
+requirements, CMS requirements, and NCPDP formatting requirements. No internal DHS 
+written policies and procedures detailing how and when DHS monitors PBM encounter data 
+were ever produced by DHS. 
+ 
+DHS Response to Recommendation 2 and Recommendation 3 – “DHS disagrees with this 
+recommendation. The audit disclosed no evidence that individual claim monitoring would yield 
+different results than aggregate monitoring. While we don’t think this is necessary, we will 
+consider this recommendation.” 
+ 
+DAG Response – DAG disagrees. As detailed in the audit report and above, our audit 
+procedures identified undisclosed transmissions fees paid by pharmacies to PBMs and a voided 
+prescription claim record that was not properly voided in PROMISe
+TM by the PBM. However, 
+DAG is pleased that DHS will consider Recommendations 2 and 3. 
+ 
+DHS Response to Recommendation 4 – “DHS disagrees with this recommendation. DHS 
+already includes all pharmacy encounter information in the Triennial audit.” 
+ 
+DAG Response – DAG agrees that DHS likely provided the vendor with the pharmacy 
+encounter data. DHS, however, stated the current triennial audit will be the same process used in 
+2021 for the completed triennial audit of 2019 HealthChoices data which did not include a 
+validation of DHS encounter records against source systems, such as the PBM’s claims 
+processing system, and medical records, such as pharmacy claims. 
+ 
+DHS Response to Recommendations 5 and 6 – DHS will consider this recommendation. 
+ 
+DAG Response – DAG is pleased that DHS will consider Recommendations 5 and 6. 
+ 
+DHS Response to Recommendation 7 – “DHS disagrees with this recommendation. The 
+transmission fees paid by the pharmacies to the PBM are a cost to the pharmacy, not an 
+administrative cost to the MCO and are therefore not included in encounter data, MLR 
+calculations, or capitation rates.”  
+ 
+DAG Response – DAG disagrees. The transmission fees the PBM charges the pharmacies are a 
+source of revenue to the PBM and therefore should be reported as a reduction to the drug claim 
+as an administrative cost on the encounter record, should be reported to the MCOs for MLR 
+===PAGE 52===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+45 
+calculations, and should be reported to the actuaries for future capitated rates, consistent with the 
+CMS 2019 guidance.50  
+ 
+Finding 2 – DHS did not effectively monitor contracts between the Physical HealthChoices 
+managed care organizations and pharmacy benefit managers. 
+ 
+Recommendations for Finding 2 
+ 
+DHS Response to Recommendation 1 – “DHS disagrees with this recommendation. DHS holds 
+the MCOs responsible as the prime agreement holders for ensuring their subcontractors are 
+compliant with all requirements. DHS requests the MCO take corrective actions when it becomes 
+aware that a subcontractor is not compliant with requirements of the HealthChoices agreement.” 
+ 
+DAG Response – DAG disagrees that DHS should solely rely on the MCOs to do the 
+monitoring of the PBMs since several of the MCOs and PBMs are part of the same network of 
+companies. Due to conflicts of interest, it is imperative that DHS recognize the need for its 
+independent monitoring of PBMs, especially those within the same MCOs’ corporate network. 
+ 
+DHS Responses to Recommendations 2, 3, 4, and 5 – DHS will consider these 
+recommendations.  
+ 
+DAG Response – DAG is pleased that DHS will consider Recommendations 2, 3, 4, and 5. 
+ 
+ 
+ 
+50 Id. 
+===PAGE 53===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+46 
+PerformRx, LLC Finding 3 – PerformRx, LLC was transparent and 
+accountable to the pharmacies for transmission fees but was not transparent 
+to the MCOs and DHS regarding the fees which resulted in undisclosed 
+spread pricing.  
+ 
+During calendar year 2022, PerformRx, LLC (PerformRx) was the pharmacy benefit manager 
+(PBM) for three of the Physical HealthChoices (HealthChoices) managed care organizations 
+(MCOs). The three MCOs were AmeriHealth, Keystone First, and Geisinger. Our performance 
+audit determined that PerformRx was partially compliant with Act 120 of 2020 since the 
+transmission fees it charged were disclosed to the pharmacies and processed during adjudication, 
+but they failed to disclose and report the transmission fees to the three MCOs and the 
+Pennsylvania Department of Human Services (DHS). 
+ 
+Act 120 of 2020 requires that PBMs charging a transmission or transaction fee to pharmacies 
+must disclose the fee and process the fee at the time of adjudication.
+51 To ensure the 
+requirements set forth by Act 120 of 2020 were met, we reviewed PerformRx’s procedures for 
+processing drug claims for HealthChoices and examined the following: 
+ 
+1. Whether the contracts between PerformRx and MCOs disclosed that PerformRx will 
+charge transmission fees to the pharmacies; 
+ 
+2. Whether PerformRx practices spread pricing based on the following: 
+  
+a. Whether the payments for claims from the MCO to PerformRx are the same 
+amount that PerformRx paid the pharmacies;  
+ 
+b. Whether transmission fees, if charged, were disclosed to the pharmacies on 
+the remittance advices from PerformRx; and  
+ 
+c. Whether the payment information in DHS’ PROMISe
+TM agrees with the 
+amount actually paid to the pharmacy;52  
+ 
+ 
+51 Adjudication is when the PBM makes payment to reimburse the pharmacy for the drug claim being processed. 
+52 DHS system notice #SYS-2019-031 states, in part, “All drug encounters must include the actual total amount 
+paid to the dispensing provider, regardless if the MCO paid directly or the claim was paid by a subcontractor of 
+the MCO.” Emphasis added. 
+===PAGE 54===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+47 
+3. Whether pharmacies knew that PerformRx reduced its drug payments by a 
+transmission fee per claim based on confirmations sent to selected pharmacies; and 
+ 
+4. Whether the MCOs reported PerformRx’ transmission fees on the MCOs’ Outpatient 
+Drug Pricing Transparency (Part D) reports (Transparency Reports) completed 
+quarterly and submitted to DHS. 
+ 
+ 
+PerformRx contracts with HealthChoices MCOs 
+ 
+We obtained the Geisinger contract with PerformRx and the joint contract between AmeriHealth 
+and Keystone First with PerformRx. Our review of the two contracts found that each contained 
+provisions that allowed PerformRx to charge a transmission fee to the pharmacies. This provides 
+notice to the three MCOs that there may be spread pricing, and therefore, the MCOs were aware 
+or should have been aware that PerformRx may charge pharmacies a transmission fee. According 
+to PerformRx, the transmission fees are charged to the pharmacies as administrative fees to 
+reduce the amount paid by the MCOs. 
+ 
+ 
+Testing for Spread Pricing 
+ 
+We tested pharmacy drug claims for all three MCOs. To do this, PerformRx provided its 
+monthly claims data for calendar year 2022 for each of the three MCOs. According to that data, a 
+total of 34,346,412 claims were processed by PerformRx in calendar year 2022 for the three 
+MCOs, and a total of $1.8 billion was paid to the pharmacies for those claims.
+53  
+ 
+We selected 20 claims per MCO from the claims data provided by PerformRx, for a total 
+selection of 60 claims. To select the 20 claims for each MCO, we haphazardly selected 12 
+claims, one per month, and judgmentally selected eight claims based on other criteria, such as 
+claims that appeared to be an adjustment. Based on the total selection of 60 claims, we obtained 
+the following supporting documentation from PerformRx: 
+ 
+• Claim transaction detail from PerformRx’s claims processing system for the selected 
+claim and any prior or subsequent information associated with that claim; 
+• Pharmacy contract payment provisions; 
+ 
+53 See Appendix A for details regarding assessment of data reliability.  
+===PAGE 55===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+48 
+• Documentation of MCO payments to the PBM for the claims; and 
+• Remittance advices from PerformRx to the pharmacies for the claims. 
+ 
+To facilitate our review, PerformRx explained the claims process as described in the Introduction 
+and Background section of this audit report. Additionally, PerformRx indicated that the 
+pharmacies may reverse, or void claims, each month for several reasons, for instance, if the 
+member does not pick up the prescription, the pharmacist will return the medication to inventory 
+and submit a reversal transaction to negate the claim. If the reversal is entered within the same 
+financial cycle as the original claim, it becomes an in-cycle reversal, and the two transactions 
+cancel each other out. Therefore, for an in-cycle reversal, no encounter has taken place with a 
+drug and a Medicaid member, so it is not a transaction submitted to the MCO or subsequently 
+recorded in PROMISe
+TM. 
+ 
+Alternatively, an out-of-cycle adjustment occurs when a reversal is processed after the financial 
+cycle in which the original claim was created. Since the first transaction created a payment to the 
+pharmacy and an encounter record in PROMISe
+TM, another transaction is required to recoup the 
+payment from the pharmacy and to reduce the amount paid by the PBM in the PROMISeTM 
+record. The two transactions result in two remittance advices to the pharmacy, one for the 
+original claim’s payment and a second one for the reversing transaction to recoup the funds from 
+the pharmacy.  
+ 
+Of the 60 claims tested, totaling $108,723.38 in transactions, we found four of the 60 claims did 
+not include a transmission fee, and were therefore pass-through pricing, with no spread between 
+the MCO payment and the PBM payment. Thirteen claims were reversed in-cycle with no 
+remittance advices or PROMISeTM encounter records, and the remaining 43 claims had the 
+following exceptions: 
+ 
+• 42 claims had an MCO payment to PerformRx that was higher than the amount 
+PerformRx paid to the pharmacy due to a transmission fee, creating a spread in pricing. 
+Additionally, the MCO payment amount was recorded in the PROMISeTM encounter 
+record rather than the lower actual amount paid to the pharmacy. This type of spread 
+pricing overstates the pharmacy encounter data in PROMISeTM. (See E-1 and E-2 in the 
+table in Appendix F.) 
+ 
+• One claim listed as an out-of-cycle reversal was not properly voided in PROMISeTM 
+because the reversing transaction was rejected by PROMISeTM and was not resubmitted 
+by PerformRx. (See E-3 in the table in Appendix F.) Again, resulting in an overstated 
+PROMISeTM encounter record. 
+===PAGE 56===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+49 
+Although PerformRx disclosed transmission fees to the pharmacies on remittance advices at the 
+time of payment, the encounter records submitted to the MCOs and to DHS did not report the 
+transmission fees. Therefore, it was not transparent to the MCO or to DHS that the MCO 
+payment to the PBM and the PBM payment to the pharmacies were different. Although DHS 
+procedures and system notices indicate the amount to be recorded in the encounter record is to be 
+the actual amount paid to the pharmacy, PerformRx did not offset the MCO amount paid by the 
+transmission fees, resulting in undisclosed spread pricing. 
+ 
+We also noted during our audit procedures that the pharmacies do not pay transmission fees for 
+in-cycle reversals since there are no payment remittances. The out-of-cycle reversals, however, 
+do result in the pharmacies paying a transmission fee for the initial claim and another 
+transmission fee for the reversal transaction. One fee is retained by the PBM, and one fee is used 
+to pay back the MCO for the full amount the MCO initially paid the PBM. 
+ 
+ 
+Pharmacy Confirmation Results 
+ 
+To determine whether the pharmacies actually knew that they were charged a transmission fee 
+per claim, we sent confirmations to the 18 corporate pharmacies associated with the 60 claims. 
+Each of the 18 pharmacies responded and 6 confirmed the amount listed on the PROMISe
+TM 
+encounter record was reduced by a fee. Although only 6 of the 18 pharmacies confirmed 17 of 
+the 60 claims included transmission fees that reduced the reimbursement paid by PerformRx, we 
+concluded that PerformRx adequately and transparently disclosed the transmission fees to the 
+respective pharmacies on remittance advices.
+  
+ 
+ 
+DHS Transparency Reports 
+ 
+Since our testing revealed that the encounter records sent to DHS did not include the 
+transmission fees that were charged to the pharmacies, we obtained the calendar year 2022 
+quarterly Transparency Reports from DHS that require the MCOs to report MCO administrative 
+fees for the PBM services and PBM transmission fees charged to the pharmacies. Our review of 
+the calendar year 2022 reports for these three MCOs found that no transmission fees were 
+disclosed on the Transparency Reports, even though we found transmission fees were being 
+charged to pharmacies. 
+ 
+===PAGE 57===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+50 
+After we raised this lack of disclosure with DHS, DHS provided revised Transparency Reports 
+for the three MCOs, adding $2 million in transmission fees not previously reported to DHS on 
+the Transparency Reports. According to PerformRx, it was unaware of the reporting requirement 
+that resulted in the unintentional omission of the data; therefore, it recreated the past deficient 
+reports for the MCOs and remedied the defect going forward. 
+ 
+ 
+In Summary 
+ 
+Although PerformRx adequately and accurately disclosed transmission fees to the pharmacies, 
+PerformRx failed to disclose the transmission fees to the MCOs and DHS which violates the 
+transparency requirements set forth by Act 120 of 2020. Therefore, PerformRx was not fully 
+compliant with the statutory and regulatory standards. This undermines the transparency 
+requirements required for spread pricing practices.  
+ 
+ 
+Recommendations for PerformRx, LLC Finding 3 
+ 
+We recommend that PerformRx: 
+ 
+1. Continue to be transparent with pharmacies regarding the transmission fees and 
+determine if the transmission fee is justifiable since MCOs already pay PerformRx for the 
+processing of the claims.  
+ 
+2. Implement procedures to ensure compliance with Act 120’s transparency requirement, 
+not only with the pharmacies, but also with the MCOs and DHS. 
+ 
+3. Monitor out-of-cycle reversals that are rejected by PROMISe
+TM in order to resubmit the 
+reversing transaction within the time requirements allowed by the HealthChoices 
+agreement to ensure the DHS PROMISe
+TM encounter data is not overstated. 
+ 
+ 
+===PAGE 58===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+51 
+PerformRx, LLC’s Response and Auditor’s Conclusion 
+ 
+We provided copies of our draft audit finding and related recommendations to PerformRx, LLC 
+(PerformRx) for its review. On the pages that follow, we included PerformRx’s response in its 
+entirety. Following PerformRx’s response is our auditor’s conclusion. 
+ 
+ 
+===PAGE 59===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+52 
+Audit Response from PerformRx, LLC 
+ 
+ 
+
+===PAGE 60===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+53 
+
+===PAGE 61===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+54 
+Auditor’s Conclusion to PerformRx, LLC’s Response 
+ 
+PerformRx, LLC management (PerformRx) is generally in agreement with Finding 3 and 
+acknowledges it charged managed care organizations (MCOs) for contracted services, charged 
+pharmacies administrative transmission fees, recorded the encounter records at the higher MCO 
+paid amount rather than the actual payment amount that was reduced by the transmission fee, and 
+paid the pharmacies based on the pharmacy’s contractual reimbursement rates.  
+ 
+PerformRx, however, compares charging the pharmacies a transmission fee on a per-claim basis 
+as “akin to a credit card transaction fee charged by a retail merchant.” The Pennsylvania 
+Department of the Auditor General (DAG) disagrees with this analogy because a retail store 
+pays a merchant a fee for processing the retail store’s credit card transactions from its customers, 
+akin to the MCO paying the PBM for processing drug claims for the MCO’s pharmacy benefit 
+for its Medicaid members. The PBM’s transmission fee charged to the pharmacy would be 
+comparable to the merchant charging a fee to the retail store and to the credit card bank.  
+ 
+PerformRx management also disagreed with DAG’s Recommendation 1 to the extent that it 
+implies transmission fees are not justifiable because the transmission fee is a pharmacy fee in 
+addition to the MCO payments for PerformRx’s services. PerformRx indicates the pharmacy 
+transmission fees are to reduce the MCOs administrative burden by offsetting the cost of 
+administering the network and processing claims on the MCO’s behalf. DAG disagrees that the 
+fee is justifiable because DHS pays the MCOs a capitated rate to administer the Physical 
+HealthChoices Medicaid program which includes the cost of administering a pharmacy network 
+and processing pharmacy claims. If the MCO chooses to use a PBM rather than do the services 
+itself, the MCO contracts and pays the PBM for the services. This administrative expense, 
+whether incurred by the MCO or the PBM, is already considered in the capitation rates paid to 
+the MCO. Therefore, the PBM should not be supplementing its revenue by charging the 
+pharmacies a fee for services it is already contracted to do for an MCO. 
+ 
+In addition, PerformRx does not agree that the differential created by the transmission fee is 
+spread pricing because the transmission fee is not applied to the ingredient cost and/or 
+professional dispensing fee. DAG disagrees, since the transmission fee offsets the total amount 
+to be paid on the payment remittance on a per-claim basis. Act 120 of 2020 requires that if 
+transmission fees are charged, that they are to be processed during adjudication. This provides 
+more transparency to the pharmacy. Transmission fees directly reduce the pharmacies’ ingredient 
+cost and professional dispensing fee on a per-claim basis, like third-party liabilities and member 
+co-payments.  
+===PAGE 62===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+55 
+Although PerformRx acknowledged that the transmission fee is an administrative fee to the 
+pharmacies and is in addition to the MCO’s administrative fees, PerformRx asserts that the fee is 
+part of the drug cost recorded on the encounter record because the National Council for 
+Prescription Drug Programs (NCPDP) format has no field available for reporting transmission 
+fees. DAG disagrees, since according to DHS’ system notice #SYS-2018-025, effective 
+February 1, 2019, and a clarification notice, #SYS-2019-031, both state that the actual total 
+amount paid on the encounter record must be the actual total amount paid to the dispensing 
+provider, regardless of who paid the dispensing provider (the MCO or the PBM).
+54,55 
+ 
+PerformRx further stated that reducing the encounter record without a designated field for 
+transmission fees would inaccurately reflect the MCO paid amount and artificially reduce the 
+reported drug spend. Again, DAG disagrees, in that the Centers for Medicare and Medicaid 
+Services (CMS) May 15, 2019, Informational Bulletin (CMS 2019 guidance) indicates that the 
+amounts paid for benefits or activities that improve the Medicaid member’s health care quality 
+are to be distinguished from amounts paid for administrative services.
+56 Therefore, since the 
+transmission fee is not improving the Medicaid recipient’s health, the transmission fee should be 
+reflected on the encounter record as a reduction of payment, similar to the third-party liability 
+payments and member’s copay that reduce the amount paid to the pharmacy. Additionally, 
+reporting the amount paid by the MCO rather than the actual amount paid to the pharmacy less 
+the transmission fee overstates the following: 
+ 
+o The drug costs reported to the MCO;  
+ 
+o The MCO’s Medical Loss Ratio (MLR) medical spend (See Appendix C of this 
+report);  
+ 
+o The drug costs reported to DHS for its actuaries to properly account for drug costs for 
+future capitation rate setting; and  
+ 
+ 
+54 DHS system notice #SYS-2018-031, effective February 1, 2019, states, in part “The total paid amount field in 
+each pharmacy encounter must accurately represent the actual amount paid by the [PBM] to the dispensing 
+pharmacy provider.”  
+55 DHS system notice #SYS-2019-031, states in part, “All drug encounters must include the actual total amount 
+paid to the dispensing provider, regardless if the MCO paid directly or the claim was paid by a subcontractor of 
+the MCO.” (Emphasis added). This clarifies that the encounter record’s MCO Amount Paid and Total Amount Paid 
+are to reflect the actual amount paid to the pharmacy, regardless of which entity, the MCO or the PBM, pays the 
+dispensing provider. 
+56 CMS Issues New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit Managers are not 
+Up-Charging Taxpayers | CMS ( last accessed June 28, 2024). 
+===PAGE 63===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+56 
+o The drug costs reported to CMS for the amounts actually spent on drug costs for the 
+HealthChoices program. 
+  
+In summary, DAG still recommends PerformRx reconsider the need to charge the pharmacies a 
+transmission fee and, if considered necessary, renegotiate the administration costs it charges the 
+MCOs. Additionally, if the reporting format for the encounter record requires additional coding 
+to improve the reportability of the transmission fee as a reduction to the amount paid, similar to 
+how third party liabilities and member copays are accounted for, PerformRx should work with 
+the responsible parties to add the field so the encounter record accurately reflects the actual 
+amount paid to the dispensing provider as required by Act 120 of 2020, DHS, and CMS. 
+ 
+ 
+===PAGE 64===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+57 
+Appendix A Objectives, Scope, Methodology, and Data Reliability 
+ 
+The Department of the Auditor General (Department) conducted this performance audit pursuant 
+to Sections 402 and 403 of The Fiscal Code57 and Section 449.2 of the Human Services Code.58  
+ 
+We conducted this performance audit in accordance with generally accepted government 
+auditing standards. Those standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions 
+based on our audit objectives.
+59 We believe that the evidence obtained provides a reasonable 
+basis for our findings and conclusions based on our audit objectives. 
+ 
+Refer to the Introduction and Background section of this audit report for how the Physical 
+HealthChoices Medicaid Program (HealthChoices) and the Pharmacy Benefit Manager (PBM) 
+included in our audit were selected.  
+ 
+ 
+Objectives 
+ 
+Our performance audit objectives were as follows: 
+ 
+Pertaining to the Pennsylvania Department of Human Services (DHS): 
+ 
+1. Determine whether DHS effectively monitors the PBMs’ pharmacy claims, including, but 
+not limited to, the accuracy of the pharmacy information used to prepare the capitation 
+rates for the HealthChoices Medicaid program. 
+ 
+2. Determine whether DHS effectively monitors the PBMs’ contracts to ensure compliance 
+and transparency for the HealthChoices Medicaid program. 
+ 
+Pertaining to PerformRx, LLC (PerformRx): 
+ 
+3. Determine if the PBM is compliant with 62 P.S. § 449(h)(3) and (4) of the Human 
+Services Code (as amended by Act 120 of 2020) regarding charges and fees paid to the 
+ 
+57 See 72 P.S. §§ 402 and 403. 
+58 See 62 P.S. § 449.2, effective December 27, 2022 (Act 98 of 2022). 
+59 U.S. Government Accountability Office. Government Auditing Standards. 2018 Revision Technical Update April 
+2021. 
+===PAGE 65===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+58 
+PBM by the pharmacies, or pharmacy service organizations, as compared to the 
+corresponding amounts billed to the applicable HealthChoices MCOs to ensure 
+transparency, compliance, and accountability for the HealthChoices Medicaid Program. 
+ 
+ 
+Scope 
+ 
+This performance audit covered the period January 1, 2022, through December 31, 2022.  
+ 
+DHS and PerformRx management are responsible for establishing and maintaining effective 
+internal controls to provide reasonable assurance of compliance with applicable laws, 
+regulations, and administrative policies and procedures. In conducting our audit, we obtained an 
+understanding of DHS’ and PerformRx’s internal controls, including information system 
+controls.  
+ 
+Standards for Internal Control in the Federal Government (also known as and hereafter referred 
+to as the Green Book), issued by the Comptroller General of the United States, provides a 
+framework for management to establish and maintain an effective internal control system.
+60 We 
+used the framework included in the Green Book when assessing the DHS and PerformRx 
+internal control systems. 
+ 
+The Green Book’s standards are organized into five components of internal control. In an 
+effective system of internal control, these five components work together in an integrated manner 
+to help an entity achieve its objectives. The five components contain 17 related principles, listed 
+in the table below, which are the requirements an entity should follow in establishing an effective 
+system of internal control. 
+ 
+We determined that all of the internal control components are significant to the three audit 
+objectives. The table below represents a summary of the level of the internal control assessment 
+for effectiveness of design (D); implementation (I); or operating effectiveness (OE) that we 
+performed for each principle with respect to both DHS and PerformRx, along with a conclusion 
+regarding whether issues were found with the principles, and if those issues are included in a 
+finding.
+61 
+ 
+60 Even though the Green Book was written for the federal government, it explicitly states that it may also be 
+adopted by state, local, and quasi-government entities, as well as not-for-profit organizations, as a framework for 
+establishing and maintaining an effective internal control system.  
+61 The Green Book, Sections OV3.05 and 3.06, states the following regarding the level of assessment of internal 
+controls. Evaluating the design of internal control includes determining if controls individually and in combination 
+===PAGE 66===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+59 
+ DHS 
+(Objectives 1 and 2) 
+PerformRx 
+(Objective 3) 
+ 
+Component 
+ 
+Principle 
+Level of 
+Assessment 
+ 
+Conclusion 
+Level of 
+Assessment 
+ 
+Conclusion 
+Control 
+Environment 
+1 The oversight body and 
+management should 
+demonstrate a 
+commitment to integrity 
+and ethical values. 
+D No issues D No issues 
+2 The oversight body 
+should oversee the 
+entity’s internal control 
+system. 
+D No issues D No issues 
+3 Management should 
+establish an 
+organizational structure, 
+assign responsibility, 
+and delegate authority 
+to achieve the entity’s 
+objectives. 
+D No issues D No issues 
+4 Management should 
+demonstrate a 
+commitment to recruit, 
+develop, and retain 
+competent individuals. 
+D No issues D No issues 
+5 Management should 
+evaluate performance 
+and hold individuals 
+accountable for their 
+internal control 
+responsibilities. 
+D No issues D No issues 
+Risk 
+Assessment 
+6 Management should 
+define objectives clearly 
+to enable the 
+identification of risks 
+and define risk 
+tolerances. 
+D No issues D No issues 
+ 
+with other controls are capable of achieving an objective and addressing related risks. Evaluating implementation 
+includes determining if the control exists and if the entity has placed the control into operation. Evaluating operating 
+effectiveness includes determining if controls were applied at relevant times during the audit period, the consistency 
+with which they were applied, and by whom or by what means they were applied.   
+===PAGE 67===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+60 
+ DHS 
+(Objectives 1 and 2) 
+PerformRx 
+(Objective 3) 
+ 
+Component 
+ 
+Principle 
+Level of 
+Assessment 
+ 
+Conclusion 
+Level of 
+Assessment 
+ 
+Conclusion 
+7 Management should 
+identify, analyze, and 
+respond to risks related 
+to achieving the defined 
+objectives. 
+D No issues D No issues 
+8 Management should 
+consider the potential 
+for fraud when 
+identifying, analyzing, 
+and responding to risks. 
+D, I Finding 1 
+Finding 2 
+D No issues 
+9 Management should 
+identify, analyze, and 
+respond to significant 
+changes that could 
+impact the internal 
+control system. 
+D No issues D No issues 
+Control 
+Activities 
+10 Management should 
+design control activities 
+to achieve objectives 
+and respond to risks. 
+D, I, OE Finding 1 
+Finding 2 
+D, I, OE Finding 3 
+11 Management should 
+design the entity’s 
+information system and 
+related control activities 
+to achieve objectives 
+and respond to risks. 
+D No issues D No issues 
+12 Management should 
+implement control 
+activities through 
+policies. 
+D, I, OE Finding 1 
+Finding 2 
+D, I No issues 
+Information and 
+Communication 
+13 Management should use 
+quality information to 
+achieve the entity’s 
+objectives. 
+D, I, OE Finding 1 
+Finding 2 
+D, I, OE No issues 
+14 Management should 
+internally communicate 
+the necessary quality 
+information to achieve 
+the entity’s objectives. 
+D, I, OE Finding 1 
+Finding 2 
+D, I No issues 
+===PAGE 68===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+61 
+ DHS 
+(Objectives 1 and 2) 
+PerformRx 
+(Objective 3) 
+ 
+Component 
+ 
+Principle 
+Level of 
+Assessment 
+ 
+Conclusion 
+Level of 
+Assessment 
+ 
+Conclusion 
+15 Management should 
+externally communicate 
+the necessary quality 
+information to achieve 
+the entity’s objectives. 
+D, I, OE Finding 1 
+Finding 2 
+D, I, OE Finding 3 
+Monitoring 16 Management should 
+establish and operate 
+monitoring activities to 
+monitor the internal 
+control system and 
+evaluate results. 
+D, I, OE Finding 1 
+Finding 2 
+D, I, OE Finding 3 
+17 Management should 
+remediate identified 
+internal control 
+deficiencies on a timely 
+basis. 
+D, I, OE Finding 1 
+Finding 2 
+D, I No issues 
+ 
+Government Auditing Standards require that we consider information system controls “…to 
+obtain sufficient, appropriate evidence to support the audit findings and conclusions.”
+62 This 
+process further involves determining whether the data that supports the audit objectives is 
+reliable. In addition, Publication GAO-20-283G, Assessing Data Reliability, provides guidance 
+for evaluating data using various tests of sufficiency and appropriateness when the data are 
+integral to the audit objectives.
+63 See our assessment in the Data Reliability section that follows. 
+ 
+Our procedures to assess the design, implementation, and/or operating effectiveness accordingly 
+are discussed in the Methodology section that follows. Deficiencies in internal controls we 
+identified during the conduct of our audit and determined to be significant within the context of 
+our audit objectives are summarized in the conclusion section below and described in detail 
+within the respective audit findings in this audit report. See the table above for descriptions of 
+each of the principle numbers included in the conclusions below.  
+ 
+ 
+62 U.S. Government Accountability Office. Government Auditing Standards. 2018 Revision. Technical Update April 
+2021. Paragraph 8.59 through 8.67. 
+63 U.S. Government Accountability Office. Assessing Data Reliability. December 2019. 
+===PAGE 69===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+62 
+Conclusion for Objectives 1 and 2: 
+ 
+Our assessment of DHS management’s internal controls did not find any issues associated with 
+Principles 1 through 7, 9, and 11. We found, however, issues with management’s internal 
+controls regarding Principles 8, 10, and 12 through 17. These areas include issues with 1) DHS’ 
+lack of effectively monitoring pharmacy drug claims and 2) DHS’ lack of effectively monitoring 
+PBM contracts. These issues are described in detail in Finding 1 and Finding 2.  
+  
+Conclusion for Objective 3: 
+ 
+Our assessment of PerformRx’s management’s internal controls did not find issues associated 
+with Principle 1 through 9, 11 through 14, and 17. We found, however, issues with 
+management’s internal controls regarding Principles 10, 15 and 16. These areas include issues 
+with PerformRx’ lack of sufficient transparency and disclosure of transmission fees to the 
+respective MCOs and DHS. These issues are described in detail in Finding 3.  
+ 
+ 
+Methodology 
+ 
+The following planning procedures were performed to address all three of our audit objectives: 
+ 
+• Identified those charged with governance and communicated an overview of the 
+objectives, scope, methodology, and timing of the performance audit.  
+ 
+• Obtained an understanding of DHS’ organizational structure, information published 
+on its website, Enterprise Risk Management (ERM) Reports for FY 21/22 and FY 
+22/23, DHS’ responses to our fraud questionnaires, responses to Information Systems 
+Controls Assessment and Understanding of IT Environment forms, and from 
+interviews with DHS management. [DHS – All Principles] 
+ 
+• Obtained an understanding of PerformRx’s organizational structure, information 
+published on its website, responses to our internal control and fraud questionnaires, 
+responses to Information Systems Controls Assessment and Understanding of IT 
+Environment forms, and from interviews with PerformRx management. [PerformRx – 
+All Principles] 
+ 
+===PAGE 70===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+63 
+• Interviewed stakeholders of the pharmaceutical industry and distribution chain 
+applicable to the Medicaid program. 
+ 
+• Retained a consultant of external specialists with subject-matter expertise including 
+knowledge of the pharmaceutical supply chain and pharmacy benefit manager 
+activities. The consultant assisted with information as needed during audit planning, 
+audit execution, and audit report writing.
+64 See an informational memo written by the 
+specialists in Appendix C of this audit report. 
+ 
+• Reviewed the independence and qualifications of the specialists on the consultant’s 
+team. 
+ 
+• Reviewed the following laws and regulations applicable to the HealthChoices 
+Medicaid Program: [Principle 12] 
+ 
+o Act 120 of 2020 Human Services Code – Medical Assistance Pharmacy 
+Services and Prescription Drub Pricing Study, 62 P.S. § 449 
+o Act 98 of 2022 Human Services Code – Pharmacy Benefits Manager Audit 
+and Obligations and Abrogating Regulations, 62 P.S. § 449.2 
+o Act 77 of 2024, July 17, 2024  
+o Code of Federal Regulations (CFR) Title 42. Public Health Chapter IV. 
+Centers for Medicare & Medicaid Services, Department of Health and Human 
+Services: 
+ 438.8 Medical loss ratio (MLR) standards. 
+ 438.66 State monitoring requirements. 
+ 438.230 Subcontractual relationships and delegation. 
+ 438.242 Health information systems. 
+ 438.364 External quality review results. 
+ 438.602 State responsibilities. 
+ 438.604 Data, information, and documentation that must be submitted. 
+ 438.818 Enrollee encounter data. 
+o 55 Pa. Code: Human Services, Part III Medical Assistance Manual 
+ Chapter 1101. General Provisions 
+• Section 1101.73 Provider misutilization and abuse. 
+ 
+64 GAGAS 1.27 p. defines Specialist as: “An individual or organization possessing special skill or knowledge in a 
+particular field other than accounting or auditing that assists auditors in conducting engagements. A specialist may 
+be either an internal specialist or an external specialist.”   
+===PAGE 71===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+64 
+ Chapter 1121. Pharmaceutical Services 
+• Section 1121.42(1) Ongoing responsibilities of providers.  
+• Section 1121.51 General payment policy. 
+• Section 1121.71 Scope of claims review procedures.  
+ Chapter 1229. Health Maintenance Organization Services 
+• Section 1229.71 Scope of claims review procedures. 
+ 
+• Designed audit procedures to provide reasonable assurance of detecting significant 
+violations of law, regulations, policies, etc. in the context of our audit objectives. 
+[Principle 12] 
+ 
+• Obtained an understanding of DHS and PerformRx’s internal controls and assessed 
+the design, implementation, and/or operating effectiveness of such internal controls to 
+the extent necessary to address the audit objectives. [All Principles] 
+ 
+• Evaluated the significance of identified internal control deficiencies within the 
+context of our audit objectives. [All Principles] 
+ 
+• Considered illegal acts, fraud, and abuse throughout the audit process. [All Principles] 
+ 
+• Conducted fraud/abuse, audit risk, and control risk brainstorming meetings to 
+highlight high risk areas and to be aware of situations in which fraud and control 
+weaknesses may exist. [Principle 8] 
+ 
+• Assessed significance and audit risk within the context of the audit objectives and 
+applied these assessments to establish the scope and methodology for addressing the 
+audit objectives. [All Principles] 
+ 
+• Designed the audit procedures to obtain sufficient, appropriate evidence that provided 
+a reasonable basis for findings and conclusions based on the audit objectives and to 
+reduce audit risk to an acceptably low level.  
+ 
+• Planned audit procedures and test work based on ongoing risk assessments to obtain 
+sufficient and appropriate evidence to adequately support our audit objectives.  
+ 
+• We obtained information for the background of this audit report regarding Medicaid, 
+the HealthChoices program, and PBMs. 
+===PAGE 72===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+65 
+The following procedures were performed to address Objective 1: 
+ 
+Items selected for review for this objective were based on auditor’s professional judgment and 
+not through statistical selection. The results of our review, therefore, cannot be projected to, and 
+are not representative of, the corresponding populations. 
+ 
+• Interviewed and corresponded with DHS management to gain an understanding of the 
+program, bureaus and individuals involved in the program, internal control procedures, 
+monitoring, and key reports that are significant to the audit objective. [Principles 8, 10, 
+and 12 through 17] 
+ 
+• Reviewed laws, regulations, DHS HealthChoices agreements with the MCOs, MCO 
+contracts and amendments with PBMs, and the Prior Authorization Review Panel 
+(PARP) to identify potential criteria needed to evaluate the audit objective.
+65  
+ 
+• Centers for Medicare and Medicaid Services (CMS), Center for Medicaid & CHIP 
+Services (CMCS) Informational Bulletin regarding Medical Loss Ratio (MLR) 
+Requirements Related to Third-Party Vendors, dated May 15, 2019.  
+ 
+• Reviewed CMS’ State Toolkits for Validating Medicaid Managed Care Encounter Data, 
+dated August 2019 and the revision dated September 2023. 
+ 
+• Reviewed DHS’ instructions, data, and results for the following reports: 
+ 
+ Report 4C Electronic Lag Report, Pharmacy Rebates (Report 4C) 
+ Report 6B Pharmaceutical Price and Utilization Statistics  
+ Report 6D Outpatient Drug Pricing Transparency Part D Report (Transparency 
+Report) 
+ NCPDP Timeliness and Accuracy reports, and  
+ Drug Supplemental Files. 
+ 
+• Reviewed the HealthChoices Data Books prepared by DHS’ actuaries for the calendar 
+year 2022, 2023, 2024, and 2025 capitation rates to determine if the claims data used by 
+the DHS actuaries to set the capitation rates included adjustments for PBM transmission 
+fees. [Principle 15] 
+ 
+65 We requested DHS’ policies and procedures for monitoring pharmacy encounter data; however, they only 
+provided the PARP. 
+===PAGE 73===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+66 
+• Reviewed the Pennsylvania PROMISeTM Provider Handbook, Pennsylvania Department 
+of Human Services, NCPDP D.0 Pharmacy Billing, which includes an overview of 
+PROMISeTM for Pennsylvania’s claims processing for the Medicaid program, including 
+HealthChoices. [Principles 12 and 13] 
+ 
+• Documented an understanding of information technology general controls and data entry 
+controls over PROMISe
+TM, which included reviewing the PROMISeTM System and 
+Organization Control (SOC) report and the most recent Peer Review Acceptance Letter 
+for the company that conducted the review and provided the opinion. [Principle 11] 
+ 
+• Performed the following procedures to determine if DHS verified whether PBMs 
+complied with Act 120 of 2020, during calendar year 2022: 
+ 
+ Obtained the October 2022 PROMISeTM HealthChoices pharmacy encounter 
+data.66 For our audit procedures, we included in the audit population the four 
+MCOs that did not use PerformRx as a PBM. This population included 1.5 
+million pharmacy encounter records in PROMISeTM for HealthChoices, totaling 
+$208 million. The three MCOs that used PerformRx are included in our audit 
+procedures noted under Objective 3. 
+ We haphazardly selected 10 encounter records for each of the four MCOs not 
+tested for Objective 3, for a total of 40 encounters. We selected these 40 
+encounter records based on the same 18 corporate pharmacies as selected for the 
+60 selected claims processed by PerformRx as noted below. 
+ Traced the encounter record information to the applicable pharmacy invoice and 
+payment remittances to determine if the PBMs reported the amount the PBM paid 
+the pharmacy and/or the amount the MCO paid the PBM in the encounter record. 
+ Determined if the pharmacy was paid for the drug in accordance with the PBM 
+and pharmacy contract provision. 
+ Reviewed PROMISe
+TM supplemental files and adjustments to review subsequent 
+adjustments. 
+ Determined if the PBMs charged transmission fees and whether the transmission 
+fees were reported on the encounter record.  
+[Principles 8, 10, and 12 through 17] 
+ 
+ 
+66 See the Data Reliability section of this Appendix for details regarding assessment of data reliability. 
+===PAGE 74===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+67 
+• Reviewed the applicable provisions of the January 1, 2022 and September 1, 2022, DHS 
+and MCOs HealthChoices agreement related to pharmacy claims and encounter data. 
+[Principle 15] 
+ 
+• Reviewed MCO audit report opinions and DHS letters to the MCOs regarding any 
+deficiencies noted. MCO audit report opinions included opinions for the MCO’s annual 
+financial statement audit and the MCO’s annual opinion for compliance with the DHS 
+HealthChoices Guide. [Principles 16 and 17] 
+ 
+• Reviewed CMS Medical Loss Ratio (MLR) requirements, guidance, related news articles 
+to determine whether PBM transmission fees should be categorized as administrative 
+costs or medical costs for the calculation of the annual MLR and for rate setting purposes. 
+ 
+• Interviewed DHS outside actuarial vendor to determine if they considered the 
+transmission fees charged by MCOs PBMs as administrative costs or medical costs for 
+rate setting purposes.  
+ 
+The following procedures were performed to address Objective 2: 
+ 
+• Interviewed agency personnel to gain an understanding of the program, bureaus and 
+individuals involved in the program, internal control procedures, and key reports that are 
+significant to the audit objective. [Principles 8, 10, and 12 through 17] 
+ 
+• Reviewed laws, regulations, DHS HealthChoices agreements with the MCOs, MCO 
+contracts and amendments with PBMs, to identify potential criteria needed to evaluate 
+the audit objective.
+67  
+ 
+• Reviewed contracts for CY 2022’s HealthChoices program, including the contracts 
+between DHS and the MCOs, and the contracts between the MCOs and the PBMs to 
+determine if the contract addresses Act 120 of 2020 requirements. [Principle 15] 
+ 
+• Obtained the Statewide Preferred Drug List (PDL) and MCO PDL Compliance reports 
+for the CY 2022 to determine if DHS monitors the adherence to and use of these lists. 
+[Principle 16]
+ 
+ 
+ 
+67 We requested DHS’ policies and procedures for monitoring pharmacy encounter data; however, they only 
+provided the PARP. 
+===PAGE 75===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+68 
+• Interviewed DHS management to obtain an understanding of its monitoring procedures 
+for the HealthChoices MCOs’ PBM contracts because DHS provided no written 
+monitoring procedures. [Principles 10 and 12 through 17] 
+ 
+• Determine if the MCOs completed the annual required Subcontractor Identification list 
+(list) which listed the MCO’s subcontractors for the fiscal year. Initially, DHS provided 
+the correct fiscal year annual lists for six out of eight MCOs for calendar year 2022. 
+Upon receiving the eight correct lists we were able to ascertain that DHS gave us the 
+incorrect PBM contracts for three MCOs. [Principle 16] 
+ 
+• Determined if DHS completed a Subcontractor Checklist to ensure each of the eight 
+MCOs’ PBM contracts complied with terms that are required to be in the HealthChoices 
+agreement. DHS only provided checklists for five MCOs’ PBM contracts and indicated a 
+checklist is not required for each HealthChoices agreement or each PBM contract unless 
+the PBM is new to the program. Therefore, none of the MCOs completed the checklist in 
+Appendix D of this report with the September 1, 2022 HealthChoices agreement to ensure 
+the PBM contract still complies with the new HealthChoices agreement. [Principles 10, 
+12, and 16] 
+ 
+• Determine whether DHS monitors the System and Organization Controls (SOC) reports 
+for MCOs and their subcontractors. DHS indicated it did not require or monitor MCO 
+SOC reports until calendar year 2023 and they do not require or monitor the PBM SOC 
+reports. [Principles 11 and 16] 
+ 
+• Determine if DHS ensured the HealthChoices MCO contracts and PBM subcontracts 
+have the required audit provision allowing DHS to audit the MCOs’ and PBMs’ 
+Medicaid activities. [Principle 16] 
+ 
+The following procedures were performed to address Objective 3: 
+ 
+Items selected for review for this objective were based on auditor’s professional judgment and 
+not through statistical selection. The results of our review, therefore, cannot be projected to, and 
+are not representative of, the corresponding populations. 
+ 
+• Interviewed PerformRx management to gain an understanding of the PBM role in the 
+pharmacy claims process. [Principles 8, 10, and 12 through 17] 
+ 
+===PAGE 76===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+69 
+• Inquired of PerformRx about internal control procedures and key documents and reports 
+that are significant to the audit objective. [Principle 10] 
+ 
+• Obtained and reviewed various PerformRx policies and procedures pertaining to 
+contracting and networking with pharmacies. [Principles 12 and 14] 
+ 
+• Determined if PerformRx is following Act 120 of 2020 Section 449(h)(3) and (4) of the 
+Human Services Code to determine whether each of the three MCOs’ contracts with 
+PerformRx complied with provision (h)(3) and therefore does not charge or retain a 
+differential at the time of claim adjudication, or if the contracts comply with provision 
+(h)(4) and therefore do charge a transmission fee at the time of adjudication, that  the fee 
+is disclosed and transparent in the contract.  
+ 
+• Obtained Medicaid drug claims data from PerformRx’s claims processing system for the 
+three HealthChoices MCOs for which it provides pharmacy services.
+68 The total 
+population of pharmacy claims we received from PerformRx’s claims processing system 
+for the three MCOs for calendar year 2022 was 34 million pharmacy transactions, 
+including claims, reversals and adjustments (claims) totaling $1.8 billion for the calendar 
+year 2022. 
+ 
+• Verified the claims data for calendar year 2022 reconciled to the outside vendor’s 
+invoices that issues payments to the pharmacies. [Principle 13] 
+ 
+• Performed the following procedures to determine if DHS verified whether PerformRx 
+complied with Act 120 of 2020, during calendar year 2022: 
+ 
+ Selected a test selection of claims from the CY 2022 claims data for the three 
+MCOs that used PerformRx as a PBM. Since audit risk was assessed high, we 
+judgmentally selected 60 claims to test. We selected 20 claims per MCO for a 
+total of 60 claims to review. Each group of 20 claims included haphazardly 
+selecting a claim per month and judgmentally selecting eight claims based on 
+other criteria such as a claim that appeared to be an adjustment. The 60 claims 
+were from 18 different corporate pharmacies.  
+ Determined if the PBM charged a transmission fee causing spread pricing and 
+whether the amount on the DHS encounter record is the amount the PBM paid the 
+pharmacy less the transmission fee or the amount the MCO paid the PBM by 
+ 
+68 See the Data Reliability section of this Appendix for details regarding assessment of data reliability. 
+===PAGE 77===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+70 
+tracing the claim’s record information to the applicable pharmacy invoice and 
+payment remittance. [Principles 10, 15, and 16] 
+ Determined if the pharmacy was paid for the drug in accordance with the PBM 
+and pharmacy contract provision. [Principle 14] 
+ Reviewed PROMISe
+TM supplemental files and adjustments. [Principles 10, 15, 
+and 16] 
+ Confirmed the actual amounts paid with the applicable pharmacy. [Principles 10 
+and 15] 
+ 
+• Determine whether any transmission fees charged by PerformRx were reported to the 
+three MCOs and DHS via the Transparency Reports. [Principles 15 and 17] 
+ 
+• Reviewed the National Average Drug Acquisition Cost (NADAC) data compared to the 
+testing items to ensure the PBM payments for drugs were reasonable. 
+ 
+• Reviewed whether PerformRx’s administrative function of paying pharmacies for drugs 
+distributed to Medicaid recipients is permitted to be outsourced to an entity in a non-
+contiguous US state, such as Abarca, which is in Puerto Rico, a non-contiguous US state 
+ 
+ 
+Data Reliability 
+ 
+Government Auditing Standards requires us to assess the sufficiency and appropriateness of 
+computer-processed information that we used to support our findings, conclusions, and 
+recommendations. The assessment of the sufficiency and appropriateness of computer-processed 
+information includes considerations regarding the completeness and accuracy of the data for the 
+intended purposes.
+69 
+ 
+For audit Objective 1 regarding DHS monitoring of HealthChoices pharmacy encounter data, 
+DHS provided October 2022 PROMISe
+TM encounter records for the 7 HealthChoices MCOs.70 
+In order to confirm the completeness and accuracy of the data, we performed the following: 
+ 
+• Interviewed DHS management to document the PROMISe
+TM information received from 
+the MCOs for pharmacy claims.  
+ 
+69 U.S. Government Accountability Office. Government Auditing Standards. 2018 Revisions. Technical Update 
+April 2021. Paragraph 8.98. 
+70 The eighth MCO, Aetna, was no longer in the HealthChoices program in October 2022.  
+===PAGE 78===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+71 
+• Documented an understanding of information system controls. 
+ 
+• Compared each of the MCOs October 2022 total encounter records in PROMISeTM to 
+applicable MCO-prepared reports. The reports utilized included NCPDP Timeliness and 
+Accuracy reports. 
+ 
+• Traced a selection of 40 DHS PROMISeTM encounter records (as described in 
+Methodology for Objective 1) to the PBM’s claims processing transaction detail for the 
+amount paid by the MCO to the PBM and the amount paid to the pharmacy on the PBM 
+payment remittance less a transmission fee if charged by the PBM. 
+ 
+In addition to the above procedures, as part of our overall process in obtaining assurance of the 
+reliability of computer-processed information and data files, we obtained a management 
+representation letter from DHS. This letter, signed by DHS management, included a 
+confirmation statement indicating that the information provided to us had not been altered and 
+was a complete and accurate duplication of the information from its original source.  
+ 
+Based on the above procedures, we found no limitations with using the DHS PROMISe
+TM 
+pharmacy encounter data for our intended purposes. In accordance with Government Auditing 
+Standards, we concluded the DHS pharmacy encounter data for the period January 1, 2022, 
+through December 31, 2022, to be sufficiently reliable regarding completeness and accuracy for 
+the purposes of this engagement. 
+ 
+As part of our audit procedures for Objective 1, we used PBM claims information obtained from 
+the applicable four MCOs that did not contract with PerformRx as their PBM for HealthChoices. 
+The information obtained included pharmacy claims detail from the PBM’s claims processing 
+system and payment remittances to pharmacies to determine if the PBMs were charging the 
+pharmacies transmission fees, and if so, were the fees transparent to DHS based on the 
+Transparency Reports and the pharmacies based on the payment remittances and confirmations, 
+including whether the fees were recorded on the DHS PROMISeTM encounter record used for 
+MCOs’ MLR calculations and future capitation rate setting. While we performed a comparison 
+of the information in the PBM’s claims detail to the PBM’s payment remittance and to the 
+PROMISe
+TM encounter record, we did not assess the PBMs’ claims processing systems or 
+payment remittances for completeness. Therefore, we consider the information to be data of 
+undetermined reliability, as noted in Finding 1 of this audit report. This data was the best data 
+available. Although this determination may affect the precision of the numbers presented in 
+Finding 1, there is sufficient evidence to support our findings and conclusions. 
+===PAGE 79===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+72 
+Additionally, the Transparency Reports for calendar year 2022 provided by DHS were found to 
+be incomplete (missing information), inconsistent (MCOs did not complete the reports like other 
+MCOs), inaccurate (MCOs reported pharmacy fees as PBM paid fees), and misleading (MCOs 
+reports made it appear as though the PBMs were practicing pass-through pricing, when in fact, 
+they were practicing spread pricing.) Based on our discussion with DHS regarding the 
+Transparency Reports not accurately reflecting the PBM transmission fees, DHS provided 15 
+amended reports and additional information. We also found that the Report 4Cs indicate the 
+PBMs were practicing pass-through pricing, when in fact, the seven of the eight MCOs’ PBMs 
+were practicing spread pricing. We determined both of the reports to be of undetermined 
+reliability. However, the reports were the best data provided by DHS. Although this 
+determination may affect the precision of numbers we present, there is sufficient evidence in 
+total to support our findings and conclusions. 
+ 
+For Objective 3, we used pharmacy drug claims data provided by PerformRx which are 
+maintained in PerformRx’s claim processing system for the three applicable HealthChoices 
+MCOs for calendar year 2022. In order to confirm the completeness and accuracy of the data, we 
+performed the following: 
+ 
+• Interviewed PerformRx management to document the pharmacy claims processing 
+procedures.  
+ 
+• Obtained an understanding of PerformRx’s claim processing system including 
+information technology general controls. 
+ 
+• Compared the data files total amounts for each MCOs’ financial cycle for the 
+calendar year 2022 to the applicable invoices sent to PerformRx’s vendor for payment 
+processing.    
+ 
+In addition to the above procedures described below, as part of our overall process in obtaining 
+assurance of the reliability of computer-processed information and data files, we obtained a 
+management representation letter from PerformRx. This letter, signed by PerformRx’s 
+management, included a confirmation statement indicating that the information provided to us 
+had not been altered and was a complete and accurate duplication of the information from its 
+original source. 
+ 
+Based on the above procedures, we found no limitations with using the PerformRx claims 
+processing data for our intended purposes. In accordance with Government Auditing Standards, 
+we concluded the PerformRx claims data, for the period January 1, 2022, through December 31, 
+===PAGE 80===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+73 
+2022, to be sufficiently reliable regarding completeness and accuracy for the purposes of this 
+engagement. 
+ 
+ 
+===PAGE 81===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+74 
+Appendix B Definitions 
+ 
+The following definitions are summarized as they relate to the pharmacy industry for the benefit 
+of the reader of this audit report and are either based on definitions listed in the September 1, 
+2022, Pennsylvania Department of Human Services (DHS) Physical HealthChoices 
+(HealthChoices) Contract or other sources as noted.  
+ 
+Actuarially Sound Capitation Rate – Projected rates determined by the Actuary and paid by 
+DHS to the managed care organization (MCO) to provide reasonable, appropriate and attainable 
+physical health services required under the terms of the HealthChoices contract. 
+ 
+Actuary – An individual who meets the qualification standards established by the American 
+Academy of Actuaries for an actuary and follows the practice standards established by the 
+Actuarial Standards Board. In relation to this audit, Actuary refers to an individual or entity who 
+is acting on behalf of the State when used in reference to the development and certification of the 
+capitation rates. 
+ 
+Adjudicated Claim – A claim that has been processed to payment or denial. 
+ 
+Capitation – A payment DHS makes periodically to a MCO on behalf of each member enrolled 
+under the HealthChoices contract and based on the actuarially sound rates for the provision of 
+services in the program. DHS makes the payment regardless of whether an individual member 
+receives services during the period covered by the payment. 
+ 
+Centers for Medicare & Medicaid Services (CMS) – The federal agency within the U.S. 
+Department of Health and Human Services responsible for oversight of Medicaid programs. 
+ 
+Claim – A bill from a Provider of a pharmacy service or product that is assigned a unique 
+identifier (i.e., claim reference number).  
+ 
+Covered Outpatient Drug – A brand name drug, a generic drug, or an over-the-counter drug 
+which: 
+1. Is approved by the U.S. Food and Drug Administration. 
+2. Is distributed by a manufacturer that entered into a Federal Drug Rebate Program 
+agreement with CMS. 
+3. May be dispensed only upon prescription in the Medicaid program. 
+===PAGE 82===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+75 
+4. Has been prescribed or ordered by a licensed prescriber within the scope of the 
+prescriber’s practice. 
+5. Is dispensed or administered in an outpatient setting. 
+ 
+Data Book – A document provided by the Actuary that describes the methodology of setting the 
+capitation rates for the MCOs to provide physical health services for the HealthChoices program. 
+ 
+Denied Claim – An Adjudicated Claim that does not result in a payment obligation to a 
+Provider. 
+ 
+DHS – The Pennsylvania Department of Human Services. 
+ 
+Encounter – Any covered health care service provided to a member, regardless of whether the 
+individual has an associated Claim. A pharmacy claim becomes an encounter when reported to 
+the MCO in the National Council for Prescription Drug Program (NCPDP) format.  
+ 
+Formulary – A DHS-approved list of outpatient drugs determined by the MCO’s Pharmacy and 
+Therapeutics (P&T) Committee to have a significant, clinically meaningful therapeutic 
+advantage in terms of safety, effectiveness, and cost for the MCO’s members. 
+ 
+HealthChoices Program – The name of Pennsylvania’s Medicaid Managed Care program that 
+provides mandatory managed health care to Recipients. 
+ 
+HealthChoices Zone (Zone) – A multiple-county area in which the HealthChoices Program has 
+been implemented to provide physical health services through mandatory managed care to 
+Medicaid recipients in Pennsylvania. 
+ 
+Internal Control Number – The unique number assigned by DHS to identify an individual 
+Claim or Encounter. 
+ 
+Managed Care Organization – An entity that contracts with the Commonwealth of 
+Pennsylvania through DHS to provide managed care services for the Medicaid program. 
+ 
+Medical Assistance – The Medical Assistance Program authorized by Title XIX of the federal 
+Social Security Act, 42 U.S.C. §§1396 et seq., and regulations promulgated thereunder, and 62 
+P.S. §§441.1 et seq. and regulations at 55 Pa. Code Chapters 1101 et seq. Medicaid is also 
+referred to as Medical Assistance (MA) in Pennsylvania that pays for health care services for 
+eligible individuals. 
+===PAGE 83===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+76 
+National Council for Prescription Drug Programs (NCPDP) – A not-for-profit organization 
+that develops healthcare and pharmaceutical industry standards.  
+ 
+Network – All contracted or employed Providers for the MCO who are providing covered 
+services to Medicaid HealthChoices’ members. For purposes of this audit, a pharmacy network is 
+the group of pharmacies a MCO allows its Medicaid members to use to fill prescriptions. 
+ 
+Pass-Through Payment – A practice in which the PBM pays the pharmacy the same amount 
+that the MCO paid the PBM for the same claim. The MCO pays the PBM for the services on a 
+separate invoice.  
+ 
+Physical Health Managed Care Organization – A risk-bearing entity which has an agreement 
+with DHS to provide the physical health services under the HealthChoices program. 
+ 
+Preferred Drug List – A list of DHS-approved outpatient drugs designated as preferred 
+products because they were determined to have a significant, clinically meaningful therapeutic 
+advantage in terms of safety, effectiveness and cost for the MCO members by the MCO’s P&T 
+Committee. 
+ 
+PROMISe
+TM – The Provider Reimbursement and Operations Management Information System 
+is a web-based application for registered providers and is a HIPAA-compliant claims processing 
+and management information system.71 
+ 
+ 
+ 
+71 http://dhs.pa.gov/about/Pages/Online-Services.aspx (last accessed April 9, 2024).  
+===PAGE 84===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+77 
+Appendix C Consultant Memo  
+ 
+The Department of the Auditor General (DAG) contracted with an independent consultant, Three 
+Axis Advisors, to prepare an informational memo on the dynamics of the Pharmacy Benefit 
+Manager (PBM) industry and their impact on public programs. 
+ 
+ 
+===PAGE 85===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+78 
+ 
+
+===PAGE 86===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+79 
+ 
+
+===PAGE 87===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+80 
+ 
+
+===PAGE 88===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+81 
+ 
+
+===PAGE 89===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+82 
+Appendix D MCO Subcontractor Checklist 
+ 
+The Pennsylvania Department of Human Services (DHS) created the following checklist that the 
+managed care organizations (MCOs) are required to complete for new PBM contracts to ensure 
+the MCO’s contract with the new PBM complies with the Physical HealthChoices agreement for 
+the Physical HealthChoices Medicaid Program.  
+ 
+MCOs are required to submit these reports upon contracting with a pharmacy benefit manager 
+(PBM). At the time the original contract is submitted to DHS for approval, the full subcontract 
+checklist in place at that time is completed, and a new checklist is not completed again unless the 
+MCO contracts with a different PBM. See Finding 2 regarding DHS’ inadequate monitoring of 
+PBM contracts. 
+ 
+Subcontractor Checklist 
+ 
+MCO shall complete the checklist indicating the location that the requirement is included or met. 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+All subcontracts 
+1 Exhibit II, Section 
+XIII Confidentiality 
+The specific activities and report responsibilities delegated to 
+the subcontractor.  
+2 Exhibit II, Section 
+XIII Confidentiality 
+A provision for revoking delegation or imposing other 
+sanctions if the subcontractor’s performance is inadequate.  
+3 Exhibit II, Section 
+XIII Confidentiality 
+All subcontractors shall comply with all applicable 
+requirements of the Agreement between the PH-MCO and 
+the Department concerning the HealthChoices Program. 
+ 
+4 Exhibit II, Section 
+XIII Confidentiality 
+Meet the applicable requirements of 42 CFR Subsection 
+434.6.  
+5 Exhibit II, Section 
+XIII Confidentiality Include nondiscrimination provisions.  
+6 Exhibit II, Section 
+XIII Confidentiality 
+Include the provisions of the Americans with Disabilities Act 
+(42 U.S.C. Section 12101 et seq).  
+===PAGE 90===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+83 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+7 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision in all subcontracts with any individual 
+firm, corporation, or any other entity which provides 
+medical services and receives reimbursement from the 
+PH-MCO either directly or indirectly through capitation, 
+that data for all services provided will be reported timely 
+to the PH-MCO. Penalties and sanctions will be imposed 
+for failure to comply. The data is to be included in the 
+utilization and encounter data provided to the Department 
+in the format. 
+ 
+8 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision in all subcontracts with any individual, 
+firm, corporation, or any other entity which provides medical 
+services to HealthChoices members, that the subcontractor 
+will report all new third party resources to the PH-MCO 
+identified through the provision of medical services, which 
+previously did not appear on the Department's recipient 
+information files provided to the PH-MCO. 
+ 
+9 Exhibit II, Section 
+XIII Confidentiality 
+Contain a hold harmless clause that stipulates that the 
+PH-MCO subcontractor agrees to hold harmless the 
+Commonwealth, all Commonwealth officers and 
+employees, and all PH-MCO members in the event of 
+nonpayment by the PH-MCO to the subcontractor. The 
+subcontractor shall further indemnify and hold harmless 
+the Commonwealth and their agents, officers and 
+employees against all injuries, death, losses, damages, 
+claims, suits, liabilities, judgments, costs and expenses 
+which may in any manner accrue against the 
+Commonwealth or their agents, officers or employees, 
+through the intentional conduct, negligence or omission of 
+the subcontractor, its agents, officers, employees or the 
+PH-MCO. 
+ 
+10 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision in all subcontracts that the 
+subcontractor agrees to comply with all applicable 
+Medicaid, federal and state laws and regulations; 
+including sub-regulatory guidance. 
+ 
+11 Exhibit II, Section 
+XIII Confidentiality 
+Contain provisions in all subcontracts with any individual 
+firm, corporation or any other entity which provides 
+medical services to HealthChoices members, that 
+prohibits gag clauses which limit the subcontractor from 
+disclosure of medical necessary or appropriate health 
+care information or alternate therapies to members, other 
+health care professionals or the Department. 
+ 
+===PAGE 91===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+84 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+12 Exhibit II, Section 
+XIII Confidentiality 
+Contain provisions in all employee contracts prohibiting 
+gag clauses which limit said employees from the 
+disclosure of information pertaining to the HealthChoices 
+Program. 
+ 
+13 Exhibit II, Section 
+XIII Confidentiality 
+Contain provisions in all subcontracts with any individual, 
+firm, corporation or any other entity which provides 
+medical services to HealthChoices members, that limits 
+incentives to those permissible under the applicable 
+Federal regulation. 
+ 
+14 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision in all subcontracts that the 
+Department has ready access to any and all documents 
+and records of transactions pertaining to the provision of 
+services to Medical Assistance consumers. 
+ 
+15 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision that the PH-MCO and its 
+subcontractor(s) must agree to maintain books and 
+records relating to the HealthChoices Program services 
+and expenditures, including reports to the Department 
+and source information used in preparation of these 
+reports. These records include but are not limited to 
+financial statements, records relating to quality of care, 
+medical records and prescription files. 
+ 
+16 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision that the PH-MCO and its 
+subcontractor(s) must agree to comply with all standards 
+for practice and medical records keeping specified by the 
+Commonwealth. 
+ 
+===PAGE 92===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+85 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+17 Exhibit II, Section 
+XIII Confidentiality 
+Contain a provision that the PH -MCO and its 
+subcontractor(s) and the subcontractor’s contractor(s) 
+shall, at their own expense, make all books, records, 
+contracts, computers, or other electronic systems 
+available for audit, review, evaluation or inspection by the 
+Commonwealth, its designated representatives, CMS, the 
+HHS Inspector General, the Comptroller General or their 
+designees. Access must be granted either on- site, 
+electronically or through the mail at the discretion of the 
+reviewing entity. The right to audit exists for ten (10) years 
+from the final date of the contract period; or from the date 
+of completion of any audit, whichever is longer. 
+ 
+The PH-MCO must fully cooperate with any and all reviews 
+and/or audits by state or federal agencies or their agents, 
+such as the Independent Assessment Contractor, by 
+assuring that appropriate employees and involved parties 
+are available for interviews relating to reviews or audits. All 
+records to be sent by mail shall be sent to the requesting 
+entity in the form of accurate, legible paper copies, unless 
+otherwise indicated, within fifteen (15) calendar days of 
+such request and at no expense to the requesti ng entity. 
+Such requests made by the Commonwealth shall not be 
+unreasonable 
+ 
+18 Exhibit II, Section 
+XIII Confidentiality 
+Requirement for subcontractor(s) must agree to retain the 
+source records for its data reports for a minimum of seven 
+years and must have written policies and procedures for 
+storing this information. 
+ 
+19 Exhibit II, Section 
+XIII Confidentiality 
+A provision that subcontractor recognize that payments 
+made to the subcontractor are derived from federal and 
+state funds. Additionally, the PH-MCO shall require, as a 
+written provision in all contracts for services rendered to 
+Recipient, that the subcontractor shall be held civilly and/or 
+criminally liable to both the PH-MCO and the Department, 
+in the event of nonperformance, misrepresentation, fraud, 
+or abuse. A clause notifying subcontractors of the 
+prohibition and sanctions for the submission of false claims 
+and statements. 
+ 
+20 Exhibit II, Section 
+XIII Confidentiality 
+A provision that subcontractor cooperate with Quality 
+Management/Utilization Management Program 
+requirements. 
+ 
+===PAGE 93===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+86 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+Medical Services Subcontracts 
+21 
+Section XII 
+Subcontractual 
+Relationships 
+A requirement for the submission of all Encounter Data 
+for services provided within the time frames required in 
+Section VIII, Reporting Requirements, no matter whether 
+reimbursement for these services is made by the PH-
+MCO either directly or indirectly through capitation. 
+ 
+22 
+Section XII 
+Subcontractual 
+Relationships 
+Language which ensures compliance with all applicable 
+federal and state laws.  
+23 
+Section XII 
+Subcontractual 
+Relationships 
+Language which prohibits gag clauses which would limit 
+the subcontractor from disclosure of Medically Necessary 
+or appropriate health care information or alternative 
+therapies to Members, other Health Care Providers, or to 
+the Department. 
+ 
+24 
+Section XII 
+Subcontractual 
+Relationships 
+A requirement that ensures that the Department has ready 
+access to any and all documents and records of 
+transactions pertaining to the provision of services to 
+Recipients. 
+ 
+25 
+Section XII 
+Subcontractual 
+Relationships 
+The definition of Medically Necessary as outlined in 
+Section II of this Agreement, Definitions. (Not included in 
+above “All Subcontracts” checklist.) 
+ 
+26 
+Section XII 
+Subcontractual 
+Relationships 
+The PH-MCO must ensure, when applicable, that its 
+Subcontracts adhere to the standards for Network 
+composition and adequacy. (Not included in above “All 
+Subcontracts” checklist.) 
+ 
+27 
+Section XII 
+Subcontractual 
+Relationships 
+The PH-MCO must ensure, when applicable, compliance 
+with the requirements of Section V.B.1, General Prior 
+Authorization Requirements for Subcontracts for 
+utilization review services. (Not included in above “All 
+Subcontracts” checklist.) 
+ 
+===PAGE 94===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+87 
+Number 
+HealthChoices 
+Agreement 
+Reference 
+Requirement Requirement Met? 
+28 
+Section XII 
+Subcontractual 
+Relationships 
+Contain a provision for a transition plan for Subcontracts 
+with an entity to provide any information systems. This 
+transition plan must include information on how the data, 
+including all historical Claims and service data shall be 
+converted and made available to a new Subcontractor. 
+ 
+The PH-MCO must make all necessary revisions to its 
+Subcontracts to be in compliance with the requirements 
+set forth in Section XIII.A, Compliance with Program 
+Standards. The PH-MCO must make revisions as 
+contracts and Subcontracts become due for renewal 
+provided that all contracts and Subcontracts are 
+amended within one (1) year of execution of this 
+Agreement with the exception of the Encounter Data 
+requirements, which must be amended immediately, if 
+necessary, to comply with Encounter Data to the PH-
+MCO within the time frames specified in Section VIII.B, 
+Systems Reports. (Not included in above “All 
+Subcontracts” checklist.) 
+ 
+ 
+===PAGE 95===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+88 
+ 
+Appendix E Medical Loss Ratio  
+ 
+The Centers for Medicare and Medicaid Services (CMS) provides guidance on calculation and 
+reporting standards for the Medical Loss Ratio (MLR).
+72 The MLR is a key metric used in 
+Medicaid managed care to calculate the amount of funding that was used for medical costs 
+versus administrative costs spent by a managed care organization (MCO) or the MCO’s third 
+party vendors, like a PBM.73   
+ 
+The Pennsylvania Department of Human Services contracted with the MCOs effective January 1, 
+2022 and effective September 1, 2022 and required a MLR at or above 88 percent or the 
+subsequent year’s capitation rates are adjusted based on the following as outlined in the 
+Appendix 3b of the MCO agreement titled: Medical Loss Ratio Reporting and Remittance 
+Requirements: 
+ 
+D. Medical Loss Ratio (MLR) Reduction 
+ 
+A reduction to revenue will be applied to Base Capitation Rates for [physical 
+health] MCOs that have reported a total, inclusive of [sic] both the Newly Eligible 
+and all other populations MLRs, MLR below 88 percent (88.00%) on the most 
+recently submitted MLR Report, as required in Appendix 3h. The reduction 
+applied will be based on the following schedule: 
+ 
+• MLR below 85.00% will result in a 1.50% reduction 
+• MLR greater than or equal to 85.00% but less than 86.00% will result in a 
+0.50% reduction 
+• MLR greater than or equal to 86.00% but less than 87.00% will result in a 
+0.25% reduction 
+• MLR greater than or equal to 87.00% but less than 88.00% will result in a 
+0.125% reduction 
+ 
+72 See 42 CFR 438.8 for information regarding the MLR calculations. 
+73 A transmission fee paid by a pharmacy to a PBM and retained by the PBM as another source of profit on its 
+claims processing, is an administrative cost, and not a medical cost for purposes of calculating the MCO’s MLR. 
+Additionally, “states are responsible for ensuring that managed care plans are complying with these MLR 
+requirements and should be routinely auditing reported data and MLR calculations to ensure that revenues, 
+expenditures, and other amounts are appropriately identified…” according to CMS in its 2019 guidance at CIB: 
+Medical Loss Ratio (MLR) Requirements Related to Third-Party Vendors (medicaid.gov) ( last accessed June 28, 
+2024). 
+===PAGE 96===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+89 
+ 
+The Department will apply the MLR Reduction, per the schedule above, based on 
+the following calculation to determine the MLR Reduction Amount: 
+ 
+   Base Capitation Rate 
+MINUS  MCO Assessment Amount 
+MINUS  Provider Pay for Performance Amount 
+EQUALS  Amount Subject to MLR Reduction 
+MULTIPLIED BY MLR Reduction Percentage 
+EQUALS  MLR Reduction Amount 
+ 
+The MLR Reduction Percentage, on the schedule above, is limited to a percentage 
+that would result in Base Capitation Rates that are not lower than the lower bound 
+Base Capitation Rates before Risk Adjustment as provided to the [physical health] 
+MCOs in Section II.B above. If this limitation is necessary, [DHS] will notify the 
+[physical health] MCO of the MLR Reduction Percentage that was used to 
+determine the applicable Reduction Amount above. 
+ 
+ 
+===PAGE 97===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+90 
+ 
+Appendix F PerformRx Test Results for a Selection of 60 Claims From 
+its Claims Processing System  
+ 
+The following table illustrates our 60 drug claims tested for Objective 3 as stated in the 
+Introduction and Background section to determine if PerformRx, LLC complied with 62 P.S. 
+§449(h)(3) and (4) of the Human Services Code (as amended by Act 120 of 2020) regarding fees 
+imposed on the pharmacies compared to the corresponding amounts billed to the applicable 
+Physical HealthChoices managed care organizations and recorded on the Pennsylvania 
+Department of Human Services’ Provider Reimbursement and Operations Management 
+Information System. (See PerformRx, LLC Finding 3 for more information on this objective, our 
+selection of claims, and test results.) 
+ 
+Item # MCO 
+Plan Paid 
+Amount 
+Payment 
+Verified 
+with 
+Contract 
+Terms 
+Paid, In-
+cycle, or 
+Out-of-cycle 
+Transaction 
+MCO 
+Payment 
+Agreed to 
+PBM 
+Payment to 
+Pharmacy 
+Pharmacy 
+Payment 
+Agreed to 
+PROMISeTM 
+1 MCO1 $411.85 √ P E-1 E-2 
+2 MCO1 $12,457.72 √ P E-1 E-2 
+3 MCO1 $6,441.26 √ P E-1 E-2 
+4 MCO1 $6.68 √ P E-1 E-2 
+5 MCO1 $11,118.71 √ P E-1 E-2 
+6 MCO1 $32.01 √ I N/A N/A 
+7 MCO1 $27.88 √ P E-1 E-2 
+8 MCO1 $11,460.03 √ P √ √ 
+9 MCO1 $27.37 √ I N/A N/A 
+10 MCO1 $12,352.20 √ P E-1 E-2 
+11 MCO1 $222.50 √ P E-1 E-2 
+12 MCO1 $34.08 √ P E-1 E-2 
+13 MCO1 $(73.44) √ I N/A N/A 
+14 MCO1 $14.22 √ P E-1 E-2 
+15 MCO1 $(1,279.50) √ O √ √ 
+16 MCO1 $40.47 √ P E-1 E-2 
+17 MCO1 $(6,024.15) √ O E-1 E-2 
+===PAGE 98===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+91 
+ 
+Item # MCO 
+Plan Paid 
+Amount 
+Payment 
+Verified 
+with 
+Contract 
+Terms 
+Paid, In-
+cycle, or 
+Out-of-cycle 
+Transaction 
+MCO 
+Payment 
+Agreed to 
+PBM 
+Payment to 
+Pharmacy 
+Pharmacy 
+Payment 
+Agreed to 
+PROMISeTM 
+18 MCO1 $(15.41) √ I N/A N/A 
+19 MCO1 $166.75 √ P E-1 E-2 
+20 MCO1 $(40.00) √ O √ √ 
+21 MCO2 $8.88 √ P E-1 E-2 
+22 MCO2 $8.07 √ P E-1 E-2 
+23 MCO2 $3.58 √ P E-1 E-2 
+24 MCO2 $6.47 √ P E-1 E-2 
+25 MCO2 $7.24 √ P E-1 E-2 
+26 MCO2 $81.24 √ P E-1 E-2 
+27 MCO2 $11.30 √ P E-1 E-2 
+28 MCO2 $879.04 √ P E-1 E-2 
+29 MCO2 $10.42 √ O E-1 E-2 
+30 MCO2 $1,474.21 √ I N/A N/A 
+31 MCO2 $9.76 √ P E-1 E-2 
+32 MCO2 $433.94 √ P E-1 E-2 
+33 MCO2 $73.89 √ P E-1 E-2 
+34 MCO2 $21.76 √ P E-1 E-2 
+35 MCO2 $(553.43) √ I N/A N/A 
+36 MCO2 $(996.00) √ I N/A N/A 
+37 MCO2 $(760.30) √ O E-1 E-3 
+38 MCO2 $(12.68) √ O E-1 E-2 
+39 MCO2 $5,949.76 √ P E-1 E-2 
+40 MCO2 $58.50 √ P E-1 E-2 
+41 MCO3 $11.76 √ P E-1 E-2 
+42 MCO3 $6.55 √ P E-1 E-2 
+43 MCO3 $41.35 √ I N/A N/A 
+44 MCO3 $6.38 √ P E-1 E-2 
+45 MCO3 $9.33 √ I N/A N/A 
+===PAGE 99===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+92 
+ 
+Item # MCO 
+Plan Paid 
+Amount 
+Payment 
+Verified 
+with 
+Contract 
+Terms 
+Paid, In-
+cycle, or 
+Out-of-cycle 
+Transaction 
+MCO 
+Payment 
+Agreed to 
+PBM 
+Payment to 
+Pharmacy 
+Pharmacy 
+Payment 
+Agreed to 
+PROMISeTM 
+46 MCO3 $48.53 √ P E-1 E-2 
+47 MCO3 $7.00 √ O E-1 E-2 
+48 MCO3 $347.10 √ P E-1 E-2 
+49 MCO3 $15.05 √ P E-1 E-2 
+50 MCO3 $10,679.77 √ O E-1 E-2 
+51 MCO3 $254.49 √ P E-1 E-2 
+52 MCO3 $2,038.91 √ P E-1 E-2 
+53 MCO3 $313.32 √ P E-1 E-2 
+54 MCO3 $459.87 √ I N/A N/A 
+55 MCO3 $(76.72) √ I N/A N/A 
+56 MCO3 $(7,573.59) √ I N/A N/A 
+57 MCO3 $(398.09) √ O E-1 E-2 
+58 MCO3 $(12,457.72) √ I N/A N/A 
+59 MCO3 $12.15 √ P E-1 E-2 
+60 MCO3 $359.00 √ P √ √ 
+P Claim is a paid claim with no adjustments at the time the data was pulled from PerformRx’s claims processing 
+system. 
+O Out-of-cycle adjusted claim is a claim with an original claim paid and processed in one financial cycle with a 
+subsequent claim in a different financial cycle to void the first transaction in the claims processing system and 
+PROMISeTM. 
+I In-cycle adjusted claim is a claim adjusted within the claims processing system in the same financial cycle, and 
+therefore, there is no remittance advices or PROMISeTM encounter record. For these in-cycle adjusted claims, we 
+confirmed there were no PROMISeTM encounter records and marked the procedures for payments N/A. 
+√ Audit step completed with no exceptions. 
+E-1 The claims detail from the claims processing system listed the MCO paid amount as more than the PBM paid 
+amount on the remittance advice to the pharmacy due to a transmission fee charged. 
+E-2 The PBM remittance advice of amount paid to the pharmacy was less than the amount recorded on PROMISe TM. 
+E-3 PROMISeTM did not show the reversing transaction as processed to net the original claim amount to zero. 
+According to PerformRx, the claim was rejected by PROMISeTM, and therefore, the reversal was not processed 
+through in PROMISeTM which in turn overstated the encounter data. 
+Source: This table was created by the Pennsylvania Department of Auditor General staff using documentation 
+provided by PerformRx and DHS. 
+ 
+===PAGE 100===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+93 
+ 
+Appendix G Distribution List 
+ 
+This audit report was distributed to the following individuals: 
+ 
+The Honorable Josh Shapiro 
+Governor 
+ 
+The Honorable Valerie A. Arkoosh, MD, 
+MPH 
+Secretary 
+Pennsylvania Department of Human 
+Services 
+ 
+Mr. David R. Bryan, CPA, CGMA 
+Manager, Audit Resolution Section 
+Bureau of Financial Operations 
+Pennsylvania Department of Human 
+Services 
+ 
+Ms. Amy Harron, CPA 
+Audit Specialist 3, Audit Resolution Section 
+Bureau of Financial Operations 
+Pennsylvania Department of Human 
+Services 
+ 
+Mr. Jim Gartner, MBA, R.Ph. 
+President 
+PerformRx, LLC 
+ 
+Mr. Matthew McGrath 
+Manager, Audit & Quality 
+PerformRx, LLC 
+ 
+Ms. Cheryl A. Monkman, CIA, CRMA 
+Vice President, Corporate Audit 
+AmeriHealth Caritas 
+ 
+The Honorable Scott Martin 
+Senate Majority Appropriations Chairman 
+Pennsylvania Senate 
+ 
+The Honorable Vincent Hughes 
+Senate Minority Appropriations Chairman 
+Pennsylvania Senate 
+ 
+The Honorable Jordan Harris 
+House Majority Appropriations Chairman 
+Pennsylvania House of Representatives 
+ 
+The Honorable Seth Grove 
+House Minority Appropriations Chairman 
+Pennsylvania House of Representatives 
+ 
+The Honorable Kim Ward 
+President Pro-Tempore 
+Pennsylvania Senate 
+ 
+The Honorable Joanna McClinton 
+Speaker of the House 
+Pennsylvania House of Representatives 
+ 
+The Honorable Matt Bradford 
+House Majority Leader 
+Pennsylvania House of Representatives 
+===PAGE 101===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+94 
+ 
+The Honorable Bryan Cutler 
+House Minority Leader 
+Pennsylvania House of Representatives 
+ 
+The Honorable Joe Pittman 
+Senate Majority Leader 
+Pennsylvania Senate 
+ 
+The Honorable Jay Costa 
+Senate Minority Leader 
+Pennsylvania Senate 
+ 
+The Honorable Dan Frankel 
+House Health Majority Chair 
+Pennsylvania House of Representatives 
+ 
+The Honorable Kathy L. Rapp 
+House Health Minority Chair 
+Pennsylvania House of Representatives 
+ 
+The Honorable Doyle Heffley 
+House Human Services Minority Chair 
+Pennsylvania House of Representatives 
+ 
+The Honorable Imogen Wright 
+Executive Director, House Human Services 
+Pennsylvania House of Representatives 
+ 
+The Honorable Michele Brooks 
+Senate Health & Human Services Chair 
+Pennsylvania Senate 
+ 
+The Honorable Arthur L. Haywood 
+Senate Health & Human Services Minority 
+Chair 
+Pennsylvania Senate 
+ 
+The Honorable Judy Ward 
+Senate Health & Human Services Vice 
+Chair 
+Pennsylvania Senate 
+ 
+The Honorable Valerie S. Gaydos 
+Representative 
+Pennsylvania House of Representatives 
+ 
+The Honorable Jessica Benham 
+Representative 
+Pennsylvania House of Representatives 
+ 
+The Honorable Uri Monson 
+Secretary of the Budget 
+Office of the Budget 
+ 
+The Honorable Stacy Garrity 
+State Treasurer 
+Pennsylvania Treasury Department 
+ 
+The Honorable Michelle A. Henry 
+Attorney General  
+Office of the Attorney General 
+ 
+The Honorable Neil Weaver 
+Secretary of Administration  
+Office of Administration 
+ 
+Mr. William Canfield  
+Director  
+Bureau of Audits  
+Office of Comptroller Operations 
+ 
+Ms. Mary Spila 
+Collections/Cataloging 
+State Library of Pennsylvania 
+ 
+===PAGE 102===
+ 
+ A Performance Audit 
+  
+ Pennsylvania Department of Human Services 
+ PerformRx, LLC 
+  
+ Pharmacy Benefit Manager Services for the Physical 
+HealthChoices Medicaid Program 
+in Pennsylvania 
+  
+ 
+95 
+ 
+This report is a matter of public record and is available online at www.PaAuditor.gov. Media 
+questions about the report can be directed to the Pennsylvania Department of the Auditor 
+General, Office of Communications, 229 Finance Building, Harrisburg, PA 17120; via email to: 
+news@PaAuditor.gov
+. 
+ 

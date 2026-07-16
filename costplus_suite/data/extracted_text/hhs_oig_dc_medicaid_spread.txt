@@ -1,0 +1,995 @@
+
+===PAGE 1===
+Department of Health and Human Services 
+OFFICE OF 
+INSPECTOR GENERAL 
+ 
+ 
+THE DISTRICT OF COLUMBIA HAS 
+TAKEN SIGNIFICANT STEPS TO ENSURE 
+ACCOUNTABILITY OVER AMOUNTS 
+MANAGED CARE ORGANIZATIONS PAID 
+TO PHARMACY BENEFIT MANAGERS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Amy J. Frontz 
+Deputy Inspector General 
+for Audit Services 
+ 
+March 2023 
+A-03-20-00200
+Inquiries about this report may be addressed to the Office of Public Affairs at 
+Public.Affairs@oig.hhs.gov. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+===PAGE 2===
+ 
+Office of Inspector General 
+https://oig.hhs.gov 
+ 
+ 
+ 
+The mission of the Office of Inspector General (OIG), as mandated by Public Law 95-452, as amended, is 
+to protect the integrity of the Department of Health and Human Services (HHS) programs, as well as the 
+health and welfare of beneficiaries served by those programs.  This statutory mission is carried out 
+through a nationwide network of audits, investigations, and inspections conducted by the following 
+operating components: 
+ 
+Office of Audit Services 
+ 
+The Office of Audit Services (OAS) provides auditing services for HHS, either by conducting audits with 
+its own audit resources or by overseeing audit work done by others.  Audits examine the performance of 
+HHS programs and/or its grantees and contractors in carrying out their respective responsibilities and are 
+intended to provide independent assessments of HHS programs and operations.  These audits help reduce 
+waste, abuse, and mismanagement and promote economy and efficiency throughout HHS.  
+        
+Office of Evaluation and Inspections 
+ 
+The Office of Evaluation and Inspections (OEI) conducts national evaluations to provide HHS, Congress, 
+and the public with timely, useful, and reliable information on significant issues.  These evaluations focus 
+on preventing fraud, waste, or abuse and promoting economy, efficiency, and effectiveness of 
+departmental programs.  To promote impact, OEI reports also present practical recommendations for 
+improving program operations. 
+ 
+Office of Investigations 
+ 
+The Office of Investigations (OI) conducts criminal, civil, and administrative investigations of fraud and 
+misconduct related to HHS programs, operations, and beneficiaries.  With investigators working in all 50 
+States and the District of Columbia, OI utilizes its resources by actively coordinating with the Department 
+of Justice and other Federal, State, and local law enforcement authorities.  The investigative efforts of OI 
+often lead to criminal convictions, administrative sanctions, and/or civil monetary penalties. 
+ 
+Office of Counsel to the Inspector General 
+ 
+The Office of Counsel to the Inspector General (OCIG) provides general legal services to OIG, rendering 
+advice and opinions on HHS programs and operations and providing all legal support for OIG’s internal 
+operations.  OCIG represents OIG in all civil and administrative fraud and abuse cases involving HHS 
+programs, including False Claims Act, program exclusion, and civil monetary penalty cases.  In 
+connection with these cases, OCIG also negotiates and monitors corporate integrity agreements.  OCIG 
+renders advisory opinions, issues compliance program guidance, publishes fraud alerts, and provides 
+other guidance to the health care industry concerning the anti-kickback statute and other OIG enforcement 
+authorities. 
+ 
+===PAGE 3===
+ 
+Notices 
+ 
+ 
+ 
+ 
+THIS REPORT IS AVAILABLE TO THE PUBLIC 
+at https://oig.hhs.gov 
+ 
+Section 8M of the Inspector General Act, 5 U.S.C. App., requires 
+that OIG post its publicly available reports on the OIG website.  
+ 
+OFFICE OF AUDIT SERVICES FINDINGS AND OPINIONS 
+ 
+The designation of financial or management practices as 
+questionable, a recommendation for the disallowance of costs 
+incurred or claimed, and any other conclusions and 
+recommendations in this report represent the findings and 
+opinions of OAS.  Authorized officials of the HHS operating 
+divisions will make final determination on these matters. 
+ 
+===PAGE 4===
+ 
+  
+   
+  
+    
+ 
+  
+  
+  
+  
+  
+ 
+   
+  
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+    
+ 
+ 
+  
+ 
+  
+ 
+ 
+   
+  
+  
+  
+  
+   
+  
+ 
+   
+  
+ 
+ 
+  
+   
+      
+ 
+  
+  
+ 
+ 
+     
+  
+    
+   
+   
+      
+   
+ 
+  
+ 
+ 
+ 
+  
+     
+      
+  
+ 
+    
+ 
+  
+      
+  
+  
+ 
+      
+    
+    
+     
+    
+      
+    
+   
+  
+ 
+Report in Brief 
+Date: March 2023 
+Report No. A-03-20-00200 
+Why OIG Did This Audit 
+Spread pricing occurs when a 
+managed care organization (MCO) 
+contracts with a pharmacy benefit 
+manager (PBM) to manage its 
+prescription drug benefits, and the 
+PBM keeps a portion of the amount 
+the MCO paid to it for prescription 
+drugs instead of passing the full 
+payment on to the pharmacy. 
+Several States have conducted audits 
+of PBM spread pricing practices due 
+to concerns about the transparency 
+and appropriateness of spread 
+pricing in the Medicaid program. 
+Other States, including New York, 
+Texas, and Virginia, have enacted or 
+drafted legislation to increase 
+transparency and change the 
+contracting process with PBMs. 
+Our objective was to determine 
+whether the District of Columbia 
+provided oversight of its MCOs to 
+ensure adequate accountability over 
+amounts paid to PBMs for 
+prescription benefits. 
+How OIG Did This Audit 
+We reviewed the contracts between 
+the District and its five MCOs and the 
+seven contracts between those MCOs 
+and PBMs from October 1, 2016, 
+through September 30, 2019 (audit 
+period).  We also reviewed the five 
+MCOs’ claims for prescription drugs 
+dispensed during the audit period 
+and obtained the amounts the PBMs 
+reimbursed pharmacies for the 
+prescription drugs dispensed during 
+the audit period.  
+The District of Columbia Has Taken Significant Steps 
+To Ensure Accountability Over Amounts Managed 
+Care Organizations Paid to Pharmacy Benefit 
+Managers 
+What OIG Found 
+The District provided some oversight of its MCOs with the intent of ensuring 
+adequate accountability over amounts paid for prescription benefits to its 
+PBMs.  This oversight consisted of guidance requiring MCOs to report spread 
+pricing.  However, the amounts reported were aggregated with other amounts 
+and as a result did not provide transparency over the amount of the funds that 
+was attributable to spread pricing.  We found that PBMs kept $23.3 million in 
+spread pricing during our audit period.  Spread pricing may increase the cost 
+of Medicaid prescriptions for both the MCO and the Medicaid program and, if 
+not correctly accounted for, inflate the cost of the drugs.  Limiting spread 
+pricing may decrease Federal and State spending through lower payments to 
+MCOs. 
+What OIG Recommends and District Comments 
+We recommend that the District develop policies and procedures for 
+validating MCO, PBM, and pharmacy transactions on a periodic basis to ensure 
+transparency of costs associated with the prescription drug program. 
+In written comments on our draft report, the District concurred with our 
+recommendation and asked for clarification and guidance regarding the 
+amounts or percentages that are deemed appropriate for PBMs to retain 
+under the practice of spread pricing.  The District also asked for clarification 
+regarding whether it should require its contracted MCOs to make a separate 
+payment to its PBMs for administrative costs and fees. 
+We appreciate the District’s desire to improve its PBM oversight, an important 
+topic receiving much congressional interest. After receiving its comments, w e 
+met with the District to discuss some observations that we noted during the 
+audit and encouraged the District to contact the Centers for Medicare & 
+Medicaid Services for clarification and guidance and work with other State 
+agencies and its counsel to determine best practices. In addition, while we did 
+not specifically recommend that the District disaggregate information in the 
+medical loss ratio report, we look forward to the steps the District takes to 
+ensure transparency of costs associated with the prescription drug program. 
+The full report can be found at https://oig.hhs.gov/oas/reports/region3/32000200.asp. 
+===PAGE 5===
+  
+  
+ 
+   
+     
+   
+   
+    
+    
+    
+  
+    
+      
+      
+  
+        
+   
+     
+ 
+    
+     
+ 
+ 
+  
+TABLE OF CONTENTS 
+INTRODUCTION............................................................................................................................... 1 
+The State Agency Has Taken Steps To Increase Accountability Over 
+APPENDICES 
+Why We Did This Audit ....................................................................................................... 1 
+Objective ............................................................................................................................. 1 
+Background ......................................................................................................................... 1 
+Medicaid Program................................................................................................... 1 
+Department of Health Care Finance....................................................................... 2 
+How We Conducted This Audit........................................................................................... 2 
+FINDING........................................................................................................................................... 2 
+Federal Requirements......................................................................................................... 3 
+The State Agency’s Oversight Did Not Provide Transparency Over Spread Pricing ........... 5 
+Spread Pricing Amounts Were Aggregated With Other Amounts ......................... 5 
+Spread Pricing but Could Take Additional Steps To Improve Oversight.............. 6 
+RECOMMENDATION ....................................................................................................................... 7 
+STATE AGENCY COMMENTS AND OFFICE OF INSPECTOR GENERAL RESPONSE ............................ 7 
+A: Audit Scope and Methodology ....................................................................................... 8 
+B: State Agency Comments............................................................................................... 10 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 
+===PAGE 6===
+  
+  
+ 
+   
+    
+     
+    
+     
+    
+   
+     
+     
+ 
+     
+      
+  
+ 
+   
+    
+     
+      
+    
+    
+    
+      
+    
+     
+    
+       
+      
+     
+ 
+   
+      
+ 
+   
+INTRODUCTION 
+WHY WE DID THIS AUDIT 
+Spread pricing occurs when a managed care organization (MCO) contracts with a pharmacy 
+benefit manager (PBM) to manage its prescription drug benefits, and the PBM keeps a portion 
+of the amount the MCO paid to it for the prescription drugs instead of passing the full payment 
+on to the pharmacy. Several States, including Ohio, Kentucky, Maryland, and Pennsylvania, 
+have conducted audits of PBM spread pricing practices due to concerns about the transparency 
+and appropriateness of spread pricing in the Medicaid program.  Other States, including New 
+York, Texas, and Virginia, have enacted or drafted legislation to increase transparency and 
+change the contracting process with PBMs. 
+OBJECTIVE 
+Our objective was to determine whether the District of Columbia’s (the District’s) Department 
+of Health Care Finance (State agency) provided oversight of its MCOs to ensure adequate 
+accountability over amounts paid to PBMs for prescription benefits. 
+BACKGROUND 
+Medicaid Program 
+The Medicaid program provides medical assistance to low-income individuals and individuals 
+with disabilities. The Federal and State governments jointly fund and administer the Medicaid 
+program. At the Federal level, the Centers for Medicare & Medicaid Services (CMS) administers 
+the Medicaid program. Although the State has considerable flexibility in designing and 
+operating its Medicaid program, it must comply with applicable Federal requirements. 
+MCOs contract with State Medicaid agencies to ensure that beneficiaries receive covered 
+Medicaid services.  Under these contracts, MCOs arrange for a network of providers to deliver 
+to enrolled beneficiaries certain benefits and services, including prescription drugs, specified by 
+the State.  In exchange, the State Medicaid agency generally pays MCOs a capitation payment, 
+which is a fixed amount per member per month, for each enrolled beneficiary.  The capitation 
+payment represents a payment amount that is adequate to allow the MCO to efficiently deliver 
+covered services to beneficiaries in a manner compliant with contractual requirements.
+1 
+MCOs may contract with PBMs to manage or administer drug benefits on the MCO’s behalf. 
+PBMs offer a variety of services such as establishing retail, mail-order, and specialty pharmacy 
+networks; negotiating pharmacy reimbursement rates; adjudicating pharmacy claims; and 
+negotiating supplemental rebates with pharmaceutical manufacturers. 
+1 42 CFR § 438.3(c). 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 1 
+===PAGE 7===
+  
+  
+      
+    
+   
+  
+     
+   
+   
+     
+      
+     
+  
+  
+       
+      
+      
+  
+   
+          
+          
+      
+    
+       
+       
+        
+        
+   
+        
+   
+   
+     
+     
+ 
+       
+    
+ 
+  
+   
+The practice of spread pricing, which occurs when a PBM keeps a portion of the amount the 
+MCO paid to it for prescription drugs instead of passing the full payment on to the pharmacy, is 
+currently permissible according to Federal law. H owever, because contracts between PBMs 
+and pharmacies are proprietary, State Medicaid agencies often cannot verify the amount of 
+spread pricing. If spread pricing is not appropriately monitored and accounted for, MCOs may 
+not be aware of the spread amount included in pharmacy costs and may negotiate separate 
+administrative payments to PBMs without knowing how much PBM profit is already built into 
+the pharmacy costs as spread pricing. The State Medicaid agency may use these inflated 
+pharmacy costs in setting capitation rates.  If the State Medicaid agency increases its capitated 
+payments to MCOs based on a rate setting influenced by inflated pharmacy costs, it increases 
+the cost of the Medicaid program. 
+Department of Health Care Finance 
+The State agency’s mission is to improve health outcomes by providing access to 
+comprehensive, cost-effective, quality health care services for District residents. For State fiscal 
+years (FYs) 2017 through 2019, the State agency’s contracted MCOs paid PBMs over $364.4 
+million for pharmacy claims. 
+HOW WE CONDUCTED THIS AUDIT 
+We reviewed the contracts between the State agency and its five MCOs and the seven 
+contracts between those MCOs and PBMs from October 1, 2016, through September 30, 2019 
+(audit period). Specifically, we reviewed the contracts the State agency had with the five MCOs 
+to determine the payment terms and guidance for spread pricing contained in the contracts.2 
+We also reviewed the five MCOs’ claims for prescription drugs dispensed during our audit 
+period and obtained the amounts the PBMs reimbursed pharmacies for the prescription drugs 
+dispensed during our audit period. For the claims, we calculated the difference between the 
+amounts the MCOs paid to the PBMs and the amounts the PBMs paid to the pharmacies. 
+We conducted this performance audit in accordance with generally accepted government 
+auditing standards. Those standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions 
+based on our audit objectives.  We believe that the evidence obtained provides a reasonable 
+basis for our findings and conclusions based on our audit objectives. 
+The Appendix contains the details of our audit scope and methodology. 
+FINDING 
+The District provided some oversight of its MCOs with the intent of ensuring adequate 
+accountability over amounts paid for prescription benefits to its PBMs. This oversight consisted 
+2 During our audit period, the contracts between the State agency and its MCOs did not contain language 
+prohibiting spread pricing. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 2 
+===PAGE 8===
+  
+  
+       
+     
+        
+      
+  
+      
+  
+ 
+     
+    
+    
+       
+  
+    
+  
+  
+     
+    
+    
+    
+    
+     
+     
+     
+    
+     
+ 
+ 
+   
+   
+     
+     
+      
+  
+    
+     
+ 
+  
+ 
+of guidance requiring MCOs to report spread pricing. However, the amounts reported were 
+aggregated with other amounts and as a result did not provide transparency over the amount 
+of the funds that was attributable to spread pricing. We found that PBMs kept $23.3 million in 
+spread pricing during our audit period. Spread pricing may increase the cost of Medicaid 
+prescriptions for both the MCO and the Medicaid program and, if not correctly accounted for, 
+inflate the cost of the drugs. Limiting spread pricing may decrease Federal and State spending 
+through lower payments to MCOs. 
+FEDERAL REQUIREMENTS 
+Federal requirements at 42 CFR section 438.230 state that States must ensure, through their 
+contracts, that each MCO is ultimately responsible for adhering to and complying with all terms 
+and conditions of its contract with the State, notwithstanding any relationship that the MCO 
+may have with any subcontractor. Similarly, 42 CFR section 438.230 requires subcontractors to 
+comply with the standards that govern the managed care plan’s performance as stated in the 
+managed care plan’s contract.
+3 
+For Medicaid managed care contracts that started on or after July 1, 2017, States are to include 
+requirements for managed care plans to calculate and report a medical loss ratio (MLR), 
+including related underlying data as described in 42 CFR section 438.8. In addition, under 42 
+CFR section 438.8(k)(3), managed care plans must require any third-party vendor providing 
+claims adjudication activities to provide all underlying data associated with MLR reporting to 
+the managed care plan to calculate and validate the accuracy of MLR reporting. 
+As provided by 42 CFR sections 438.8(d) through (f), the MLR experienced for each managed 
+care plan in an MLR reporting year is expressed as a ratio in which the numerator is the sum of 
+the managed care plan’s incurred claims, expenditures for activities that improve health care 
+quality, and fraud prevention activities. The denominator is the adjusted premium revenue, 
+which is the managed care plan’s premium revenue minus Federal, State, and local taxes and 
+licensing and regulatory fees. The premium revenue is aggregated for all Medicaid eligibility 
+groups covered under the contract with the State unless the State requires separate reporting 
+and a separate MLR calculation for specific populations. 
+Under 42 CFR section 438.8(e)(2)(v)(A), the incurred claims used in the numerator must exclude 
+non-claims costs, which include: (1) amounts paid to third-party vendors for secondary network 
+savings; (2) amounts paid to third-party vendors for network development, administrative fees, 
+claims processing, and utilization management; (3) amounts, including those amounts paid to a 
+provider, that are paid for professional or administrative services that do not represent 
+compensation or reimbursement for State Plan services or services meeting the definition of in-
+lieu-of services in 42 CFR section 438.3(e) and provided to an enrollee; and (4) fines and 
+penalties assessed by regulatory authorities.  As stated in 42 CFR section 438.8(e)(2)(ii)(B), 
+3 Managed care plans provide for the delivery of Medicaid health benefits and additional services through 
+contracted arrangements between State Medicaid agencies and MCOs. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 3 
+===PAGE 9===
+  
+  
+ 
+ 
+  
+   
+   
+       
+    
+ 
+    
+     
+      
+    
+  
+   
+   
+        
+    
+   
+  
+    
+    
+    
+  
+   
+   
+   
+  
+      
+         
+   
+   
+ 
+   
+  
+  
+  
+   
+ 
+  
+prescription drug rebates received and accrued must also be deducted from the incurred 
+claims. 
+Federal regulations at 42 CFR section 438.74(a) specify that the State must submit to CMS on an 
+annual basis a summary description of the report or reports received from its contracted MCOs 
+according to section 438.8(k).  The summary description must include, at a minimum, the 
+amount of the numerator, the amount of the denominator, the MLR percentage achieved, the 
+number of member months, and any remittances owed by each MCO for that MLR reporting 
+year. 
+In a May 15, 2019, Informational Bulletin, CMS highlighted and clarified that its interpretation 
+of 42 CFR section 438.8(e)(2)(ii)(B) requires that prescription drug rebates received and accrued 
+must be deducted from incurred claims.
+4 CMS interprets this regulation to require that any 
+time a managed care plan receives something of value for the provision of a Medicaid covered 
+outpatient drug (e.g., manufacturer rebates, incentive payments, direct or indirect 
+remuneration, goods in kind), the value must be deducted from the amount of incurred claims 
+used for calculating and reporting the MLR.  Spread pricing would be considered something of 
+value and should be deducted from the number of incurred claims in the MLR.
+5 In the press 
+release accompanying the Informational Bulletin, CMS added: 
+In today’s guidance CMS is making clear that, for purposes of the MLR 
+regulation, “prescription drug rebates” means any price concession or discount 
+received by the managed care plan or by its PBM, regardless of who pays the 
+rebate or discount. Some possible examples include payments from 
+pharmaceutical manufacturers, wholesalers, and retail pharmacies. Therefore, 
+the amount retained by a PBM under spread pricing would have to be excluded 
+from the amount of claims costs used for calculating the managed care plan’s 
+MLR.  The policy underpinning this guidance is that spread pricing should not be 
+used to artificially inflate a Medicaid or [Children’s Health Insurance Program] 
+managed care plan’s MLR. 
+Further, according to the Informational Bulletin, the requirement to deduct spread pricing from 
+incurred claims applies regardless of whether value is received by the managed care plan or by 
+a subcontractor administering the covered outpatient drug benefit on behalf of the managed 
+care plan. 
+4 CMS, “CMCS Informational Bulletin: Medical Loss Ratio (MLR) Requirements Related to Third -Party Vendors.” 
+Available at https://www.medicaid.gov/federal-policy-guidance/downloads/cib051519.pdf.  Accessed on 
+August 18, 2022. 
+5 CMS Press Release, “CMS Issues New Guidance Addressing Spread Pricing in Medicaid, Ensures Pharmacy Benefit 
+Managers are not Up-Charging Taxpayers.” Available at https://www.cms.gov/newsroom/press-releases/cms-
+issues-new-guidance-addressing-spread-pricing-medicaid-ensures-pharmacy-benefit-managers-are-not.  Accessed 
+on August 18, 2022. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 4 
+===PAGE 10===
+  
+  
+     
+      
+  
+        
+      
+    
+    
+     
+   
+    
+   
+    
+    
+     
+    
+     
+     
+      
+   
+     
+      
+      
+        
+        
+       
+ 
+  
+ 
+  
+ 
+THE STATE AGENCY’S OVERSIGHT DID NOT PROVIDE TRANSPARENCY OVER SPREAD PRICING 
+Spread Pricing Amounts Were Aggregated With Other Amounts 
+During our audit period, the State agency provided some oversight, through its instructions and 
+guidance for MCOs to report spread pricing, with the intent of ensuring adequate accountability 
+over amounts paid for prescription benefits. Specifically, during our audit period, the State 
+agency instructed its MCOs to submit MLR reports and provided its MCOs with explicit 
+instructions related to reporting spread pricing. However, the State agency only instructed 
+MCOs to report spread pricing in aggregate with other amounts, and thus the spread pricing 
+amounts were not transparent. 
+The State agency’s “Instructions for MLR Report” specified that MCOs were to report pharmacy 
+expenditures and the gross total of rebates, excluding any spread pricing.  In addition, the 
+guidance instructed MCOs to total the PBM spread pricing amount and the amounts paid to 
+third party vendors for network development, administrative fees, claims processing, and 
+utilization management and report the combined total of these amounts as one line item on 
+each MCO’s MLR Report.  Upon receipt of the MLR reports, the State agency did not perform 
+validation steps such as reviewing transactions between the MCO and PBM and the PBM and 
+pharmacy because it had no policies or procedures to require such steps.  
+Because the spread pricing and third-party payment amounts were aggregated, the State 
+agency could not validate the amount of spread pricing in the MLR reports, and the spread 
+pricing amounts were not transparent to the State agency. 
+During our audit period, the MCOs paid PBMs over $364.4 million for prescription claims, and 
+the PBMs paid pharmacies over $341.1 million for those prescription claims.  The remaining 
+$23.3 million is the spread pricing that was kept by the PBMs. (See the table on the following 
+page.)  This $23.3 million is in addition to the other fees the MCOs paid the PBMs. During our 
+audit period, the PBMs received a total of $12.4 million from these other fees.
+6 
+6 PBMs provide a variety of services such as establishing retail, mail-order, and specialty pharmacy networks; 
+negotiating pharmacy reimbursement rates; adjudicating pharmacy claims; and negotiating supplemental rebates 
+with pharmaceutical manufacturers.  The specific services the PBM provided varied depending on the MCO -PBM 
+contract. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 5 
+===PAGE 11===
+  
+  
+  
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+            
+        
+        
+  
+      
+ 
+      
+        
+      
+   
+        
+  
+   
+   
+   
+     
+   
+  
+   
+         
+   
+    
+     
+     
+    
+     
+      
+   
+ 
+      
+     
+      
+   
+ 
+Table: Amounts MCOs Paid to PBMs and Amounts PBMs Paid to Pharmacies 
+MCO PBM 
+Amount 
+MCO Paid to 
+PBM 
+Amount PBM 
+Paid to 
+Pharmacies 
+Spread 
+Amount 
+Kept by PBM 
+Other Fees 
+Paid to PBM 
+MCO A PBM 1 $6,971,821 $5,626,543 $1,345,278 $142,560 PBM 2 24,795,253 18,585,338 6,209,915 
+MCO B PBM 3 199,347,433 199,347,433 0 10,017,531 
+MCO C PBM 4 50,773,859 41,253,331 9,520,528 0 
+MCO D 
+PBM 5 5,885,651 5,870,732 14,920* 
+2,121,590 PBM 6 30,547,136 29,751,791 795,345 
+MCO E PBM 4 46,141,875 40,724,475 5,417,400 145,782 
+Totals $364,463,028 $341,159,643 $23,303,386 $12,427,463 
+*Amounts do not calculate exactly due to rounding. 
+The State agency could not account for this $23.3 million in spread pricing kept by PBMs during 
+our audit period.  Although spread pricing is currently federally permissible, the State agency 
+was unaware of the exact amount of spread pricing. 
+Spread pricing may increase the cost of Medicaid prescriptions to both MCOs and the Medicaid 
+program.  Spread pricing occurs when the PBM keeps a portion of the amount the MCO paid for 
+prescription drugs instead of passing the full payment on to pharmacies. If spread pricing is not 
+appropriately monitored and accounted for, MCOs may not be aware of the spread amount 
+included in the pharmacy costs and may negotiate separate administrative payments to PBMs 
+without knowing how much PBM profit is already built into the pharmacy costs as spread 
+pricing.  The State agency may use these inflated pharmacy costs in setting capitation rates. If 
+the State agency increases its capitated payments to MCOs based on a rate setting influenced 
+by spread pricing, it thereby increases the cost of the Medicaid program. 
+The State Agency Has Taken Steps To Increase Accountability Over Spread Pricing but Could 
+Take Additional Steps To Improve Oversight 
+During our audit but after our audit period, the State agency took steps to improve its oversight 
+of MCOs and accountability over PBM spread pricing. In October 2020, the State agency 
+modified its contracts with MCOs to include specific language to, among other things, eliminate 
+spread pricing in contracts between MCOs and PBMs.  It also added a requirement for MCOs to 
+provide the State agency with information on contract terms with PBMs, including estimates of 
+PBM profits and payment streams. However, the State agency currently does not confirm the 
+individual amounts reported on the MLR report. Formally establishing policies and procedures 
+to validate the amounts (MCO, PBM, and pharmacy transactions) on the MLR report on a 
+periodic basis will help to ensure transparency of costs associated with the prescription drug 
+program. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 6 
+===PAGE 12===
+  
+  
+ 
+    
+       
+   
+    
+     
+  
+     
+  
+     
+    
+      
+     
+     
+     
+      
+  
+   
+   
+  
+RECOMMENDATION 
+We recommend that the District of Columbia Department of Health Care Finance develop 
+policies and procedures for validating MCO, PBM, and pharmacy transactions on a periodic 
+basis to ensure transparency of costs associated with the prescription drug program. 
+STATE AGENCY COMMENTS AND OFFICE OF INSPECTOR GENERAL RESPONSE 
+In written comments on our draft report, the State agency concurred with our recommendation 
+and asked for clarification and guidance regarding the amounts or percentages that are 
+deemed appropriate for PBMs to retain under the practice of spread pricing.  The State agency 
+also asked for clarification regarding whether it should require its contracted MCOs to make a 
+separate payment to its PBMs for administrative costs and fees. 
+We appreciate the State agency’s desire to improve its PBM oversight, an important topic 
+receiving much congressional interest. After receiving its comments, we met with the State 
+agency to discuss some observations that we noted during the audit and encouraged the State 
+agency to contact CMS for clarification and guidance and work with other State agencies and its 
+counsel to determine best practices. 
+In addition, while we did not specifically recommend that the State agency disaggregate 
+information in the MLR report, we look forward to the steps the State agency takes to ensure 
+transparency of costs associated with the prescription drug program. 
+The State agency’s comments are included in their entirety as Appendix B. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 7 
+===PAGE 13===
+  
+  
+  
+ 
+      
+          
+   
+      
+       
+      
+     
+      
+      
+      
+ 
+   
+    
+     
+      
+    
+   
+     
+  
+    
+       
+       
+ 
+       
+   
+    
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX A: AUDIT SCOPE AND METHODOLOGY 
+SCOPE 
+Our audit covered 6,198,833 prescription drug claims totaling $341,159,643 reimbursed to 
+pharmacies during State FYs 2017 through 2019.  MCOs paid $364,463,028 to the PBMs for 
+these claims. 
+We did not review the State agency’s overall internal control structure. We limited our review 
+of internal controls to those applicable to our objective. Specifically, we reviewed the State 
+agency’s internal controls related to contracting with MCOs. To assess the State agency’s 
+control activities, we interviewed contracting officials and reviewed copies of the State agency’s 
+policies and procedures to obtain an understanding of the State agency’s contracting policies 
+and procedures as they involve spread pricing. 
+We performed our audit work from November 2019 through September 2022. 
+METHODOLOGY 
+To accomplish the objective, we: 
+• reviewed applicable Federal laws, regulations, and other requirements; 
+• met with CMS program officials to discuss the Federal requirements regarding spread 
+pricing that the State agency and MCOs must follow; 
+• interviewed State agency officials to obtain an understanding of the State agency’s 
+policies, procedures, and guidance for MCOs; 
+• interviewed State agency officials to obtain an understanding of the State agency’s 
+processes for contracting with MCOs; 
+• obtained and reviewed contracts between the State agency and the MCOs; 
+• obtained the MCOs’ quarterly and annual MLR reports submitted to the State agency; 
+• obtained Medicaid claims for prescription drugs from the PBMs for State FYs 2017 
+through 2019; 
+• calculated the difference between what the MCOs paid to PBMs and what the PBMs 
+paid to pharmacies; 
+• obtained and reviewed contracts between MCOs and their PBMs; and 
+• met with State agency officials to discuss the results of our audit. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 8 
+===PAGE 14===
+  
+  
+   
+        
+   
+   
+     
+  
+We conducted this performance audit in accordance with generally accepted government 
+auditing standards. Those standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions 
+based on our audit objectives.  We believe that the evidence obtained provides a reasonable 
+basis for our findings and conclusions based on our audit objectives. 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 9 
+===PAGE 15===
+  
+  
+   
+ 
+  
+GOVERNMENT OF lBEDISTRICT OF COLUMBIA 
+Department of Health Care Finance 
+.., ... * 
+Offict of tuStoio<DtpuyDD-t<tor, u DHCF
+Medicaid Director
+January 19, 2023 
+Nicole Freda 
+Regional Inspector General for Audit Services
+Office Of Audit Services,Region m 
+801 MarketStreet, Suite 8500 
+Philadelphia, PA 19107-3134 
+Sent by electrooic mail to Nicole.Freda@oig.hhs.gov 
+Re: Report Number A-03-20-00200
+Dear Ms. Freda: 
+The D.C. Department of Health Care Finance (DHCF) is in receipt of the HHS OIG Draft 
+Report The District of Columbia Has Taken Significant Steps to Ensure Accountabilily 
+Over Amounts lo Managed Care Organizations Paid lo Pharmacy Benefit Managers. In 
+this lefter, please find DHCF's written comments to the recommendations contained in 
+this Draft Report,including a statement of concurrenceor n onconcurrence with the 
+recommendation. 
+In the DraftReport, the OIG recommendedthat DHCF develop policies and procedures 
+for validating MOO, PBM, and pharmacytransactions on a periodic basis to ensure 
+transparency of costs associated with the prescription drug program. The OIG also 
+recommends that DHCF disaggregate the report in order to obtain more accurate spread­
+pricing information.DHCF does not object to this recommendationand concurs to the 
+extent that additional clarification is needed. Specifically, in order to implement 
+meaningful policies and procedures, DHCF requests clarification or guidance regarding 
+amounts or percentages that are deemed appropriate for PBMs to retain under the 
+otherwisepermissiblepractice of spread-pricing. This guidance will provide assistance to 
+DHCF in both developing policies and procedures and enforcing accountability regarding 
+spread-pricing. Additionally, DHCF requests clarification regarding whetherit should 
+require its contracted MCOs to make a separate payment to its PBMs for administrative 
+costs a:nd fees. 
+441 41thStreet NW, Suite 900 South, Washington, D.C. 20001 (202) 442-5988 Fax. (202) 4424 790 
+APPENDIX B: STATE AGENCY COMMENTS 
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 10 
+===PAGE 16===
+  
+  
+ 
+ 
+Page2 of2 
+Report Number A-03-20-00200 
+If you haveany questions or require any further infonnation from DHCF, please feel free 
+to contact Lisa Truitt, Director of the DHCF Heal1h Care Delivery Management 
+Administration at lisa.truitt@dc.gov. 
+Sincerely, 
+SignatureSignature(Pct. 
+Melisa Byrd 
+Senior Deputy Director and Medicaid Director 
+D.C. Department of Health CareFmance 
+441 41h Street NW, Suite 900 Soudl, Washington. D.C. 20001 (202) 442-5988 Fax. (202) 4424
+The District of Columbia Has Taken Significant Steps To Ensure Accountability Over Amounts Managed Care 
+Organizations Paid to Pharmacy Benefit Managers (A-03-20-00200) 11 

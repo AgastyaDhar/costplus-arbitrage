@@ -1,5 +1,12 @@
 # Cost Plus Arbitrage Dataset
 
+**This is a point-in-time snapshot, not a live feed.** The pipeline that
+produces this dataset queries CMS APIs that refresh on their own
+schedules (NADAC weekly; Part D and SDUD on their own federal release
+cadence), so re-running it against current CMS data will produce
+different figures than the ones in this deposit. See "Snapshot date"
+below and `PROVENANCE.md` for exactly what was live when.
+
 A cross-referenced dataset comparing Mark Cuban Cost Plus Drugs' generic
 drug prices against what U.S. Medicare Part D and state Medicaid programs
 paid for the same drugs, enriched with independently-sourced,
@@ -28,6 +35,15 @@ to regenerate every file here from that code.
 file above: name, data type, unit, a plain-language description, its
 provenance (which upstream source it comes from or how it was derived),
 whether it can be null, and a real example value. Start there.
+
+## Snapshot date
+
+All figures in this deposit derive from data accessed **2026-07-16**,
+against the NADAC file with effective date **2026-07-15** (dataset
+`fbb83258-11c7-47f5-8b18-5f8e79f7e704`). See `PROVENANCE.md` Section A
+for the access date and version marker of every individual upstream
+source, and the "Change notice" there for why re-running the pipeline
+on a later date will not reproduce these figures bit-for-bit.
 
 ## Headline figures (as of this deposit)
 

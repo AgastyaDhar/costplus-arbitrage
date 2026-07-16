@@ -1,0 +1,30 @@
+{
+  "title": "Cost Plus Arbitrage Dataset",
+  "description": "A cross-referenced dataset comparing Mark Cuban Cost Plus Drugs' generic drug prices against what U.S. Medicare Part D and state Medicaid programs paid for the same drugs, enriched with independently-sourced, publicly-documented pharmacy benefit manager (PBM) markup figures drawn from federal studies, a state-mandated price-transparency report, a peer-reviewed academic study, and federal court litigation exhibits. This is a point-in-time snapshot (data accessed 2026-07-16, NADAC effective date 2026-07-15) -- re-running the pipeline against current CMS data will produce different figures. See dataset/README.md and dataset/PROVENANCE.md for full documentation.",
+  "creators": [
+    {
+      "name": "Dhar, Agastya"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "keywords": [
+    "pharmacy benefit managers",
+    "drug pricing",
+    "Medicare Part D",
+    "Medicaid",
+    "spread pricing",
+    "NADAC",
+    "health policy"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AgastyaDhar/costplus-arbitrage",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Data (dataset/ folder) is CC-BY-4.0; the pipeline code under costplus_suite/ is MIT licensed -- see LICENSE and data/LICENSE. DOI below is a placeholder until Zenodo mints one on deposit.",
+  "doi": "10.5281/zenodo.XXXXXXX"
+}

@@ -1,0 +1,2374 @@
+
+===PAGE 1===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MEDICAID PHARMACY PRICING 
+Opening the Black Box 
+February 19, 2019 
+ 
+ 
+ 
+This report is prepared in response to Kentucky Senate Bill 5, an ACT related to pharmacy benefits in the Medicaid 
+Program, which amended KRS 205.647 and passed on April 13, 2018. The Cabinet for Health and Family Services 
+(CHFS), the Office of Health Data and Analytics  (OHDA), and the Department for Medicaid Services (DMS)  
+appreciate the continued support of the Kentucky Legislature as we work together to ensure access to high quality 
+health care services for our beneficiaries. This data collection effort will continue to evolve and will enable DMS to 
+make improvements to our program extending beyond this initial report. 
+ 
+Kentucky Cabinet for Health and Family Service  
+Office of Health Data Analytics 
+Department for Medicaid Services 
+ 
+ 
+ 
+ 
+ 
+  
+
+===PAGE 2===
+1 | C H F S  
+ 
+Contents 
+Overview ................................................................................................................................................................. 2 
+ Medicaid & Pharmacy Costs 
+ Senate Bill 5 
+Background: The Pharmaceutical Flow of Money.................................................................................................. 3 
+ PBM Pricing Models 
+Methodology ........................................................................................................................................................... 4 
+Results  ..................................................................................................................................................................... 5 
+ Spread Pricing 
+ Dispensing Fees 
+ Ingredient Costs 
+Data Considerations & Limitations ......................................................................................................................... 7 
+Concerns for the Commonwealth ............................................................................................................................ 8 
+Other States’ Initiatives ........................................................................................................................................... 9 
+Recommendations ................................................................................................................................................. 10 
+References ............................................................................................................................................................. 11 
+Appendices ............................................................................................................................................................ 12 
+ Appendix A. Acronyms and Definitions 
+ Appendix B. Senate Bill 5 Data Request Template  
+===PAGE 3===
+2 | C H F S  
+ 
+Overview 
+Medicaid and Pharmacy Costs 
+As of October 2018, nearly 73 million Americans were enrolled in Medicaid and the Children’s Health Insurance 
+Program (CHIP), 50.7% of which were children.1 In Kentucky, there were over 1.2 million Medicaid/CHIP enrollees 
+as of October 2018—nearly one fourth of the state’s population.  
+ 
+Medicaid spending has continued to increase over the past five years in Kentucky. In 2014, Medicaid’s state general 
+fund budget represented 15.5% of the total state budget—in 2018, that increased to 17.2%. For state fiscal year 2019, 
+DMS projects pharmaceutical spending to be greater than $92 million in the fee-for-service population alone.  
+ 
+Pharmacy costs are the fastest growing budget items in the Kentucky Medicaid budget. Additionally, due to federal 
+law and mandates , Medicaid a gencies have very limited ability to  utilize management techniques to  stem the 
+increases in pharmaceutical prices As such, the Centers for Medicare and Medicaid (CMS)  projects that, over the 
+next decade, prescription medications will be the fastest growing category of health spending, consistently outpacing 
+other categories.2 
+ 
+Manufacturers participating in the Medicaid Drug Rebate Program provide rebates for covered outpatient drugs for 
+beneficiaries enrolled with MCOs. 3 In 2017, DMS received almost $ 1.3 billion in federal rebates from Medicaid 
+managed care prescriptions. It is important to note that manufacturer rebates are a “fee” paid to the federal and state 
+governments and mandate inclusion on the state Medicaid formulary and have other limitations over the pharmacy 
+program. MCO beneficiaries fill almost 25 million prescriptions in Kentucky. Through current contracting, MCOs 
+administer pharmacy benefits, including reimbursement, using a pharmacy benefit manager  (PBM) for their 
+beneficiaries.  
+ 
+ 
+Senate Bill 5 
+In its 2018 regular session, Kentucky’s legislature passed Senate Bill 5 (SB5) to facilitate “transparency and to better 
+assess contracts between entities providing Medicaid pharmacy benefits with public dolla rs.” SB5 passed o n April 
+13, 2018 and was enact ed July 1, 2018. The bill mandates that PBMs contracting with DMS MCOs must report 
+financial and business relationship information regarding their interactions with MCOs and Kentucky -enrolled 
+pharmacies. Within Kentucky, there are two PBMs operating on beh alf of five MCOs. This report is a summary of 
+the data provided by PBMs in response to the DMS request and a list of key recommendations from DMS regarding 
+PBMs and pharmacy pricing. Certain defined terms used in this report are set forth in Appendix A. 
+  
+===PAGE 4===
+3 | C H F S  
+ 
+Background: The Pharmaceutical Flow of Money 
+The flow of money for pharmacy services is a complex process representing multiple entities exchanging fees and 
+services, oftentimes in a bidirectional or multidirectional manner. Pertinent to the current repor t is a fundamental 
+understanding of the flow of money to and from 
+PBMs. Figure 1 provides a conceptual framework of 
+pharmaceutical reimbursement in the retail setting.  
+ 
+DMS, as a plan sponsor, currently contracts with five 
+MCOs to provide coordinated, com prehensive 
+Medicaid health benefits to beneficiaries using a 
+capitated payment system. MCOs administer health 
+plans to their beneficiaries.  This is a per-member-per-
+month payment  from DMS  to cover the estimated 
+health care costs for those enrolled with a specific 
+MCO. The MCOs then contract with a PBM to 
+manage pharmacy services for their enrolled 
+beneficiaries. PBMs have the ability to negotiate  with p harmacy services administration o rganizations (PSAOs) , 
+individual pharmacies, and chain -retail pharmacies to form pharmacy networks for their MCOs.  PSAOs negotiate 
+with PBMs and other entities  on behalf of a group of independent -retail pharmacies. PBMs can leverage these 
+networks and the  large volume of beneficiaries they serve to reduce pre scription costs, supplemental rebates, and 
+other methodologies from drug manufacturers. Currently in Kentucky, four MCOs (Aetna, Humana, Passport, and 
+WellCare) contract with CVS Caremark™ as their PBM and one MCO (Anthem) contracts with Express Scripts®.  
+ 
+MCOs in Kentucky and throughout the nation are evaluating their relationships with PBMs due to changing market 
+forces in the healthcare industry.  In Kentucky, several MCOs are considering changing PBMs, bringing PBM 
+services in -house, or other options to address various components of PBM pricing and functionality , including 
+transparency.  
+ 
+PBM Pricing Models 
+PBMs receive payment from multiple entities:  
+ 
+• MCOs provide payment for administering pharmacy services  
+• Beneficiaries pay a copay at the time of dispensing 
+• Manufacturers provide formulary payments, market share payments, performance incentives, and rebates 
+• Fees from pharmacies after the point-of-sale in the form of direct and indirect remuneration fees (DIR)  
+ 
+In turn, PBMs reimburse: 
+• Pharmacies who receive a negotiated payment for prescriptions based on ingredient cost and a professional 
+dispensing fee  
+• MCOs who receive a negotiated portion of rebates r eceived from drug manufacturers, as well as other fees 
+deemed reimbursable in their contract 
+  
+MCOs may choose to enter into a drug pricing agreement with a PBM in two ways: a traditional drug pricing model 
+or pass-through drug pricing model. In a traditional or spread pricing model, the PBM charges the MCO an agreed-
+upon price for prescription drugs. This agreed-upon price is different from what the PBM pays the pharmacy for the 
+
+===PAGE 5===
+4 | C H F S  
+ 
+drug; this difference (the spread) is one model for PBMs to generate revenue. The MCO and Medicaid do not know 
+the full amount of this revenue. In a pass-through pricing model, the PBM charges the MCO the same price for the 
+medication (ingredient cost plus professional dispensing fee) that they reimburse the pharmacy plus an administrative 
+fee, at either a per member or per claim  level.  Pass -through pricing is regarded as more transparent than spread 
+pricing.  
+ 
+In addition to drug pricing models, PBMs can also generate income through rebates. DMS receives a portion of the 
+federal rebate as required by federal law. Manufacturers partici pating in the Medicaid Drug Rebate Program must 
+pass on any rebates for medications dispensed to MCO beneficiaries to DMS. However, PBMs and MCOs can gain 
+additional rebates, also known as supplemental rebates, separately from the federal rebate . These rebates can then 
+be shared between MCOs and PBMs as stated in any additional contracting. The revenue generated by PBMs and 
+MCOs through drug pricing models and supplemental rebates can be used to create or support value-added services, 
+such as adherence programs and formulary reviews, other clinical programs, or can be kept as profits.  
+ 
+Methodology 
+In order to gather the data necessary to conduct this study, OHDA created a template fulfilling the requirements set 
+forth in SB5 (Appendix B). The template included a comprehensive data dictionary for the required data fields stated 
+in SB5. This was then sent to the MCOs who subsequently sent the template to their PBMs  for completion. The 
+template applied to data pertaining to retail pharmacies enrolled with Kentucky DMS. Data fields were broken down 
+by pharmacy type, drug type, and days’ supply (Figure 2). Data collection occurred monthly since November 2018; 
+data was collected for all of Calendar Year 2017 (CY2017) and Calendar Year 2018 (CY2018). 
+ 
+Aggregate amounts for DMS dollars paid to the MCO, or the amount MCO’s paid to PBMs, and aggregate amounts 
+representing DMS dollars not paid to pharmacies , or the spread,  were also included along with a list of specialty 
+drugs in the completion of the template. 
+ 
+The template was sent to Myers & Stauffer LC for independent review and recommendations were made contingent 
+on feedback provided. Myers &  Stauffer LC is 
+one of the nation’s leading experts on Medicaid 
+pharmacy pricing and has worked with multiple 
+state Medicaid agencies on reimbursement 
+systems.  Their input and advi ce was  highly 
+beneficial as this template was developed.  
+
+===PAGE 6===
+5 | C H F S  
+ 
+Results 
+In CY2017, 24.7 million prescriptions were filled for DMS beneficiaries through MCOs. Of those prescriptions, 14.3 
+million (57.6%) were filled using a spread pricing model. Additionally, in CY2018, 24.7 million prescriptions were 
+filled for DMS beneficiaries through  MCO contracts, 1 4.2 million (57.5%) of which were filled using a spread 
+pricing model.   
+ 
+Spread Pricing 
+In CY2018, PBMs reported being paid $957.7 million from DMS through their MCOs, for spread pricing contracts, 
+$123.5 million (12.9%) of which was not paid to pharmacies and kept by the PBMs as the spread. DMS total spend 
+on prescription benefits was 3.9% higher in CY2018 vs. CY2017; additionally, during that same period, the spread 
+increased 3.5% (Table 2). The spread was highest for chain -retail pharmacies and lowest for comm on ownership 
+pharmacies (Table 1).  
+ 
+ 
+Table 1. Spread by Pharmacy Type 
+ 
+Dispensing Fees 
+In July 2018, at the direction of the DMS, MCO’s were mandated to reimburse  pharmacies an additional $2 per 
+prescription above the current professional dispensing fee. Counts and claims were therefore divided into two 
+periods—January 2017 to June 2018 (18 months) and July 2018 through November 2018 (5 months) —to examine 
+the impact of this change. The overall average professional dispensing fee paid by PBMs to pharmacies increased 
+$1.88 per prescription between these time periods. Chain -retail pharmacies had the smallest average increase 
+($1.73/prescription), followed by common ownership ($1.98/pres cription) and independent -retail 
+($2.04/prescription). Non-specialty generic medications had the greatest relative percent increase in  professional 
+dispensing fees between time periods (389% relative increase), with specialty brand medications having the greatest 
+dollar increase between time periods ($2.98/prescription). Full results can be found in Table 2.  
+ 
+ 
+ 
+ 
+ 
+ 
+
+===PAGE 7===
+6 | C H F S  
+ 
+ 
+ Table 2. Average Professional Dispensing Fee by Pharmacy Type and Drug Type 
+  *Note January 2017 to June 2018 is over an 18-month span and July 2018 to December 2018 is a 5-month span 
+ 
+Ingredient Costs 
+The average ingredient cost by drug type and pharmacy type were aggregated to compare by year (Table 3). In all 
+three pharmacy types, the ingredient cost of non-specialty brand drugs increased between CY2017 and CY2018. All 
+three pharmacy types saw a decrease in ingredient cost for non-specialty generic drugs from CY2017 to CY2018 . 
+Both specialty brand and specialty generic drug ingredients costs decreased for chain-retail pharmacies. This was in 
+contrast to an increase in ingredient costs for specialty drugs in independent -retail a nd common ownership 
+pharmacies.  Overall the aggregated average price of a drug increased 6.2% between time periods , from $55.01 per 
+prescription to $58.63.  
+ 
+
+===PAGE 8===
+7 | C H F S  
+ 
+ 
+ Table 3. Average Ingredient Cost by Pharmacy Type and Drug Type 
+ 
+Data Considerations and Limitations 
+The results presented in this report are of aggregate values that DMS obtained from PBMs and may not represent all 
+of the money(s) exchanged for these transactions. Specifically, DIR fees, including recoupments based on generic 
+effective rate (GER) or brand effective rate (BER) have not been included in the determination of the spread.  While 
+these other fees have an impact on the final net revenue to a PBM, much of this is not collected at point of sale. 
+The data collected applied only to retail pha rmacies enrolled in Kentucky Medicaid. The metrics of this initial 
+analysis do not account for variances in the drug mix provided by different pharmacy types including specialty 
+pharmacies and mail order pharmacies.  
+Collecting drug ingredient cost and pro fessional dispensing fees at the mean and median level presents challenges 
+to extrapolating the true value of the drug costs. The mean values were taken as a weighted average among the MCOs 
+using total claims utilization. Therefore, the results of the analysis provide a robust understanding of the data.  
+Each MCO-PBM utilized individual drug lists to define non-specialty brand, non-specialty generic, specialty brand, 
+and specialty generic drugs. There is no federally or statewide recognized specialty drug l ist and each MCO was 
+asked to use their MCO -specific specialty drug lists for the analysis. Furthermore, pharmacy types are reported as 
+stated in the text of SB5. Independent-retail pharmacies and chain-retail pharmacies are not standardized among the 
+MCOs and was up to the discretion of the MCO to categorize pharmacies. 
+Finally, this data has not been independently verified at the claims level. PBMs completed the data templates at the 
+aggregate level with directions from DMS. Contractor reporting requirements are in Section 38 of the Medicaid 
+MCO contract with verification of the accuracy of the data submitted to DMS.      
+
+===PAGE 9===
+8 | C H F S  
+ 
+Concerns for the Commonwealth 
+DMS has collaborated with contracted MCOs, statewide pharmacy organizations, and other state agencies to 
+understand the implications of PBM contracts for Medicaid. While und erstanding the amounts of the spread are an 
+important first step, the final impact on the Medicaid program, pharmacies and MCOs will need to be quantified. As 
+discussed in this report, contractual agreements between PBMs and PSAOs , independent-retail pharmacies, and 
+chain-retail pharmacies may set additional DIR fees to be paid back to the PBM, which include but are not limited 
+to:  
+ 
+• In-network fees 
+• Transmission fees 
+• Quality fees  
+• Customer service fees 
+• GER/BER fees  
+ 
+From discussions with independent-retail pharmacy owners and pharmacy organizations, these fees may be assessed 
+at the end of fiscal periods, which may create negative reimbursement scenarios for dispensed medications or 
+potential tax issues. Pharmacists have expressed significant concern regarding the inflated percentages in BERs and 
+GERs, which may be determined by a different methodology than payments to MCOs. Pharmacists have also 
+expressed concern that claims may not accurately reflect pharmacy reimbursement by the PBM, as the actual net 
+payment by the PBM at the end of the year may ultimately be lower than ingredient and operational costs. These 
+fees are not inc luded in the spread calculation  and these additional payments back to the PBM  are not included in 
+this report. Currently, there is no transparent system to capture these dollar amounts. Therefore, the full impact of 
+fees assessed is not known, but may threaten stability of pharmacies and the pharmacy benefit offered to our 
+Medicaid beneficiaries.  
+ 
+Additionally, there is concern that spread pricing is not correctly accounted for in the state’s medical loss ratio 
+(MLR). The MLR is a designated rate between DMS and MCOs to spend a certain percentage of dollars on medical 
+care (vs. administrative costs). This rate is esta blished by the Kentucky Legislature at 90%. With the lack of 
+transparency surrounding spread pricing, the effect of the MLR may not be accurately represented. DMS is 
+conducting further research into this issue to ensure compliance with the required MLR.  
+  
+===PAGE 10===
+9 | C H F S  
+ 
+State Initiatives 
+Since 2017, 20 states have passed 31 different bills related to PBM regulations. These include bills banning gag 
+clauses preventing pharmacists from sharing lower cost options with their customers, requiring PBMs to be licensed 
+in-state, preventing spread pricing models, and requiring PBMs to report pricing and rebate information to promote 
+transparency. The following are representative examples from selected states:  
+ 
+• In 2017, Oklahoma moved to a value-based pricing model where supplemen tal rebates are tied to specific 
+health outcomes in patients prescribed certain medications. The state contracts with the manufacturer and 
+rewards patient adherence to medications. While the cost for the medication is higher, the cost savings come 
+from decreased hospitalizations seen with other drug options. Results on the net savings of this model have 
+not been released. 
+• After the release of the State Auditor’s report on Medicaid Managed Care Services, Ohio moved all PBM 
+contracts from a spread pricing model to a pass-through model. This was in response to an identified average 
+spread of 8.9% on all Ohio Medicaid prescriptions. The State Auditor provided recommendations to 
+alternative contract models, rebate auditing, and increased reporting requirements to keep PBMs transparent. 
+• In 2014, Texas became one of the first states to closely regulate PBMs. Using a managed care system,  all 
+MCO-PBM contracts are  uniform subcontracts to the state and MCOs are held res ponsible for all duties 
+performed by the PBM. In order to keep costs low for the state, regulations prohibit PBMs from using spread 
+pricing, receiving additional rebates from manufacturers, and using unauthorized clinical edits. Texas use of 
+a Uniform Managed Care Contract dictates the role and operations of each of their 20 MCOs and 6 PBMs. 
+• In July 2017, West Virginia carved out all pharmacy benefits from their MCOs. The state has returned to 
+the same system it had prior to managed care’s implementation in  2013. The state uses West Virginia 
+University College of Pharmacy to help advise providers to  make better clinical decisions and t he return to 
+the fee-for-service model is estimated to have saved the state at least $50 million; however, a full report 
+showing this data has not yet been released.  
+ 
+  
+===PAGE 11===
+10 | C H F S  
+ 
+Recommendations 
+Based on available evidence and the preliminary data reported i n response to SB5, DMS has eight  key 
+recommendations to increase transparency, promote pharmacy sustainability, and ultimately impro ve the care of 
+Kentucky’s Medicaid population.  
+ 
+Recommendation 1. Mandate pass-through contracting for all MCO-PBM contracts for pharmacy benefit services. 
+A transparent drug pricing model between the MCOs, PBMs, and pharmacies allows DMS to monitor financial 
+expenses related to pharmacy as line level transactions. Under  the pass -through contracting model, the MCO is 
+charged a flat administrative fee from the PBM per claim or per member.  
+ 
+Recommendation 2. Remove all DIR fees including transactional fees, in -network fees, GER and BER fees, and 
+any and all claw back fees to pharmacies charged by PBMs. PBMs should function to pay the claim to pharmacies 
+at the ingredient cost and professional dispensing fee without any additional charges at or after the point of sale. DIR 
+fees add to the complexity of pharmacy pricing and fail to provide fair future projections for pharmacies. 
+ 
+Recommendation 3. Evaluate the implementation of  a pricing methodology to managed care Medicaid pharmacy 
+benefits. Using a similar lesser of logic methodology, medications would be reimbursed the same as Kentucky’s fee-
+for-service population. Drugs would be priced at the lesser of logic plus a professional dispensing fee paid to 
+pharmacies. Covered medications should be reimbursed at the lowest of the: 
+1. National Average Drug Acquisition Cost (NADAC) 
+2. Wholesale acquisition cost (WAC) 
+3. Federal upper limit (FUL) 
+4. Maximum allowable cost (MAC) 
+5. Usual and customary price (U & C) 
+6. A negotiated price between the manufacturer and PBM 
+ 
+Recommendation 4. Require an annual PBM transparency report to be delivered to DMS for each MCO -PBM 
+contract. This report would contain the a ggregated rebate amount collected by  the PBM and MCOs  from all 
+manufacturers. The report would also contain the a ggregated administrative fees collected by  the PBM from all 
+manufacturers and from all MCOs. The report would ensure continual monitoring of PBM actions in the state and 
+their fiscal responsibilities to DMS. 
+ 
+Recommendation 5. Ensure the MLR review incorporates drug rebates and PBM administrative fees as part of an 
+independent MLR review process.     
+ 
+Recommendation 6. Explore efficiency incentives for MCOs and their subsequent PBM contracts. Including, but 
+not limited to adjusting fees and charges to MCOs and PBMs based upon pre -determined metrics by DMS for 
+pharmacy-related outcomes.  
+ 
+Recommendation 7. Prohibit PBMs from providing financial incentives in the form of copayments, deductibles, or 
+premiums as incentives to use specific retail, mail order, or other network pharmacies in which the PBM has common 
+ownership. By doing so, PBMs do not gain an unfair advantage over the pharmacy businesses in the state. 
+ 
+Recommendation 8. DMS requires continued review of claims-level data, refinement of the data collection process, 
+and monitoring of the pharmacy payment program to improve Kentucky Medicaid’s ability to maximize its resources 
+on behalf of its pharmacies and beneficiaries.  
+ 
+ 
+===PAGE 12===
+11 | C H F S  
+ 
+ 
+References 
+ 
+ 
+1. Centers for Medicare and Medicaid Services. November 2018 Medicaid & CHIP Enrollment Data 
+Highlights. November 2018; Accessed from https://www.medicaid.gov/medicaid/program-
+information/medicaid-and-chip-enrollment-data/report-highlights/index.html. Jan 12, 2019  
+2. Cuckler G, et al. National Health Expenditure Projections, 2017-2016. Health Affairs 37(3); March 2018 
+3. Sood N, et al. The flow of money through the pharmaceutical distribution system. June 2017; Accessed 
+from https://healthpolicy.usc.edu/research/flow-of-money-through-the-pharmaceutical-distribution-system 
+Jan 12, 2019. 
+  
+===PAGE 13===
+12 | C H F S  
+ 
+Appendix A. Acronyms and Definitions 
+Brand Effective Rate (BER). A contractual agreement between PBMs and pharmacies stipulating the average 
+amount per brand drug that PBMs will reimburse pharmacies (e.g. Average Wholesale Price minus a fixed 
+percentage). Periodically, a PBM will determine th e actual average reimbursement per brand drug and, if it is over 
+the contracted agreement, assess DIR fees to pharmacies in the amount that the pharmacies were over -reimbursed 
+for brand name medications. 
+ 
+Common Ownership Pharmacy. Any pharmacy with which the pharmacy benefit manager shares common 
+ownership, management, or control; or which are owned, managed, or controlled by any of the pharmacy benefit 
+manager's management companies, parent companies, subsidiary companies, jointly held companies, or compa nies 
+otherwise affiliated by a common owner, manager, or holding company; or which share any common members on 
+the board of directors; or which share managers in common. 
+ 
+Department for Medicaid Services (DMS). Kentucky’s Department for Medicaid Services.  
+ 
+Direct and Indirect Remuneration (DIR) fees. Additional fees outside of administration fees provided to the PBM 
+after the point -of-sale. Examples of DIR include: discounts, chargebacks or rebates, cash discounts, free goods 
+contingent on a purchase agree ment, up-front payments, coupons, goods in kind, free or reduced -price services, 
+grants, or other price concessions or similar benefits from manufacturers, pharmacies or similar entiti es (42 CFR 
+423.308).  
+ 
+Generic Effective Rate (GER). A contractual agree ment between PBMs and pharmacies stipulating the average 
+amount per generic drug that PBMs will reimburse pharmacies (e.g. Average Wholesale Price minus a fixed 
+percentage). Periodically, a PBM will determine the actual average reimbursement per generic drug and, if it is over 
+the contracted agreement, assess DIR fees to pharmacies in the amount that the pharmacies were over -reimbursed 
+for generic medications. 
+ 
+Managed Care Organization (MCO). Third party administrators of medical and pharmacy benefits on behalf of 
+the Department for Medicaid Services (DMS). There are currently five MCOs contracting with DMS: Aetna, 
+Anthem, Humana, Passport, and WellCare. 
+ 
+Office of Health Data and Analytics (OHDA). The Division of Analytics in the Office of Health Data & Analytics 
+is responsible for coordinating the data analytic initiatives of the various departments that regulate h ealth care and 
+social services. The Division of Analytics retains sole oversight of policy and research m atters for these program 
+areas. 
+ 
+Pharmacy Benefit Manager (PBM). Third-party administrators of pharmacy benefit services for MCOs. The 
+services provided by the PBMs to the MCOs may include but are not limited to claims adjudication, customer service, 
+clinical services (e.g. prior authoriz ations), drug utilization reviews, and mail -order/specialty pharmacies. CVS 
+Caremark™ is the PBM for Aetna, Humana, Passport, and WellCare while ExpressScripts® is the PBM for Anthem.  
+ 
+Pharmacy Services Administration Organization (PSAO). PSAOs act as unions on behalf of independent -retail 
+pharmacies, wherein for a fee, PSAOs negotiate contracts with PBMs leveraging the collective power of many 
+independent-retail pharmacies. 
+ 
+ 
+===PAGE 14===
+13 | C H F S  
+ 
+ 
+Appendix B. Senate Bill 5 Data Request Template 
+ 
+===PAGE 15===
+Report ID Identify the name of the Managed Care Organization (MCO), the start 
+and end date of the reporting period, and the date the report was 
+ran.
+Ownership and Related 
+Entities
+Enter the details for each MCO, Pharmacy Benefit Manager (PBM), 
+and related entities separately. Include entities covered by PBM 
+including all pharmacy related entities. 
+Chain-retail pharmacies as identified by MCO/PBM database
+Pharmacies with 11 or more locations (SB5 definition)
+Independent-retail pharmacies as identified by MCO/PBM database
+Pharmacies with 10 or fewer locations (SB5 definition)
+Common ownership pharmacies
+Non-specialty brand
+Non-specialty generic
+Specialty brand
+Specialty generic
+Less than a 34 days supply (DS)
+Greater than a 34 days supply
+Ingredient cost
+Dispensing fee
+Other fees
+Renumerations
+Total claims
+Medicaid dollars paid to PBM
+Medicaid dollars paid to PBM not paid to Kentucky Medicaid enrolled 
+pharmacies
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Instructions
+Please provide a methodology report as to how pharmacy types, drug types, and supply volumes 
+were pulled.
+Please provide a complete list of all specialty medications reimbursed for the reporting period. 
+Include AHFS codes and NDCs for specialty medications. 
+Data collection will be broken down to 4 distinct categories: pharmacy type, drug type, supply 
+volume, and specific metrics. Each tab represents a pharmacy type and a supply volume. 
+Pharmacy Types
+Drug Type
+Supply Volume
+Metrics
+Page 1 of 15
+===PAGE 16===
+Term Definition
+Chain-Retail Pharmacies Pharmacies identified in MCO/PBM database as a Kentucky Medicaid enrolled chain-retail pharmacy. Include all out of state pharmacies that apply.
+Any >11 Pharmacies Retail pharmacies enrolled in Kentucky Medicaid which operate more than 11 locations. Include all out of state pharmacies that apply.
+Independent-Retail Pharmacies Pharmacies identified in MCO/PBM database as a Kentucky Medicaid enrolled independent-retail pharmacy. Include all franchise pharmacies that apply. Include all out of state pharmacies that 
+apply.
+Any ≤10 Pharmacies Retail pharmacies enrolled in Kentucky Medicaid which operate 10 or fewer locations. Include all franchise pharmacies that apply. Include all out of state pharmacies that apply.
+Common Ownership Pharmacy Where the pharmacy benefit manager shares common ownership, management; or which are owned, managed, or controlled by any of the pharmacy benefit manager's management companies, 
+parent companies, subsidiary companies, jointly held companies, or companies otherwise affiliated by a common owner, manager, or holding company; or which share any common members on 
+the board of directors; or which share managers in common, whether the relationship is created by legal business structure or contractual obligations. 
+Non-Specialty Brand Drug Registered trade name of a drug that was originally marketed under an original new drug application approved by the Food and Drug Administration. This includes all drugs reimbursed at brand 
+price as identified by MCO/PBM database.
+Non-Specialty Generic Drug A drug that contains identical amounts of the same active ingredients in the same dosage form and that meets official compendia or other applicable standards of strength, quality, purity, and 
+identity in comparison with the brand name drug. This includes all drugs reimbursed at the generic price as identified by MCO/PBM database.
+Specialty Brand Drug Drug that treats chronic, complex or life threatening conditions, are typically costly and require intensive clinical monitoring, complex patient actions and/or special handling by the pharmacy. 
+Identified by brand status and reimbursement by MCO/PBM.
+Specialty Generic Drug Drug that treats chronic, complex or life threatening conditions, are typically costly and require intensive clinical monitoring, complex patient actions and/or special handling by the pharmacy. 
+Identified by generic status and reimbursement by MCO/PBM. 
+Fills Up to 34 Days Supply Prescriptions filled for up to a 34 days supply.
+Fills for Greater Than a 34 Days 
+Supply
+Prescriptions filled for greater than a 34 days supply.
+Ingredient Cost Costs reimbursed by the PBM to the pharmacy for a drug product. This cost does not include the dispensing fee.
+Dispensing Fee Professional fee a pharmacist receives from the PBM to dispense a medication.
+Other Fee Any additional administrative fees or charges paid to the pharmacy excluding ingredient cost, dispensing fee, and remuneration fees.
+Total Claims The total number of claims reimbursed in a specific reporting period.
+Medicaid Dollars Paid to PBM The total amount of Kentucky Medicaid dollars paid to the PBM by the MCO.
+Medicaid Dollars Paid to PBM 
+Not Paid to Kentucky Medicaid 
+Enrolled Pharmacies
+The total amount of Kentucky Medicaid dollars paid to the PBM by the MCO which were not subsequently paid to a pharmacy enrolled with Kentucky Medicaid.
+Remuneration Fees Any direct fee or indirect fee, charges of any kind, or assessment of any kind imposed by a pharmacy benefit manager on a pharmacy retroactively rather than deducted from clean claims at point-of-
+sale on a real-time basis.  Fees imposed by the pharmacy benefit manager to the pharmacy or the entity through which the pharmacy contracts with the pharmacy benefit manager, including, but 
+not limited to: fees for network participation, periodic reimbursement conciliations, failure to comply with quality measures, and the gap between a target reimbursement rate in a pharmacy 
+agreement and the aggregated rate actually realized by a pharmacy.  These fees often are assessed at different intervals rather than at point-of-sale and may be fees imposed by pharmacy benefit 
+managers on pharmacy providers after a drug claim is submitted, adjudicated, and even paid out to a pharmacy or retroactively clawed back from a portion of the claim already paid rather than 
+deducting from point-of-sale claims on a real-time basis.
+NOTE: "Independent-Retail" and "Any≤10" pertains to similar data. One format allows the data to be collected in a way that is uniform within the MCO/PBM database and the latter utilizes the Senate Bill 5 text
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Data Dictionary
+NOTE: "Chain-Retail" and "Any>11" pertains to similar data. One format allows the data to be collected in a way that is uniform within the MCO/PBM database and the latter utilizes the Senate Bill 5 text
+Page 2 of 15
+===PAGE 17===
+MCO Name:
+Reporting Period Start:
+Report Period End:
+Report Run Date:
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Report ID
+Page 3 of 15
+===PAGE 18===
+MCO Name
+Address 1 Subsidiaries Relationship to MCO
+Address 2
+City
+State
+Zip Code
+Phone
+email
+Name Title
+PBM Parent Relationship to PBM
+PBM Name
+Address 1
+Address 2
+City
+State
+Zip Code
+Phone
+email
+Name Title
+Relationship to PBM Detail for "Other"
+Entity Name
+Address 1
+Address 2 Relationship End Date (if applicable)
+City
+State
+Zip Code
+Phone
+email
+Business Type
+Name Title Detail for "Other"
+PBM Officers/Ownership
+Related Entities of the PBM
+Related Entities of the PBM Officers/Ownership
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Ownership and Related Entities of the PBM
+MCO Disclosure
+MCO Officers/Ownership
+PBM Disclosure
+Page 4 of 15
+===PAGE 19===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Chain-Retail Pharmacies with <34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 5 of 15
+===PAGE 20===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Non-Specialty Generic 
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Chain-Retail Pharmacies with >34 Days Supply
+Non-Specialty Brand 
+Page 6 of 15
+===PAGE 21===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Non-Specialty Generic 
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Any >11 Pharmacies with <34 Days Supply
+Non-Specialty Brand 
+Page 7 of 15
+===PAGE 22===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Non-Specialty Generic 
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Any >11 Pharmacies with >34 Days Supply
+Non-Specialty Brand 
+Page 8 of 15
+===PAGE 23===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Independent-Retail Pharmacies with <34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 9 of 15
+===PAGE 24===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Independent-Retail Pharmacies with >34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 10 of 15
+===PAGE 25===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Any ≤10 Pharmacies with <34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 11 of 15
+===PAGE 26===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Any ≤10 Pharmacies with >34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 12 of 15
+===PAGE 27===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Common Ownership Retail Pharmacies with <34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 13 of 15
+===PAGE 28===
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Mean Ingredient 
+Cost
+Minimum 
+Ingredient Cost
+25th Percentile 
+Ingredient Cost
+Median Ingredient 
+Cost
+75th Percentile 
+Ingredient Cost
+Maximum 
+Ingredient Cost
+Mean Dispensing 
+Fee
+Minimum 
+Dispensing Fee
+25th Percentile 
+Dispensing Fee
+Median Dispensing 
+Fee
+75th Percentile 
+Dispensing Fee
+Maximum 
+Dispensing Fee
+Mean Other Fees Median Other Fees Remuneration Fees Total Claims
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Specialty Brand
+Specialty Generic
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Common Ownership Retail Pharmacies with >34 Days Supply
+Non-Specialty Brand 
+Non-Specialty Generic 
+Page 14 of 15
+===PAGE 29===
+Medicaid Dollars 
+Paid to PBM 
+Medicaid Dollars 
+Paid to PBM Not 
+Paid to Kentucky 
+Medicaid Enrolled 
+Pharmacies
+Remunerations 
+Fees - All Retail 
+Pharmacies
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Total
+Kentucky Department for Medicaid Services
+#173_MCO-PBM Compliance Report for POS Transactions
+Cumulative
+Page 15 of 15

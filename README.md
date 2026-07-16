@@ -4,8 +4,8 @@
 
 This tool compares Cost Plus Drugs' prices against what Medicare and
 Medicaid actually paid for the same medications, using public federal data.
-It found that across 2,012 generic drugs, the government overpaid an
-estimated $50.8 billion per year versus Cost Plus prices. Every number is
+It found that across 2,062 generic drugs, the government overpaid an
+estimated $13.3 billion per year versus Cost Plus prices. Every number is
 sourced, auditable, and never estimated.
 
 ## How to run it
@@ -17,7 +17,7 @@ python run.py
 
 ## What you get
 
-- A complete ranked list of all 2,012 drugs by overpayment gap
+- A complete ranked list of all 2,062 drugs by overpayment gap
 - A total dollar figure: estimated annual overpayment across all matched
   generics
 - A comparison of brand-name drugs on TrumpRx vs their generic equivalent
@@ -28,7 +28,7 @@ python run.py
 
 After running, results are written to the `costplus_suite/output/` folder:
 
-- `costplus_suite/output/leaderboard.csv` — all 2,012 generic drugs ranked
+- `costplus_suite/output/leaderboard.csv` — all 2,062 generic drugs ranked
   by total overpayment, with Cost Plus price, government price, gap per
   unit, and total dollars
 - `costplus_suite/output/trumprx_comparison.csv` — brand-name drugs listed
