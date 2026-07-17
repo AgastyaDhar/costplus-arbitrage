@@ -87,6 +87,79 @@ class TestLoadCitations(unittest.TestCase):
         self.assertIn("1,727.73%", row["all_confirmed_sources"])
         self.assertIn("state_disclosure", row["all_confirmed_sources"])
 
+    def test_blank_confirmed_spread_value_stays_blank_not_zero(self):
+        # "Never default a missing/non-applicable markup_pct to 0.0 --
+        # missing means blank." Simulates a source that yields no
+        # extractable percentage at all (confirmed_spread_value left empty
+        # in the CSV, as opposed to a real 0.0 -- see the paired test below
+        # for that case). Must surface as NaN throughout the pipeline, not
+        # get coerced to 0.0 anywhere, and must never render as the literal
+        # string "nan" in a human-facing column either.
+        import tempfile
+
+        csv_text = (
+            "rxcui,drug_name,nadac_per_unit,costplus_per_unit,confirmed_spread_value,"
+            "confirmed_spread_type,source_name,source_year,source_page,source_quote,source_type\n"
+            "9999999,Synthetic Test Drug,10.0,5.0,,markup_pct,Synthetic Source,2025,1,"
+            "no percentage extractable from this source,federal_study\n"
+        )
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", delete=False, newline="") as tmp:
+            tmp.write(csv_text)
+            tmp_path = Path(tmp.name)
+        try:
+            citations = g_public_citations.load_citations(tmp_path)
+            self.assertTrue(pd.isna(citations.iloc[0]["best_confirmed_spread"]))
+            self.assertNotIn("nan", citations.iloc[0]["all_confirmed_sources"].lower())
+
+            leaderboard = pd.DataFrame([
+                {"rxcui": 9999999, "drug_term": "Synthetic Test Drug", "nadac_per_unit": 10.0},
+            ])
+            out = g_public_citations.run(leaderboard, citations_path=tmp_path)
+            out_row = out.iloc[0]
+            self.assertTrue(pd.isna(out_row["best_confirmed_spread"]))
+            self.assertTrue(pd.isna(out_row["estimated_pbm_price_per_unit"]))
+        finally:
+            tmp_path.unlink()
+
+    def test_teriparatide_zero_is_genuine_extracted_value_not_a_default(self):
+        # The paired positive case for the test above: RxCUI 1435115
+        # (Teriparatide)'s best row is a REAL 0.0 -- FTC Second Interim
+        # Staff Report, Figure A1 p.36, Medicare Part D affiliated-pharmacy
+        # markup over NADAC -- not a placeholder. A genuine 0.0 must
+        # survive exactly as 0.0 (not get treated as falsy/missing and
+        # dropped to NaN), distinguishing it from the blank case above by
+        # carrying a real, well-formed source citation alongside it.
+        citations = g_public_citations.load_citations()
+        row = citations[citations["rxcui"] == 1435115].iloc[0]
+        self.assertEqual(row["best_confirmed_spread"], 0.0)
+        self.assertFalse(pd.isna(row["best_confirmed_spread"]))
+        self.assertEqual(row["best_confirmed_type"], "markup_pct")
+        self.assertIn("FTC Second Interim Staff Report", row["best_confirmed_source"])
+        self.assertIn("p.36", row["best_confirmed_source"])
+
+        leaderboard = pd.DataFrame([
+            {"rxcui": 1435115, "drug_term": "Teriparatide 560 mcg/2.24ml Solution Pen-injector",
+             "nadac_per_unit": 536.54901},
+        ])
+        out = g_public_citations.run(leaderboard)
+        out_row = out.iloc[0]
+        # 0% markup -> estimated price legitimately equals NADAC exactly.
+        # This is correct arithmetic on real data, not a bug to suppress.
+        self.assertAlmostEqual(out_row["estimated_pbm_price_per_unit"], 536.54901, places=4)
+
+    def test_fingolimod_citation_note_surfaces_in_leaderboard_source(self):
+        # RxCUI 1012895 (Fingolimod HCl 0.5mg): the winning citation
+        # (Lewandowski, p.44, 1,395.60%) has a documented discrepancy with
+        # that same complaint's own p.38 narrative (1,420.7%, identical
+        # dollar figures). We cite p.44 as printed, but the discrepancy
+        # must be visible on the leaderboard row itself, not just in
+        # METHODOLOGY.md.
+        citations = g_public_citations.load_citations()
+        row = citations[citations["rxcui"] == 1012895].iloc[0]
+        self.assertAlmostEqual(row["best_confirmed_spread"], 1395.6, places=2)
+        self.assertIn("NOTE", row["best_confirmed_source"])
+        self.assertIn("1,420.7%", row["best_confirmed_source"])
+
     def test_non_markup_type_wins_on_value_but_gets_no_price_formula(self):
         # RxCUI 309362 (Clopidogrel bisulfate) has only spread_dollars (8.59)
         # and spread_pct (70.2) rows -- the higher raw value (spread_pct)

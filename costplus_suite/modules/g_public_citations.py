@@ -39,6 +39,12 @@ ESTIMATED_PBM_PRICE_BASIS = "Estimated from confirmed markup % — not a directl
 
 
 def _format_value(value: float, spread_type: str) -> str:
+    # A blank/NaN confirmed_spread_value means the source didn't yield an
+    # extractable figure -- must render as an explicit non-value, never as
+    # the literal string "nan" (which f-string formatting on NaN would
+    # otherwise produce) and never as 0.0's formatted output.
+    if pd.isna(value):
+        return "(no figure extracted)"
     if spread_type == "spread_dollars":
         return f"${value:,.2f}"
     return f"{value:,.2f}%"
@@ -87,6 +93,19 @@ def load_citations(path: Path | None = None) -> pd.DataFrame:
         .drop_duplicates(subset="rxcui", keep="first")
     )
     best["best_confirmed_source"] = best["source_name"] + ", p." + best["source_page"].astype(int).astype(str)
+    # citation_note is an optional column (blank for nearly every row) for
+    # flagging a known discrepancy in the underlying source itself -- e.g.
+    # Fingolimod HCl 0.5mg's Lewandowski citation (p.44 exhibit table) prints
+    # 1,395.60% where that same complaint's own p.38 narrative computes
+    # 1,420.7% from identical dollar figures. We cite the page as printed
+    # and do not correct the source; this surfaces the discrepancy on the
+    # winning row rather than burying it in a doc no one reads next to the
+    # number. See METHODOLOGY.md "Technical Validation."
+    if "citation_note" in best.columns:
+        has_note = best["citation_note"].notna() & (best["citation_note"].astype(str).str.strip() != "")
+        best.loc[has_note, "best_confirmed_source"] = (
+            best.loc[has_note, "best_confirmed_source"] + " [NOTE: " + best.loc[has_note, "citation_note"] + "]"
+        )
 
     all_sources = (
         df.groupby("rxcui", group_keys=False)
