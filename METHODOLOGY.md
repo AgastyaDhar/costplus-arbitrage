@@ -308,6 +308,16 @@ systematically skew toward the largest markups. Where multiple sources cite
 the same drug, this pipeline reports the highest confirmed figure, which
 favors litigation sources. Both figures are shown where available.
 
+The two litigation sources (Lewandowski v. Johnson & Johnson, Navarro v.
+Wells Fargo & Co.) carry an additional caveat beyond selection bias: both
+complaints state **allegations in an active complaint as of the 2026-07-17
+access date -- they are not adjudicated facts**. Neither case had reached
+judgment, settlement, or dismissal as of that date. The drug-level markup
+figures extracted from their exhibit tables are the plaintiffs' own
+claims, not court-established findings, on top of already being a
+non-representative, plaintiff-selected sample. See `PROVENANCE.md` for
+full docket details and archival provenance.
+
 Every citation carries a `source_type` -- `federal_study` (FTC interim
 reports), `state_disclosure` (Maine MHDO), `peer_reviewed` (JAMA Mattingly),
 or `litigation` (the J&J and Wells Fargo ERISA complaints) -- surfaced as its
@@ -319,6 +329,74 @@ drug has citations from more than one source type, `all_confirmed_sources`
 lists every one of them (not just the max that wins `best_confirmed_spread`)
 -- e.g. Abiraterone shows both Maine MHDO's 1,727.73% and Lewandowski v.
 J&J's 6,391.86%, making the max-selection visible rather than hidden.
+
+### Technical Validation
+
+Every row in `data/public_spreads_matched.csv` (123 rows, 52 distinct
+citations across 5 source documents) has been checked against its stated
+source and page, not just hand-transcribed and trusted:
+
+- **Maine MHDO Prescription Drug Pricing and Transparency Report (2022,
+  covering CY2021)** -- 78 rows. Verified programmatically: every
+  `confirmed_spread_value` was checked for an exact string match against the
+  extracted text of the report's Appendix B, pages 23-25. 78/78 matched.
+- **FTC Second Interim Staff Report (Jan 2025)** -- 4 rows. Verified against
+  the extracted text and a rendered image of Figure A1, page 36 (the header
+  is a merged two-row table header that plain-text extraction alone
+  garbles; rendering the page as an image and reading the column structure
+  directly was necessary to confirm "Affiliated Markup Over NADAC" is a
+  genuine column, not a mis-parsed one). 4/4 matched.
+- **JAMA Health Forum, Mattingly et al. (Oct 2023)** -- 2 rows. Verified
+  against the extracted text of Table 1, page 2. 2/2 matched.
+- **Lewandowski v. Johnson & Johnson** and **Navarro v. Wells Fargo & Co.**
+  (ERISA class-action complaints) -- 21 + 18 = 39 rows. These two sources
+  are not stored locally (see "Litigation source archiving" below); they
+  were verified by fetching the actual complaint PDFs from CourtListener
+  and checking every figure against the fetched text. 39/39 matched.
+
+**123/123 rows verified accurate to their cited page.** One source-internal
+inconsistency was found in the process (not an extraction error on our
+part -- see below) and is flagged on its row rather than silently
+corrected.
+
+**Fingolimod HCl 0.5mg (RxCUI 1012895), Lewandowski citation.** The
+complaint's own page 44 exhibit table states a 1,395.60% markup for
+Fingolimod. That same complaint's page 38 narrative (¶106), using the
+identical two dollar figures ($876.60 NADAC, $13,325.83 price), computes
+and states "This price reflects an 1,420.7% markup." The arithmetic
+supports the narrative figure (13,325.83 / 876.60 - 1 = 1,420.2%), not the
+exhibit table's 1,395.60%. This is an inconsistency within the plaintiff's
+own complaint between two of its own sections, not a transcription error
+in this pipeline -- `public_spreads_matched.csv` cites page 44 as printed
+and does not correct it. The discrepancy is recorded in that row's
+`citation_note` column and surfaces automatically as a `[NOTE: ...]` suffix
+on `leaderboard.csv`'s `best_confirmed_source` for this drug, so it's
+visible next to the number rather than only in this document.
+
+**Teriparatide (RxCUI 1435115) is a genuine outlier, not a data error.**
+FTC Figure A1 covers 51 specialty generic drugs' affiliated-pharmacy markup
+over NADAC. Every drug in that table except Teriparatide shows a positive
+markup, ranging from roughly +1% to +2,053%. Teriparatide is the sole
+exception: -8.0% on commercial claims and 0.0% on Medicare Part D claims --
+the only drug in the table where affiliated-pharmacy reimbursement is at or
+below the NADAC acquisition-cost benchmark on both claim types. Both
+figures were independently re-verified (they also appear in the report's
+page 16 summary table) and are extracted correctly; a 0% markup with
+`estimated_pbm_price_per_unit` computed as exactly equal to
+`nadac_per_unit` is the correct arithmetic consequence of a real 0%
+figure, not a defaulted or missing value rendered as zero. See "Public
+citation enrichment" above for how a genuinely-extracted 0.0 is
+distinguished from a blank/missing value throughout this pipeline.
+
+### Litigation source archiving
+
+The Lewandowski and Navarro complaints are cited by CourtListener/RECAP URL
+in `PROVENANCE.md` rather than stored as local PDFs in `data/sources/`, the
+way every other source in this deposit is. For a point-in-time Zenodo
+deposit, an external URL is a reproducibility gap: CourtListener could
+reorganize its storage paths, and the underlying case could be amended,
+consolidated, or have documents sealed. This is a known, disclosed gap, not
+a silent one -- see `PROVENANCE.md`'s entries for both cases.
 
 ### `output/catalog_gaps.csv` -- Drugs with a confirmed public markup that Cost Plus does not currently carry (`modules/h_catalog_gaps.py`)
 
