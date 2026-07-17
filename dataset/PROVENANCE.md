@@ -168,9 +168,30 @@ which is data-only; see the parent repo for the PDFs themselves).
 | Pharmacy Benefit Managers: The Powerful Middlemen Inflating Drug Costs and Squeezing Main Street Pharmacies, Interim Staff Report | U.S. Federal Trade Commission, Office of Policy Planning | Jul. 2024 | https://www.ftc.gov/reports/pharmacy-benefit-managers-report | `ftc_2024_interim_staff_report.pdf` | `federal_study` | Two named cancer drugs' aggregate excess PBM revenue figure. |
 | Pharmacy Benefit Manager Pricing and Spread Pricing for High-Utilization Generic Drugs (Research Letter) | JAMA Health Forum (Mattingly, Ben-Umeh, Bai, Anderson) | Oct. 2023 | https://jamanetwork.com/journals/jama-health-forum | `jama_health_forum_spread_pricing.pdf` | `peer_reviewed` | Per-drug PBM gross-profit / spread-pricing figures for 45 high-utilization generics, published inclusion criteria. |
 | Maine Health Data Organization, Prescription Drug Pricing and Transparency Report | Maine MHDO | Dec. 2022 (covering CY2021) | https://mhdo.maine.gov | `maine_mhdo_rx_transparency_2022.pdf` | `state_disclosure` | Drug-level WAC vs. PBM-reimbursement figures under Maine's mandatory price-transparency statute. |
-| Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint | D.N.J., Civil No. 1:24-cv-00671 (filed Feb. 2024) | Feb. 2024 | https://www.courtlistener.com/docket/68223269/ (complaint PDF: `storage.courtlistener.com/recap/gov.uscourts.njd.539961/gov.uscourts.njd.539961.1.0.pdf`) | *(fetched via CourtListener; not stored locally as a standalone PDF)* | `litigation` | A 42-drug exhibit table comparing NADAC acquisition cost to the price J&J's health plan paid Express Scripts. |
-| Navarro v. Wells Fargo & Co., ERISA Class Action Complaint | D. Minn., Civil No. 0:24-cv-03043 (filed Jul. 2024) | Jul. 2024 | https://www.courtlistener.com/docket/68995654/ (complaint PDF: `storage.courtlistener.com/recap/gov.uscourts.mnd.218287/gov.uscourts.mnd.218287.1.0.pdf`) | *(fetched via CourtListener; not stored locally as a standalone PDF)* | `litigation` | A 38-drug exhibit table comparing NADAC acquisition cost to the price Wells Fargo's health plan paid Express Scripts. |
+| Lewandowski v. Johnson & Johnson, ERISA Class Action Complaint | D.N.J., Civil No. 1:24-cv-00671 (filed Feb. 2024) | Feb. 2024; accessed 2026-07-17 via CourtListener/RECAP (`storage.courtlistener.com/recap/gov.uscourts.njd.539961/gov.uscourts.njd.539961.1.0.pdf`), docket https://www.courtlistener.com/docket/68223269/ | `lewandowski_v_jnj_erisa_complaint_2024.pdf` (reference copy, not relicensed -- see note below) | `litigation` | A 42-drug exhibit table comparing NADAC acquisition cost to the price J&J's health plan paid Express Scripts. |
+| Navarro v. Wells Fargo & Co., ERISA Class Action Complaint | D. Minn., Civil No. 0:24-cv-03043 (filed Jul. 2024) | Jul. 2024; accessed 2026-07-17 via CourtListener/RECAP (`storage.courtlistener.com/recap/gov.uscourts.mnd.218287/gov.uscourts.mnd.218287.1.0.pdf`), docket https://www.courtlistener.com/docket/68995654/ | `navarro_v_wellsfargo_erisa_complaint_2024.pdf` (reference copy, not relicensed -- see note below) | `litigation` | A 38-drug exhibit table comparing NADAC acquisition cost to the price Wells Fargo's health plan paid Express Scripts. |
 | "Wrecklimid: How Treating Generic Drugs as Something Special Can Wreck Affordability" | 46brooklyn Research, citing Evernorth/Georgia commercial NADAC disclosure filings | 2026 | https://www.46brooklyn.com/research/wrecklimid-how-treating-generic-drugs-as-something-special-can-wreck-affordability-jfmve | *(fetched via web; not stored locally as a standalone PDF)* | `peer_reviewed` | Abiraterone: ESI-affiliate vs. non-affiliate pharmacy reimbursement premium, drawn from Georgia commercial-market NADAC disclosure filings. |
+
+**Note on the two litigation complaints (Lewandowski, Navarro)**: both are
+archived locally as reference copies in `costplus_suite/data/sources/`,
+fetched from their public CourtListener/RECAP docket on 2026-07-17, the
+same treatment given every other source in this table. Archiving closes
+the reproducibility gap of depending on an external URL that could move or
+be reorganized. This does **not** relicense either document -- like every
+other third-party source here, the archived PDF remains under whatever
+rights its author holds; this deposit's CC BY 4.0 license covers only the
+facts/figures we extracted from it (see "License" in `README.md`), not the
+document itself. Court filings are public record and freely available via
+PACER/RECAP; verbatim archival of a party's own complaint for research and
+citation-verification purposes is standard practice (it's the entire
+premise of the CourtListener/RECAP archive these copies were fetched
+from). **Both documents state allegations in an active complaint as of the
+2026-07-17 access date -- they are not adjudicated facts.** Neither case
+had reached judgment, settlement, or dismissal as of that date; the
+drug-level figures extracted from their exhibit tables are the plaintiffs'
+own claims, not court-established findings. See `METHODOLOGY.md`'s
+litigation selection-bias caveat for how this pipeline treats that
+distinction.
 
 **Note on `source_type` classification and selection bias**: see
 `METHODOLOGY.md`'s "Public citation enrichment" section for the full
