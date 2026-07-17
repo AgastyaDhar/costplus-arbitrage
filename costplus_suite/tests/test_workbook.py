@@ -36,6 +36,44 @@ def _write_tmp(df: pd.DataFrame) -> Path:
     return Path(path)
 
 
+class TestSourceTypeFormatting(unittest.TestCase):
+    def test_source_type_column_carries_the_four_expected_font_colors(self):
+        leaderboard = _leaderboard([
+            {"rank": 1, "drug_term": "Federal Drug", "costplus_per_unit": 0.1, "nadac_per_unit": 0.2,
+             "partd_per_unit": 0.3, "gap_partd": 0.1, "total_overpayment": 400.0, "canonical_unit": "EA",
+             "source_type": "federal_study"},
+            {"rank": 2, "drug_term": "State Drug", "costplus_per_unit": 0.1, "nadac_per_unit": 0.2,
+             "partd_per_unit": 0.3, "gap_partd": 0.1, "total_overpayment": 300.0, "canonical_unit": "EA",
+             "source_type": "state_disclosure"},
+            {"rank": 3, "drug_term": "Peer Drug", "costplus_per_unit": 0.1, "nadac_per_unit": 0.2,
+             "partd_per_unit": 0.3, "gap_partd": 0.1, "total_overpayment": 200.0, "canonical_unit": "EA",
+             "source_type": "peer_reviewed"},
+            {"rank": 4, "drug_term": "Litigation Drug", "costplus_per_unit": 0.1, "nadac_per_unit": 0.2,
+             "partd_per_unit": 0.3, "gap_partd": 0.1, "total_overpayment": 100.0, "canonical_unit": "EA",
+             "source_type": "litigation"},
+        ])
+        state_summary = _state_summary([
+            {"state": "CA", "total_medicaid_overpayment": 500.0, "top_drug": "Federal Drug",
+             "top_drug_overpayment": 500.0, "drugs_analyzed": 4},
+        ])
+        wb = j_workbook.run(
+            leaderboard_path=_write_tmp(leaderboard),
+            state_summary_path=_write_tmp(state_summary),
+        )
+        ws = wb["PBM Markup"]
+        source_type_col = 11  # "Source Type", see _PBM_MARKUP_COLUMNS
+        header_row = 10
+        expected = {
+            1: j_workbook._NAVY,
+            2: j_workbook._DARK_GREEN,
+            3: j_workbook._PURPLE,
+            4: j_workbook._DARK_RED,
+        }
+        for data_idx, expected_color in expected.items():
+            cell = ws.cell(row=header_row + data_idx, column=source_type_col)
+            self.assertEqual(cell.font.color.rgb[-6:], expected_color, msg=f"row {data_idx}: {cell.value}")
+
+
 class TestWorkbookStructure(unittest.TestCase):
     def test_sheet_names(self):
         leaderboard = _leaderboard([

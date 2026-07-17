@@ -21,7 +21,8 @@ from pathlib import Path
 
 import pandas as pd
 from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill
+from openpyxl.formatting.rule import ColorScaleRule
+from openpyxl.styles import Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -31,19 +32,46 @@ LEADERBOARD_PATH = config.OUTPUT_DIR / "leaderboard.csv"
 STATE_SUMMARY_PATH = config.OUTPUT_DIR / "state_summary.csv"
 
 _NAVY = "0A0E1A"
+_DARK_GREEN = "006400"
+_PURPLE = "660099"
+_DARK_RED = "8B0000"
+_ORANGE = "E67300"
+_RED = "CC0000"
+_LIGHT_GREY = "F2F2F2"
+_LIGHT_YELLOW = "FFF9C4"
+_BLANK_PLACEHOLDER = "—"  # em dash, for a citation-derived cell with no value
+
 _TITLE_FONT = Font(bold=True, size=16, color=_NAVY)
 _SECTION_FONT = Font(bold=True, size=14, color=_NAVY)
 _DATA_HEADER_FONT = Font(bold=True, size=12, color="FFFFFF")
 _DATA_HEADER_FILL = PatternFill(start_color=_NAVY, end_color=_NAVY, fill_type="solid")
 _SOURCES_HEADER_FONT = Font(bold=True, size=11, color=_NAVY)
 _SOURCES_HEADER_FILL = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
+_ROW_SHADE_FILL = PatternFill(start_color=_LIGHT_GREY, end_color=_LIGHT_GREY, fill_type="solid")
+_HIGHLIGHT_FILL = PatternFill(start_color=_LIGHT_YELLOW, end_color=_LIGHT_YELLOW, fill_type="solid")
+_MARKUP_FONT = Font(bold=True, color=_ORANGE)
+_PRICE_FONT = Font(bold=True, color=_RED)
+_TOP10_BORDER = Border(bottom=Side(style="thick"))
+_MARKUP_NUMBER_FORMAT = '#,##0.00"%"'
+_CURRENCY_FORMAT = '"$"#,##0.00'
+
+# Source types have different selection properties (see METHODOLOGY.md,
+# "Public citation enrichment") -- color-coding them on the sheet itself
+# means a reader isn't left to assume a federal industry study and a
+# plaintiff's litigation exhibit carry the same evidentiary weight.
+_SOURCE_TYPE_COLORS = {
+    "federal_study": _NAVY,
+    "state_disclosure": _DARK_GREEN,
+    "peer_reviewed": _PURPLE,
+    "litigation": _DARK_RED,
+}
 
 _SOURCE_TYPE_LEGEND = [
-    "Source types (see METHODOLOGY.md for the selection-bias caveat):",
-    "federal_study — FTC interim reports (industry-wide sample)",
-    "state_disclosure — Maine MHDO (mandated reporting)",
-    "peer_reviewed — JAMA Mattingly (academic sample)",
-    "litigation — J&J and Wells Fargo ERISA complaints (plaintiff-selected, not representative)",
+    ("Source types (see METHODOLOGY.md for the selection-bias caveat):", None),
+    ("federal_study — FTC interim reports (industry-wide sample)", "federal_study"),
+    ("state_disclosure — Maine MHDO (mandated reporting)", "state_disclosure"),
+    ("peer_reviewed — JAMA Mattingly (academic sample)", "peer_reviewed"),
+    ("litigation — J&J and Wells Fargo ERISA complaints (plaintiff-selected, not representative)", "litigation"),
 ]
 
 _PBM_MARKUP_COLUMNS = [
@@ -60,8 +88,10 @@ _PBM_MARKUP_COLUMNS = [
     ("source_type", "Source Type"),
     ("canonical_unit", "Unit"),
 ]
-_PBM_MARKUP_COL_WIDTHS = [8, 48, 20, 24, 20, 21, 20, 20, 26, 55, 18, 8]
 _PBM_MARKUP_HEADER_ROW = 10
+_TOP_N_BOLD_ROWS = 10
+_MIN_COL_WIDTH = 8
+_MAX_COL_WIDTH = 70
 
 _STATE_COLUMNS = [
     ("state", "State"),
@@ -70,7 +100,6 @@ _STATE_COLUMNS = [
     ("top_drug_overpayment", "Top Drug Overpayment"),
     ("drugs_analyzed", "Drugs Analyzed"),
 ]
-_STATE_COL_WIDTHS = [10, 28, 60, 22, 16]
 _STATE_HEADER_ROW = 3
 
 _SOURCES_HEADERS = ["Source Name", "Year", "Publisher", "URL", "What it contains"]
@@ -183,6 +212,36 @@ def _set_column_widths(ws, widths: list[int]) -> None:
         ws.column_dimensions[get_column_letter(i)].width = width
 
 
+_CURRENCY_COLS = {
+    "costplus_per_unit", "nadac_per_unit", "partd_per_unit", "gap_partd",
+    "total_overpayment", "estimated_pbm_price_per_unit",
+}
+
+
+def _display_str(value, col_name: str) -> str:
+    """Estimated rendered width of a cell, used only for autofit sizing --
+    matches the number_format actually applied (2-decimal currency /
+    percent), not Python's raw float repr, so autofit doesn't over-widen
+    columns based on floating-point noise nobody sees on screen."""
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
+    if col_name in _CURRENCY_COLS and isinstance(value, (int, float)):
+        return f"${value:,.2f}"
+    if col_name == "best_confirmed_spread" and isinstance(value, (int, float)):
+        return f"{value:,.2f}%"
+    return str(value)
+
+
+def _autofit_column_widths(ws, col_count: int, header_row: int, last_row: int) -> None:
+    for c in range(1, col_count + 1):
+        max_len = 0
+        for r in range(header_row, last_row + 1):
+            v = ws.cell(row=r, column=c).value
+            if v is not None:
+                max_len = max(max_len, len(str(v)))
+        ws.column_dimensions[get_column_letter(c)].width = max(_MIN_COL_WIDTH, min(_MAX_COL_WIDTH, max_len + 2))
+
+
 def _build_pbm_markup_sheet(wb: Workbook, leaderboard: pd.DataFrame, snapshot_date: str) -> None:
     ws = wb.active
     ws.title = "PBM Markup"
@@ -190,21 +249,82 @@ def _build_pbm_markup_sheet(wb: Workbook, leaderboard: pd.DataFrame, snapshot_da
     ws["A1"].font = _TITLE_FONT
     ws["A2"] = "Estimated annual Medicare Part D + Medicaid overpayment. Generics only. Net prices never estimated."
     ws["A3"] = f"Data as of {snapshot_date} (leaderboard.csv build time)"
-    for offset, line in enumerate(_SOURCE_TYPE_LEGEND):
-        ws.cell(row=4 + offset, column=1, value=line)
+    for offset, (line, source_type) in enumerate(_SOURCE_TYPE_LEGEND):
+        cell = ws.cell(row=4 + offset, column=1, value=line)
+        if source_type is not None:
+            cell.font = Font(bold=True, color=_SOURCE_TYPE_COLORS[source_type])
 
     for col_idx, (_, header) in enumerate(_PBM_MARKUP_COLUMNS, start=1):
         cell = ws.cell(row=_PBM_MARKUP_HEADER_ROW, column=col_idx, value=header)
         cell.font = _DATA_HEADER_FONT
         cell.fill = _DATA_HEADER_FILL
 
-    for r, (_, row) in enumerate(leaderboard.iterrows(), start=_PBM_MARKUP_HEADER_ROW + 1):
+    markup_col = [i for i, (name, _) in enumerate(_PBM_MARKUP_COLUMNS, start=1) if name == "best_confirmed_spread"][0]
+    price_col = [i for i, (name, _) in enumerate(_PBM_MARKUP_COLUMNS, start=1)
+                 if name == "estimated_pbm_price_per_unit"][0]
+    source_type_col = [i for i, (name, _) in enumerate(_PBM_MARKUP_COLUMNS, start=1) if name == "source_type"][0]
+    total_overpayment_col = [i for i, (name, _) in enumerate(_PBM_MARKUP_COLUMNS, start=1)
+                              if name == "total_overpayment"][0]
+
+    # Only these two are citation-derived (present for 56 of 2,062 rows) --
+    # "—" marks "no confirmed public citation for this drug", distinct from
+    # Excel's plain empty cell used elsewhere for values that are simply
+    # not applicable (e.g. a molecule-level Part D row -- see "Part D
+    # molecule-level fix" in METHODOLOGY.md).
+    _DASH_PLACEHOLDER_COLS = {"best_confirmed_spread", "estimated_pbm_price_per_unit"}
+
+    last_row = _PBM_MARKUP_HEADER_ROW + len(leaderboard)
+    for data_idx, (_, row) in enumerate(leaderboard.iterrows(), start=1):
+        r = _PBM_MARKUP_HEADER_ROW + data_idx
+        is_top_n = data_idx <= _TOP_N_BOLD_ROWS
         for c, (col_name, _) in enumerate(_PBM_MARKUP_COLUMNS, start=1):
             value = row[col_name]
-            ws.cell(row=r, column=c, value=None if pd.isna(value) else value)
+            blank = pd.isna(value)
+            if blank:
+                cell_value = _BLANK_PLACEHOLDER if col_name in _DASH_PLACEHOLDER_COLS else None
+            else:
+                cell_value = value
+            cell = ws.cell(row=r, column=c, value=cell_value)
 
-    _set_column_widths(ws, _PBM_MARKUP_COL_WIDTHS)
-    ws.freeze_panes = "A6"
+            font_color = None
+            font_bold = is_top_n
+            if col_name == "best_confirmed_spread":
+                cell.number_format = _MARKUP_NUMBER_FORMAT
+                if not blank:
+                    font_color, font_bold = _ORANGE, True
+            elif col_name == "estimated_pbm_price_per_unit":
+                cell.number_format = _CURRENCY_FORMAT
+                if not blank:
+                    font_color, font_bold = _RED, True
+            elif col_name in _CURRENCY_COLS:
+                cell.number_format = _CURRENCY_FORMAT
+            elif col_name == "source_type" and not blank:
+                font_color = _SOURCE_TYPE_COLORS.get(value)
+
+            if font_color or font_bold:
+                cell.font = Font(bold=font_bold, color=font_color)
+
+            # Alternate row shading (every other DATA row, independent of
+            # the top-10 bolding/border below) makes a 2,000+ row sheet
+            # readable without a filter applied.
+            if data_idx % 2 == 0:
+                cell.fill = _ROW_SHADE_FILL
+
+            if data_idx == _TOP_N_BOLD_ROWS:
+                cell.border = _TOP10_BORDER
+
+    ws.conditional_formatting.add(
+        f"{get_column_letter(total_overpayment_col)}{_PBM_MARKUP_HEADER_ROW + 1}:"
+        f"{get_column_letter(total_overpayment_col)}{last_row}",
+        ColorScaleRule(start_type="min", start_color="FFFFFF", end_type="max", end_color=_DARK_RED),
+    )
+
+    _autofit_column_widths(ws, len(_PBM_MARKUP_COLUMNS), _PBM_MARKUP_HEADER_ROW, last_row)
+    ws.freeze_panes = f"A{_PBM_MARKUP_HEADER_ROW + 1}"
+
+
+_STATE_HIGHLIGHT = {"CA", "NY", "OH"}
+_STATE_CURRENCY_COLS = {"total_medicaid_overpayment", "top_drug_overpayment"}
 
 
 def _build_states_sheet(wb: Workbook, state_summary: pd.DataFrame) -> None:
@@ -217,11 +337,17 @@ def _build_states_sheet(wb: Workbook, state_summary: pd.DataFrame) -> None:
         cell.font = _DATA_HEADER_FONT
         cell.fill = _DATA_HEADER_FILL
 
+    last_row = _STATE_HEADER_ROW + len(state_summary)
     for r, (_, row) in enumerate(state_summary.iterrows(), start=_STATE_HEADER_ROW + 1):
+        highlight = row["state"] in _STATE_HIGHLIGHT
         for c, (col_name, _) in enumerate(_STATE_COLUMNS, start=1):
-            ws.cell(row=r, column=c, value=row[col_name])
+            cell = ws.cell(row=r, column=c, value=row[col_name])
+            if col_name in _STATE_CURRENCY_COLS:
+                cell.number_format = _CURRENCY_FORMAT
+            if highlight:
+                cell.fill = _HIGHLIGHT_FILL
 
-    _set_column_widths(ws, _STATE_COL_WIDTHS)
+    _autofit_column_widths(ws, len(_STATE_COLUMNS), _STATE_HEADER_ROW, last_row)
     ws.freeze_panes = "A4"
 
 
@@ -260,6 +386,8 @@ def run(
     snapshot_date = _snapshot_date_label(leaderboard_path)
 
     wb = Workbook()
+    wb.properties.title = "PBM Markup Analysis"
+    wb.properties.creator = "Agastya Dhar"
     _build_pbm_markup_sheet(wb, leaderboard, snapshot_date)
     _build_states_sheet(wb, state_summary)
     _build_methodology_sheet(wb, len(leaderboard))
